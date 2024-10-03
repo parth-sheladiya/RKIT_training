@@ -1,0 +1,29 @@
+.Container img{
+    margin: 20px;
+}
+
+.Container{
+    position: relative;
+    height: 5000px;
+}
+/* 
+.SecondImg {
+    position: absolute;
+    top: 100px;
+     left: 100px;
+}  */
+
+
+.FourthImg{
+    position:fixed;
+}
+
+.ThirdImg{
+    position: sticky;
+    top: 100px;
+
+}
+.SecondContainer{
+    background-color: aquamarine;
+    height: 5000px;
+}

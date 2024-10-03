@@ -1,0 +1,35 @@
+.Container{
+    background-color: bisque;
+    border: 2px solid black;
+    margin:5px;
+    padding: 10px;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.Box{
+    height:200px;
+    width: 200px;
+    border: 2px solid black;
+    margin: 7px;
+    padding: 5px;
+    
+}
+
+#FirstBox{
+    background-color: blue;
+    /* flex-shrink: 5; */
+}
+
+#SecondBox{
+    background-color:brown;
+    flex-grow: 8;
+}
+
+#ThirdBox{
+    background-color:aqua;
+}
+
+#FourthBox{
+    background-color:rebeccapurple;
+}

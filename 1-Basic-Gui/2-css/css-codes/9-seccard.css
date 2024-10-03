@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Contanier{
+    width: 100vw;
+    height: 100vh;
+    background-color:aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Card{
+    height: 600px;
+    width: 400px;
+    background-color:white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.Card img{
+    width: 400px;
+    height: 200px;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+}
+
+.Card h2 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.Card  p {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+#WidthBox{
+    width: 80%;
+    background-color: cadetblue;
+    height: 10%;
+    border-radius: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.TxtBox p{
+    color: white;
+}
+
+.LeftPart{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    
+    gap:25px;
+    align-items: center;
+}
+.RightPart a{
+    text-decoration: none;
+    color: white
+}
+.ImgBox img{
+    height: 50px;
+    width: 50px;
+}
+#PaymentButton{
+    width: 80%;
+    background-color:rgb(22, 22, 79 );
+    height: 50px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+#PaymentButton:hover{
+    background-color:white;
+    color: rgb(22,22,79);
+}
+
+#CancelBtn{
+    width: 150px;
+    height:40px;
+    background-color: rgb(234, 56, 56);
+    border-radius: 10px;
+    color: white;
+    transition: all 0.5s;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#CancelBtn:hover{
+    background-color:white;
+    color: red;
+}

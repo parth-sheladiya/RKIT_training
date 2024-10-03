@@ -1,0 +1,12 @@
+.Box{
+    background-color: blue;
+    border:2px solid black;
+    width: 400px;
+    height: 100px;
+}
+@media (min-width: 500px) and (max-width:900px) {
+    .Box{
+        background-color:green;
+        transition: all 2s ease;
+    }
+}

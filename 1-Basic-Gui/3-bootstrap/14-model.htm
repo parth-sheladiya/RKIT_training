@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+        
+        <div class="container mt-5">
+            <!-- 1. create button -->
+        <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Click</button>
+    
+
+        <!-- 2 . show content  -->
+         <!-- model dialog nahi likhne se dialog box o khul jayega lekin close nahi hoga -->
+
+          <!-- model headiing modal content model footer nahi likne  se css property brbr nahi 
+           ho sakti yani ki user friendly nahi hota -->
+
+
+           <!-- id likhne se button click karne par jo content dikhta hai vo  id ka hi kamal hai -->
+       <div class="modal" id="myModal"> 
+           <div class="modal-dialog">
+
+               <div class="modal-content">
+                            <!-- 2.1 create a header content -->
+
+                   <div class="modal-header">
+                    
+                       <h4 >model ka heading</h4>
+                       <button  class="btn-close" data-bs-dismiss="modal"></button>
+                   </div>
+                   <!-- dismiss yani ki dialog box close ho jayga ye must be likhna hi hai -->
+
+                           <!-- 2.2 create a body contet -->
+                   <div class="modal-body">
+                       <h6>model ki body</h6>
+                   </div>
+
+                            <!-- 2.3 model ka footer -->
+                   <div class="modal-footer">
+                       <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                   </div>
+               </div>
+
+           </div>
+       </div>
+        </div>
+
+
+       
+    
+</body>
+</html>

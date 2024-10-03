@@ -1,0 +1,36 @@
+.Container{
+    border: 2px solid black;
+    background-color:bisque;
+    display: flex;
+    flex-direction: row;
+    width: 480px;
+    margin: 30px;
+    padding:2px
+}
+#LeftSide{
+    background-color:aquamarine;
+    border: 1px solid blue;
+    width: 240px;
+    margin: 3px;
+    padding:2px;
+    display: flex;
+    flex-direction: column
+}
+#RightSide{
+    background-color:yellow;
+    border: 1px solid brown;
+    width: 240px;
+    margin: 3px;
+    padding:2px
+}
+p{
+    border: 1px solid red;
+}
+img{
+    width: 180px;
+}
+@media (max-width: 525px) {
+    .Container{
+        flex-direction: column;
+    }
+}

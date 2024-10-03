@@ -1,0 +1,20 @@
+h1{
+    color: aquamarine;
+    background-color: brown;
+}
+
+#Article {
+    background-color: yellow;
+}
+
+.Paragraph{
+    background-color: cadetblue;
+    font-style: italic;
+}
+
+p,Article {
+    width: 400px;
+}
+p.Paragraph{
+    text-align: center;
+}
