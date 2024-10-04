@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modifying dom element in javascript</title>
+</head>
+<body>
+    <div id="fPara">
+        <p >
+            this is  <span>paragraph</span>
+        </p>
+    
+        <p  style="display:none">hello javascript</p>
+    </div>
+    
+
+
+    <script>
+        let pElement =  document.getElementById("fPara")
+        let retriveElement = pElement.innerHTML;
+        console.log(retriveElement)
+
+        let paraElement = document.getElementById("fPara")
+        let newElement = paraElement.textContent;
+        console.log(newElement)
+
+        let idElement = document.getElementById("fPara")
+        let newIdElement = idElement.innerText;
+        console.log(newIdElement)
+
+        let outElement = document.getElementById("fPara");
+        let newOutElement = outElement.outerHTML;
+        console.log(newOutElement)
+
+    </script>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="fDivId">
+        hello javascript world
+    </div>
+
+
+    <script>
+        // add class 
+        let firstGetElement = document.getElementById("fDivId");
+        console.log(firstGetElement);
+
+        firstGetElement.className += "class1 class2" 
+        console.log(firstGetElement);
+
+        firstGetElement.classList.add("class50");
+        console.log(firstGetElement);
+
+        firstGetElement.classList.remove("class2");
+        console.log(firstGetElement);
+
+        let isPresent = firstGetElement.classList.contains("class5");
+        console.log(isPresent);
+
+        
+        // replace class with class
+        let replaceClassWithClass = document.getElementById("fDivId")
+
+        replaceClassWithClass.classList = replaceClassWithClass.className.replace("class1","class10")
+        console.log(replaceClassWithClass)
+
+
+    </script>
+</body>
+</html>

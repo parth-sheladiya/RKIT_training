@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // create 3 new element
+        
+        let firstNewElement = document.createElement("p");
+        console.log(firstNewElement);
+        
+        firstNewElement.textContent = "Hello, world!";
+        document.body.appendChild(firstNewElement);
+
+        let secondNewElement = document.createElement("div");
+        console.log(secondNewElement);
+
+        secondNewElement.textContent = "Hello dunia";
+        document.body.appendChild(secondNewElement);
+        
+        let thirdNewElement = document.createElement("h1");
+        console.log(thirdNewElement);
+
+        thirdNewElement.textContent = "hello javascript dom";
+        document.body.appendChild(thirdNewElement);
+    </script>
+</body>
+</html>

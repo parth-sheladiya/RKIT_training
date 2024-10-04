@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div id="fDiv" style="background-color: aqua; padding:2rem" >
+        firs div
+        <p id="fPara" style="background-color:green; padding:2rem">
+            first para
+        </p>
+        <div id="sDiv" style="background-color:yellow;  padding:2rem">
+            second div
+            <p id="sPara" style="background-color:orange; padding:1rem">
+                second para
+            </p>
+        </div>
+    </div>
+
+
+
+    <script>
+        let getSParaElement = document.getElementById("sPara");
+        console.log(getSParaElement.style);
+
+        getSParaElement.style.backgroundColor = "brown";
+        getSParaElement.style.color='white'
+
+        let getFParaElement = document.getElementById("fPara");
+        console.log(getFParaElement.style.cssText);
+
+        getFParaElement.style.cssText = "background-color:blue; color:white; font-size:20px; padding:2rem"
+
+
+        // set class and its value
+
+        <!-- let setClassValue = document.querySelector("#sPara");
+        setClassValue.setAttribute("class","sParaClass");
+        console.log(setClassValue)
+
+        setClassValue.setAttribute("style","padding:4rem") -->
+         
+        
+
+
+    </script>
+</body>
+</html>

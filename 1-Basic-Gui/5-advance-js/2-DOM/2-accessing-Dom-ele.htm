@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>understanding javascript dom concept</title>
+</head>
+<body>
+    <h1 id="fHeading">hello javascript</h1>
+    <h2 id="sHeading">welcome to javascript</h2>
+
+    <div class="fClass">
+        <p>audi</p>
+        <p>bmw</p>
+        <p>alto</p>
+        <p>zen</p>
+        <p>mustang</p>
+    </div>
+
+    <div class="fClass">
+        <p>audi</p>
+        <p>bmw</p>
+        <p>alto</p>
+        <p>zen</p>
+        <p>mustang</p>
+    </div>
+
+    <script>
+        let getElementId = document.getElementById("sHeading");
+        console.log(getElement);
+
+        let getElementClass = document.getElementsByClassName("fClass");
+        console.log(getElementClass);
+
+        let getElementTag  = document.getElementsByTagName('p');
+        console.log(getElementTag);
+
+        let getElementIdQuerySelector = document.querySelector("#fHeading");
+        console.log(getElementIdQuerySelector);
+
+        let getElementClassQuerySelector = document.querySelector("#fHeading");
+        console.log(getElementClassQuerySelector);
+
+
+    </script>
+</body>
+</html>
