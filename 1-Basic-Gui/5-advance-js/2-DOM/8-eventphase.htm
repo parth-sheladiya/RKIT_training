@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Phases Example</title>
+</head>
+<body>
+    <div id="grandParent">
+        <div id="parent">
+            <button id="child">
+                Click me
+            </button>
+        </div>
+    </div>
+
+
+    <script>
+        const grandParent = document.getElementById("grandParent");
+        const parent = document.getElementById("parent");
+        const child = document.getElementById("child");
+
+        
+
+        grandParent.addEventListener("click",function(){
+            console.log("capturing Phase : grandParent",true);
+        })
+        parent.addEventListener("click",function(){
+            console.log("capturing Phase : parent");
+        })
+        child.addEventListener("click",function(){
+            console.log("Target Phase : child");
+        })
+        grandParent.addEventListener("click",function(){
+            console.log("bubbling phase: grandParent")
+        })
+        parent.addEventListener("click",function(){
+            console.log("bubbling phase: parent")
+        })
+        child.addEventListener("click",function(){
+            console.log("bubbling phase: child",true)
+        })
+    </script>
+</body>
+</html>

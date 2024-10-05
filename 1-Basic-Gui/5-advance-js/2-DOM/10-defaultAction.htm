@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>hello javascript</p>
+        <a id="fAnchor" href="https://www.w3schools.com" target="_blank">click here andgo to the w3school</a>
+    </div>
+
+
+    <div id="secondDiv">
+        <p>first <span>first span</span> paragraph</p>
+        <p>second <span>second span</span> paragraph</p>
+        <p>third <span>thirs span</span> paragraph</p>
+        <p>fourth <span>fourth span</span> paragraph</p>
+        <p>fifth <span>fifth span</span> paragraph</p>
+    </div>
+
+
+
+    <script>
+        let getAnchorTagElement =  document.getElementById("fAnchor");
+
+        function defaltAction(event){
+            
+            console.log(event);
+            event.preventDefault();
+            getAnchorTagElement.textContent="done for javascript all concept"
+            
+        }
+        getAnchorTagElement.addEventListener("click",defaltAction)
+
+
+
+        let getParagraphDetail = document.querySelectorAll("p");
+        
+        function createAlertBox(event){
+            alert("you have click on" + " " +  event.target.textContent)
+        }
+
+        
+
+
+        let div= document.createElement("secondDiv");
+
+        document.addEventListener("click", createAlertBox)
+
+       
+
+
+    </script>
+</body>
+</html>
