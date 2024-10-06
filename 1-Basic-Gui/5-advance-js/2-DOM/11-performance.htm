@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+    <script>
+        let startingTime = performance.now();
+        for(let i=0;i<100;i++){
+            let para = document.createElement("p");
+            para.textContent = "this is" + " " + i + "para";
+            document.body.appendChild(para);
+        }
+        let endingTime = performance.now();
+
+        console.log("performance of this code " , endingTime - startingTime);
+
+
+        let secondStartingTime = performance.now();
+        let mydiv = document.createElement("div");
+        for(let i=0;i<100;i++){
+            let para = document.createElement("p");
+            para.textContent = " this is para" + i;
+            mydiv.appendChild(para);
+        }
+        document.body.appendChild(mydiv);
+        let secondEndingTime = performance.now();
+
+        console.log("second code time" , secondEndingTime - secondStartingTime);
+    </script>
+</body>
+</html>
