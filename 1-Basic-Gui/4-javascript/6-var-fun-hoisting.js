@@ -18,13 +18,13 @@ var secondFunction = function(){
 }
 
 
-// console.log(firstJunction)
-// let firstJunction = 10;
+console.log(firstJunction)
+let firstJunction = 10;
 
-// console.log(thirdFunction)
-// let thirdFunction = function(){
-//     console.log("second Function")
-// }
+console.log(thirdFunction)
+let thirdFunction = function(){
+    console.log("second Function")
+}
 
 
 
