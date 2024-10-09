@@ -12,6 +12,8 @@ getData();
 async function firstGetApiData(){
     // get request 
     let responce = await fetch('https://jsonplaceholder.typicode.com/posts/')
+    console.log(responce)
+    
     // convert to json object
     let data = await responce.json();
     console.log(data)
