@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Pm Surya Ghar</title>
+    <style>
+        .custom-margin{
+            margin-top:-200px
+        }
+        .boldwala{
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     
@@ -13,11 +21,11 @@
         <!-- logo part  -->
         <img src="/1-Basic-Gui/3-bootstrap/demo/images/solarphotos/1.png" style="width:100px; height:100px"/>
         <!-- gov of india part -->
-        <div class="fs-6 mt-2">
-            <p class="mb-0 fw-bold">भारत सरकार</p>
-            <p class="mb-0 fw-bold">Government of India</p>
-            <p class="mb-0 fw-bold">नवीन और नवीकरणीय ऊर्जा मंत्रालय</p>
-            <p class="mb-0 fw-bold">Ministry of New And Renewable Energy</p>
+        <div class="fs-6 mt-2 fw-bold boldwala ">
+            <p class="mb-0">भारत सरकार</p>
+            <p class="mb-0">Government of India</p>
+            <p class="mb-0">नवीन और नवीकरणीय ऊर्जा मंत्रालय</p>
+            <p class="mb-0">Ministry of New And Renewable Energy</p>
         </div>
         <!-- main image vala part -->
         <img class="mt-2" src="/1-Basic-Gui/3-bootstrap/demo/images/solarphotos/2.png" alt="" style="width:800px; height:80px">
@@ -78,12 +86,15 @@
         <div class="col-12 col-md-6 mt-4">
             <img src="/1-Basic-Gui/3-bootstrap/demo/images/solarphotos/3.jpg" class="img-fluid" />
         </div>
-        <div class="col-12 col-md-3 mt-4 shadow rounded">
-            <h3 class="mt-4">Know More About Roof Solar</h3>
-            <div>
+        <div class="col-12 col-md-3 mt-4 shadow rounded position-relative  ">
+            <img class="object-fit-none border rounded  z-2 "  src="/1-Basic-Gui/3-bootstrap/demo/images/solarphotos/90.jpg" width="320px" height="230px" />
+            <div class="z-3 position-absolute custom-margin"> 
+                <h3 class=" ">Know More About Roof Solar</h3>
+                <div class="">
                 <button class="btn btn-danger rounded-pill">Calculator</button>
                 <button class="btn btn-danger rounded-pill">Documents</button>
                 <button class="btn btn-danger rounded-pill">Videos</button>
+                </div>
             </div>
         </div>  
     </div>
