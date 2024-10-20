@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>session storage</title>
+</head>
+<body>
+   <h1>session storage</h1>
+   
+   <input type="text" placeholder="Enter your name" id="inputName" />
+   <button id="btnSubmit" onclick="submitName()">submit</button>
+
+   <div>
+        <p id="showName"></p>
+   </div>
+
+
+
+   <script>
+        function submitName() {
+            let storeName = document.getElementById("inputName").value;
+
+            if(storeName) {
+                sessionStorage.setItem("storeName" ,storeName);
+                document.getElementById("showName").innerText = "ypur name is "  +  storeName;
+            }else{
+                alert("Please enter your name");
+            }
+        }
+   </script>
+</body>
+</html>
