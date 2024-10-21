@@ -1,0 +1,66 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #boxForMouse{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            border: 1px solid black;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="boxForMouse">
+       <p id="messageBox">default </p>
+    </div>
+    
+
+    <script>
+        let mousebox = document.getElementById("boxForMouse");
+        let msgbox  =  document.getElementById("messageBox");
+        
+        function  mouseOverEvent(){
+            boxForMouse.style.backgroundColor = "blue";
+            msgbox.textContent = "your mouse is over the box"
+        }
+        boxForMouse.addEventListener("mouseover",mouseOverEvent);
+
+        function mouseOutEvent(){
+            boxForMouse.style.backgroundColor = "red";
+            msgbox.textContent = "your mouse is out of the box";
+        }        
+        boxForMouse.addEventListener("mouseout",mouseOutEvent);
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="txtInput" placeholder="please write something"/>
+    <p id="shownMsg"></p>
+
+
+
+    <script>
+        let txtInput = document.getElementById("txtInput");
+        let msgInput = document.getElementById("shownMsg");
+
+        function keyboardEvent(event){
+            const pressKey = event.key;
+            shownMsg.textContent ="you press :-> " + pressKey ;
+
+        }
+        txtInput.addEventListener("keydown",keyboardEvent)
+    </script>
+</body>
+</html>
