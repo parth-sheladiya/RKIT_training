@@ -17,8 +17,8 @@
 
         <button type="submit">Submit</button><br><br>
 
-        <p id="errorMsg" style="background-color:red"></p>
-        <p id="successMsg" style="background-color:green"></p>
+        <p id="errorMsg" style="background-color:red; color:white;"></p>
+        <p id="successMsg" style="background-color:green; color:white;"></p>
     </form>
 
     <script>
@@ -37,11 +37,14 @@
             errorMsg.style.display = "none";
             successMsg.style.display = "none";
 
+           // const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
             
              if (!name || !email) {
                 errorMsg.textContent = "Please fill in all fields.";
                 errorMsg.style.display = "block"; 
-            } else {
+            }
+            else {
                 successMsg.textContent = "Successfully filled details.";
                 successMsg.style.display = "block"; 
             }

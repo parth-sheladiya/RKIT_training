@@ -1,11 +1,11 @@
 // global scope 
 const firstNumber = '15';
 
-// console.log(firstNumber);
+console.log(firstNumber);
 
-// {
-//     console.log(firstNumber)
-// }
+{
+    console.log(firstNumber)
+}
 
 if(true){
     console.log(firstNumber)
@@ -52,8 +52,8 @@ console.log(firstBlockScopeValue)
 }
 // console.log(secondBlockScopeValue)
 
-// {
+{
     const secondBlockScopeValue = 200;
     console.log(secondBlockScopeValue)
-// }
+}
 // console.log(secondBlockScopeValue)
