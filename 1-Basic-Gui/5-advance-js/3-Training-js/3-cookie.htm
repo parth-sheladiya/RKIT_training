@@ -18,11 +18,18 @@
         document.cookie = "name=ravi"
         console.log(document.cookie);
 
-
-      //  <!-- let key = prompt("enter key");
-       // let value = prompt("enter value");
-       // console.log(`${key}=${value}`); -->
-
+        
+        let key = prompt("Enter key");
+        let value = prompt("Enter value");
+        
+        if (key && value) {
+            
+            document.cookie = `${key}=${value}; path=/;`
+            document.body.innerHTML += `<p>Cookie Set: ${key} = ${value}</p>`;
+        } else {
+            alert("Please enter both a key and a value.");
+        }
+        
 
         document.cookie = "1=2;3=4";
         console.log(document.cookie);

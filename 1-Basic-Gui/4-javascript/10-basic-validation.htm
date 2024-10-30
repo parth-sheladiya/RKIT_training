@@ -15,6 +15,16 @@
         <label>Email:</label>
         <input type="email" id="emailInput" name="email" placeholder="Enter your email"><br><br>
 
+        <label>password:</label>
+        <input type="password" id="passwordInput" name="password" placeholder="Enter your password"><br><br>
+
+        <label>enter your city only gujarat:</label>
+        <input type="text" id="cityInput" placeholder="Enter your city"/><br><br>
+
+        <label>enter your annually income:</label>
+        <input type="number" id="incomeInput" placeholder="Enter your income"/><br><br>
+
+
         <button type="submit">Submit</button><br><br>
 
         <p id="errorMsg" style="background-color:red; color:white;"></p>
@@ -26,28 +36,51 @@
         const errorMsg = document.getElementById("errorMsg");
         const successMsg = document.getElementById("successMsg");
 
+
         form.addEventListener("submit", function(event) {
            
             event.preventDefault();
 
             const name = document.getElementById("nameInput").value;
             const email = document.getElementById("emailInput").value;
-
+            const password = document.getElementById("passwordInput").value;
+            const city = document.getElementById("cityInput").value;
+            const income = document.getElementById("incomeInput").value;
             
             errorMsg.style.display = "none";
             successMsg.style.display = "none";
 
-           // const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+           const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+           const gujaratDistrictRegex = /Ahmedabad|Amreli|Anand|Aravalli|Banaskantha|Bharuch|Bhavnagar|Botad|Chhota Udaipur|Dahod|Dang|Devbhoomi Dwarka|Gandhinagar|Gir Somnath|Jamnagar|Junagadh|Kheda|Kutch|Mahisagar|Mehsana|Morbi|Narmada|Navsari|Panchmahal|Patan|Porbandar|Rajkot|Sabarkantha|Surat|Surendranagar|Tapi|Vadodara|Valsad/gi;
+           
+
 
             
              if (!name || !email) {
                 errorMsg.textContent = "Please fill in all fields.";
                 errorMsg.style.display = "block"; 
-            }
-            else {
+            }else if (!emailRegex.test(email)){
+                errorMsg.textContent = "Please enter a valid email address.";
+                errorMsg.style.display = "block";
+            }else if(password.length <8){
+                errorMsg.textContent = "Passwrod length must be 8";
+                errorMsg.style.display = "block";
+            }else if(!gujaratDistrictRegex.test(city)){
+                errorMsg.textContent = "Please enter gujrat state city not other state city";
+                errorMsg.style.display = "block";
+            }else if(income > 500000){
+                const confirmation = confirm("Your income is above 5 lakh.so you have to pay 20% tax of your income. are you sure payment process?");
+               if (!confirmation) {
+                  return; // check
+                } 
+            }else{
                 successMsg.textContent = "Successfully filled details.";
-                successMsg.style.display = "block"; 
+                successMsg.style.display = "block";
             }
+            
+                
+        
+            
         });
     </script>
 </body>

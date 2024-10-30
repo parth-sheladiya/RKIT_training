@@ -29,11 +29,11 @@ let numberThree = 3;*/
 
 
 // power 
-// let numberOne =2;
-// let numberTwo =3;
+let numberOne =2;
+let numberTwo =3;
 
-// let finalAnswer = numberOne**numberTwo;
-// console.log(finalAnswer);
+let finalAnswer = numberOne**numberTwo;
+console.log(finalAnswer);
 
 // moduls 
 // let numberOne =4;
@@ -53,14 +53,14 @@ let numberThree = 3;*/
 // console.log(numberTwo);
 
 // strong eqality and loose eqality
-// let firstString = "5";
-// console.log(typeof(firstString));
+let firstString = "5";
+console.log(typeof(firstString));
 
-// let firstNumber = 5;
-// console.log(typeof(firstNumber));
+let firstNumber = 5;
+console.log(typeof(firstNumber));
 
-// console.log(firstNumber == firstString);
-// console.log(firstNumber === firstString);
+console.log(firstNumber == firstString);
+console.log(firstNumber === firstString);
 
 // logical operator 
 

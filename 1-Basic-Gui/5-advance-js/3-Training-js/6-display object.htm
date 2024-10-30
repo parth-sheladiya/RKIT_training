@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="displayMsg"> </p>
+    
+
+    <script>
+        const person5 = {
+            fName:"parth",
+            id:101,
+            detailOfPerson5 : function(){
+                return  this.fName + " " + this.id;
+            }
+        }
+
+        const retrriveDetails = document.getElementById("displayMsg");
+
+        retrriveDetails.innerHTML = person5.detailOfPerson5();
+
+        const covertJson = JSON.stringify(person5);
+        retrriveDetails.innerHTML =covertJson;
+    </script>
+</body>
+</html>
