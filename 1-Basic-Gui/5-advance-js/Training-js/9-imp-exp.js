@@ -5,7 +5,12 @@
 
 
 
-import { add, subtract } from './10-export';
+import { add, subtract ,hello } from './10-export.mjs';
+
+
+const result = hello(2, 3);
+console.log(result);
+
 
 console.log(add(5, 3));       
 console.log(subtract(5, 3));  

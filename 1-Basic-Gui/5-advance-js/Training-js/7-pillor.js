@@ -1,4 +1,5 @@
 //encapsulation
+console.log("----------encapsulation----------")
 class BankDetails {
     #acc_Num;
     #balance; 
@@ -35,12 +36,14 @@ const myBankAccount = new BankDetails(30606054413, 88632);
 
 console.log(myBankAccount.getBalance());   
 console.log(myBankAccount.balance);
+console.log(myBankAccount.acc_Num);
 myBankAccount.addMoneyInAccount(54052);     
 myBankAccount.withdrawMoney(91526);         
 
 
 
 // inheritance
+console.log("----------inheritance----------")
 class bankDetails {
     constructor(accNum ,accHolderName , balance){
         this.accNum =accNum;
@@ -81,6 +84,7 @@ console.log(myaccount.getBalance());
 
 
 // polymorphisam
+console.log("----------polymorphisam----------")
 class employee{
     constructor(empName,empRole){
         this.empName=empName;
@@ -156,15 +160,16 @@ console.log(developerPerson.getDetails());
 
 
 // abstraction
+console.log("----------abstraction----------")
 class car{
     constructor(){
-        this._fuelLevel=10;
-        this._engineStatus=false;
+        this.fuelLevel=1000;
+        this.engineStart=false;
     }
     startCar(){
-        if(this._checkFuel()){
-            this._engineStatus=true;
-            console.log(`car start , your fuel level is ${this._fuelLevel}`);
+        if(this.checkFuel()){
+            this.engineStart=true;
+            console.log(`car start , your fuel level is ${this.fuelLevel}`);
 
         }
         else{
@@ -172,18 +177,18 @@ class car{
         }
     }
     stopCar(){
-        this._engineStatus=false;
+        this.engineStart=false;
         console.log("car stop");
 
     }
-    _checkFuel(){
-        return this._fuelLevel>20;
+    checkFuel(){
+        return this.fuelLevel>20;
 
     }
 
     refuel(amount){
-        this._fuelLevel+=amount;
-        console.log(`you can add ${amount}rs fuel. new fuel level is ${this._fuelLevel}`);
+        this.fuelLevel+=amount;
+        console.log(`you can add ${amount}rs fuel. new fuel level is ${this.fuelLevel}`);
 
     }
 }
