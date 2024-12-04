@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Mobile Number Validation</title>
+</head>
+
+<body>
+    <h2>Mobile Number Verification</h2>
+    <div>
+        <label for="mobile">Enter Mobile Number:</label>
+        <input type="text" id="mobile" name="mobile" maxlength="10" placeholder="Enter 10-digit mobile number">
+        <button id="validateMobile">Submit</button>
+        <p id="error" style="color: red; display: none;">Please enter a valid 10-digit mobile number.</p>
+    </div>
+
+    <div id="otpField" style="display: none; margin-top: 20px;">
+        <label for="otp">enter otp</label>
+        <input type="text" id="otp" name="otp" maxlength="6" placeholder="Enter OTP">
+        <button id="verifyOtp">Verify OTP</button>
+        <p id="successMessage" style="color: green; display: none;">OTP submitted successfully!</p>
+        <p id="otpError" style="color: red; display: none;">Please enter a valid 6-digit OTP.</p>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#validateMobile").click(function () {
+                let mobileNumber = $("#mobile").val().trim();
+                let isValid = /^[0-9]{10}$/.test(mobileNumber); 
+
+                if (isValid) {
+                    $("#error").hide(); 
+                    $("#otpField").fadeIn(); 
+                } else {
+                    $("#error").show().text("Please enter a valid 10-digit mobile number."); 
+                    $("#otpField").hide(); 
+                }
+            });
+        });
+
+        $("#verifyOtp").click(function () {
+            let otp = $("#otp").val().trim();
+            let isValidOtp = /^[0-9]{6}$/.test(otp);
+
+            if (isValidOtp) {
+                $("#otpError").hide(); 
+                $("#successMessage").fadeIn().text("OTP submitted successfully!");
+            } else {
+                $("#successMessage").hide();
+                $("#otpError").show().text("Please enter a valid 6-digit OTP."); 
+            }
+        });
+    
+    </script>
+</body>
+
+</html>

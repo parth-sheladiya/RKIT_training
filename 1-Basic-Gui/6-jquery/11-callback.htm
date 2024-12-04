@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm">
+        <input type="text" id="username" placeholder="Enter username">
+        <button type="button" id="submit">Submit</button>
+      </form>
+      <div id="message"></div>
+      
+    <script>
+        function validateForm(callback) {
+            let username = $("#username").val();
+            if (username === "") {
+              $("#message").text("Username cannot be empty").css("color", "red");
+              setTimeout(function() {
+                $("#message").text("");
+              }, 3000);
+            } else {
+              callback(); 
+            }
+          }
+          
+          $("#submit").click(function() {
+            validateForm(function() {
+              $("#message").text("Form submitted successfully!").css("color", "green");
+              setTimeout(function() {
+                $("#message").text("");
+              }, 3000);
+            });
+          });
+          
+          
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nam ipsam temporibus incidunt suscipit? Vero impedit rem cum deserunt, beatae harum nobis doloremque dolorum, eaque perferendis fuga! Repellendus, ex accusamus.
+    Quos qui omnis, placeat ex aspernatur aut temporibus error corrupti alias libero a non nulla laborum, suscipit eum provident est tempore ducimus. Iure cupiditate aliquid, sunt impedit dicta explicabo voluptatibus!
+    Quod fugit id cupiditate impedit non accusantium, temporibus obcaecati cum atque ratione sit eos dolor quas, doloremque ex. Deserunt ipsa repellat quo et, atque eum suscipit corporis dolorum architecto impedit?
+    Dolorem culpa omnis, velit id quo minima cupiditate ullam recusandae praesentium voluptatibus in nulla sit modi eius rerum obcaecati, illum illo similique libero explicabo ad! In nostrum officia nulla amet.
+    Perfem quam totam cupiditate ratione cumque iure modi sapiente eaque quaerat facere vel architecto ullam tempora temporibus magnam est? Molestias, voluptatibus?
+    Laboriosam harum debitis reiciendis porro rem ducimus laborum perferendis rerum perspiciatis officia, cumque fugiat doloribus explicabo nostrum sed cupiditate aspernatur aut. Ullam hic quaerat fuga maiores impedit quasi harum enim.
+    Sapiente ipsamcto, maiores eaque quibusdam soluta quisquam obcaecati dignissimos facilis deserunt tempore consequuntur illum, aspernatur, a et nam officiis reiciendis. Nam nisi a debitis sit quisquam?
+    Cupiditaestiae. Quis fugiat ipsa culpa tempore.Asperiores aliquam aut dignissimos eveniet cum officiis repellat debitis! Totam ad dolor porro tempora soluta illum aliquid voluptate! Deserunt nisi voluptates libero distinctio corrupti itaque delectus debitis odio provident quis.</p>
+
+    <button id="btnHide">hide</button>
+    <button id="btnShow">show</button>
+
+    <button id="btnToggle">toggle</button>
+    <script>
+        $(document).ready(function(){
+            $('#btnHide').click(function(){
+                $("p").hide(2000);
+            }),
+            $('#btnShow').click(function(){
+                $("p").show(3000);
+            })
+        })
+
+        $(document).ready(function(){
+            $("#btnToggle").click(function(){
+                $("p").toggle(5000);
+            })
+        })
+    </script>
+</body>
+</html>

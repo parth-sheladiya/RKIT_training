@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>GET Example - List of Posts</title>
+</head>
+<body>
+    <h2>Blog Posts</h2>
+    <button id="getPosts">fetch data</button>
+    <ul id="postsList"></ul>
+
+    <script>
+        $(document).ready(function() {
+            $("#getPosts").click(function() {
+                $.get("https://jsonplaceholder.typicode.com/posts", function(data) {
+                    let posts = '';
+                    data.forEach(function(post) {
+                        posts += `<ui><p>${post.title}</p></ui>`;
+                    });
+                    $("#postsList").html(posts);
+                }).fail(function() {
+                    alert("Error fetching posts.");
+                });
+            });
+        });
+    </script>
+</body>
+</html>

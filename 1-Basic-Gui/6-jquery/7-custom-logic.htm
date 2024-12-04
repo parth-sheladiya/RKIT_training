@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>custom logic on event fire</title>
+</head>
+<body>
+    <button id="btnClick">click here</button>
+    <br>
+    <br>
+
+    <input type="text" id="inpUser" placeholder="enter tyour name" /><br><br>
+    <button id="btnChkUsername">check username</button> <br> <br>
+
+    <button id="btnAdd">Add new btn</button><br><br>
+    <div id="container"></div><br><br>
+
+    <button id="btn">button</button><br><br>
+
+    <div id="box" style="width:100px;height:100px;background:gray;"></div><br><br>
+
+
+    <script>
+        //1 . basic exaple with logic 
+        $(document).ready(function(){
+            $("#btnClick").click(function(){
+                let datTime = new Date();
+                alert("you have to show date and time  " +  datTime);
+            })
+        })
+
+        // 2.  condition with logic
+        $(document).ready(function(){
+            $("#btnChkUsername").click(function(){
+                let userName = $("#inpUser").val();    
+                if(!userName){
+                    alert("username is required");
+                }
+                else{
+                    alert("welcome " + userName)
+                }
+            })
+        })
+
+        //3 . event fire with dynamic content
+        $(document).ready(function(){
+            $("#btnAdd").click(function(){
+               let btn=  $("#container").append('<button class="btnNew">new button</button>')
+            })
+        })
+       
+        $("#container").on("click",".btnNew",function(){
+            alert("new btn clicked")
+        })
+
+        // 4 logic with event data
+        $(document).ready(function(){
+            $("#btn").on("click" , {message: "hello logic with event data pass" } , function(event){
+                alert(event.data.message)
+            })
+        })
+
+        // 5 chaining event 
+        $(document).ready(function(){
+            $("#box").on({
+                mouseenter:function(){
+                    $(this).css("background","green")
+                },
+                mouseleave:function(){
+                    $(this).css("background","gray")
+                },
+                click:function(){
+                    alert("box clicked ")
+                }
+            })
+        })
+
+        
+    </script>
+</body>
+</html>

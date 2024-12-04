@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>AJAX Example</title>
+</head>
+<body>
+    <h2>User Profile</h2>
+    <button id="fetchProfile">fetch user details</button>
+    <div id="profile"></div>
+
+    <script>
+        $(document).ready(function() {
+            $("#fetchProfile").click(function() {
+                $.ajax({
+                    url: "https://jsonplaceholder.typicode.com/users/10",
+                    method: "GET",
+                    success: function(data) {
+                        $("#profile").html(`
+                            <p>Name: ${data.name}</p>
+                            <p>Email: ${data.email}</p>
+                            <p>City: ${data.address.city}</p>
+                        `);
+                    },
+                    error: function() {
+                        alert("Error fetching profile data.");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

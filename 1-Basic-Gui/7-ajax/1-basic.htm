@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <script >
+        // synchronous request
+        $.ajax({
+            url: "https://jsonplaceholder.typicode.com/posts/1",
+            type: "GET",
+            async: false,  // By default true, set false for sync
+            success: function(response) {
+              console.log(response);  
+            },
+            error: function(error) {
+              console.log("Error: ", error);
+            }
+          });
+          console.log("This will be printed only after the response.");
+
+
+          // asynchronous request
+
+          $.ajax({
+            url: "https://jsonplaceholder.typicode.com/posts/1",
+            type: "GET",
+            success: function(response) {
+              console.log(response);  
+            },
+            error: function(error) {
+              console.log("Error: ", error);
+            }
+          });
+          console.log("This will be printed immediately.");
+
+          
+
+
+
+
+          
+          
+          
+    </script>
+</body>
+</html>

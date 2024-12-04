@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p>Hello World</p>
+    <p>Hi there</p>
+    <p>Hello jQuery</p>
+
+
+    <form id="myForm">
+        <input type="text" id="email" placeholder="Enter your email">
+        <button type="button" id="validate">Validate</button>
+      </form>
+      <div id="message"></div>
+
+
+      <p id="para">Contact: 123-456-7890</p>
+
+      
+
+    <script>
+        $("p").filter(function() {
+            return $(this).text().match(/hi/i);
+            // return $(this).text().match(/Hi/);
+            // i is case-insensitive case
+
+          }).css("color", "blue");
+
+
+          $("#validate").click(function() {
+            let email = $("#email").val();
+            let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+          
+            if (emailPattern.test(email)) {
+              $("#message").text("Valid email!").css("color", "green");
+            } else {
+              $("#message").text("Invalid email!").css("color", "red");
+            }
+          });
+          
+          $("#para").html(function(index, oldHtml) {
+            return oldHtml.replace(/\d/g, "*"); 
+            // d match digit
+            // g matches global match 
+            // m multiline match
+          });
+          
+          
+    </script>
+</body>
+</html>

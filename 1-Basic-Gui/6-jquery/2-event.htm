@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p id="first">hello jeeee</p>
+    <p id="second">hello everyonne</p>
+    <p id="third">hello programmaing</p>
+
+    <h1>hello jee kese ho  sare</h1>
+    
+
+    <script>
+        $(document).ready(function(){
+            $("p:first").click(function(){
+                $("p:not(#first)").hide();
+            })
+        })
+
+        $(document).ready(function(){
+            $("p:first").dblclick(function(){
+                $("p:not(#first)").show();
+            })
+        })
+
+        $(document).ready(function(){
+            $("#first").mouseenter(function(){
+                alert("you entered paragraph")
+            })
+        })
+
+        $(document).ready(function(){
+            $("#first").mouseleave(function(){
+                alert("bye bye first para")
+            })
+        })
+
+        $(document).ready(function(){
+            $("#third").mouseup(function(){
+                alert("you up third para")
+            })
+        })
+
+        $(document).ready(function(){
+            $("#second").mousedown(function(){
+                alert("you down second para")
+            })
+        })
+
+        $(document).ready(function(){
+            $("h1").hover(function(){
+              alert("You entered p1!");
+            },
+            function(){
+              alert("Bye! You now leave p1!");
+            }); 
+          });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Load Example</title>
+</head>
+<body>
+    <h2>Click the Button to Load Content</h2>
+    <button id="loadContent">Load Content</button>
+    
+    <div id="contentArea" style="border: 1px solid black">
+        
+
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $("#loadContent").click(function() {
+                $("#contentArea").load("content-load.htm");  // Load content from 'content.html' into the div
+            });
+        });
+    </script>
+</body>
+</html>

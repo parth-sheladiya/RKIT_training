@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h2>Basic Form Validation</h2>
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br><br>
+
+        <button type="submit">Submit</button>
+
+        <div id="error" style="color: red; margin-top: 10px;"></div>
+    </form>
+
+    <script>
+        $(document).ready(function() {
+            $("#myForm").submit(function(event) {
+                event.preventDefault();
+
+                let name = $("#name").val().trim();
+                let email = $("#email").val().trim();
+                let bool = true;
+
+                $("#error").html(""); // Clear previous error messages
+
+                if (!name) {
+                    $("#error").append("<p>Name is required!</p>");
+                    bool = false;
+                }
+
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!email) {
+                    $("#error").append("<p>Email is required!</p>");
+                    bool = false;
+                } else if (!emailPattern.test(email)) {
+                    $("#error").append("<p>Invalid email!</p>");
+                    bool = false;
+                }
+
+                if (!bool) {
+                    setTimeout(function() {
+                        $("#error").fadeOut("slow", function() {
+                            $(this).html("").show(); // Clear and reset visibility
+                        });
+                    }, 3000);
+                }
+
+                if (bool) {
+                    alert("Form submitted successfully");
+                    
+                    // Reset the form fields
+                    $("#myForm")[0].reset(); // Reset the entire form
+                }
+            });
+        });
+    </script>
+</body>
+</html>

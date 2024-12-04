@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <button>Click me</button><br><br>
+
+    <button id="btnForAnimation">animation</button>
+
+<div id="divOne" style="width:80px;height:80px;background-color:red;"></div><br>
+
+<div id="divTwo" style="width:80px;height:80px;background-color:green;"></div><br>
+
+<div id="divThree" style="width:80px;height:80px;background-color:blue;"></div><br>
+
+<div id="divFour" style="width:80px;height:80px;background-color:yellow;position:relative"></div><br>
+
+
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#divOne").fadeToggle();
+                $("#divTwo").fadeToggle("slow");
+                $("#divThree").fadeToggle(5000);
+            })
+        })
+
+        $(document).ready(function(){
+            $("#btnForAnimation").click(function(){
+              $("#divFour").animate({left: '250px'});
+            });
+          });
+
+    </script>
+</body>
+</html>

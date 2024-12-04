@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        
+        .blue-box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            border-radius: 8px; /* Adds rounded corners */
+        }
+    </style>
+</head>
+
+<body>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+
+    <ol>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ol>
+
+    <button id="btnToggle">append/prepend</button>
+
+    <div class="blue-box">hello</div><br><br>
+    <button id="btn1">add before</button>
+    <button id="btn2">add after</button>
+
+    <script>
+        $(document).ready(function () {
+           
+            let isAppendMode = false;
+
+            $("#btnToggle").click(function () {
+                if (isAppendMode) {
+                    
+                    $("p").append(" <b>Appended text</b>.");
+                    $("ol").append("<li>Appended item</li>");
+                    $(this).text("Switch to Prepend Mode");
+                } else {
+                    
+                    $("p").prepend("<b>Prepended text</b>. ");
+                    $("ol").prepend("<li>Prepended item</li>");
+                    $(this).text("Switch to Append Mode");
+                }
+
+                
+                isAppendMode = !isAppendMode;
+            });
+        });
+
+
+        // after before 
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+              $("div").before("<b>Before</b>");
+            });
+          
+            $("#btn2").click(function(){
+              $("div").after("<i>After</i>");
+            });
+          });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 1 map fun  -->
+
+    <ul>
+        <li>apple</li>
+        <li>banana</li>
+        <li>cherry</li>
+    </ul>
+
+    <script>
+        let uppercaseTexts = $("li").map(function (index, element) {
+            return $(this).text().toUpperCase();
+        }).get();
+
+        console.log(uppercaseTexts);
+
+
+        // 2 grep
+        let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+
+        let oddNumbers = $.grep(numbers, function (value) {
+            return value % 2 !== 0;
+        });
+
+        console.log(oddNumbers);
+
+        // 3 extand 
+        let defaultSettings = { theme: "light", fontSize: "14px" };
+        let userSettings = { fontSize: "16px", color: "blue" };
+
+        let finalSettings = $.extend({}, defaultSettings, userSettings);
+
+        console.log(finalSettings);
+
+
+        // 4 extand 
+        let items = ["apple", "banana", "cherry"];
+
+        $.each(items, function (index, value) {
+            console.log(index + ": " + value);
+        });
+
+        // 5 merge
+
+        let array1 = [1, 2, 3];
+        let array2 = [4, 5, 6];
+
+        let mergedArray = $.merge(array1, array2);
+
+        console.log(mergedArray); 
+
+
+
+
+
+    </script>
+</body>
+
+</html>
