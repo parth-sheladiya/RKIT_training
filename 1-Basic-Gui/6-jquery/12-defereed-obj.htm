@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>defereed object</h1>
+
+
+
+
+    <script>
+
+        function fetchUserData() {
+            var deferred = $.Deferred();
+
+
+            $.ajax({
+                url: "https://jsonplaceholder.typicode.com/users/1",
+                method: "GET",
+                success: function (data) {
+                    deferred.resolve(data);
+                },
+                error: function (error) {
+                    deferred.reject(error);
+                }
+            });
+
+            return deferred.promise();
+        }
+
+
+        fetchUserData()
+            .done(function (data) {
+                console.log("User Data:", data);
+            })
+            .fail(function (error) {
+                console.error("Error:", error);
+            })
+            .always(function () {
+                console.log("AJAX operation completed!");
+            });
+
+      
+
+
+        // success option
+        let deferredSuceess = $.Deferred();
+
+        // asynchronous operation
+        setTimeout(function () {
+            // Operation successful
+            deferredSuceess.resolve('Task Completed');
+        }, 2000);
+
+        // Handling success and failure
+        deferredSuceess.done(function (result) {
+            console.log(result);  // Output: Task Completed
+        }).fail(function (error) {
+            console.log(error);
+        });
+
+
+        // fail option
+        let deferredFail = $.Deferred();
+
+        // Simulating an asynchronous operation
+        setTimeout(function () {
+            // Operation failed
+            deferredFail.reject('Task Failed');
+        }, 5000);
+
+        //  success and failure
+        deferredFail.done(function (result) {
+            console.log(result);
+        }).fail(function (error) {
+            console.log(error); 
+        });
+
+    
+
+        let deferred1 = $.Deferred();
+        let deferred2 = $.Deferred();
+
+        // Simulating asynchronous operations
+        setTimeout(function () {
+            deferred1.resolve('Task 1 Completed');
+        }, 1000);
+
+        setTimeout(function () {
+            deferred2.resolve('Task 2 Completed');
+        }, 2000);
+
+        $.when(deferred1, deferred2).done(function (result1, result2) {
+            console.log(result1);  
+            console.log(result2);  
+        });
+
+
+
+
+        // promise object
+        let promise = new Promise(function (resolve, reject) {
+            setTimeout(function () {
+                // Randomly resolve or reject for demonstration
+                let success = Math.random() > 0.5;  // 50% chance of success
+
+                if (success) {
+                    resolve("Data is ready!");
+                } else {
+                    reject("Failed to fetch data.");
+                }
+            }, 2000);
+        });
+
+        
+        promise
+            .then(function (data) {
+                console.log(data); 
+            })
+            .catch(function (error) {
+                console.log(error); 
+            });
+
+
+
+
+    </script>
+</body>
+
+</html>

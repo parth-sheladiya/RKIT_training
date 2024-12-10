@@ -9,61 +9,129 @@
 </head>
 
 <body>
-    <!-- 1 map fun  -->
-
-    <ul>
-        <li>apple</li>
-        <li>banana</li>
-        <li>cherry</li>
-    </ul>
-
     <script>
-        let uppercaseTexts = $("li").map(function (index, element) {
-            return $(this).text().toUpperCase();
-        }).get();
+        console.log("start map function");
+        let numbers = [1, 2, 3, 4];
+        let doubled = $.map(numbers, function (value) {
+            return value * 2;
+        });
+        console.log(doubled); // Output: [2, 4, 6, 8]
 
-        console.log(uppercaseTexts);
+
+        let names = { 1: "apple", 2: "banana", 3: "orange" };
+        let upperCaseNames = $.map(names, function (value) {
+            return value.toUpperCase();
+        });
+        console.log(upperCaseNames);
+
+        console.log("end map function");
 
 
-        // 2 grep
-        let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+        console.log("start grep function");
 
-        let oddNumbers = $.grep(numbers, function (value) {
-            return value % 2 !== 0;
+        let numberGrep = [1, 2, 3, 4, 5, 6];
+        let evenNumbers = $.grep(numberGrep, function (value) {
+            return value % 2 === 0; // Keep even numbers
+        });
+        console.log(evenNumbers);
+
+        let users = [
+            { name: 'Alice', age: 25 },
+            { name: 'Bob', age: 30 },
+            { name: 'Charlie', age: 35 }
+        ];
+
+
+        let filteredUsers = $.grep(users, function (user) {
+            return user.age > 30;
         });
 
-        console.log(oddNumbers);
+        console.log(filteredUsers);
 
-        // 3 extand 
-        let defaultSettings = { theme: "light", fontSize: "14px" };
-        let userSettings = { fontSize: "16px", color: "blue" };
-
-        let finalSettings = $.extend({}, defaultSettings, userSettings);
-
-        console.log(finalSettings);
+        let usersInvert = [
+            { name: 'Alice', age: 25 },
+            { name: 'Bob', age: 30 },
+            { name: 'Charlie', age: 35 }
+        ];
 
 
-        // 4 extand 
-        let items = ["apple", "banana", "cherry"];
+        let filteredUser = $.grep(usersInvert, function (user) {
+            return user.age > 30;
+        }, true);
 
-        $.each(items, function (index, value) {
-            console.log(index + ": " + value);
+        console.log(filteredUser);
+
+        console.log("end grep function");
+
+        console.log("start extend function");
+
+        let obj1 = { a: 1, b: 2 };
+        let obj2 = { b: 3, c: 4 };
+        let obj3 = {d:4 ,e:5};
+
+        let result = $.extend({}, obj1, obj2 , obj3);
+
+        console.log(result);
+
+
+        let objOne = { a: 1, b: { x: 10, y: 20 } };
+        let objTwo = { b: { y: 30, z: 40 }, c: 5 };
+
+        let resultTrue = $.extend(true, {}, objOne, objTwo);
+
+        console.log(resultTrue);
+
+        console.log("end extend function");
+
+
+        console.log("start each function");
+        let numberEach = [10, 20, 30, 40];
+
+        $.each(numberEach, function (index, value) {
+            console.log(`Index: ${index}, Value: ${value}`);
         });
 
-        // 5 merge
+        let user = { name: 'Alice', age: 25, city: 'New York' };
+
+        $.each(user, function (key, value) {
+            console.log(`Key: ${key}, Value: ${value}`);
+        });
+
+        let numberStoppingMethod = [10, 20, 30, 40];
+
+        $.each(numberStoppingMethod, function (index, value) {
+            if (value === 30) {
+                console.log('Stopping the loop at value 30');
+                return false;
+            }
+            console.log(value);
+
+        });
+        console.log("end each function");
+
+        console.log("start merge function");
 
         let array1 = [1, 2, 3];
         let array2 = [4, 5, 6];
 
         let mergedArray = $.merge(array1, array2);
 
-        console.log(mergedArray); 
+        console.log(mergedArray);
 
 
+        let obj1Merge = { name: 'Alice', age: 25 };
+        let obj2Merge = { city: 'New York', age: 30 };
+
+        let merged = $.merge(obj1Merge, obj2Merge);
+
+        console.log(merged);
+
+        console.log("end merge function");
 
 
 
     </script>
+
 </body>
 
 </html>

@@ -7,34 +7,51 @@
     <title>Document</title>
 </head>
 <body>
-    <form id="myForm">
-        <input type="text" id="username" placeholder="Enter username">
-        <button type="button" id="submit">Submit</button>
-      </form>
-      <div id="message"></div>
+   
+       
+        <button type="myButton" id="submit">Submit</button>
+      
       
     <script>
-        function validateForm(callback) {
-            let username = $("#username").val();
-            if (username === "") {
-              $("#message").text("Username cannot be empty").css("color", "red");
-              setTimeout(function() {
-                $("#message").text("");
-              }, 3000);
-            } else {
-              callback(); 
-            }
-          }
-          
-          $("#submit").click(function() {
-            validateForm(function() {
-              $("#message").text("Form submitted successfully!").css("color", "green");
-              setTimeout(function() {
-                $("#message").text("");
-              }, 3000);
-            });
-          });
-          
+      $.functionName(params, function() {
+        // Callback function logic here
+      });
+
+      $('#myButton').click(function() {
+        alert('Button clicked!');
+      });
+      
+      $.ajax({
+        url: 'https://api.example.com/data',
+        type: 'GET',
+        success: function(response) {
+          console.log('Data received:', response);
+        },
+        error: function() {
+          console.log('An error occurred');
+        }
+      });
+        //if responce true then success call back
+        //if responce false then error call back
+
+
+        $('#box').fadeOut(1000, function() {
+          alert('Fade out complete!');
+        });
+        
+        function firstTask(callback) {
+          console.log('First task complete');
+          callback();  
+          // Call second task after first task
+        }
+        
+        function secondTask() {
+          console.log('Second task complete');
+        }
+        
+        firstTask(secondTask); 
+        // Passing secondTask as callback
+        
           
     </script>
 </body>

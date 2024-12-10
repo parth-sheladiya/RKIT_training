@@ -30,6 +30,63 @@
                 });
             });
         });
+
+
+        // post request
+        const userData = {
+            name: "Alice",
+            age: 25,
+          };
+    
+        const jsonUserData = JSON.stringify(userData);
+        console.log("Serialized data:", jsonUserData);
+
+
+        $.ajax({
+            url: "https://example.com/api/users",
+            type: "POST",
+            dataType: "json",
+            data: jsonUserData,
+            success: (response) => {
+              const responseData = JSON.parse(response);
+              console.log("Response data:", responseData);
+            },
+            error: (error) => {
+              console.error("Error:", error);
+            },
+          });
+
+          $.ajax({
+            url: 'https://jsonplaceholder.typicode.com/posts/1',
+            method: 'PUT',
+            data: JSON.stringify({
+                title: 'Updated Title',
+                body: 'This is the updated body content.',
+                userId: 1
+            }),
+            dataType: 'json',
+            success: function(response) {
+                console.log('Data updated successfully:', response);
+            },
+            error: function(xhr, status, error) {
+                console.error('Error:', error);
+            }
+        });
+        
+        
+        $.ajax({
+            url: 'https://jsonplaceholder.typicode.com/posts/1',  // Specific post ko delete kar rahe hain
+            method: 'DELETE',
+            success: function(response) {
+                console.log('Data deleted successfully:', response);
+            },
+            error: function(xhr, status, error) {
+                console.error('Error:', error);
+            }
+        });
+        
+          
+
     </script>
 </body>
 </html>

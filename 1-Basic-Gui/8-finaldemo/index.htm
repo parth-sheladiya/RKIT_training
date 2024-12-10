@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- Welcome Message -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 id="welcomeMessage">Welcome</h2>
+            <button id="logoutBtn" class="btn btn-danger">Logout</button>
+        </div>
+
+        <!-- Add Todo Section -->
+        <div id="addTodoSection" class="mb-4">
+            <h4>Add New Task</h4>
+            <form id="addTodoForm" class="p-3 border rounded shadow">
+                <div class="mb-3">
+                    <label for="todoTitle" class="form-label">Task Title</label>
+                    <input type="text" class="form-control" id="todoTitle" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Add Task</button>
+            </form>
+        </div>
+
+        <!-- Todos List -->
+        <div id="todoList" class="list-group mb-4">
+            <!-- Dynamically loaded todos will appear here -->
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // Check if user is registered and logged in
+            const user = JSON.parse(localStorage.getItem("user"));
+           // console.log(user)
+            if (!user) {
+                // Redirect to register page if no user data exists
+                alert("You are not registered yet!");
+                window.location.href = "register.htm";
+                return;
+            }else if (!user.isLoggedIn) {
+                // Redirect to login page if user is registered but not logged in
+                alert("You are not logged in!");
+                window.location.href = "login.htm";
+                console.log(user.isLoggedIn)
+                
+            }
+
+            // Display welcome message
+            $("#welcomeMessage").text(`Welcome, ${user.name}`);
+
+            // Fetch Todos
+            function fetchTodos() {
+                $.ajax({
+                    url: "https://jsonplaceholder.typicode.com/todos", // Fake API for demo
+                    method: "GET",
+                    success: function (todos) {
+                        $("#todoList").empty(); // Clear existing todos
+                        todos.slice(0, 10).forEach(todo => { // Display first 10 todos
+                            const todoItem = `
+                                <div class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span>${todo.title}</span>
+                                    <div>
+                                        <button class="btn btn-sm btn-primary editTodo" data-id="${todo.id}">Edit</button>
+                                        <button class="btn btn-sm btn-danger deleteTodo" data-id="${todo.id}">Delete</button>
+                                    </div>
+                                </div>`;
+                            $("#todoList").append(todoItem);
+                        });
+                    },
+                    error: function (error) {
+                        console.error("Error fetching todos:", error);
+                    }
+                });
+            }
+
+            // Initial fetch
+            fetchTodos();
+
+            // Add new todo
+            $("#addTodoForm").on("submit", function (e) {
+                e.preventDefault();
+
+                const todoTitle = $("#todoTitle").val().trim();
+                if (!todoTitle) {
+                    alert("Task title cannot be empty!");
+                    return;
+                }
+
+                $.ajax({
+                    url: "https://jsonplaceholder.typicode.com/todos", // Fake API for demo
+                    method: "POST",
+                    contentType: "application/json",
+                    data: JSON.stringify({ title: todoTitle, completed: false }),
+                    success: function (newTodo) {
+                        alert("Task added successfully!");
+                        fetchTodos(); // Refresh the list
+                        $("#addTodoForm")[0].reset(); // Clear the form
+                    },
+                    error: function (error) {
+                        console.error("Error adding todo:", error);
+                    }
+                });
+            });
+
+            // Edit todo
+            $(document).on("click", ".editTodo", function () {
+                const todoId = $(this).data("id");
+                const newTitle = prompt("Enter the updated task title:");
+                if (newTitle) {
+                    $.ajax({
+                        url: `https://jsonplaceholder.typicode.com/todos/${todoId}`,
+                        method: "PUT",
+                        contentType: "application/json",
+                        data: JSON.stringify({ title: newTitle, completed: false }),
+                        success: function () {
+                            alert("Task updated successfully!");
+                            fetchTodos(); // Refresh the list
+                        },
+                        error: function (error) {
+                            console.error("Error updating todo:", error);
+                        }
+                    });
+                }
+            });
+
+            // Delete todo
+            $(document).on("click", ".deleteTodo", function () {
+                const todoId = $(this).data("id");
+                if (confirm("Are you sure you want to delete this task?")) {
+                    $.ajax({
+                        url: `https://jsonplaceholder.typicode.com/todos/${todoId}`,
+                        method: "DELETE",
+                        success: function () {
+                            alert("Task deleted successfully!");
+                            fetchTodos(); // Refresh the list
+                        },
+                        error: function (error) {
+                            console.error("Error deleting todo:", error);
+                        }
+                    });
+                }
+            });
+
+            // Logout
+            $("#logoutBtn").on("click", function () {
+                const user = JSON.parse(localStorage.getItem("user"));
+                if (user) {
+                    user.isLoggedIn = false; // Mark user as logged out
+                    localStorage.setItem("user", JSON.stringify(user));
+                }
+                alert("You have been logged out!");
+                window.location.href = "login.htm"; // Redirect to login page
+            });
+        });
+    </script>
+</body>
+</html>

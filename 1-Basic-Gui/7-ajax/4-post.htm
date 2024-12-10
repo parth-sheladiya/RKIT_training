@@ -32,9 +32,12 @@
                 };
 
                 // Send data using POST request
-                $.post("https://jsonplaceholder.typicode.com/posts", formData, function(response) {
+                $.post("https://jsonplaceholder.typicode.com/posts", formData, function(response, status, xhr) {
                    
                     $("#responseMsg").html("<p>Data sent successfully "+"</p>");
+                    alert("Status : " + status);
+                    alert(xhr);
+                    
                 }).fail(function(error) {
                     // Handle errors
                     $("#responseMsg").html("<p>Error sending data.</p>");

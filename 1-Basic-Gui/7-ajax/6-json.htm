@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>json&serialization</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+        // it is use to convert javascript object to string format(json)
+        let obj = { name: "parth", department: "CSE", marks: 90 };
+        let serializedData = JSON.stringify(obj);
+        console.log("serialization data",serializedData);
+
+        // Converting serialized data back into its original form
+        let jsonString = '{"name":"parth","department":"CSE" , "marks":"90"}';
+        let deserializedData = JSON.parse(jsonString);
+        console.log("Deserialization data",deserializedData.name , deserializedData.department , deserializedData.marks);
+
+    </script>
+</body>
+
+</html>
