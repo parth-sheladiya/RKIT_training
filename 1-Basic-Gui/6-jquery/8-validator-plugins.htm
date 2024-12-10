@@ -6,71 +6,88 @@
     <title>Form Example</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- jQuery Validation CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.css" rel="stylesheet">
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <div class="container mt-5">
         <h2 class="text-center">Registration Form</h2>
-        <form id="registerFormSubmit">
+        <form id="validationForm">
             <div class="form-group">
                 <label for="name">Full Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name">
             </div>
             <div class="form-group">
                 <label for="email">Email address</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" >
+                <small class="form-text text-muted">Enter a 10-digit phone number</small>
+            </div>
+            <div class="form-group">
+                <label for="url">Website URL</label>
+                <input type="url" class="form-control" id="url" name="url" placeholder="Enter your website URL">
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                <input type="password" class="form-control" name="password" id="password" placeholder="Enter your password">
             </div>
-            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            <button type="submit"  class="btn btn-success btn-block">Submit</button>
         </form>
     </div>
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <!-- jQuery Validation Plugin -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- jQuery Validate plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
 
     <script>
-        $(document).ready(function(){
-            // Initialize validation
-            $("#registerFormSubmit").validate({
+        $(document).ready(function() {
+            // Initialize form validation
+            $("#validationForm").validate({
                 rules: {
-                    name: {
-                        required: true,
-                    },
+                    name: "required",
                     email: {
                         required: true,
-                        email: true,
+                        email: true
+                    },
+                    phone: {
+                        required: true,
+                        minlength:10 // Ensure the phone number is a valid 10-digit number
+                    
+                    },
+                    url: {
+                        required: true,
+                        url: true // Ensure the URL is valid
                     },
                     password: {
-                        required: true,
-                        minlength: 8,  // Minimum length 8 characters
+                        required: true, // Ensure the password is required
+                        minlength: 6 // Ensure the password is at least 6 characters long
                     }
                 },
                 messages: {
-                    name: {
-                        required: "Please enter your full name",
+                    name: "Please enter your name",
+                    email: "Please enter email address",
+                    phone: {
+                        required: "Please enter your phone number",
+                        minlength: "Please enter a valid 10-digit phone number"
                     },
-                    email: {
-                        required: "Please enter your email",
-                        email: "Please enter a valid email",
-                    },
+                    url: "Please enter a valid website URL",
                     password: {
-                        required: "Please enter your password",
-                        minlength: "Password must be at least 8 characters", // Error for minimum length
+                        required: "Please enter a password",
+                        minlength: "Password must be at least 6 characters long"
                     }
                 },
                 submitHandler: function(form) {
-                    // No need to manually check password length, validation plugin handles it
-                    alert("Form is valid. Submitting...");
-                    form.submit(); // Submit the form if password length is valid
+                    // Show alert on successful validation
+                    alert("Form successfully validated!");
+                    // Now, submit the form
+                    form.submit();
                 }
             });
         });
