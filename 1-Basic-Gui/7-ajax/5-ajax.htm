@@ -31,32 +31,8 @@
             });
         });
 
-
-        // post request
-        const userData = {
-            name: "Alice",
-            age: 25,
-          };
-    
-        const jsonUserData = JSON.stringify(userData);
-        console.log("Serialized data:", jsonUserData);
-
-
+        // PUT request
         $.ajax({
-            url: "https://example.com/api/users",
-            type: "POST",
-            dataType: "json",
-            data: jsonUserData,
-            success: (response) => {
-              const responseData = JSON.parse(response);
-              console.log("Response data:", responseData);
-            },
-            error: (error) => {
-              console.error("Error:", error);
-            },
-          });
-
-          $.ajax({
             url: 'https://jsonplaceholder.typicode.com/posts/1',
             method: 'PUT',
             data: JSON.stringify({
@@ -65,6 +41,7 @@
                 userId: 1
             }),
             dataType: 'json',
+            
             success: function(response) {
                 console.log('Data updated successfully:', response);
             },
@@ -72,10 +49,10 @@
                 console.error('Error:', error);
             }
         });
-        
-        
+
+        // DELETE request
         $.ajax({
-            url: 'https://jsonplaceholder.typicode.com/posts/1',  // Specific post ko delete kar rahe hain
+            url: 'https://jsonplaceholder.typicode.com/posts/1',
             method: 'DELETE',
             success: function(response) {
                 console.log('Data deleted successfully:', response);
@@ -84,9 +61,6 @@
                 console.error('Error:', error);
             }
         });
-        
-          
-
     </script>
 </body>
 </html>

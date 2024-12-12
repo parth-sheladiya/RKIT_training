@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App - Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-5">
+                <!-- Animated Heading -->
+                <div class="text-center mt-5">
+                    <h1 id="todoAppHeading" class="text-primary fw-bold display-4 opacity-0">
+                        Todo App
+                    </h1>
+                </div>
+
+                <!-- Card for Login -->
+                <div class="card shadow mt-4">
+                    <div class="card-body">
+                        <!-- Login Header -->
+                        <h2 class="card-title text-center text-primary mb-4">Login</h2>
+                        <p class="text-center text-muted">Welcome back! Please login to your account.</p>
+                        
+                        <!-- Login Form -->
+                        <form id="loginFormSubmit">
+                            <div class="mb-3">
+                                <label for="loginEmail" class="form-label">Email Address</label>
+                                <input type="email" name="loginEmail" class="form-control" id="loginEmail" placeholder="Enter your email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="loginPassword" class="form-label">Password</label>
+                                <input type="password" name="loginPassword" class="form-control" id="loginPassword" placeholder="Enter your password" required>
+                            </div>
+                            <button type="submit" class="btn btn-success w-100">Login</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Register Link -->
+                <div class="text-center mt-3">
+                    <p class="text-muted">Don't have an account? <a href="registration.htm" class="text-primary">Register here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Heading Animation
+            const heading = $("#todoAppHeading");
+            setTimeout(() => {
+                heading.removeClass("opacity-0").addClass("opacity-100 fade show");
+            }, 2000); // Delay for animation
+
+            // Check if user is already logged in
+            const loggedInEmail = localStorage.getItem("loggedInEmail");
+            if (loggedInEmail) {
+                // If logged in, redirect to the index page
+                window.location.href = "index.htm";
+            }
+        });
+
+        
+    </script>
+
+    <script src="./js/login.js"></script>
+</body>
+</html>

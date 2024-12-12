@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>AJAX POST Example</title>
+</head>
+<body>
+    <h2>Submit User Data</h2>
+    <button id="submitUserData">Submit</button>
+
+    <script>
+        $(document).ready(function() {
+            $("#submitUserData").click(function() {
+                const userData = {
+                    name: "Alice",
+                    age: 25,
+                };
+                
+                $.ajax({
+                    url: "https://jsonplaceholder.typicode.com/posts", 
+                    type: "POST",
+                    dataType: "json",
+                    data: JSON.stringify(userData), 
+                    success: function(response) {
+                        console.log("Response data:", response);
+                    },
+                    error: function(error) {
+                        console.error("Error:", error);
+                    },
+                });
+                
+            });
+        });
+    </script>
+</body>
+</html>
