@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX DELETE Request Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <h1>AJAX DELETE Request Example</h1>
+    <button id="deletePost">Delete Post</button>
+
+    <script>
+        $(document).ready(function () {
+            $('#deletePost').click(function () {
+                // AJAX DELETE request
+                $.ajax({
+                    url: "https://jsonplaceholder.typicode.com/posts/1", // API endpoint
+                    type: "DELETE", // HTTP method
+                    success: function (response) {
+                        console.log("Post deleted successfully:", response);
+                        alert("Post deleted successfully!");
+                    },
+                    error: function (xhr, status, error) {
+                        console.error("Error deleting post:", error);
+                        alert("Failed to delete post.");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

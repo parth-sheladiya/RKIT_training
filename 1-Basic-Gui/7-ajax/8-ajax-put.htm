@@ -8,31 +8,27 @@
 </head>
 <body>
     <h1>AJAX PUT Request Example</h1>
-    <button id="updatePost">Update Post</button>
+    <button id="updateUser">Update User</button>
 
     <script>
         $(document).ready(function () {
-            $('#updatePost').click(function () {
-                
+            $('#updateUser').click(function () {
+               
                 const updatedData = {
-                    id: 1,
-                    title: "updated title",
-                    body: "updated body",
-                    userId: 1
+                    name: "John Doe",
+                    email: "john.doe@example.com"
                 };
-
-                
                 $.ajax({
-                    url: "https://jsonplaceholder.typicode.com/posts/1", 
+                    url: "https://example.com/api/users/1", 
                     type: "PUT", 
                     data: JSON.stringify(updatedData), 
                     success: function (response) {
-                        console.log("Post updated successfully:", response);
-                        alert("Post updated successfully! Title: " + response.title);
+                        console.log("User updated successfully:", response);
+                        alert("User updated successfully!");
                     },
                     error: function (xhr, status, error) {
-                        console.error("Error updating post:", error);
-                        alert("Failed to update post.");
+                        console.error("Error updating user:", error);
+                        alert("Failed to update user.");
                     }
                 });
             });
