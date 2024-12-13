@@ -1,6 +1,6 @@
 class TodoApp {
-  static USER_KEY_PREFIX = "user_"; // Static prefix for user data
-  static TODO_KEY_PREFIX = "todos_"; // Static prefix for todos
+  static UserDataKey = "user_"; 
+  static TodoDataKey = "todos_";
 
   constructor() {
     this.loggedInEmail = localStorage.getItem("loggedInEmail");
@@ -19,12 +19,12 @@ class TodoApp {
   checkLogin() {
     if (!this.loggedInEmail) {
 
-      window.location.href = "login.htm";
+      window.location.href = "login.html";
       // redirectTo("index.htm")
     } else {
       // get todo data if user is alerady login
       const userData = JSON.parse(
-        localStorage.getItem(TodoApp.USER_KEY_PREFIX + this.loggedInEmail)
+        localStorage.getItem(TodoApp.UserDataKey+ this.loggedInEmail)
       );
       this.usernameElement.text(userData.firstName + " " + userData.lastName);
     }
@@ -44,7 +44,7 @@ class TodoApp {
   renderTodos(todos) {
     // Agar todos argument pass nahi hota, toh localStorage se fetch karo
     if (!todos) {
-        todos = JSON.parse(localStorage.getItem(TodoApp.TODO_KEY_PREFIX + this.loggedInEmail)) || [];
+        todos = JSON.parse(localStorage.getItem(TodoApp.TodoDataKey + this.loggedInEmail)) || [];
     }
 
     this.todoListElement.empty();
@@ -66,18 +66,16 @@ class TodoApp {
         });
     }
 }
-
   // render todo part end
 
 
   // add todo part start
-
   addTodo() {
     const title = this.titleInput.val().trim();
     const description = this.descriptionInput.val().trim();
 
     if (title && description) {
-      let todos = JSON.parse(localStorage.getItem(TodoApp.TODO_KEY_PREFIX + this.loggedInEmail)) || [];
+      let todos = JSON.parse(localStorage.getItem(TodoApp.TodoDataKey + this.loggedInEmail)) || [];
 
       // Check for duplicate title
       const isDuplicate = todos.some(
@@ -93,7 +91,7 @@ class TodoApp {
 
       // not duplicate then add data to locastorage and display ui using rendor function
       todos.push({ title, description });
-      localStorage.setItem(TodoApp.TODO_KEY_PREFIX + this.loggedInEmail,JSON.stringify(todos));
+      localStorage.setItem(TodoApp.TodoDataKey + this.loggedInEmail,JSON.stringify(todos));
 
       this.titleInput.val("");
       this.descriptionInput.val("");
@@ -102,20 +100,16 @@ class TodoApp {
       alert("Please enter both title and description.");
     }
   }
-
   // add todo part end
 
   // Search todos part start
   searchTodos() {
     const searchQuery = this.searchInput.val().trim().toLowerCase();
-    const todos =
-      JSON.parse(
-        localStorage.getItem(TodoApp.TODO_KEY_PREFIX + this.loggedInEmail)
-      ) || [];
+    const todos =JSON.parse(localStorage.getItem(TodoApp.TodoDataKey + this.loggedInEmail)) || [];
 
-    //  jQuery $.grep for filtering
+    
     // includes is use to serchquery exists in title matching
-    const filteredTodos = $.grep(todos, function(todo) {
+    const filteredTodos = todos.filter(todos, function(todo) {
       return todo.title.toLowerCase().includes(searchQuery);
     });
 
@@ -127,24 +121,26 @@ class TodoApp {
 
     this.renderTodos(filteredTodos);
 }
-// Search todos part end
+  // Search todos part end
 
 
-  // Show all todos
+  // Show all todos part start
   showAllTodos() {
     this.searchInput.val(""); 
     this.renderTodos(); 
   }
+  // Show all todos part end
 
-  // rendom api using json place holder
+  
   generateTodo() {
     // fun. call through ajax.js 
     fetchRandomTodo(); 
   }
 
+
   // Edit a todo part start
   editTodo(index) {
-    let todos = JSON.parse(localStorage.getItem(TodoApp.TODO_KEY_PREFIX + this.loggedInEmail));
+    let todos = JSON.parse(localStorage.getItem(TodoApp.TodoDataKey + this.loggedInEmail));
     const todo = todos[index];
 
     this.titleInput.val(todo.title);
@@ -156,7 +152,7 @@ class TodoApp {
         todo.description = this.descriptionInput.val().trim();
 
         todos[index] = todo;
-        localStorage.setItem(TodoApp.TODO_KEY_PREFIX + this.loggedInEmail,JSON.stringify(todos));
+        localStorage.setItem(TodoApp.TodoDataKey + this.loggedInEmail,JSON.stringify(todos));
 
         this.titleInput.val("");
         this.descriptionInput.val("");
@@ -170,14 +166,14 @@ class TodoApp {
 
   // delete todo part start
   deleteTodo(index) {
-    let todos = JSON.parse(localStorage.getItem(TodoApp.TODO_KEY_PREFIX + this.loggedInEmail));
+    let todos = JSON.parse(localStorage.getItem(TodoApp.TodoDataKey + this.loggedInEmail));
 
     // Remove the todo from the list
     todos.splice(index, 1);
     // remove todo
-    localStorage.removeItem(TodoApp.TODO_KEY_PREFIX + this.loggedInEmail);
+    localStorage.removeItem(TodoApp.TodoDataKey + this.loggedInEmail);
     // store update todo
-    localStorage.setItem(TodoApp.TODO_KEY_PREFIX + this.loggedInEmail, JSON.stringify(todos));
+    localStorage.setItem(TodoApp.TodoDataKey + this.loggedInEmail, JSON.stringify(todos));
     this.renderTodos();
 }
 // delete todo part end
@@ -186,7 +182,7 @@ class TodoApp {
   // Logout functionality
   logout() {
     localStorage.removeItem("loggedInEmail");
-    window.location.href = "login.htm";
+    window.location.href = "login.html";
   }
 }
 

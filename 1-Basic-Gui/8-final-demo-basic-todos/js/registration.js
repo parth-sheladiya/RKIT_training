@@ -83,13 +83,13 @@ $(document).ready(function () {
             // Redirect to login page after successful registration
             alert("Registration successful. Please login.");
             // two method learn
-            // window.location.href = 'login.htm';
+            // window.location.href = 'login.html';
             // self is use to current window load
-            window.open("login.htm", "_self"); 
+            window.open("login.html", "_self"); 
             // function redirectTo(url) {
             //     window.location.href = url;
             // }
-            // redirectTo("login.htm");
+            // redirectTo("login.html");
             
         }
     });

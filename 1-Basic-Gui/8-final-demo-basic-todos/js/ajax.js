@@ -2,10 +2,12 @@
 
 function fetchRandomTodo() {
     $.ajax({
-        url: 'https://jsonplaceholder.typicode.com/posts', // API endpoint
+        url: 'https://jsonplaceholder.typicode.com/posts', 
         method: 'GET',
         success: function(response) {
             // Choose a random post from the API response
+            // floor means int val(round off)
+            // random means random number
             const randomPost = response[Math.floor(Math.random() * response.length)];
 
             // Set the title and description in the input fields

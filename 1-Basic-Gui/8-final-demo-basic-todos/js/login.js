@@ -35,9 +35,9 @@ $(document).ready(function () {
                     localStorage.setItem('loggedInEmail', email);
 
                     // redirect to index page
-                    window.location.href = 'index.htm';
+                    window.location.href = 'index.html';
                     // reuse code 
-                    // redirectTo("index.htm")
+                    // redirectTo("index.html")
                 } else {
                     alert("Incorrect password. Please try again.");
                 }
