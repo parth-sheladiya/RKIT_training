@@ -1,0 +1,333 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|g:\\.net\\basic_c#\\basic_c_sharp\\fileoperationsdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|solutionrelative:fileoperationsdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|g:\\.net\\basic_c#\\basic_c_sharp\\enumerationdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|solutionrelative:enumerationdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|g:\\.net\\basic_c#\\basic_c_sharp\\datetimeclassdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|solutionrelative:datetimeclassdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|g:\\.net\\basic_c#\\basic_c_sharp\\datatypesdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|solutionrelative:datatypesdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|g:\\.net\\basic_c#\\basic_c_sharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|g:\\.net\\basic_c#\\basic_c_sharp\\scopeandaccessibilitymodifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|solutionrelative:scopeandaccessibilitymodifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|g:\\.net\\basic_c#\\basic_c_sharp\\datatabledemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|solutionrelative:datatabledemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|g:\\.net\\basic_c#\\basic_c_sharp\\abstractiondemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|solutionrelative:abstractiondemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|g:\\.net\\basic_c#\\basic_c_sharp\\inheritancedemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|solutionrelative:inheritancedemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|g:\\.net\\basic_c#\\basic_c_sharp\\stringclassdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|solutionrelative:stringclassdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|g:\\.net\\basic_c#\\basic_c_sharp\\exceptionhandlingdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|solutionrelative:exceptionhandlingdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|g:\\.net\\basic_c#\\basic_c_sharp\\encapsulationdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|solutionrelative:encapsulationdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|g:\\.net\\basic_c#\\basic_c_sharp\\classobjectdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|solutionrelative:classobjectdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|g:\\.net\\basic_c#\\basic_c_sharp\\collectionsdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|solutionrelative:collectionsdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|g:\\.net\\basic_c#\\basic_c_sharp\\statementsdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|solutionrelative:statementsdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|g:\\.net\\basic_c#\\basic_c_sharp\\polymorphismdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|solutionrelative:polymorphismdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|g:\\.net\\basic_c#\\basic_c_sharp\\operatorsdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|solutionrelative:operatorsdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|g:\\.net\\basic_c#\\basic_c_sharp\\arraydemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|solutionrelative:arraydemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|g:\\.net\\basic_c#\\basic_c_sharp\\methoddemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE2B683B-D4AD-4122-9126-4C841369E59E}|Basic_C_Sharp.csproj|solutionrelative:methoddemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAQwFwAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T06:03:56.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AbstractionDemo.cs",
+              "DocumentMoniker": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\AbstractionDemo.cs",
+              "RelativeDocumentMoniker": "AbstractionDemo.cs",
+              "ToolTip": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\AbstractionDemo.cs",
+              "RelativeToolTip": "AbstractionDemo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T15:59:16.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DataTableDemo.cs",
+              "DocumentMoniker": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\DataTableDemo.cs",
+              "RelativeDocumentMoniker": "DataTableDemo.cs",
+              "ToolTip": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\DataTableDemo.cs",
+              "RelativeToolTip": "DataTableDemo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T08:38:08.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataTypesDemo.cs",
+              "DocumentMoniker": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\DataTypesDemo.cs",
+              "RelativeDocumentMoniker": "DataTypesDemo.cs",
+              "ToolTip": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\DataTypesDemo.cs",
+              "RelativeToolTip": "DataTypesDemo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T08:21:44.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DateTimeClassDemo.cs",
+              "DocumentMoniker": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\DateTimeClassDemo.cs",
+              "RelativeDocumentMoniker": "DateTimeClassDemo.cs",
+              "ToolTip": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\DateTimeClassDemo.cs",
+              "RelativeToolTip": "DateTimeClassDemo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T11:51:08.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EnumerationDemo.cs",
+              "DocumentMoniker": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\EnumerationDemo.cs",
+              "RelativeDocumentMoniker": "EnumerationDemo.cs",
+              "ToolTip": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\EnumerationDemo.cs",
+              "RelativeToolTip": "EnumerationDemo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T07:19:55.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FileOperationsDemo.cs",
+              "DocumentMoniker": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\FileOperationsDemo.cs",
+              "RelativeDocumentMoniker": "FileOperationsDemo.cs",
+              "ToolTip": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\FileOperationsDemo.cs",
+              "RelativeToolTip": "FileOperationsDemo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T12:41:11.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InheritanceDemo.cs",
+              "DocumentMoniker": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\InheritanceDemo.cs",
+              "RelativeDocumentMoniker": "InheritanceDemo.cs",
+              "ToolTip": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\InheritanceDemo.cs",
+              "RelativeToolTip": "InheritanceDemo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T07:06:23.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ScopeAndAccessibilityModifier.cs",
+              "DocumentMoniker": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\ScopeAndAccessibilityModifier.cs",
+              "RelativeDocumentMoniker": "ScopeAndAccessibilityModifier.cs",
+              "ToolTip": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\ScopeAndAccessibilityModifier.cs",
+              "RelativeToolTip": "ScopeAndAccessibilityModifier.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAIwC4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T03:29:05.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StringClassDemo.cs",
+              "DocumentMoniker": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\StringClassDemo.cs",
+              "RelativeDocumentMoniker": "StringClassDemo.cs",
+              "ToolTip": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\StringClassDemo.cs",
+              "RelativeToolTip": "StringClassDemo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T11:12:43.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ExceptionHandlingDemo.cs",
+              "DocumentMoniker": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\ExceptionHandlingDemo.cs",
+              "RelativeDocumentMoniker": "ExceptionHandlingDemo.cs",
+              "ToolTip": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\ExceptionHandlingDemo.cs",
+              "RelativeToolTip": "ExceptionHandlingDemo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T09:28:20.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CollectionsDemo.cs",
+              "DocumentMoniker": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\CollectionsDemo.cs",
+              "RelativeDocumentMoniker": "CollectionsDemo.cs",
+              "ToolTip": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\CollectionsDemo.cs",
+              "RelativeToolTip": "CollectionsDemo.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T05:39:53.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "StatementsDemo.cs",
+              "DocumentMoniker": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\StatementsDemo.cs",
+              "RelativeDocumentMoniker": "StatementsDemo.cs",
+              "ToolTip": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\StatementsDemo.cs",
+              "RelativeToolTip": "StatementsDemo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T10:37:06.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ClassObjectDemo.cs",
+              "DocumentMoniker": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\ClassObjectDemo.cs",
+              "RelativeDocumentMoniker": "ClassObjectDemo.cs",
+              "ToolTip": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\ClassObjectDemo.cs",
+              "RelativeToolTip": "ClassObjectDemo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T03:51:15.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EncapsulationDemo.cs",
+              "DocumentMoniker": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\EncapsulationDemo.cs",
+              "RelativeDocumentMoniker": "EncapsulationDemo.cs",
+              "ToolTip": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\EncapsulationDemo.cs",
+              "RelativeToolTip": "EncapsulationDemo.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T12:42:00.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "OperatorsDemo.cs",
+              "DocumentMoniker": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\OperatorsDemo.cs",
+              "RelativeDocumentMoniker": "OperatorsDemo.cs",
+              "ToolTip": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\OperatorsDemo.cs",
+              "RelativeToolTip": "OperatorsDemo.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAABRwEUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T09:31:54.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PolymorphismDemo.cs",
+              "DocumentMoniker": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\PolymorphismDemo.cs",
+              "RelativeDocumentMoniker": "PolymorphismDemo.cs",
+              "ToolTip": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\PolymorphismDemo.cs",
+              "RelativeToolTip": "PolymorphismDemo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T12:16:47.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ArrayDemo.cs",
+              "DocumentMoniker": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\ArrayDemo.cs",
+              "RelativeDocumentMoniker": "ArrayDemo.cs",
+              "ToolTip": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\ArrayDemo.cs",
+              "RelativeToolTip": "ArrayDemo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T12:39:11.925Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MethodDemo.cs",
+              "DocumentMoniker": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\MethodDemo.cs",
+              "RelativeDocumentMoniker": "MethodDemo.cs",
+              "ToolTip": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\MethodDemo.cs",
+              "RelativeToolTip": "MethodDemo.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAQwHQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T04:39:58.056Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

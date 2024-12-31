@@ -1,0 +1,14 @@
+G:\.net\Basic_C#\Basic_C_Sharp\bin\Debug\net8.0\Basic_C_Sharp.exe
+G:\.net\Basic_C#\Basic_C_Sharp\bin\Debug\net8.0\Basic_C_Sharp.deps.json
+G:\.net\Basic_C#\Basic_C_Sharp\bin\Debug\net8.0\Basic_C_Sharp.runtimeconfig.json
+G:\.net\Basic_C#\Basic_C_Sharp\bin\Debug\net8.0\Basic_C_Sharp.dll
+G:\.net\Basic_C#\Basic_C_Sharp\bin\Debug\net8.0\Basic_C_Sharp.pdb
+G:\.net\Basic_C#\Basic_C_Sharp\obj\Debug\net8.0\Basic_C_Sharp.GeneratedMSBuildEditorConfig.editorconfig
+G:\.net\Basic_C#\Basic_C_Sharp\obj\Debug\net8.0\Basic_C_Sharp.AssemblyInfoInputs.cache
+G:\.net\Basic_C#\Basic_C_Sharp\obj\Debug\net8.0\Basic_C_Sharp.AssemblyInfo.cs
+G:\.net\Basic_C#\Basic_C_Sharp\obj\Debug\net8.0\Basic_C_Sharp.csproj.CoreCompileInputs.cache
+G:\.net\Basic_C#\Basic_C_Sharp\obj\Debug\net8.0\Basic_C_Sharp.dll
+G:\.net\Basic_C#\Basic_C_Sharp\obj\Debug\net8.0\refint\Basic_C_Sharp.dll
+G:\.net\Basic_C#\Basic_C_Sharp\obj\Debug\net8.0\Basic_C_Sharp.pdb
+G:\.net\Basic_C#\Basic_C_Sharp\obj\Debug\net8.0\Basic_C_Sharp.genruntimeconfig.cache
+G:\.net\Basic_C#\Basic_C_Sharp\obj\Debug\net8.0\ref\Basic_C_Sharp.dll

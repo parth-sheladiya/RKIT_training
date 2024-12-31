@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Basic_C_Sharp": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+G:\.net\Basic_C#\BasicToDoApp\bin\Debug\net8.0\BasicToDoApp.exe
+G:\.net\Basic_C#\BasicToDoApp\bin\Debug\net8.0\BasicToDoApp.deps.json
+G:\.net\Basic_C#\BasicToDoApp\bin\Debug\net8.0\BasicToDoApp.runtimeconfig.json
+G:\.net\Basic_C#\BasicToDoApp\bin\Debug\net8.0\BasicToDoApp.dll
+G:\.net\Basic_C#\BasicToDoApp\bin\Debug\net8.0\BasicToDoApp.pdb
+G:\.net\Basic_C#\BasicToDoApp\obj\Debug\net8.0\BasicToDoApp.GeneratedMSBuildEditorConfig.editorconfig
+G:\.net\Basic_C#\BasicToDoApp\obj\Debug\net8.0\BasicToDoApp.AssemblyInfoInputs.cache
+G:\.net\Basic_C#\BasicToDoApp\obj\Debug\net8.0\BasicToDoApp.AssemblyInfo.cs
+G:\.net\Basic_C#\BasicToDoApp\obj\Debug\net8.0\BasicToDoApp.csproj.CoreCompileInputs.cache
+G:\.net\Basic_C#\BasicToDoApp\obj\Debug\net8.0\BasicToDoApp.dll
+G:\.net\Basic_C#\BasicToDoApp\obj\Debug\net8.0\refint\BasicToDoApp.dll
+G:\.net\Basic_C#\BasicToDoApp\obj\Debug\net8.0\BasicToDoApp.pdb
+G:\.net\Basic_C#\BasicToDoApp\obj\Debug\net8.0\BasicToDoApp.genruntimeconfig.cache
+G:\.net\Basic_C#\BasicToDoApp\obj\Debug\net8.0\ref\BasicToDoApp.dll

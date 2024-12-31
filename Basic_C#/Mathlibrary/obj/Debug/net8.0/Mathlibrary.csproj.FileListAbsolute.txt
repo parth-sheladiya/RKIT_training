@@ -1,0 +1,11 @@
+G:\.net\Basic_C#\Mathlibrary\bin\Debug\net8.0\Mathlibrary.deps.json
+G:\.net\Basic_C#\Mathlibrary\bin\Debug\net8.0\Mathlibrary.dll
+G:\.net\Basic_C#\Mathlibrary\bin\Debug\net8.0\Mathlibrary.pdb
+G:\.net\Basic_C#\Mathlibrary\obj\Debug\net8.0\Mathlibrary.GeneratedMSBuildEditorConfig.editorconfig
+G:\.net\Basic_C#\Mathlibrary\obj\Debug\net8.0\Mathlibrary.AssemblyInfoInputs.cache
+G:\.net\Basic_C#\Mathlibrary\obj\Debug\net8.0\Mathlibrary.AssemblyInfo.cs
+G:\.net\Basic_C#\Mathlibrary\obj\Debug\net8.0\Mathlibrary.csproj.CoreCompileInputs.cache
+G:\.net\Basic_C#\Mathlibrary\obj\Debug\net8.0\Mathlibrary.dll
+G:\.net\Basic_C#\Mathlibrary\obj\Debug\net8.0\refint\Mathlibrary.dll
+G:\.net\Basic_C#\Mathlibrary\obj\Debug\net8.0\Mathlibrary.pdb
+G:\.net\Basic_C#\Mathlibrary\obj\Debug\net8.0\ref\Mathlibrary.dll

@@ -1,0 +1,7 @@
+G:\.net\Basic_C#\basic_Api_Phase_1\bin\Debug\basic_Api_Phase_1.exe.config
+G:\.net\Basic_C#\basic_Api_Phase_1\bin\Debug\basic_Api_Phase_1.exe
+G:\.net\Basic_C#\basic_Api_Phase_1\bin\Debug\basic_Api_Phase_1.pdb
+G:\.net\Basic_C#\basic_Api_Phase_1\obj\Debug\basic_Api_Phase_1.csproj.AssemblyReference.cache
+G:\.net\Basic_C#\basic_Api_Phase_1\obj\Debug\basic_Api_Phase_1.csproj.CoreCompileInputs.cache
+G:\.net\Basic_C#\basic_Api_Phase_1\obj\Debug\basic_Api_Phase_1.exe
+G:\.net\Basic_C#\basic_Api_Phase_1\obj\Debug\basic_Api_Phase_1.pdb
