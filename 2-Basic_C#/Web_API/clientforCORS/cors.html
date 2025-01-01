@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORS Demo</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>CORS Demo (AJAX with jQuery)</h1>
+    <button id="fetchDataBtn">Fetch Data</button>
+    <h4 id="AddResponce"></h4>
+
+    <script>
+        $(document).ready(function() {
+            $("#fetchDataBtn").click(function() {
+                $.ajax({
+                    url: "https://localhost:44337/api/CorsDemo/message", // API URL
+                    method: "GET",
+                    success: function(response) {
+                        console.log("Response:", response);
+                        //alert(response.Message);
+                        AddResponce.innerHTML = response.Message;
+                       
+
+                    },
+                    error: function(xhr, status, error) {
+                        console.log("Error:", error);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
