@@ -8,12 +8,19 @@ public class UsersController : ApiController
 {
     private readonly ApplicationDbContext _context;
 
+    // Constructor to initialize the context
     public UsersController()
     {
         _context = new ApplicationDbContext();
     }
 
+    #region GET Methods
+
     // GET api/users
+    /// <summary>
+    /// Retrieves a list of all users.
+    /// </summary>
+    /// <returns>List of User objects</returns>
     [HttpGet]
     public IEnumerable<User> GetUsers()
     {
@@ -44,6 +51,11 @@ public class UsersController : ApiController
     }
 
     // GET api/users/5
+    /// <summary>
+    /// Retrieves a specific user by their UserId.
+    /// </summary>
+    /// <param name="id">The UserId of the user to retrieve</param>
+    /// <returns>The User object if found, or NotFound if not found</returns>
     [HttpGet]
     public IHttpActionResult GetUser(int id)
     {
@@ -80,7 +92,16 @@ public class UsersController : ApiController
         return Ok(user);
     }
 
+    #endregion
+
+    #region POST Methods
+
     // POST api/users
+    /// <summary>
+    /// Creates a new user in the database.
+    /// </summary>
+    /// <param name="user">The user object to create</param>
+    /// <returns>HTTP Status code</returns>
     [HttpPost]
     public IHttpActionResult CreateUser(User user)
     {
@@ -100,7 +121,17 @@ public class UsersController : ApiController
         return Ok();
     }
 
+    #endregion
+
+    #region PUT Methods
+
     // PUT api/users/5
+    /// <summary>
+    /// Updates the details of an existing user.
+    /// </summary>
+    /// <param name="id">The UserId of the user to update</param>
+    /// <param name="user">The updated user object</param>
+    /// <returns>HTTP Status code</returns>
     [HttpPut]
     public IHttpActionResult UpdateUser(int id, User user)
     {
@@ -121,7 +152,16 @@ public class UsersController : ApiController
         return Ok();
     }
 
+    #endregion
+
+    #region DELETE Methods
+
     // DELETE api/users/5
+    /// <summary>
+    /// Deletes an existing user by their UserId.
+    /// </summary>
+    /// <param name="id">The UserId of the user to delete</param>
+    /// <returns>HTTP Status code</returns>
     [HttpDelete]
     public IHttpActionResult DeleteUser(int id)
     {
@@ -137,4 +177,6 @@ public class UsersController : ApiController
         }
         return Ok();
     }
+
+    #endregion
 }
