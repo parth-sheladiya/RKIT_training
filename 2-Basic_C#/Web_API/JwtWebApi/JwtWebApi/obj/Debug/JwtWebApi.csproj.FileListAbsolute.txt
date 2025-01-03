@@ -118,3 +118,5 @@ G:\.net\introduction-web-api\JwtWebApi\JwtWebApi\bin\Microsoft.CodeDom.Providers
 G:\.net\introduction-web-api\JwtWebApi\JwtWebApi\obj\Debug\JwtWebApi.csproj.Up2Date
 G:\.net\introduction-web-api\JwtWebApi\JwtWebApi\obj\Debug\JwtWebApi.dll
 G:\.net\introduction-web-api\JwtWebApi\JwtWebApi\obj\Debug\JwtWebApi.pdb
+F:\parth-415\git-desk\RKIT_training\2-Basic_C#\Web_API\JwtWebApi\JwtWebApi\obj\Debug\JwtWebApi.dll
+F:\parth-415\git-desk\RKIT_training\2-Basic_C#\Web_API\JwtWebApi\JwtWebApi\obj\Debug\JwtWebApi.pdb
