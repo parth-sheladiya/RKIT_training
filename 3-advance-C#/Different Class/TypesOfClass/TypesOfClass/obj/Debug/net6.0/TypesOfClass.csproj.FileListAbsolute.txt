@@ -1,0 +1,15 @@
+F:\parth-415\RKIT_training-main\3-advance-C#\Different Class\TypesOfClass\TypesOfClass\bin\Debug\net6.0\TypesOfClass.exe
+F:\parth-415\RKIT_training-main\3-advance-C#\Different Class\TypesOfClass\TypesOfClass\bin\Debug\net6.0\TypesOfClass.deps.json
+F:\parth-415\RKIT_training-main\3-advance-C#\Different Class\TypesOfClass\TypesOfClass\bin\Debug\net6.0\TypesOfClass.runtimeconfig.json
+F:\parth-415\RKIT_training-main\3-advance-C#\Different Class\TypesOfClass\TypesOfClass\bin\Debug\net6.0\TypesOfClass.dll
+F:\parth-415\RKIT_training-main\3-advance-C#\Different Class\TypesOfClass\TypesOfClass\bin\Debug\net6.0\TypesOfClass.pdb
+F:\parth-415\RKIT_training-main\3-advance-C#\Different Class\TypesOfClass\TypesOfClass\obj\Debug\net6.0\TypesOfClass.csproj.AssemblyReference.cache
+F:\parth-415\RKIT_training-main\3-advance-C#\Different Class\TypesOfClass\TypesOfClass\obj\Debug\net6.0\TypesOfClass.GeneratedMSBuildEditorConfig.editorconfig
+F:\parth-415\RKIT_training-main\3-advance-C#\Different Class\TypesOfClass\TypesOfClass\obj\Debug\net6.0\TypesOfClass.AssemblyInfoInputs.cache
+F:\parth-415\RKIT_training-main\3-advance-C#\Different Class\TypesOfClass\TypesOfClass\obj\Debug\net6.0\TypesOfClass.AssemblyInfo.cs
+F:\parth-415\RKIT_training-main\3-advance-C#\Different Class\TypesOfClass\TypesOfClass\obj\Debug\net6.0\TypesOfClass.csproj.CoreCompileInputs.cache
+F:\parth-415\RKIT_training-main\3-advance-C#\Different Class\TypesOfClass\TypesOfClass\obj\Debug\net6.0\TypesOfClass.dll
+F:\parth-415\RKIT_training-main\3-advance-C#\Different Class\TypesOfClass\TypesOfClass\obj\Debug\net6.0\refint\TypesOfClass.dll
+F:\parth-415\RKIT_training-main\3-advance-C#\Different Class\TypesOfClass\TypesOfClass\obj\Debug\net6.0\TypesOfClass.pdb
+F:\parth-415\RKIT_training-main\3-advance-C#\Different Class\TypesOfClass\TypesOfClass\obj\Debug\net6.0\TypesOfClass.genruntimeconfig.cache
+F:\parth-415\RKIT_training-main\3-advance-C#\Different Class\TypesOfClass\TypesOfClass\obj\Debug\net6.0\ref\TypesOfClass.dll
