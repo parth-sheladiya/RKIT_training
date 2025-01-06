@@ -1,0 +1,15 @@
+F:\parth-415\RKIT_training-main\3-advance-C#\Debugging\DebugBasic\DebugBasic\bin\Debug\net6.0\DebugBasic.exe
+F:\parth-415\RKIT_training-main\3-advance-C#\Debugging\DebugBasic\DebugBasic\bin\Debug\net6.0\DebugBasic.deps.json
+F:\parth-415\RKIT_training-main\3-advance-C#\Debugging\DebugBasic\DebugBasic\bin\Debug\net6.0\DebugBasic.runtimeconfig.json
+F:\parth-415\RKIT_training-main\3-advance-C#\Debugging\DebugBasic\DebugBasic\bin\Debug\net6.0\DebugBasic.dll
+F:\parth-415\RKIT_training-main\3-advance-C#\Debugging\DebugBasic\DebugBasic\bin\Debug\net6.0\DebugBasic.pdb
+F:\parth-415\RKIT_training-main\3-advance-C#\Debugging\DebugBasic\DebugBasic\obj\Debug\net6.0\DebugBasic.csproj.AssemblyReference.cache
+F:\parth-415\RKIT_training-main\3-advance-C#\Debugging\DebugBasic\DebugBasic\obj\Debug\net6.0\DebugBasic.GeneratedMSBuildEditorConfig.editorconfig
+F:\parth-415\RKIT_training-main\3-advance-C#\Debugging\DebugBasic\DebugBasic\obj\Debug\net6.0\DebugBasic.AssemblyInfoInputs.cache
+F:\parth-415\RKIT_training-main\3-advance-C#\Debugging\DebugBasic\DebugBasic\obj\Debug\net6.0\DebugBasic.AssemblyInfo.cs
+F:\parth-415\RKIT_training-main\3-advance-C#\Debugging\DebugBasic\DebugBasic\obj\Debug\net6.0\DebugBasic.csproj.CoreCompileInputs.cache
+F:\parth-415\RKIT_training-main\3-advance-C#\Debugging\DebugBasic\DebugBasic\obj\Debug\net6.0\DebugBasic.dll
+F:\parth-415\RKIT_training-main\3-advance-C#\Debugging\DebugBasic\DebugBasic\obj\Debug\net6.0\refint\DebugBasic.dll
+F:\parth-415\RKIT_training-main\3-advance-C#\Debugging\DebugBasic\DebugBasic\obj\Debug\net6.0\DebugBasic.pdb
+F:\parth-415\RKIT_training-main\3-advance-C#\Debugging\DebugBasic\DebugBasic\obj\Debug\net6.0\DebugBasic.genruntimeconfig.cache
+F:\parth-415\RKIT_training-main\3-advance-C#\Debugging\DebugBasic\DebugBasic\obj\Debug\net6.0\ref\DebugBasic.dll
