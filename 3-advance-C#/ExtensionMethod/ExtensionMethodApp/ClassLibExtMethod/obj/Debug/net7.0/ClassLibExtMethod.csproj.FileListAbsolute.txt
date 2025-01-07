@@ -1,0 +1,12 @@
+F:\parth-415\RKIT_training-main\3-advance-C#\ExtensionMethod\ExtensionMethodApp\ClassLibExtMethod\bin\Debug\net7.0\ClassLibExtMethod.deps.json
+F:\parth-415\RKIT_training-main\3-advance-C#\ExtensionMethod\ExtensionMethodApp\ClassLibExtMethod\bin\Debug\net7.0\ClassLibExtMethod.dll
+F:\parth-415\RKIT_training-main\3-advance-C#\ExtensionMethod\ExtensionMethodApp\ClassLibExtMethod\bin\Debug\net7.0\ClassLibExtMethod.pdb
+F:\parth-415\RKIT_training-main\3-advance-C#\ExtensionMethod\ExtensionMethodApp\ClassLibExtMethod\obj\Debug\net7.0\ClassLibExtMethod.csproj.AssemblyReference.cache
+F:\parth-415\RKIT_training-main\3-advance-C#\ExtensionMethod\ExtensionMethodApp\ClassLibExtMethod\obj\Debug\net7.0\ClassLibExtMethod.GeneratedMSBuildEditorConfig.editorconfig
+F:\parth-415\RKIT_training-main\3-advance-C#\ExtensionMethod\ExtensionMethodApp\ClassLibExtMethod\obj\Debug\net7.0\ClassLibExtMethod.AssemblyInfoInputs.cache
+F:\parth-415\RKIT_training-main\3-advance-C#\ExtensionMethod\ExtensionMethodApp\ClassLibExtMethod\obj\Debug\net7.0\ClassLibExtMethod.AssemblyInfo.cs
+F:\parth-415\RKIT_training-main\3-advance-C#\ExtensionMethod\ExtensionMethodApp\ClassLibExtMethod\obj\Debug\net7.0\ClassLibExtMethod.csproj.CoreCompileInputs.cache
+F:\parth-415\RKIT_training-main\3-advance-C#\ExtensionMethod\ExtensionMethodApp\ClassLibExtMethod\obj\Debug\net7.0\ClassLibExtMethod.dll
+F:\parth-415\RKIT_training-main\3-advance-C#\ExtensionMethod\ExtensionMethodApp\ClassLibExtMethod\obj\Debug\net7.0\refint\ClassLibExtMethod.dll
+F:\parth-415\RKIT_training-main\3-advance-C#\ExtensionMethod\ExtensionMethodApp\ClassLibExtMethod\obj\Debug\net7.0\ClassLibExtMethod.pdb
+F:\parth-415\RKIT_training-main\3-advance-C#\ExtensionMethod\ExtensionMethodApp\ClassLibExtMethod\obj\Debug\net7.0\ref\ClassLibExtMethod.dll
