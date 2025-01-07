@@ -1,0 +1,15 @@
+F:\parth-415\RKIT_training-main\3-advance-C#\FileSystem\FileSystemDepth\FileSystemDepth\bin\Debug\net7.0\FileSystemDepth.exe
+F:\parth-415\RKIT_training-main\3-advance-C#\FileSystem\FileSystemDepth\FileSystemDepth\bin\Debug\net7.0\FileSystemDepth.deps.json
+F:\parth-415\RKIT_training-main\3-advance-C#\FileSystem\FileSystemDepth\FileSystemDepth\bin\Debug\net7.0\FileSystemDepth.runtimeconfig.json
+F:\parth-415\RKIT_training-main\3-advance-C#\FileSystem\FileSystemDepth\FileSystemDepth\bin\Debug\net7.0\FileSystemDepth.dll
+F:\parth-415\RKIT_training-main\3-advance-C#\FileSystem\FileSystemDepth\FileSystemDepth\bin\Debug\net7.0\FileSystemDepth.pdb
+F:\parth-415\RKIT_training-main\3-advance-C#\FileSystem\FileSystemDepth\FileSystemDepth\obj\Debug\net7.0\FileSystemDepth.csproj.AssemblyReference.cache
+F:\parth-415\RKIT_training-main\3-advance-C#\FileSystem\FileSystemDepth\FileSystemDepth\obj\Debug\net7.0\FileSystemDepth.GeneratedMSBuildEditorConfig.editorconfig
+F:\parth-415\RKIT_training-main\3-advance-C#\FileSystem\FileSystemDepth\FileSystemDepth\obj\Debug\net7.0\FileSystemDepth.AssemblyInfoInputs.cache
+F:\parth-415\RKIT_training-main\3-advance-C#\FileSystem\FileSystemDepth\FileSystemDepth\obj\Debug\net7.0\FileSystemDepth.AssemblyInfo.cs
+F:\parth-415\RKIT_training-main\3-advance-C#\FileSystem\FileSystemDepth\FileSystemDepth\obj\Debug\net7.0\FileSystemDepth.csproj.CoreCompileInputs.cache
+F:\parth-415\RKIT_training-main\3-advance-C#\FileSystem\FileSystemDepth\FileSystemDepth\obj\Debug\net7.0\FileSystemDepth.dll
+F:\parth-415\RKIT_training-main\3-advance-C#\FileSystem\FileSystemDepth\FileSystemDepth\obj\Debug\net7.0\refint\FileSystemDepth.dll
+F:\parth-415\RKIT_training-main\3-advance-C#\FileSystem\FileSystemDepth\FileSystemDepth\obj\Debug\net7.0\FileSystemDepth.pdb
+F:\parth-415\RKIT_training-main\3-advance-C#\FileSystem\FileSystemDepth\FileSystemDepth\obj\Debug\net7.0\FileSystemDepth.genruntimeconfig.cache
+F:\parth-415\RKIT_training-main\3-advance-C#\FileSystem\FileSystemDepth\FileSystemDepth\obj\Debug\net7.0\ref\FileSystemDepth.dll
