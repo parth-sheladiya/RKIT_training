@@ -1,0 +1,15 @@
+E:\Training-2025\RKIT_training\3-advance-C#\LamdaExpressionExample\LamdaExpressionExample\obj\Debug\net8.0\LamdaExpressionExample.GeneratedMSBuildEditorConfig.editorconfig
+E:\Training-2025\RKIT_training\3-advance-C#\LamdaExpressionExample\LamdaExpressionExample\obj\Debug\net8.0\LamdaExpressionExample.AssemblyInfoInputs.cache
+E:\Training-2025\RKIT_training\3-advance-C#\LamdaExpressionExample\LamdaExpressionExample\obj\Debug\net8.0\LamdaExpressionExample.AssemblyInfo.cs
+E:\Training-2025\RKIT_training\3-advance-C#\LamdaExpressionExample\LamdaExpressionExample\obj\Debug\net8.0\LamdaExpressionExample.csproj.CoreCompileInputs.cache
+E:\Training-2025\RKIT_training\3-advance-C#\LamdaExpressionExample\LamdaExpressionExample\obj\Debug\net8.0\LamdaExpressionExample.sourcelink.json
+E:\Training-2025\RKIT_training\3-advance-C#\LamdaExpressionExample\LamdaExpressionExample\bin\Debug\net8.0\LamdaExpressionExample.exe
+E:\Training-2025\RKIT_training\3-advance-C#\LamdaExpressionExample\LamdaExpressionExample\bin\Debug\net8.0\LamdaExpressionExample.deps.json
+E:\Training-2025\RKIT_training\3-advance-C#\LamdaExpressionExample\LamdaExpressionExample\bin\Debug\net8.0\LamdaExpressionExample.runtimeconfig.json
+E:\Training-2025\RKIT_training\3-advance-C#\LamdaExpressionExample\LamdaExpressionExample\bin\Debug\net8.0\LamdaExpressionExample.dll
+E:\Training-2025\RKIT_training\3-advance-C#\LamdaExpressionExample\LamdaExpressionExample\bin\Debug\net8.0\LamdaExpressionExample.pdb
+E:\Training-2025\RKIT_training\3-advance-C#\LamdaExpressionExample\LamdaExpressionExample\obj\Debug\net8.0\LamdaExpressionExample.dll
+E:\Training-2025\RKIT_training\3-advance-C#\LamdaExpressionExample\LamdaExpressionExample\obj\Debug\net8.0\refint\LamdaExpressionExample.dll
+E:\Training-2025\RKIT_training\3-advance-C#\LamdaExpressionExample\LamdaExpressionExample\obj\Debug\net8.0\LamdaExpressionExample.pdb
+E:\Training-2025\RKIT_training\3-advance-C#\LamdaExpressionExample\LamdaExpressionExample\obj\Debug\net8.0\LamdaExpressionExample.genruntimeconfig.cache
+E:\Training-2025\RKIT_training\3-advance-C#\LamdaExpressionExample\LamdaExpressionExample\obj\Debug\net8.0\ref\LamdaExpressionExample.dll
