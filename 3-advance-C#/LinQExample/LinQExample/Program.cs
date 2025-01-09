@@ -8,8 +8,7 @@ namespace LinQExample
         {
             //call method to query sytax class 
             /// QuerySyntax.RunQuerySyntax();
-
-
+            /// 
             // call method to mwthod class systax 
             /// MethodSyntaxClass.RunMethodSyntaxClass();
 
@@ -23,7 +22,22 @@ namespace LinQExample
             // PartitionOperatorClass.RunPartitionOperatorClass();
 
             // call nmethod to convertion class 
-            ConversionOperatorClass.RunConversionOperatorClass();
+            //  ConversionOperatorClass.RunConversionOperatorClass();
+
+            // call method to element operator class 
+            // ElementOperatorClass.RunElementOperatorClass();
+
+            // call method to grouping operator class 
+            // GroupingOperatorClass.RunGroupingOperatorClass();
+
+            // call method to join operator class 
+            // JoinOperatorClass.RunJoinOperatorClass();
+
+            // call method to set operator class 
+            // SetOperatorClass.RunSetOperatorClass();
+
+            // call method to concat class
+            ConcatClass.RunConcatClass();
         }
     }
 }
