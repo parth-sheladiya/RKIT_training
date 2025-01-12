@@ -1,0 +1,15 @@
+F:\parth-415\RKIT_training-main\3-advance-C#\BaseLibraryFeatures\BaseLibraryFeatures\obj\Debug\net7.0\BaseLibraryFeatures.csproj.AssemblyReference.cache
+F:\parth-415\RKIT_training-main\3-advance-C#\BaseLibraryFeatures\BaseLibraryFeatures\obj\Debug\net7.0\BaseLibraryFeatures.GeneratedMSBuildEditorConfig.editorconfig
+F:\parth-415\RKIT_training-main\3-advance-C#\BaseLibraryFeatures\BaseLibraryFeatures\obj\Debug\net7.0\BaseLibraryFeatures.AssemblyInfoInputs.cache
+F:\parth-415\RKIT_training-main\3-advance-C#\BaseLibraryFeatures\BaseLibraryFeatures\obj\Debug\net7.0\BaseLibraryFeatures.AssemblyInfo.cs
+F:\parth-415\RKIT_training-main\3-advance-C#\BaseLibraryFeatures\BaseLibraryFeatures\obj\Debug\net7.0\BaseLibraryFeatures.csproj.CoreCompileInputs.cache
+F:\parth-415\RKIT_training-main\3-advance-C#\BaseLibraryFeatures\BaseLibraryFeatures\bin\Debug\net7.0\BaseLibraryFeatures.exe
+F:\parth-415\RKIT_training-main\3-advance-C#\BaseLibraryFeatures\BaseLibraryFeatures\bin\Debug\net7.0\BaseLibraryFeatures.deps.json
+F:\parth-415\RKIT_training-main\3-advance-C#\BaseLibraryFeatures\BaseLibraryFeatures\bin\Debug\net7.0\BaseLibraryFeatures.runtimeconfig.json
+F:\parth-415\RKIT_training-main\3-advance-C#\BaseLibraryFeatures\BaseLibraryFeatures\bin\Debug\net7.0\BaseLibraryFeatures.dll
+F:\parth-415\RKIT_training-main\3-advance-C#\BaseLibraryFeatures\BaseLibraryFeatures\bin\Debug\net7.0\BaseLibraryFeatures.pdb
+F:\parth-415\RKIT_training-main\3-advance-C#\BaseLibraryFeatures\BaseLibraryFeatures\obj\Debug\net7.0\BaseLibraryFeatures.dll
+F:\parth-415\RKIT_training-main\3-advance-C#\BaseLibraryFeatures\BaseLibraryFeatures\obj\Debug\net7.0\refint\BaseLibraryFeatures.dll
+F:\parth-415\RKIT_training-main\3-advance-C#\BaseLibraryFeatures\BaseLibraryFeatures\obj\Debug\net7.0\BaseLibraryFeatures.pdb
+F:\parth-415\RKIT_training-main\3-advance-C#\BaseLibraryFeatures\BaseLibraryFeatures\obj\Debug\net7.0\BaseLibraryFeatures.genruntimeconfig.cache
+F:\parth-415\RKIT_training-main\3-advance-C#\BaseLibraryFeatures\BaseLibraryFeatures\obj\Debug\net7.0\ref\BaseLibraryFeatures.dll
