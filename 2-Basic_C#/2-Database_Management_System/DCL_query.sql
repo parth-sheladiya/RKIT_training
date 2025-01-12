@@ -1,64 +1,37 @@
-create database SchoolDB;
-use SchoolDB;
+-- use database schooldb for all topics 
+use schooldb;
 
-create table Students (
-    StudentID int auto_increment primary key,
-    Name varchar(50),
-    Age int,
-    Class varchar(10)
-);
+-- creating users
+create user 'admin'@'localhost' identified by 'adminpassword123';  -- create admin user
+create user 'teacher'@'localhost' identified by 'teacherpassword123';  -- create teacher user
+create user 'student'@'localhost' identified by 'studentpassword123';  -- create student user
 
-create table Subjects (
-    SubjectID int auto_increment primary key,
-    SubjectName varchar(50)
-);
+-- grant all permissions to admin on schooldb
+grant all privileges on schooldb.* to 'admin'@'localhost';  -- give full permissions to admin
 
-create table Marks (
-    MarkID int AUTO_INCREMENT primary key,
-    StudentID int,
-    SubjectID int,
-    MarksObtained int,
-    foreign key  (StudentID) references Students(StudentID),
-    foreign key (SubjectID) references Subjects(SubjectID)
-);
+-- grant specific permissions to teacher on Teachers and Marks table
+grant select, update on schooldb.Teachers to 'teacher'@'localhost';  -- give select and update permissions on Teachers table to teacher
+grant select, update on schooldb.Marks to 'teacher'@'localhost';  -- give select and update permissions on Marks table to teacher
 
--- user create
-create user 'admin'@'localhost' identified by 'adminpassword123';
-create user 'teacher'@'localhost' identified by 'teacherpassword123';
-create user 'student'@'localhost' identified by 'studentpassword123';
+-- grant select permission to student on Marks table
+grant select on schooldb.Marks to 'student'@'localhost';  -- give select permission on Marks table to student
 
--- grant keyword 
-GRANT ALL PRIVILEGES ON SchoolDB.* TO 'admin'@'localhost';
+-- revoke update permission from teacher on Marks table
+revoke update on schooldb.Marks from 'teacher'@'localhost';  -- revoke update permission on Marks table from teacher
 
--- specific permission for teacher 
-GRANT SELECT, UPDATE ON SchoolDB.Subjects TO 'teacher'@'localhost';
-GRANT SELECT, UPDATE ON SchoolDB.Marks TO 'teacher'@'localhost';
+-- revoke delete permission from admin on entire database
+revoke delete on schooldb.* from 'admin'@'localhost';  -- revoke delete permission from admin on whole database
 
--- permision for student
-GRANT SELECT ON SchoolDB.Marks TO 'student'@'localhost';
+-- check permissions for admin user
+show grants for 'admin'@'localhost';  -- check permissions for admin user
 
+-- check permissions for student user
+show grants for 'student'@'localhost';  -- check permissions for student user
 
--- revoke permission
--- remove permission for update 
-REVOKE UPDATE ON SchoolDB.Marks FROM 'teacher'@'localhost';
+-- delete teacher user
+drop user 'teacher'@'localhost';  -- delete teacher user
+drop user 'admin'@'localhost';  -- delete admin user
+drop user 'student'@'localhost';  -- delete student user
 
--- revoke delete permission to admin 
-REVOKE DELETE ON SchoolDB.* FROM 'admin'@'localhost';
-
-
--- check permission 
-SHOW GRANTS FOR 'admin'@'localhost';
-SHOW GRANTS FOR 'student'@'localhost';
--- drop teacher user 
-DROP USER 'teacher'@'localhost';
-SHOW GRANTS FOR 'teacher'@'localhost';
-
-
-
-
-
-
-
-
-
-
+-- check grants for teacher user (this will give an error because the user has been deleted)
+show grants for 'teacher'@'localhost';  -- check grants for teacher user (will error out as user is deleted)

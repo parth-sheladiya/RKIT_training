@@ -1,41 +1,36 @@
--- Creating a view to combine student name, subject, and marks
-CREATE VIEW StudentSubjectMarks AS
-SELECT 
-    s.sName, 
-    sub.SubjectName, 
-    m.Marks
-FROM 
-    Students s
-JOIN 
-    Marks m ON s.StudentID = m.StudentID
-JOIN 
-    Subjects sub ON m.SubjectID = sub.SubjectID;
+-- create a simple view that shows data from Teachers and Marks
+create view teachermarksview as
+select t.teacherid, t.teachername, m.studentid, m.marksobtained, m.subject
+from teachers t
+join marks m on t.teacherid = m.teacherid;
 
+-- retrieve data from the TeacherMarksView
+select * from teachermarksview;
 
--- Selecting data from the view
-SELECT * FROM StudentSubjectMarks;
+-- create a view that shows teachers and marks for the Mathematics subject
+create view mathteachersmarks as
+select t.teacherid, t.teachername, m.studentid, m.marksobtained
+from teachers t
+join marks m on t.teacherid = m.teacherid
+where m.subject = 'Mathematics';
 
+-- create a view that calculates average marks by subject
+create view averagemarksbysubject as
+select m.subject, avg(m.marksobtained) as averagemarks
+from marks m
+group by m.subject;
 
--- Modifying the view to add student age as well
-CREATE OR REPLACE VIEW StudentSubjectMarks AS
-SELECT 
-    s.sName, 
-    s.Age,
-    sub.SubjectName, 
-    m.Marks
-FROM 
-    Students s
-JOIN 
-    Marks m ON s.StudentID = m.StudentID
-JOIN 
-    Subjects sub ON m.SubjectID = sub.SubjectID;
-    
--- Selecting data from the view
-SELECT * FROM StudentSubjectMarks;
+-- update TeacherMarksView, changing the marks for TeacherID = 1
+update teachermarksview
+set marksobtained = 95
+where teacherid = 1 and studentid = 1;
 
--- Dropping the view
-DROP VIEW StudentSubjectMarks;
+-- delete a record from TeacherMarksView
+delete from teachermarksview
+where teacherid = 2 and studentid = 2;
 
+-- drop the TeacherMarksView
+drop view teachermarksview;
 
-
-
+-- view all views in the database
+show full tables where table_type = 'view';

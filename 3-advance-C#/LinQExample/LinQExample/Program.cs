@@ -37,7 +37,10 @@ namespace LinQExample
             // SetOperatorClass.RunSetOperatorClass();
 
             // call method to concat class
-            ConcatClass.RunConcatClass();
+           // ConcatClass.RunConcatClass();
+
+            // call method to generation operator class
+            GenerationOperatorClass.RunGenerationOperatorClass();
         }
     }
 }

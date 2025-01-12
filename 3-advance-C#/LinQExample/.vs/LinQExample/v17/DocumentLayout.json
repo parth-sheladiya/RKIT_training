@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\LinQExample\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2E5BB7DE-4559-44BF-BD5D-B72828A08157}|LinQExample\\LinQExample.csproj|e:\\training-2025\\rkit_training\\3-advance-c#\\linqexample\\linqexample\\concatclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E5BB7DE-4559-44BF-BD5D-B72828A08157}|LinQExample\\LinQExample.csproj|solutionrelative:linqexample\\concatclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E5BB7DE-4559-44BF-BD5D-B72828A08157}|LinQExample\\LinQExample.csproj|e:\\training-2025\\rkit_training\\3-advance-c#\\linqexample\\linqexample\\generationoperatorclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E5BB7DE-4559-44BF-BD5D-B72828A08157}|LinQExample\\LinQExample.csproj|solutionrelative:linqexample\\generationoperatorclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2E5BB7DE-4559-44BF-BD5D-B72828A08157}|LinQExample\\LinQExample.csproj|e:\\training-2025\\rkit_training\\3-advance-c#\\linqexample\\linqexample\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,12 +15,20 @@
       "RelativeMoniker": "D:0:0:{2E5BB7DE-4559-44BF-BD5D-B72828A08157}|LinQExample\\LinQExample.csproj|solutionrelative:linqexample\\setoperatorclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E5BB7DE-4559-44BF-BD5D-B72828A08157}|LinQExample\\LinQExample.csproj|e:\\training-2025\\rkit_training\\3-advance-c#\\linqexample\\linqexample\\joinoperatorclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E5BB7DE-4559-44BF-BD5D-B72828A08157}|LinQExample\\LinQExample.csproj|solutionrelative:linqexample\\joinoperatorclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2E5BB7DE-4559-44BF-BD5D-B72828A08157}|LinQExample\\LinQExample.csproj|e:\\training-2025\\rkit_training\\3-advance-c#\\linqexample\\linqexample\\groupingoperatorclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E5BB7DE-4559-44BF-BD5D-B72828A08157}|LinQExample\\LinQExample.csproj|solutionrelative:linqexample\\groupingoperatorclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E5BB7DE-4559-44BF-BD5D-B72828A08157}|LinQExample\\LinQExample.csproj|e:\\training-2025\\rkit_training\\3-advance-c#\\linqexample\\linqexample\\querysyntax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E5BB7DE-4559-44BF-BD5D-B72828A08157}|LinQExample\\LinQExample.csproj|solutionrelative:linqexample\\querysyntax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E5BB7DE-4559-44BF-BD5D-B72828A08157}|LinQExample\\LinQExample.csproj|e:\\training-2025\\rkit_training\\3-advance-c#\\linqexample\\linqexample\\concatclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E5BB7DE-4559-44BF-BD5D-B72828A08157}|LinQExample\\LinQExample.csproj|solutionrelative:linqexample\\concatclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E5BB7DE-4559-44BF-BD5D-B72828A08157}|LinQExample\\LinQExample.csproj|e:\\training-2025\\rkit_training\\3-advance-c#\\linqexample\\linqexample\\joinoperatorclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E5BB7DE-4559-44BF-BD5D-B72828A08157}|LinQExample\\LinQExample.csproj|solutionrelative:linqexample\\joinoperatorclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2E5BB7DE-4559-44BF-BD5D-B72828A08157}|LinQExample\\LinQExample.csproj|e:\\training-2025\\rkit_training\\3-advance-c#\\linqexample\\linqexample\\sortingoperatorclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2E5BB7DE-4559-44BF-BD5D-B72828A08157}|LinQExample\\LinQExample.csproj|e:\\training-2025\\rkit_training\\3-advance-c#\\linqexample\\linqexample\\elementoperatorclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E5BB7DE-4559-44BF-BD5D-B72828A08157}|LinQExample\\LinQExample.csproj|solutionrelative:linqexample\\elementoperatorclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E5BB7DE-4559-44BF-BD5D-B72828A08157}|LinQExample\\LinQExample.csproj|e:\\training-2025\\rkit_training\\3-advance-c#\\linqexample\\linqexample\\querysyntax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E5BB7DE-4559-44BF-BD5D-B72828A08157}|LinQExample\\LinQExample.csproj|solutionrelative:linqexample\\querysyntax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2E5BB7DE-4559-44BF-BD5D-B72828A08157}|LinQExample\\LinQExample.csproj|e:\\training-2025\\rkit_training\\3-advance-c#\\linqexample\\linqexample\\aggregatefunctionclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,6 +67,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GenerationOperatorClass.cs",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\LinQExample\\LinQExample\\GenerationOperatorClass.cs",
+              "RelativeDocumentMoniker": "LinQExample\\GenerationOperatorClass.cs",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\LinQExample\\LinQExample\\GenerationOperatorClass.cs",
+              "RelativeToolTip": "LinQExample\\GenerationOperatorClass.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAADwvzEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T03:21:46.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ConcatClass.cs",
               "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\LinQExample\\LinQExample\\ConcatClass.cs",
               "RelativeDocumentMoniker": "LinQExample\\ConcatClass.cs",
@@ -75,46 +92,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SetOperatorClass.cs",
-              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\LinQExample\\LinQExample\\SetOperatorClass.cs",
-              "RelativeDocumentMoniker": "LinQExample\\SetOperatorClass.cs",
-              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\LinQExample\\LinQExample\\SetOperatorClass.cs",
-              "RelativeToolTip": "LinQExample\\SetOperatorClass.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAADwvxkAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T16:58:17.138Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "JoinOperatorClass.cs",
-              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\LinQExample\\LinQExample\\JoinOperatorClass.cs",
-              "RelativeDocumentMoniker": "LinQExample\\JoinOperatorClass.cs",
-              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\LinQExample\\LinQExample\\JoinOperatorClass.cs",
-              "RelativeToolTip": "LinQExample\\JoinOperatorClass.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T16:28:55.774Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "GroupingOperatorClass.cs",
               "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\LinQExample\\LinQExample\\GroupingOperatorClass.cs",
               "RelativeDocumentMoniker": "LinQExample\\GroupingOperatorClass.cs",
               "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\LinQExample\\LinQExample\\GroupingOperatorClass.cs",
               "RelativeToolTip": "LinQExample\\GroupingOperatorClass.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-09T16:03:58.156Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "SortingOperatorClass.cs",
               "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\LinQExample\\LinQExample\\SortingOperatorClass.cs",
               "RelativeDocumentMoniker": "LinQExample\\SortingOperatorClass.cs",
@@ -122,8 +113,7 @@
               "RelativeToolTip": "LinQExample\\SortingOperatorClass.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAowEIAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T15:01:19.503Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T15:01:19.503Z"
             },
             {
               "$type": "Document",
@@ -133,27 +123,14 @@
               "RelativeDocumentMoniker": "LinQExample\\Program.cs",
               "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\LinQExample\\LinQExample\\Program.cs",
               "RelativeToolTip": "LinQExample\\Program.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwCYAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwCoAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-09T15:01:19.514Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ElementOperatorClass.cs",
-              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\LinQExample\\LinQExample\\ElementOperatorClass.cs",
-              "RelativeDocumentMoniker": "LinQExample\\ElementOperatorClass.cs",
-              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\LinQExample\\LinQExample\\ElementOperatorClass.cs",
-              "RelativeToolTip": "LinQExample\\ElementOperatorClass.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAuwCgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T15:03:03.928Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "QuerySyntax.cs",
               "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\LinQExample\\LinQExample\\QuerySyntax.cs",
               "RelativeDocumentMoniker": "LinQExample\\QuerySyntax.cs",
@@ -166,7 +143,44 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SetOperatorClass.cs",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\LinQExample\\LinQExample\\SetOperatorClass.cs",
+              "RelativeDocumentMoniker": "LinQExample\\SetOperatorClass.cs",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\LinQExample\\LinQExample\\SetOperatorClass.cs",
+              "RelativeToolTip": "LinQExample\\SetOperatorClass.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBkAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T16:58:17.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "JoinOperatorClass.cs",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\LinQExample\\LinQExample\\JoinOperatorClass.cs",
+              "RelativeDocumentMoniker": "LinQExample\\JoinOperatorClass.cs",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\LinQExample\\LinQExample\\JoinOperatorClass.cs",
+              "RelativeToolTip": "LinQExample\\JoinOperatorClass.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T16:28:55.774Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "ElementOperatorClass.cs",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\LinQExample\\LinQExample\\ElementOperatorClass.cs",
+              "RelativeDocumentMoniker": "LinQExample\\ElementOperatorClass.cs",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\LinQExample\\LinQExample\\ElementOperatorClass.cs",
+              "RelativeToolTip": "LinQExample\\ElementOperatorClass.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAuwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T15:03:03.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "AggregateFunctionClass.cs",
               "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\LinQExample\\LinQExample\\AggregateFunctionClass.cs",
               "RelativeDocumentMoniker": "LinQExample\\AggregateFunctionClass.cs",
@@ -174,12 +188,11 @@
               "RelativeToolTip": "LinQExample\\AggregateFunctionClass.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAowAsAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T15:01:19.506Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T15:01:19.506Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ConversionOperatorClass.cs",
               "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\LinQExample\\LinQExample\\ConversionOperatorClass.cs",
               "RelativeDocumentMoniker": "LinQExample\\ConversionOperatorClass.cs",
@@ -187,12 +200,11 @@
               "RelativeToolTip": "LinQExample\\ConversionOperatorClass.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAQwDMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T15:01:19.431Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T15:01:19.431Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "MethodSyntaxClass.cs",
               "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\LinQExample\\LinQExample\\MethodSyntaxClass.cs",
               "RelativeDocumentMoniker": "LinQExample\\MethodSyntaxClass.cs",
@@ -200,12 +212,11 @@
               "RelativeToolTip": "LinQExample\\MethodSyntaxClass.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAgwC8AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T15:01:19.509Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T15:01:19.509Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "PartitionOperatorClass.cs",
               "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\LinQExample\\LinQExample\\PartitionOperatorClass.cs",
               "RelativeDocumentMoniker": "LinQExample\\PartitionOperatorClass.cs",
@@ -213,8 +224,7 @@
               "RelativeToolTip": "LinQExample\\PartitionOperatorClass.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAgwDgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T15:01:19.498Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T15:01:19.498Z"
             }
           ]
         }

@@ -1,56 +1,78 @@
--- use university database 
-use university;
+-- use schooldb database for all topic 
+use schooldb;
 
--- find the student who scored the highest mrks 
-	select sName from Students where StudentID = (
-									select StudentID from Marks order by Marks desc limit 1
-);	
-
--- find the student who scored the lowest  mrks 
-	select sName from Students where StudentID = (
-									select StudentID from Marks order by Marks asc limit 1
-    );
-    
--- List subjects in which any student scored more than 90 marks
-   select SubjectName from Subjects where SubjectID 	in (
-									select SubjectID from Marks where Marks >90
-   );
-   
--- ind the students who are in the same class as 'Riya'
-select sName from Students where Class = (
-							select Class from Students where sName= "Riya"
+-- Find students whose marks are greater than average marks
+SELECT FirstName, LastName
+FROM Students
+WHERE StudentID IN (
+    SELECT StudentID
+    FROM Marks
+    WHERE MarksObtained > (
+        SELECT AVG(MarksObtained) FROM Marks
+    )
 );
 
--- find total mark of specific student 
-
-select sum(Marks) as totalmarks from Marks where StudentID =(
-						 select StudentID from Students where sName="Arpit"
+-- Find teachers who teach Mathematics
+SELECT TeacherName
+FROM Teachers
+WHERE TeacherID IN (
+    SELECT TeacherID
+    FROM Marks
+    WHERE Subject = 'Mathematics'
 );
 
--- Find the subjects in which 'Parth' has scored marks
-select SubjectName from Subjects where SubjectID in (
-						select SubjectID from Marks where StudentID in (
-									select StudentID  from students where sName = "Parth"
-                        )
+-- Find the student with the highest marks in Science
+SELECT FirstName, LastName
+FROM Students
+WHERE StudentID = (
+    SELECT StudentID
+    FROM Marks
+    WHERE Subject = 'Science'
+    ORDER BY MarksObtained DESC
+    LIMIT 1
 );
 
--- find the second marks of mark table 
-select max(Marks) as secondmarks from Marks where marks < (
-					select  max(Marks) from Marks
+-- Find teachers who have taught students with marks above 80
+SELECT TeacherName
+FROM Teachers
+WHERE TeacherID IN (
+    SELECT TeacherID
+    FROM Marks
+    WHERE MarksObtained > 80
 );
 
--- find student whi have scored below avg marks 
-
-select sName from Students where StudentID in (
-		select StudentID from marks where marks < (select avg(marks) from marks)
+-- Find students who have marks less than the maximum marks in History
+SELECT FirstName, LastName
+FROM Students
+WHERE StudentID IN (
+    SELECT StudentID
+    FROM Marks
+    WHERE Subject = 'History' AND MarksObtained < (
+        SELECT MAX(MarksObtained)
+        FROM Marks
+        WHERE Subject = 'History'
+    )
 );
 
--- Find students who scored the same marks as the highest marks in
-select sName from Students where StudentID in (
-						select StudentID from marks where marks = (
-									select  max(marks) from marks where SubjectID = (
-											select SubjectID from Subjects where SubjectName = "mathematics"
-                                    )
-                        
-                        )
+-- Find teachers who teach more than one subject
+SELECT TeacherName
+FROM Teachers
+WHERE TeacherID IN (
+    SELECT TeacherID
+    GROUP BY TeacherID
+    HAVING COUNT(DISTINCT Subject) > 1
 );
+
+-- Find students who have marks less than the average in English
+SELECT FirstName, LastName
+FROM Students
+WHERE StudentID IN (
+    SELECT StudentID
+    FROM Marks
+    WHERE Subject = 'English' AND MarksObtained < (
+        SELECT AVG(MarksObtained)
+        FROM Marks
+        WHERE Subject = 'English'
+    )
+);
+

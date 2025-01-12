@@ -1,166 +1,188 @@
 -- database
-create database university; 
-use university;
--- student table
-create table Students (
-    StudentID int auto_increment primary key,
-    sName varchar(50),
-    Age int,
-    Class varchar(10)
-);
--- subject tabke
-create table Subjects (
-SubjectID int auto_increment primary key,
-SubjectName varchar(20)
+-- all topics have to use schooldb
+use schooldb;
 
-);
+-- truncate all data from students table
+TRUNCATE TABLE Students;
 
--- mark table 
-create table Marks(
-MarkID int auto_increment primary key ,
-StudentID int,
-SubjectID int,
-Marks int, 
-foreign key (StudentID) references Students(StudentID),
-foreign key (SubjectID) references Subjects(SubjectID)
-);
+-- truncate all data from classes table
+TRUNCATE TABLE Teachers;
 
+-- truncate all data from subjects table
+TRUNCATE TABLE Marks;
 
--- single row insert 
-insert into 
-			Students(sName , Age , Class ) 
-values ("parth" , 21 ,  "7");
+-- teachers table me 10 records insert karte hain
+INSERT INTO Teachers (TeacherID, TeacherName, Subject)
+VALUES 
+(1, 'love babbr', 'Mathematics'),
+(2, 'lakshya kumar', 'Science'),
+(3, 'hitesh chaudhary', 'English'),
+(4, 'harry', 'History'),
+(5, 'amit rao', 'Geography'),
+(6, 'nikunj vadher', 'Chemistry'),
+(7, 'piyush garg', 'Physics'),
+(8, 'sumit pandya', 'Biology'),
+(9, 'nishant chahar', 'Computer Science'),
+(10, 'santosh mishra', 'Political Science');
 
-insert into 
-			Subjects(SubjectName)
-values ("physics");
+DELETE FROM Teacher WHERE TeacherID = 1;
 
-insert into 
-			Marks(StudentID , SubjectID , Marks)
-values (1,1,90);
+-- students table me 10 records insert karte hain
+INSERT INTO Students (StudentID, FirstName, LastName, Gender, DOB)
+VALUES 
+(1, 'parth', 'sheladiya', 'Male', '2005-04-15'),
+(2, 'alish', 'pandya', 'Male', '2005-06-20'),
+(3, 'keshvi', 'mishra', 'Female', '2005-09-10'),
+(4, 'Emily', 'Davis', 'Female', '2004-11-25'),
+(5, 'aarti', 'mehta', 'Female', '2004-02-10'),
+(6, 'kavita', 'soni', 'Female', '2003-08-14'),
+(7, 'keyur', 'shah', 'Male', '2003-12-30'),
+(8, 'priyanka', 'gohel', 'Female', '2006-05-05'),
+(9, 'aayush', 'mehta', 'Male', '2006-01-18'),
+(10, 'meera', 'shah', 'Female', '2007-03-25');
 
+-- marks table me 10 records insert karte hain
+INSERT INTO Marks (MarkID, StudentID, TeacherID, MarksObtained, Subject)
+VALUES 
+(1, 1, 1, 85, 'Mathematics'),
+(2, 2, 2, 90, 'Science'),
+(3, 3, 3, 88, 'English'),
+(4, 4, 4, 92, 'History'),
+(5, 5, 1, 80, 'Mathematics'),
+(6, 6, 2, 95, 'Science'),
+(7, 7, 3, 89, 'English'),
+(8, 8, 4, 91, 'History'),
+(9, 9, 1, 75, 'Mathematics'),
+(10, 10, 2, 85, 'Science');
 
--- multiple row insert 
-insert into 
-			Students(sName, Age , Class)
-            values
-('Parth', 21, '7'),
-('Riya', 14, '9'),
-('Mohit', 16, '11'),
-('Neha', 15, '10'),
-('Diya', 11, '9'),
-('Ravi', 17, '12'),
-('Jeel', 18, '12'),
-('Arpit', 14, '9'),
-('Harit', 19, '11'),
-('Keyur', 12, '10'),
-('Nisha', 13, '8'),
-('Rohan', 15, '10');
+-- students table ka data select karte hain
+SELECT * FROM Students;
 
-INSERT INTO Subjects(SubjectName) VALUES
-('Physics'),
-('Chemistry'),
-('Mathematics'),
-('Biology'),
-('English'),
-('Computer Science'),
-('History'),
-('Geography'),
-('Economics'),
-('Political Science'),
-('Hindi'),
-('Sanskrit');
+-- teachers table ka data select karte hain
+SELECT * FROM Teachers;
 
-INSERT INTO Marks(StudentID, SubjectID, Marks) VALUES
-(1, 1, 85),
-(2, 2, 90),
-(3, 3, 78),
-(4, 4, 98),
-(5, 5, 76),
-(6, 6, 89),
-(7, 7, 95),
-(8, 8, 72),
-(9, 9, 84),
-(10, 10, 91),
-(11, 11, 75),
-(12, 12, 82);
+-- marks table ka data select karte hain
+SELECT * FROM Marks;
 
+-- student ke gender ko update karte hain
+UPDATE Students 
+SET Gender = 'Female' 
+WHERE StudentID = 1;
 
--- select cmd
--- retrive all details
-select * from Students;
-select * from Subjects;
-select * from Marks;
+-- student ke marks update karte hain
+UPDATE Marks 
+SET MarksObtained = 95 
+WHERE MarkID = 1;
 
--- retrive specific details
-select sName, Class from Students;
-select SubjectName from Subjects;
+-- ek student ko delete karte hain
+DELETE FROM Students 
+WHERE StudentID = 5;
 
--- using where 
-select * from Students 
-where Class = "11" ;
+-- ek record ko marks table se delete karte hain
+DELETE FROM Marks 
+WHERE MarkID = 2;
 
--- order by 
-select * from Students 
-order by Age asc;
+-- marks jo 85 se zyada hain unko select karte hain
+SELECT * FROM Marks 
+WHERE MarksObtained > 85;
 
--- limit keyword
-select * from Students
-order by age desc limit 1;
+-- students ko unke pehle naam ke hisab se sort karte hain
+SELECT * FROM Students 
+ORDER BY FirstName;
 
--- join 
-select s.sName , m.Marks 
-from Students s join Marks m on s.StudentID = m.StudentID;
+-- marks ko marksobtained ke hisab se sort karte hain
+SELECT * FROM Marks 
+ORDER BY MarksObtained DESC;
 
+-- pehle 3 records ko retrieve karte hain
+SELECT * FROM Students 
+LIMIT 3;
 
--- update
--- single row update 
+-- next 5 records after skipping the first 5 (offset 5)
+SELECT * FROM Marks LIMIT 5 OFFSET 5;
 
-update Students 
-set age =23 
-where sName = 'jeel';
-SET SQL_SAFE_UPDATES = 0;
-update Marks 
-set MArks = Marks-2
-where StudentID =1;
-SET SQL_SAFE_UPDATES = 1;
+-- specific teacher ka record retrieve kar rahe hain, jahan teachername = 'mr. sharma'
+SELECT * FROM Teachers
+WHERE TeacherName = 'patel';
 
--- delelte
+-- specific student ke marks retrieve kar rahe hain, jahan studentid = 3
+SELECT * FROM Marks
+WHERE StudentID = 3;
 
-delete from Students 
-where sName='diya';
+-- specific subject ke marks retrieve kar rahe hain, jahan subject = 'mathematics'
+SELECT * FROM Marks
+WHERE Subject = 'Mathematics';
 
--- all row delete 
-delete from Marks;
+-- teachers ke naam aur unke subjects ko retrieve kar rahe hain
+SELECT TeacherName, Subject FROM Teachers;
 
+-- specific subject ke liye sabhi students ke marks retrieve kar rahe hain, jahan subject = 'science'
+SELECT StudentID, MarksObtained FROM Marks
+WHERE Subject = 'Science';
 
--- using aggrigate fun 
--- avg , max , min
-select avg(Marks) as avarage_marks,
-		max(Marks) as max_Marks,
-        min(Marks) as min_marks
-from Marks;
+-- students table se sirf firstname aur lastname ko retrieve kar rahe hain
+SELECT FirstName, LastName FROM Students;
 
--- count 
-select Class , count(*) as totalstudents
-from Students 
-group by Class;
+-- marks table se sirf studentid aur marksobtained ko retrieve kar rahe hain
+SELECT StudentID, MarksObtained FROM Marks;
 
--- having 
-select Class , count(*) as totalstudents 
-from Students 
-group by Class 
-having totalstudents=2;
+SELECT studentID, COUNT(*) AS TotalStudents
+FROM Students
+GROUP BY studentID;
 
--- as keyword 
-select sName as StudentName , Class as Section 
-from Students;
+SELECT 
+    AVG(MarksObtained) AS AverageMarks,   -- calculate average marks
+    MAX(MarksObtained) AS MaxMarks,       -- get maximum marks
+    MIN(MarksObtained) AS MinMarks        -- get minimum marks
+FROM Marks;
 
+-- multiple students update 
+UPDATE Students
+SET
+    FirstName = CASE 
+        WHEN StudentID = 1 THEN 'ram'
+        WHEN StudentID = 2 THEN 'raj'
+        WHEN StudentID = 3 THEN 'jay'
+        ELSE FirstName
+    END,
+    LastName = CASE 
+        WHEN StudentID = 1 THEN 'patel'
+        WHEN StudentID = 2 THEN 'chaudhary'
+        WHEN StudentID = 3 THEN 'shah'
+        ELSE LastName
+    END
+WHERE StudentID IN (1, 2, 3);
 
--- distinct 
-select distinct Class 
-from Students;
+-- multiple agg fun 
+SELECT 
+    MAX(MarksObtained) AS MaxMarks,
+    MAX(StudentID) AS MaxStudentID,
+    MAX(TeacherID) AS MaxTeacherID
+FROM Marks;
 
-drop table Students;
-drop table Marks;
-drop table Subjects;
+SELECT 
+    StudentID, 
+    TeacherID, 
+    Subject, 
+    AVG(MarksObtained) AS AverageMarks
+FROM Marks
+GROUP BY StudentID, TeacherID, Subject;
+
+SELECT 
+    StudentID, 
+    TeacherID, 
+    Subject, 
+    AVG(MarksObtained) AS AverageMarks
+FROM Marks
+GROUP BY StudentID, TeacherID, Subject
+HAVING AVG(MarksObtained) > 60 OR MAX(MarksObtained) < 50;
+
+SELECT DISTINCT StudentID
+FROM Marks;
+
+SELECT DISTINCT StudentID, Subject
+FROM Marks;
+
+SELECT DISTINCT Subject, AVG(MarksObtained) AS AverageMarks
+FROM Marks
+GROUP BY Subject;

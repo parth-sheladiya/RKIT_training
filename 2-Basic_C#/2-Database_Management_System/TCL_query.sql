@@ -1,4 +1,4 @@
--- Database Create karein
+-- Database Create 
 CREATE DATABASE universityDB;
 USE universityDB;
 
@@ -56,30 +56,30 @@ COMMIT;
 
 -- roll back
 START TRANSACTION;
+-- incase update  is wrong 
+UPDATE Marks SET MarksObtained = 90 WHERE MarkID = 2; 
+-- incase delete mark id 3 
+DELETE FROM Marks WHERE MarkID = 3; 
 
-UPDATE Marks SET MarksObtained = 50 WHERE MarkID = 2; -- Galat update (Rahul ke Science ke marks galat ho gaye)
-DELETE FROM Marks WHERE MarkID = 3; -- Aman ka English marks galti se delete ho gaya
-
+-- use to recover data
 ROLLBACK;
-
+select * from marks;
 -- savepoint 
 START TRANSACTION;
 
-UPDATE Marks SET MarksObtained = 80 WHERE MarkID = 1; -- Rahul ke Math marks update
+UPDATE Marks SET MarksObtained = 80 WHERE MarkID = 1; 
 SAVEPOINT BeforeScienceUpdate;
 
-UPDATE Marks SET MarksObtained = 70 WHERE MarkID = 2; -- Rahul ke Science marks update
+UPDATE Marks SET MarksObtained = 70 WHERE MarkID = 2; 
 SAVEPOINT AfterScienceUpdate;
 
--- Galti se kuch aur update ho gaya
+-- incase some updates 
 UPDATE Marks SET MarksObtained = 60 WHERE MarkID = 4;
 
-ROLLBACK TO BeforeScienceUpdate; -- Sirf BeforeScienceUpdate tak changes wapas ho gaye
+-- only changes beforescienceupdate
+ROLLBACK TO BeforeScienceUpdate; 
 
 COMMIT;
-
-
-
 
 select * from Marks;
 select * from Students;

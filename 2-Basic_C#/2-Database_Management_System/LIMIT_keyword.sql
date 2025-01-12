@@ -1,29 +1,32 @@
--- use of university data
-use university;
+-- use of schooldb for all topics 
+use schooldb;
 
--- top 5 student of student tbl
-select * from Students limit 5;
+-- Retrieve the first 3 students from the Students table
+SELECT * FROM Students LIMIT 3;
 
--- retrive 3 subjects
-select * from Subjects limit 3;
+-- Retrieve the top 5 students ordered by StudentID
+SELECT * FROM Students ORDER BY StudentID LIMIT 5;
 
--- retrive 5 marks of mark tbl
-select * from Marks limit 5;
+-- Retrieve the last 3 students from the Students table
+SELECT * FROM Students ORDER BY StudentID DESC LIMIT 3;
 
--- retrive 5 student after skip 2 student
-select * from students limit 2 , 5;
+-- Retrieve the first 3 teachers who teach 'Science'
+SELECT * FROM Teachers WHERE Subject = 'Science' LIMIT 3;
 
--- retrive top 3 highest mark 
-select * from Marks order by Marks desc limit 3;
+-- Retrieve the first 3 students whose first name starts with 'a'
+SELECT * FROM Students WHERE FirstName LIKE 'a%' LIMIT 3;
 
--- retrive top 3 lowest mark 
-select * from marks order by marks asc limit 3;
+-- Retrieve the first 3 teachers whose name starts with 'A'
+SELECT * FROM Teachers WHERE TeacherName LIKE 'A%' LIMIT 3;
 
--- alphabatically sorted 
-select * from subjects order by SubjectName asc limit 4;
+-- Retrieve students starting from the 5th record (skip the first 4)
+SELECT * FROM Students LIMIT 5 OFFSET 4;
 
--- top 5 even num row retrive 
-select * from students where studentid % 2 =0 limit 5;
+-- Retrieve the first 3 teachers along with their subjects
+SELECT TeacherName, Subject FROM Teachers LIMIT 3;
 
--- randomly 5 row retrive 
-select * from students order by rand() limit 4;
+-- Retrieve teachers starting from the 3rd record
+SELECT * FROM Teachers LIMIT 3 OFFSET 2;
+
+-- Retrieve the next 3 students after skipping the first 5
+SELECT * FROM Students LIMIT 3 OFFSET 5;

@@ -1,20 +1,30 @@
--- use university database 
-use university;
+-- use schooldb database for all topics
+use schooldb;
 
---  Creating index on sName column
-create index idx_sName on students(sName);
+-- create an index on the TeacherName column of the Teachers table
+-- this will make queries on the TeacherName column faster
+create index idx_teacher_name on teachers(teachername);
 
-select * from students where sName = 'Parth';
+-- view all existing indexes in the Teachers table
+show indexes from teachers;
 
-show indexes from Students;
+-- create an index on both StudentID and TeacherID columns in the Marks table
+-- this will optimize queries that search using both columns
+create index idx_student_teacher on marks(studentid, teacherid);
 
+-- view all existing indexes in the Marks table
+show indexes from marks;
 
--- Index on Multiple Columns
+-- drop the idx_teacher_name index from the Teachers table
+drop index idx_teacher_name on teachers;
 
-create index idx_age_class on students(age,class);
+-- retrieve data from the Marks table based on the Subject column
+-- using EXPLAIN to check if the index is being used
+explain select * from marks where subject = 'Mathematics';
 
-EXPLAIN SELECT * FROM Students WHERE sName = 'Parth';
+-- create a unique index on the StudentID column in the Students table
+-- this will prevent duplicate values in the StudentID column
+create unique index idx_unique_student_id on students(studentid);
 
--- Dropping the index on sName
-DROP INDEX idx_sName ON Students;
-
+-- create a full-text index on the TeacherName column in the Teachers table
+create fulltext index idx_fulltext_teacher_name on teachers(teachername);
