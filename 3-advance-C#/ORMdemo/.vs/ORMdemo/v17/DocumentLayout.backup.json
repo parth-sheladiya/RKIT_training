@@ -1,0 +1,188 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1AD61F22-19A3-4C20-AB39-BECC2266E999}|ORMdemo\\ORMdemo.csproj|e:\\training-2025\\rkit_training\\3-advance-c#\\ormdemo\\ormdemo\\bl\\operations\\bl_product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AD61F22-19A3-4C20-AB39-BECC2266E999}|ORMdemo\\ORMdemo.csproj|solutionrelative:ormdemo\\bl\\operations\\bl_product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AD61F22-19A3-4C20-AB39-BECC2266E999}|ORMdemo\\ORMdemo.csproj|E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ormdemo\\bl\\interface\\i_data_handler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AD61F22-19A3-4C20-AB39-BECC2266E999}|ORMdemo\\ORMdemo.csproj|solutionrelative:ormdemo\\bl\\interface\\i_data_handler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AD61F22-19A3-4C20-AB39-BECC2266E999}|ORMdemo\\ORMdemo.csproj|E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ormdemo\\controllers\\cl_productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AD61F22-19A3-4C20-AB39-BECC2266E999}|ORMdemo\\ORMdemo.csproj|solutionrelative:ormdemo\\controllers\\cl_productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AD61F22-19A3-4C20-AB39-BECC2266E999}|ORMdemo\\ORMdemo.csproj|E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ormdemo\\extension\\dto_to_poco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AD61F22-19A3-4C20-AB39-BECC2266E999}|ORMdemo\\ORMdemo.csproj|solutionrelative:ormdemo\\extension\\dto_to_poco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AD61F22-19A3-4C20-AB39-BECC2266E999}|ORMdemo\\ORMdemo.csproj|E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ormdemo\\models\\poco\\pdt01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AD61F22-19A3-4C20-AB39-BECC2266E999}|ORMdemo\\ORMdemo.csproj|solutionrelative:ormdemo\\models\\poco\\pdt01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AD61F22-19A3-4C20-AB39-BECC2266E999}|ORMdemo\\ORMdemo.csproj|E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ormdemo\\models\\enum\\enum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AD61F22-19A3-4C20-AB39-BECC2266E999}|ORMdemo\\ORMdemo.csproj|solutionrelative:ormdemo\\models\\enum\\enum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AD61F22-19A3-4C20-AB39-BECC2266E999}|ORMdemo\\ORMdemo.csproj|E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ormdemo\\models\\dto\\dto_pdt01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AD61F22-19A3-4C20-AB39-BECC2266E999}|ORMdemo\\ORMdemo.csproj|solutionrelative:ormdemo\\models\\dto\\dto_pdt01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AD61F22-19A3-4C20-AB39-BECC2266E999}|ORMdemo\\ORMdemo.csproj|E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ormdemo\\models\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AD61F22-19A3-4C20-AB39-BECC2266E999}|ORMdemo\\ORMdemo.csproj|solutionrelative:ormdemo\\models\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AD61F22-19A3-4C20-AB39-BECC2266E999}|ORMdemo\\ORMdemo.csproj|E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ormdemo\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AD61F22-19A3-4C20-AB39-BECC2266E999}|ORMdemo\\ORMdemo.csproj|solutionrelative:ormdemo\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AD61F22-19A3-4C20-AB39-BECC2266E999}|ORMdemo\\ORMdemo.csproj|E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ormdemo\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{1AD61F22-19A3-4C20-AB39-BECC2266E999}|ORMdemo\\ORMdemo.csproj|solutionrelative:ormdemo\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CL_ProductController.cs",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ORMdemo\\Controllers\\CL_ProductController.cs",
+              "RelativeDocumentMoniker": "ORMdemo\\Controllers\\CL_ProductController.cs",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ORMdemo\\Controllers\\CL_ProductController.cs",
+              "RelativeToolTip": "ORMdemo\\Controllers\\CL_ProductController.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAYwHwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T18:20:09.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DTO_TO_POCO.cs",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ORMdemo\\Extension\\DTO_TO_POCO.cs",
+              "RelativeDocumentMoniker": "ORMdemo\\Extension\\DTO_TO_POCO.cs",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ORMdemo\\Extension\\DTO_TO_POCO.cs",
+              "RelativeToolTip": "ORMdemo\\Extension\\DTO_TO_POCO.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAgwDoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T18:20:10.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BL_Product.cs",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ORMdemo\\BL\\Operations\\BL_Product.cs",
+              "RelativeDocumentMoniker": "ORMdemo\\BL\\Operations\\BL_Product.cs",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ORMdemo\\BL\\Operations\\BL_Product.cs",
+              "RelativeToolTip": "ORMdemo\\BL\\Operations\\BL_Product.cs",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAiwLAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T18:20:10.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "I_Data_Handler.cs",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ORMdemo\\BL\\Interface\\I_Data_Handler.cs",
+              "RelativeDocumentMoniker": "ORMdemo\\BL\\Interface\\I_Data_Handler.cs",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ORMdemo\\BL\\Interface\\I_Data_Handler.cs",
+              "RelativeToolTip": "ORMdemo\\BL\\Interface\\I_Data_Handler.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAxwCkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T18:20:10.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DTO_PDT01.cs",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ORMdemo\\Models\\DTO\\DTO_PDT01.cs",
+              "RelativeDocumentMoniker": "ORMdemo\\Models\\DTO\\DTO_PDT01.cs",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ORMdemo\\Models\\DTO\\DTO_PDT01.cs",
+              "RelativeToolTip": "ORMdemo\\Models\\DTO\\DTO_PDT01.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T18:20:10.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Enum.cs",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ORMdemo\\Models\\ENUM\\Enum.cs",
+              "RelativeDocumentMoniker": "ORMdemo\\Models\\ENUM\\Enum.cs",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ORMdemo\\Models\\ENUM\\Enum.cs",
+              "RelativeToolTip": "ORMdemo\\Models\\ENUM\\Enum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T18:20:10.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Response.cs",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ORMdemo\\Models\\Response.cs",
+              "RelativeDocumentMoniker": "ORMdemo\\Models\\Response.cs",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ORMdemo\\Models\\Response.cs",
+              "RelativeToolTip": "ORMdemo\\Models\\Response.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwA4AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T18:20:10.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PDT01.cs",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ORMdemo\\Models\\POCO\\PDT01.cs",
+              "RelativeDocumentMoniker": "ORMdemo\\Models\\POCO\\PDT01.cs",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ORMdemo\\Models\\POCO\\PDT01.cs",
+              "RelativeToolTip": "ORMdemo\\Models\\POCO\\PDT01.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T18:20:10.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Web.config",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ORMdemo\\Web.config",
+              "RelativeDocumentMoniker": "ORMdemo\\Web.config",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ORMdemo\\Web.config",
+              "RelativeToolTip": "ORMdemo\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-01-13T18:20:10.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ORMdemo\\Global.asax.cs",
+              "RelativeDocumentMoniker": "ORMdemo\\Global.asax.cs",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ORMdemo\\Global.asax.cs",
+              "RelativeToolTip": "ORMdemo\\Global.asax.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAgwBYAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001384|",
+              "WhenOpened": "2025-01-13T18:20:10.802Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
