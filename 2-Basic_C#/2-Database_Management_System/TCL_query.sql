@@ -53,7 +53,7 @@ UPDATE Marks SET MarksObtained = 95 WHERE MarkID = 1;
 INSERT INTO Marks (StudentID, SubjectID, MarksObtained) VALUES (2, 2, 88); 
 
 COMMIT;
-
+select * from marks;
 -- roll back
 START TRANSACTION;
 -- incase update  is wrong 

@@ -1,18 +1,17 @@
--- database
--- all topics have to use schooldb
-use schooldb;
+-- Use the schooldb database
+USE schooldb;
 
--- truncate all data from students table
+-- Truncate all data from the students table
 TRUNCATE TABLE Students;
 
--- truncate all data from classes table
+-- Truncate all data from the teachers table
 TRUNCATE TABLE Teachers;
 
--- truncate all data from subjects table
+-- Truncate all data from the marks table
 TRUNCATE TABLE Marks;
 
--- teachers table me 10 records insert karte hain
-INSERT INTO Teachers (TeacherID, TeacherName, Subject)
+-- Insert 10 records into the teachers table
+INSERT INTO Teachers (TeacherID, TeacherName, SubjectName)
 VALUES 
 (1, 'love babbr', 'Mathematics'),
 (2, 'lakshya kumar', 'Science'),
@@ -25,9 +24,10 @@ VALUES
 (9, 'nishant chahar', 'Computer Science'),
 (10, 'santosh mishra', 'Political Science');
 
+-- Delete teacher with TeacherID = 1
 DELETE FROM Teacher WHERE TeacherID = 1;
 
--- students table me 10 records insert karte hain
+-- Insert 10 records into the students table
 INSERT INTO Students (StudentID, FirstName, LastName, Gender, DOB)
 VALUES 
 (1, 'parth', 'sheladiya', 'Male', '2005-04-15'),
@@ -41,8 +41,23 @@ VALUES
 (9, 'aayush', 'mehta', 'Male', '2006-01-18'),
 (10, 'meera', 'shah', 'Female', '2007-03-25');
 
--- marks table me 10 records insert karte hain
-INSERT INTO Marks (MarkID, StudentID, TeacherID, MarksObtained, Subject)
+-- LOCKING SYSTEM
+LOCK TABLE Students WRITE;
+UNLOCK TABLES;
+START TRANSACTION;
+COMMIT;
+ROLLBACK;
+
+
+
+
+select * FROM Students;
+UPDATE Students SET Gender = "female" WHERE StudentID = 2;
+INSERT INTO Students (StudentID, FirstName, LastName, Gender, DOB)
+VALUES (11, 'meera', 'shah', 'Female', '2007-03-25');
+
+-- Insert 10 records into the marks table
+INSERT INTO Marks (MarkID, StudentID, TeacherID, MarksObtained, SubjectName)
 VALUES 
 (1, 1, 1, 85, 'Mathematics'),
 (2, 2, 2, 90, 'Science'),
@@ -55,88 +70,93 @@ VALUES
 (9, 9, 1, 75, 'Mathematics'),
 (10, 10, 2, 85, 'Science');
 
--- students table ka data select karte hain
+-- Select all data from the students, teachers, and marks tables
+SELECT * FROM Students, Teachers, Marks;
+
+-- Select all data from the students table
 SELECT * FROM Students;
 
--- teachers table ka data select karte hain
+-- Select all data from the teachers table
 SELECT * FROM Teachers;
 
--- marks table ka data select karte hain
+-- Select all data from the marks table
 SELECT * FROM Marks;
 
--- student ke gender ko update karte hain
-UPDATE Students 
+-- Update the gender of the student with StudentID = 1
+UPDATE Students
 SET Gender = 'Female' 
 WHERE StudentID = 1;
 
--- student ke marks update karte hain
+-- Update the marks of the student with MarkID = 1
 UPDATE Marks 
 SET MarksObtained = 95 
 WHERE MarkID = 1;
 
--- ek student ko delete karte hain
+-- Delete the student with StudentID = 5
 DELETE FROM Students 
 WHERE StudentID = 5;
 
--- ek record ko marks table se delete karte hain
+-- Delete the record from the marks table with MarkID = 2
 DELETE FROM Marks 
 WHERE MarkID = 2;
 
--- marks jo 85 se zyada hain unko select karte hain
+-- Select marks greater than 85 from the marks table
 SELECT * FROM Marks 
 WHERE MarksObtained > 85;
 
--- students ko unke pehle naam ke hisab se sort karte hain
+-- Sort students by their first name
 SELECT * FROM Students 
 ORDER BY FirstName;
 
--- marks ko marksobtained ke hisab se sort karte hain
+-- Sort marks in descending order by marks obtained
 SELECT * FROM Marks 
 ORDER BY MarksObtained DESC;
 
--- pehle 3 records ko retrieve karte hain
+-- Retrieve 3 records starting from the 4th record (offset 3)
 SELECT * FROM Students 
-LIMIT 3;
+LIMIT 3, 2;
 
--- next 5 records after skipping the first 5 (offset 5)
+-- Retrieve the next 5 records after skipping the first 5 (offset 5)
 SELECT * FROM Marks LIMIT 5 OFFSET 5;
 
--- specific teacher ka record retrieve kar rahe hain, jahan teachername = 'mr. sharma'
+-- Retrieve records for a specific teacher where teacher name is 'mr. sharma'
 SELECT * FROM Teachers
 WHERE TeacherName = 'patel';
 
--- specific student ke marks retrieve kar rahe hain, jahan studentid = 3
+-- Retrieve marks for a specific student with StudentID = 3
 SELECT * FROM Marks
 WHERE StudentID = 3;
 
--- specific subject ke marks retrieve kar rahe hain, jahan subject = 'mathematics'
+-- Retrieve marks for a specific subject 'Mathematics'
 SELECT * FROM Marks
-WHERE Subject = 'Mathematics';
+WHERE SubjectName = 'Mathematics';
 
--- teachers ke naam aur unke subjects ko retrieve kar rahe hain
-SELECT TeacherName, Subject FROM Teachers;
+-- Retrieve teacher names and their subjects
+SELECT TeacherName, SubjectName FROM Teachers;
 
--- specific subject ke liye sabhi students ke marks retrieve kar rahe hain, jahan subject = 'science'
+-- Retrieve marks of all students for the subject 'Science'
 SELECT StudentID, MarksObtained FROM Marks
-WHERE Subject = 'Science';
+WHERE SubjectName = 'Science';
 
--- students table se sirf firstname aur lastname ko retrieve kar rahe hain
+-- Retrieve only the first name and last name from the students table
 SELECT FirstName, LastName FROM Students;
 
--- marks table se sirf studentid aur marksobtained ko retrieve kar rahe hain
+-- Retrieve only the studentID and marks obtained from the marks table
 SELECT StudentID, MarksObtained FROM Marks;
 
+-- Count the total number of students
 SELECT studentID, COUNT(*) AS TotalStudents
 FROM Students
 GROUP BY studentID;
 
+-- Calculate the average, maximum, and minimum marks from the marks table
 SELECT 
     AVG(MarksObtained) AS AverageMarks,   -- calculate average marks
     MAX(MarksObtained) AS MaxMarks,       -- get maximum marks
     MIN(MarksObtained) AS MinMarks        -- get minimum marks
 FROM Marks;
 
--- multiple students update 
+-- Update multiple students with different first names and last names based on StudentID
 UPDATE Students
 SET
     FirstName = CASE 
@@ -153,36 +173,41 @@ SET
     END
 WHERE StudentID IN (1, 2, 3);
 
--- multiple agg fun 
+-- Get the maximum marks, maximum studentID, and maximum teacherID from the marks table
 SELECT 
     MAX(MarksObtained) AS MaxMarks,
     MAX(StudentID) AS MaxStudentID,
     MAX(TeacherID) AS MaxTeacherID
 FROM Marks;
 
+-- Get the average marks for each student, teacher, and subject
 SELECT 
     StudentID, 
     TeacherID, 
-    Subject, 
+    SubjectName, 
     AVG(MarksObtained) AS AverageMarks
 FROM Marks
-GROUP BY StudentID, TeacherID, Subject;
+GROUP BY StudentID, TeacherID, SubjectName;
 
+-- Get the average marks for each student, teacher, and subject with conditions
 SELECT 
     StudentID, 
     TeacherID, 
-    Subject, 
+    SubjectName, 
     AVG(MarksObtained) AS AverageMarks
 FROM Marks
-GROUP BY StudentID, TeacherID, Subject
+GROUP BY StudentID, TeacherID, SubjectName
 HAVING AVG(MarksObtained) > 60 OR MAX(MarksObtained) < 50;
 
+-- Retrieve distinct StudentIDs from the marks table
 SELECT DISTINCT StudentID
 FROM Marks;
 
-SELECT DISTINCT StudentID, Subject
+-- Retrieve distinct StudentID and SubjectName pairs from the marks table
+SELECT DISTINCT StudentID, SubjectName
 FROM Marks;
 
-SELECT DISTINCT Subject, AVG(MarksObtained) AS AverageMarks
+-- Retrieve distinct SubjectNames and calculate the average marks for each subject
+SELECT DISTINCT SubjectName, AVG(MarksObtained) AS AverageMarks
 FROM Marks
-GROUP BY Subject;
+GROUP BY SubjectName;

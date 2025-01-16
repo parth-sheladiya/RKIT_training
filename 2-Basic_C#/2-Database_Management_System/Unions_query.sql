@@ -13,35 +13,34 @@ UNION ALL
 SELECT TeacherName AS Name FROM Teachers;
 
 -- Combine marks obtained in Mathematics and Science using UNION
-SELECT MarksObtained FROM Marks WHERE Subject = 'Mathematics'
+SELECT MarksObtained FROM Marks WHERE SubjectName = 'Mathematics'
 UNION
-SELECT MarksObtained FROM Marks WHERE Subject = 'Science';
+SELECT MarksObtained FROM Marks WHERE SubjectName = 'Science';
 
 -- Combine marks obtained in Mathematics and Science using UNION ALL
-SELECT MarksObtained As objtainedmarks FROM Marks WHERE Subject = 'Mathematics'
+SELECT MarksObtained As objtainedmarks FROM Marks WHERE SubjectName = 'Mathematics' and MarksObtained >90
 UNION ALL
-SELECT MarksObtained FROM Marks WHERE Subject = 'Science';
-
+SELECT MarksObtained  As objtainedmarks FROM Marks WHERE SubjectName = 'Science' and  MarksObtained >90;
 
 -- Find students who have marks in both Mathematics and Science using UNION
-SELECT StudentID FROM Marks WHERE Subject = 'Mathematics'
+SELECT StudentID FROM Marks WHERE SubjectName = 'Mathematics'
 UNION
-SELECT StudentID FROM Marks WHERE Subject = 'Science';
+SELECT StudentID FROM Marks WHERE SubjectName = 'Science';
 
 -- Combine teachers who teach Mathematics or Science using UNION
-SELECT TeacherName FROM Teachers WHERE Subject = 'Mathematics'
+SELECT TeacherName FROM Teachers WHERE SubjectName = 'Mathematics'
 UNION
-SELECT TeacherName FROM Teachers WHERE Subject = 'Science';
+SELECT TeacherName FROM Teachers WHERE SubjectName = 'Science';
 
 -- Find students who have marks in both English and History using UNION
-SELECT StudentID FROM Marks WHERE Subject = 'English'
+SELECT StudentID FROM Marks WHERE SubjectName = 'English'
 UNION
-SELECT StudentID FROM Marks WHERE Subject = 'History';
+SELECT StudentID FROM Marks WHERE SubjectName = 'History';
 
 -- Combine all marks in Mathematics and English using UNION ALL
-SELECT MarksObtained FROM Marks WHERE Subject = 'Mathematics'
+SELECT MarksObtained FROM Marks WHERE SubjectName = 'Mathematics'
 UNION ALL
-SELECT MarksObtained FROM Marks WHERE Subject = 'English';
+SELECT MarksObtained FROM Marks WHERE SubjectName = 'English';
 
 -- Combine Teacher and Student names for all subjects using UNION
 SELECT TeacherName AS Name FROM Teachers
@@ -52,46 +51,4 @@ SELECT CONCAT(FirstName, ' ', LastName) AS Name FROM Students;
 SELECT StudentID FROM Marks WHERE MarksObtained > 80
 UNION
 SELECT StudentID FROM Marks WHERE MarksObtained > 80;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--- Basic UNION (Remove Duplicates)
-select sName from students where class	= '7'
-
-union 
-
-select subjectName from subjects;
-
-
---  UNION ALL (Include Duplicates)
-select sName from students where class = '7'
-union all 
-select subjectName from subjects;
-
--- UNION for Different Data Types
-select sName , Age from Students where class = '7'
-union 
-select subjectName , null as age from Subjects;
-
--- UNION Across Multiple Tables
-select sName from Students where class='7'
-union 
-select marks from marks where marks>90;
-
--- UNION to Combine Results from Different States
-
-select sName from Students where class='7'
-union 
-select sName from students where class='9';
 

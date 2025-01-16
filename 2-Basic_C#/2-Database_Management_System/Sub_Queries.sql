@@ -18,7 +18,7 @@ FROM Teachers
 WHERE TeacherID IN (
     SELECT TeacherID
     FROM Marks
-    WHERE Subject = 'Mathematics'
+    WHERE SubjectName = 'Mathematics'
 );
 
 -- Find the student with the highest marks in Science
@@ -27,7 +27,7 @@ FROM Students
 WHERE StudentID = (
     SELECT StudentID
     FROM Marks
-    WHERE Subject = 'Science'
+    WHERE SubjectName = 'Science'
     ORDER BY MarksObtained DESC
     LIMIT 1
 );
@@ -47,10 +47,10 @@ FROM Students
 WHERE StudentID IN (
     SELECT StudentID
     FROM Marks
-    WHERE Subject = 'History' AND MarksObtained < (
+    WHERE SubjectName = 'History' AND MarksObtained < (
         SELECT MAX(MarksObtained)
         FROM Marks
-        WHERE Subject = 'History'
+        WHERE SubjectName = 'History'
     )
 );
 

@@ -20,7 +20,7 @@ drop index idx_teacher_name on teachers;
 
 -- retrieve data from the Marks table based on the Subject column
 -- using EXPLAIN to check if the index is being used
-explain select * from marks where subject = 'Mathematics';
+explain select * from marks where subjectName = 'Mathematics';
 
 -- create a unique index on the StudentID column in the Students table
 -- this will prevent duplicate values in the StudentID column

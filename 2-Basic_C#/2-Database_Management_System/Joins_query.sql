@@ -3,19 +3,19 @@ use schooldb;
 
 -- inner join: joining marks and students table
 -- here, we are joining based on studentid
-select students.studentid, students.firstname, students.lastname, marks.subject, marks.marksobtained
+select students.studentid, students.firstname, students.lastname, marks.subjectName, marks.marksobtained
 from students
 inner join marks on students.studentid = marks.studentid;
 
 -- left join: joining students and marks table
 -- here, we will get all student records, whether matching records exist in marks table or not
-select students.studentid, students.firstname, students.lastname, marks.subject, marks.marksobtained
-from students
-left join marks on students.studentid = marks.studentid;
+select students.studentid, students.firstname, students.lastname, marks.subjectName, marks.marksobtained
+from marks
+left join students on marks.studentid = students.studentid;
 
 -- right join: joining marks and students table
 -- here, we will get all marks records, whether matching student records exist or not
-select marks.markid, marks.subject, marks.marksobtained, students.firstname, students.lastname
+select marks.markid, marks.subjectName, marks.marksobtained, students.firstname, students.lastname
 from marks
 right join students on marks.studentid = students.studentid;
 
@@ -26,7 +26,7 @@ from students a, students b
 where a.gender = b.gender and a.studentid != b.studentid;
 
 -- using aliases to join: marks, students, and teachers
-select s.studentid, s.firstname, m.subject, m.marksobtained, t.teachername
+select s.studentid, s.firstname, m.subjectName, m.marksobtained, t.teachername
 from marks m
 inner join students s on m.studentid = s.studentid
 inner join teachers t on m.teacherid = t.teacherid;
@@ -37,4 +37,4 @@ select students.studentid, students.firstname, marks.marksobtained, teachers.tea
 from marks
 inner join students on marks.studentid = students.studentid
 inner join teachers on marks.teacherid = teachers.teacherid
-where marks.subject = 'Mathematics';
+where marks.subjectName = 'Mathematics';

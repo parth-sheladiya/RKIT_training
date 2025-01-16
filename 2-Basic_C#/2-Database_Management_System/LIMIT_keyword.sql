@@ -11,7 +11,7 @@ SELECT * FROM Students ORDER BY StudentID LIMIT 5;
 SELECT * FROM Students ORDER BY StudentID DESC LIMIT 3;
 
 -- Retrieve the first 3 teachers who teach 'Science'
-SELECT * FROM Teachers WHERE Subject = 'Science' LIMIT 3;
+SELECT * FROM Teachers WHERE SubjectName = 'Science' LIMIT 3;
 
 -- Retrieve the first 3 students whose first name starts with 'a'
 SELECT * FROM Students WHERE FirstName LIKE 'a%' LIMIT 3;
@@ -23,10 +23,10 @@ SELECT * FROM Teachers WHERE TeacherName LIKE 'A%' LIMIT 3;
 SELECT * FROM Students LIMIT 5 OFFSET 4;
 
 -- Retrieve the first 3 teachers along with their subjects
-SELECT TeacherName, Subject FROM Teachers LIMIT 3;
+SELECT TeacherName, SubjectName FROM Teachers LIMIT 3;
 
 -- Retrieve teachers starting from the 3rd record
 SELECT * FROM Teachers LIMIT 3 OFFSET 2;
 
 -- Retrieve the next 3 students after skipping the first 5
-SELECT * FROM Students LIMIT 3 OFFSET 5;
+SELECT * FROM Students LIMIT 3 OFFSET 2;
