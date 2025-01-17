@@ -5,12 +5,21 @@ using System.Web;
 
 namespace ORMrevision.Models.DTO
 {
+    /// <summary>
+    /// it is product fto class
+    /// it is class to communicate to the user
+    /// it is not communicate to the database 
+    /// </summary>
     public class Product_DTO
     {
-        public int Id { get; set; }           // Product ki unique identifier
-        public string Name { get; set; }      // Product ka naam
-        public string Description { get; set; } // Product ka description
-        public decimal Price { get; set; }    // Product ki price
+        // id field
+        public int Id { get; set; }           
+        // name field
+        public string Name { get; set; }     
+        // description field
+        public string Description { get; set; } 
+        // price field
+        public decimal Price { get; set; }   
        
     }
 }
