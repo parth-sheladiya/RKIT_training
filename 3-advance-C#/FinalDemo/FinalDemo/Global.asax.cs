@@ -33,9 +33,8 @@ namespace FinalDemo
         {
             using (var db = dbFactory.OpenDbConnection())
             {
-                db.CreateTableIfNotExists<User>();
-                db.CreateTableIfNotExists<Product>();
-                db.CreateTableIfNotExists<Order>();
+               
+               db.CreateTableIfNotExists<User>();
 
             }
         }

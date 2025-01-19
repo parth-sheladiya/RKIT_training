@@ -1,77 +1,37 @@
-﻿using FinalDemo.Models.ENUM;
-using ServiceStack.DataAnnotations;
+﻿using ServiceStack.DataAnnotations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Numerics;
 using System.Web;
-
+using FinalDemo.Models.ENUM;
+using System.ComponentModel.DataAnnotations;
 namespace FinalDemo.Models.POCO
 {
     public class User
     {
-        
-        /// <summary>
-        /// user id it is primary key and autoincrement
-        /// </summary>
-        [PrimaryKey]
         [AutoIncrement]
-        public int Id { get; set; }
+        [PrimaryKey]
+        public int userId { get; set; }
 
 
-        /// <summary>
-        /// user name 
-        /// </summary>
-        public string Name { get; set; }
+        public string userName { get; set; }
 
-
-        /// <summary>
-        /// user email it is unique
-        /// </summary>
-        [Required]
         [Unique]
-        public string Email { get; set; }
+        public string userEmail { get; set; }
 
+        public string userPassword { get; set; }
 
-        /// <summary>
-        /// user password
-        /// </summary>
-        [Required]
-        public string Password { get; set; }
+        public long userMobile { get; set; }
 
+        public string userAddress { get; set; }
 
-        /// <summary>
-        /// user phone number 
-        /// </summary>
-        [Required]
-        public long PhoneNumber { get; set; }
-
-
-        /// <summary>
-        /// user address 
-        /// </summary>
-        [Required]
-        public string Address { get; set; }
-
-
-        /// <summary>
-        /// user created at
-        /// </summary>
         [IgnoreOnUpdate]
-        public DateTime CreatedAt { get; set; } = DateTime.Now;
+        [EnumDataType(typeof(EnmRoleType))]
+        public EnmRoleType RoleType { get; set; } 
 
-
-        /// <summary>
-        /// user updated at
-        /// </summary>
-        public DateTime UpdatedAt { get; set; } = DateTime.Now;
-
-
-        /// <summary>
-        /// user role is it admin or user 
-        /// </summary>
-        [Required]
         [IgnoreOnUpdate]
-        public RoleEnum Role { get; set; } = RoleEnum.User;
+        public DateTime createdAt { get; set; } = DateTime.Now;
+
+        public DateTime updatedAt { get; set; } = DateTime.Now;
     }
 }
