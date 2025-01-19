@@ -1,0 +1,320 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|e:\\training-2025\\rkit_training\\3-advance-c#\\finaldemo\\finaldemo\\bl\\operations\\authhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\bl\\operations\\authhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\finaldemo\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|e:\\training-2025\\rkit_training\\3-advance-c#\\finaldemo\\finaldemo\\bl\\interface\\idatahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\bl\\interface\\idatahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\finaldemo\\bl\\interface\\iauthhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\bl\\interface\\iauthhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\finaldemo\\models\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\models\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\finaldemo\\models\\poco\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\models\\poco\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\finaldemo\\models\\enum\\orderstatusenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\models\\enum\\orderstatusenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\finaldemo\\models\\enum\\roleenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\models\\enum\\roleenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\finaldemo\\models\\dto\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\models\\dto\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\finaldemo\\models\\dto\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\models\\dto\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\finaldemo\\models\\dto\\authdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\models\\dto\\authdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\finaldemo\\models\\poco\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\models\\poco\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\finaldemo\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\finaldemo\\models\\poco\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\models\\poco\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\finaldemo\\extension\\poco_to_dto_and_dto_to_poco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\extension\\poco_to_dto_and_dto_to_poco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\finaldemo\\models\\responce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\models\\responce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\finaldemo\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\finaldemo\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IDataHandler.cs",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\BL\\Interface\\IDataHandler.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\BL\\Interface\\IDataHandler.cs",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\BL\\Interface\\IDataHandler.cs",
+              "RelativeToolTip": "FinalDemo\\BL\\Interface\\IDataHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T12:09:09.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\Models\\DTO\\UserDto.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Models\\DTO\\UserDto.cs",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\Models\\DTO\\UserDto.cs",
+              "RelativeToolTip": "FinalDemo\\Models\\DTO\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T08:01:39.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductDto.cs",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\Models\\DTO\\ProductDto.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Models\\DTO\\ProductDto.cs",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\Models\\DTO\\ProductDto.cs",
+              "RelativeToolTip": "FinalDemo\\Models\\DTO\\ProductDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T08:03:25.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrderStatusEnum.cs",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\Models\\ENUM\\OrderStatusEnum.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Models\\ENUM\\OrderStatusEnum.cs",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\Models\\ENUM\\OrderStatusEnum.cs",
+              "RelativeToolTip": "FinalDemo\\Models\\ENUM\\OrderStatusEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T07:43:43.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Controllers\\AuthController.cs",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "FinalDemo\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAkwG8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T09:03:41.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthHandler.cs",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\BL\\Operations\\AuthHandler.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\BL\\Operations\\AuthHandler.cs",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\BL\\Operations\\AuthHandler.cs",
+              "RelativeToolTip": "FinalDemo\\BL\\Operations\\AuthHandler.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAgwE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T07:55:05.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\Models\\POCO\\User.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Models\\POCO\\User.cs",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\Models\\POCO\\User.cs",
+              "RelativeToolTip": "FinalDemo\\Models\\POCO\\User.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAADwvwwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T07:45:21.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IAuthHandler.cs",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\BL\\Interface\\IAuthHandler.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\BL\\Interface\\IAuthHandler.cs",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\BL\\Interface\\IAuthHandler.cs",
+              "RelativeToolTip": "FinalDemo\\BL\\Interface\\IAuthHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T07:55:57.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrderDto.cs",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\Models\\DTO\\OrderDto.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Models\\DTO\\OrderDto.cs",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\Models\\DTO\\OrderDto.cs",
+              "RelativeToolTip": "FinalDemo\\Models\\DTO\\OrderDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T08:06:04.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AuthDto.cs",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\Models\\DTO\\AuthDto.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Models\\DTO\\AuthDto.cs",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\Models\\DTO\\AuthDto.cs",
+              "RelativeToolTip": "FinalDemo\\Models\\DTO\\AuthDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T07:59:37.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RoleEnum.cs",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\Models\\ENUM\\RoleEnum.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Models\\ENUM\\RoleEnum.cs",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\Models\\ENUM\\RoleEnum.cs",
+              "RelativeToolTip": "FinalDemo\\Models\\ENUM\\RoleEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T07:43:05.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Product.cs",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\Models\\POCO\\Product.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Models\\POCO\\Product.cs",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\Models\\POCO\\Product.cs",
+              "RelativeToolTip": "FinalDemo\\Models\\POCO\\Product.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA6wB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T07:45:51.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Order.cs",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\Models\\POCO\\Order.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Models\\POCO\\Order.cs",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\Models\\POCO\\Order.cs",
+              "RelativeToolTip": "FinalDemo\\Models\\POCO\\Order.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T07:46:16.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\Global.asax.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Global.asax.cs",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\Global.asax.cs",
+              "RelativeToolTip": "FinalDemo\\Global.asax.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwCEAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T04:00:03.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "POCO_TO_DTO_AND_DTO_TO_POCO.cs",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\Extension\\POCO_TO_DTO_AND_DTO_TO_POCO.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Extension\\POCO_TO_DTO_AND_DTO_TO_POCO.cs",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\Extension\\POCO_TO_DTO_AND_DTO_TO_POCO.cs",
+              "RelativeToolTip": "FinalDemo\\Extension\\POCO_TO_DTO_AND_DTO_TO_POCO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAQwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T07:52:07.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Responce.cs",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\Models\\Responce.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Models\\Responce.cs",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\Models\\Responce.cs",
+              "RelativeToolTip": "FinalDemo\\Models\\Responce.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T04:00:03.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Web.config",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\Web.config",
+              "RelativeDocumentMoniker": "FinalDemo\\Web.config",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\Web.config",
+              "RelativeToolTip": "FinalDemo\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-01-18T07:26:07.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "packages.config",
+              "DocumentMoniker": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\packages.config",
+              "RelativeDocumentMoniker": "FinalDemo\\packages.config",
+              "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\FinalDemo\\FinalDemo\\packages.config",
+              "RelativeToolTip": "FinalDemo\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-01-18T04:00:03.745Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

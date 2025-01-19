@@ -20,23 +20,22 @@ namespace FinalDemo
             var connectionstring = ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString;
 
             // Create a global OrmLiteConnectionFactory
-            var dbfactory = new OrmLiteConnectionFactory(connectionstring, MySqlDialect.Provider);
+            var _dbfactory = new OrmLiteConnectionFactory(connectionstring, MySqlDialect.Provider);
 
             // Store the DbFactory globally in Application state
-            Application["Dbfactory"] = dbfactory;
+            Application["Dbfactory"] = _dbfactory;
 
             // Automatically create tables at application startup
-            InitializeDatabase(dbfactory);
+            InitializeDatabase(_dbfactory);
         }
 
         private void InitializeDatabase(OrmLiteConnectionFactory dbFactory)
         {
             using (var db = dbFactory.OpenDbConnection())
             {
-                // Define the tables to be created
-                db.CreateTableIfNotExists<USR01>();
-                db.CreateTableIfNotExists<PDT01>();
-                db.CreateTableIfNotExists<ORD01>();
+                db.CreateTableIfNotExists<User>();
+                db.CreateTableIfNotExists<Product>();
+                db.CreateTableIfNotExists<Order>();
 
             }
         }
