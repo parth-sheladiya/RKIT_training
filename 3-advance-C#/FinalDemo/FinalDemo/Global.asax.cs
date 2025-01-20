@@ -37,7 +37,7 @@ namespace FinalDemo
             {
                
                db.CreateTableIfNotExists<User>();
-
+                db.CreateTableIfNotExists<Product>();
             }
         }
 

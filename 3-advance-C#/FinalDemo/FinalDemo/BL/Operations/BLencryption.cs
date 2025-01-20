@@ -15,12 +15,12 @@ namespace FinalDemo.BL.Operations
         /// <summary>
         /// Initialization Vector (IV) used for AES encryption.
         /// </summary>
-        private static readonly string _iv = "0123456789ABCDEF";
+        private static readonly string _iv = "parthsheladiya12";
 
         /// <summary>
         /// Key used for AES encryption.
         /// </summary>
-        private static readonly string _key = "0123456789ABCDEF0123456789ABCDEF";
+        private static readonly string _key = "sheladiyaparth123456789098765432";
 
         /// <summary>
         /// AES (Advanced Encryption Standard) encryption object for secure password handling.
