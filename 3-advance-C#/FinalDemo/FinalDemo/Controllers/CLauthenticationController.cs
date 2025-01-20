@@ -3,6 +3,7 @@ using FinalDemo.Models;
 using FinalDemo.Models.POCO;
 using System;
 using System.Web.Http;
+using FinalDemo.Helpers;
 
 namespace FinalDemo.Controllers
 {
@@ -10,14 +11,14 @@ namespace FinalDemo.Controllers
     public class CLauthenticationController : ApiController
     {
         private BLuser _objBLuser;
-        private BLtoken _objBLtoken;
+      
 
         public Responce _objResponce;
 
         public CLauthenticationController()
         {
             _objBLuser = new BLuser();
-            _objBLtoken = new BLtoken();
+           
             _objResponce = new Responce();
         }
 
@@ -28,11 +29,11 @@ namespace FinalDemo.Controllers
         public IHttpActionResult GenerateToken(string userName, string userPassword)
         {
             User objUser = _objBLuser.GetUser(userName, userPassword);
-
+            
             if (objUser != null)
             {
-                _objResponce.Data = _objBLtoken.GenerateToken(Guid.NewGuid(), objUser);
-                _objResponce.Message = "Token generated successfully.";
+                _objResponce.Data = JWTHelper.GenerateJwtToken(objUser.userName, objUser.RoleType);
+                _objResponce.Message = $"Token generated successfully And  now   {objUser.userName} is {objUser.RoleType} ";
                 _objResponce.IsError = false;
             }
             else

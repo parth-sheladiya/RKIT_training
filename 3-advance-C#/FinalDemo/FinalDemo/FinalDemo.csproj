@@ -212,14 +212,15 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="BL\Interface\IDataHandler.cs" />
     <Compile Include="BL\Operations\BLencryption.cs" />
-    <Compile Include="BL\Operations\BLtoken.cs" />
     <Compile Include="BL\Operations\BLuser.cs" />
     <Compile Include="Controllers\CLauthenticationController.cs" />
     <Compile Include="Controllers\CLuserController.cs" />
     <Compile Include="Extension\ConversionMethod.cs" />
+    <Compile Include="Filters\JWTAuthorizationFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\JWTHelper.cs" />
     <Compile Include="Models\DTO\UserDto.cs" />
     <Compile Include="Models\ENUM\EnumType.cs" />
     <Compile Include="Models\ENUM\EnmRoleType.cs" />
