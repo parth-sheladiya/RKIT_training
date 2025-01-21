@@ -212,9 +212,11 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="BL\Interface\IDataHandler.cs" />
     <Compile Include="BL\Operations\BLencryption.cs" />
+    <Compile Include="BL\Operations\BLorder.cs" />
     <Compile Include="BL\Operations\BLproduct.cs" />
     <Compile Include="BL\Operations\BLuser.cs" />
     <Compile Include="Controllers\CLauthenticationController.cs" />
+    <Compile Include="Controllers\CLorderController.cs" />
     <Compile Include="Controllers\CLproductController.cs" />
     <Compile Include="Controllers\CLuserController.cs" />
     <Compile Include="Extension\ConversionMethod.cs" />
@@ -223,10 +225,12 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\JWTHelper.cs" />
+    <Compile Include="Models\DTO\OrderDto.cs" />
     <Compile Include="Models\DTO\ProductDto.cs" />
     <Compile Include="Models\DTO\UserDto.cs" />
     <Compile Include="Models\ENUM\EnumType.cs" />
     <Compile Include="Models\ENUM\EnmRoleType.cs" />
+    <Compile Include="Models\POCO\Order.cs" />
     <Compile Include="Models\POCO\Product.cs" />
     <Compile Include="Models\POCO\User.cs" />
     <Compile Include="Models\Responce.cs" />

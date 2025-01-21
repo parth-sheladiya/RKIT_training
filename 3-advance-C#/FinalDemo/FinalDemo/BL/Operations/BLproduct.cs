@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Web;
+using System.Web.UI;
 
 namespace FinalDemo.BL.Operations
 {
@@ -282,76 +283,115 @@ namespace FinalDemo.BL.Operations
             return _objResponce;
         }
 
-        public Responce Add(Product newUser)
+        //public Responce Add(Product newUser)
+        //{
+        //    try
+        //    {
+
+        //        using (IDbConnection db = _dbfactory.OpenDbConnection())
+        //        {
+        //            // check admin is exist or not 
+
+
+        //            db.Insert(newUser);
+        //        }
+        //        _objResponce.IsError = false;
+        //        _objResponce.Data = newUser;
+        //        _objResponce.Message = "product Added Successfully";
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        _objResponce.IsError = true;
+        //        _objResponce.Message = $"product not added {ex.Message}";
+        //    }
+
+        //    return _objResponce;
+        //}
+
+
+        //public Responce Update(int productId, Product newUser)
+        //{
+        //    try
+        //    {
+        //        using (IDbConnection db = _dbfactory.OpenDbConnection())
+        //        {
+        //            // If userId is provided in method parameter, override newUser.userId
+        //            if (productId > 0)
+        //            {
+        //                newUser.productId = productId;
+        //            }
+
+        //            // Check if ID is provided and valid
+        //            if (newUser.productId <= 0)
+        //            {
+        //                _objResponce.IsError = true;
+        //                _objResponce.Message = "ID not found or invalid.";
+        //                return _objResponce;
+        //            }
+
+        //            // Ensure that the user exists before updating
+        //            var existingUser = db.SingleById<User>(newUser.productId);
+        //            if (existingUser == null)
+        //            {
+        //                _objResponce.IsError = true;
+        //                _objResponce.Message = "product does not exist.";
+        //                return _objResponce;
+        //            }
+
+        //            // Update the user
+        //            db.Update(newUser);
+        //        }
+        //        _objResponce.IsError = false;
+        //        _objResponce.Data = newUser;
+        //        _objResponce.Message = "product Updated Successfully";
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        _objResponce.IsError = true;
+        //        _objResponce.Message = $"product not Updated: {ex.Message}";
+        //    }
+
+        //    return _objResponce;
+        //}
+
+        public Responce GetProcuctByCategory(string category)
         {
             try
             {
-
                 using (IDbConnection db = _dbfactory.OpenDbConnection())
                 {
-                    // check admin is exist or not 
+                    var pdtByCategory = db.Select<Product>(p => p.productCategory == category);
 
+                    if(pdtByCategory.Count ==0)
+                    {
+                        _objResponce.IsError = true;
+                        _objResponce.Message = $"No products found in category: {category}";
+                    }
+                    else
+                    {
+                        var showAllpdtNameInCategory = pdtByCategory.Select(p => p.productName).ToList();
 
-                    db.Insert(newUser);
+                        if(showAllpdtNameInCategory.Count==0)
+                        {
+                            _objResponce.IsError = true;
+                            _objResponce.Message = "category is exists but no product available in this category";
+
+                        }
+
+                        _objResponce.IsError = false;
+                        _objResponce.Data = showAllpdtNameInCategory;
+                        _objResponce.Message = $"there are {showAllpdtNameInCategory.Count} product avaialble in {category} category ";
+
+                    }
                 }
-                _objResponce.IsError = false;
-                _objResponce.Data = newUser;
-                _objResponce.Message = "product Added Successfully";
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 _objResponce.IsError = true;
-                _objResponce.Message = $"product not added {ex.Message}";
+                _objResponce.Message = $"Error while fetching products by category: {ex.Message}";
             }
 
             return _objResponce;
         }
-
-
-        public Responce Update(int productId, Product newUser)
-        {
-            try
-            {
-                using (IDbConnection db = _dbfactory.OpenDbConnection())
-                {
-                    // If userId is provided in method parameter, override newUser.userId
-                    if (productId > 0)
-                    {
-                        newUser.productId = productId;
-                    }
-
-                    // Check if ID is provided and valid
-                    if (newUser.productId <= 0)
-                    {
-                        _objResponce.IsError = true;
-                        _objResponce.Message = "ID not found or invalid.";
-                        return _objResponce;
-                    }
-
-                    // Ensure that the user exists before updating
-                    var existingUser = db.SingleById<User>(newUser.productId);
-                    if (existingUser == null)
-                    {
-                        _objResponce.IsError = true;
-                        _objResponce.Message = "product does not exist.";
-                        return _objResponce;
-                    }
-
-                    // Update the user
-                    db.Update(newUser);
-                }
-                _objResponce.IsError = false;
-                _objResponce.Data = newUser;
-                _objResponce.Message = "product Updated Successfully";
-            }
-            catch (Exception ex)
-            {
-                _objResponce.IsError = true;
-                _objResponce.Message = $"product not Updated: {ex.Message}";
-            }
-
-            return _objResponce;
-        }
-
     }
 }

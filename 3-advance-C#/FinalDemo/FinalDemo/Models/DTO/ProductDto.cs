@@ -14,7 +14,7 @@ namespace FinalDemo.Models.DTO
         public string productDescription { get; set; }
 
         public string productCategory { get; set; }
-
+        public int productQuantity { get; set; }
         public int productPrice { get; set; }
     }
 }

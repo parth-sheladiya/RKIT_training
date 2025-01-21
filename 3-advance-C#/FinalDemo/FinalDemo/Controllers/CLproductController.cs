@@ -51,14 +51,14 @@ namespace FinalDemo.Controllers
         }
 
         [HttpPost]
-        [Route("AddUser")]
+        [Route("AddProduct")]
         [JWTAuthorizationFilter(EnmRoleType.Admin)]
         public IHttpActionResult AddProduct(ProductDto objProductDto)
         {
             if (objProductDto == null)
             {
                 _objResponce.IsError = true;
-                _objResponce.Message = "User details are required.";
+                _objResponce.Message = "product details are required.";
             }
 
             _objBlProduct.Type = EnumType.A;
@@ -67,7 +67,7 @@ namespace FinalDemo.Controllers
             if (!_objResponce.IsError)
             {
                 _objResponce = _objBlProduct.Save();
-                _objResponce.Message = "User Added Successfully";
+                _objResponce.Message = "product Added Successfully";
             }
             return Ok(_objResponce);
 
@@ -75,14 +75,14 @@ namespace FinalDemo.Controllers
 
 
         [HttpPut]
-        [Route("UpdateUser")]
+        [Route("UpdateProduct")]
         [JWTAuthorizationFilter(EnmRoleType.Admin)]
         public IHttpActionResult UpdateProduct(ProductDto objProductDto)
         {
             if (objProductDto == null)
             {
                 _objResponce.IsError = true;
-                _objResponce.Message = "User details are required.";
+                _objResponce.Message = "product details are required.";
                 return Ok(_objResponce);
             }
 
@@ -92,18 +92,36 @@ namespace FinalDemo.Controllers
             if (!_objResponce.IsError)
             {
                 _objResponce = _objBlProduct.Save();
-                _objResponce.Message = "User Updated Successfully";
+                _objResponce.Message = "product Updated Successfully";
             }
             return Ok(_objResponce);
         }
 
         [HttpDelete]
-        [Route("Delete")]
+        [Route("DeleteProduct")]
         [JWTAuthorizationFilter(EnmRoleType.Admin)]
         public IHttpActionResult DeleteProduct(int id)
         {
             _objResponce = _objBlProduct.Delete(id);
             return Ok(_objResponce);
         }
+
+
+        [HttpGet]
+        [Route("ProductsByCategory")]
+        [JWTAuthorizationFilter(EnmRoleType.Admin, EnmRoleType.User)] // Allow Admin and User roles to access
+        public IHttpActionResult GetProductsByCategory(string category)
+        {
+            try
+            {
+                _objResponce = _objBlProduct.GetProcuctByCategory(category);
+                return Ok(_objResponce);
+            }
+            catch (Exception ex)
+            {
+                return InternalServerError(new Exception($"Error occurred: {ex.Message}"));
+            }
+        }
+
     }
 }

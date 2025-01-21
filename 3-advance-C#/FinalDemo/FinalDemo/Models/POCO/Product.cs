@@ -18,12 +18,12 @@ namespace FinalDemo.Models.POCO
         public string productDescription { get; set; }
 
         public string productCategory { get; set; }
-
+        public int productQuantity { get; set; }
         public int  productPrice { get; set; }
 
         [IgnoreOnUpdate]
-        public DateTime createdAt { get; set; }
+        public DateTime createdAt { get; set; } = DateTime.Now;
 
-        public DateTime updatedAt { get; set; }
+        public DateTime updatedAt { get; set; } = DateTime.Now;
     }
 }

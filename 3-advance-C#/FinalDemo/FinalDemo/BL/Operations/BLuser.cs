@@ -165,15 +165,15 @@ namespace FinalDemo.BL.Operations
             }
             if(Type == EnumType.A)
             {
-                if(IsAdminExists() && objUserDto.Role == EnmRoleType.Admin)
+                if(IsAdminExists() && objUserDto.RoleType == EnmRoleType.Admin)
                 {
                     _objResponce.IsError = true;
                     _objResponce.Message = "only one admin allow in our store";
                 }
             }
-            if (objUserDto.Role != null)
+            if (objUserDto.RoleType != null)
             {
-                _objUser.RoleType = objUserDto.Role; // Set the role from DTO to POCO
+                _objUser.RoleType = objUserDto.RoleType; // Set the role from DTO to POCO
             }
             else
             {
@@ -261,6 +261,15 @@ namespace FinalDemo.BL.Operations
                 _objResponce.IsError = true;
                 _objResponce.Message = "ID not found, cannot delete.";
                 _objResponce.Data = null;  // No data to return
+                return _objResponce;
+            }
+
+            var user = GetUser(id);
+            if (user != null && user.RoleType == EnmRoleType.Admin)
+            {
+                _objResponce.IsError = true;
+                _objResponce.Message = "Admin cannot be deleted.";
+                _objResponce.Data = null;
                 return _objResponce;
             }
 

@@ -53,11 +53,17 @@ namespace FinalDemo.Controllers
 
         public IHttpActionResult AddUser(UserDto objDtoUser)
         {
+
             if (objDtoUser == null)
             {
                 _objResponce.IsError = true;
                 _objResponce.Message = "User details are required.";
             }
+
+            //if (!ModelState.IsValid)
+            //{
+            //    return BadRequest(ModelState);
+            //}
 
             _objBLuser.Type = EnumType.A;
             _objBLuser.PreSave(objDtoUser);
@@ -98,6 +104,7 @@ namespace FinalDemo.Controllers
 
         [HttpDelete]
         [Route("Delete")]
+
         public IHttpActionResult DeleteUser(int id)
         {
             _objResponce = _objBLuser.Delete(id);

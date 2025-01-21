@@ -23,6 +23,6 @@ namespace FinalDemo.Models.DTO
         public string userAddress { get; set; }
 
        
-        public EnmRoleType Role { get; set; } 
+        public EnmRoleType RoleType { get; set; } 
     }
 }
