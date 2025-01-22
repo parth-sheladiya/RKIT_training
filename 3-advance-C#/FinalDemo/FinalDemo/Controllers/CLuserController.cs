@@ -42,6 +42,7 @@ namespace FinalDemo.Controllers
 
         [HttpGet]
         [Route("UserById")]
+        [JWTAuthorizationFilter(EnmRoleType.Admin)]
         public IHttpActionResult GetUserById(int id)
         {
             _objResponce.Data = _objBLuser.GetUserById(id);
@@ -50,7 +51,7 @@ namespace FinalDemo.Controllers
 
         [HttpPost]
         [Route("AddUser")]
-
+        
         public IHttpActionResult AddUser(UserDto objDtoUser)
         {
 
@@ -80,6 +81,7 @@ namespace FinalDemo.Controllers
 
         [HttpPut]
         [Route("UpdateUser")]
+        [JWTAuthorizationFilter(EnmRoleType.User)]
         public IHttpActionResult UpdateUser(UserDto objDtoUser)
         {
             if (objDtoUser == null)
@@ -104,7 +106,7 @@ namespace FinalDemo.Controllers
 
         [HttpDelete]
         [Route("Delete")]
-
+        [JWTAuthorizationFilter(EnmRoleType.User)]
         public IHttpActionResult DeleteUser(int id)
         {
             _objResponce = _objBLuser.Delete(id);

@@ -218,25 +218,23 @@ namespace FinalDemo.BL.Operations
             return _objResponce;
         }
 
-        public Responce PreValidationOnDelete()
+        public Responce PreValidationOnDelete(int id)
         {
             if (EnumType.D == Type)
             {
-                // id must be greater then 0
-                if (!(_id > 0))
+                // id must be greater than 0
+                if (!(id > 0))
                 {
-                    // error handler 
                     _objResponce.IsError = true;
-                    _objResponce.Message = "id must be greater then 0";
+                    _objResponce.Message = "ID must be greater than 0";
+                    return _objResponce;
                 }
-                else if ((IsExists(_id).IsError))
+                else if ((IsExists(id).IsError))
                 {
-                    // error handler 
                     _objResponce.IsError = true;
-                    _objResponce.Message = "id not found";
+                    _objResponce.Message = "ID not found";
+                    return _objResponce;
                 }
-                return _objResponce;
-
             }
 
             _objResponce.IsError = false;
@@ -246,7 +244,7 @@ namespace FinalDemo.BL.Operations
         public Responce Delete(int id)
         {
             // Pre-validation check before deletion
-            var validateResponce = PreValidationOnDelete();
+            var validateResponce = PreValidationOnDelete(id);
 
             // If validation fails, return the response with error message
             if (validateResponce.IsError)
@@ -257,13 +255,13 @@ namespace FinalDemo.BL.Operations
             // Check if the record exists before attempting to delete
             if (IsExists(id).IsError)
             {
-                // If ID does not exist, return error message
                 _objResponce.IsError = true;
                 _objResponce.Message = "ID not found, cannot delete.";
-                _objResponce.Data = null;  // No data to return
+                _objResponce.Data = null;
                 return _objResponce;
             }
 
+            // Get user details
             var user = GetUser(id);
             if (user != null && user.RoleType == EnmRoleType.Admin)
             {
@@ -278,14 +276,23 @@ namespace FinalDemo.BL.Operations
             {
                 try
                 {
-                    db.DeleteById<User>(id);  // Deleting the record by ID
+                    // Check if any order for the user is in pending status
+                    var pendingOrderExists = db.Exists<Order>(o => o.userId == id && o.orderStatus.ToLower() == "pending");
+                    if (pendingOrderExists)
+                    {
+                        _objResponce.IsError = true;
+                        _objResponce.Message = "User cannot be deleted as there are pending orders.";
+                        return _objResponce;
+                    }
+
+                    // Delete the user if no pending orders exist
+                    db.DeleteById<User>(id);
                 }
                 catch (Exception ex)
                 {
-                    // error responce for error handler
                     _objResponce.IsError = true;
                     _objResponce.Message = $"Error while deleting data: {ex.Message}";
-                    _objResponce.Data = null;
+                  
                     return _objResponce;
                 }
             }
@@ -293,9 +300,10 @@ namespace FinalDemo.BL.Operations
             // Success response after deletion
             _objResponce.IsError = false;
             _objResponce.Message = "Data deleted successfully";
-            _objResponce.Data = null;  // No data to return after deletion
+            
             return _objResponce;
         }
+
 
 
         public Responce Save()

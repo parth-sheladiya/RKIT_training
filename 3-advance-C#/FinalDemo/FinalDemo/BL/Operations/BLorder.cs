@@ -40,13 +40,13 @@ namespace FinalDemo.BL.Operations
             }
         }
 
-        public  Responce GetAllOrder()
+        public  Responce GetAllOrder(string status)
         {
             try
             {
                 using(IDbConnection db = _dbfactory.OpenDbConnection())
                 {
-                    var getOrder = db.Select<Order>();
+                    var getOrder = db.Select<Order>(o=>o.orderStatus==status);
                     if(getOrder.Count==0)
                     {
                         _objResponce.IsError = true;
@@ -55,7 +55,7 @@ namespace FinalDemo.BL.Operations
                     else
                     {
                         _objResponce.IsError = false;
-                        _objResponce.Message = $"there are {getOrder.Count} available";
+                        _objResponce.Message = $"there are {getOrder.Count} {status} order available";
                        
                     }
                     
@@ -147,7 +147,7 @@ namespace FinalDemo.BL.Operations
             return _objResponce;
         }
 
-        public Responce PreValidationOnDelete()
+        public Responce PreValidationOnCancelOrder()
         {
             if (EnumType.D == Type)
             {
@@ -167,42 +167,42 @@ namespace FinalDemo.BL.Operations
             return _objResponce;
         }
 
-        public Responce Delete(int id)
-        {
-            // Pre-validation check before deletion
-            var validateResponce = PreValidationOnDelete();
+        //public Responce Delete(int id)
+        //{
+        //    // Pre-validation check before deletion
+        //    var validateResponce = PreValidationOnDelete();
 
-            // If validation fails, return the response with error message
-            if (validateResponce.IsError)
-            {
-                return validateResponce;
-            }
+        //    // If validation fails, return the response with error message
+        //    if (validateResponce.IsError)
+        //    {
+        //        return validateResponce;
+        //    }
 
             
 
-            // Proceed with deletion if ID exists
-            using (var db = _dbfactory.OpenDbConnection())
-            {
-                try
-                {
-                    db.DeleteById<Product>(id);  // Deleting the record by ID
-                }
-                catch (Exception ex)
-                {
-                    // error responce for error handler
-                    _objResponce.IsError = true;
-                    _objResponce.Message = $"Error while deleting product: {ex.Message}";
-                    _objResponce.Data = null;
-                    return _objResponce;
-                }
-            }
+        //    // Proceed with deletion if ID exists
+        //    using (var db = _dbfactory.OpenDbConnection())
+        //    {
+        //        try
+        //        {
+        //            db.DeleteById<Product>(id);  // Deleting the record by ID
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            // error responce for error handler
+        //            _objResponce.IsError = true;
+        //            _objResponce.Message = $"Error while deleting product: {ex.Message}";
+        //            _objResponce.Data = null;
+        //            return _objResponce;
+        //        }
+        //    }
 
-            // Success response after deletion
-            _objResponce.IsError = false;
-            _objResponce.Message = "product deleted successfully";
-            _objResponce.Data = null;  // No data to return after deletion
-            return _objResponce;
-        }
+        //    // Success response after deletion
+        //    _objResponce.IsError = false;
+        //    _objResponce.Message = "product deleted successfully";
+        //    _objResponce.Data = null;  // No data to return after deletion
+        //    return _objResponce;
+        //}
 
 
         public Responce Save()
@@ -211,7 +211,7 @@ namespace FinalDemo.BL.Operations
             {
                 using (var db = _dbfactory.OpenDbConnection())
                 {
-                    // validate user 
+                    // Validate user
                     var user = db.SingleById<User>(_objOrder.userId);
                     if (user == null)
                     {
@@ -219,61 +219,88 @@ namespace FinalDemo.BL.Operations
                         _objResponce.Message = "User does not exist.";
                         return _objResponce;
                     }
-                    // validate product 
+
+                    // Validate product
                     var product = db.SingleById<Product>(_objOrder.productId);
-                    if(product == null)
+                    if (product == null)
                     {
                         _objResponce.IsError = true;
                         _objResponce.Message = "product does not exist.";
                         return _objResponce;
                     }
 
-                    // product quantity check
-                    if(product.productQuantity < _objOrder.qunt)
+                    // Product quantity check
+                    if (product.productQuantity < _objOrder.qunt)
                     {
                         _objResponce.IsError = true;
-                        _objResponce.Message = "Insufficient product quantity.";
+                        _objResponce.Message = "Insufficient product quantity..";
                         return _objResponce;
                     }
+
                     // Calculate total amount
                     decimal totalAmount = product.productPrice * _objOrder.qunt;
-                    // add operation condition
-                    if (EnumType.A == Type)
+                    _objOrder.totalAmount = totalAmount;
+                    // Perform operation based on Type
+                    if (Type == EnumType.A)
                     {
-                        // insert 
+                        // Check if updating the product quantity will make it negative
+                        if (product.productQuantity - _objOrder.qunt < 0)
+                        {
+                            _objResponce.IsError = true;
+                            _objResponce.Message = "Insufficient stock. Please check the product quantity before ordering.";
+                            return _objResponce;
+                        }
+                        // Insert new order
                         db.Insert(_objOrder);
 
                         // Update product quantity
                         product.productQuantity -= _objOrder.qunt;
                         db.Update(product);
-                        // give responce
-                        _objResponce.Message = "data addes";
-                        _objResponce.Data = _objOrder;
+
+                        //return new Responce
+                        //{
+                        //    IsError = false,
+                        //    Message = "Order added successfully.",
+                        //    Data = _objOrder
+                        //};
+
+
+                        _objResponce.IsError = false;
+                        _objResponce.Message = "order add success fully";
+                        return _objResponce;
                     }
-                    // edit operation condition
-                    if (EnumType.E == Type)
+                    else if (Type == EnumType.E)
                     {
-                        // update method for poco model 
+                        // Update existing order
                         db.Update(_objOrder);
-                        // return responce object 
-                        _objResponce.Message = "data updated";
-                        _objResponce.Data = _objOrder;
+
+                        _objResponce.IsError = false;
+                        _objResponce.Message = "order update success fully";
+                        return _objResponce;
+                    }
+                    else
+                    {
+                        _objResponce.IsError = true;
+                        _objResponce.Message = "invalid operations";
+                        return _objResponce;
                     }
                 }
             }
             catch (Exception ex)
             {
-                // error handler 
-                _objResponce.IsError = true;
-                _objResponce.Message = $"error for save order: {ex.Message}";
+                return new Responce
+                {
+                    IsError = true,
+                    Message = $"Error while saving order: {ex.Message}"
+                };
             }
-            return _objResponce;
         }
+
 
         public Responce CancelOrder(int id)
         {
             // Pre-validation check before cancelling
-            var validateResponce = PreValidationOnDelete();
+            var validateResponce = PreValidationOnCancelOrder();
 
             // If validation fails, return the response with error message
             if (validateResponce.IsError)
@@ -296,14 +323,33 @@ namespace FinalDemo.BL.Operations
                         return _objResponce;
                     }
 
+                    // Fetch the product related to the order
+                    var product = db.SingleById<Product>(order.productId);
+
+                    // If product doesn't exist, return an error response
+                    if (product == null)
+                    {
+                        _objResponce.IsError = true;
+                        _objResponce.Message = "Product not found for the order.";
+                        return _objResponce;
+                    }
+
+                    // Update the product quantity by adding the cancelled order quantity
+                    product.productQuantity += order.qunt;
+                    db.Update(product);  // Save the updated product details
+
                     // Update the order status to "Cancelled"
                     order.orderStatus = "Cancelled";
-                    db.Update(order);  // Save the changes to the database
+                    db.Update(order);  // Save the changes to the order
 
                     // Return success response
                     _objResponce.IsError = false;
-                    _objResponce.Message = "Order status updated to 'Cancelled'.";
-                    _objResponce.Data = order;  // Optionally, return the updated order
+                    _objResponce.Message = "Order status updated to 'Cancelled', and product quantity updated.";
+                    _objResponce.Data = new
+                    {
+                        Order = order,
+                        UpdatedProduct = product
+                    };  // Optionally, return the updated order and product details
                 }
                 catch (Exception ex)
                 {
@@ -314,6 +360,49 @@ namespace FinalDemo.BL.Operations
 
             return _objResponce;
         }
+
+        public Responce ChangeStatus(int orderId, string newStatus)
+        {
+            try
+            {
+                using (var db = _dbfactory.OpenDbConnection())
+                {
+                    // Validate the order
+                    var order = db.SingleById<Order>(orderId);
+                    if (order == null)
+                    {
+                        _objResponce.IsError = true;
+                        _objResponce.Message = "Order not found.";
+                        return _objResponce;
+                    }
+
+                    // Check if the order's status is already 'Success'
+                    if (order.orderStatus == "success" || order.orderStatus == "cancelled")
+                    {
+                        _objResponce.IsError = true;
+                        _objResponce.Message = "Order status is already success or cancelled. Status cannot be changed.";
+                        return _objResponce;
+                    }
+
+                    // Update the order status
+                    order.orderStatus = newStatus;
+                    db.Update(order);
+
+                    _objResponce.IsError = false;
+                    _objResponce.Message = "Order status updated successfully.";
+                    return _objResponce;
+                }
+            }
+            catch (Exception ex)
+            {
+                return new Responce
+                {
+                    IsError = true,
+                    Message = $"Error while updating order status: {ex.Message}"
+                };
+            }
+        }
+
 
 
     }

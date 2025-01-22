@@ -26,11 +26,11 @@ namespace FinalDemo.Controllers
         [HttpGet]
         [Route("Orders")]
         [JWTAuthorizationFilter(EnmRoleType.Admin)]
-        public IHttpActionResult GetOrders()
+        public IHttpActionResult GetOrders(string status)
         {
             try
             {
-                _objResponce.Data = _objBLorder.GetAllOrder();
+                _objResponce.Data = _objBLorder.GetAllOrder(status);
                 return Ok(_objResponce);
             }
             catch(Exception ex)
@@ -48,20 +48,31 @@ namespace FinalDemo.Controllers
         [JWTAuthorizationFilter(EnmRoleType.User)]
         public IHttpActionResult PostOrders(OrderDto objOrderDto)
         {
-            if(objOrderDto == null)
+            if (objOrderDto == null)
             {
-                return BadRequest("no data available");
+                return BadRequest("No data available.");
             }
-            _objBLorder.Type = EnumType.A;
-            _objBLorder.PreSave(objOrderDto);
+
+            _objBLorder.Type = EnumType.A; // Set type to Add
+            _objBLorder.PreSave(objOrderDto); // Pre-save logic
+
+            // Validate the order
             _objResponce = _objBLorder.Validation();
-            if (!_objResponce.IsError)
+            if (_objResponce.IsError)
             {
-                _objResponce = _objBLorder.Save();
-                _objResponce.Message = "order Added Successfully";
+                return Content(HttpStatusCode.BadRequest, _objResponce);
             }
+
+            // Save the order
+            _objResponce = _objBLorder.Save();
+            if (_objResponce.IsError)
+            {
+                return Content(HttpStatusCode.InternalServerError, _objResponce);
+            }
+
             return Ok(_objResponce);
         }
+
 
         [HttpPost]
         [Route("cancelOrder/{id}")]
@@ -82,6 +93,21 @@ namespace FinalDemo.Controllers
                 _objResponce.Message = $"Error while cancelling order: {ex.Message}";
                 return Ok(_objResponce);
             }
+        }
+
+        [HttpPut]
+        [Route("OrderStatusChanges")]
+        [JWTAuthorizationFilter(EnmRoleType.Admin)]
+        public IHttpActionResult StatusChanges(int id, string newStatus)
+        {
+            var response = _objBLorder.ChangeStatus(id, newStatus);
+
+            if (response.IsError)
+            {
+                return BadRequest(response.Message);
+            }
+
+            return Ok(response.Message);
         }
 
     }

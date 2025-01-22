@@ -547,3 +547,5 @@ F:\parth-415\git-desk\RKIT_training\3-advance-C#\FinalDemo\FinalDemo\obj\Debug\F
 F:\parth-415\git-desk\RKIT_training\3-advance-C#\FinalDemo\FinalDemo\obj\Debug\FinalDemo.csproj.CopyComplete
 F:\parth-415\git-desk\RKIT_training\3-advance-C#\FinalDemo\FinalDemo\obj\Debug\FinalDemo.dll
 F:\parth-415\git-desk\RKIT_training\3-advance-C#\FinalDemo\FinalDemo\obj\Debug\FinalDemo.pdb
+F:\parth-415\git-desk\RKIT_training\3-advance-C#\FinalDemo\FinalDemo\bin\System.Text.Encodings.Web.dll
+F:\parth-415\git-desk\RKIT_training\3-advance-C#\FinalDemo\FinalDemo\bin\System.Text.Json.dll

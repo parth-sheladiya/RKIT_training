@@ -214,7 +214,8 @@ namespace FinalDemo.BL.Operations
             }
 
             // Check if the record exists before attempting to delete
-            if (IsExists(id).IsError)
+            var product = GetProductById(id); // Fetch the product by ID
+            if (product.IsError)
             {
                 // If ID does not exist, return error message
                 _objResponce.IsError = true;
@@ -223,29 +224,42 @@ namespace FinalDemo.BL.Operations
                 return _objResponce;
             }
 
-            // Proceed with deletion if ID exists
-            using (var db = _dbfactory.OpenDbConnection())
+            // Check if product quantity is 0 before deleting
+            var productDetails = product.Data as Product;  // Assuming you have a Product object
+            if (productDetails != null && productDetails.productQuantity == 0)
             {
-                try
+                using (var db = _dbfactory.OpenDbConnection())
                 {
-                    db.DeleteById<Product>(id);  // Deleting the record by ID
+                    try
+                    {
+                        db.DeleteById<Product>(id);  // Deleting the record by ID
+                    }
+                    catch (Exception ex)
+                    {
+                        // error response for error handler
+                        _objResponce.IsError = true;
+                        _objResponce.Message = $"Error while deleting product: {ex.Message}";
+                        _objResponce.Data = null;
+                        return _objResponce;
+                    }
                 }
-                catch (Exception ex)
-                {
-                    // error responce for error handler
-                    _objResponce.IsError = true;
-                    _objResponce.Message = $"Error while deleting product: {ex.Message}";
-                    _objResponce.Data = null;
-                    return _objResponce;
-                }
+
+                // Success response after deletion
+                _objResponce.IsError = false;
+                _objResponce.Message = "Product deleted successfully";
+                _objResponce.Data = null;  // No data to return after deletion
+            }
+            else
+            {
+                // Prevent deletion if quantity is not 0
+                _objResponce.IsError = true;
+                _objResponce.Message = "Product cannot be deleted as quantity is not 0.";
+                _objResponce.Data = null;
             }
 
-            // Success response after deletion
-            _objResponce.IsError = false;
-            _objResponce.Message = "product deleted successfully";
-            _objResponce.Data = null;  // No data to return after deletion
             return _objResponce;
         }
+
 
 
         public Responce Save()
