@@ -11,6 +11,8 @@ using System.Threading.Tasks;
 using System.Threading;
 using System.Web;
 using FinalDemo.Models.ENUM;
+using ServiceStack.Auth;
+using System.Security.Cryptography;
 
 namespace FinalDemo.Helpers
 {
@@ -60,7 +62,7 @@ namespace FinalDemo.Helpers
         /// <param name="username">The username for which the token is being generated.</param>
         /// <param name="role">The role to assign to the user in the token.</param>
         /// <returns>A string representing the generated JWT token.</returns>
-        public static string GenerateJwtToken(string username, EnmRoleType role)
+        public static string GenerateJwtToken(string username, EnmRoleType role , int userId)
         {
             // Convert Enum to string
             //string roleString = Enum.GetName(typeof(EnmRoleType), role);
@@ -69,6 +71,7 @@ namespace FinalDemo.Helpers
             var claims = new[]
             {
         new Claim(ClaimTypes.Name, username),
+        new Claim(ClaimTypes.NameIdentifier , userId.ToString()),
         new Claim(ClaimTypes.Role, roleString) // Use Enum as string
     };
 
@@ -86,5 +89,26 @@ namespace FinalDemo.Helpers
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
+
+        public static int GetUserIdFromToken(string token)
+        {
+            JwtSecurityTokenHandler objJwtSecurityTokenHandler = new JwtSecurityTokenHandler();
+            var jsonToken = objJwtSecurityTokenHandler.ReadToken(token) as JwtSecurityToken;
+
+            if (jsonToken == null)
+            {
+                throw new UnauthorizedAccessException("Invalid JWT token.");
+            }
+
+            // Get the userId claim from the token
+            var userIdClaim = jsonToken?.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier);
+
+            if (userIdClaim != null)
+            {
+                return int.Parse(userIdClaim.Value);  // Return the UserId as an integer
+            }
+
+            throw new UnauthorizedAccessException("User ID not found in the token.");
+        }
     }
 }

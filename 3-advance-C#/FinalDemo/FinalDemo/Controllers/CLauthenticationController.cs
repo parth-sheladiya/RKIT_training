@@ -32,7 +32,7 @@ namespace FinalDemo.Controllers
             
             if (objUser != null)
             {
-                _objResponce.Data = JWTHelper.GenerateJwtToken(objUser.userName, objUser.RoleType);
+                _objResponce.Data = JWTHelper.GenerateJwtToken(objUser.userName, objUser.RoleType , objUser.userId);
                 _objResponce.Message = $"Token generated successfully And  now   {objUser.userName} is {objUser.RoleType} ";
                 _objResponce.IsError = false;
             }

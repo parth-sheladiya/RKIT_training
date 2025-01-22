@@ -1,4 +1,5 @@
 ﻿using FinalDemo.BL.Operations;
+using FinalDemo.Helpers;
 using FinalDemo.Models;
 using FinalDemo.Models.DTO;
 using FinalDemo.Models.ENUM;
@@ -45,10 +46,22 @@ namespace FinalDemo.Controllers
         [JWTAuthorizationFilter(EnmRoleType.Admin)]
         public IHttpActionResult GetUserById(int id)
         {
-            _objResponce.Data = _objBLuser.GetUserById(id);
+            _objResponce = _objBLuser.GetUserById(id);
             return Ok(_objResponce);
         }
 
+        [HttpGet]
+        [Route("GetUserProfile")]
+        [JWTAuthorizationFilter]
+        public IHttpActionResult GetUserProfile()
+        {
+            string token = GetTokenFromRequest();
+            int userID = JWTHelper.GetUserIdFromToken(token);
+
+            _objResponce = _objBLuser.GetProfile(userID);
+
+            return Ok(_objResponce);
+        }
         [HttpPost]
         [Route("AddUser")]
         
@@ -111,6 +124,31 @@ namespace FinalDemo.Controllers
         {
             _objResponce = _objBLuser.Delete(id);
             return Ok(_objResponce);
+        }
+
+
+
+        private string GetTokenFromRequest()
+        {
+            var token = string.Empty;
+
+            // Check if the Authorization header exists
+            if (Request.Headers.Authorization != null)
+            {
+                // The token should be in the format 'Bearer <token>'
+                var authorizationHeader = Request.Headers.Authorization.Parameter;
+                if (!string.IsNullOrEmpty(authorizationHeader))
+                {
+                    token = authorizationHeader;
+                }
+            }
+
+            if (string.IsNullOrEmpty(token))
+            {
+                throw new UnauthorizedAccessException("Authorization token is missing.");
+            }
+
+            return token;
         }
     }
 }

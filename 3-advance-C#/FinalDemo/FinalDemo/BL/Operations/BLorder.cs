@@ -71,6 +71,26 @@ namespace FinalDemo.BL.Operations
                 return _objResponce;
             }
         }
+        public Responce GetProfile(int userId)
+        {
+            try
+            {
+                using (var db = _dbfactory.OpenDbConnection())
+                {
+                    var result = db.Select<Order>(u => u.userId == userId).ToList();
+
+                    _objResponce.IsError = false;
+                    _objResponce.Data = result;
+                    _objResponce.Message = "your order  get successfully";
+                }
+            }
+            catch (Exception ex)
+            {
+                _objResponce.IsError = true;
+                _objResponce.Message = ex.Message;
+            }
+            return _objResponce;
+        }
 
         public Responce GetOrderById(int id)
         {

@@ -7,9 +7,11 @@ using FinalDemo.Models.POCO;
 using Org.BouncyCastle.Ocsp;
 using ServiceStack.Data;
 using ServiceStack.OrmLite;
+using Swashbuckle.Swagger;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Odbc;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Web;
@@ -107,6 +109,26 @@ namespace FinalDemo.BL.Operations
             return _objResponce;
         }
 
+        public Responce GetProfile(int userId)
+        {
+            try
+            {
+                using (var db = _dbfactory.OpenDbConnection())
+                {
+                    var result = db.Select<User>(u => u.userId == userId).ToList();
+                    
+                    _objResponce.IsError = false;
+                    _objResponce.Data = result;
+                    _objResponce.Message = "User get successfully";
+                }
+            }
+            catch (Exception ex)
+            {
+                _objResponce.IsError = true;
+                _objResponce.Message = ex.Message;
+            }
+            return _objResponce;
+        }
 
 
         public Responce IsExists(int id)
