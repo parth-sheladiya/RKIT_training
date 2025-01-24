@@ -9,6 +9,7 @@ namespace CustomMiddleware
     // This class represents the custom middleware that logs HTTP request details
     public class RequestLoggingMiddleware
     {
+        // it is use to process http request and invokle next request
         private readonly RequestDelegate _next;
 
         public RequestLoggingMiddleware(RequestDelegate next)
@@ -16,6 +17,8 @@ namespace CustomMiddleware
             _next = next;
         }
 
+        // it is entry point of custom middleware
+        // it is method to process in midleware pipeline
         public async Task InvokeAsync(HttpContext context)
         {
             // Log the request details (method, URL, and timestamp)
