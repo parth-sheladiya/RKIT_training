@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "w6j88rnpH3JtCoqJFhXbUVh2lWlOVZzkkMfsy1Ha76E=",
+  "Source": "BuiltInMiddleWare",
+  "BasePath": "_content/BuiltInMiddleWare",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BuiltInMiddleWare\\wwwroot",
+      "Source": "BuiltInMiddleWare",
+      "ContentRoot": "F:\\parth-415\\RKIT_training-main\\4-Asp.net-Core\\BuiltInMiddleWare\\BuiltInMiddleWare\\wwwroot\\",
+      "BasePath": "_content/BuiltInMiddleWare",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "F:\\parth-415\\RKIT_training-main\\4-Asp.net-Core\\BuiltInMiddleWare\\BuiltInMiddleWare\\wwwroot\\cors.html",
+      "SourceId": "BuiltInMiddleWare",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\parth-415\\RKIT_training-main\\4-Asp.net-Core\\BuiltInMiddleWare\\BuiltInMiddleWare\\wwwroot\\",
+      "BasePath": "_content/BuiltInMiddleWare",
+      "RelativePath": "cors.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\cors.html"
+    },
+    {
+      "Identity": "F:\\parth-415\\RKIT_training-main\\4-Asp.net-Core\\BuiltInMiddleWare\\BuiltInMiddleWare\\wwwroot\\index.html",
+      "SourceId": "BuiltInMiddleWare",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\parth-415\\RKIT_training-main\\4-Asp.net-Core\\BuiltInMiddleWare\\BuiltInMiddleWare\\wwwroot\\",
+      "BasePath": "_content/BuiltInMiddleWare",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}

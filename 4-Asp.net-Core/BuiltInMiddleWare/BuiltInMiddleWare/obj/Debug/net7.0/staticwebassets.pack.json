@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "F:\\parth-415\\RKIT_training-main\\4-Asp.net-Core\\BuiltInMiddleWare\\BuiltInMiddleWare\\wwwroot\\cors.html",
+      "PackagePath": "staticwebassets\\cors.html"
+    },
+    {
+      "Id": "F:\\parth-415\\RKIT_training-main\\4-Asp.net-Core\\BuiltInMiddleWare\\BuiltInMiddleWare\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.BuiltInMiddleWare.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.BuiltInMiddleWare.props",
+      "PackagePath": "build\\BuiltInMiddleWare.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.BuiltInMiddleWare.props",
+      "PackagePath": "buildMultiTargeting\\BuiltInMiddleWare.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.BuiltInMiddleWare.props",
+      "PackagePath": "buildTransitive\\BuiltInMiddleWare.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
