@@ -44,11 +44,14 @@ VALUES
 -- LOCKING SYSTEM
 LOCK TABLE Students WRITE;
 UNLOCK TABLES;
+
 START TRANSACTION;
+INSERT INTO Students (StudentID, FirstName, LastName, Gender, DOB)
+VALUES (29, 'meera', 'shah', 'Female', '2007-03-25');
 COMMIT;
 ROLLBACK;
 
-
+select * from students;
 
 
 select * FROM Students;

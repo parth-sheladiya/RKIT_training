@@ -58,7 +58,7 @@ SELECT * FROM Teachers WHERE TeacherID BETWEEN 1 AND 5;
 SELECT * FROM Teachers WHERE SubjectName != 'History';
 
 -- Retrieve teachers who teach either 'English' or 'Mathematics'
-SELECT * FROM Teachers WHERE SubjectName IN ('English', 'Mathematics');
+SELECT * FROM Teachers WHERE SubjectName  IN ('English', 'Mathematics');
 
 
 -- marks table query 

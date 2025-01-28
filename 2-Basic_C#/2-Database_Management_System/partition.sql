@@ -2,6 +2,7 @@ CREATE DATABASE firstpartition;
 
 USE firstpartition;
 
+drop database firstpartition;
 
 CREATE TABLE Sales (
     EmployeeID INT,
@@ -67,3 +68,5 @@ EXPLAIN SELECT * FROM Sales;
 SELECT TABLE_NAME, PARTITION_NAME , TABLE_ROWS
 FROM INFORMATION_SCHEMA.PARTITIONS 
 WHERE TABLE_SCHEMA = "firstpartition" AND TABLE_NAME="Sales";
+
+create database parth;

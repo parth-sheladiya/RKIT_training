@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Web.Http;
+﻿using FinalDemo.Models;
 using MySql.Data.MySqlClient;
-using System.Configuration;
-using System.Web.Http.Cors;
-using System.Data.SqlClient;
-using FinalDemo.Models;
-
-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Web.Http;
 
 namespace FinalDemo.Controllers
 {
-   
-    public class ProductsController : ApiController
+    public class ProductController : ApiController
     {
         #region Connection String
         // Connection string to Products [MySQL database]
