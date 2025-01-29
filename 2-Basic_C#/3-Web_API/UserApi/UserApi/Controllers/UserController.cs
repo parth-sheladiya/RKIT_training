@@ -26,14 +26,14 @@ namespace UserApi.Controllers
         {
             try
             {
-                var users = new List<User>();
-                using (var connection = new MySqlConnection(_connstring))
+                List<User> users = new List<User>();
+                using (MySqlConnection connection = new MySqlConnection(_connstring))
                 {
                     connection.Open();
-                    var query = "SELECT * FROM Users";
-                    using (var cmd = new MySqlCommand(query, connection))
+                    string query = "SELECT * FROM Users";
+                    using (MySqlCommand cmd = new MySqlCommand(query, connection))
                     {
-                        using (var reader = cmd.ExecuteReader())
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
                         {
                             while (reader.Read())
                             {
@@ -68,14 +68,14 @@ namespace UserApi.Controllers
             try
             {
                 User user = null;
-                using (var connection = new MySqlConnection(_connstring))
+                using (MySqlConnection connection = new MySqlConnection(_connstring))
                 {
                     connection.Open();
-                    var query = "SELECT * FROM Users WHERE UserId = @id";
-                    using (var cmd = new MySqlCommand(query, connection))
+                    string query = "SELECT * FROM Users WHERE UserId = @id";
+                    using (MySqlCommand cmd = new MySqlCommand(query, connection))
                     {
                         cmd.Parameters.AddWithValue("@id", id);
-                        using (var reader = cmd.ExecuteReader())
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
                         {
                             if (reader.Read())
                             {
@@ -121,11 +121,11 @@ namespace UserApi.Controllers
 
             try
             {
-                using (var connection = new MySqlConnection(_connstring))
+                using (MySqlConnection connection = new MySqlConnection(_connstring))
                 {
                     connection.Open();
-                    var query = "INSERT INTO Users (FirstName, LastName, City, Pincode) VALUES (@FirstName, @LastName, @City, @Pincode)";
-                    using (var cmd = new MySqlCommand(query, connection))
+                    string query = "INSERT INTO Users (FirstName, LastName, City, Pincode) VALUES (@FirstName, @LastName, @City, @Pincode)";
+                    using (MySqlCommand cmd = new MySqlCommand(query, connection))
                     {
                         cmd.Parameters.AddWithValue("@FirstName", user.FirstName);
                         cmd.Parameters.AddWithValue("@LastName", user.LastName);
@@ -163,11 +163,11 @@ namespace UserApi.Controllers
 
             try
             {
-                using (var connection = new MySqlConnection(_connstring))
+                using (MySqlConnection connection = new MySqlConnection(_connstring))
                 {
                     connection.Open();
-                    var query = "UPDATE Users SET FirstName = @FirstName, LastName = @LastName, City = @City, Pincode = @Pincode WHERE UserId = @UserId";
-                    using (var cmd = new MySqlCommand(query, connection))
+                    string query = "UPDATE Users SET FirstName = @FirstName, LastName = @LastName, City = @City, Pincode = @Pincode WHERE UserId = @UserId";
+                    using (MySqlCommand cmd = new MySqlCommand(query, connection))
                     {
                         cmd.Parameters.AddWithValue("@FirstName", user.FirstName);
                         cmd.Parameters.AddWithValue("@LastName", user.LastName);
@@ -202,11 +202,11 @@ namespace UserApi.Controllers
 
             try
             {
-                using (var connection = new MySqlConnection(_connstring))
+                using (MySqlConnection connection = new MySqlConnection(_connstring))
                 {
                     connection.Open();
-                    var query = "DELETE FROM Users WHERE UserId = @UserId";
-                    using (var cmd = new MySqlCommand(query, connection))
+                    string query = "DELETE FROM Users WHERE UserId = @UserId";
+                    using (MySqlCommand cmd = new MySqlCommand(query, connection))
                     {
                         cmd.Parameters.AddWithValue("@UserId", id);
                         int rowsAffected = cmd.ExecuteNonQuery();

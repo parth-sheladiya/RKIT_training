@@ -19,7 +19,7 @@ namespace AuthInWebApi.Controllers
         [Route("api/userdata")]
         public IHttpActionResult Get()
         {
-            var users = new List<string> { "parth", "raj", "jay" };
+            List<string> users = new List<string> { "parth", "raj", "jay" };
             return Ok(users); 
         }
 

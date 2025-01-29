@@ -61,18 +61,18 @@ namespace JwtToken.TokenHandler
         public static string GenerateJwtToken(string username)
         {
             // it is arr to store username and role
-            var claims = new[]
+            Claim[] claims = new[]
             {
             new Claim(ClaimTypes.Name, username),
-            new Claim(ClaimTypes.Role, "Admin") // Example of adding a role claim
+            
         };
             // security key
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(SecretKey));
+            SymmetricSecurityKey key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(SecretKey));
             // it is use to sign token
-            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+            SigningCredentials creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             // create jwt security token
-            var token = new JwtSecurityToken(
+            JwtSecurityToken token = new JwtSecurityToken(
                 issuer: "Issuer",
                 audience: "Audience",
                 // claim arr to store user credentials

@@ -15,10 +15,16 @@ namespace FinalDemo.Controllers
     public class ProductController : ApiController
     {
         #region Connection String
-        // Connection string to Products [MySQL database]
-        private string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+        // Connection string 
+        private string connectionString;
         private string cacheKey = "parthpatelCacheKey";
         #endregion
+
+        public ProductController()
+        {
+            connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+        }
+
 
         #region GET Methods
 
@@ -27,7 +33,7 @@ namespace FinalDemo.Controllers
         /// </summary>
         /// <returns>List of Product objects</returns>
         [HttpGet]
-        [JwtFilter("user","admin")]
+        [JwtFilter]
         public IHttpActionResult Get()
         {
             var cachedProduct = CachingHandler.Get(cacheKey);
@@ -41,9 +47,11 @@ namespace FinalDemo.Controllers
             {
                 conn.Open();
                 MySqlCommand cmd = new MySqlCommand("SELECT * FROM Products", conn);
-                var reader = cmd.ExecuteReader(); // reader reads each row from table row by row
+                // reader reads each row from table row by row
+                MySqlDataReader reader = cmd.ExecuteReader();
 
-                while (reader.Read()) // if we have row fetch it as obj & go to next row
+                // if we have row fetch it as obj & go to next row
+                while (reader.Read()) 
                 {
                     products.Add(new Product
                     {
@@ -57,12 +65,13 @@ namespace FinalDemo.Controllers
                 }
             }
 
+            // Return 404 if no products found
             if (products.Count == 0)
             {
-                return NotFound(); // Return 404 if no products found
+                return NotFound();
             }
             CachingHandler.Set(cacheKey, products, TimeSpan.FromSeconds(30));
-            return Ok(products); // Return 200 OK with list of products
+            return Ok(products);
         }
 
         /// <summary>
@@ -72,7 +81,7 @@ namespace FinalDemo.Controllers
         /// <returns>Product object</returns>
         // GET: api/products/3
         [HttpGet]
-        [JwtFilter("user", "admin")]
+        [JwtFilter]
         public IHttpActionResult Get(int id)
         {
             Product product = null;
@@ -81,9 +90,11 @@ namespace FinalDemo.Controllers
                 conn.Open();
                 MySqlCommand cmd = new MySqlCommand("SELECT * FROM Products WHERE ProductId = @ProductId", conn);
                 cmd.Parameters.AddWithValue("@ProductId", id);
-                var reader = cmd.ExecuteReader(); // reader reads each row as obj from table one by one
+                // reader reads each row as obj from table one by one
+                MySqlDataReader reader = cmd.ExecuteReader();
 
-                if (reader.Read()) // if we found row then
+                // if we found row 
+                if (reader.Read()) 
                 {
                     product = new Product
                     {
@@ -96,13 +107,13 @@ namespace FinalDemo.Controllers
                     };
                 }
             }
-
+            // Return 404 if product not found
             if (product == null)
             {
-                return NotFound(); // Return 404 if product not found
+                return NotFound(); 
             }
 
-            return Ok(product); // Return 200 OK with the product object
+            return Ok(product);
         }
 
         #endregion
@@ -120,7 +131,7 @@ namespace FinalDemo.Controllers
         {
             if (product == null)
             {
-                return BadRequest("Invalid product data"); // Return 400 BadRequest if product data is invalid
+                return BadRequest("Invalid product data"); 
             }
 
             using (MySqlConnection conn = new MySqlConnection(connectionString))
@@ -137,7 +148,7 @@ namespace FinalDemo.Controllers
                 cmd.ExecuteNonQuery();
             }
             CachingHandler.Remove(cacheKey);
-            return CreatedAtRoute("DefaultApi", new { id = product.ProductId }, product); // Return 201 Created with location of the new resource
+            return Ok(product);
         }
 
         #endregion
@@ -156,7 +167,7 @@ namespace FinalDemo.Controllers
         {
             if (product == null)
             {
-                return BadRequest("Invalid product data"); // Return 400 BadRequest if product data is invalid
+                return BadRequest("Invalid product data"); 
             }
 
             using (MySqlConnection conn = new MySqlConnection(connectionString))
@@ -173,11 +184,11 @@ namespace FinalDemo.Controllers
 
                 if (rowsAffected == 0)
                 {
-                    return NotFound(); // Return 404 if product not found
+                    return NotFound(); 
                 }
             }
             CachingHandler.Remove(cacheKey);
-            return Ok("Product updated successfully!"); // Return 200 OK with success message
+            return Ok("Product updated successfully!"); 
         }
 
         #endregion
@@ -199,14 +210,14 @@ namespace FinalDemo.Controllers
                 MySqlCommand cmd = new MySqlCommand("DELETE FROM Products WHERE ProductId = @ProductId", conn);
                 cmd.Parameters.AddWithValue("@ProductId", id);
                 int rowsAffected = cmd.ExecuteNonQuery();
-
+                // Return 404 if product not found
                 if (rowsAffected == 0)
                 {
-                    return NotFound(); // Return 404 if product not found
+                    return NotFound(); 
                 }
             }
             CachingHandler.Remove(cacheKey);
-            return Ok("Product deleted successfully!"); // Return 200 OK with success message
+            return Ok("Product deleted successfully!"); 
         }
 
         #endregion

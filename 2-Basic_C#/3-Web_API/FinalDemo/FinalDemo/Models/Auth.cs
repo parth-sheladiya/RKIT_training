@@ -5,12 +5,8 @@ using System.Web;
 
 namespace FinalDemo.Models
 {
-    public class User
+    public class Auth
     {
-        /// <summary>
-        /// userid
-        /// </summary>
-        public int Id { get; set; }
         /// <summary>
         /// username
         /// </summary>
@@ -19,10 +15,5 @@ namespace FinalDemo.Models
         /// Password
         /// </summary>
         public string password { get; set; }
-
-        /// <summary>
-        /// user role
-        /// </summary>
-        public string role { get; set; }
     }
 }

@@ -24,7 +24,7 @@ namespace JwtToken.Controllers
             // Validate user credentials (this is just a simple example)
             if (login.Username == "admin" && login.Password == "password")
             {
-                var token = JwtHandler.GenerateJwtToken(login.Username);
+                string token = JwtHandler.GenerateJwtToken(login.Username);
                 return Ok(new { token });
             }
 

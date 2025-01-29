@@ -22,16 +22,16 @@ namespace BasicAuthDemo.Handlers
         public override void OnAuthorization(System.Web.Http.Controllers.HttpActionContext actionContext)
         {
            
-            var authHeader = actionContext.Request.Headers.Authorization;
+            AuthenticationHeaderValue authHeader = actionContext.Request.Headers.Authorization;
             if (authHeader != null && authHeader.Scheme == "Basic")
             {
-                var encodedCredentials = authHeader.Parameter;
-                var decodedBytes = Convert.FromBase64String(encodedCredentials);
-                var decodedCredentials = Encoding.UTF8.GetString(decodedBytes);
-                var credentials = decodedCredentials.Split(':');
+                string encodedCredentials = authHeader.Parameter;
+                byte[] decodedBytes = Convert.FromBase64String(encodedCredentials);
+                string decodedCredentials = Encoding.UTF8.GetString(decodedBytes);
+                string[] credentials = decodedCredentials.Split(':');
 
-                var username = credentials[0];
-                var password = credentials[1];
+                string username = credentials[0];
+                string password = credentials[1];
 
                 // Validate credentials 
                 if (username == "admin" && password == "password")
