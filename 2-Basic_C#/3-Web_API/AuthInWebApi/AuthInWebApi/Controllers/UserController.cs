@@ -19,7 +19,7 @@ namespace AuthInWebApi.Controllers
         [Route("api/userdata")]
         public IEnumerable<string> Get()
         {
-            return new string[] { "Keyur", "Hit" };
+            return new string[] { "parth", "raj" ,"jay" };
         }
     }
 }
