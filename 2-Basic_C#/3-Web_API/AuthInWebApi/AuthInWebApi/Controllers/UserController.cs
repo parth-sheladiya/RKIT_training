@@ -11,15 +11,17 @@ namespace AuthInWebApi.Controllers
     public class UserController : ApiController
     {
         /// <summary>
-        /// Retrieves a list of user-related data (dummy data in this case).
-        /// The endpoint is protected with Basic Authentication, ensuring only authorized users can access the data.
+        /// get all users data
+        /// authattr is provide authorization 
         /// </summary>
-        /// <returns>An IEnumerable of strings representing user data.</returns>
+        /// <returns>list all data.</returns>
         [AuthAttr]
         [Route("api/userdata")]
-        public IEnumerable<string> Get()
+        public IHttpActionResult Get()
         {
-            return new string[] { "parth", "raj" ,"jay" };
+            var users = new List<string> { "parth", "raj", "jay" };
+            return Ok(users); 
         }
+
     }
 }

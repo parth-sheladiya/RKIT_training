@@ -34,11 +34,14 @@ namespace AuthInWebApi.Handler
             else
             {
                 string authenticationToken = actionContext.Request.Headers.Authorization.Parameter;
+
                 // FromBase64String it is use to extract username and password
                 var res = Convert.FromBase64String(authenticationToken);
                 string credentials = Encoding.UTF8.GetString(res);
+
                 // split method to : and then we have two parts of credentials username , password
                 string[] credentialsValues = credentials.Split(':');
+
                 //allocate seperate index
                 string username = credentialsValues[0];
                 string password = credentialsValues[1];
