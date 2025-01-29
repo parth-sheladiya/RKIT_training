@@ -1,4 +1,6 @@
-﻿using FinalDemo.Models;
+﻿using FinalDemo.Filter;
+using FinalDemo.Handler;
+using FinalDemo.Models;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -14,7 +16,8 @@ namespace FinalDemo.Controllers
     {
         #region Connection String
         // Connection string to Products [MySQL database]
-        private string connectionString = ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
+        private string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+        private string cacheKey = "parthpatelCacheKey";
         #endregion
 
         #region GET Methods
@@ -23,9 +26,16 @@ namespace FinalDemo.Controllers
         /// Retrieves all products from the database.
         /// </summary>
         /// <returns>List of Product objects</returns>
-        // GET: api/products
+        [HttpGet]
+        [JwtFilter("user","admin")]
         public IHttpActionResult Get()
         {
+            var cachedProduct = CachingHandler.Get(cacheKey);
+
+            if (cachedProduct != null)
+            {
+                return Ok(cachedProduct);
+            }
             List<Product> products = new List<Product>();
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
@@ -51,7 +61,7 @@ namespace FinalDemo.Controllers
             {
                 return NotFound(); // Return 404 if no products found
             }
-
+            CachingHandler.Set(cacheKey, products, TimeSpan.FromSeconds(30));
             return Ok(products); // Return 200 OK with list of products
         }
 
@@ -61,6 +71,8 @@ namespace FinalDemo.Controllers
         /// <param name="id">Product ID</param>
         /// <returns>Product object</returns>
         // GET: api/products/3
+        [HttpGet]
+        [JwtFilter("user", "admin")]
         public IHttpActionResult Get(int id)
         {
             Product product = null;
@@ -102,7 +114,8 @@ namespace FinalDemo.Controllers
         /// </summary>
         /// <param name="product">Product object containing the data to add</param>
         /// <returns>HTTP response with a success message</returns>
-        // POST: api/products
+        [HttpPost]
+        [JwtFilter("admin")]
         public IHttpActionResult Post(Product product)
         {
             if (product == null)
@@ -123,7 +136,7 @@ namespace FinalDemo.Controllers
                 cmd.Parameters.AddWithValue("@DateAdded", product.DateAdded);
                 cmd.ExecuteNonQuery();
             }
-
+            CachingHandler.Remove(cacheKey);
             return CreatedAtRoute("DefaultApi", new { id = product.ProductId }, product); // Return 201 Created with location of the new resource
         }
 
@@ -137,7 +150,8 @@ namespace FinalDemo.Controllers
         /// <param name="id">Product ID to update</param>
         /// <param name="product">Product object with updated data</param>
         /// <returns>HTTP response with a success message</returns>
-        // PUT: api/products/3
+        [HttpPut]
+        [JwtFilter("admin")]
         public IHttpActionResult Put(int id, Product product)
         {
             if (product == null)
@@ -162,7 +176,7 @@ namespace FinalDemo.Controllers
                     return NotFound(); // Return 404 if product not found
                 }
             }
-
+            CachingHandler.Remove(cacheKey);
             return Ok("Product updated successfully!"); // Return 200 OK with success message
         }
 
@@ -175,7 +189,8 @@ namespace FinalDemo.Controllers
         /// </summary>
         /// <param name="id">Product ID to delete</param>
         /// <returns>HTTP response with a success message</returns>
-        // DELETE: api/products/3
+        [HttpDelete]
+        [JwtFilter("admin")]
         public IHttpActionResult Delete(int id)
         {
             using (MySqlConnection conn = new MySqlConnection(connectionString))
@@ -190,7 +205,7 @@ namespace FinalDemo.Controllers
                     return NotFound(); // Return 404 if product not found
                 }
             }
-
+            CachingHandler.Remove(cacheKey);
             return Ok("Product deleted successfully!"); // Return 200 OK with success message
         }
 

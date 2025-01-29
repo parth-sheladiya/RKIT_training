@@ -37,11 +37,7 @@ namespace FinalDemo.Controllers
                 var token = JwtHandler.GenerateJwtToken(login.UserName, "User"); // User role
                 return Ok(new { token });
             }
-            else if (login.UserName == "editor" && login.Password == "password")
-            {
-                var token = JwtHandler.GenerateJwtToken(login.UserName, "Editor"); // Editor role
-                return Ok(new { token });
-            }
+            
 
             return BadRequest("Invalid Username or Password");
         }

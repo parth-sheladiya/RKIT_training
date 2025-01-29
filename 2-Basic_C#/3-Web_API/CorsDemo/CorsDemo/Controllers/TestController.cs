@@ -8,7 +8,8 @@ using System.Web.Http.Cors;
 
 namespace CorsDemo.Controllers
 {
-    [EnableCors("*", "*", "*")] // Enable CORS for this controller
+    // Enable CORS for this controller
+    [EnableCors("*", "*", "*")] 
     public class TestController : ApiController
     {
         [HttpGet]

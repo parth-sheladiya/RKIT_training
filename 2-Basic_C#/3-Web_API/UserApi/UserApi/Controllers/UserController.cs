@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Web.Http;
 using MySql.Data.MySqlClient;
@@ -6,10 +7,10 @@ using UserApi.Models;
 
 namespace UserApi.Controllers
 {
+    [RoutePrefix("api/users")] // 🔹 Route Prefix added
     public class UserController : ApiController
     {
         private readonly string _connstring;
-
 
         public UserController()
         {
@@ -19,79 +20,87 @@ namespace UserApi.Controllers
         #region GET Methods
 
         // GET api/users
-        /// <summary>
-        /// Retrieves a list of all users.
-        /// </summary>
-        /// <returns>List of User objects</returns>
         [HttpGet]
-        public IEnumerable<User> GetUsers()
+        [Route("")]
+        public IHttpActionResult GetUsers()
         {
-            var users = new List<User>();
-            using (var connection = new MySqlConnection(_connstring))
+            try
             {
-                connection.Open();
-                var query = "SELECT * FROM Users";
-                using (var cmd = new MySqlCommand(query, connection))
+                var users = new List<User>();
+                using (var connection = new MySqlConnection(_connstring))
                 {
-                    using (var reader = cmd.ExecuteReader())
+                    connection.Open();
+                    var query = "SELECT * FROM Users";
+                    using (var cmd = new MySqlCommand(query, connection))
                     {
-                        while (reader.Read())
+                        using (var reader = cmd.ExecuteReader())
                         {
-                            users.Add(new User
+                            while (reader.Read())
                             {
-                                UserId = reader.GetInt32("UserId"),
-                                FirstName = reader.GetString("FirstName"),
-                                LastName = reader.GetString("LastName"),
-                                City = reader.GetString("City"),
-                                Pincode = reader.GetString("Pincode")
-                            });
+                                users.Add(new User
+                                {
+                                    UserId = reader.GetInt32("UserId"),
+                                    FirstName = reader.GetString("FirstName"),
+                                    LastName = reader.GetString("LastName"),
+                                    City = reader.GetString("City"),
+                                    Pincode = reader.GetString("Pincode")
+                                });
+                            }
                         }
                     }
                 }
+                return Ok(users);
             }
-            return users;
+            catch (Exception ex)
+            {
+                return InternalServerError(ex);
+            }
         }
 
         // GET api/users/5
-        /// <summary>
-        /// Retrieves a specific user by their UserId.
-        /// </summary>
-        /// <param name="id">The UserId of the user to retrieve</param>
-        /// <returns>The User object if found, or NotFound if not found</returns>
         [HttpGet]
+        [Route("{id:int}")]
         public IHttpActionResult GetUser(int id)
         {
-            User user = null;
-            using (var connection = new MySqlConnection(_connstring))
+            if (id <= 0)
+                return BadRequest("Invalid User ID");
+
+            try
             {
-                connection.Open();
-                var query = "SELECT * FROM Users WHERE UserId = @id";
-                using (var cmd = new MySqlCommand(query, connection))
+                User user = null;
+                using (var connection = new MySqlConnection(_connstring))
                 {
-                    cmd.Parameters.AddWithValue("@id", id);
-                    using (var reader = cmd.ExecuteReader())
+                    connection.Open();
+                    var query = "SELECT * FROM Users WHERE UserId = @id";
+                    using (var cmd = new MySqlCommand(query, connection))
                     {
-                        if (reader.Read())
+                        cmd.Parameters.AddWithValue("@id", id);
+                        using (var reader = cmd.ExecuteReader())
                         {
-                            user = new User
+                            if (reader.Read())
                             {
-                                UserId = reader.GetInt32("UserId"),
-                                FirstName = reader.GetString("FirstName"),
-                                LastName = reader.GetString("LastName"),
-                                City = reader.GetString("City"),
-                                Pincode = reader.GetString("Pincode")
-                            };
+                                user = new User
+                                {
+                                    UserId = reader.GetInt32("UserId"),
+                                    FirstName = reader.GetString("FirstName"),
+                                    LastName = reader.GetString("LastName"),
+                                    City = reader.GetString("City"),
+                                    Pincode = reader.GetString("Pincode")
+                                };
+                            }
                         }
                     }
                 }
-            }
 
-            if (user == null)
+                if (user == null)
+                    return NotFound();
+
+                return Ok(user);
+            }
+            catch (Exception ex)
             {
-                return NotFound();
+                return InternalServerError(ex);
             }
-
-            return Ok(user);
         }
 
         #endregion
@@ -99,28 +108,38 @@ namespace UserApi.Controllers
         #region POST Methods
 
         // POST api/users
-        /// <summary>
-        /// Creates a new user in the database.
-        /// </summary>
-        /// <param name="user">The user object to create</param>
-        /// <returns>HTTP Status code</returns>
         [HttpPost]
+        [Route("")]
         public IHttpActionResult CreateUser(User user)
         {
-            using (var connection = new MySqlConnection(_connstring))
+            if (user == null)
+                return BadRequest("User data cannot be null");
+
+            if (string.IsNullOrWhiteSpace(user.FirstName) || string.IsNullOrWhiteSpace(user.LastName) ||
+                string.IsNullOrWhiteSpace(user.City) || string.IsNullOrWhiteSpace(user.Pincode))
+                return BadRequest("All fields are required");
+
+            try
             {
-                connection.Open();
-                var query = "INSERT INTO Users (FirstName, LastName, City, Pincode) VALUES (@FirstName, @LastName, @City, @Pincode)";
-                using (var cmd = new MySqlCommand(query, connection))
+                using (var connection = new MySqlConnection(_connstring))
                 {
-                    cmd.Parameters.AddWithValue("@FirstName", user.FirstName);
-                    cmd.Parameters.AddWithValue("@LastName", user.LastName);
-                    cmd.Parameters.AddWithValue("@City", user.City);
-                    cmd.Parameters.AddWithValue("@Pincode", user.Pincode);
-                    cmd.ExecuteNonQuery();
+                    connection.Open();
+                    var query = "INSERT INTO Users (FirstName, LastName, City, Pincode) VALUES (@FirstName, @LastName, @City, @Pincode)";
+                    using (var cmd = new MySqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@FirstName", user.FirstName);
+                        cmd.Parameters.AddWithValue("@LastName", user.LastName);
+                        cmd.Parameters.AddWithValue("@City", user.City);
+                        cmd.Parameters.AddWithValue("@Pincode", user.Pincode);
+                        cmd.ExecuteNonQuery();
+                    }
                 }
+                return Ok("User created successfully");
             }
-            return Ok();
+            catch (Exception ex)
+            {
+                return InternalServerError(ex);
+            }
         }
 
         #endregion
@@ -128,30 +147,45 @@ namespace UserApi.Controllers
         #region PUT Methods
 
         // PUT api/users/5
-        /// <summary>
-        /// Updates the details of an existing user.
-        /// </summary>
-        /// <param name="id">The UserId of the user to update</param>
-        /// <param name="user">The updated user object</param>
-        /// <returns>HTTP Status code</returns>
         [HttpPut]
+        [Route("{id:int}")]
         public IHttpActionResult UpdateUser(int id, User user)
         {
-            using (var connection = new MySqlConnection(_connstring))
+            if (id <= 0)
+                return BadRequest("Invalid User ID");
+
+            if (user == null)
+                return BadRequest("User data cannot be null");
+
+            if (string.IsNullOrWhiteSpace(user.FirstName) || string.IsNullOrWhiteSpace(user.LastName) ||
+                string.IsNullOrWhiteSpace(user.City) || string.IsNullOrWhiteSpace(user.Pincode))
+                return BadRequest("All fields are required");
+
+            try
             {
-                connection.Open();
-                var query = "UPDATE Users SET FirstName = @FirstName, LastName = @LastName, City = @City, Pincode = @Pincode WHERE UserId = @UserId";
-                using (var cmd = new MySqlCommand(query, connection))
+                using (var connection = new MySqlConnection(_connstring))
                 {
-                    cmd.Parameters.AddWithValue("@FirstName", user.FirstName);
-                    cmd.Parameters.AddWithValue("@LastName", user.LastName);
-                    cmd.Parameters.AddWithValue("@City", user.City);
-                    cmd.Parameters.AddWithValue("@Pincode", user.Pincode);
-                    cmd.Parameters.AddWithValue("@UserId", id);
-                    cmd.ExecuteNonQuery();
+                    connection.Open();
+                    var query = "UPDATE Users SET FirstName = @FirstName, LastName = @LastName, City = @City, Pincode = @Pincode WHERE UserId = @UserId";
+                    using (var cmd = new MySqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@FirstName", user.FirstName);
+                        cmd.Parameters.AddWithValue("@LastName", user.LastName);
+                        cmd.Parameters.AddWithValue("@City", user.City);
+                        cmd.Parameters.AddWithValue("@Pincode", user.Pincode);
+                        cmd.Parameters.AddWithValue("@UserId", id);
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        if (rowsAffected == 0)
+                            return NotFound();
+                    }
                 }
+                return Ok("User updated successfully");
             }
-            return Ok();
+            catch (Exception ex)
+            {
+                return InternalServerError(ex);
+            }
         }
 
         #endregion
@@ -159,25 +193,34 @@ namespace UserApi.Controllers
         #region DELETE Methods
 
         // DELETE api/users/5
-        /// <summary>
-        /// Deletes an existing user by their UserId.
-        /// </summary>
-        /// <param name="id">The UserId of the user to delete</param>
-        /// <returns>HTTP Status code</returns>
         [HttpDelete]
+        [Route("{id:int}")]
         public IHttpActionResult DeleteUser(int id)
         {
-            using (var connection = new MySqlConnection(_connstring))
+            if (id <= 0)
+                return BadRequest("Invalid User ID");
+
+            try
             {
-                connection.Open();
-                var query = "DELETE FROM Users WHERE UserId = @UserId";
-                using (var cmd = new MySqlCommand(query, connection))
+                using (var connection = new MySqlConnection(_connstring))
                 {
-                    cmd.Parameters.AddWithValue("@UserId", id);
-                    cmd.ExecuteNonQuery();
+                    connection.Open();
+                    var query = "DELETE FROM Users WHERE UserId = @UserId";
+                    using (var cmd = new MySqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@UserId", id);
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        if (rowsAffected == 0)
+                            return NotFound();
+                    }
                 }
+                return Ok("User deleted successfully");
             }
-            return Ok();
+            catch (Exception ex)
+            {
+                return InternalServerError(ex);
+            }
         }
 
         #endregion

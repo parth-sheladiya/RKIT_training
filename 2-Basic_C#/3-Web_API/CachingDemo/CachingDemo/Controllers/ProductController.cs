@@ -7,12 +7,15 @@ namespace CachingDemo.Controllers
     /// <summary>
     /// Controller responsible for handling product-related operations.
     /// </summary>
+    [RoutePrefix("api/products")] 
     public class ProductController : ApiController
     {
         /// <summary>
         /// Retrieves a list of products. Checks cache first, then fetches and caches the data if not found.
         /// </summary>
         /// <returns>An IHttpActionResult containing a list of products.</returns>
+        [HttpGet]
+        [Route("get")]  
         public IHttpActionResult GetProducts()
         {
             string cacheKey = "productCacheKey";
@@ -22,7 +25,8 @@ namespace CachingDemo.Controllers
 
             if (cachedProducts != null)
             {
-                return Ok(cachedProducts); // Return cached data
+                // Return cached data
+                return Ok(cachedProducts);
             }
 
             // If not cached, fetch the product data

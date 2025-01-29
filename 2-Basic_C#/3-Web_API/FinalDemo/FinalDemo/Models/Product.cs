@@ -12,6 +12,7 @@ namespace FinalDemo.Models
         /// <summary>
         /// Gets or sets the unique identifier for the product.
         /// </summary>
+        
         public int ProductId { get; set; }
 
         /// <summary>

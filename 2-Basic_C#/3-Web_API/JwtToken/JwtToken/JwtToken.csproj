@@ -149,12 +149,12 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AuthController.cs" />
     <Compile Include="Controllers\DataMessageController.cs" />
+    <Compile Include="Filters\JwtAuthFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TokenHandler\AuthFilter.cs" />
     <Compile Include="TokenHandler\JwtHandler.cs" />
   </ItemGroup>
   <ItemGroup>

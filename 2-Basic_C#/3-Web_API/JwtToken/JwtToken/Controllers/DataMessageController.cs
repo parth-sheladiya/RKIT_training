@@ -1,4 +1,5 @@
-﻿using JwtToken.TokenHandler;
+﻿using JwtToken.Filters;
+using JwtToken.TokenHandler;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +20,7 @@ namespace JwtToken.Controllers
         /// <returns>An IHttpActionResult containing secured data.</returns>
         [HttpGet]
         [Route("api/secure/data")]
-        [AuthFilter]
+        [JwtAuthFilter]
         public IHttpActionResult GetData()
         {
             return Ok("This is secured data.");

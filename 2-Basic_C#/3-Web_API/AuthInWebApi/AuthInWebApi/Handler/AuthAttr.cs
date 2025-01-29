@@ -13,7 +13,7 @@ using System.Web.Http.Filters;
 namespace AuthInWebApi.Handler
 {
     /// <summary>
-    /// authattr is custom authorization attribute 
+    /// authattr is custom authorization 
     /// it is inherit from  AuthorizationFilterAttribute and check authorization header
     /// </summary>
     public class AuthAttr : AuthorizationFilterAttribute
