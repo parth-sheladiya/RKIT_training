@@ -50,7 +50,7 @@ namespace AuthInWebApi.Handler
                 {
                     Thread.CurrentPrincipal = new GenericPrincipal(new GenericIdentity(username), null);
                 }
-                // if credentialsis false then it will return response 401
+                // if Credentials false then it will return response 401
                 else
                 {
                     actionContext.Response = actionContext.Request.CreateResponse(HttpStatusCode.Unauthorized);
