@@ -1,14 +1,27 @@
 $(document).ready(function () {
+     // Custom method to check only alphabets without spaces
+     $.validator.addMethod("alphaOnly", function(value, element) {
+        return this.optional(element) || /^[A-Za-z]+$/.test(value);
+    }, "space and number are not allowd ");
+
+    // custom password validation method 
+    $.validator.addMethod("noSpaceInPassword",function(value,element){
+        return this.optional(element) || !/\s/.test(value);
+    },"space not allowd in password")
     // Validate the registration form
     $('#registerFormSubmit').validate({
         rules: {
             firstName: {
                 required: true,
-                minlength: 4
+                minlength: 4,
+                alphaOnly:true
+                
             },
             lastName: {
                 required: true,
-                minlength: 4
+                minlength: 4,
+                alphaOnly:true
+               
             },
             email: {
                 required: true,
@@ -18,6 +31,7 @@ $(document).ready(function () {
                 required: true,
                 minlength: 8,
                 maxlength: 16,
+                noSpaceInPassword:true
             },
             confirmPassword: {
                 required: true,
@@ -29,11 +43,14 @@ $(document).ready(function () {
         messages: {
             firstName: {
                 required: "Please enter your first name.",
-                minlength: "First name must be at least 4  characters long."
+                minlength: "First name must be at least 4  characters long.",
+                alphaOnly: " spaces , specialcharcter and numbers are not allowd"
             },
             lastName: {
                 required: "Please enter your last name.",
-                minlength: "Last name must be at least 4 characters long."
+                minlength: "Last name must be at least 4 characters long.",
+                alphaOnly: " spaces or numbers are not allowd"
+               
             },
             email: {
                 required: "Please enter your email address.",
@@ -44,6 +61,7 @@ $(document).ready(function () {
                 required: "Please enter a password.",
                 minlength: "Password must be at least 8 characters long.",
                 maxlength: "Password must be no more than 16 characters long.",
+                noSpacesInPassword: "space not allowd in password."
                
             },
             confirmPassword: {
@@ -58,8 +76,8 @@ $(document).ready(function () {
             const firstName = $('#firstName').val().trim();
             const lastName = $('#lastName').val().trim();
             const email = $('#email').val().trim();
-            const password = $('#password').val();
-            const confirmPassword = $('#confirmPassword').val();
+            const password = $('#password').val().trim();
+            //const confirmPassword = $('#confirmPassword').val();
 
             // check user is exists or not 
             const existingUser = localStorage.getItem('user_' + email);
