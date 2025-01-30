@@ -1,0 +1,282 @@
+2025-01-30 17:27:23.7018|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5078/api/LoggingDemo - -
+2025-01-30 17:27:23.7018|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2025-01-30 17:27:23.7018|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/LoggingDemo'
+2025-01-30 17:27:23.7128|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'Logging.Controllers.LoggingDemo.Get (Logging)' with route pattern 'api/LoggingDemo' is valid for the request path '/api/LoggingDemo'
+2025-01-30 17:27:23.7128|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'Logging.Controllers.LoggingDemo.Get (Logging)'
+2025-01-30 17:27:23.7128|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2025-01-30 17:27:23.7128|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Logging.Controllers.LoggingDemo.Get (Logging)'
+2025-01-30 17:27:23.7518|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "LoggingDemo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller Logging.Controllers.LoggingDemo (Logging).
+2025-01-30 17:27:23.7518|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2025-01-30 17:27:23.7518|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2025-01-30 17:27:23.7518|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-01-30 17:27:23.7518|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2025-01-30 17:27:23.7518|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-01-30 17:27:23.7587|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller Logging.Controllers.LoggingDemo (Logging)
+2025-01-30 17:27:23.7587|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller Logging.Controllers.LoggingDemo (Logging)
+2025-01-30 17:27:23.7587|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-01-30 17:27:23.7587|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-01-30 17:27:23.7587|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-01-30 17:27:23.7587|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-01-30 17:27:23.7587|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method Logging.Controllers.LoggingDemo.Get (Logging) - Validation state: Valid
+2025-01-30 17:27:23.7587|TRACE|Logging.Controllers.LoggingDemo|trace log
+2025-01-30 17:27:23.7587|DEBUG|Logging.Controllers.LoggingDemo|log debug
+2025-01-30 17:27:23.7719|INFO|Logging.Controllers.LoggingDemo|information log
+2025-01-30 17:27:23.7719|WARN|Logging.Controllers.LoggingDemo|warning log
+2025-01-30 17:27:23.7719|ERROR|Logging.Controllers.LoggingDemo|error log
+2025-01-30 17:27:23.7719|FATAL|Logging.Controllers.LoggingDemo|critical log
+2025-01-30 17:27:23.7921|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method Logging.Controllers.LoggingDemo.Get (Logging), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 20.893ms.
+2025-01-30 17:27:23.7921|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-01-30 17:27:23.7921|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-01-30 17:27:23.7921|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-01-30 17:27:23.7921|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-01-30 17:27:23.7921|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-01-30 17:27:23.7921|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-01-30 17:27:23.7921|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-01-30 17:27:23.7921|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2025-01-30 17:27:23.7921|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2025-01-30 17:27:23.7921|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-01-30 17:27:23.8031|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2025-01-30 17:27:23.8031|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2025-01-30 17:27:23.8031|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'.
+2025-01-30 17:27:23.8031|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-01-30 17:27:23.8031|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-01-30 17:27:23.8031|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-01-30 17:27:23.8031|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Logging.Controllers.LoggingDemo.Get (Logging) in 53.045ms
+2025-01-30 17:27:23.8031|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Logging.Controllers.LoggingDemo.Get (Logging)'
+2025-01-30 17:27:23.8031|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA14KR7B91T" completed keep alive response.
+2025-01-30 17:27:23.8031|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5078/api/LoggingDemo - - - 200 - text/plain;+charset=utf-8 112.4704ms
+2025-01-30 17:27:29.2452|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5078/api/LoggingDemo - -
+2025-01-30 17:27:29.2452|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2025-01-30 17:27:29.2452|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/LoggingDemo'
+2025-01-30 17:27:29.2452|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'Logging.Controllers.LoggingDemo.Get (Logging)' with route pattern 'api/LoggingDemo' is valid for the request path '/api/LoggingDemo'
+2025-01-30 17:27:29.2452|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'Logging.Controllers.LoggingDemo.Get (Logging)'
+2025-01-30 17:27:29.2452|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2025-01-30 17:27:29.2452|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Logging.Controllers.LoggingDemo.Get (Logging)'
+2025-01-30 17:27:29.2452|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "LoggingDemo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller Logging.Controllers.LoggingDemo (Logging).
+2025-01-30 17:27:29.2452|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2025-01-30 17:27:29.2452|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2025-01-30 17:27:29.2452|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-01-30 17:27:29.2452|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2025-01-30 17:27:29.2452|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-01-30 17:27:29.2452|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller Logging.Controllers.LoggingDemo (Logging)
+2025-01-30 17:27:29.2452|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller Logging.Controllers.LoggingDemo (Logging)
+2025-01-30 17:27:29.2452|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-01-30 17:27:29.2452|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-01-30 17:27:29.2452|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-01-30 17:27:29.2452|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-01-30 17:27:29.2452|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method Logging.Controllers.LoggingDemo.Get (Logging) - Validation state: Valid
+2025-01-30 17:27:29.2452|TRACE|Logging.Controllers.LoggingDemo|trace log
+2025-01-30 17:27:29.2452|DEBUG|Logging.Controllers.LoggingDemo|log debug
+2025-01-30 17:27:29.2452|INFO|Logging.Controllers.LoggingDemo|information log
+2025-01-30 17:27:29.2573|WARN|Logging.Controllers.LoggingDemo|warning log
+2025-01-30 17:27:29.2573|ERROR|Logging.Controllers.LoggingDemo|error log
+2025-01-30 17:27:29.2573|FATAL|Logging.Controllers.LoggingDemo|critical log
+2025-01-30 17:27:29.2573|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method Logging.Controllers.LoggingDemo.Get (Logging), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 14.6626ms.
+2025-01-30 17:27:29.2573|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-01-30 17:27:29.2573|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-01-30 17:27:29.2573|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-01-30 17:27:29.2573|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-01-30 17:27:29.2573|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-01-30 17:27:29.2573|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-01-30 17:27:29.2573|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-01-30 17:27:29.2573|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2025-01-30 17:27:29.2573|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2025-01-30 17:27:29.2573|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-01-30 17:27:29.2573|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2025-01-30 17:27:29.2573|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2025-01-30 17:27:29.2573|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'.
+2025-01-30 17:27:29.2573|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-01-30 17:27:29.2573|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-01-30 17:27:29.2573|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-01-30 17:27:29.2573|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Logging.Controllers.LoggingDemo.Get (Logging) in 16.6102ms
+2025-01-30 17:27:29.2573|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Logging.Controllers.LoggingDemo.Get (Logging)'
+2025-01-30 17:27:29.2573|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA14KR7B91T" completed keep alive response.
+2025-01-30 17:27:29.2573|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5078/api/LoggingDemo - - - 200 - text/plain;+charset=utf-8 20.9340ms
+2025-01-30 17:27:29.5187|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5078/api/LoggingDemo - -
+2025-01-30 17:27:29.5187|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2025-01-30 17:27:29.5187|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/LoggingDemo'
+2025-01-30 17:27:29.5187|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'Logging.Controllers.LoggingDemo.Get (Logging)' with route pattern 'api/LoggingDemo' is valid for the request path '/api/LoggingDemo'
+2025-01-30 17:27:29.5187|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'Logging.Controllers.LoggingDemo.Get (Logging)'
+2025-01-30 17:27:29.5187|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2025-01-30 17:27:29.5187|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Logging.Controllers.LoggingDemo.Get (Logging)'
+2025-01-30 17:27:29.5187|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "LoggingDemo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller Logging.Controllers.LoggingDemo (Logging).
+2025-01-30 17:27:29.5187|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2025-01-30 17:27:29.5187|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2025-01-30 17:27:29.5187|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-01-30 17:27:29.5187|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2025-01-30 17:27:29.5187|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-01-30 17:27:29.5187|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller Logging.Controllers.LoggingDemo (Logging)
+2025-01-30 17:27:29.5187|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller Logging.Controllers.LoggingDemo (Logging)
+2025-01-30 17:27:29.5187|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-01-30 17:27:29.5187|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-01-30 17:27:29.5187|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-01-30 17:27:29.5187|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-01-30 17:27:29.5187|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method Logging.Controllers.LoggingDemo.Get (Logging) - Validation state: Valid
+2025-01-30 17:27:29.5187|TRACE|Logging.Controllers.LoggingDemo|trace log
+2025-01-30 17:27:29.5187|DEBUG|Logging.Controllers.LoggingDemo|log debug
+2025-01-30 17:27:29.5241|INFO|Logging.Controllers.LoggingDemo|information log
+2025-01-30 17:27:29.5241|WARN|Logging.Controllers.LoggingDemo|warning log
+2025-01-30 17:27:29.5241|ERROR|Logging.Controllers.LoggingDemo|error log
+2025-01-30 17:27:29.5241|FATAL|Logging.Controllers.LoggingDemo|critical log
+2025-01-30 17:27:29.5241|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method Logging.Controllers.LoggingDemo.Get (Logging), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 14.0892ms.
+2025-01-30 17:27:29.5241|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-01-30 17:27:29.5241|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-01-30 17:27:29.5241|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-01-30 17:27:29.5241|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-01-30 17:27:29.5241|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-01-30 17:27:29.5241|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-01-30 17:27:29.5241|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-01-30 17:27:29.5241|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2025-01-30 17:27:29.5241|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2025-01-30 17:27:29.5241|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-01-30 17:27:29.5241|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2025-01-30 17:27:29.5241|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2025-01-30 17:27:29.5241|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'.
+2025-01-30 17:27:29.5241|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-01-30 17:27:29.5241|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-01-30 17:27:29.5241|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-01-30 17:27:29.5241|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Logging.Controllers.LoggingDemo.Get (Logging) in 15.2141ms
+2025-01-30 17:27:29.5241|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Logging.Controllers.LoggingDemo.Get (Logging)'
+2025-01-30 17:27:29.5241|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA14KR7B91T" completed keep alive response.
+2025-01-30 17:27:29.5241|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5078/api/LoggingDemo - - - 200 - text/plain;+charset=utf-8 16.0706ms
+2025-01-30 17:27:29.7014|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5078/api/LoggingDemo - -
+2025-01-30 17:27:29.7014|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2025-01-30 17:27:29.7014|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/LoggingDemo'
+2025-01-30 17:27:29.7014|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'Logging.Controllers.LoggingDemo.Get (Logging)' with route pattern 'api/LoggingDemo' is valid for the request path '/api/LoggingDemo'
+2025-01-30 17:27:29.7014|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'Logging.Controllers.LoggingDemo.Get (Logging)'
+2025-01-30 17:27:29.7014|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2025-01-30 17:27:29.7014|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Logging.Controllers.LoggingDemo.Get (Logging)'
+2025-01-30 17:27:29.7014|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "LoggingDemo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller Logging.Controllers.LoggingDemo (Logging).
+2025-01-30 17:27:29.7014|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2025-01-30 17:27:29.7014|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2025-01-30 17:27:29.7014|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-01-30 17:27:29.7014|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2025-01-30 17:27:29.7014|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-01-30 17:27:29.7014|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller Logging.Controllers.LoggingDemo (Logging)
+2025-01-30 17:27:29.7014|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller Logging.Controllers.LoggingDemo (Logging)
+2025-01-30 17:27:29.7014|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-01-30 17:27:29.7014|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-01-30 17:27:29.7014|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-01-30 17:27:29.7014|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-01-30 17:27:29.7014|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method Logging.Controllers.LoggingDemo.Get (Logging) - Validation state: Valid
+2025-01-30 17:27:29.7014|TRACE|Logging.Controllers.LoggingDemo|trace log
+2025-01-30 17:27:29.7014|DEBUG|Logging.Controllers.LoggingDemo|log debug
+2025-01-30 17:27:29.7014|INFO|Logging.Controllers.LoggingDemo|information log
+2025-01-30 17:27:29.7014|WARN|Logging.Controllers.LoggingDemo|warning log
+2025-01-30 17:27:29.7128|ERROR|Logging.Controllers.LoggingDemo|error log
+2025-01-30 17:27:29.7128|FATAL|Logging.Controllers.LoggingDemo|critical log
+2025-01-30 17:27:29.7128|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method Logging.Controllers.LoggingDemo.Get (Logging), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 13.697ms.
+2025-01-30 17:27:29.7128|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-01-30 17:27:29.7128|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-01-30 17:27:29.7128|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-01-30 17:27:29.7128|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-01-30 17:27:29.7128|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-01-30 17:27:29.7128|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-01-30 17:27:29.7128|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-01-30 17:27:29.7128|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2025-01-30 17:27:29.7128|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2025-01-30 17:27:29.7128|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-01-30 17:27:29.7128|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2025-01-30 17:27:29.7128|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2025-01-30 17:27:29.7128|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'.
+2025-01-30 17:27:29.7128|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-01-30 17:27:29.7128|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-01-30 17:27:29.7128|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-01-30 17:27:29.7128|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Logging.Controllers.LoggingDemo.Get (Logging) in 14.6596ms
+2025-01-30 17:27:29.7128|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Logging.Controllers.LoggingDemo.Get (Logging)'
+2025-01-30 17:27:29.7128|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA14KR7B91T" completed keep alive response.
+2025-01-30 17:27:29.7128|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5078/api/LoggingDemo - - - 200 - text/plain;+charset=utf-8 15.7618ms
+2025-01-30 17:27:29.8646|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5078/api/LoggingDemo - -
+2025-01-30 17:27:29.8646|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2025-01-30 17:27:29.8646|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/LoggingDemo'
+2025-01-30 17:27:29.8646|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'Logging.Controllers.LoggingDemo.Get (Logging)' with route pattern 'api/LoggingDemo' is valid for the request path '/api/LoggingDemo'
+2025-01-30 17:27:29.8646|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'Logging.Controllers.LoggingDemo.Get (Logging)'
+2025-01-30 17:27:29.8646|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2025-01-30 17:27:29.8646|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Logging.Controllers.LoggingDemo.Get (Logging)'
+2025-01-30 17:27:29.8653|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "LoggingDemo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller Logging.Controllers.LoggingDemo (Logging).
+2025-01-30 17:27:29.8653|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2025-01-30 17:27:29.8653|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2025-01-30 17:27:29.8653|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-01-30 17:27:29.8653|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2025-01-30 17:27:29.8653|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-01-30 17:27:29.8653|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller Logging.Controllers.LoggingDemo (Logging)
+2025-01-30 17:27:29.8653|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller Logging.Controllers.LoggingDemo (Logging)
+2025-01-30 17:27:29.8653|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-01-30 17:27:29.8653|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-01-30 17:27:29.8653|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-01-30 17:27:29.8653|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-01-30 17:27:29.8653|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method Logging.Controllers.LoggingDemo.Get (Logging) - Validation state: Valid
+2025-01-30 17:27:29.8653|TRACE|Logging.Controllers.LoggingDemo|trace log
+2025-01-30 17:27:29.8653|DEBUG|Logging.Controllers.LoggingDemo|log debug
+2025-01-30 17:27:29.8653|INFO|Logging.Controllers.LoggingDemo|information log
+2025-01-30 17:27:29.8653|WARN|Logging.Controllers.LoggingDemo|warning log
+2025-01-30 17:27:29.8653|ERROR|Logging.Controllers.LoggingDemo|error log
+2025-01-30 17:27:29.8653|FATAL|Logging.Controllers.LoggingDemo|critical log
+2025-01-30 17:27:29.8653|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method Logging.Controllers.LoggingDemo.Get (Logging), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 13.4513ms.
+2025-01-30 17:27:29.8653|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-01-30 17:27:29.8653|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-01-30 17:27:29.8653|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-01-30 17:27:29.8653|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-01-30 17:27:29.8653|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-01-30 17:27:29.8653|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-01-30 17:27:29.8653|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-01-30 17:27:29.8653|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2025-01-30 17:27:29.8653|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2025-01-30 17:27:29.8653|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-01-30 17:27:29.8653|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2025-01-30 17:27:29.8653|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2025-01-30 17:27:29.8653|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'.
+2025-01-30 17:27:29.8653|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-01-30 17:27:29.8653|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-01-30 17:27:29.8653|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-01-30 17:27:29.8653|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Logging.Controllers.LoggingDemo.Get (Logging) in 14.2363ms
+2025-01-30 17:27:29.8653|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Logging.Controllers.LoggingDemo.Get (Logging)'
+2025-01-30 17:27:29.8653|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA14KR7B91T" completed keep alive response.
+2025-01-30 17:27:29.8653|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5078/api/LoggingDemo - - - 200 - text/plain;+charset=utf-8 15.3284ms
+2025-01-30 17:27:30.0294|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5078/api/LoggingDemo - -
+2025-01-30 17:27:30.0294|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2025-01-30 17:27:30.0294|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/LoggingDemo'
+2025-01-30 17:27:30.0294|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'Logging.Controllers.LoggingDemo.Get (Logging)' with route pattern 'api/LoggingDemo' is valid for the request path '/api/LoggingDemo'
+2025-01-30 17:27:30.0294|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'Logging.Controllers.LoggingDemo.Get (Logging)'
+2025-01-30 17:27:30.0294|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2025-01-30 17:27:30.0294|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Logging.Controllers.LoggingDemo.Get (Logging)'
+2025-01-30 17:27:30.0294|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "LoggingDemo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller Logging.Controllers.LoggingDemo (Logging).
+2025-01-30 17:27:30.0294|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2025-01-30 17:27:30.0294|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2025-01-30 17:27:30.0294|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-01-30 17:27:30.0294|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2025-01-30 17:27:30.0294|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-01-30 17:27:30.0294|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller Logging.Controllers.LoggingDemo (Logging)
+2025-01-30 17:27:30.0294|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller Logging.Controllers.LoggingDemo (Logging)
+2025-01-30 17:27:30.0294|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-01-30 17:27:30.0294|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-01-30 17:27:30.0294|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-01-30 17:27:30.0294|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-01-30 17:27:30.0294|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method Logging.Controllers.LoggingDemo.Get (Logging) - Validation state: Valid
+2025-01-30 17:27:30.0294|TRACE|Logging.Controllers.LoggingDemo|trace log
+2025-01-30 17:27:30.0294|DEBUG|Logging.Controllers.LoggingDemo|log debug
+2025-01-30 17:27:30.0294|INFO|Logging.Controllers.LoggingDemo|information log
+2025-01-30 17:27:30.0386|WARN|Logging.Controllers.LoggingDemo|warning log
+2025-01-30 17:27:30.0386|ERROR|Logging.Controllers.LoggingDemo|error log
+2025-01-30 17:27:30.0386|FATAL|Logging.Controllers.LoggingDemo|critical log
+2025-01-30 17:27:30.0386|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method Logging.Controllers.LoggingDemo.Get (Logging), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 12.1542ms.
+2025-01-30 17:27:30.0386|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-01-30 17:27:30.0386|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-01-30 17:27:30.0386|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-01-30 17:27:30.0386|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-01-30 17:27:30.0386|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-01-30 17:27:30.0386|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-01-30 17:27:30.0386|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-01-30 17:27:30.0386|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2025-01-30 17:27:30.0386|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2025-01-30 17:27:30.0386|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-01-30 17:27:30.0386|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2025-01-30 17:27:30.0386|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2025-01-30 17:27:30.0386|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'.
+2025-01-30 17:27:30.0386|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-01-30 17:27:30.0386|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-01-30 17:27:30.0386|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-01-30 17:27:30.0386|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Logging.Controllers.LoggingDemo.Get (Logging) in 14.5307ms
+2025-01-30 17:27:30.0386|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Logging.Controllers.LoggingDemo.Get (Logging)'
+2025-01-30 17:27:30.0386|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA14KR7B91T" completed keep alive response.
+2025-01-30 17:27:30.0386|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5078/api/LoggingDemo - - - 200 - text/plain;+charset=utf-8 16.4043ms
