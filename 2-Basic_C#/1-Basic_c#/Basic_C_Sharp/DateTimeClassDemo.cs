@@ -3,7 +3,7 @@
 
 namespace Basic_C_Sharp
 {
-   public class DateTimeClassDemo()
+   public class DateTimeClassDemo
     {
         public static void RunDateTimeClassDemo()
         {

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "iz6MLDWGA24=",
+  "dgSpecHash": "a0A/75/NUOncdBlLnjYhTn17kbvpgijag2tq1aWsXsrEug6ZeWRDcf6KE3L6ctdwzpdjk1w88H2rk6262o26Jw==",
   "success": true,
-  "projectFilePath": "G:\\.net\\Basic_C#\\Basic_C_Sharp\\Basic_C_Sharp.csproj",
+  "projectFilePath": "F:\\parth-415\\git-desk\\RKIT_training\\2-Basic_C#\\1-Basic_c#\\Basic_C_Sharp\\Basic_C_Sharp.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Parth\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\microsoft.visualstudio.azure.containers.tools.targets.1.21.0.nupkg.sha512"
+    "C:\\Users\\parth.sh\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\microsoft.visualstudio.azure.containers.tools.targets.1.21.0.nupkg.sha512"
   ],
   "logs": []
 }

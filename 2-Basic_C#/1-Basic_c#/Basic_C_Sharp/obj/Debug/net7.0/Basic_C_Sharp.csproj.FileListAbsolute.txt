@@ -1,0 +1,15 @@
+F:\parth-415\git-desk\RKIT_training\2-Basic_C#\1-Basic_c#\Basic_C_Sharp\obj\Debug\net7.0\Basic_C_Sharp.csproj.AssemblyReference.cache
+F:\parth-415\git-desk\RKIT_training\2-Basic_C#\1-Basic_c#\Basic_C_Sharp\obj\Debug\net7.0\Basic_C_Sharp.GeneratedMSBuildEditorConfig.editorconfig
+F:\parth-415\git-desk\RKIT_training\2-Basic_C#\1-Basic_c#\Basic_C_Sharp\obj\Debug\net7.0\Basic_C_Sharp.AssemblyInfoInputs.cache
+F:\parth-415\git-desk\RKIT_training\2-Basic_C#\1-Basic_c#\Basic_C_Sharp\obj\Debug\net7.0\Basic_C_Sharp.AssemblyInfo.cs
+F:\parth-415\git-desk\RKIT_training\2-Basic_C#\1-Basic_c#\Basic_C_Sharp\obj\Debug\net7.0\Basic_C_Sharp.csproj.CoreCompileInputs.cache
+F:\parth-415\git-desk\RKIT_training\2-Basic_C#\1-Basic_c#\Basic_C_Sharp\bin\Debug\net7.0\Basic_C_Sharp.exe
+F:\parth-415\git-desk\RKIT_training\2-Basic_C#\1-Basic_c#\Basic_C_Sharp\bin\Debug\net7.0\Basic_C_Sharp.deps.json
+F:\parth-415\git-desk\RKIT_training\2-Basic_C#\1-Basic_c#\Basic_C_Sharp\bin\Debug\net7.0\Basic_C_Sharp.runtimeconfig.json
+F:\parth-415\git-desk\RKIT_training\2-Basic_C#\1-Basic_c#\Basic_C_Sharp\bin\Debug\net7.0\Basic_C_Sharp.dll
+F:\parth-415\git-desk\RKIT_training\2-Basic_C#\1-Basic_c#\Basic_C_Sharp\bin\Debug\net7.0\Basic_C_Sharp.pdb
+F:\parth-415\git-desk\RKIT_training\2-Basic_C#\1-Basic_c#\Basic_C_Sharp\obj\Debug\net7.0\Basic_C_Sharp.dll
+F:\parth-415\git-desk\RKIT_training\2-Basic_C#\1-Basic_c#\Basic_C_Sharp\obj\Debug\net7.0\refint\Basic_C_Sharp.dll
+F:\parth-415\git-desk\RKIT_training\2-Basic_C#\1-Basic_c#\Basic_C_Sharp\obj\Debug\net7.0\Basic_C_Sharp.pdb
+F:\parth-415\git-desk\RKIT_training\2-Basic_C#\1-Basic_c#\Basic_C_Sharp\obj\Debug\net7.0\Basic_C_Sharp.genruntimeconfig.cache
+F:\parth-415\git-desk\RKIT_training\2-Basic_C#\1-Basic_c#\Basic_C_Sharp\obj\Debug\net7.0\ref\Basic_C_Sharp.dll

@@ -3,7 +3,7 @@ using System.IO;
 
 namespace Basic_C_Sharp
 {
-    public class FileOperationsDemo()
+    public class FileOperationsDemo
     {
         public static void RunFileOperationsDemo()
         {
