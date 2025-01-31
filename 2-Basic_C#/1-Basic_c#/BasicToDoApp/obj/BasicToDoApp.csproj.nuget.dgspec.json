@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "G:\\.net\\Basic_C#\\BasicToDoApp\\BasicToDoApp.csproj": {}
+    "F:\\parth-415\\git-desk\\RKIT_training\\2-Basic_C#\\1-Basic_c#\\BasicToDoApp\\BasicToDoApp.csproj": {}
   },
   "projects": {
-    "G:\\.net\\Basic_C#\\BasicToDoApp\\BasicToDoApp.csproj": {
+    "F:\\parth-415\\git-desk\\RKIT_training\\2-Basic_C#\\1-Basic_c#\\BasicToDoApp\\BasicToDoApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\.net\\Basic_C#\\BasicToDoApp\\BasicToDoApp.csproj",
+        "projectUniqueName": "F:\\parth-415\\git-desk\\RKIT_training\\2-Basic_C#\\1-Basic_c#\\BasicToDoApp\\BasicToDoApp.csproj",
         "projectName": "BasicToDoApp",
-        "projectPath": "G:\\.net\\Basic_C#\\BasicToDoApp\\BasicToDoApp.csproj",
-        "packagesPath": "C:\\Users\\Parth\\.nuget\\packages\\",
-        "outputPath": "G:\\.net\\Basic_C#\\BasicToDoApp\\obj\\",
+        "projectPath": "F:\\parth-415\\git-desk\\RKIT_training\\2-Basic_C#\\1-Basic_c#\\BasicToDoApp\\BasicToDoApp.csproj",
+        "packagesPath": "C:\\Users\\parth.sh\\.nuget\\packages\\",
+        "outputPath": "F:\\parth-415\\git-desk\\RKIT_training\\2-Basic_C#\\1-Basic_c#\\BasicToDoApp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Parth\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\parth.sh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -38,23 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
-              "target": "Package",
-              "version": "[1.21.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -66,12 +50,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
      // Custom method to check only alphabets without spaces
      $.validator.addMethod("alphaOnly", function(value, element) {

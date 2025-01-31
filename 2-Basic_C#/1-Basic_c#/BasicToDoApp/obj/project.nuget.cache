@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f5YoKi11Ax0=",
+  "dgSpecHash": "UB2cncVuuNPZnG6KZEYYi1MO5Ba0V+NTY/7MZLR9GRC0QDnhjid7vVRXIvFZcUi2hxBQaCry987GvnnKEh7tag==",
   "success": true,
-  "projectFilePath": "G:\\.net\\Basic_C#\\BasicToDoApp\\BasicToDoApp.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Parth\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\microsoft.visualstudio.azure.containers.tools.targets.1.21.0.nupkg.sha512"
-  ],
+  "projectFilePath": "F:\\parth-415\\git-desk\\RKIT_training\\2-Basic_C#\\1-Basic_c#\\BasicToDoApp\\BasicToDoApp.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

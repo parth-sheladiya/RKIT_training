@@ -32,6 +32,7 @@ $(document).ready(function () {
 
                 if (user.password === password) {
                     // store email of login user
+                    // if we can not set email then it will no redirect to dashboard
                     localStorage.setItem('loggedInEmail', email);
 
                     // redirect to index page

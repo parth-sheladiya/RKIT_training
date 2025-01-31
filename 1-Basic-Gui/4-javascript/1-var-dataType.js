@@ -1,5 +1,7 @@
+// var keyword 
 var ageOfStudent  =25;
 
+// set condition
 if(true){
     console.log(ageOfStudent);
 }

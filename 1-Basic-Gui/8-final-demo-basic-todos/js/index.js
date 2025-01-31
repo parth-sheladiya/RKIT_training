@@ -20,7 +20,7 @@ class TodoApp {
     if (!this.loggedInEmail) {
 
       window.location.href = "login.html";
-      // redirectTo("index.htm")
+      // redirectTo("index.html")
     } else {
       // get todo data if user is alerady login
       const userData = JSON.parse(
@@ -34,15 +34,19 @@ class TodoApp {
   initEventHandlers() {
     // all function call with click event is call call back function
     $("#addTodo").click(() => this.addTodo());
+    // auto generate 
     $("#generateTodos").click(() => this.generateTodo());
+    // logout key
     $("#logout").click(() => this.logout());
-    $("#searchButton").click(() => this.searchTodos()); // Search button click
-    $("#showAllButton").click(() => this.showAllTodos()); // Show All button click
+    // Search button click
+    $("#searchButton").click(() => this.searchTodos()); 
+    // Show All button click
+    $("#showAllButton").click(() => this.showAllTodos()); 
   }
 
   // render todo part start
   renderTodos(todos) {
-    // Agar todos argument pass nahi hota, toh localStorage se fetch karo
+    // if not todod then fetch data from local storage
     if (!todos) {
         todos = JSON.parse(localStorage.getItem(TodoApp.TodoDataKey + this.loggedInEmail)) || [];
     }
@@ -83,7 +87,7 @@ class TodoApp {
       );
       if (isDuplicate) {
         alert(
-          "A todo with this title already exists. Please use a different title."
+          "this title os aleready exists,please add different ntitle"
         );
         // function stop 
         return;
@@ -105,22 +109,26 @@ class TodoApp {
   // Search todos part start
   searchTodos() {
     const searchQuery = this.searchInput.val().trim().toLowerCase();
-    const todos =JSON.parse(localStorage.getItem(TodoApp.TodoDataKey + this.loggedInEmail)) || [];
-
-    
-    // includes is use to serchquery exists in title matching
-    const filteredTodos = todos.filter(todos, function(todo) {
-      return todo.title.toLowerCase().includes(searchQuery);
-    });
-
+    const todos = JSON.parse(localStorage.getItem(TodoApp.TodoDataKey + this.loggedInEmail)) || [];
+  
+    // Check if search query is empty
     if (searchQuery === "") {
       alert("Please enter a title to search.");
-      //  function stop
+      this.renderTodos(); // Show all todos if search query is empty
       return;
     }
-
+  
+    // Filter todos based on search query
+    const filteredTodos = todos.filter((todo) => {
+      return todo.title.toLowerCase().includes(searchQuery);
+    });
+  
+    // Render filtered todos
+    if (filteredTodos.length === 0) {
+      alert("No matching todos found.");
+    }
     this.renderTodos(filteredTodos);
-}
+  }
   // Search todos part end
 
 
@@ -169,6 +177,8 @@ class TodoApp {
     let todos = JSON.parse(localStorage.getItem(TodoApp.TodoDataKey + this.loggedInEmail));
 
     // Remove the todo from the list
+    // in this case delete count is mendatory because it is delte only one todo
+    // if in this case we have not add delete count so then it will delete all todos
     todos.splice(index, 1);
     // remove todo
     localStorage.removeItem(TodoApp.TodoDataKey + this.loggedInEmail);
