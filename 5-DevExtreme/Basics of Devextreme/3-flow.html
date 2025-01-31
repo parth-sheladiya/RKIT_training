@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/23.2.3/css/dx.light.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn3.devexpress.com/jslib/23.2.3/js/dx.all.js"></script>
+</head>
+<body>
+    <h2>select city</h2>
+    <div id="drodownContainer"></div>
+
+    <h2>enter name</h2>
+    <div id="textfield"></div>
+
+    <h2>check box</h2>
+    <div id="checkboxContainer"></div>
+
+    <h2>radio button</h2>
+    <div id="RadioBtnContainer"></div>
+
+    <h2>number box</h2>
+    <div id="numberboxContainer"></div>
+
+    <h2>text area field</h2>
+    <div id="textareaContainer"></div>
+
+    <h2>date</h2>
+    <div id="datetimeContainer"></div>
+
+    <script>
+        $(function(){
+            // select element id 
+            // configure dxwidget method
+            $("#drodownContainer").dxSelectBox({
+                placeholder :"select your city",
+                items:["rajkot","surat","junagadh","ahmedabad","baroda","gandhinagar"],
+                onValueChanged: function (e) {
+                    console.log("Selected City:", e.value);
+                }
+            });
+
+            // select element id
+            // configure dxwidget method
+            $("#textfield").dxTextBox({
+                placeholder :"enter your name",
+                onValueChanged: function(e) {
+                    console.log("youe name is " , e.value)
+                }
+            });
+
+            // select element id
+            // configure dxwidget
+            $("#checkboxContainer").dxCheckBox({
+                text:"i have accept your terms and condition",
+                value:false,
+                onValueChanged: function(e){
+                    console.log("checkbox ", e.value)
+                }
+            })
+
+            // select element id
+            // configure dxwidget
+            $("#RadioBtnContainer").dxRadioGroup({
+                // value
+                items:["electronics" ,"electric" ,"food" ,"govermenet"],
+                // default value set
+                value:"food",
+                // horizontal or verticval
+                layout:"horizontal",
+                onValueChanged:function(e){
+                    console.log("value set is " ,e.value)
+                }
+            });
+
+            // select element id
+            // configure dxwidget
+            $("#numberboxContainer").dxNumberBox({
+                // min value
+                min:0,
+                // max value
+                max:15,
+                // default va;lue
+                value:10,
+                // show increment and decrement 
+                showSpinButtons: true,
+                onValueChanged:function(e){
+                    console.log("value set is " ,e.value)
+                }
+            });
+
+            // select element id
+            // configure dxwidget
+            $("#textareaContainer").dxTextArea({
+                placeholder: "Enter your openiyan",
+                height: 100, 
+                onValueChanged:function(e){
+                    console.log("value set is " ,e.value)
+                }
+            });
+
+            // select element id
+            // configure dxwidgetname
+            $("#datetimeContainer").dxDateBox({
+                type: "date",  
+                value: new Date(),
+                onValueChanged: function (e) {
+                    console.log("Selected Date:", e.value);
+                }
+            });
+
+
+        })
+    </script>
+
+</body>
+</html>
