@@ -1,0 +1,14 @@
+C:\Users\Parth\source\repos\BasicStudentManager\BasicStudentManager\bin\Debug\net8.0\BasicStudentManager.exe
+C:\Users\Parth\source\repos\BasicStudentManager\BasicStudentManager\bin\Debug\net8.0\BasicStudentManager.deps.json
+C:\Users\Parth\source\repos\BasicStudentManager\BasicStudentManager\bin\Debug\net8.0\BasicStudentManager.runtimeconfig.json
+C:\Users\Parth\source\repos\BasicStudentManager\BasicStudentManager\bin\Debug\net8.0\BasicStudentManager.dll
+C:\Users\Parth\source\repos\BasicStudentManager\BasicStudentManager\bin\Debug\net8.0\BasicStudentManager.pdb
+C:\Users\Parth\source\repos\BasicStudentManager\BasicStudentManager\obj\Debug\net8.0\BasicStudentManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Parth\source\repos\BasicStudentManager\BasicStudentManager\obj\Debug\net8.0\BasicStudentManager.AssemblyInfoInputs.cache
+C:\Users\Parth\source\repos\BasicStudentManager\BasicStudentManager\obj\Debug\net8.0\BasicStudentManager.AssemblyInfo.cs
+C:\Users\Parth\source\repos\BasicStudentManager\BasicStudentManager\obj\Debug\net8.0\BasicStudentManager.csproj.CoreCompileInputs.cache
+C:\Users\Parth\source\repos\BasicStudentManager\BasicStudentManager\obj\Debug\net8.0\BasicStudentManager.dll
+C:\Users\Parth\source\repos\BasicStudentManager\BasicStudentManager\obj\Debug\net8.0\refint\BasicStudentManager.dll
+C:\Users\Parth\source\repos\BasicStudentManager\BasicStudentManager\obj\Debug\net8.0\BasicStudentManager.pdb
+C:\Users\Parth\source\repos\BasicStudentManager\BasicStudentManager\obj\Debug\net8.0\BasicStudentManager.genruntimeconfig.cache
+C:\Users\Parth\source\repos\BasicStudentManager\BasicStudentManager\obj\Debug\net8.0\ref\BasicStudentManager.dll
