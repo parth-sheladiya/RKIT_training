@@ -1,0 +1,561 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\13-FinalDemo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|f:\\13-finaldemo\\finaldemo\\app_start\\swaggerconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\app_start\\swaggerconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|F:\\13-FinalDemo\\finaldemo\\bl\\interface\\idatahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\bl\\interface\\idatahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|F:\\13-FinalDemo\\finaldemo\\bl\\operations\\blencryption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\bl\\operations\\blencryption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|f:\\13-finaldemo\\finaldemo\\bl\\operations\\blorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\bl\\operations\\blorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|F:\\13-FinalDemo\\finaldemo\\bl\\operations\\blproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\bl\\operations\\blproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|F:\\13-FinalDemo\\finaldemo\\bl\\operations\\bluser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\bl\\operations\\bluser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|F:\\13-FinalDemo\\finaldemo\\controllers\\clauthenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\controllers\\clauthenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|F:\\13-FinalDemo\\finaldemo\\controllers\\clordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\controllers\\clordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|F:\\13-FinalDemo\\finaldemo\\controllers\\clproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\controllers\\clproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|F:\\13-FinalDemo\\finaldemo\\controllers\\clusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\controllers\\clusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|f:\\13-finaldemo\\finaldemo\\filters\\jwtauthorizationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\filters\\jwtauthorizationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|f:\\13-finaldemo\\finaldemo\\extension\\conversionmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\extension\\conversionmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|F:\\13-FinalDemo\\finaldemo\\helpers\\jwthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\helpers\\jwthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|F:\\13-FinalDemo\\finaldemo\\models\\dto\\dtoord01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\models\\dto\\dtoord01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|F:\\13-FinalDemo\\finaldemo\\models\\dto\\dtopdt01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\models\\dto\\dtopdt01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|F:\\13-FinalDemo\\finaldemo\\models\\dto\\dtousr01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\models\\dto\\dtousr01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|F:\\13-FinalDemo\\finaldemo\\models\\enum\\enmroletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\models\\enum\\enmroletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|F:\\13-FinalDemo\\finaldemo\\models\\enum\\enumtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\models\\enum\\enumtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|F:\\13-FinalDemo\\finaldemo\\models\\poco\\ord01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\models\\poco\\ord01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|F:\\13-FinalDemo\\finaldemo\\models\\poco\\pdt01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\models\\poco\\pdt01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|F:\\13-FinalDemo\\finaldemo\\models\\poco\\usr01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\models\\poco\\usr01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|F:\\13-FinalDemo\\finaldemo\\models\\responce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\models\\responce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|F:\\13-FinalDemo\\finaldemo\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|F:\\13-FinalDemo\\finaldemo\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|F:\\13-FinalDemo\\finaldemo\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Parth\\OneDrive\\Desktop\\FinalDemo\\FinalDemo\\Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Parth\\OneDrive\\Desktop\\FinalDemo\\FinalDemo\\BL\\Operations\\AuthHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|F:\\13-FinalDemo\\finaldemo\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9D84587C-7AA9-4CEA-9220-F60CF3BA3139}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Parth\\OneDrive\\Desktop\\FinalDemo\\FinalDemo\\Models\\ENUM\\OrderStatusEnum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Parth\\OneDrive\\Desktop\\FinalDemo\\FinalDemo\\BL\\Interface\\IAuthHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Parth\\OneDrive\\Desktop\\FinalDemo\\FinalDemo\\Models\\ENUM\\RoleEnum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Parth\\OneDrive\\Desktop\\FinalDemo\\FinalDemo\\Models\\DTO\\AuthDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Parth\\OneDrive\\Desktop\\FinalDemo\\FinalDemo\\Extension\\POCO_TO_DTO_AND_DTO_TO_POCO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Parth\\OneDrive\\Desktop\\FinalDemo\\FinalDemo\\BL\\Operations\\BLtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SwaggerConfig.cs",
+              "DocumentMoniker": "F:\\13-FinalDemo\\FinalDemo\\App_Start\\SwaggerConfig.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\App_Start\\SwaggerConfig.cs",
+              "ToolTip": "F:\\13-FinalDemo\\FinalDemo\\App_Start\\SwaggerConfig.cs",
+              "RelativeToolTip": "FinalDemo\\App_Start\\SwaggerConfig.cs",
+              "ViewState": "AgIAAOEAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T11:27:55.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CLorderController.cs",
+              "DocumentMoniker": "F:\\13-FinalDemo\\FinalDemo\\Controllers\\CLorderController.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Controllers\\CLorderController.cs",
+              "ToolTip": "F:\\13-FinalDemo\\FinalDemo\\Controllers\\CLorderController.cs",
+              "RelativeToolTip": "FinalDemo\\Controllers\\CLorderController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T06:32:50.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CLauthenticationController.cs",
+              "DocumentMoniker": "F:\\13-FinalDemo\\FinalDemo\\Controllers\\CLauthenticationController.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Controllers\\CLauthenticationController.cs",
+              "ToolTip": "F:\\13-FinalDemo\\FinalDemo\\Controllers\\CLauthenticationController.cs",
+              "RelativeToolTip": "FinalDemo\\Controllers\\CLauthenticationController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAYwBIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T16:26:23.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BLuser.cs",
+              "DocumentMoniker": "F:\\13-FinalDemo\\FinalDemo\\BL\\Operations\\BLuser.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\BL\\Operations\\BLuser.cs",
+              "ToolTip": "F:\\13-FinalDemo\\FinalDemo\\BL\\Operations\\BLuser.cs",
+              "RelativeToolTip": "FinalDemo\\BL\\Operations\\BLuser.cs",
+              "ViewState": "AgIAAPwBAAAAAAAAAAAqwDMCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T14:52:48.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BLproduct.cs",
+              "DocumentMoniker": "F:\\13-FinalDemo\\FinalDemo\\BL\\Operations\\BLproduct.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\BL\\Operations\\BLproduct.cs",
+              "ToolTip": "F:\\13-FinalDemo\\FinalDemo\\BL\\Operations\\BLproduct.cs",
+              "RelativeToolTip": "FinalDemo\\BL\\Operations\\BLproduct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHQBAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T06:06:45.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BLorder.cs",
+              "DocumentMoniker": "F:\\13-FinalDemo\\FinalDemo\\BL\\Operations\\BLorder.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\BL\\Operations\\BLorder.cs",
+              "ToolTip": "F:\\13-FinalDemo\\FinalDemo\\BL\\Operations\\BLorder.cs",
+              "RelativeToolTip": "FinalDemo\\BL\\Operations\\BLorder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALkBAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T06:01:21.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IDataHandler.cs",
+              "DocumentMoniker": "F:\\13-FinalDemo\\FinalDemo\\BL\\Interface\\IDataHandler.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\BL\\Interface\\IDataHandler.cs",
+              "ToolTip": "F:\\13-FinalDemo\\FinalDemo\\BL\\Interface\\IDataHandler.cs",
+              "RelativeToolTip": "FinalDemo\\BL\\Interface\\IDataHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T12:09:09.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BLencryption.cs",
+              "DocumentMoniker": "F:\\13-FinalDemo\\FinalDemo\\BL\\Operations\\BLencryption.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\BL\\Operations\\BLencryption.cs",
+              "ToolTip": "F:\\13-FinalDemo\\FinalDemo\\BL\\Operations\\BLencryption.cs",
+              "RelativeToolTip": "FinalDemo\\BL\\Operations\\BLencryption.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T14:52:31.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CLproductController.cs",
+              "DocumentMoniker": "F:\\13-FinalDemo\\FinalDemo\\Controllers\\CLproductController.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Controllers\\CLproductController.cs",
+              "ToolTip": "F:\\13-FinalDemo\\FinalDemo\\Controllers\\CLproductController.cs",
+              "RelativeToolTip": "FinalDemo\\Controllers\\CLproductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T06:14:30.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CLuserController.cs",
+              "DocumentMoniker": "F:\\13-FinalDemo\\FinalDemo\\Controllers\\CLuserController.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Controllers\\CLuserController.cs",
+              "ToolTip": "F:\\13-FinalDemo\\FinalDemo\\Controllers\\CLuserController.cs",
+              "RelativeToolTip": "FinalDemo\\Controllers\\CLuserController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAANwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T15:02:34.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "JWTAuthorizationFilter.cs",
+              "DocumentMoniker": "F:\\13-FinalDemo\\FinalDemo\\Filters\\JWTAuthorizationFilter.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Filters\\JWTAuthorizationFilter.cs",
+              "ToolTip": "F:\\13-FinalDemo\\FinalDemo\\Filters\\JWTAuthorizationFilter.cs",
+              "RelativeToolTip": "FinalDemo\\Filters\\JWTAuthorizationFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T10:39:50.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ConversionMethod.cs",
+              "DocumentMoniker": "F:\\13-FinalDemo\\FinalDemo\\Extension\\ConversionMethod.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Extension\\ConversionMethod.cs",
+              "ToolTip": "F:\\13-FinalDemo\\FinalDemo\\Extension\\ConversionMethod.cs",
+              "RelativeToolTip": "FinalDemo\\Extension\\ConversionMethod.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwA8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T10:41:55.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DTOUSR01.cs",
+              "DocumentMoniker": "F:\\13-FinalDemo\\FinalDemo\\Models\\DTO\\DTOUSR01.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Models\\DTO\\DTOUSR01.cs",
+              "ToolTip": "F:\\13-FinalDemo\\FinalDemo\\Models\\DTO\\DTOUSR01.cs",
+              "RelativeToolTip": "FinalDemo\\Models\\DTO\\DTOUSR01.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T08:01:39.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EnmRoleType.cs",
+              "DocumentMoniker": "F:\\13-FinalDemo\\FinalDemo\\Models\\ENUM\\EnmRoleType.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Models\\ENUM\\EnmRoleType.cs",
+              "ToolTip": "F:\\13-FinalDemo\\FinalDemo\\Models\\ENUM\\EnmRoleType.cs",
+              "RelativeToolTip": "FinalDemo\\Models\\ENUM\\EnmRoleType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T15:02:50.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EnumType.cs",
+              "DocumentMoniker": "F:\\13-FinalDemo\\FinalDemo\\Models\\ENUM\\EnumType.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Models\\ENUM\\EnumType.cs",
+              "ToolTip": "F:\\13-FinalDemo\\FinalDemo\\Models\\ENUM\\EnumType.cs",
+              "RelativeToolTip": "FinalDemo\\Models\\ENUM\\EnumType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T04:57:04.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ORD01.cs",
+              "DocumentMoniker": "F:\\13-FinalDemo\\FinalDemo\\Models\\POCO\\ORD01.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Models\\POCO\\ORD01.cs",
+              "ToolTip": "F:\\13-FinalDemo\\FinalDemo\\Models\\POCO\\ORD01.cs",
+              "RelativeToolTip": "FinalDemo\\Models\\POCO\\ORD01.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T07:46:16.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PDT01.cs",
+              "DocumentMoniker": "F:\\13-FinalDemo\\FinalDemo\\Models\\POCO\\PDT01.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Models\\POCO\\PDT01.cs",
+              "ToolTip": "F:\\13-FinalDemo\\FinalDemo\\Models\\POCO\\PDT01.cs",
+              "RelativeToolTip": "FinalDemo\\Models\\POCO\\PDT01.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwAkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T07:45:51.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "USR01.cs",
+              "DocumentMoniker": "F:\\13-FinalDemo\\FinalDemo\\Models\\POCO\\USR01.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Models\\POCO\\USR01.cs",
+              "ToolTip": "F:\\13-FinalDemo\\FinalDemo\\Models\\POCO\\USR01.cs",
+              "RelativeToolTip": "FinalDemo\\Models\\POCO\\USR01.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T07:45:21.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DTOPDT01.cs",
+              "DocumentMoniker": "F:\\13-FinalDemo\\FinalDemo\\Models\\DTO\\DTOPDT01.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Models\\DTO\\DTOPDT01.cs",
+              "ToolTip": "F:\\13-FinalDemo\\FinalDemo\\Models\\DTO\\DTOPDT01.cs",
+              "RelativeToolTip": "FinalDemo\\Models\\DTO\\DTOPDT01.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwCwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T08:03:25.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DTOORD01.cs",
+              "DocumentMoniker": "F:\\13-FinalDemo\\FinalDemo\\Models\\DTO\\DTOORD01.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Models\\DTO\\DTOORD01.cs",
+              "ToolTip": "F:\\13-FinalDemo\\FinalDemo\\Models\\DTO\\DTOORD01.cs",
+              "RelativeToolTip": "FinalDemo\\Models\\DTO\\DTOORD01.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T08:06:04.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "JWTHelper.cs",
+              "DocumentMoniker": "F:\\13-FinalDemo\\FinalDemo\\Helpers\\JWTHelper.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Helpers\\JWTHelper.cs",
+              "ToolTip": "F:\\13-FinalDemo\\FinalDemo\\Helpers\\JWTHelper.cs",
+              "RelativeToolTip": "FinalDemo\\Helpers\\JWTHelper.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAQwH0AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T06:20:56.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Responce.cs",
+              "DocumentMoniker": "F:\\13-FinalDemo\\FinalDemo\\Models\\Responce.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Models\\Responce.cs",
+              "ToolTip": "F:\\13-FinalDemo\\FinalDemo\\Models\\Responce.cs",
+              "RelativeToolTip": "FinalDemo\\Models\\Responce.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T04:00:03.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Web.config",
+              "DocumentMoniker": "F:\\13-FinalDemo\\FinalDemo\\Web.config",
+              "RelativeDocumentMoniker": "FinalDemo\\Web.config",
+              "ToolTip": "F:\\13-FinalDemo\\FinalDemo\\Web.config",
+              "RelativeToolTip": "FinalDemo\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAB4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-01-18T07:26:07.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "F:\\13-FinalDemo\\FinalDemo\\Global.asax.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Global.asax.cs",
+              "ToolTip": "F:\\13-FinalDemo\\FinalDemo\\Global.asax.cs",
+              "RelativeToolTip": "FinalDemo\\Global.asax.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCEAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T04:00:03.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "WebApiConfig.cs",
+              "DocumentMoniker": "F:\\13-FinalDemo\\FinalDemo\\App_Start\\WebApiConfig.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\App_Start\\WebApiConfig.cs",
+              "ToolTip": "F:\\13-FinalDemo\\FinalDemo\\App_Start\\WebApiConfig.cs",
+              "RelativeToolTip": "FinalDemo\\App_Start\\WebApiConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T07:00:37.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "BLtoken.cs",
+              "DocumentMoniker": "C:\\Users\\Parth\\OneDrive\\Desktop\\FinalDemo\\FinalDemo\\BL\\Operations\\BLtoken.cs",
+              "ToolTip": "C:\\Users\\Parth\\OneDrive\\Desktop\\FinalDemo\\FinalDemo\\BL\\Operations\\BLtoken.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T14:52:35.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AuthHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Parth\\OneDrive\\Desktop\\FinalDemo\\FinalDemo\\BL\\Operations\\AuthHandler.cs",
+              "ToolTip": "C:\\Users\\Parth\\OneDrive\\Desktop\\FinalDemo\\FinalDemo\\BL\\Operations\\AuthHandler.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T07:55:05.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Parth\\OneDrive\\Desktop\\FinalDemo\\FinalDemo\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Parth\\OneDrive\\Desktop\\FinalDemo\\FinalDemo\\Controllers\\AuthController.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T09:03:41.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "OrderStatusEnum.cs",
+              "DocumentMoniker": "C:\\Users\\Parth\\OneDrive\\Desktop\\FinalDemo\\FinalDemo\\Models\\ENUM\\OrderStatusEnum.cs",
+              "ToolTip": "C:\\Users\\Parth\\OneDrive\\Desktop\\FinalDemo\\FinalDemo\\Models\\ENUM\\OrderStatusEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T07:43:43.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "IAuthHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Parth\\OneDrive\\Desktop\\FinalDemo\\FinalDemo\\BL\\Interface\\IAuthHandler.cs",
+              "ToolTip": "C:\\Users\\Parth\\OneDrive\\Desktop\\FinalDemo\\FinalDemo\\BL\\Interface\\IAuthHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T07:55:57.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "RoleEnum.cs",
+              "DocumentMoniker": "C:\\Users\\Parth\\OneDrive\\Desktop\\FinalDemo\\FinalDemo\\Models\\ENUM\\RoleEnum.cs",
+              "ToolTip": "C:\\Users\\Parth\\OneDrive\\Desktop\\FinalDemo\\FinalDemo\\Models\\ENUM\\RoleEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T07:43:05.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AuthDto.cs",
+              "DocumentMoniker": "C:\\Users\\Parth\\OneDrive\\Desktop\\FinalDemo\\FinalDemo\\Models\\DTO\\AuthDto.cs",
+              "ToolTip": "C:\\Users\\Parth\\OneDrive\\Desktop\\FinalDemo\\FinalDemo\\Models\\DTO\\AuthDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T07:59:37.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "POCO_TO_DTO_AND_DTO_TO_POCO.cs",
+              "DocumentMoniker": "C:\\Users\\Parth\\OneDrive\\Desktop\\FinalDemo\\FinalDemo\\Extension\\POCO_TO_DTO_AND_DTO_TO_POCO.cs",
+              "ToolTip": "C:\\Users\\Parth\\OneDrive\\Desktop\\FinalDemo\\FinalDemo\\Extension\\POCO_TO_DTO_AND_DTO_TO_POCO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAQwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T07:52:07.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "packages.config",
+              "DocumentMoniker": "F:\\13-FinalDemo\\FinalDemo\\packages.config",
+              "RelativeDocumentMoniker": "FinalDemo\\packages.config",
+              "ToolTip": "F:\\13-FinalDemo\\FinalDemo\\packages.config",
+              "RelativeToolTip": "FinalDemo\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-01-18T04:00:03.745Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
