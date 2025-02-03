@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\parth-415\\RKIT_training-main\\3-advance-C#\\AllGenerics\\Generics\\Generics\\Generics.csproj",
+      "projectUniqueName": "F:\\parth-415\\git-desk\\RKIT_training\\3-advance-C#\\3-AllGenerics\\Generics\\Generics\\Generics.csproj",
       "projectName": "Generics",
-      "projectPath": "F:\\parth-415\\RKIT_training-main\\3-advance-C#\\AllGenerics\\Generics\\Generics\\Generics.csproj",
+      "projectPath": "F:\\parth-415\\git-desk\\RKIT_training\\3-advance-C#\\3-AllGenerics\\Generics\\Generics\\Generics.csproj",
       "packagesPath": "C:\\Users\\parth.sh\\.nuget\\packages\\",
-      "outputPath": "F:\\parth-415\\RKIT_training-main\\3-advance-C#\\AllGenerics\\Generics\\Generics\\obj\\",
+      "outputPath": "F:\\parth-415\\git-desk\\RKIT_training\\3-advance-C#\\3-AllGenerics\\Generics\\Generics\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\parth.sh\\AppData\\Roaming\\NuGet\\NuGet.Config",

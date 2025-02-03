@@ -60,7 +60,7 @@ namespace FinalDemo.Controllers
                 conn.Open();
                 string query = "SELECT * FROM user WHERE username = @UserName AND password = @Password";
 
-                using (var command = new MySqlCommand(query, conn))
+                using (MySqlCommand command = new MySqlCommand(query, conn))
                 {
                     
                     command.Parameters.AddWithValue("@UserName", objauthuser.username);
