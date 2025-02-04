@@ -27,6 +27,20 @@ namespace BaseLibraryFeatures
         }
 
         /// <summary>
+        /// Counts total items manually without using built-in Count property
+        /// </summary>
+        public int CountItemsManual()
+        {
+            int count = 0;
+
+            foreach (T item in this) 
+            {
+                count++; 
+            }
+            return count;
+        }
+
+        /// <summary>
         /// Removes an item from the list
         /// </summary>
         /// <param name="item">The item to be removed</param>
@@ -41,10 +55,10 @@ namespace BaseLibraryFeatures
         /// <returns>The first item in the list</returns>
         public T GetFirstItem()
         {
-            if (this.Count > 0)
-                return this[0];  // List ka pehla element return karega
+            if (this.CountItemsManual() > 0)
+                return this[0]; 
             else
-                return default(T);  // Agar list empty hai toh default value return karega
+                return default(T);  
         }
 
     }

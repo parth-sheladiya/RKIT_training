@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Lu532aNr+5MNfcmMyBNwgd3mDIV/VGti9VEEzL0/z+zGwsBx3t9GU+klMQ2G3IvAfKAhB1ncHwJ6oI2gfY/5pQ==",
+  "dgSpecHash": "rpQd9Kh5lFE=",
   "success": true,
-  "projectFilePath": "F:\\parth-415\\RKIT_training-main\\3-advance-C#\\DynamicType\\DynamicType\\DynamicType.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "G:\\Training\\RKIT_training\\3-advance-C#\\12-DynamicType\\DynamicType\\DynamicType.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Parth\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\Parth\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\Parth\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\Parth\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.36\\microsoft.netcore.app.host.win-x64.6.0.36.nupkg.sha512"
+  ],
   "logs": []
 }

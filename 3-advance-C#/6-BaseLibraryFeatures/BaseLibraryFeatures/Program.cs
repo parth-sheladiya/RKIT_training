@@ -20,6 +20,12 @@ namespace BaseLibraryFeatures
             // Removing an element from the list
             list.RemoveToList(1);
 
+            list.RemoveToList(4);
+            Console.WriteLine($"After Removing  Total Items: {list.CountItemsManual()}");
+
+            int totalItems = list.CountItemsManual();
+            Console.WriteLine($"Total items in list: {totalItems}");
+
             // Displaying the elements in the list using a foreach loop
             foreach (var item in list)
             {

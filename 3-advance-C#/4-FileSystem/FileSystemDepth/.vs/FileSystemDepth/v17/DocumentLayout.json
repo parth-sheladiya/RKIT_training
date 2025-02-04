@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "G:\\Training\\RKIT_training\\3-advance-C#\\4-FileSystem\\FileSystemDepth\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2FDC7E3-4D7C-4E9F-AC2F-BE3E4C63DA57}|FileSystemDepth\\FileSystemDepth.csproj|g:\\training\\rkit_training\\3-advance-c#\\4-filesystem\\filesystemdepth\\filesystemdepth\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2FDC7E3-4D7C-4E9F-AC2F-BE3E4C63DA57}|FileSystemDepth\\FileSystemDepth.csproj|solutionrelative:filesystemdepth\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C2FDC7E3-4D7C-4E9F-AC2F-BE3E4C63DA57}|FileSystemDepth\\FileSystemDepth.csproj|g:\\training\\rkit_training\\3-advance-c#\\4-filesystem\\filesystemdepth\\filesystemdepth\\filestreamclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2FDC7E3-4D7C-4E9F-AC2F-BE3E4C63DA57}|FileSystemDepth\\FileSystemDepth.csproj|solutionrelative:filesystemdepth\\filestreamclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2FDC7E3-4D7C-4E9F-AC2F-BE3E4C63DA57}|FileSystemDepth\\FileSystemDepth.csproj|g:\\training\\rkit_training\\3-advance-c#\\4-filesystem\\filesystemdepth\\filesystemdepth\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2FDC7E3-4D7C-4E9F-AC2F-BE3E4C63DA57}|FileSystemDepth\\FileSystemDepth.csproj|solutionrelative:filesystemdepth\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C2FDC7E3-4D7C-4E9F-AC2F-BE3E4C63DA57}|FileSystemDepth\\FileSystemDepth.csproj|g:\\training\\rkit_training\\3-advance-c#\\4-filesystem\\filesystemdepth\\filesystemdepth\\driveinfoclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "FileStreamClass.cs",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\3-advance-C#\\4-FileSystem\\FileSystemDepth\\FileSystemDepth\\FileStreamClass.cs",
               "RelativeDocumentMoniker": "FileSystemDepth\\FileStreamClass.cs",
               "ToolTip": "G:\\Training\\RKIT_training\\3-advance-C#\\4-FileSystem\\FileSystemDepth\\FileSystemDepth\\FileStreamClass.cs",
               "RelativeToolTip": "FileSystemDepth\\FileStreamClass.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAYwCgAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAmwDkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-04T14:10:53.081Z",
               "EditorCaption": ""
@@ -53,7 +53,7 @@
               "RelativeDocumentMoniker": "FileSystemDepth\\DriveInfoClass.cs",
               "ToolTip": "G:\\Training\\RKIT_training\\3-advance-C#\\4-FileSystem\\FileSystemDepth\\FileSystemDepth\\DriveInfoClass.cs",
               "RelativeToolTip": "FileSystemDepth\\DriveInfoClass.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwCMAAABuAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-04T14:10:53.555Z",
               "EditorCaption": ""
@@ -84,13 +84,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\3-advance-C#\\4-FileSystem\\FileSystemDepth\\FileSystemDepth\\Program.cs",
               "RelativeDocumentMoniker": "FileSystemDepth\\Program.cs",
               "ToolTip": "G:\\Training\\RKIT_training\\3-advance-C#\\4-FileSystem\\FileSystemDepth\\FileSystemDepth\\Program.cs",
               "RelativeToolTip": "FileSystemDepth\\Program.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAcwA0AAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAcwBAAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-04T14:10:54.095Z",
               "EditorCaption": ""

@@ -8,19 +8,24 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\parth.sh\\.nuget\\packages\\": {}
+    "C:\\Users\\Parth\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\parth-415\\RKIT_training-main\\3-advance-C#\\Secutity&Cryptography\\Secutity&Cryptography\\SecutityCryptography.csproj",
-      "projectName": "SecutityCryptography",
-      "projectPath": "F:\\parth-415\\RKIT_training-main\\3-advance-C#\\Secutity&Cryptography\\Secutity&Cryptography\\SecutityCryptography.csproj",
-      "packagesPath": "C:\\Users\\parth.sh\\.nuget\\packages\\",
-      "outputPath": "F:\\parth-415\\RKIT_training-main\\3-advance-C#\\Secutity&Cryptography\\Secutity&Cryptography\\obj\\",
+      "projectUniqueName": "G:\\Training\\RKIT_training\\3-advance-C#\\11-Secutity&Cryptography\\Secutity&Cryptography\\SecurityCryptography.csproj",
+      "projectName": "SecurityCryptography",
+      "projectPath": "G:\\Training\\RKIT_training\\3-advance-C#\\11-Secutity&Cryptography\\Secutity&Cryptography\\SecurityCryptography.csproj",
+      "packagesPath": "C:\\Users\\Parth\\.nuget\\packages\\",
+      "outputPath": "G:\\Training\\RKIT_training\\3-advance-C#\\11-Secutity&Cryptography\\Secutity&Cryptography\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\parth.sh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Parth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -40,7 +45,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net7.0": {
@@ -61,7 +72,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

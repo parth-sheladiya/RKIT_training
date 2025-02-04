@@ -7,85 +7,74 @@ namespace Security_Cryptography
 {
     public class RijndaelAlgorithm
     {
-        // Main method that runs the Rijndael encryption and decryption process
+        /// <summary>
+        /// Runs the Rijndael encryption and decryption demonstration.
+        /// </summary>
         public static void RunRijndaelAlgorithm()
         {
-            Console.WriteLine("Rijndael Encryption/Decryption Demonstration");
+            string originalText = "Hello, Rijndael Encryption!";
+            string key = "1234567890123456"; // 16-byte (128-bit) key
+            string iv = "abcdefghijklmnop"; // 16-byte IV (Initialization Vector)
 
-            // Define the plaintext message to be encrypted
-            string plainText = "Hello, Rijndael Encryption!";
+            // Encrypt
+            string encryptedText = EncryptRijndael(originalText, key, iv);
+            Console.WriteLine($"Encrypted: {encryptedText}");
 
-            // Generate random key and IV (Initialization Vector) for Rijndael encryption
-            byte[] key = GenerateRandomKey(32); // Rijndael supports 128, 192, or 256-bit keys (16, 24, or 32 bytes)
-            byte[] iv = GenerateRandomKey(16);  // IV size is 16 bytes
-
-            // Display the generated key and IV in Base64 format
-            Console.WriteLine("Generated Key (Base64): " + Convert.ToBase64String(key));
-            Console.WriteLine("Generated IV (Base64): " + Convert.ToBase64String(iv));
-
-            // Encrypt the plaintext and display the encrypted text in Base64 format
-            string encryptedText = Encrypt(plainText, key, iv);
-            Console.WriteLine("Encrypted Text (Base64): " + encryptedText);
-
-            // Decrypt the encrypted text back to the original plaintext
-            string decryptedText = Decrypt(encryptedText, key, iv);
-            Console.WriteLine("Decrypted Text: " + decryptedText);
+            // Decrypt
+            string decryptedText = DecryptRijndael(encryptedText, key, iv);
+            Console.WriteLine($"Decrypted: {decryptedText}");
         }
 
-        // Method to generate a random key of a specified size (in bytes)
-        public static byte[] GenerateRandomKey(int size)
+        /// <summary>
+        /// Encrypts a given text using Rijndael algorithm.
+        /// </summary>
+        /// <param name="plainText">Text to be encrypted</param>
+        /// <param name="key">16-byte encryption key</param>
+        /// <param name="iv">16-byte IV</param>
+        /// <returns>Encrypted text in Base64 format</returns>
+        public static string EncryptRijndael(string plainText, string key, string iv)
         {
-            byte[] key = new byte[size]; // Create a byte array of the specified size
-            using (var rng = RandomNumberGenerator.Create()) // Create a random number generator
+            byte[] keyBytes = Encoding.UTF8.GetBytes(key);
+            byte[] ivBytes = Encoding.UTF8.GetBytes(iv);
+
+            using (Rijndael rijndael = Rijndael.Create()) // Rijndael algorithm ka instance create kiya
             {
-                rng.GetBytes(key); // Fill the byte array with random bytes
-            }
-            return key; // Return the generated key
-        }
+                rijndael.Key = keyBytes;
+                rijndael.IV = ivBytes;
 
-        // Encrypt method: Encrypts the given plaintext using Rijndael with the provided key and IV
-        public static string Encrypt(string plainText, byte[] key, byte[] iv)
-        {
-            if (string.IsNullOrEmpty(plainText)) throw new ArgumentException("Plaintext cannot be null or empty.");
-            if (key == null || key.Length == 0) throw new ArgumentException("Key cannot be null or empty.");
-            if (iv == null || iv.Length == 0) throw new ArgumentException("IV cannot be null or empty.");
-
-            using (var rijndael = new RijndaelManaged())
-            {
-                rijndael.Key = key; // Set the key for Rijndael encryption
-                rijndael.IV = iv;   // Set the IV for Rijndael encryption
-
-                using (var encryptor = rijndael.CreateEncryptor())
-                using (var ms = new MemoryStream())
-                using (var cs = new CryptoStream(ms, encryptor, CryptoStreamMode.Write))
+                using (MemoryStream ms = new MemoryStream())
+                using (CryptoStream cs = new CryptoStream(ms, rijndael.CreateEncryptor(), CryptoStreamMode.Write))
                 {
-                    byte[] plainBytes = Encoding.UTF8.GetBytes(plainText); // Convert plaintext to bytes
-                    cs.Write(plainBytes, 0, plainBytes.Length); // Write plaintext bytes to CryptoStream
-                    cs.FlushFinalBlock(); // Ensure all data is written to the memory stream
-                    return Convert.ToBase64String(ms.ToArray()); // Convert encrypted bytes to Base64 and return
+                    byte[] plainBytes = Encoding.UTF8.GetBytes(plainText);
+                    cs.Write(plainBytes, 0, plainBytes.Length);
+                    cs.FlushFinalBlock();
+                    return Convert.ToBase64String(ms.ToArray()); // Encrypted bytes ko Base64 me convert kiya
                 }
             }
         }
 
-        // Decrypt method: Decrypts the given ciphertext using Rijndael with the provided key and IV
-        public static string Decrypt(string cipherText, byte[] key, byte[] iv)
+        /// <summary>
+        /// Decrypts an encrypted text using Rijndael algorithm.
+        /// </summary>
+        /// <param name="encryptedText">Base64-encoded encrypted text</param>
+        /// <param name="key">16-byte decryption key</param>
+        /// <param name="iv">16-byte IV</param>
+        /// <returns>Original decrypted text</returns>
+        public static string DecryptRijndael(string encryptedText, string key, string iv)
         {
-            if (string.IsNullOrEmpty(cipherText)) throw new ArgumentException("Ciphertext cannot be null or empty.");
-            if (key == null || key.Length == 0) throw new ArgumentException("Key cannot be null or empty.");
-            if (iv == null || iv.Length == 0) throw new ArgumentException("IV cannot be null or empty.");
+            byte[] keyBytes = Encoding.UTF8.GetBytes(key);
+            byte[] ivBytes = Encoding.UTF8.GetBytes(iv);
 
-            using (var rijndael = new RijndaelManaged())
+            using (Rijndael rijndael = Rijndael.Create()) // Rijndael algorithm ka instance create kiya
             {
-                rijndael.Key = key; // Set the key for Rijndael decryption
-                rijndael.IV = iv;   // Set the IV for Rijndael decryption
+                rijndael.Key = keyBytes;
+                rijndael.IV = ivBytes;
 
-                using (var decryptor = rijndael.CreateDecryptor())
-                using (var ms = new MemoryStream(Convert.FromBase64String(cipherText)))
-                using (var cs = new CryptoStream(ms, decryptor, CryptoStreamMode.Read))
+                using (MemoryStream ms = new MemoryStream(Convert.FromBase64String(encryptedText)))
+                using (CryptoStream cs = new CryptoStream(ms, rijndael.CreateDecryptor(), CryptoStreamMode.Read))
+                using (StreamReader reader = new StreamReader(cs))
                 {
-                    byte[] plainBytes = new byte[ms.Length]; // Create a byte array to hold the decrypted data
-                    int bytesRead = cs.Read(plainBytes, 0, plainBytes.Length); // Read decrypted data into byte array
-                    return Encoding.UTF8.GetString(plainBytes, 0, bytesRead); // Convert decrypted bytes to string and return
+                    return reader.ReadToEnd(); // Decrypted text return karega
                 }
             }
         }

@@ -1,18 +1,18 @@
 ﻿using Security_Cryptography;
-using Secutity_Cryptography;
+
 using System;
 
-namespace SecurityCryptography
+namespace Security_Cryptography
 {
     public class Program
     {
         public static void Main(string[] data) 
         {
             // call RunDESalgoritham method
-            DESalgoritham.RunDESalgoritham();
+           // DESAlgoritham.RunDESAlgorithm();
 
             // call RunAESAlgorithm method
-            AESAlgorithm.RunAESAlgorithm();
+           // AESAlgorithm.RunAESAlgorithm();
 
             // call RunRijndaelAlgorithm method
             RijndaelAlgorithm.RunRijndaelAlgorithm();

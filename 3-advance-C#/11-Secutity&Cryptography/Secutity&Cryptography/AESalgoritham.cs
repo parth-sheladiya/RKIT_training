@@ -5,99 +5,81 @@ using System.Text;
 
 namespace Security_Cryptography
 {
+    /// <summary>
+    /// Class to perform AES (Advanced Encryption Standard) encryption and decryption.
+    /// AES is a symmetric encryption algorithm that uses a single key for both encryption and decryption.
+    /// </summary>
     public class AESAlgorithm
     {
-        // Main method that runs the AES encryption and decryption process
+        /// <summary>
+        /// Runs the AES encryption and decryption process with a sample text and key.
+        /// </summary>
         public static void RunAESAlgorithm()
         {
-            // Message for encryption
-            Console.WriteLine("AES Encryption/Decryption Demonstration");
-           
+            string originalText = "Hello, AES Encryption!";
+            // 16-byte key (128-bit AES key)
+            string key = "abcdefghijklmnop";  
 
-            // Define the plaintext message to be encrypted
-            string plainText = "Hello, AES Encryption!";
+            // Encrypt the original text
+            string encryptedText = EncryptAES(originalText, key);
+            Console.WriteLine($"Encrypted: {encryptedText}");
 
-            // Generate random key and IV (Initialization Vector) for AES encryption
-            byte[] key = GenerateRandomKey(16);  // AES typically uses 16, 24, or 32 byte keys (128, 192, or 256 bits)
-            byte[] iv = GenerateRandomKey(16);   // IV is also 16 bytes for AES
-
-            // Display the generated key and IV in Base64 format
-            Console.WriteLine("Generated Key (Base64): " + Convert.ToBase64String(key));
-            Console.WriteLine("Generated IV (Base64): " + Convert.ToBase64String(iv));
-
-            // Encrypt the plaintext and display the encrypted text in Base64 format
-            string encryptedText = Encrypt(plainText, key, iv);
-            Console.WriteLine("Encrypted Text (Base64): " + encryptedText);
-
-            // Decrypt the encrypted text back to the original plaintext
-            string decryptedText = Decrypt(encryptedText, key, iv);
-            Console.WriteLine("Decrypted Text: " + decryptedText);
+            // Decrypt the encrypted text
+            string decryptedText = DecryptAES(encryptedText, key);
+            Console.WriteLine($"Decrypted: {decryptedText}");
         }
 
-        // Method to generate a random key of a specified size (in bytes)
-        public static byte[] GenerateRandomKey(int size)
+        /// <summary>
+        /// Encrypts a plaintext string using AES encryption.
+        /// </summary>
+        /// <param name="plainText">The text to be encrypted.</param>
+        /// <param name="key">The 16-byte encryption key.</param>
+        /// <returns>The encrypted text in Base64 format.</returns>
+        static string EncryptAES(string plainText, string key)
         {
-            byte[] key = new byte[size]; // Create a byte array of the specified size
-            using (var rng = RandomNumberGenerator.Create()) // Create a random number generator
+            byte[] keyBytes = Encoding.UTF8.GetBytes(key);
+            // Initialization Vector 16 bytes of zeros
+            byte[] iv = new byte[16]; 
+
+            using (Aes aes = Aes.Create())
             {
-                rng.GetBytes(key); // Fill the byte array with random bytes
-            }
-            return key; // Return the generated key
-        }
+                aes.Key = keyBytes;
+                aes.IV = iv;
 
-        // Encrypt method: Encrypts the given plaintext using AES with the provided key and IV
-        public static string Encrypt(string plainText, byte[] key, byte[] iv)
-        {
-            // Check for invalid input values
-            if (string.IsNullOrEmpty(plainText)) throw new ArgumentException("Plaintext cannot be null or empty.");
-            if (key == null || key.Length == 0) throw new ArgumentException("Key cannot be null or empty.");
-            if (iv == null || iv.Length == 0) throw new ArgumentException("IV cannot be null or empty.");
-
-            // Create a new AES instance and configure it with the provided key and IV
-            using (var aes = Aes.Create())
-            {
-                aes.Key = key; // Set the key for AES encryption
-                aes.IV = iv;   // Set the IV for AES encryption
-
-                // Create an encryptor to perform encryption
-                using (var encryptor = aes.CreateEncryptor())
-                using (var ms = new MemoryStream()) // Memory stream to hold the encrypted data
-                using (var cs = new CryptoStream(ms, encryptor, CryptoStreamMode.Write)) // CryptoStream for encryption
+                using (MemoryStream ms = new MemoryStream())
+                using (CryptoStream cs = new CryptoStream(ms, aes.CreateEncryptor(), CryptoStreamMode.Write))
                 {
-                    byte[] plainBytes = Encoding.UTF8.GetBytes(plainText); // Convert plaintext to bytes
-                    cs.Write(plainBytes, 0, plainBytes.Length); // Write plaintext bytes to CryptoStream
-                    cs.FlushFinalBlock(); // Ensure all data is written to the memory stream
-                    return Convert.ToBase64String(ms.ToArray()); // Convert encrypted bytes to Base64 and return
+                    byte[] plainBytes = Encoding.UTF8.GetBytes(plainText);
+                    cs.Write(plainBytes, 0, plainBytes.Length);
+                    cs.FlushFinalBlock();
+                    return Convert.ToBase64String(ms.ToArray()); // Convert to Base64 string for storage/transmission
                 }
             }
         }
 
-        // Decrypt method: Decrypts the given ciphertext using AES with the provided key and IV
-        public static string Decrypt(string cipherText, byte[] key, byte[] iv)
+        /// <summary>
+        /// Decrypts an AES-encrypted string back to its original plaintext form.
+        /// </summary>
+        /// <param name="encryptedText">The encrypted text in Base64 format.</param>
+        /// <param name="key">The 16-byte decryption key.</param>
+        /// <returns>The decrypted plaintext string.</returns>
+        static string DecryptAES(string encryptedText, string key)
         {
-            // Check for invalid input values
-            if (string.IsNullOrEmpty(cipherText)) throw new ArgumentException("Ciphertext cannot be null or empty.");
-            if (key == null || key.Length == 0) throw new ArgumentException("Key cannot be null or empty.");
-            if (iv == null || iv.Length == 0) throw new ArgumentException("IV cannot be null or empty.");
+            byte[] keyBytes = Encoding.UTF8.GetBytes(key);
+            byte[] iv = new byte[16]; // Must match the IV used during encryption
 
-            // Create a new AES instance and configure it with the provided key and IV
-            using (var aes = Aes.Create())
+            using (Aes aes = Aes.Create())
             {
-                aes.Key = key; // Set the key for AES decryption
-                aes.IV = iv;   // Set the IV for AES decryption
+                aes.Key = keyBytes;
+                aes.IV = iv;
 
-                // Create a decryptor to perform decryption
-                using (var decryptor = aes.CreateDecryptor())
-                using (var ms = new MemoryStream(Convert.FromBase64String(cipherText))) // Convert Base64 to byte array
-                using (var cs = new CryptoStream(ms, decryptor, CryptoStreamMode.Read)) // CryptoStream for decryption
+                using (MemoryStream ms = new MemoryStream(Convert.FromBase64String(encryptedText)))
+                using (CryptoStream cs = new CryptoStream(ms, aes.CreateDecryptor(), CryptoStreamMode.Read))
+                using (StreamReader reader = new StreamReader(cs))
                 {
-                    byte[] plainBytes = new byte[ms.Length]; // Create a byte array to hold the decrypted data
-                    int bytesRead = cs.Read(plainBytes, 0, plainBytes.Length); // Read decrypted data into byte array
-                    return Encoding.UTF8.GetString(plainBytes, 0, bytesRead); // Convert decrypted bytes to string and return
+                    return reader.ReadToEnd(); // Return the decrypted text
                 }
             }
         }
-
-      
     }
 }
