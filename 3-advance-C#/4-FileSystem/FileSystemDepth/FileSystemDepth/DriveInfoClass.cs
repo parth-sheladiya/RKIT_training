@@ -7,6 +7,9 @@ using System.IO;
 
 namespace FileSystemDepth
 {
+    /// <summary>
+    /// drive info class
+    /// </summary>
     public class DriveInfoClass
     {
         public static void RunAllDriveInfoClass()
@@ -31,7 +34,6 @@ namespace FileSystemDepth
                     
                     Console.WriteLine($"Volume Label: {drive.VolumeLabel}");
                     Console.WriteLine($"Available Free Space: {drive.AvailableFreeSpace / (1024 * 1024)} MB");
-                    Console.WriteLine($"Total Free Space: {drive.TotalFreeSpace / (1024 * 1024)} MB");
                     Console.WriteLine($"Total Size: {drive.TotalSize / (1024 * 1024)} MB");
                     Console.WriteLine($"Root Directory: {drive.RootDirectory}");
                 }

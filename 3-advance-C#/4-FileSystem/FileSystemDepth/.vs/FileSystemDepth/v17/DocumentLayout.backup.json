@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\Training\\RKIT_training\\3-advance-C#\\4-FileSystem\\FileSystemDepth\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C2FDC7E3-4D7C-4E9F-AC2F-BE3E4C63DA57}|FileSystemDepth\\FileSystemDepth.csproj|g:\\training\\rkit_training\\3-advance-c#\\4-filesystem\\filesystemdepth\\filesystemdepth\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2FDC7E3-4D7C-4E9F-AC2F-BE3E4C63DA57}|FileSystemDepth\\FileSystemDepth.csproj|solutionrelative:filesystemdepth\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2FDC7E3-4D7C-4E9F-AC2F-BE3E4C63DA57}|FileSystemDepth\\FileSystemDepth.csproj|g:\\training\\rkit_training\\3-advance-c#\\4-filesystem\\filesystemdepth\\filesystemdepth\\filestreamclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2FDC7E3-4D7C-4E9F-AC2F-BE3E4C63DA57}|FileSystemDepth\\FileSystemDepth.csproj|solutionrelative:filesystemdepth\\filestreamclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2FDC7E3-4D7C-4E9F-AC2F-BE3E4C63DA57}|FileSystemDepth\\FileSystemDepth.csproj|g:\\training\\rkit_training\\3-advance-c#\\4-filesystem\\filesystemdepth\\filesystemdepth\\driveinfoclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2FDC7E3-4D7C-4E9F-AC2F-BE3E4C63DA57}|FileSystemDepth\\FileSystemDepth.csproj|solutionrelative:filesystemdepth\\driveinfoclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2FDC7E3-4D7C-4E9F-AC2F-BE3E4C63DA57}|FileSystemDepth\\FileSystemDepth.csproj|g:\\training\\rkit_training\\3-advance-c#\\4-filesystem\\filesystemdepth\\filesystemdepth\\directoryclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2FDC7E3-4D7C-4E9F-AC2F-BE3E4C63DA57}|FileSystemDepth\\FileSystemDepth.csproj|solutionrelative:filesystemdepth\\directoryclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2FDC7E3-4D7C-4E9F-AC2F-BE3E4C63DA57}|FileSystemDepth\\FileSystemDepth.csproj|g:\\training\\rkit_training\\3-advance-c#\\4-filesystem\\filesystemdepth\\filesystemdepth\\filesystemdepth.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C2FDC7E3-4D7C-4E9F-AC2F-BE3E4C63DA57}|FileSystemDepth\\FileSystemDepth.csproj|solutionrelative:filesystemdepth\\filesystemdepth.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileStreamClass.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\3-advance-C#\\4-FileSystem\\FileSystemDepth\\FileSystemDepth\\FileStreamClass.cs",
+              "RelativeDocumentMoniker": "FileSystemDepth\\FileStreamClass.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\3-advance-C#\\4-FileSystem\\FileSystemDepth\\FileSystemDepth\\FileStreamClass.cs",
+              "RelativeToolTip": "FileSystemDepth\\FileStreamClass.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAcwCgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T14:10:53.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DriveInfoClass.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\3-advance-C#\\4-FileSystem\\FileSystemDepth\\FileSystemDepth\\DriveInfoClass.cs",
+              "RelativeDocumentMoniker": "FileSystemDepth\\DriveInfoClass.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\3-advance-C#\\4-FileSystem\\FileSystemDepth\\FileSystemDepth\\DriveInfoClass.cs",
+              "RelativeToolTip": "FileSystemDepth\\DriveInfoClass.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCMAAABuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T14:10:53.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DirectoryClass.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\3-advance-C#\\4-FileSystem\\FileSystemDepth\\FileSystemDepth\\DirectoryClass.cs",
+              "RelativeDocumentMoniker": "FileSystemDepth\\DirectoryClass.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\3-advance-C#\\4-FileSystem\\FileSystemDepth\\FileSystemDepth\\DirectoryClass.cs",
+              "RelativeToolTip": "FileSystemDepth\\DirectoryClass.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T14:10:53.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FileSystemDepth.csproj",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\3-advance-C#\\4-FileSystem\\FileSystemDepth\\FileSystemDepth\\FileSystemDepth.csproj",
+              "RelativeDocumentMoniker": "FileSystemDepth\\FileSystemDepth.csproj",
+              "ToolTip": "G:\\Training\\RKIT_training\\3-advance-C#\\4-FileSystem\\FileSystemDepth\\FileSystemDepth\\FileSystemDepth.csproj",
+              "RelativeToolTip": "FileSystemDepth\\FileSystemDepth.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-04T14:10:53.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\3-advance-C#\\4-FileSystem\\FileSystemDepth\\FileSystemDepth\\Program.cs",
+              "RelativeDocumentMoniker": "FileSystemDepth\\Program.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\3-advance-C#\\4-FileSystem\\FileSystemDepth\\FileSystemDepth\\Program.cs",
+              "RelativeToolTip": "FileSystemDepth\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T14:10:54.095Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

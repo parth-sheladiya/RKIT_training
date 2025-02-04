@@ -14,11 +14,11 @@ namespace FileSystemDepth
             #endregion
 
             #region drive info class
-            DriveInfoClass.RunAllDriveInfoClass();
+            //DriveInfoClass.RunAllDriveInfoClass();
             #endregion
 
             #region file stream class
-           // FileStreamClass.RunFileStreamClass();
+            FileStreamClass.RunFileStreamClass();
             #endregion
         }
     }
