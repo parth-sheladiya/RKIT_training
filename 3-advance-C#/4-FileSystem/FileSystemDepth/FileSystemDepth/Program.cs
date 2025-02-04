@@ -10,15 +10,15 @@ namespace FileSystemDepth
             string newDir = @"F:\parth-415\RKIT_training-main\3-advance-C#\NewSampleDiractoryExampleTesting";
 
             #region directory class
-            // DirectoryClass.RunAllOperations(path, newDir);
+             // DirectoryClass.RunAllOperations(path, newDir);
             #endregion
 
             #region drive info class
-            // DriveInfoClass.RunAllDriveInfoClass();
+            DriveInfoClass.RunAllDriveInfoClass();
             #endregion
 
             #region file stream class
-            FileStreamClass.RunFileStreamClass();
+           // FileStreamClass.RunFileStreamClass();
             #endregion
         }
     }

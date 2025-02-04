@@ -6,19 +6,26 @@ using System.Threading.Tasks;
 
 namespace LinQExample
 {
+    /// <summary>
+    /// this class is describe various type of element operator.
+    /// </summary>
     public class ElementOperatorClass
     {
+        /// <summary>
+        /// different element operator
+        /// </summary>
         public static void RunElementOperatorClass()
         {
+            // create object
             ElementOperator elementOperator = new ElementOperator();
 
             // retrive first element 
-            int showFirstElement = elementOperator.numbers.First();
+            int showFirstElement = elementOperator.numbers.First(n=>n>40);
             Console.WriteLine("retrive first element is " + showFirstElement);
 
             // retrive first element or default
             // if list is empty then it will return 0 but do not give any error 
-            int showFstDefEle = elementOperator.numbers.First();
+            int showFstDefEle = elementOperator.numbers.FirstOrDefault(n=>n>90);
             Console.WriteLine("retrive first element or default is " + showFstDefEle);
 
             // retrive last element
@@ -41,7 +48,7 @@ namespace LinQExample
 
             // it's mark to comment bcz single is must be a single element otherwise it will give error 
             // retrive single element
-           // int showSingleElement = elementOperator.numbers.Single();
+          //  int showSingleElement = elementOperator.numbers.Single(n>20);
           //  Console.WriteLine("retrive single element is " + showSingleElement);
 
             // retrive single element or default 
@@ -55,11 +62,14 @@ namespace LinQExample
 
         }
 
+        /// <summary>
+        /// data source class for element operator
+        /// </summary>
         public class ElementOperator
         {
 
             // first of create source 
-           public List<int> numbers = new List<int> { 10, 20, 30 };
+           public List<int> numbers = new List<int> { 10, 20, 30 ,40,50,60,70,80,90 };
 
            public List<string> strings = new List<string> { "US", "UK", "India", "Russia", "China", "Australia", "Argentina" };
 

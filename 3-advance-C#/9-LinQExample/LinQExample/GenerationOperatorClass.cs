@@ -6,8 +6,15 @@ using System.Threading.Tasks;
 
 namespace LinQExample
 {
+    /// <summary>
+    /// this class is describe to diffeternt operator DefaultIfEmpty Repeat Range
+    /// </summary>
     public class GenerationOperatorClass
     {
+        /// <summary>
+        /// run method 
+        /// create object
+        /// </summary>
         public static void RunGenerationOperatorClass()
         {
             GenerationOperator generationOperator = new GenerationOperator();
@@ -38,7 +45,9 @@ namespace LinQExample
             }
         }
 
-
+        /// <summary>
+        /// data source code
+        /// </summary>
         public class GenerationOperator
         {
             // first create source 

@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace LinQExample
 {
+    /// <summary>
+    /// concat class is in include concat method
+    /// </summary>
     public class ConcatClass
     {
+        /// <summary>
+        /// run method and call main program
+        /// </summary>
         public static void RunConcatClass()
         {
             // create object
@@ -24,6 +30,9 @@ namespace LinQExample
                 Console.WriteLine(item);
             }
         }
+        /// <summary>
+        /// data source class
+        /// </summary>
         public class Concat
         {
             // first create data source 

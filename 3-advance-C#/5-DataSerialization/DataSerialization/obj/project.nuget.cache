@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f1V436o9RPL8a95hlrE7Csj3qjOmLOTmV9o+9EEhMdfYwTfPyW9dhGlXWnAcvAmZG3Fx5+smMJJLaaPu2+tGXg==",
+  "dgSpecHash": "QjEoA87HEzN1ib7bbcx8vjtO//H20pd/tOyPUyipxEGcZow1oaeG0MiNygqt9PiCd3vylDdbr3vA1EZKhZzoSw==",
   "success": true,
-  "projectFilePath": "F:\\parth-415\\RKIT_training-main\\3-advance-C#\\DataSerialization\\DataSerialization\\DataSerialization.csproj",
+  "projectFilePath": "F:\\parth-415\\git-desk\\RKIT_training\\3-advance-C#\\5-DataSerialization\\DataSerialization\\DataSerialization.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\parth.sh\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],

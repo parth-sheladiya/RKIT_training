@@ -30,7 +30,7 @@ namespace FileSystemDepth
             string filePath = "test.txt";
 
             // data write in file
-            byte[] data = Encoding.UTF8.GetBytes("hello stream rtbhpoiearw ie rejpioare p;iojfrgbaer pjofbae piojbfa piofba");
+            byte[] data = Encoding.UTF8.GetBytes("hello stream class and this class is handle byte format");
 
             // use using 3 parameter 
             // path
@@ -66,6 +66,7 @@ namespace FileSystemDepth
                 Console.WriteLine($"File ka size: {fs.Length} bytes");
                 // file content
                 Console.WriteLine($"filecontent: {fileContent}");
+                // current index position
                 Console.WriteLine($"File current position: {fs.Position}");
 
 

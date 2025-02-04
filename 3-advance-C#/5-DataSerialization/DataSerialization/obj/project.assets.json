@@ -60,11 +60,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\parth-415\\RKIT_training-main\\3-advance-C#\\DataSerialization\\DataSerialization\\DataSerialization.csproj",
+      "projectUniqueName": "F:\\parth-415\\git-desk\\RKIT_training\\3-advance-C#\\5-DataSerialization\\DataSerialization\\DataSerialization.csproj",
       "projectName": "DataSerialization",
-      "projectPath": "F:\\parth-415\\RKIT_training-main\\3-advance-C#\\DataSerialization\\DataSerialization\\DataSerialization.csproj",
+      "projectPath": "F:\\parth-415\\git-desk\\RKIT_training\\3-advance-C#\\5-DataSerialization\\DataSerialization\\DataSerialization.csproj",
       "packagesPath": "C:\\Users\\parth.sh\\.nuget\\packages\\",
-      "outputPath": "F:\\parth-415\\RKIT_training-main\\3-advance-C#\\DataSerialization\\DataSerialization\\obj\\",
+      "outputPath": "F:\\parth-415\\git-desk\\RKIT_training\\3-advance-C#\\5-DataSerialization\\DataSerialization\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\parth.sh\\AppData\\Roaming\\NuGet\\NuGet.Config",

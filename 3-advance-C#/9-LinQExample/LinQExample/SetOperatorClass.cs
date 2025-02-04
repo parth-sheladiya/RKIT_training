@@ -6,57 +6,68 @@ using System.Threading.Tasks;
 
 namespace LinQExample
 {
+    /// <summary>
+    /// This class demonstrates the use of LINQ Set Operators.
+    /// Set operators allow us to perform operations like union, intersection, distinct, and except on sequences.
+    /// </summary>
     public class SetOperatorClass
     {
+        /// <summary>
+        /// This method demonstrates the use of various LINQ Set Operators:
+        /// 1. Distinct: Filters out duplicate values.
+        /// 2. Union: Combines two sequences, excluding duplicates.
+        /// 3. Intersect: Finds common elements between two sequences.
+        /// 4. Except: Returns elements that are in the first sequence but not in the second.
+        /// </summary>
         public static void RunSetOperatorClass()
         {
+            // Create an instance of SetOperator to access data sources
             SetOperator setOperator = new SetOperator();
 
-            // distinct keyword 
+            //  Distinct keyword: Returns only unique elements in the list
             var distinctVal = setOperator.listInt.Distinct();
-
-            Console.WriteLine("distinctVal is ");
+            Console.WriteLine("Distinct values are: ");
             foreach (var item in distinctVal)
             {
                 Console.WriteLine(item);
             }
 
-            // union keyword 
-            // if one list is int and second is string so compiler will give error
-            // it's solve too use cast keyword and 
+            //Union keyword Combines two sequences, excluding duplicates
+            // If lists have different types, the compiler will give an error. Cast is used to resolve type issues
             var unionRes = setOperator.sListInt.Union(setOperator.listInt);
-            Console.WriteLine("union val is ");
-            foreach(var item in unionRes)
+            Console.WriteLine("Union of lists: ");
+            foreach (var item in unionRes)
             {
                 Console.WriteLine(item);
             }
 
-            // intersect keyword
-            // it is return common element 
-            var  intersetRes = setOperator.sListInt.Intersect(setOperator.listInt);
-            Console.WriteLine("common number is ");
-            foreach(var item in intersetRes)
+            //  Intersect keyword: Returns common elements between two sequences
+            var intersectRes = setOperator.sListInt.Intersect(setOperator.listInt);
+            Console.WriteLine("Common values between lists: ");
+            foreach (var item in intersectRes)
             {
                 Console.WriteLine(item);
             }
 
-            // except keyword
-
+            // Except keyword Returns elements from the first list that are not in the second
             var exceptRes = setOperator.listInt.Except(setOperator.sListInt);
-            Console.WriteLine("except number is ");
-            foreach(var item in exceptRes)
+            Console.WriteLine("Elements in the first list but not in the second: ");
+            foreach (var item in exceptRes)
             {
                 Console.WriteLine(item);
             }
         }
+
+        /// <summary>
+        /// This class contains the data sources (integer lists) used for Set Operator demonstrations.
+        /// </summary>
         public class SetOperator
         {
-            // create data source 
-            public List<int> listInt = new List<int>{1,2,2,1,3,4,2,7,11,23,11,22,34,23,22,90,34,54,90};
+            // Data source for listInt it is for duplicate values
+            public List<int> listInt = new List<int> { 1, 2, 2, 1, 3, 4, 2, 7, 11, 23, 11, 22, 34, 23, 22, 90, 34, 54, 90 };
 
-            // create second data source bcz this source related to union 
+            // Second data source sListInt used for union, intersection, and except operations
             public List<int> sListInt = new List<int> { 1, 2, 3, 4 };
-
         }
     }
 }

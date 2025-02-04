@@ -15,7 +15,7 @@ namespace DataSerialization
         {
             Person person = new Person();
             person.Name = "parth";
-            person.Description = "full stack developer trainee";
+            person.Description = "hello parth";
 
             // Serialization
             //convert person object to json string

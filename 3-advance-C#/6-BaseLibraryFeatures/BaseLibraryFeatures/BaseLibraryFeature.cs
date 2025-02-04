@@ -3,67 +3,49 @@ using System.Collections.Generic;
 
 namespace BaseLibraryFeatures
 {
-    // Base class with a virtual Sort method
-    public class BaseSorter
+    /// <summary>
+    /// Represents a custom list that extends the functionality of the generic List class
+    /// </summary>
+    /// <typeparam name="T">The type of elements in the list</typeparam>
+    public class MyList<T> : List<T>
     {
-        // Virtual method that can be overridden in derived classes
-        public virtual void FeaturesSort(int[] array)
+        /// <summary>
+        /// Initializes a new instance of the MyList class
+        /// </summary>
+        public MyList() : base()
         {
-            Console.WriteLine("Base Sort method is called.");
+            Console.WriteLine("MyList object created!");
         }
-    }
 
-    // Derived class that overrides the Sort method and implements Bubble Sort
-    public class BubbleSorter : BaseSorter
-    {
-        // Override the Sort method with Bubble Sort algorithm
-        public override void FeaturesSort(int[] array)
+        /// <summary>
+        /// Adds an item to the list
+        /// </summary>
+        /// <param name="item">The item to be added</param>
+        public void AddToList(T item)
         {
-            int n = array.Length;
-            for (int i = 0; i < n - 1; i++)
-            {
-                for (int j = 0; j < n - i - 1; j++)
-                {
-                    if (array[j] > array[j + 1])
-                    {
-                        // Swap the elements
-                        int temp = array[j];
-                        array[j] = array[j + 1];
-                        array[j + 1] = temp;
-                    }
-                }
-            }
-            
+            base.Add(item);
         }
-    }
 
-    public class BaseLibraryFeature
-    {
-        // Method to demonstrate sorting algorithm
-        public static void RunBaseClassLibrary()
+        /// <summary>
+        /// Removes an item from the list
+        /// </summary>
+        /// <param name="item">The item to be removed</param>
+        public void RemoveToList(T item)
         {
-            // Example array to be sorted
-            int[] numbers = { 5, 3, 8, 4, 1 };
-
-            Console.WriteLine("Original Array:");
-            foreach (var number in numbers)
-            {
-                Console.Write(number + " ");
-            }
-            
-
-            // Create an instance of BubbleSorter and call the overridden Sort method
-            BaseSorter sorter = new BubbleSorter();
-            sorter.FeaturesSort(numbers);
-
-            // Displaying the sorted array
-            Console.WriteLine("Sorted Array:");
-            foreach (var number in numbers)
-            {
-                Console.Write(number + " ");
-            }
-           
+            base.Remove(item);
         }
-    }
 
+        /// <summary>
+        /// Returns the first item in the list, or default if list is empty
+        /// </summary>
+        /// <returns>The first item in the list</returns>
+        public T GetFirstItem()
+        {
+            if (this.Count > 0)
+                return this[0];  // List ka pehla element return karega
+            else
+                return default(T);  // Agar list empty hai toh default value return karega
+        }
+
+    }
 }

@@ -18,7 +18,7 @@ namespace TypesOfClass
         public abstract class Animal
         {
             // Abstract method no implementation 
-            public abstract void MakeSound();
+            public  abstract void MakeSound();
 
             // Regular method implementation 
             public void Sleep()

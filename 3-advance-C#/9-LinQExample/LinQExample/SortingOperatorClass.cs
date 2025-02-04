@@ -10,7 +10,7 @@ namespace LinQExample
     {
         /// <summary>
         /// main method 
-        /// 
+        /// create object for class
         /// </summary>
         public static void RunSortingOperatorClass()
         {
@@ -35,23 +35,22 @@ namespace LinQExample
             }
 
 
-            // thenby 
+            // ThenBy (Ascending)
             var thenStudent = clsSortingOprtr.student.OrderBy(p => p.age).ThenBy(p => p.name);
-            Console.WriteLine("then by multiple condition is ");
-
-            foreach (var student in orderdesendingStudent)
+            Console.WriteLine("ThenBy (Age Ascending, Name Ascending):");
+            foreach (var student in thenStudent)
             {
                 Console.WriteLine($"Name: {student.name}, Age: {student.age}");
             }
 
-            // thenby 
+            // ThenByDescending (Age Ascending, Name Descending)
             var thendescendingStudent = clsSortingOprtr.student.OrderBy(p => p.age).ThenByDescending(p => p.name);
-            Console.WriteLine("then by descending condition is ");
-
-            foreach (var student in orderdesendingStudent)
+            Console.WriteLine("ThenByDescending (Age Ascending, Name Descending):");
+            foreach (var student in thendescendingStudent)
             {
                 Console.WriteLine($"Name: {student.name}, Age: {student.age}");
             }
+
 
 
 

@@ -1,0 +1,15 @@
+F:\parth-415\git-desk\RKIT_training\3-advance-C#\7-LamdaExpressionExample\LamdaExpressionExample\bin\Debug\net7.0\LamdaExpressionExample.exe
+F:\parth-415\git-desk\RKIT_training\3-advance-C#\7-LamdaExpressionExample\LamdaExpressionExample\bin\Debug\net7.0\LamdaExpressionExample.deps.json
+F:\parth-415\git-desk\RKIT_training\3-advance-C#\7-LamdaExpressionExample\LamdaExpressionExample\bin\Debug\net7.0\LamdaExpressionExample.runtimeconfig.json
+F:\parth-415\git-desk\RKIT_training\3-advance-C#\7-LamdaExpressionExample\LamdaExpressionExample\bin\Debug\net7.0\LamdaExpressionExample.dll
+F:\parth-415\git-desk\RKIT_training\3-advance-C#\7-LamdaExpressionExample\LamdaExpressionExample\bin\Debug\net7.0\LamdaExpressionExample.pdb
+F:\parth-415\git-desk\RKIT_training\3-advance-C#\7-LamdaExpressionExample\LamdaExpressionExample\obj\Debug\net7.0\LamdaExpressionExample.csproj.AssemblyReference.cache
+F:\parth-415\git-desk\RKIT_training\3-advance-C#\7-LamdaExpressionExample\LamdaExpressionExample\obj\Debug\net7.0\LamdaExpressionExample.GeneratedMSBuildEditorConfig.editorconfig
+F:\parth-415\git-desk\RKIT_training\3-advance-C#\7-LamdaExpressionExample\LamdaExpressionExample\obj\Debug\net7.0\LamdaExpressionExample.AssemblyInfoInputs.cache
+F:\parth-415\git-desk\RKIT_training\3-advance-C#\7-LamdaExpressionExample\LamdaExpressionExample\obj\Debug\net7.0\LamdaExpressionExample.AssemblyInfo.cs
+F:\parth-415\git-desk\RKIT_training\3-advance-C#\7-LamdaExpressionExample\LamdaExpressionExample\obj\Debug\net7.0\LamdaExpressionExample.csproj.CoreCompileInputs.cache
+F:\parth-415\git-desk\RKIT_training\3-advance-C#\7-LamdaExpressionExample\LamdaExpressionExample\obj\Debug\net7.0\LamdaExpressionExample.dll
+F:\parth-415\git-desk\RKIT_training\3-advance-C#\7-LamdaExpressionExample\LamdaExpressionExample\obj\Debug\net7.0\refint\LamdaExpressionExample.dll
+F:\parth-415\git-desk\RKIT_training\3-advance-C#\7-LamdaExpressionExample\LamdaExpressionExample\obj\Debug\net7.0\LamdaExpressionExample.pdb
+F:\parth-415\git-desk\RKIT_training\3-advance-C#\7-LamdaExpressionExample\LamdaExpressionExample\obj\Debug\net7.0\LamdaExpressionExample.genruntimeconfig.cache
+F:\parth-415\git-desk\RKIT_training\3-advance-C#\7-LamdaExpressionExample\LamdaExpressionExample\obj\Debug\net7.0\ref\LamdaExpressionExample.dll
