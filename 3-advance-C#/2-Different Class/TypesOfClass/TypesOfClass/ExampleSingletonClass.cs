@@ -5,13 +5,13 @@
 /// </summary>
 public class ExampleSingletonClass
 {
-    // Step 1: Create only a single object of the class
+    //Create only a single object of the class
     private static ExampleSingletonClass instance;
 
-    // Step 2: Make constructor private so no one can create an object of it from outside.
+    //Make constructor private so no one can create an object of it from outside.
     private ExampleSingletonClass() { }
 
-    // Step 3: Define a property to get the instance
+    //  Define a property to get the instance
     public static ExampleSingletonClass Instance
     {
         get

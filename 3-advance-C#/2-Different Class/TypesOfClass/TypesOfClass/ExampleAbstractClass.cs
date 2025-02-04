@@ -20,13 +20,15 @@ namespace TypesOfClass
             // Abstract method no implementation 
             public  abstract void MakeSound();
 
-            // Regular method implementation 
+            // non Abstract method implementation 
             public void Sleep()
             {
                 Console.WriteLine("The animal is sleeping.");
             }
         }
-
+        /// <summary>
+        /// it is child class
+        /// </summary>
         public class Dog : Animal
         {
             // implement abs method

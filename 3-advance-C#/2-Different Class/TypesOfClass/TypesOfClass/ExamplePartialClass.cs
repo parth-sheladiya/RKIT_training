@@ -6,8 +6,7 @@ namespace TypesOfClass
     /// partial class
     /// it is use a saprate part of other file 
     /// it is only allow same name of class
-    /// it is not inherited
-    /// if we not use same name clkass compiler will give compile error 
+    /// if we not use same name class compiler will give compile error 
     /// </summary>
     // First part of the partial class
     public partial class ExamplePartialClass
@@ -16,6 +15,17 @@ namespace TypesOfClass
         public void DisplayMessage()
         {
             Console.WriteLine("This is the first part of ExamplePartialClass.");
+        }
+
+        // main method
+        public static void CallMethods()
+        {
+            // create object
+            ExamplePartialClass example = new ExamplePartialClass();
+
+            // calling methoid
+            example.DisplayMessage();
+            example.DisplayAnotherMessage();
         }
     }
 
@@ -27,17 +37,10 @@ namespace TypesOfClass
             Console.WriteLine("This is the second part of ExamplePartialClass.");
         }
 
-        // main method
-        public static void CallMethods()
-        {
-            // create object
-            ExamplePartialClass example = new ExamplePartialClass();
-
-            // calling methoid
-            example.DisplayMessage();         
-            example.DisplayAnotherMessage();     
-        }
+       
     }
+
+
 
 
 }
