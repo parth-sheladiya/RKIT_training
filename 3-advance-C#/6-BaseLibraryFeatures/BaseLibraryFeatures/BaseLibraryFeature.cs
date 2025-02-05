@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace BaseLibraryFeatures
+﻿namespace BaseLibraryFeatures
 {
     /// <summary>
     /// Represents a custom list that extends the functionality of the generic List class
@@ -18,12 +15,20 @@ namespace BaseLibraryFeatures
         }
 
         /// <summary>
-        /// Adds an item to the list
+        /// Adds an item to the list if it does not already exist
         /// </summary>
         /// <param name="item">The item to be added</param>
         public void AddToList(T item)
         {
-            base.Add(item);
+            if (!this.Contains(item))
+            {
+                base.Add(item);
+                Console.WriteLine($"Item '{item}' added successfully.");
+            }
+            else
+            {
+                Console.WriteLine($"Duplicate item '{item}' not allowed.");
+            }
         }
 
         /// <summary>
@@ -33,9 +38,9 @@ namespace BaseLibraryFeatures
         {
             int count = 0;
 
-            foreach (T item in this) 
+            foreach (T item in this)
             {
-                count++; 
+                count++;
             }
             return count;
         }
@@ -46,7 +51,15 @@ namespace BaseLibraryFeatures
         /// <param name="item">The item to be removed</param>
         public void RemoveToList(T item)
         {
-            base.Remove(item);
+            if (this.Contains(item))
+            {
+                base.Remove(item);
+                Console.WriteLine($"Item '{item}' removed successfully.");
+            }
+            else
+            {
+                Console.WriteLine($"Item '{item}' not found in the list.");
+            }
         }
 
         /// <summary>
@@ -56,10 +69,9 @@ namespace BaseLibraryFeatures
         public T GetFirstItem()
         {
             if (this.CountItemsManual() > 0)
-                return this[0]; 
+                return this[0];
             else
-                return default(T);  
+                return default(T);
         }
-
     }
 }

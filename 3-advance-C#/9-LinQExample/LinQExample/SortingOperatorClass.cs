@@ -17,7 +17,7 @@ namespace LinQExample
             ClassSortingOperator clsSortingOprtr = new ClassSortingOperator();
 
             // first of use order by 
-            var orderStudent = clsSortingOprtr.student.OrderBy(s => s.age);
+            List<(string name, int age)> orderStudent = clsSortingOprtr.student.OrderBy(s => s.age).ToList();
             Console.WriteLine("orderstudent is ");
 
             foreach (var student in orderStudent)
@@ -26,7 +26,7 @@ namespace LinQExample
             }
 
             // orderby descing 
-            var orderdesendingStudent = clsSortingOprtr.student.OrderByDescending(s => s.age);
+            List<(string name, int age)> orderdesendingStudent = clsSortingOprtr.student.OrderByDescending(s => s.age).ToList() ;
             Console.WriteLine("order by descing is ");
 
             foreach (var student in orderdesendingStudent)
@@ -36,7 +36,7 @@ namespace LinQExample
 
 
             // ThenBy (Ascending)
-            var thenStudent = clsSortingOprtr.student.OrderBy(p => p.age).ThenBy(p => p.name);
+            List<(string name, int age)> thenStudent = clsSortingOprtr.student.OrderBy(p => p.age).ThenBy(p => p.name).ToList();
             Console.WriteLine("ThenBy (Age Ascending, Name Ascending):");
             foreach (var student in thenStudent)
             {
@@ -44,16 +44,12 @@ namespace LinQExample
             }
 
             // ThenByDescending (Age Ascending, Name Descending)
-            var thendescendingStudent = clsSortingOprtr.student.OrderBy(p => p.age).ThenByDescending(p => p.name);
+            List<(string name, int age)> thendescendingStudent = clsSortingOprtr.student.OrderBy(p => p.age).ThenByDescending(p => p.name).ToList();
             Console.WriteLine("ThenByDescending (Age Ascending, Name Descending):");
             foreach (var student in thendescendingStudent)
             {
                 Console.WriteLine($"Name: {student.name}, Age: {student.age}");
             }
-
-
-
-
         }
         public class ClassSortingOperator
         {

@@ -36,20 +36,8 @@ namespace FinalDemo.Controllers
         [JWTAuthorizationFilter(EnmRoleType.Admin)]
         public IHttpActionResult GetOrders(string status)
         {
-            try
-            {
-                // get all oreder method call
-                _objResponce.Data = _objBLorder.GetAllOrder(status);
-
-                // response
-                return Ok(_objResponce);
-            }
-            catch (Exception ex)
-            {
-                _objResponce.IsError = true;
-                _objResponce.Message = $"Error while fetching orders: {ex.Message}";
-            }
-
+            // get orders
+            _objResponce.Data = _objBLorder.GetAllOrder(status);
             // response
             return Ok(_objResponce);
         }
@@ -62,17 +50,12 @@ namespace FinalDemo.Controllers
         [JWTAuthorizationFilter]
         public IHttpActionResult GetOrderProfile()
         {
-            // token for specific data
-            // Extract token from request
+            // token 
             string token = GetTokenFromRequest();
-
-            // Get user ID from token
-            int userID = JWTHelper.GetUserIdFromToken(token); 
-
-            // get profile method call
-            _objResponce = _objBLorder.GetProfile(userID);
-
+            // user specific token
+            int userID = JWTHelper.GetUserIdFromToken(token);
             // response
+            _objResponce = _objBLorder.GetProfile(userID);
             return Ok(_objResponce);
         }
 
@@ -85,34 +68,23 @@ namespace FinalDemo.Controllers
         [JWTAuthorizationFilter(EnmRoleType.User)]
         public IHttpActionResult PostOrders(DTOORD01 objOrderDto)
         {
+            // null ornnot
             if (objOrderDto == null)
             {
                 return BadRequest("No data available.");
             }
 
-            // Set type to Add
+            // add
             _objBLorder.Type = EnumType.A;
-
-            // Pre-save logic
-            _objBLorder.PreSave(objOrderDto); 
-
-            // validation method call
+            // presave 
+            _objBLorder.PreSave(objOrderDto);
+            // validation
             _objResponce = _objBLorder.Validation();
 
-            // if any error
-            if (_objResponce.IsError)
-            {
-                return Content(HttpStatusCode.BadRequest, _objResponce);
-            }
+          
 
-            // Save order
             _objResponce = _objBLorder.Save();
-            if (_objResponce.IsError)
-            {
-                return Content(HttpStatusCode.InternalServerError, _objResponce);
-            }
-
-            // response
+           
             return Ok(_objResponce);
         }
 
@@ -125,23 +97,10 @@ namespace FinalDemo.Controllers
         [JWTAuthorizationFilter(EnmRoleType.User)]
         public IHttpActionResult CancelOrder(int id)
         {
-            try
-            {
-                // Cancel order
-                _objResponce = _objBLorder.CancelOrder(id);
-
-
-                // response
-                return Ok(_objResponce);
-            }
-            catch (Exception ex)
-            {
-                _objResponce.IsError = true;
-                _objResponce.Message = $"Error while cancelling order: {ex.Message}";
-
-                // response
-                return Ok(_objResponce);
-            }
+            // cancel order
+            _objResponce = _objBLorder.CancelOrder(id);
+            // response
+            return Ok(_objResponce);
         }
 
         /// <summary>
@@ -154,16 +113,12 @@ namespace FinalDemo.Controllers
         [JWTAuthorizationFilter(EnmRoleType.Admin)]
         public IHttpActionResult StatusChanges(int id, string newStatus)
         {
-
-            // status change 
-            var response = _objBLorder.ChangeStatus(id, newStatus);
+            // id and status
+            Responce response = _objBLorder.ChangeStatus(id, newStatus);
             if (response.IsError)
             {
-                // response
                 return BadRequest(response.Message);
             }
-
-            // response
             return Ok(response.Message);
         }
 

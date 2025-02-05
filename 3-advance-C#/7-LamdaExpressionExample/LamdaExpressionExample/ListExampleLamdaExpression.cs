@@ -14,7 +14,7 @@ namespace LamdaExpressionExample
         public static void RunListExampleLamdaExpression()
         {
             // create object of ListExample class
-            // Create object of ListExample class
+          
             ListExample listExample = new ListExample();
             // Call method to print even numbers
             listExample.PrintEvenNumbers(); 
@@ -35,7 +35,7 @@ namespace LamdaExpressionExample
 
                 
                 // even numbers logic
-                foreach (var num in evenNumbers)
+                foreach (int num in evenNumbers)
                 {
                     Console.Write(" ", num);
                 }

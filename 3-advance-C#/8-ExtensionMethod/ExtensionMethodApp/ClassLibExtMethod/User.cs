@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace ClassLibExtMethod
 {
-    public class User
-    {
-        public string Username { get; set; }
-        public string Password { get; set; }
-        public bool IsActive { get; set; }
-    }
+
+    
     /// <summary>
     /// extension method 
     /// it's must be in static class 

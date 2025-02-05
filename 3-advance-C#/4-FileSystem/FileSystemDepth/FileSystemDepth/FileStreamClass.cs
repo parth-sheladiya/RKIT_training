@@ -55,7 +55,7 @@ namespace FileSystemDepth
             using(FileStream fs = new FileStream(filePath , FileMode.Open ,FileAccess.Read ))
             {
                 // create array 
-                byte[] buffer = new byte[60];
+                byte[] buffer = new byte[10];
                 // read data
                 int bytesRead = fs.Read(buffer, 0, buffer.Length);
                 // convert to string

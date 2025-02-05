@@ -11,17 +11,21 @@ namespace DataSerialization
         public static void Main(string[] args)
         {
             #region call serialize method 
-            SerializeClass.RunSerializeClass();
+            // serialize class method
+            //SerializeClass.RunSerializeClass();
             #endregion
 
             #region call deserialize method 
-            DeserializeClass.RunDeserializeClass();
+            // deserialize class method
+           // DeserializeClass.RunDeserializeClass();
             #endregion
 
+            //xmlserialize class method
             #region call xmlserialize method 
             XMLserializeClass.RunXMLserializeClass();
             #endregion
 
+            //dexmlserialize class method
             #region call xmldeserialize method 
             XMLdeserializeClass.RunXMLdeserializeClass();
             #endregion

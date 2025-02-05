@@ -15,10 +15,10 @@ namespace DataSerialization
         {
             // Create a new Person object and assign values to its properties
             Person person = new Person();
-            person.Name = "Test";
-            person.Description = "test description";
+            person.Name = "parth";
+            person.Description = "parth description";
 
-            // Convert the Person object to XML format using XElement
+            // Convert the Person object to XML format using xelement class
             XElement xml = new XElement("Person",
                 new XElement("Name", person.Name),
                 new XElement("Description", person.Description));

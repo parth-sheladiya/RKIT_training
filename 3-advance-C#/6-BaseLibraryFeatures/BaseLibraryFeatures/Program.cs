@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace BaseLibraryFeatures
+﻿namespace BaseLibraryFeatures
 {
     class Program
     {
@@ -14,6 +12,9 @@ namespace BaseLibraryFeatures
             list.AddToList(2);
             list.AddToList(3);
             list.AddToList(4);
+            // this data is duplicate
+            list.AddToList(1);
+            list.AddToList(3);
 
             // get first item
             Console.WriteLine("First Item: " + list.GetFirstItem());

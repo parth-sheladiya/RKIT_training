@@ -26,13 +26,13 @@ namespace LinQExample
             // Print select data 
             foreach (var item in selectRes)
             {
-                Console.WriteLine(item);
+                Console.WriteLine("selectRes is " + item);
             }
 
             // Print data
             foreach (var i in res)
             {
-                Console.WriteLine(i);
+                Console.WriteLine("res is" + i);
             }
         }
     }

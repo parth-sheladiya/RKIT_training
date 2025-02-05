@@ -1,6 +1,4 @@
 ﻿using FinalDemo.Models.ENUM;
-using FinalDemo.Models.POCO;
-using System.Web;
 
 namespace FinalDemo.Models.DTO
 {

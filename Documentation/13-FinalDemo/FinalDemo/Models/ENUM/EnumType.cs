@@ -1,9 +1,6 @@
-﻿using System;
-using System.Web;
-
-namespace FinalDemo.Models.ENUM
+﻿namespace FinalDemo.Models.ENUM
 {
- 
+
     /// <summary>
     /// enum type 
     /// </summary>

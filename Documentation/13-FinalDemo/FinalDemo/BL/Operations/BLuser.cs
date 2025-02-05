@@ -48,7 +48,7 @@ namespace FinalDemo.BL.Operations
         /// <summary>
         /// ctor
         /// </summary>
-        /// <exception cref="Exception"></exception>
+        /// <exception cref="Exception">error</exception>
         public BLuser()
         {
             _objUser = new USR01();
@@ -147,7 +147,11 @@ namespace FinalDemo.BL.Operations
 
             return _objResponce;
         }
-
+        /// <summary>
+        /// get user specific profile
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns>user data</returns>
         // get user specific profile
         public Responce GetProfile(int userId)
         {
@@ -208,6 +212,10 @@ namespace FinalDemo.BL.Operations
 
             return _objResponce;
         }
+        /// <summary>
+        /// check admin exists or not
+        /// </summary>
+        /// <returns>bool</returns>
         public bool IsAdminExists()
         {
             try
@@ -461,7 +469,11 @@ namespace FinalDemo.BL.Operations
                 return db.Single<USR01>(u => u.R01F02.Equals(username) && u.R01F04.Equals(decrypt));
             }
         }
-
+        /// <summary>
+        /// get user by id
+        /// </summary>
+        /// <param name="id">id if found other wise null</param>
+        /// <returns></returns>
         public USR01 GetUser(int id)
         {
             // open databse
@@ -470,7 +482,10 @@ namespace FinalDemo.BL.Operations
                 return db.SingleById<USR01>(id);
             }
         }
-
+        /// <summary>
+        /// get user data
+        /// </summary>
+        /// <returns>user data</returns>
         public Responce GetData()
         {
             try
@@ -492,7 +507,11 @@ namespace FinalDemo.BL.Operations
             }
         }
 
-
+        /// <summary>
+        /// add method fpr user
+        /// </summary>
+        /// <param name="newUser"></param>
+        /// <returns>responce</returns>
         public Responce Add(USR01 newUser)
         {
             try
@@ -518,7 +537,12 @@ namespace FinalDemo.BL.Operations
             return _objResponce;
         }
 
-
+        /// <summary>
+        /// update method
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <param name="newUser"></param>
+        /// <returns>updated data</returns>
         public Responce Update(int userId, USR01 newUser)
         {
             try

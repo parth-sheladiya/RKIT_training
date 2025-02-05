@@ -85,7 +85,7 @@ namespace ORMdemo.Controllers
             {
                 _objresponce = _objBLproduct.Save();
             }
-            return Ok(product); 
+            return Ok(_objresponce); 
         }
         /// <summary>
         /// Deletes an employee by ID.
@@ -118,7 +118,7 @@ namespace ORMdemo.Controllers
                 return NotFound();
             }    
 
-            return Ok(Isprod);
+            return Ok(_objresponce);
         }
     }
 }

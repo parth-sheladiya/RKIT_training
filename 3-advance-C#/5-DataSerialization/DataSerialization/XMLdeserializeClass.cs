@@ -14,7 +14,7 @@ namespace DataSerialization
         public static void RunXMLdeserializeClass()
         {
             // Sample XML string to deserialize
-            string xmlString = " <Person><Name>Test</Name><Description>test description</Description></Person>";
+            string xmlString = " <Person><Name>parth</Name><Description>parth description</Description></Person>";
 
             // Parse the XML string into XElement
             XElement parseXML = XElement.Parse(xmlString);
@@ -22,8 +22,10 @@ namespace DataSerialization
             // Convert the XML elements into a Person object
             Person deserializedObject = new Person
             {
-                Name = parseXML.Element("Name")?.Value,          // Get the Name element value
-                Description = parseXML.Element("Description")?.Value,  // Get the Description element value
+                // Get the Name element value
+                Name = parseXML.Element("Name").Value,
+                // Get the Description element value
+                Description = parseXML.Element("Description").Value,  
             };
 
             // Display the deserialized object details

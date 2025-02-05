@@ -22,6 +22,7 @@
         height: "55px",
         width: "300px",
        // maxLength:3,
+        hoverStateEnabled:true
 
 
     });
@@ -31,9 +32,11 @@
     $("#datetimeBox").dxDateBox({
         //type time
         type: "datetime",
+        showAnalogClock :true,
         disabledDates: [
             new Date("11/20/2024")
         ],
+        showClearButton:false,
         //id: "elementId",
         max: new Date(),
         min: new Date("11/11/2000"),
@@ -49,10 +52,62 @@
             new Date(2025, 2, 1) 
         ],
         hint: "this is datetimer format ",
-        placeholder: "20/11/2003",
-       readonly:true
+        placeholder: "20/11/2003 5:00PM",
+        readonly: true,
+        useMaskBehavior: true,
+        //validationMessageMode: "always",
+        //isValid:false,
+        visible: true,
+        opened: false
+        
+    });
 
+    $("#timeBox").dxDateBox({
+        type: "time",
+        interval: 45,
+        pickerType: "calendar",  // by default list    ,   native  , rollers
     });
 
 
+    var dateBoxInstance = $("#dateBox").dxDateBox("instance");
+    var dateTimeBoxInstance = $("#datetimeBox").dxDateBox("instance");
+
+    dateBoxInstance.on("copy", () => {
+        console.log("copy")
+    });
+
+    dateBoxInstance.on("cut", () => {
+        console.log("cut")
+    });
+    dateBoxInstance.on("paste", () => {
+        console.log("paste")
+    })
+
+    dateBoxInstance.on("keydown", (e) => {
+        console.log(`${e.event.key}`)
+    })
+
+    dateTimeBoxInstance.focus();
+    dateTimeBoxInstance.blur();
+    dateTimeBoxInstance.beginUpdate();
+    setTimeout(function () {
+        
+
+        //// Making multiple changes to the DateTimeBox instance
+        //dateTimeBoxInstance.option("value", new Date("2025-01-01T12:00:00"));
+        //dateTimeBoxInstance.option("min", new Date("2020-01-01"));
+        dateTimeBoxInstance.option("readOnly", true);
+        dateTimeBoxInstance.open();
+        dateBoxInstance.reset();
+        
+        
+    }, 5000)
+    dateTimeBoxInstance.endUpdate();
+
+    dateBoxInstance.on("optionChanged", function (e) {
+        console.log("value is ", e.value); 
+    })
+
+
+   // dateBoxInstance.dispose();
 })

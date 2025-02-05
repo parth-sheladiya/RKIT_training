@@ -1,7 +1,5 @@
-﻿using System;
-using System.Web;
-using FinalDemo.Models.ENUM;
-using ServiceStack.DataAnnotations;
+﻿using ServiceStack.DataAnnotations;
+using System;
 
 namespace FinalDemo.Models.POCO
 {

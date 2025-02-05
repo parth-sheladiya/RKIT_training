@@ -14,13 +14,13 @@ namespace DataSerialization
         public static void RunDeserializeClass()
         {
             // Sample JSON string to deserialize
-            string json = "{\"Name\":\"parth\",\"Description\":\"full stack developer trainee\"}";
+            string json = "{'Name':'parth','Description':'full stack developer trainee'}";
 
             // Deserialize the JSON string into a Person object
             Person person = JsonConvert.DeserializeObject<Person>(json);
 
             // Output the deserialized Person object details
-            Console.WriteLine("Deserialized Person object: ");
+            Console.WriteLine("Deserialized Person object");
             Console.WriteLine("Name: " + person.Name);
             Console.WriteLine("Description: " + person.Description);
         }

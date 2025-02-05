@@ -250,7 +250,7 @@ namespace FinalDemo.BL.Operations
 
             }
 
-            _objResponce.IsError = false;
+           
             return _objResponce;
         }
 
@@ -272,14 +272,14 @@ namespace FinalDemo.BL.Operations
 
             // Check if the record exists before attempting to delete
             var product = GetProductById(id); // Fetch the product by ID
-            if (product.IsError)
-            {
-                // If ID does not exist, return error message
-                _objResponce.IsError = true;
-                _objResponce.Message = "ID not found, cannot delete.";
-                _objResponce.Data = null;  // No data to return
-                return _objResponce;
-            }
+            //if (product.IsError)
+            //{
+            //    // If ID does not exist, return error message
+            //    _objResponce.IsError = true;
+            //    _objResponce.Message = "ID not found, cannot delete.";
+            //    _objResponce.Data = null;  // No data to return
+            //    return _objResponce;
+            //}
 
             // Check if product quantity is 0 before deleting
             var productDetails = product.Data as PDT01;  // Assuming you have a Product object

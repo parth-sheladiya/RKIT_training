@@ -170,19 +170,11 @@ namespace FinalDemo.Controllers
         [JWTAuthorizationFilter(EnmRoleType.Admin, EnmRoleType.User)] 
         public IHttpActionResult GetProductsByCategory(string category)
         {
-            try
-            {
-
                 // get product by category method call
                 _objResponce = _objBlProduct.GetProcuctByCategory(category);
 
                 // response
-                return Ok(_objResponce);
-            }
-            catch (Exception ex)
-            {
-                return InternalServerError(new Exception($"Error occurred: {ex.Message}"));
-            }
+                return Ok(_objResponce);   
         }
     }
 }

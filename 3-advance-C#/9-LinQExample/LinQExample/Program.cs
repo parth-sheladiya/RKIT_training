@@ -16,7 +16,7 @@ namespace LinQExample
            // AggregateFunctionClass.RunAggregateFunctionClass(); 
 
             // call method to sorting function
-            //SortingOperatorClass.RunSortingOperatorClass();
+            SortingOperatorClass.RunSortingOperatorClass();
 
             // call method to partition class
             // PartitionOperatorClass.RunPartitionOperatorClass();
@@ -40,7 +40,7 @@ namespace LinQExample
            // ConcatClass.RunConcatClass();
 
             // call method to generation operator class
-            GenerationOperatorClass.RunGenerationOperatorClass();
+           // GenerationOperatorClass.RunGenerationOperatorClass();
         }
     }
 }

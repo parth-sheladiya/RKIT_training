@@ -111,7 +111,6 @@
     <Content Include="Content\dx.softblue.compact.css" />
     <Content Include="Content\dx.softblue.css" />
     <Content Include="DateBox\DateBox.html" />
-    <Content Include="DateBox\DateBox.js" />
     <Content Include="DateBox\NewDateBox.js" />
     <Content Include="Index.html" />
     <Content Include="Scripts\cldr.js" />

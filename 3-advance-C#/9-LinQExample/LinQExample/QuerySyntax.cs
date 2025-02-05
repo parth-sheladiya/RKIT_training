@@ -18,13 +18,13 @@ namespace LinQExample
             Query query = new Query();
 
             // step : execute Query
-            var res = // first step vinitializatiom
-                      from i in query.list
+            List<string> res = // first step vinitializatiom
+                      (from i in query.list
                       // Case-insensitive search
                       // second step condition
                       where i.ToLower().Contains("parth")
                       // third step selection
-                      select i;
+                      select i).ToList();
 
             // print query result
             foreach (var i in res)
