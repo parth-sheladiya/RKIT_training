@@ -14,7 +14,7 @@ namespace LinQExample
             Partition part = new Partition();
 
             // Take first 3 countries from the list
-            var resTakeStr = part.countries.Take(3); 
+            List<string> resTakeStr = part.countries.Take(3).ToList(); 
 
             Console.WriteLine("First 3 countries:");
             foreach (var country in resTakeStr)
@@ -23,7 +23,7 @@ namespace LinQExample
             }
             //// doubt 
             // Use TakeWhile to take countries while the condition is true
-            var resTakeWhileStr = part.countries.TakeWhile(x => x.StartsWith("C")); 
+            List<string> resTakeWhileStr = part.countries.TakeWhile(x => x.StartsWith("C")).ToList(); 
 
             Console.WriteLine("TakeWhile operator result:");
             foreach (var con in resTakeWhileStr)
@@ -32,7 +32,7 @@ namespace LinQExample
             }
 
             // skip operator 
-            var resSkipStr = part.countries.Skip(3);
+            List<string> resSkipStr = part.countries.Skip(3).ToList()  ;
             Console.WriteLine("skip operator result");
 
             foreach(var country in resSkipStr)
@@ -42,7 +42,7 @@ namespace LinQExample
 
             // skip while operatoer
             //// doubt
-            var resSkipWhileStr = part.countries.SkipWhile(x => x.StartsWith("I"));
+            List<string> resSkipWhileStr = part.countries.SkipWhile(x => x.StartsWith("I")).ToList();
             Console.WriteLine("skip while result ");
             foreach(var country in resSkipWhileStr)
             {

@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "G:\\Training\\RKIT_training\\3-advance-C#\\7-LamdaExpressionExample\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{378FAFA7-8B9A-41CE-91E5-127B7ED5C07D}|LamdaExpressionExample\\LamdaExpressionExample.csproj|g:\\training\\rkit_training\\3-advance-c#\\7-lamdaexpressionexample\\lamdaexpressionexample\\listexamplelamdaexpression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{378FAFA7-8B9A-41CE-91E5-127B7ED5C07D}|LamdaExpressionExample\\LamdaExpressionExample.csproj|solutionrelative:lamdaexpressionexample\\listexamplelamdaexpression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{378FAFA7-8B9A-41CE-91E5-127B7ED5C07D}|LamdaExpressionExample\\LamdaExpressionExample.csproj|g:\\training\\rkit_training\\3-advance-c#\\7-lamdaexpressionexample\\lamdaexpressionexample\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{378FAFA7-8B9A-41CE-91E5-127B7ED5C07D}|LamdaExpressionExample\\LamdaExpressionExample.csproj|solutionrelative:lamdaexpressionexample\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{378FAFA7-8B9A-41CE-91E5-127B7ED5C07D}|LamdaExpressionExample\\LamdaExpressionExample.csproj|g:\\training\\rkit_training\\3-advance-c#\\7-lamdaexpressionexample\\lamdaexpressionexample\\blockofcodeexpressionclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{378FAFA7-8B9A-41CE-91E5-127B7ED5C07D}|LamdaExpressionExample\\LamdaExpressionExample.csproj|solutionrelative:lamdaexpressionexample\\blockofcodeexpressionclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{378FAFA7-8B9A-41CE-91E5-127B7ED5C07D}|LamdaExpressionExample\\LamdaExpressionExample.csproj|g:\\training\\rkit_training\\3-advance-c#\\7-lamdaexpressionexample\\lamdaexpressionexample\\simpleexpressionclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{378FAFA7-8B9A-41CE-91E5-127B7ED5C07D}|LamdaExpressionExample\\LamdaExpressionExample.csproj|solutionrelative:lamdaexpressionexample\\simpleexpressionclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{378FAFA7-8B9A-41CE-91E5-127B7ED5C07D}|LamdaExpressionExample\\LamdaExpressionExample.csproj|g:\\training\\rkit_training\\3-advance-c#\\7-lamdaexpressionexample\\lamdaexpressionexample\\multipleparamsexample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{378FAFA7-8B9A-41CE-91E5-127B7ED5C07D}|LamdaExpressionExample\\LamdaExpressionExample.csproj|solutionrelative:lamdaexpressionexample\\multipleparamsexample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{378FAFA7-8B9A-41CE-91E5-127B7ED5C07D}|LamdaExpressionExample\\LamdaExpressionExample.csproj|g:\\training\\rkit_training\\3-advance-c#\\7-lamdaexpressionexample\\lamdaexpressionexample\\simpleexpressionclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{378FAFA7-8B9A-41CE-91E5-127B7ED5C07D}|LamdaExpressionExample\\LamdaExpressionExample.csproj|solutionrelative:lamdaexpressionexample\\simpleexpressionclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{378FAFA7-8B9A-41CE-91E5-127B7ED5C07D}|LamdaExpressionExample\\LamdaExpressionExample.csproj|g:\\training\\rkit_training\\3-advance-c#\\7-lamdaexpressionexample\\lamdaexpressionexample\\listexamplelamdaexpression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{378FAFA7-8B9A-41CE-91E5-127B7ED5C07D}|LamdaExpressionExample\\LamdaExpressionExample.csproj|solutionrelative:lamdaexpressionexample\\listexamplelamdaexpression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{378FAFA7-8B9A-41CE-91E5-127B7ED5C07D}|LamdaExpressionExample\\LamdaExpressionExample.csproj|g:\\training\\rkit_training\\3-advance-c#\\7-lamdaexpressionexample\\lamdaexpressionexample\\blockofcodeexpressionclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{378FAFA7-8B9A-41CE-91E5-127B7ED5C07D}|LamdaExpressionExample\\LamdaExpressionExample.csproj|solutionrelative:lamdaexpressionexample\\blockofcodeexpressionclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,69 +30,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ListExampleLamdaExpression.cs",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\3-advance-C#\\7-LamdaExpressionExample\\LamdaExpressionExample\\ListExampleLamdaExpression.cs",
               "RelativeDocumentMoniker": "LamdaExpressionExample\\ListExampleLamdaExpression.cs",
               "ToolTip": "G:\\Training\\RKIT_training\\3-advance-C#\\7-LamdaExpressionExample\\LamdaExpressionExample\\ListExampleLamdaExpression.cs",
               "RelativeToolTip": "LamdaExpressionExample\\ListExampleLamdaExpression.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwBAAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCEAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-09T03:48:34.331Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "BlockOfCodeExpressionClass.cs",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\3-advance-C#\\7-LamdaExpressionExample\\LamdaExpressionExample\\BlockOfCodeExpressionClass.cs",
               "RelativeDocumentMoniker": "LamdaExpressionExample\\BlockOfCodeExpressionClass.cs",
               "ToolTip": "G:\\Training\\RKIT_training\\3-advance-C#\\7-LamdaExpressionExample\\LamdaExpressionExample\\BlockOfCodeExpressionClass.cs",
               "RelativeToolTip": "LamdaExpressionExample\\BlockOfCodeExpressionClass.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAzwCoAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-09T03:40:19.648Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "MultipleParamsExample.cs",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\3-advance-C#\\7-LamdaExpressionExample\\LamdaExpressionExample\\MultipleParamsExample.cs",
               "RelativeDocumentMoniker": "LamdaExpressionExample\\MultipleParamsExample.cs",
               "ToolTip": "G:\\Training\\RKIT_training\\3-advance-C#\\7-LamdaExpressionExample\\LamdaExpressionExample\\MultipleParamsExample.cs",
               "RelativeToolTip": "LamdaExpressionExample\\MultipleParamsExample.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAUwBoAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-09T03:35:52.235Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "SimpleExpressionClass.cs",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\3-advance-C#\\7-LamdaExpressionExample\\LamdaExpressionExample\\SimpleExpressionClass.cs",
               "RelativeDocumentMoniker": "LamdaExpressionExample\\SimpleExpressionClass.cs",
               "ToolTip": "G:\\Training\\RKIT_training\\3-advance-C#\\7-LamdaExpressionExample\\LamdaExpressionExample\\SimpleExpressionClass.cs",
               "RelativeToolTip": "LamdaExpressionExample\\SimpleExpressionClass.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBEAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-09T03:24:53.183Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\3-advance-C#\\7-LamdaExpressionExample\\LamdaExpressionExample\\Program.cs",
               "RelativeDocumentMoniker": "LamdaExpressionExample\\Program.cs",
               "ToolTip": "G:\\Training\\RKIT_training\\3-advance-C#\\7-LamdaExpressionExample\\LamdaExpressionExample\\Program.cs",
               "RelativeToolTip": "LamdaExpressionExample\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-09T03:22:14.689Z",
               "EditorCaption": ""

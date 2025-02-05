@@ -23,24 +23,24 @@ namespace LinQExample
             // Creating an object of the Conversion class
             Conversion conversion = new Conversion();
 
-            // 1️⃣ Converting string array to List<string> using ToList()
+            //  Converting string array to List<string> using ToList()
             List<string> resForLst = conversion.countries.ToList();
-            Console.WriteLine("String array converted to List<string>:");
+            Console.WriteLine("String array convert to List<string>");
             foreach (string s in resForLst)
             {
                 Console.WriteLine(s);
             }
 
-            // 2️⃣ Converting List<string> to string[] using ToArray()
+            //  Converting List<string> to string[] using ToArray()
             string[] countryArray = conversion.countries.ToArray();
-            Console.WriteLine("\nList<string> converted to string array:");
+            Console.WriteLine("List<string> convert to string array");
             foreach (string i in countryArray)
             {
                 Console.WriteLine(i);
             }
 
-            // 3️⃣ Using AsEnumerable() to convert array to IEnumerable<string>
-            Console.WriteLine("\nAsEnumerable() method result:");
+            //  Using AsEnumerable() to convert array to IEnumerable<string>
+            Console.WriteLine("AsEnumerable() method result:");
             var resForEnumMethod = conversion.countries.AsEnumerable();
             foreach (string i in resForEnumMethod)
             {
@@ -49,7 +49,7 @@ namespace LinQExample
         }
 
         /// <summary>
-        /// This class contains a data source (an array of country names).
+        ///  data source 
         /// </summary>
         public class Conversion
         {

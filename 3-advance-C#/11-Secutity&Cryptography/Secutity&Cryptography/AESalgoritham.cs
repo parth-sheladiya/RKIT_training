@@ -16,7 +16,7 @@ namespace Security_Cryptography
         /// </summary>
         public static void RunAESAlgorithm()
         {
-            string text = "Hello, AES Encryption!";
+            string text = "hello everyone my name is parth";
             // 16-byte key (128-bit AES key)
             string key = "abcdefghijklmnop";  
 
@@ -37,6 +37,7 @@ namespace Security_Cryptography
         /// <returns>The encrypted text in Base64 format.</returns>
         static string EncryptAES(string plainText, string key)
         {
+            // convert key to byte arr
             byte[] keyBytes = Encoding.UTF8.GetBytes(key);
             // Initialization Vector 16 bytes of zeros
             byte[] iv = new byte[16]; 
@@ -49,10 +50,14 @@ namespace Security_Cryptography
                 using (MemoryStream ms = new MemoryStream())
                 using (CryptoStream cs = new CryptoStream(ms, aes.CreateEncryptor(), CryptoStreamMode.Write))
                 {
+                    // convert tx to byte arr
                     byte[] plainBytes = Encoding.UTF8.GetBytes(plainText);
                     cs.Write(plainBytes, 0, plainBytes.Length);
                     cs.FlushFinalBlock();
-                    return Convert.ToBase64String(ms.ToArray()); // Convert to Base64 string for storage/transmission
+                    
+
+                   string res=  Convert.ToBase64String(ms.ToArray()); 
+                    return res;
                 }
             }
         }
@@ -65,19 +70,23 @@ namespace Security_Cryptography
         /// <returns>The decrypted plaintext string.</returns>
         static string DecryptAES(string encryptedText, string key)
         {
+            // convert key to byte arr
             byte[] keyBytes = Encoding.UTF8.GetBytes(key);
-            byte[] iv = new byte[16]; // Must match the IV used during encryption
+            byte[] iv = new byte[16]; 
 
             using (Aes aes = Aes.Create())
             {
                 aes.Key = keyBytes;
                 aes.IV = iv;
 
+                // convert base 64 to byte and store memeory stream
                 using (MemoryStream ms = new MemoryStream(Convert.FromBase64String(encryptedText)))
                 using (CryptoStream cs = new CryptoStream(ms, aes.CreateDecryptor(), CryptoStreamMode.Read))
+
+                // data read using stream reader
                 using (StreamReader reader = new StreamReader(cs))
                 {
-                    return reader.ReadToEnd(); // Return the decrypted text
+                    return reader.ReadToEnd(); 
                 }
             }
         }

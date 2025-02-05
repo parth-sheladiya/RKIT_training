@@ -12,10 +12,10 @@ namespace Security_Cryptography
            // DESAlgoritham.RunDESAlgorithm();
 
             // call RunAESAlgorithm method
-           // AESAlgorithm.RunAESAlgorithm();
+            AESAlgorithm.RunAESAlgorithm();
 
             // call RunRijndaelAlgorithm method
-            RijndaelAlgorithm.RunRijndaelAlgorithm();
+           // RijndaelAlgorithm.RunRijndaelAlgorithm();
         }
     }
 }

@@ -40,7 +40,7 @@ namespace LinQExample
         }
 
         /// <summary>
-        /// This class contains the student data source with names and their respective cities.
+        /// data source
         /// </summary>
         public class GroupingOperator
         {
