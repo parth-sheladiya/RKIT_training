@@ -16,17 +16,17 @@ namespace Security_Cryptography
         /// </summary>
         public static void RunAESAlgorithm()
         {
-            string originalText = "Hello, AES Encryption!";
+            string text = "Hello, AES Encryption!";
             // 16-byte key (128-bit AES key)
             string key = "abcdefghijklmnop";  
 
             // Encrypt the original text
-            string encryptedText = EncryptAES(originalText, key);
-            Console.WriteLine($"Encrypted: {encryptedText}");
+            string encrypteText = EncryptAES(text, key);
+            Console.WriteLine($"Encrypted text is  {encrypteText}");
 
             // Decrypt the encrypted text
-            string decryptedText = DecryptAES(encryptedText, key);
-            Console.WriteLine($"Decrypted: {decryptedText}");
+            string decryptedText = DecryptAES(encrypteText, key);
+            Console.WriteLine($"Decrypted text is  {decryptedText}");
         }
 
         /// <summary>

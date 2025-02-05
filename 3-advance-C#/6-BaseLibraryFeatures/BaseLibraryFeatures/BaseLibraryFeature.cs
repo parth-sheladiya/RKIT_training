@@ -1,77 +1,56 @@
 ﻿namespace BaseLibraryFeatures
 {
     /// <summary>
-    /// Represents a custom list that extends the functionality of the generic List class
+    /// this is customlist it is in  include datatpe only  int, bool , string 
     /// </summary>
-    /// <typeparam name="T">The type of elements in the list</typeparam>
-    public class MyList<T> : List<T>
+    /// <typeparam name="T">operator </typeparam>
+    public class MyCustomList<T> : List<T>
     {
+        private List<object> _items; 
+
         /// <summary>
         /// Initializes a new instance of the MyList class
         /// </summary>
-        public MyList() : base()
+        public MyCustomList() : base()
         {
             Console.WriteLine("MyList object created!");
+            _items = new List<object>();
         }
 
         /// <summary>
-        /// Adds an item to the list if it does not already exist
+        /// add is accept to store data int , str, bool
         /// </summary>
-        /// <param name="item">The item to be added</param>
-        public void AddToList(T item)
+        /// <param name="value">value </param>
+        public void Add(object value)
         {
-            if (!this.Contains(item))
+            var typestrcheck = value.GetType() == typeof(string);
+            var typeintcheck = value.GetType() == typeof(int);
+            var typeboolcheck = value.GetType() == typeof(bool);
+            
+
+            // Allow strings, ints, bools, DateTime
+            if (typestrcheck || typeintcheck || typeboolcheck )
             {
-                base.Add(item);
-                Console.WriteLine($"Item '{item}' added successfully.");
+                _items.Add(value);
+                Console.WriteLine($"{value} added to the list.");
             }
             else
             {
-                Console.WriteLine($"Duplicate item '{item}' not allowed.");
+                throw new ArgumentException("Only string, int, bool types are allowed.");
             }
         }
 
         /// <summary>
-        /// Counts total items manually without using built-in Count property
+        /// Display all items in the list
         /// </summary>
-        public int CountItemsManual()
+        public void Display()
         {
-            int count = 0;
-
-            foreach (T item in this)
+            foreach (var item in _items)
             {
-                count++;
-            }
-            return count;
-        }
-
-        /// <summary>
-        /// Removes an item from the list
-        /// </summary>
-        /// <param name="item">The item to be removed</param>
-        public void RemoveToList(T item)
-        {
-            if (this.Contains(item))
-            {
-                base.Remove(item);
-                Console.WriteLine($"Item '{item}' removed successfully.");
-            }
-            else
-            {
-                Console.WriteLine($"Item '{item}' not found in the list.");
+                Console.WriteLine(item);
             }
         }
 
-        /// <summary>
-        /// Returns the first item in the list, or default if list is empty
-        /// </summary>
-        /// <returns>The first item in the list</returns>
-        public T GetFirstItem()
-        {
-            if (this.CountItemsManual() > 0)
-                return this[0];
-            else
-                return default(T);
-        }
+
     }
 }
