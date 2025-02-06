@@ -7,14 +7,15 @@ namespace ExtensionMethodApp
     {
         static void Main(string[] args)
         {
-            int num1 = 10;
-            int num2 = 7;
+            DateTime birthDate = new DateTime(2004, 11, 20);
 
-            // Calling the extension methods
-            Console.WriteLine($"{num1} is Even: {num1.IsEven()}"); 
-            Console.WriteLine($"{num1} is Odd: {num1.IsOdd()}");    
-            Console.WriteLine($"{num2} is Even: {num2.IsEven()}");  
-            Console.WriteLine($"{num2} is Odd: {num2.IsOdd()}");   
+            // Extension method ka use
+            int age = birthDate.Age();
+
+            Console.WriteLine($"parth   is: {age} years old");
+
+            Game game = new Game();
+            game.Play(); 
         }
     }
 }
