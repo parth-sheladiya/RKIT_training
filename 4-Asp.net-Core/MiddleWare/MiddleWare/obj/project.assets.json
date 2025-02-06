@@ -503,11 +503,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\parth-415\\RKIT_training-main\\4-Asp.net-Core\\MiddleWare\\MiddleWare\\MiddleWare.csproj",
+      "projectUniqueName": "F:\\parth-415\\git-desk\\RKIT_training\\4-Asp.net-Core\\MiddleWare\\MiddleWare\\MiddleWare.csproj",
       "projectName": "MiddleWare",
-      "projectPath": "F:\\parth-415\\RKIT_training-main\\4-Asp.net-Core\\MiddleWare\\MiddleWare\\MiddleWare.csproj",
+      "projectPath": "F:\\parth-415\\git-desk\\RKIT_training\\4-Asp.net-Core\\MiddleWare\\MiddleWare\\MiddleWare.csproj",
       "packagesPath": "C:\\Users\\parth.sh\\.nuget\\packages\\",
-      "outputPath": "F:\\parth-415\\RKIT_training-main\\4-Asp.net-Core\\MiddleWare\\MiddleWare\\obj\\",
+      "outputPath": "F:\\parth-415\\git-desk\\RKIT_training\\4-Asp.net-Core\\MiddleWare\\MiddleWare\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\parth.sh\\AppData\\Roaming\\NuGet\\NuGet.Config",
