@@ -20,7 +20,7 @@ namespace LinQExample
             GenerationOperator generationOperator = new GenerationOperator();
 
             // default value 
-            var empRes = generationOperator.numbers.DefaultIfEmpty(50);
+            List<int> empRes = generationOperator.numbers.DefaultIfEmpty(50).ToList();
 
             Console.WriteLine("DefaultIfEmpty val is ");
             Console.WriteLine(empRes);
@@ -29,7 +29,7 @@ namespace LinQExample
 
             // it only use to repeat
             // if we  can use list so we can create manully repete method using for loop
-            var repValueRes = Enumerable.Repeat(5, 5).ToList();
+            List<int> repValueRes = Enumerable.Repeat(5, 5).ToList();
             Console.WriteLine("repeted value is ");
             foreach (var item in repValueRes)
             {
@@ -37,7 +37,7 @@ namespace LinQExample
             }
 
             // range value 
-            var rangeVal = Enumerable.Range(1, 10).ToList();
+            List<int> rangeVal = Enumerable.Range(1, 10).ToList();
             Console.WriteLine("range value is ");
             foreach (var item in rangeVal)
             {

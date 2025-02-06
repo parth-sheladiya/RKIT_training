@@ -31,7 +31,7 @@ namespace ORMdemo.Controllers
         {
             var products = _objBLproduct.GetAllPDT();
 
-            return Ok(products);
+            return Ok(_objresponce);
         }
 
         /// <summary>
@@ -49,7 +49,7 @@ namespace ORMdemo.Controllers
                 return NotFound();
 
             }
-            return Ok(productByid);
+            return Ok(_objresponce);
         }
 
         /// <summary>
@@ -67,7 +67,7 @@ namespace ORMdemo.Controllers
             {
                 _objresponce = _objBLproduct.Save();
             }
-            return Ok(product);
+            return Ok(_objresponce);
 
         }
 

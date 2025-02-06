@@ -52,12 +52,23 @@ namespace ORMdemo.BL.Operations
         /// Fetch all products from the database.
         /// </summary>
         /// <returns>List of all products.</returns>
-        public List<PDT01> GetAllPDT()
+        public Response GetAllPDT()
         {
             // open database
             using (var db = _dbfactory.OpenDbConnection())
             {
-                return db.Select<PDT01>().ToList();
+                List<PDT01> res = db.Select<PDT01>().ToList();
+
+                if (res.Count == 0)
+                {
+                    _objresponce.IsError = true;
+                    _objresponce.Message = "no pdt available";
+                    _objresponce.Data = null;
+                    return _objresponce;
+                }
+                _objresponce.IsError = false;
+                _objresponce.Data = res;
+                return _objresponce;
             }
         }
 
@@ -196,8 +207,8 @@ namespace ORMdemo.BL.Operations
                 {
                     if (Type == EnumType.A)
                     {
-                        db.Insert(_objPDT01);
-                        _objresponce.Message = "Data Added";
+                        int insertedId = (int)db.Insert(_objPDT01, selectIdentity:true);
+                        _objresponce.Message = "user id is " + insertedId;
                     }
                     else if (Type == EnumType.E)
                     {
