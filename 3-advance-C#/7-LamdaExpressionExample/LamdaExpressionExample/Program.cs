@@ -10,9 +10,7 @@ namespace LamdaExpressionExample
             SimpleExpressionClass.RunSimpleExpressionClass();
 
             // method call for multipleParams class
-            MultipleParamsExample.RunMultipleParamsExample();
-
-           
+            MultipleParamsExample.RunMultipleParamsExample();  
 
             // call method for ListExampleExpression 
             ListExampleLamdaExpression.RunListExampleLamdaExpression();
