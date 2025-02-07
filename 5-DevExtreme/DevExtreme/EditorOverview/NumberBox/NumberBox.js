@@ -85,7 +85,8 @@ $(document).ready(function () {
         onPaste: pasteHandler,
         onKeyPress: keyPressHandler,
         onKeyUp: keyUpHandler,
-        onOptionChanged: optionChangedHandler
+        onOptionChanged: optionChangedHandler,
+        onFocusIn: focusInHandler
     })
 
   

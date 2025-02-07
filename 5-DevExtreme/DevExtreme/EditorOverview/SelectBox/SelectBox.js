@@ -63,7 +63,17 @@ $(document).ready(function () {
         onValueChanged: valueChangedHandler,
         grouped: true,
         placeholder: "please select item",
-        hint:"this is select box"
+        hint: "this is select box",
+        onChange: changeHandler,
+        onCopy: copyHandler,
+        onCut: cutHandler,
+        onPaste: pasteHandler,
+        onContentReady: contentReadyHandler,
+        onEnterKey: enterKeyHandler,
+        onFocusIn: focusInHandler,
+        onFocusOut: focusOutHandler,
+        onOpened: openedHandler
+
     })
     var selectBoxInstance = $("#SelectBox").dxSelectBox("instance")
 
