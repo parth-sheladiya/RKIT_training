@@ -13,11 +13,7 @@ namespace LinQExample
     public class SetOperatorClass
     {
         /// <summary>
-        /// This method demonstrates the use of various LINQ Set Operators:
-        /// 1. Distinct: Filters out duplicate values.
-        /// 2. Union: Combines two sequences, excluding duplicates.
-        /// 3. Intersect: Finds common elements between two sequences.
-        /// 4. Except: Returns elements that are in the first sequence but not in the second.
+        /// This describes the use of various LINQ Set Operators
         /// </summary>
         public static void RunSetOperatorClass()
         {
@@ -25,7 +21,7 @@ namespace LinQExample
             SetOperator setOperator = new SetOperator();
 
             //  Distinct keyword: Returns only unique elements in the list
-            var distinctVal = setOperator.listInt.Distinct();
+            var distinctVal = setOperator.listInt.Distinct().ToList();
             Console.WriteLine("Distinct values are: ");
             foreach (var item in distinctVal)
             {

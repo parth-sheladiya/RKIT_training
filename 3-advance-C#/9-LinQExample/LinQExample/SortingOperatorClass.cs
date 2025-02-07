@@ -35,7 +35,8 @@ namespace LinQExample
             }
 
 
-            // ThenBy (Ascending)
+            // ThenBy 
+            // mustt be 2 field
             List<(string name, int age)> thenStudent = clsSortingOprtr.student.OrderBy(p => p.age).ThenBy(p => p.name).ToList();
             Console.WriteLine("ThenBy (Age Ascending, Name Ascending):");
             foreach (var student in thenStudent)
@@ -43,7 +44,7 @@ namespace LinQExample
                 Console.WriteLine($"Name: {student.name}, Age: {student.age}");
             }
 
-            // ThenByDescending (Age Ascending, Name Descending)
+            // ThenByDescending 
             List<(string name, int age)> thendescendingStudent = clsSortingOprtr.student.OrderBy(p => p.age).ThenByDescending(p => p.name).ToList();
             Console.WriteLine("ThenByDescending (Age Ascending, Name Descending):");
             foreach (var student in thendescendingStudent)

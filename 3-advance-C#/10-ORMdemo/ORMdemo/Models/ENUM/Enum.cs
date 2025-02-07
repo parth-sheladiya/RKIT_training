@@ -14,11 +14,7 @@ namespace ORMdemo.Models.ENUM
         /// <summary>
         /// E denotes Edit operation(api req).
         /// </summary>
-        E,
-        /// <summary>
-        /// D denotes Delete operation(api req).
-        /// </summary>
-        D
+        E
 
     }
 }

@@ -22,40 +22,41 @@ namespace ORMdemo.Controllers
         private Response _objresponce;
 
         /// <summary>
-        /// Retrieves all employees.
+        /// return all product
         /// </summary>
+        /// <returns>responce</returns>
 
         [HttpGet]
         [Route("GetAllProducts")]
         public IHttpActionResult GetAllProduct()
         {
-            var products = _objBLproduct.GetAllPDT();
+            _objresponce = _objBLproduct.GetAllPDT();
 
             return Ok(_objresponce);
         }
 
+
         /// <summary>
-        /// Retrieves an employee by ID.
+        /// fet product by id
         /// </summary>
-
-
+        /// <param name="id">enter product id</param>
+        /// <returns>responce</returns>
         [HttpGet]
-        [Route("getProductById")]
+        [Route("GetProductById")]
         public IHttpActionResult GetProductByID(int id)
         {
-            var productByid = _objBLproduct.GetPDTbyID(id);
-            if(productByid == null)
-            {
-                return NotFound();
+            _objresponce = _objBLproduct.GetPDTbyID(id); // Get product as PDT01
 
-            }
+
             return Ok(_objresponce);
         }
 
-        /// <summary>
-        /// Adds a new employee.
-        /// </summary>
 
+        /// <summary>
+        /// addn product
+        /// </summary>
+        /// <param name="product"></param>
+        /// <returns>responce</returns>
         [HttpPost]
         [Route("AddProduct")]
         public IHttpActionResult AddProduct(DTO_PDT01 product)
@@ -72,8 +73,10 @@ namespace ORMdemo.Controllers
         }
 
         /// <summary>
-        /// Updates an existing employee.
+        /// update product
         /// </summary>
+        /// <param name="product">enter product id</param>
+        /// <returns>responce</returns>
         [HttpPut]
         [Route("UpdateProduct")]
         public IHttpActionResult UpdateProduct(DTO_PDT01 product)
@@ -87,11 +90,13 @@ namespace ORMdemo.Controllers
             }
             return Ok(_objresponce); 
         }
+
+
         /// <summary>
-        /// Deletes an employee by ID.
+        /// delete product
         /// </summary>
-
-
+        /// <param name="id">enter product id</param>
+        /// <returns>responce</returns>
         [HttpDelete]
         [Route("deleteProduct")]
         public IHttpActionResult DeleteProduct(int id)
@@ -104,19 +109,18 @@ namespace ORMdemo.Controllers
             return Ok(_objresponce.Message);
         }
 
-        /// <summary>
-        /// Validates if an employee exists by their ID.
-        /// </summary>
 
+        /// <summary>
+        /// check product is exist or not
+        /// </summary>
+        /// <param name="id">enter product id</param>
+        /// <returns>responce</returns>
         [HttpGet]
         [Route("CheckProductISExistsOrNot")]
         public IHttpActionResult IsProductExistOrNot(int id)
         {
-            var Isprod = _objBLproduct.GetPDTbyID(id);
-            if (Isprod == null)
-            {
-                return NotFound();
-            }    
+            _objresponce = _objBLproduct.GetPDTbyID(id);
+              
 
             return Ok(_objresponce);
         }

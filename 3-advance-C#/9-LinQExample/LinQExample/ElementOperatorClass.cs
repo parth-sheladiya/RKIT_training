@@ -38,12 +38,10 @@ namespace LinQExample
             Console.WriteLine("retrive last element or default is " + showLastDefEle);
 
             // retrive element with specific index
-            string showElementWithIndex = elementOperator.strings.ElementAt(2);
+            string showElementWithIndex = elementOperator.strings.ElementAt(3);
             Console.WriteLine("retrive element with specific index is " + showElementWithIndex);
 
-            // retrive element with specific index or default
-            string showElementWithIndexDef = elementOperator.strings.ElementAtOrDefault(2);
-            Console.WriteLine("retrive element with specific index or default is " + showElementWithIndexDef);
+            
 
 
             // it's mark to comment bcz single is must be a single element otherwise it will give error 

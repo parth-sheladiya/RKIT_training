@@ -42,7 +42,7 @@ namespace LinQExample
 
             // skip while operatoer
             //// doubt
-            List<string> resSkipWhileStr = part.countries.SkipWhile(x => x.StartsWith("I")).ToList();
+            List<string> resSkipWhileStr = part.countries.SkipWhile(x => x.StartsWith("U")).ToList();
             Console.WriteLine("skip while result ");
             foreach(var country in resSkipWhileStr)
             {

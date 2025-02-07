@@ -16,27 +16,25 @@ using ORMdemo.Extensions;
 namespace ORMdemo.BL.Operations
 {
     /// <summary>
-    /// BL_Product class implements IDataHandler interface for handling product operations.
+    /// Handles Product Data Operations (CRUD)
     /// </summary>
     public class BL_Product : IDataHandler<DTO_PDT01>
     {
-        // POCO class instance for product
+        // poco object
         private PDT01 _objPDT01;
+        // specific id for update
         private int _id;
-
-        // Response object for returning operation results
+        // response object
         private Response _objresponce;
-
-        // Database connection factory (retrieved from global.asax or web.config)
+        // database connection factory
         private readonly IDbConnectionFactory _dbfactory;
-
-        // EnumType for defining Add (A) or Edit (E) operation
+        // operation type enum
         public EnumType Type { get; set; }
 
         /// <summary>
-        /// Constructor - Initializes response object and database connection factory.
+        /// Initializes BL_Product and sets up DB connection
         /// </summary>
-        /// <exception cref="Exception">Throws exception if database connection is not found.</exception>
+        /// <exception cref="Exception">if database connection is not found</exception>
         public BL_Product()
         {
             _objresponce = new Response();
@@ -49,12 +47,11 @@ namespace ORMdemo.BL.Operations
         }
 
         /// <summary>
-        /// Fetch all products from the database.
+        /// Retrieves all products from the database
         /// </summary>
-        /// <returns>List of all products.</returns>
+        /// <returns>Response object </returns>
         public Response GetAllPDT()
         {
-            // open database
             using (var db = _dbfactory.OpenDbConnection())
             {
                 List<PDT01> res = db.Select<PDT01>().ToList();
@@ -62,103 +59,115 @@ namespace ORMdemo.BL.Operations
                 if (res.Count == 0)
                 {
                     _objresponce.IsError = true;
-                    _objresponce.Message = "no pdt available";
+                    _objresponce.Message = "No product available";
                     _objresponce.Data = null;
-                    return _objresponce;
                 }
-                _objresponce.IsError = false;
-                _objresponce.Data = res;
+                else
+                {
+                    _objresponce.IsError = false;
+                    _objresponce.Data = res;
+                }
                 return _objresponce;
             }
         }
 
         /// <summary>
-        /// Fetch a product by its ID.
+        /// Retrieves a product by ID
         /// </summary>
         /// <param name="id">Product ID</param>
-        /// <returns>Returns product object if found, otherwise null.</returns>
-        public PDT01 GetPDTbyID(int id)
+        /// <returns>Response object </returns>
+        public Response GetPDTbyID(int id)
         {
-            // open database
             using (var db = _dbfactory.OpenDbConnection())
             {
-                return db.SingleById<PDT01>(id);
+                var product = db.SingleById<PDT01>(id);
+                if (product == null)
+                {
+                    _objresponce.IsError = true;
+                    _objresponce.Message = "Product not found";
+                }
+                else
+                {
+                    _objresponce.IsError = false;
+                    _objresponce.Data = product;
+                }
+                return _objresponce;
             }
         }
 
         /// <summary>
-        /// Checks if a product exists in the database by ID.
+        /// Checks if a product exists in the database
         /// </summary>
         /// <param name="id">Product ID</param>
-        /// <returns>Returns true if product exists, otherwise false.</returns>
+        /// <returns>True if product exists</returns>
         private bool IsProductExists(int id)
         {
-            // open database
             using (var db = _dbfactory.OpenDbConnection())
             {
-                var temp =    db.Exists<PDT01>(e => e.Id == id);
-                return temp;
+                return db.Exists<PDT01>(e => e.Id == id);
             }
         }
 
         /// <summary>
-        /// Fetches the product before deletion.
+        /// Prepares response before deleting a product
         /// </summary>
         /// <param name="id">Product ID</param>
-        /// <returns>Returns product object if exists, otherwise null.</returns>
-        private PDT01 PreDelete(int id)
+        /// <returns>Response object </returns>
+        private Response PreDelete(int id)
         {
             if (IsProductExists(id))
             {
                 return GetPDTbyID(id);
             }
-            return null;
+            _objresponce.IsError = true;
+            _objresponce.Message = "Product not found";
+            return _objresponce;
         }
 
         /// <summary>
-        /// Validates if a product can be deleted.
+        /// Validates product before deletion
         /// </summary>
         /// <param name="objPDT01">Product object</param>
-        /// <returns>Returns response object with validation result.</returns>
+        /// <returns>Response object </returns>
         public Response validateOndelete(PDT01 objPDT01)
         {
             if (objPDT01 == null)
             {
                 _objresponce.IsError = true;
                 _objresponce.Message = "Product not found";
-                return _objresponce;
             }
-
-            _objresponce.IsError = false;
+            else
+            {
+                _objresponce.IsError = false;
+            }
             return _objresponce;
         }
 
         /// <summary>
-        /// Deletes a product by ID after validation.
+        /// Deletes a product by ID
         /// </summary>
         /// <param name="id">Product ID</param>
-        /// <returns>Returns response object with deletion status.</returns>
+        /// <returns>Response object </returns>
         public Response Delete(int id)
         {
-            var product = PreDelete(id);
-            var validateResponce = validateOndelete(product);
-
-            if (validateResponce.IsError)
+            var productResponse = PreDelete(id);
+            if (productResponse.IsError)
             {
-                return validateResponce;
+                return productResponse;
             }
-            // open database
+
             using (var db = _dbfactory.OpenDbConnection())
             {
                 db.DeleteById<PDT01>(id);
             }
 
+            _objresponce.IsError = false;
             _objresponce.Message = "Data Deleted";
             return _objresponce;
         }
 
         /// <summary>
-        /// Prepares the DTO object for saving by converting it to POCO.
+        ///  product object for save operation
         /// </summary>
         /// <param name="objDTO">DTO object</param>
         public void PreSave(DTO_PDT01 objDTO)
@@ -172,9 +181,9 @@ namespace ORMdemo.BL.Operations
         }
 
         /// <summary>
-        /// Validates product data before saving.
+        /// Validates product before save operation
         /// </summary>
-        /// <returns>Returns response object with validation status.</returns>
+        /// <returns>Response object </returns>
         public Response Validation()
         {
             if (Type == EnumType.E)
@@ -189,40 +198,43 @@ namespace ORMdemo.BL.Operations
                     _objresponce.IsError = true;
                     _objresponce.Message = "Product not found";
                 }
-                return _objresponce;
+                else
+                {
+                    _objresponce.IsError = false;
+                }
             }
             return _objresponce;
         }
 
         /// <summary>
-        /// Saves the product data (Insert or Update).
+        /// Saves product data 
         /// </summary>
-        /// <returns>Returns response object with save status.</returns>
+        /// <returns>Response object </returns>
         public Response Save()
         {
             try
             {
-                // open database
                 using (var db = _dbfactory.OpenDbConnection())
                 {
                     if (Type == EnumType.A)
                     {
-                        int insertedId = (int)db.Insert(_objPDT01, selectIdentity:true);
-                        _objresponce.Message = "user id is " + insertedId;
+                        int insertedId = (int)db.Insert(_objPDT01, selectIdentity: true);
+                        _objresponce.IsError = false;
+                        _objresponce.Message = "User ID is " + insertedId;
                     }
                     else if (Type == EnumType.E)
                     {
-                        // Check if product exists before updating
                         if (!IsProductExists(_id))
                         {
                             _objresponce.IsError = true;
                             _objresponce.Message = "ID not found, update failed.";
-                            return _objresponce;
                         }
-
-                        db.Update(_objPDT01);
-                        _objresponce.Message = "Data Updated";
-
+                        else
+                        {
+                            db.Update(_objPDT01);
+                            _objresponce.IsError = false;
+                            _objresponce.Message = "Data Updated";
+                        }
                     }
                 }
             }
@@ -231,7 +243,6 @@ namespace ORMdemo.BL.Operations
                 _objresponce.IsError = true;
                 _objresponce.Message = "Error from global handler: " + ex.Message;
             }
-
             return _objresponce;
         }
     }

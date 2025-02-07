@@ -15,9 +15,9 @@ namespace ORMdemo.Models.POCO
         /// <summary>
         /// id
         /// </summary>
-        //[AutoIncrement]
-        [PrimaryKey] // Marks this as the primary key
-         // Auto-increment Id
+        [AutoIncrement]
+        [PrimaryKey] 
+         
         public int Id { get; set; }
 
         /// <summary>

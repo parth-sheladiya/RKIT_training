@@ -13,28 +13,28 @@ namespace LinQExample
             // MethodSyntaxClass.RunMethodSyntaxClass();
 
             // call method to aggreate function 
-            AggregateFunctionClass.RunAggregateFunctionClass(); 
+           /// AggregateFunctionClass.RunAggregateFunctionClass(); 
 
             // call method to sorting function
-            SortingOperatorClass.RunSortingOperatorClass();
+           // SortingOperatorClass.RunSortingOperatorClass();
 
             // call method to partition class
-             PartitionOperatorClass.RunPartitionOperatorClass();
+           //  PartitionOperatorClass.RunPartitionOperatorClass();
 
             // call method to element operator class 
-             ElementOperatorClass.RunElementOperatorClass();
+           //  ElementOperatorClass.RunElementOperatorClass();
 
             // call method to grouping operator class 
-            GroupingOperatorClass.RunGroupingOperatorClass();
+           // GroupingOperatorClass.RunGroupingOperatorClass();
 
             // call method to join operator class 
-            JoinOperatorClass.RunJoinOperatorClass();
+            //JoinOperatorClass.RunJoinOperatorClass();
 
             // call method to set operator class 
-            SetOperatorClass.RunSetOperatorClass();
+          // SetOperatorClass.RunSetOperatorClass();
 
             // call method to concat class
-            ConcatClass.RunConcatClass();
+           // ConcatClass.RunConcatClass();
 
             // call method to generation operator class
             GenerationOperatorClass.RunGenerationOperatorClass();
