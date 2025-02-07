@@ -67,6 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AllMethodEvent\Event.js" />
+    <Content Include="AllMethodEvent\Method.js" />
     <Content Include="CheckBox\CheckBox.html" />
     <Content Include="CheckBox\CheckBox.js" />
     <Content Include="Content\dx-diagram.css" />
@@ -209,7 +211,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>57896</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:57897/</IISUrl>
+          <IISUrl>http://localhost:57879/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

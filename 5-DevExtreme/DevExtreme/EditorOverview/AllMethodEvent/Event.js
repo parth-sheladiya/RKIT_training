@@ -55,7 +55,7 @@ const optionChangedHandler = (e) =>
 
 // Fires when the value of the widget is changed (with previous and new value)
 const valueChangedHandler = (e) =>
-    console.log(`Value changed "${e.previousValue}" to "${e.value}"`);
+    console.log(`Value changed "${e.value}"`);
 
 
 
