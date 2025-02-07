@@ -73,7 +73,7 @@ $(document).ready(function () {
         format: "#0.##;(#0.##)",
         format: "Rs #0.00",
         // doubt
-        format:"###'-'###"
+        format:"000'-'000"
     })
 
 

@@ -7,28 +7,28 @@ namespace LinQExample
         public static void Main(string[] args)
         {
             //call method to query sytax class 
-            // QuerySyntax.RunQuerySyntax();
+             //QuerySyntax.RunQuerySyntax();
             
             // call method to mwthod class systax 
             // MethodSyntaxClass.RunMethodSyntaxClass();
 
             // call method to aggreate function 
-           /// AggregateFunctionClass.RunAggregateFunctionClass(); 
+           // AggregateFunctionClass.RunAggregateFunctionClass(); 
 
             // call method to sorting function
            // SortingOperatorClass.RunSortingOperatorClass();
 
             // call method to partition class
-           //  PartitionOperatorClass.RunPartitionOperatorClass();
+           // PartitionOperatorClass.RunPartitionOperatorClass();
 
             // call method to element operator class 
-           //  ElementOperatorClass.RunElementOperatorClass();
+          //  ElementOperatorClass.RunElementOperatorClass();
 
             // call method to grouping operator class 
-           // GroupingOperatorClass.RunGroupingOperatorClass();
+          //  GroupingOperatorClass.RunGroupingOperatorClass();
 
             // call method to join operator class 
-            //JoinOperatorClass.RunJoinOperatorClass();
+           // JoinOperatorClass.RunJoinOperatorClass();
 
             // call method to set operator class 
           // SetOperatorClass.RunSetOperatorClass();
@@ -37,7 +37,7 @@ namespace LinQExample
            // ConcatClass.RunConcatClass();
 
             // call method to generation operator class
-            GenerationOperatorClass.RunGenerationOperatorClass();
+           // GenerationOperatorClass.RunGenerationOperatorClass();
         }
     }
 }

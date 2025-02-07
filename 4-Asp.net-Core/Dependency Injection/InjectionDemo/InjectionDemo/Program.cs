@@ -12,7 +12,7 @@ namespace InjectionDemo
             builder.Services.AddControllers();
 
             // Add services to the container.
-           // builder.Services.AddScoped<IPaymentService, RazorpayPaymentService>();
+           //builder.Services.AddScoped<IPaymentService, RazorpayPaymentService>();
              builder.Services.AddScoped<IPaymentService, JuspayPaymentService>();
 
             // Register custom services using extension methods (e.g., AddProductServices)

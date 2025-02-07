@@ -37,7 +37,7 @@ namespace LamdaExpressionExample
                 // even numbers logic
                 foreach (int num in evenNumbers)
                 {
-                    Console.Write(" ", num);
+                    Console.WriteLine(" ", num);
                 }
                
             }

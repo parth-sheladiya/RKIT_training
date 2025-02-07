@@ -44,7 +44,7 @@ namespace customMiddlewareDemo
             // using  middleware with built-in format
             app.UseBMiddleware();
 
-            // conditional middleware (use "?keyur" in url)
+            // conditional middleware (use in url)
             app.UseWhen(context => context.Request.Query.ContainsKey("partpatel"),
                 app =>
                 {
