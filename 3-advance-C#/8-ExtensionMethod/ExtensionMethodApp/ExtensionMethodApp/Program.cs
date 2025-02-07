@@ -7,15 +7,13 @@ namespace ExtensionMethodApp
     {
         static void Main(string[] args)
         {
-            DateTime birthDate = new DateTime(2004, 11, 20);
 
-            // Extension method ka use
-            int age = birthDate.Age();
+            List<int> prices = new List<int> { 7, 1, 5, 3, 6, 4 };
 
-            Console.WriteLine($"parth   is: {age} years old");
+            // maxprofit
+            int maxProfit = prices.MaxProfit();
+            Console.WriteLine($"Max Profit (One Transaction): {maxProfit}");
 
-            Game game = new Game();
-            game.Play(); 
         }
     }
 }
