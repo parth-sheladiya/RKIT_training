@@ -7,27 +7,14 @@
   "targets": {
     ".NETCoreApp,Version=v7.0": {
       "ExtensionMethodApp/1.0.0": {
-        "dependencies": {
-          "ClassLibExtMethod": "1.0.0"
-        },
         "runtime": {
           "ExtensionMethodApp.dll": {}
-        }
-      },
-      "ClassLibExtMethod/1.0.0": {
-        "runtime": {
-          "ClassLibExtMethod.dll": {}
         }
       }
     }
   },
   "libraries": {
     "ExtensionMethodApp/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "ClassLibExtMethod/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
