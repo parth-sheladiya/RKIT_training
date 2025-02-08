@@ -118,6 +118,8 @@
     <Content Include="DateBox\NewDateBox.js" />
     <Content Include="DropDown\dropDown.html" />
     <Content Include="DropDown\dropDown.js" />
+    <Content Include="FileUploder\Fileuploder.html" />
+    <Content Include="FileUploder\Fileuploder.js" />
     <Content Include="Index.html" />
     <Content Include="NumberBox\NumberBox.html" />
     <Content Include="NumberBox\NumberBox.js" />
