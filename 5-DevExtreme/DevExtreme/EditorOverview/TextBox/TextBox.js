@@ -40,6 +40,30 @@
         showMaskMode: "never",
     })
 
+    $("#PasswordBox").dxTextBox({
+        placeholder: "Enter password",
+        mode: "password",
+        stylingMode: "filled",
+        buttons: [
+            {
+                name: "password",
+                location: "before",
+                options: {
+                    stylingMode: "filled",
+                    onClick: function () {
+                        var passwordBox = $("#PasswordBox").dxTextBox("instance");
+                        var mode = passwordBox.option("mode");
+                        if (mode === "password") {
+                            passwordBox.option("mode", "text");
+                        } else {
+                            passwordBox.option("mode", "password");
+                        }
+                    }
+                }
+            }
+        ]
+    });
+
 
 
  

@@ -81,7 +81,7 @@ $(document).ready(function () {
         onValueChanged: valueChangedHandler, // default null
         placeholder: "enter your feedback", // default null
         spellcheck: true, // check spelling  default false
-       // stylingMode: "underlined",
+       stylingMode: "underlined", // filled
         value: "hello from parth",
        // label:"textarea", not working in 21.1
 
