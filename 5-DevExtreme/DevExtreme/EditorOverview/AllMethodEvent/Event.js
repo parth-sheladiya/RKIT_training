@@ -51,7 +51,7 @@ const openedHandler = (e) => console.log(e.component.NAME + " opened");
 
 // Fires when a widget option is changed dynamically
 const optionChangedHandler = (e) =>
-    console.log("Option changed", e.name, e.value);
+    console.log("Option changed", e.name);
 
 // Fires when the value of the widget is changed (with previous and new value)
 const valueChangedHandler = (e) =>

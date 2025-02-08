@@ -182,6 +182,10 @@
     <Content Include="Scripts\vectormap-utils\dx.vectormaputils.node.js" />
     <Content Include="SelectBox\SelectBox.html" />
     <Content Include="SelectBox\SelectBox.js" />
+    <Content Include="TextArea\TextArea.html" />
+    <Content Include="TextArea\Textarea.js" />
+    <Content Include="TextBox\TextBox.html" />
+    <Content Include="TextBox\TextBox.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -213,7 +217,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>57896</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:57879/</IISUrl>
+          <IISUrl>http://localhost:57567/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
