@@ -15,9 +15,9 @@
         #region Extension Method
 
         /// <summary>
-        /// Adds MyMiddleware to the application's request pipeline.
+        /// add m.  to reques pipeline
         /// </summary>
-        /// <param name="app">The application builder.</param>
+        /// <param name="app">app</param>
         /// <returns>The updated IApplicationBuilder with MyMiddleware added.</returns>
         public static IApplicationBuilder BasicMiddleware(this IApplicationBuilder app)
         {

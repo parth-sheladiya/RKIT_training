@@ -19,17 +19,7 @@ namespace BuiltInMiddleWare
                 });
             });
 
-            // Add Session Services
-            builder.Services.AddDistributedMemoryCache();
-            builder.Services.AddSession(options =>
-            {
-                // Session timeout after 30 minutes of inactivity
-                options.IdleTimeout = TimeSpan.FromMinutes(30);
-                // Make cookie accessible only through HTTP
-                options.Cookie.HttpOnly = true;
-                // Ensure session cookie is sent even in privacy-sensitive contexts
-                options.Cookie.IsEssential = true;
-            });
+         
 
             var app = builder.Build();
             // Use Session Middleware
