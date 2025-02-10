@@ -2,11 +2,14 @@
 using FinalDemo.BL.Operations;
 using FinalDemo.Models;
 using FinalDemo.Models.POCO;
-using FinalDemo.Services;
 using Microsoft.AspNetCore.Connections;
 using Microsoft.Extensions.Configuration;
 using ServiceStack.Data;
 using ServiceStack.OrmLite;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using FinalDemo.Services.Interface;
 
 
 namespace FinalDemo
@@ -17,6 +20,20 @@ namespace FinalDemo
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options =>
+                {
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuer = true,
+                        ValidateAudience = true,
+                        ValidateLifetime = true,
+                        ValidateIssuerSigningKey = true,
+                        ValidIssuer = builder.Configuration["Jwt:Issuer"],
+                        ValidAudience = builder.Configuration["Jwt:Issuer"],
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+                    };
+                });
             // Add services to the container.
             builder.Services.AddControllers();
             builder.Services.AddAuthorization();
@@ -41,7 +58,10 @@ namespace FinalDemo
 
            
             builder.Services.AddScoped<Response>();
-            builder.Services.AddScoped<USR01>();
+            builder.Services.AddScoped< IUSR01,BLUser>();
+            builder.Services.AddScoped<BLPdt>();
+            builder.Services.AddScoped<BLOrder>();
+
 
             var app = builder.Build();
 
@@ -52,8 +72,8 @@ namespace FinalDemo
                 app.UseSwaggerUI();
             }
 
-           
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllers();

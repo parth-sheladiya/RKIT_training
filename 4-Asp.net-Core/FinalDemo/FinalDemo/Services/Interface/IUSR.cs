@@ -2,9 +2,9 @@
 using FinalDemo.Models;
 using FinalDemo.Models.DTO;
 
-namespace FinalDemo.Services
+namespace FinalDemo.Services.Interface
 {
-    public interface IUSR01 
+    public interface IUSR01
     {
         public Response GetAll();
 

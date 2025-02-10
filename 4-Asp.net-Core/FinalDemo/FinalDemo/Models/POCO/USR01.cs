@@ -1,5 +1,6 @@
 ﻿using FinalDemo.Models.ENUM;
 using FinalDemo.Services;
+using ServiceStack.DataAnnotations;
 
 namespace FinalDemo.Models.POCO
 {
@@ -8,6 +9,8 @@ namespace FinalDemo.Models.POCO
         /// <summary>
         /// user id
         /// </summary>
+        [PrimaryKey]
+        [AutoIncrement]
         public int R01F01 { get; set; }
 
         /// <summary>
@@ -43,7 +46,8 @@ namespace FinalDemo.Models.POCO
         /// <summary>
         /// created at
         /// </summary>
-       public DateTime R01F08 { get; set; } 
+        [IgnoreOnUpdate]
+        public DateTime R01F08 { get; set; } 
 
         /// <summary>
         /// updated at

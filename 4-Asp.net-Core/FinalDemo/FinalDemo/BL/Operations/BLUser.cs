@@ -4,7 +4,7 @@ using FinalDemo.Models;
 using FinalDemo.Models.DTO;
 using FinalDemo.Models.ENUM;
 using FinalDemo.Models.POCO;
-using FinalDemo.Services;
+using FinalDemo.Services.Interface;
 using Microsoft.AspNetCore.Identity;
 using ServiceStack.Data;
 using ServiceStack.OrmLite;
@@ -13,7 +13,7 @@ using System.Data;
 
 namespace FinalDemo.BL.Operations
 {
-    public class BLUser : ICommonHandler<DTOUSR01>
+    public class BLUser : IUSR01, ICommonHandler<DTOUSR01>
     {
         private readonly IDbConnectionFactory _dbfactory;
         private readonly string _connectionString;

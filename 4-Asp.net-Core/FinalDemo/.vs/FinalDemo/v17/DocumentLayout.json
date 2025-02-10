@@ -1,0 +1,428 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\services\\implementation\\authentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\services\\implementation\\authentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\services\\interface\\iauthentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\services\\interface\\iauthentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\services\\interface\\iusr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\services\\interface\\iusr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\models\\enum\\enumrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\models\\enum\\enumrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\models\\poco\\usr01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\models\\poco\\usr01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\finaldemo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\finaldemo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\controllers\\clord01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\controllers\\clord01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\controllers\\clpdt01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\controllers\\clpdt01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\bl\\operations\\blpdt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\bl\\operations\\blpdt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\controllers\\clusr01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\controllers\\clusr01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\bl\\operations\\blorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\bl\\operations\\blorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\bl\\operations\\bluser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\bl\\operations\\bluser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\models\\poco\\ord01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\models\\poco\\ord01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\models\\dto\\dtoord01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\models\\dto\\dtoord01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\extention\\convertextention.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\extention\\convertextention.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\models\\poco\\pdt01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\models\\poco\\pdt01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\models\\dto\\dtopdt01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\models\\dto\\dtopdt01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\models\\dto\\dtousr01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\models\\dto\\dtousr01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\models\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\models\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\models\\enum\\enumtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\models\\enum\\enumtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\bl\\interface\\icommonhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\bl\\interface\\icommonhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Authentication.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Services\\Implementation\\Authentication.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Services\\Implementation\\Authentication.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Services\\Implementation\\Authentication.cs",
+              "RelativeToolTip": "FinalDemo\\Services\\Implementation\\Authentication.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAuwFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T16:03:51.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IAuthentication.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Services\\Interface\\IAuthentication.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Services\\Interface\\IAuthentication.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Services\\Interface\\IAuthentication.cs",
+              "RelativeToolTip": "FinalDemo\\Services\\Interface\\IAuthentication.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T15:51:40.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Services\\JwtService.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Services\\JwtService.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Services\\JwtService.cs",
+              "RelativeToolTip": "FinalDemo\\Services\\JwtService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T15:31:17.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CLORD01.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Controllers\\CLORD01.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Controllers\\CLORD01.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Controllers\\CLORD01.cs",
+              "RelativeToolTip": "FinalDemo\\Controllers\\CLORD01.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAIwD8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T15:24:53.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IUSR.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Services\\Interface\\IUSR.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Services\\Interface\\IUSR.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Services\\Interface\\IUSR.cs",
+              "RelativeToolTip": "FinalDemo\\Services\\Interface\\IUSR.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T15:24:53.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\appsettings.json",
+              "RelativeDocumentMoniker": "FinalDemo\\appsettings.json",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\appsettings.json",
+              "RelativeToolTip": "FinalDemo\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-10T15:24:53.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Program.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Program.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Program.cs",
+              "RelativeToolTip": "FinalDemo\\Program.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAswEsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T15:24:53.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "USR01.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Models\\POCO\\USR01.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Models\\POCO\\USR01.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Models\\POCO\\USR01.cs",
+              "RelativeToolTip": "FinalDemo\\Models\\POCO\\USR01.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowDAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T15:24:53.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EnumRole.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Models\\ENUM\\EnumRole.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Models\\ENUM\\EnumRole.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Models\\ENUM\\EnumRole.cs",
+              "RelativeToolTip": "FinalDemo\\Models\\ENUM\\EnumRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T15:24:53.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ORD01.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Models\\POCO\\ORD01.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Models\\POCO\\ORD01.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Models\\POCO\\ORD01.cs",
+              "RelativeToolTip": "FinalDemo\\Models\\POCO\\ORD01.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAIA5wCkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T15:24:53.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BLUser.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\BL\\Operations\\BLUser.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\BL\\Operations\\BLUser.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\BL\\Operations\\BLUser.cs",
+              "RelativeToolTip": "FinalDemo\\BL\\Operations\\BLUser.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAAwJ4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T15:24:53.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PDT01.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Models\\POCO\\PDT01.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Models\\POCO\\PDT01.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Models\\POCO\\PDT01.cs",
+              "RelativeToolTip": "FinalDemo\\Models\\POCO\\PDT01.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T15:24:53.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BLPdt.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\BL\\Operations\\BLPdt.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\BL\\Operations\\BLPdt.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\BL\\Operations\\BLPdt.cs",
+              "RelativeToolTip": "FinalDemo\\BL\\Operations\\BLPdt.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAmwJsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T15:24:53.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DTOPDT01.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Models\\DTO\\DTOPDT01.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Models\\DTO\\DTOPDT01.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Models\\DTO\\DTOPDT01.cs",
+              "RelativeToolTip": "FinalDemo\\Models\\DTO\\DTOPDT01.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAiwCQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T15:24:53.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CLUSR01.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Controllers\\CLUSR01.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Controllers\\CLUSR01.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Controllers\\CLUSR01.cs",
+              "RelativeToolTip": "FinalDemo\\Controllers\\CLUSR01.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAcwFwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T15:24:53.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FinalDemo.csproj",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\FinalDemo.csproj",
+              "RelativeDocumentMoniker": "FinalDemo\\FinalDemo.csproj",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\FinalDemo.csproj",
+              "RelativeToolTip": "FinalDemo\\FinalDemo.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-10T15:24:53.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BLOrder.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\BL\\Operations\\BLOrder.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\BL\\Operations\\BLOrder.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\BL\\Operations\\BLOrder.cs",
+              "RelativeToolTip": "FinalDemo\\BL\\Operations\\BLOrder.cs",
+              "ViewState": "AgIAAC4BAAAAAAAAAAAjwCIBAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T15:24:53.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CLPDT01.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Controllers\\CLPDT01.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Controllers\\CLPDT01.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Controllers\\CLPDT01.cs",
+              "RelativeToolTip": "FinalDemo\\Controllers\\CLPDT01.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAqwEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T15:24:53.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ConvertExtention.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Extention\\ConvertExtention.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Extention\\ConvertExtention.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Extention\\ConvertExtention.cs",
+              "RelativeToolTip": "FinalDemo\\Extention\\ConvertExtention.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T15:24:53.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DTOORD01.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Models\\DTO\\DTOORD01.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Models\\DTO\\DTOORD01.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Models\\DTO\\DTOORD01.cs",
+              "RelativeToolTip": "FinalDemo\\Models\\DTO\\DTOORD01.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T15:24:53.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Response.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Models\\Response.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Models\\Response.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Models\\Response.cs",
+              "RelativeToolTip": "FinalDemo\\Models\\Response.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T15:24:53.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DTOUSR01.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Models\\DTO\\DTOUSR01.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Models\\DTO\\DTOUSR01.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Models\\DTO\\DTOUSR01.cs",
+              "RelativeToolTip": "FinalDemo\\Models\\DTO\\DTOUSR01.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAxwCcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T15:24:53.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "EnumType.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Models\\ENUM\\EnumType.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\Models\\ENUM\\EnumType.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Models\\ENUM\\EnumType.cs",
+              "RelativeToolTip": "FinalDemo\\Models\\ENUM\\EnumType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T15:24:53.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ICommonHandler.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\BL\\Interface\\ICommonHandler.cs",
+              "RelativeDocumentMoniker": "FinalDemo\\BL\\Interface\\ICommonHandler.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\BL\\Interface\\ICommonHandler.cs",
+              "RelativeToolTip": "FinalDemo\\BL\\Interface\\ICommonHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T15:24:53.97Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
