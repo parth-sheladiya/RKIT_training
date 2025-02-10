@@ -1,4 +1,14 @@
 
+using FinalDemo.BL.Operations;
+using FinalDemo.Models;
+using FinalDemo.Models.POCO;
+using FinalDemo.Services;
+using Microsoft.AspNetCore.Connections;
+using Microsoft.Extensions.Configuration;
+using ServiceStack.Data;
+using ServiceStack.OrmLite;
+
+
 namespace FinalDemo
 {
     public class Program
@@ -8,11 +18,30 @@ namespace FinalDemo
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddControllers();
             builder.Services.AddAuthorization();
 
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+            // Learn more about configuring Swagger/OpenAPI 
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            // Configure ORM Lite
+            //builder.Services.AddSingleton<IDbConnectionFactory>(new OrmLiteConnectionFactory(
+            //builder.Configuration.GetConnectionString("EcomDB"), MySqlDialect.Provider));
+
+
+            var connectionString = builder.Configuration.GetConnectionString("EcomDB");
+            builder.Services.AddSingleton<IDbConnectionFactory>(new OrmLiteConnectionFactory(
+               connectionString,
+               MySqlDialect.Provider
+           ));
+
+            builder.Services.AddScoped<BLUser>();
+            
+
+           
+            builder.Services.AddScoped<Response>();
+            builder.Services.AddScoped<USR01>();
 
             var app = builder.Build();
 
@@ -23,13 +52,12 @@ namespace FinalDemo
                 app.UseSwaggerUI();
             }
 
+           
+
             app.UseAuthorization();
 
+            app.MapControllers();
         
-            app.MapGet("/hello", 
-            {
-
-            }
                 app.Run();
         }
     }

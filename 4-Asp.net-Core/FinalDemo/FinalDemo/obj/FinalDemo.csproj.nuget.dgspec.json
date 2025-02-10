@@ -44,6 +44,18 @@
               "target": "Package",
               "version": "[7.0.4, )"
             },
+            "ServiceStack": {
+              "target": "Package",
+              "version": "[8.5.2, )"
+            },
+            "ServiceStack.OrmLite": {
+              "target": "Package",
+              "version": "[8.5.2, )"
+            },
+            "ServiceStack.OrmLite.MySql": {
+              "target": "Package",
+              "version": "[8.5.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
