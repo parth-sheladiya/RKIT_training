@@ -44,7 +44,7 @@ namespace customMiddlewareDemo
             // using  middleware with built-in format
             app.UseBMiddleware();
 
-            // conditional middleware (use in url)
+            // conditional middleware
             app.UseWhen(context => context.Request.Query.ContainsKey("partpatel"),
                 app =>
                 {
@@ -61,7 +61,7 @@ namespace customMiddlewareDemo
                 await context.Response.WriteAsync("3 Middlerware \n");
             });
 
-            #region Swagger Setup (For Development)
+            
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
@@ -69,7 +69,7 @@ namespace customMiddlewareDemo
                 app.UseSwaggerUI();
             }
 
-            #endregion
+            
 
             app.UseAuthorization();
             app.Run();

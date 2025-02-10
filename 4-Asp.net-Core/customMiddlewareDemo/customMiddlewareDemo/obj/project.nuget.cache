@@ -1,16 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "EN1ARy+T3IRKyK1d0TS/1UFGfmRibcR8UC2IGiFvjiyaa2w4CwRzPBT6zH98bM/NIZW6m+bRcw1xOVKfLMBpLQ==",
+  "dgSpecHash": "xJR1EbcjCfo=",
   "success": true,
-  "projectFilePath": "F:\\parth-415\\git-desk\\RKIT_training\\4-Asp.net-Core\\customMiddlewareDemo\\customMiddlewareDemo\\customMiddlewareDemo.csproj",
+  "projectFilePath": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\customMiddlewareDemo\\customMiddlewareDemo\\customMiddlewareDemo.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\parth.sh\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.4\\microsoft.aspnetcore.openapi.7.0.4.nupkg.sha512",
-    "C:\\Users\\parth.sh\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
-    "C:\\Users\\parth.sh\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
-    "C:\\Users\\parth.sh\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
-    "C:\\Users\\parth.sh\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
-    "C:\\Users\\parth.sh\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
-    "C:\\Users\\parth.sh\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+    "C:\\Users\\Parth\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.4\\microsoft.aspnetcore.openapi.7.0.4.nupkg.sha512",
+    "C:\\Users\\Parth\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\Parth\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\Parth\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\Parth\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\Parth\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\Parth\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
+    }
+  ]
 }

@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\customMiddlewareDemo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD40EF2-AEF8-4798-8775-B30F13D63070}|customMiddlewareDemo\\customMiddlewareDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\custommiddlewaredemo\\custommiddlewaredemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD40EF2-AEF8-4798-8775-B30F13D63070}|customMiddlewareDemo\\customMiddlewareDemo.csproj|solutionrelative:custommiddlewaredemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD40EF2-AEF8-4798-8775-B30F13D63070}|customMiddlewareDemo\\customMiddlewareDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\custommiddlewaredemo\\custommiddlewaredemo\\middleware\\bmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD40EF2-AEF8-4798-8775-B30F13D63070}|customMiddlewareDemo\\customMiddlewareDemo.csproj|solutionrelative:custommiddlewaredemo\\middleware\\bmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD40EF2-AEF8-4798-8775-B30F13D63070}|customMiddlewareDemo\\customMiddlewareDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\custommiddlewaredemo\\custommiddlewaredemo\\middleware\\basicmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD40EF2-AEF8-4798-8775-B30F13D63070}|customMiddlewareDemo\\customMiddlewareDemo.csproj|solutionrelative:custommiddlewaredemo\\middleware\\basicmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD40EF2-AEF8-4798-8775-B30F13D63070}|customMiddlewareDemo\\customMiddlewareDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\custommiddlewaredemo\\custommiddlewaredemo\\custommiddlewaredemo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{EDD40EF2-AEF8-4798-8775-B30F13D63070}|customMiddlewareDemo\\customMiddlewareDemo.csproj|solutionrelative:custommiddlewaredemo\\custommiddlewaredemo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD40EF2-AEF8-4798-8775-B30F13D63070}|customMiddlewareDemo\\customMiddlewareDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\custommiddlewaredemo\\custommiddlewaredemo\\custommiddlewaredemo.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}",
+      "RelativeMoniker": "D:0:0:{EDD40EF2-AEF8-4798-8775-B30F13D63070}|customMiddlewareDemo\\customMiddlewareDemo.csproj|solutionrelative:custommiddlewaredemo\\custommiddlewaredemo.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BMiddleware.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\customMiddlewareDemo\\customMiddlewareDemo\\Middleware\\BMiddleware.cs",
+              "RelativeDocumentMoniker": "customMiddlewareDemo\\Middleware\\BMiddleware.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\customMiddlewareDemo\\customMiddlewareDemo\\Middleware\\BMiddleware.cs",
+              "RelativeToolTip": "customMiddlewareDemo\\Middleware\\BMiddleware.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwBcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T14:34:43.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BasicMiddleware.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\customMiddlewareDemo\\customMiddlewareDemo\\Middleware\\BasicMiddleware.cs",
+              "RelativeDocumentMoniker": "customMiddlewareDemo\\Middleware\\BasicMiddleware.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\customMiddlewareDemo\\customMiddlewareDemo\\Middleware\\BasicMiddleware.cs",
+              "RelativeToolTip": "customMiddlewareDemo\\Middleware\\BasicMiddleware.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T14:34:43.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "customMiddlewareDemo",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\customMiddlewareDemo\\customMiddlewareDemo\\customMiddlewareDemo.csproj",
+              "RelativeDocumentMoniker": "customMiddlewareDemo\\customMiddlewareDemo.csproj",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\customMiddlewareDemo\\customMiddlewareDemo\\customMiddlewareDemo.csproj",
+              "RelativeToolTip": "customMiddlewareDemo\\customMiddlewareDemo.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-09T14:34:43.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "customMiddlewareDemo.csproj",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\customMiddlewareDemo\\customMiddlewareDemo\\customMiddlewareDemo.csproj",
+              "RelativeDocumentMoniker": "customMiddlewareDemo\\customMiddlewareDemo.csproj",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\customMiddlewareDemo\\customMiddlewareDemo\\customMiddlewareDemo.csproj",
+              "RelativeToolTip": "customMiddlewareDemo\\customMiddlewareDemo.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-09T14:34:43.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\customMiddlewareDemo\\customMiddlewareDemo\\Program.cs",
+              "RelativeDocumentMoniker": "customMiddlewareDemo\\Program.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\customMiddlewareDemo\\customMiddlewareDemo\\Program.cs",
+              "RelativeToolTip": "customMiddlewareDemo\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T14:34:43.725Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
