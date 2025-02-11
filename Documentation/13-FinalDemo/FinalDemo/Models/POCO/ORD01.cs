@@ -19,14 +19,14 @@ namespace FinalDemo.Models.POCO
 
         /// <summary>
         /// user id
-        ///  Foreign Key (relation with User)
+        ///  relation with User
         /// </summary>
         public int R01F01 { get; set; } 
 
 
         /// <summary>
         /// product id
-        /// foreign key relation with product 
+        ///relation with product 
         /// </summary>
         public int  T01F01 { get; set; }
 

@@ -36,7 +36,7 @@ namespace FinalDemo.Models.POCO
         /// <summary>
         /// user phone number
         /// </summary>
-        public long R01F05 { get; set; }
+        public string R01F05 { get; set; }
 
         /// <summary>
         /// user address
