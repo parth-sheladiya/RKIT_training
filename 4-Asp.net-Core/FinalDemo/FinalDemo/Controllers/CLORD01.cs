@@ -1,4 +1,5 @@
 ﻿using FinalDemo.BL.Operations;
+using FinalDemo.Filters;
 using FinalDemo.Models;
 using FinalDemo.Models.DTO;
 using FinalDemo.Models.ENUM;
@@ -26,6 +27,7 @@ namespace FinalDemo.Controllers
 
         [HttpGet]
         [Route("getAllOrders")]
+        [AuthFilter("Admin")]
         public IActionResult GetAllOrder()
         {
 
@@ -35,6 +37,7 @@ namespace FinalDemo.Controllers
 
         [HttpGet]
         [Route("getProductById")]
+        [AuthFilter("Admin")]
         public IActionResult GetOrderByid(int id)
         {
 
@@ -44,8 +47,8 @@ namespace FinalDemo.Controllers
 
 
         [HttpPost]
-        [Route("addUser")]
-
+        [Route("CreateOrder")]
+        [AuthFilter("User")]
         public IActionResult AddOrder(DTOORD01 objDtoORD01)
         {
 
@@ -61,7 +64,7 @@ namespace FinalDemo.Controllers
 
         [HttpPost]
         [Route("cancelOrder/{id}")]
-        
+        [AuthFilter("User")]
         public IActionResult CancelOrder(int id)
         {
             // cancel order

@@ -61,7 +61,7 @@ namespace FinalDemo.BL.Operations
         /// get all orders
         /// </summary>
         /// <param name="status"></param>
-        /// <returns></returns>
+        /// <returns>list of orders</returns>
         public  Responce GetAllOrder(string status)
         {
             try
@@ -73,6 +73,7 @@ namespace FinalDemo.BL.Operations
                     List<ORD01> getOrder = db.Select<ORD01>(o=>o.D01F06 == status);
                     if(getOrder.Count==0)
                     {
+                        // not order available
                         _objResponce.IsError = true;
                         _objResponce.Message = $"no order available";
                     }
@@ -180,7 +181,7 @@ namespace FinalDemo.BL.Operations
             }
             else
             {
-                // Handle other cases if needed
+                // it is for other case
                 _id = 0;
             }
         }

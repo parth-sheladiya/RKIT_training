@@ -1,4 +1,5 @@
 ﻿using FinalDemo.BL.Operations;
+using FinalDemo.Filters;
 using FinalDemo.Models;
 using FinalDemo.Models.DTO;
 using FinalDemo.Models.ENUM;
@@ -22,6 +23,7 @@ namespace FinalDemo.Controllers
 
         [HttpGet]
         [Route("getAllProducts")]
+        [AuthFilter("Admin","User")]
         public IActionResult GetAllProducts()
         {
 
@@ -31,6 +33,7 @@ namespace FinalDemo.Controllers
 
         [HttpGet]
         [Route("getProductById")]
+        [AuthFilter("Admin", "User")]
         public IActionResult GetProductByid(int id)
         {
 
@@ -41,7 +44,7 @@ namespace FinalDemo.Controllers
 
         [HttpPost]
         [Route("addProduct")]
-
+        [AuthFilter("Admin")]
         public IActionResult AddPRoduct(DTOPDT01 objDtoPDT01)
         {
 
@@ -57,6 +60,7 @@ namespace FinalDemo.Controllers
 
         [HttpPut]
         [Route("updateProduct")]
+        [AuthFilter("Admin")]
         public IActionResult UpdateProduct(DTOPDT01 objDtoPDT01)
         {
             _objBLPdt.typeOfOperation = EnumType.U;
@@ -71,6 +75,7 @@ namespace FinalDemo.Controllers
 
         [HttpDelete]
         [Route("deleteProduct")]
+        [AuthFilter("Admin")]
         public IActionResult DeleteProduct(int id)
         {
             _objResponse = _objBLPdt.Delete(id);

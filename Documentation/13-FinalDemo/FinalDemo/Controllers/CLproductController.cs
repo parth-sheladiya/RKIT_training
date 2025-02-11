@@ -12,7 +12,7 @@ using System.Web.Http;
 namespace FinalDemo.Controllers
 {
     /// <summary>
-    /// Controller for managing product-related API endpoints.
+    /// Controller for  product-related API 
     /// </summary>
     [RoutePrefix("api/CLproduct")]
     public class CLproductController : ApiController

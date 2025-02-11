@@ -1,4 +1,5 @@
 ﻿using FinalDemo.BL.Operations;
+using FinalDemo.Filters;
 using FinalDemo.Models;
 using FinalDemo.Models.DTO;
 using FinalDemo.Models.ENUM;
@@ -31,7 +32,9 @@ namespace FinalDemo.Controllers
         /// </summary>
         /// <returns>list of all users</returns>
         [HttpGet]
+
         [Route("getAllUserResords")]
+        [AuthFilter("Admin")]
         public IActionResult GetAllUser()
         {
             
@@ -43,8 +46,10 @@ namespace FinalDemo.Controllers
         ///speciific id 
         /// </summary>
         /// <returns>seach by id</returns>
+        
         [HttpGet]
         [Route("getUserById")]
+        [AuthFilter("Admin")]
         public IActionResult GetUserByid(int id)
         {
 
@@ -71,6 +76,7 @@ namespace FinalDemo.Controllers
 
         [HttpPut]
         [Route("updateUser")]
+        [AuthFilter]
         public IActionResult UpdateUser(DTOUSR01 objDtoUser01)
         {
             _objBLUser.typeOfOperation = EnumType.U;
@@ -86,6 +92,7 @@ namespace FinalDemo.Controllers
 
         [HttpDelete]
         [Route("deleteUser")]
+        [AuthFilter]
         public IActionResult DeleteUser(int id) 
         {
             _objResponse = _objBLUser.Delete(id);

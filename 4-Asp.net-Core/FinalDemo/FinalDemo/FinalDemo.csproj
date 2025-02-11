@@ -9,15 +9,11 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.4" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="5.4.0" />
     <PackageReference Include="ServiceStack" Version="8.5.2" />
     <PackageReference Include="ServiceStack.OrmLite" Version="8.5.2" />
     <PackageReference Include="ServiceStack.OrmLite.MySql" Version="8.5.2" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Filters\" />
-    <Folder Include="Middleware\" />
   </ItemGroup>
 
 </Project>

@@ -52,6 +52,7 @@ namespace FinalDemo.Models.POCO
         /// <summary>
         /// update at
         /// </summary>
+        [IgnoreOnInsert]
         public DateTime T01F08 { get; set; } = DateTime.Now;
     }
 }

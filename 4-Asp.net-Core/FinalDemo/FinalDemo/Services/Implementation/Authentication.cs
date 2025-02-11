@@ -3,6 +3,7 @@ using FinalDemo.Services.Interface;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Text;
 
 namespace FinalDemo.Services.Implementation
 {
@@ -21,11 +22,11 @@ namespace FinalDemo.Services.Implementation
         {
             string roleString = role.ToString();
 
-            var issuer = _configuration["JwtSettings:Issuer"];
-            var audience = _configuration["JwtSettings:Audience"];
-            var Key = _configuration["JwtSettings:Key"];
+            var issuer = _configuration["Jwt:Issuer"];
+            var audience = _configuration["Jwt:Audience"];
+            var Key = _configuration["Jwt:Key"];
 
-            var securityKey = new SymmetricSecurityKey(Convert.FromBase64String(Key));
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Key));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
             var claims = new[]
@@ -50,9 +51,9 @@ namespace FinalDemo.Services.Implementation
         {
             try
             {
-                var issuer = _configuration["JwtSettings:Issuer"];
-                var audience = _configuration["JwtSettings:Audience"];
-                var signingKey = _configuration["JwtSettings:SigningKey"];
+                var issuer = _configuration["Jwt:Issuer"];
+                var audience = _configuration["Jwt:Audience"];
+                var Key = _configuration["Jwt:Key"];
 
                 var tokenValidationParameters = new TokenValidationParameters
                 {
@@ -62,7 +63,7 @@ namespace FinalDemo.Services.Implementation
                     ValidateIssuerSigningKey = true,
                     ValidIssuer = issuer,
                     ValidAudience = audience,
-                    IssuerSigningKey = new SymmetricSecurityKey(Convert.FromBase64String(signingKey))
+                    IssuerSigningKey = new SymmetricSecurityKey(Convert.FromBase64String(Key))
                 };
 
                 ClaimsPrincipal claimsPrincipal = _tokenHandler.ValidateToken(token, tokenValidationParameters, out SecurityToken validatedToken);

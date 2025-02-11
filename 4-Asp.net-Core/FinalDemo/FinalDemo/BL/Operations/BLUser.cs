@@ -50,6 +50,7 @@ namespace FinalDemo.BL.Operations
 
                     // success responce 
                     _objResponse.Message = $"there are {res.Count} users available";
+                    _objResponse.Data= res;
 
                 }
                 

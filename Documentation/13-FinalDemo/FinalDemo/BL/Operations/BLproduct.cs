@@ -55,7 +55,7 @@ namespace FinalDemo.BL.Operations
         }
 
         /// <summary>
-        /// get all method
+        /// get all products
         /// </summary>
         /// <returns></returns>
         public Responce GetAll()
@@ -207,14 +207,14 @@ namespace FinalDemo.BL.Operations
                     // error handler
                     _objResponce.IsError = true;
                     _objResponce.Message = "ID must be greater than 0";
-                    _objResponce.Data = null;  // No data in case of error
+                    _objResponce.Data = null;  
                 }
                 else
                 {
                     // obj error handler
                     _objResponce.IsError = false;
                     _objResponce.Message = "Validation successful";
-                    _objResponce.Data = new { _id };  // Returning the validated ID as data (or any other data you want)
+                    
                 }
 
 
@@ -282,14 +282,15 @@ namespace FinalDemo.BL.Operations
             //}
 
             // Check if product quantity is 0 before deleting
-            var productDetails = product.Data as PDT01;  // Assuming you have a Product object
+            var productDetails = product.Data as PDT01;  
             if (productDetails != null && productDetails.T01F05 == 0)
             {
                 using (var db = _dbfactory.OpenDbConnection())
                 {
                     try
                     {
-                        db.DeleteById<PDT01>(id);  // Deleting the record by ID
+                        // Deleting the record by ID
+                        db.DeleteById<PDT01>(id);  
                     }
                     catch (Exception ex)
                     {
@@ -304,11 +305,11 @@ namespace FinalDemo.BL.Operations
                 // Success response after deletion
                 _objResponce.IsError = false;
                 _objResponce.Message = "Product deleted successfully";
-                _objResponce.Data = null;  // No data to return after deletion
+                _objResponce.Data = null; 
             }
             else
             {
-                // Prevent deletion if quantity is not 0
+                // not deletion if quantity is not 0
                 _objResponce.IsError = true;
                 _objResponce.Message = "Product cannot be deleted as quantity is not 0.";
                 _objResponce.Data = null;

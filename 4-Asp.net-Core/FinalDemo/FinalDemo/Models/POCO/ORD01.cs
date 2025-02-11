@@ -52,6 +52,7 @@ namespace FinalDemo.Models.POCO
         /// <summary>
         /// update at
         /// </summary>
+        
         public DateTime D01F08 { get; set; } = DateTime.Now;
     }
 }

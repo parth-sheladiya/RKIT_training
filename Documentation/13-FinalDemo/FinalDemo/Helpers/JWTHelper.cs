@@ -17,14 +17,14 @@ using System.Security.Cryptography;
 namespace FinalDemo.Helpers
 {
     /// <summary>
-    /// helper class for generating and validating jwt tokens.
+    ///generating and validating jwt tokens.
     /// </summary>
     public class JWTHelper
     {
         /// <summary>
-        /// secret key
+        ///  secret key it is  used to token validation.
         /// </summary>
-        private const string SecretKey = "parthsheladiya123456789sheladiyaparth"; // the secret key used for token validation.
+        private const string SecretKey = "parthsheladiya123456789sheladiyaparth";
 
         /// <summary>
         /// validates the jwt token and returns the claimsprincipal if valid.
@@ -80,7 +80,7 @@ namespace FinalDemo.Helpers
             {
                 new Claim(ClaimTypes.Name, username),
                 new Claim(ClaimTypes.NameIdentifier , userId.ToString()),
-                new Claim(ClaimTypes.Role, roleString) // use enum as string
+                new Claim(ClaimTypes.Role, roleString) 
             };
 
             // generate symmetric security key
@@ -107,7 +107,7 @@ namespace FinalDemo.Helpers
         /// </summary>
         /// <param name="token">the jwt token.</param>
         /// <returns>returns user id as an integer.</returns>
-        /// <exception cref="UnauthorizedAccessException">throws exception if token is invalid or user id is missing.</exception>
+        /// <exception cref="UnauthorizedAccessException">error.</exception>
         public static int GetUserIdFromToken(string token)
         {
             // create jwt security token handler

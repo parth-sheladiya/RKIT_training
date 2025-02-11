@@ -141,13 +141,13 @@ namespace FinalDemo.BL.Operations
                         return _objResponse;
                     }
 
-                    // Product quantity check
-                    if (product.T01F05 < _objORD01.D01F04)
-                    {
-                        _objResponse.IsError = true;
-                        _objResponse.Message = "Insufficient product quantity..";
-                        return _objResponse;
-                    }
+                    //// Product quantity check
+                    //if (product.T01F05 < _objORD01.D01F04)
+                    //{
+                    //    _objResponse.IsError = true;
+                    //    _objResponse.Message = "Insufficient product quantity..";
+                    //    return _objResponse;
+                    //}
 
                     // Calculate total amount
                     decimal totalAmount = product.T01F06 * _objORD01.D01F04;
@@ -156,25 +156,18 @@ namespace FinalDemo.BL.Operations
                     if (typeOfOperation == EnumType.A)
                     {
                         // Check if updating the product quantity will make it negative
-                        if (product.T01F05 - _objORD01.D01F04 < 0)
-                        {
-                            _objResponse.IsError = true;
-                            _objResponse.Message = "Insufficient stock. Please check the product quantity before ordering.";
-                            return _objResponse;
-                        }
+                        //if (product.T01F05 - _objORD01.D01F04 < 0)
+                        //{
+                        //    _objResponse.IsError = true;
+                        //    _objResponse.Message = "Insufficient stock. Please check the product quantity before ordering.";
+                        //    return _objResponse;
+                        //}
                         // Insert new order
                         db.Insert(_objORD01);
 
                         // Update product quantity
                         product.T01F05 -= _objORD01.D01F04;
                         db.Update(product);
-
-                        //return new Responce
-                        //{
-                        //    IsError = false,
-                        //    Message = "Order added successfully.",
-                        //    Data = _objOrder
-                        //};
 
 
                         _objResponse.IsError = false;
@@ -215,7 +208,6 @@ namespace FinalDemo.BL.Operations
         /// <returns></returns>
         public Response CancelOrder(int id)
         {
-           
             using (var db = _dbfactory.OpenDbConnection())
             {
                 try
@@ -228,6 +220,14 @@ namespace FinalDemo.BL.Operations
                     {
                         _objResponse.IsError = true;
                         _objResponse.Message = "Order not found.";
+                        return _objResponse;
+                    }
+
+                    // Check if the order is already cancelled
+                    if (order.D01F06 == "cancelled")
+                    {
+                        _objResponse.IsError = true;
+                        _objResponse.Message = "Order is already cancelled.";
                         return _objResponse;
                     }
 
@@ -247,13 +247,12 @@ namespace FinalDemo.BL.Operations
                     db.Update(product);  // Save the updated product details
 
                     // Update the order status to "Cancelled"
-                    order.D01F06 = "Cancelled";
+                    order.D01F06 = "cancelled";
                     db.Update(order);  // Save the changes to the order
 
                     // Return success response
                     _objResponse.IsError = false;
-                    _objResponse.Message = "your order has been cancelled";
-                    
+                    _objResponse.Message = "Your order has been cancelled.";
                 }
                 catch (Exception ex)
                 {
@@ -264,6 +263,7 @@ namespace FinalDemo.BL.Operations
 
             return _objResponse;
         }
+
 
         /// <summary>
         /// change status

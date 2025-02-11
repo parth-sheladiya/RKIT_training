@@ -11,7 +11,7 @@ using System.Web.Http;
 namespace FinalDemo.Controllers
 {
     /// <summary>
-    /// Controller for handling Order-related operations
+    /// Controller for  Order-related operations
     /// </summary>
     public class CLorderController : ApiController
     {
@@ -28,7 +28,7 @@ namespace FinalDemo.Controllers
         }
 
         /// <summary>
-        /// Retrieves all orders based on status (Admin only)
+        /// Retrieves all orders based on status Admin only 
         /// </summary>
         /// <param name="status">Order status filter</param>
         [HttpGet]
@@ -42,9 +42,13 @@ namespace FinalDemo.Controllers
             return Ok(_objResponce);
         }
 
+
+
+
         /// <summary>
         /// Retrieves the order profile for the logged-in user
         /// </summary>
+        /// <returns></returns>
         [HttpGet]
         [Route("GetOrderProfile")]
         [JWTAuthorizationFilter]
@@ -89,7 +93,7 @@ namespace FinalDemo.Controllers
         }
 
         /// <summary>
-        /// Cancels an order by ID (User only)
+        /// Cancels an order by ID User only
         /// </summary>
         /// <param name="id">Order ID</param>
         [HttpPost]

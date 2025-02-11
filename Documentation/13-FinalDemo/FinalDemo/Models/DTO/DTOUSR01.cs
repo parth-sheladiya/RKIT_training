@@ -33,7 +33,7 @@ namespace FinalDemo.Models.DTO
         /// <summary>
         /// user role
         /// </summary>
-        public long R01F05 { get; set; }
+        public string R01F05 { get; set; }
 
 
         /// <summary>

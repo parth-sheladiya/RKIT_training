@@ -12,12 +12,12 @@ namespace FinalDemo.Models.POCO
         [PrimaryKey]
         [AutoIncrement]
         public int R01F01 { get; set; }
-
+        [Unique]
         /// <summary>
         /// user name
         /// </summary>
         public string R01F02 { get; set; }
-
+        [Unique]
         /// <summary>
         /// user email
         /// </summary>
@@ -41,17 +41,19 @@ namespace FinalDemo.Models.POCO
         /// <summary>
         /// user role
         /// </summary>
+        [IgnoreOnUpdate]
         public EnumRole R01F07 { get; set; }
 
         /// <summary>
         /// created at
         /// </summary>
         [IgnoreOnUpdate]
-        public DateTime R01F08 { get; set; } 
+        public DateTime R01F08 { get; set; }  = DateTime.Now;
 
         /// <summary>
         /// updated at
         /// </summary>
-        public DateTime R01F09 { get; set; }
+        [IgnoreOnInsert]
+        public DateTime R01F09 { get; set; }  = DateTime.Now;
     }
 }

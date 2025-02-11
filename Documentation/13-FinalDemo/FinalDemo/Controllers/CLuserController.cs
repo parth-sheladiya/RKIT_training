@@ -42,7 +42,7 @@ namespace FinalDemo.Controllers
         /// <summary>
         /// get all users
         /// </summary>
-        /// <returns></returns>
+        /// <returns>list of</returns>
         [HttpGet]
         [Route("Users")]
         [JWTAuthorizationFilter(EnmRoleType.Admin)] // Only Admin can access this method

@@ -1,16 +1,20 @@
-
-using FinalDemo.BL.Operations;
+﻿using FinalDemo.BL.Operations;
 using FinalDemo.Models;
 using FinalDemo.Models.POCO;
-using Microsoft.AspNetCore.Connections;
+using FinalDemo.Services.Interface;
+using FinalDemo.Filters;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 using ServiceStack.Data;
 using ServiceStack.OrmLite;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
 using System.Text;
-using FinalDemo.Services.Interface;
-
+using Microsoft.OpenApi.Models;
+using FinalDemo.Middleware;
 
 namespace FinalDemo
 {
@@ -20,6 +24,15 @@ namespace FinalDemo
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            var jwtKey = builder.Configuration["Jwt:Key"];
+            var jwtIssuer = builder.Configuration["Jwt:Issuer"];
+
+            if (string.IsNullOrEmpty(jwtKey) || string.IsNullOrEmpty(jwtIssuer))
+            {
+                throw new InvalidOperationException("JWT Key or Issuer is not configured properly.");
+            }
+
+            
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
@@ -29,56 +42,100 @@ namespace FinalDemo
                         ValidateAudience = true,
                         ValidateLifetime = true,
                         ValidateIssuerSigningKey = true,
-                        ValidIssuer = builder.Configuration["Jwt:Issuer"],
-                        ValidAudience = builder.Configuration["Jwt:Issuer"],
-                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+                        ValidIssuer = jwtIssuer,
+                        ValidAudience = jwtIssuer,
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey))
                     };
                 });
-            // Add services to the container.
-            builder.Services.AddControllers();
+
+            builder.Services.AddMemoryCache();
+            builder.Services.AddControllers(options =>
+            {
+                // options.Filters.Add(typeof(AuthFilter)); ❌ **Remove this if not needed globally**
+            });
+            
+
             builder.Services.AddAuthorization();
 
-            // Learn more about configuring Swagger/OpenAPI 
+            
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll", policy =>
+                {
+                    policy.AllowAnyOrigin()
+                          .AllowAnyMethod()
+                          .AllowAnyHeader();
+                });
+            });
+
+            
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+            builder.Services.AddSwaggerGen(options =>
+            {
+                options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    Type = SecuritySchemeType.Http,
+                    BearerFormat = "JWT",
+                    Scheme = "Bearer",
+                    In = ParameterLocation.Header,
+                    Description = "Enter <your-token> to authenticate."
+                });
+                options.AddSecurityRequirement(new OpenApiSecurityRequirement
+                    {
+                        {
+                            new OpenApiSecurityScheme
+                            {
+                                Reference = new OpenApiReference
+                                {
+                                    Type = ReferenceType.SecurityScheme,
+                                    Id = "Bearer"
+                                }
+                            },
+                            new string[] {}
+                        }
+                    });
+            });
 
-            // Configure ORM Lite
-            //builder.Services.AddSingleton<IDbConnectionFactory>(new OrmLiteConnectionFactory(
-            //builder.Configuration.GetConnectionString("EcomDB"), MySqlDialect.Provider));
-
-
+           
             var connectionString = builder.Configuration.GetConnectionString("EcomDB");
             builder.Services.AddSingleton<IDbConnectionFactory>(new OrmLiteConnectionFactory(
                connectionString,
                MySqlDialect.Provider
            ));
 
-            builder.Services.AddScoped<BLUser>();
-            
-
            
+            builder.Services.AddScoped<BLUser>();
             builder.Services.AddScoped<Response>();
-            builder.Services.AddScoped< IUSR01,BLUser>();
+            builder.Services.AddScoped<BLAuth>();
+            builder.Services.AddScoped<IUSR01, BLUser>();
             builder.Services.AddScoped<BLPdt>();
             builder.Services.AddScoped<BLOrder>();
 
+            builder.Services.AddTransient<USR01>();
+            builder.Services.AddTransient<PDT01>();
+            builder.Services.AddTransient<ORD01>();
+
+            builder.Services.AddSingleton<JwtSecurityTokenHandler>();
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
+            app.UseMiddleware<LoggingMiddleware>();
+
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
+            
+           
+            
 
             app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllers();
-        
-                app.Run();
+
+            app.Run();
         }
     }
 }
