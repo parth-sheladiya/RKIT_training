@@ -15,7 +15,7 @@ namespace FinalDemo.BL.Operations
     {
         private readonly IDbConnectionFactory _dbfactory;
         private Response _objResponse;
-        private int _id;
+        public int _id;
         private ORD01 _objORD01;
         public EnumType typeOfOperation { get; set; }
         public EnumRole typeOfRole { get; set; }
@@ -142,12 +142,12 @@ namespace FinalDemo.BL.Operations
                     }
 
                     //// Product quantity check
-                    //if (product.T01F05 < _objORD01.D01F04)
-                    //{
-                    //    _objResponse.IsError = true;
-                    //    _objResponse.Message = "Insufficient product quantity..";
-                    //    return _objResponse;
-                    //}
+                    if (product.T01F05 < _objORD01.D01F04)
+                    {
+                        _objResponse.IsError = true;
+                        _objResponse.Message = "Insufficient product quantity..";
+                        return _objResponse;
+                    }
 
                     // Calculate total amount
                     decimal totalAmount = product.T01F06 * _objORD01.D01F04;
@@ -156,12 +156,12 @@ namespace FinalDemo.BL.Operations
                     if (typeOfOperation == EnumType.A)
                     {
                         // Check if updating the product quantity will make it negative
-                        //if (product.T01F05 - _objORD01.D01F04 < 0)
-                        //{
-                        //    _objResponse.IsError = true;
-                        //    _objResponse.Message = "Insufficient stock. Please check the product quantity before ordering.";
-                        //    return _objResponse;
-                        //}
+                        if (product.T01F05 - _objORD01.D01F04 < 0)
+                        {
+                            _objResponse.IsError = true;
+                            _objResponse.Message = "Insufficient stock. Please check the product quantity before ordering.";
+                            return _objResponse;
+                        }
                         // Insert new order
                         db.Insert(_objORD01);
 
@@ -228,6 +228,13 @@ namespace FinalDemo.BL.Operations
                     {
                         _objResponse.IsError = true;
                         _objResponse.Message = "Order is already cancelled.";
+                        return _objResponse;
+                    }
+
+                    if (order.D01F06 == "success")
+                    {
+                        _objResponse.IsError = true;
+                        _objResponse.Message = "order is success sorry do not change status";
                         return _objResponse;
                     }
 

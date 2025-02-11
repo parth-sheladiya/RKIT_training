@@ -1,0 +1,490 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "FinalDemo",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/CLAuth/Login": {
+      "post": {
+        "tags": [
+          "CLAuth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DTOAUTH"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DTOAUTH"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DTOAUTH"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/CLORD01/getAllOrders": {
+      "get": {
+        "tags": [
+          "CLORD01"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/CLORD01/getProductById": {
+      "get": {
+        "tags": [
+          "CLORD01"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/CLORD01/CreateOrder": {
+      "post": {
+        "tags": [
+          "CLORD01"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DTOORD01"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DTOORD01"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DTOORD01"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/CLORD01/cancelOrder/{id}": {
+      "post": {
+        "tags": [
+          "CLORD01"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/CLPDT01/getAllProducts": {
+      "get": {
+        "tags": [
+          "CLPDT01"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/CLPDT01/getProductById": {
+      "get": {
+        "tags": [
+          "CLPDT01"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/CLPDT01/addProduct": {
+      "post": {
+        "tags": [
+          "CLPDT01"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DTOPDT01"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DTOPDT01"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DTOPDT01"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/CLPDT01/updateProduct": {
+      "put": {
+        "tags": [
+          "CLPDT01"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DTOPDT01"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DTOPDT01"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DTOPDT01"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/CLPDT01/deleteProduct": {
+      "delete": {
+        "tags": [
+          "CLPDT01"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/CLUSR01/getAllUserResords": {
+      "get": {
+        "tags": [
+          "CLUSR01"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/CLUSR01/getUserById": {
+      "get": {
+        "tags": [
+          "CLUSR01"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/CLUSR01/addUser": {
+      "post": {
+        "tags": [
+          "CLUSR01"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DTOUSR01"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DTOUSR01"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DTOUSR01"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/CLUSR01/updateUser": {
+      "put": {
+        "tags": [
+          "CLUSR01"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DTOUSR01"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DTOUSR01"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DTOUSR01"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/CLUSR01/deleteUser": {
+      "delete": {
+        "tags": [
+          "CLUSR01"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "DTOAUTH": {
+        "type": "object",
+        "properties": {
+          "r01F02": {
+            "type": "string",
+            "nullable": true
+          },
+          "r01F04": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DTOORD01": {
+        "type": "object",
+        "properties": {
+          "r01F01": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "t01F01": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "d01F04": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DTOPDT01": {
+        "type": "object",
+        "properties": {
+          "t01F01": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "t01F02": {
+            "type": "string",
+            "nullable": true
+          },
+          "t01F03": {
+            "type": "string",
+            "nullable": true
+          },
+          "t01F04": {
+            "type": "string",
+            "nullable": true
+          },
+          "t01F05": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "t01F06": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DTOUSR01": {
+        "type": "object",
+        "properties": {
+          "r01F01": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "r01F02": {
+            "type": "string",
+            "nullable": true
+          },
+          "r01F03": {
+            "type": "string",
+            "nullable": true
+          },
+          "r01F04": {
+            "type": "string",
+            "nullable": true
+          },
+          "r01F05": {
+            "type": "string",
+            "nullable": true
+          },
+          "r01F06": {
+            "type": "string",
+            "nullable": true
+          },
+          "r01F07": {
+            "$ref": "#/components/schemas/EnumRole"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EnumRole": {
+        "enum": [
+          0,
+          1
+        ],
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "Enter <your-token> to authenticate.",
+        "scheme": "Bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

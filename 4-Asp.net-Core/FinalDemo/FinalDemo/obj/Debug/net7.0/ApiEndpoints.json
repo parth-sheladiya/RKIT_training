@@ -1,0 +1,224 @@
+[
+  {
+    "ContainingType": "FinalDemo.Controllers.CLAuth",
+    "Method": "Login",
+    "RelativePath": "api/CLAuth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objDTO",
+        "Type": "FinalDemo.Models.DTO.DTOAUTH",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalDemo.Controllers.CLORD01",
+    "Method": "CancelOrder",
+    "RelativePath": "api/CLORD01/cancelOrder/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalDemo.Controllers.CLORD01",
+    "Method": "AddOrder",
+    "RelativePath": "api/CLORD01/CreateOrder",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objDtoORD01",
+        "Type": "FinalDemo.Models.DTO.DTOORD01",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalDemo.Controllers.CLORD01",
+    "Method": "GetAllOrder",
+    "RelativePath": "api/CLORD01/getAllOrders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalDemo.Controllers.CLORD01",
+    "Method": "GetOrderByid",
+    "RelativePath": "api/CLORD01/getProductById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalDemo.Controllers.CLPDT01",
+    "Method": "AddPRoduct",
+    "RelativePath": "api/CLPDT01/addProduct",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objDtoPDT01",
+        "Type": "FinalDemo.Models.DTO.DTOPDT01",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalDemo.Controllers.CLPDT01",
+    "Method": "DeleteProduct",
+    "RelativePath": "api/CLPDT01/deleteProduct",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalDemo.Controllers.CLPDT01",
+    "Method": "GetAllProducts",
+    "RelativePath": "api/CLPDT01/getAllProducts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalDemo.Controllers.CLPDT01",
+    "Method": "GetProductByid",
+    "RelativePath": "api/CLPDT01/getProductById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalDemo.Controllers.CLPDT01",
+    "Method": "UpdateProduct",
+    "RelativePath": "api/CLPDT01/updateProduct",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objDtoPDT01",
+        "Type": "FinalDemo.Models.DTO.DTOPDT01",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalDemo.Controllers.CLUSR01",
+    "Method": "AddUser",
+    "RelativePath": "api/CLUSR01/addUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objDtoUser01",
+        "Type": "FinalDemo.Models.DTO.DTOUSR01",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalDemo.Controllers.CLUSR01",
+    "Method": "DeleteUser",
+    "RelativePath": "api/CLUSR01/deleteUser",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalDemo.Controllers.CLUSR01",
+    "Method": "GetAllUser",
+    "RelativePath": "api/CLUSR01/getAllUserResords",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalDemo.Controllers.CLUSR01",
+    "Method": "GetUserByid",
+    "RelativePath": "api/CLUSR01/getUserById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalDemo.Controllers.CLUSR01",
+    "Method": "UpdateUser",
+    "RelativePath": "api/CLUSR01/updateUser",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objDtoUser01",
+        "Type": "FinalDemo.Models.DTO.DTOUSR01",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

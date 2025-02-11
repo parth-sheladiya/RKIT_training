@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\bl\\operations\\blorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\bl\\operations\\blorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\bl\\operations\\bluser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\bl\\operations\\bluser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\controllers\\clord01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\controllers\\clord01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\bl\\operations\\blorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\bl\\operations\\blorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\models\\dto\\dtoord01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,6 +17,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\models\\poco\\ord01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\models\\poco\\ord01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\bl\\operations\\bluser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|solutionrelative:finaldemo\\bl\\operations\\bluser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D2317AA-AAB5-4FB5-9774-2561D7F2A2EA}|FinalDemo\\FinalDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\finaldemo\\finaldemo\\controllers\\clusr01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -118,7 +118,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
@@ -148,7 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "BLUser.cs",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\BL\\Operations\\BLUser.cs",
               "RelativeDocumentMoniker": "FinalDemo\\BL\\Operations\\BLUser.cs",
@@ -186,33 +186,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "BLOrder.cs",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\BL\\Operations\\BLOrder.cs",
               "RelativeDocumentMoniker": "FinalDemo\\BL\\Operations\\BLOrder.cs",
               "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\BL\\Operations\\BLOrder.cs",
               "RelativeToolTip": "FinalDemo\\BL\\Operations\\BLOrder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAuwH0AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-10T15:24:53.847Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "CLORD01.cs",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Controllers\\CLORD01.cs",
               "RelativeDocumentMoniker": "FinalDemo\\Controllers\\CLORD01.cs",
               "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Controllers\\CLORD01.cs",
               "RelativeToolTip": "FinalDemo\\Controllers\\CLORD01.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAgwDkAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwDgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-10T15:24:53.84Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "ORD01.cs",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Models\\POCO\\ORD01.cs",
               "RelativeDocumentMoniker": "FinalDemo\\Models\\POCO\\ORD01.cs",
@@ -225,7 +225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "DTOORD01.cs",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\FinalDemo\\FinalDemo\\Models\\DTO\\DTOORD01.cs",
               "RelativeDocumentMoniker": "FinalDemo\\Models\\DTO\\DTOORD01.cs",

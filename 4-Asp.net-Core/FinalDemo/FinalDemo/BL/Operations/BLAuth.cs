@@ -107,5 +107,31 @@ namespace FinalDemo.BL.Operations
                 return result;
             }
         }
+
+
+        public int GetLoggedInUserId(string token)
+        {
+            var claimsPrincipal = ValidateToken(token);
+            if (claimsPrincipal == null)
+            {
+                throw new Exception("Invalid Token");
+            }
+
+            var userIdClaim = claimsPrincipal.FindFirst(ClaimTypes.NameIdentifier);
+            if (userIdClaim == null)
+            {
+                throw new Exception("UserId claim not found in token");
+            }
+
+            // Safe integer conversion with error handling
+            if (int.TryParse(userIdClaim.Value, out int userId))
+            {
+                return userId;  // Integer UserId return karega
+            }
+
+            throw new Exception("Invalid UserId format in token");
+        }
+
+
     }
 }

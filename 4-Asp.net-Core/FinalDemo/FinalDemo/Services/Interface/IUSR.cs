@@ -10,6 +10,6 @@ namespace FinalDemo.Services.Interface
 
         public Response GetByid(int id);
 
-        public Response Delete(int id);
+        public Response Delete(int id , int loggedInUserId);
     }
 }

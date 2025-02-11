@@ -18,7 +18,7 @@ namespace FinalDemo.BL.Operations
         private readonly IDbConnectionFactory _dbfactory;
         private readonly string _connectionString;
         private Response _objResponse;
-        private int _id;
+        public int _id;
         private USR01 _objUSR01;
         public EnumType typeOfOperation { get; set; }
 
@@ -28,6 +28,7 @@ namespace FinalDemo.BL.Operations
             _dbfactory = dbfactory;
             _objResponse = new Response();
             _objUSR01 = objUSR01;
+            
         }
 
         public Response GetAll()
@@ -83,15 +84,21 @@ namespace FinalDemo.BL.Operations
         }
         public void PreSave(DTOUSR01 objUsrDto)
         {
-            _objUSR01 = objUsrDto.Convert<USR01>(); 
+            _objUSR01 = objUsrDto.Convert<USR01>();
 
-            // edit 
+            //edit
             if (typeOfOperation == EnumType.U)
+            {
+                _id = objUsrDto.R01F01;
+            }
+            if (typeOfOperation == EnumType.D)
             {
                 _id = objUsrDto.R01F01;
             }
 
         }
+
+
         public bool IsUSRExist(int id)
         {
             using (var db = _dbfactory.OpenDbConnection())
@@ -103,17 +110,14 @@ namespace FinalDemo.BL.Operations
         {
             if (typeOfOperation == EnumType.U) 
             {
-                if (!(_id > 0))
-                {
-                    _objResponse.IsError = true;
-                    _objResponse.Message = "Enter Correct Id"; 
-                }
-                else if (!IsUSRExist(_id))
+                
+                if (!IsUSRExist(_id))
                 {
                     _objResponse.IsError = true;
                     _objResponse.Message = "user Not Found";
                 }
             }
+            
 
             return _objResponse;
         }
@@ -142,23 +146,67 @@ namespace FinalDemo.BL.Operations
             }
         }
 
-       public Response Delete(int id)
+
+        public Response Update(int loggedInUserId)
         {
             using (var db = _dbfactory.OpenDbConnection())
             {
-                // Check if ID exists in the database before deleting
-                if (!IsUSRExist(id))
+                var existingUser = db.SingleById<USR01>(_id);
+
+                // ✅ ID Exist Check
+                if (existingUser == null)
                 {
                     _objResponse.IsError = true;
-                    _objResponse.Message = "ID not found";
+                    _objResponse.Message = "User ID not found.";
                     return _objResponse;
                 }
-                db.DeleteById<USR01>(id); 
+
+                // ❌ Unauthorized Access Check
+                if (existingUser.R01F01 != loggedInUserId)
+                {
+                    _objResponse.IsError = true;
+                    _objResponse.Message = "Unauthorized access. You cannot update someone else's profile.";
+                    return _objResponse;
+                }
+
+                db.Update(_objUSR01);
+                _objResponse.Message = "User Updated";
             }
-            _objResponse.Message = "user Deleted"; 
+
             return _objResponse;
         }
 
-        
+
+        public Response Delete(int id , int loggedInUserId)
+        {
+            using (var db = _dbfactory.OpenDbConnection())
+            {
+                var existingUser = db.SingleById<USR01>(id);
+
+                // ID Exist Check
+                if (existingUser == null)
+                {
+                    _objResponse.IsError = true;
+                    _objResponse.Message = "User ID not found.";
+                    return _objResponse;
+                }
+
+                // Unauthorized Access Check
+                if (existingUser.R01F01 != loggedInUserId)
+                {
+                    _objResponse.IsError = true;
+                    _objResponse.Message = "Unauthorized access. You cannot delete someone else's profile.";
+                    return _objResponse;
+                }
+
+                db.Delete(existingUser);
+                _objResponse.Message = "User deleted successfully.";
+            }
+
+            return _objResponse;
+        }
+
+
+
     }
 }

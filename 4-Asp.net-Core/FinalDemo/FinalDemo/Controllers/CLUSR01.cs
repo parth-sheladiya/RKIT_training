@@ -16,15 +16,16 @@ namespace FinalDemo.Controllers
     {
         private Response _objResponse;
         private readonly BLUser _objBLUser;
-
+        private readonly BLAuth _objBLAuth;
 
         /// <summary>
         /// ctor 
         /// </summary>
-        public CLUSR01(Response objResponse , BLUser objBLUser)
+        public CLUSR01(Response objResponse , BLUser objBLUser , BLAuth objBLAuth)
         {
             _objResponse = objResponse;
             _objBLUser = objBLUser;
+            _objBLAuth = objBLAuth;
         }
 
         /// <summary>
@@ -79,12 +80,14 @@ namespace FinalDemo.Controllers
         [AuthFilter]
         public IActionResult UpdateUser(DTOUSR01 objDtoUser01)
         {
+            string token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+            int loggedInUserId = _objBLAuth.GetLoggedInUserId(token);
             _objBLUser.typeOfOperation = EnumType.U;
             _objBLUser.PreSave(objDtoUser01);
-            _objResponse =  _objBLUser.Validation();
+            //_objResponse =  _objBLUser.Validation();
             if (!_objResponse.IsError)
             {
-                _objResponse = _objBLUser.Save();
+                _objResponse = _objBLUser.Update(loggedInUserId);
             }
             return Ok(_objResponse);
         }
@@ -95,7 +98,12 @@ namespace FinalDemo.Controllers
         [AuthFilter]
         public IActionResult DeleteUser(int id) 
         {
-            _objResponse = _objBLUser.Delete(id);
+            string token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+            int loggedInUserId = _objBLAuth.GetLoggedInUserId(token);
+            _objBLUser.typeOfOperation = EnumType.D;
+
+
+            _objResponse = _objBLUser.Delete(id, loggedInUserId);
             return Ok(_objResponse);
         }
     }

@@ -15,9 +15,9 @@ namespace FinalDemo.Controllers
     {
         private Response _objResponse;
         private BLOrder _objBLOrder;
+        private BLAuth _objBLAuth;
 
-
-        public CLORD01(Response objResponse , BLOrder objBLOrder)
+        public CLORD01(Response objResponse , BLOrder objBLOrder )
         {
             _objResponse = objResponse;
             _objBLOrder = objBLOrder;
@@ -51,6 +51,11 @@ namespace FinalDemo.Controllers
         [AuthFilter("User")]
         public IActionResult AddOrder(DTOORD01 objDtoORD01)
         {
+           
+            string token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+            int loggedInUserId = _objBLAuth.GetLoggedInUserId(token);
+
+            
 
             _objBLOrder.typeOfOperation = EnumType.A;
             _objBLOrder.PreSave(objDtoORD01);

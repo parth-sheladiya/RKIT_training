@@ -18,10 +18,10 @@ namespace FinalDemo.Middleware
 
         public async Task Invoke(HttpContext httpContext)
         {
-            // Log information about the incoming request
+            // Log information about the input request
             _logger.Info($"Incoming request: {httpContext.Request.Method} {httpContext.Request.Path}");
            await  _next(httpContext);
-            // Log information about the outgoing response
+            // Log information about the output response
             _logger.Info($"Outgoing response: {httpContext.Response.StatusCode}");
         }
     }
