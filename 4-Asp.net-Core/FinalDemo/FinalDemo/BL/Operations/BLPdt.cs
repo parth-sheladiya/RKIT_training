@@ -11,7 +11,7 @@ using System.Data;
 
 namespace FinalDemo.BL.Operations
 {
-    public class BLPdt : ICommonHandler<DTOPDT01>
+    public class BLPdt : ICommonHandlergit<DTOPDT01>
     {
         // connection factory
         private readonly IDbConnectionFactory _dbfactory;

@@ -103,8 +103,8 @@ namespace FinalDemo
             builder.Services.AddScoped<IAuthentication, BLAuth>();
             builder.Services.AddScoped<IUSR01, BLUser>();
             //builder.Services.AddScoped<BLUser>();
-            //builder.Services.AddScoped<BLPdt>();
-            //builder.Services.AddScoped<BLOrder>();
+            builder.Services.AddScoped<BLPdt>();
+            builder.Services.AddScoped<BLOrder>();
 
             //builder.Services.AddTransient<USR01>();
             //builder.Services.AddTransient<PDT01>();
