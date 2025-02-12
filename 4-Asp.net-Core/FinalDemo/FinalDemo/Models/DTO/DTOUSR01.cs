@@ -2,6 +2,9 @@
 
 namespace FinalDemo.Models.DTO
 {
+    /// <summary>
+    /// dto user
+    /// </summary>
     public class DTOUSR01
     {
         /// <summary>

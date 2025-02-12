@@ -1,5 +1,4 @@
 ﻿using FinalDemo.Models.ENUM;
-using FinalDemo.Services;
 using ServiceStack.DataAnnotations;
 
 namespace FinalDemo.Models.POCO

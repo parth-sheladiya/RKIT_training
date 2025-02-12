@@ -44,17 +44,7 @@ namespace customMiddlewareDemo
             // using  middleware with built-in format
             app.UseBMiddleware();
 
-            // conditional middleware
-            app.UseWhen(context => context.Request.Query.ContainsKey("partpatel"),
-                app =>
-                {
-                    app.Use(async (context, next) =>
-                    {
-                        await context.Response.WriteAsync("Before parth conditional Middlerware \n");
-                        await next(context);
-                        await context.Response.WriteAsync("After parth conditional Middlerware \n");
-                    });
-                });
+            
 
             app.Run(async (HttpContext context) =>
             {

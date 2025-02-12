@@ -7,7 +7,8 @@ using System.Security.Claims;
 namespace FinalDemo.Filters
 {
     /// <summary>
-    /// Custom authorization filter using JWT role-based authentication.
+    /// custom filter for user roles
+    /// IAuthorizationFilter is interface to use custom auth 
     /// </summary>
     public class AuthFilter : Attribute, IAuthorizationFilter
     {
@@ -15,9 +16,14 @@ namespace FinalDemo.Filters
 
         public AuthFilter(params string[] roles)
         {
+            // if role not pass then return null
             _roles = roles.Length > 0 ? roles : null;
         }
 
+        /// <summary>
+        /// authentication  authorization validate
+        /// </summary>
+        /// <param name="context"></param>
         public void OnAuthorization(AuthorizationFilterContext context)
         {
             var user = context.HttpContext.User;
@@ -31,22 +37,22 @@ namespace FinalDemo.Filters
                 return;
             }
 
-            // Check if user is authenticated
+            // Check if user is authenticated or not
             if (!user.Identity.IsAuthenticated)
             {
-                context.Result = new ObjectResult("Unauthorized: Token is missing or invalid.")
+                context.Result = new ObjectResult("token is missing or invalid.")
                 {
                     StatusCode = (int)HttpStatusCode.Unauthorized
                 };
                 return;
             }
 
-            // Retrieve user role from claims
+            // role auth check
             var roleClaim = user.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
 
             if (roleClaim == null || (_roles != null && !_roles.Contains(roleClaim)))
             {
-                context.Result = new ObjectResult("Forbidden: Access Denied.")
+                context.Result = new ObjectResult("access denied")
                 {
                     StatusCode = (int)HttpStatusCode.Forbidden
                 };

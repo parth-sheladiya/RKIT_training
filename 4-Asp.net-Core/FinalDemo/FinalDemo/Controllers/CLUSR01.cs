@@ -4,7 +4,7 @@ using FinalDemo.Models;
 using FinalDemo.Models.DTO;
 using FinalDemo.Models.ENUM;
 using FinalDemo.Models.POCO;
-using FinalDemo.Services;
+using FinalDemo.BL.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -39,7 +39,7 @@ namespace FinalDemo.Controllers
         public IActionResult GetAllUser()
         {
             
-            _objResponse = _objBLUser.GetAll();
+            _objResponse = _objBLUser.GetAllUsers();
             return Ok(_objResponse);
         }
 
@@ -54,19 +54,25 @@ namespace FinalDemo.Controllers
         public IActionResult GetUserByid(int id)
         {
 
-            _objResponse = _objBLUser.GetByid(id);
+            _objResponse = _objBLUser.GetUserByid(id);
             return Ok(_objResponse);
         }
 
-
+        /// <summary>
+        /// add user
+        /// </summary>
+        /// <param name="objDtoUser01"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("addUser")]
 
         public IActionResult AddUser(DTOUSR01 objDtoUser01)
         {
-
+            //type is a
             _objBLUser.typeOfOperation = EnumType.A;
+            // dto to poco
             _objBLUser.PreSave(objDtoUser01);
+            // validation
             _objResponse = _objBLUser.Validation();
             if (!_objResponse.IsError)
             {
@@ -75,12 +81,19 @@ namespace FinalDemo.Controllers
             return Ok(_objResponse);
         }
 
+        /// <summary>
+        /// update user
+        /// </summary>
+        /// <param name="objDtoUser01"></param>
+        /// <returns></returns>
         [HttpPut]
         [Route("updateUser")]
         [AuthFilter]
         public IActionResult UpdateUser(DTOUSR01 objDtoUser01)
         {
+            // validation token
             string token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+            // get user current login id current
             int loggedInUserId = _objBLAuth.GetLoggedInUserId(token);
             _objBLUser.typeOfOperation = EnumType.U;
             _objBLUser.PreSave(objDtoUser01);
@@ -92,17 +105,20 @@ namespace FinalDemo.Controllers
             return Ok(_objResponse);
         }
 
-
+        /// <summary>
+        /// delete user
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete]
         [Route("deleteUser")]
         [AuthFilter]
         public IActionResult DeleteUser(int id) 
         {
+            // validate token
             string token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
             int loggedInUserId = _objBLAuth.GetLoggedInUserId(token);
             _objBLUser.typeOfOperation = EnumType.D;
-
-
             _objResponse = _objBLUser.Delete(id, loggedInUserId);
             return Ok(_objResponse);
         }

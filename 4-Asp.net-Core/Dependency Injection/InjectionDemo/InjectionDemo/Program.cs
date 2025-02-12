@@ -15,7 +15,7 @@ namespace InjectionDemo
            //builder.Services.AddScoped<IPaymentService, RazorpayPaymentService>();
              builder.Services.AddScoped<IPaymentService, JuspayPaymentService>();
 
-            // Register custom services using extension methods (e.g., AddProductServices)
+            // Register custom services use extension method
             builder.Services.AddProductOrderService();
 
             builder.Services.AddAuthorization();

@@ -2,17 +2,6 @@
 {
     public class ProductService : IProductService
     {
-        
-
-        /// <summary>
-        /// Constructor to inject IProductRepository dependency.
-        /// </summary>
-        /// <param name="productRepository">Injected product repository instance.</param>
-        public ProductService()
-        {
-            
-        }
-
         /// <summary>
         /// Fetches product details based on product ID.
         /// </summary>

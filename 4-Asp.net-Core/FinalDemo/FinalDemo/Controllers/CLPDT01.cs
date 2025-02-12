@@ -15,33 +15,51 @@ namespace FinalDemo.Controllers
         private Response _objResponse;
         private readonly BLPdt _objBLPdt;
 
+        /// <summary>
+        /// ctor
+        /// </summary>
+        /// <param name="objResponse"></param>
+        /// <param name="objBLPdt"></param>
         public CLPDT01(Response objResponse, BLPdt objBLPdt)
         {
             _objResponse = objResponse;
             _objBLPdt = objBLPdt;
         }
 
+        /// <summary>
+        /// get all product
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         [Route("getAllProducts")]
         [AuthFilter("Admin","User")]
         public IActionResult GetAllProducts()
         {
 
-            _objResponse = _objBLPdt.GetAll();
+            _objResponse = _objBLPdt.GetAllProducts();
             return Ok(_objResponse);
         }
 
+        /// <summary>
+        /// get product by id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet]
         [Route("getProductById")]
         [AuthFilter("Admin", "User")]
         public IActionResult GetProductByid(int id)
         {
 
-            _objResponse = _objBLPdt.GetByid(id);
+            _objResponse = _objBLPdt.GetProductByid(id);
             return Ok(_objResponse);
         }
 
-
+        /// <summary>
+        /// add product
+        /// </summary>
+        /// <param name="objDtoPDT01"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("addProduct")]
         [AuthFilter("Admin")]
@@ -58,6 +76,11 @@ namespace FinalDemo.Controllers
             return Ok(_objResponse);
         }
 
+        /// <summary>
+        /// update product
+        /// </summary>
+        /// <param name="objDtoPDT01"></param>
+        /// <returns></returns>
         [HttpPut]
         [Route("updateProduct")]
         [AuthFilter("Admin")]
@@ -73,6 +96,11 @@ namespace FinalDemo.Controllers
             return Ok(_objResponse);
         }
 
+        /// <summary>
+        /// delete product
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete]
         [Route("deleteProduct")]
         [AuthFilter("Admin")]

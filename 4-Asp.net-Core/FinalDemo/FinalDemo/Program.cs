@@ -1,7 +1,6 @@
 ﻿using FinalDemo.BL.Operations;
 using FinalDemo.Models;
 using FinalDemo.Models.POCO;
-using FinalDemo.Services.Interface;
 using FinalDemo.Filters;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -15,6 +14,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 using Microsoft.OpenApi.Models;
 using FinalDemo.Middleware;
+using FinalDemo.BL.Interface;
 
 namespace FinalDemo
 {
@@ -24,6 +24,7 @@ namespace FinalDemo
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            // key issuer in appsetting json
             var jwtKey = builder.Configuration["Jwt:Key"];
             var jwtIssuer = builder.Configuration["Jwt:Issuer"];
 
@@ -48,25 +49,18 @@ namespace FinalDemo
                     };
                 });
 
-            builder.Services.AddMemoryCache();
+            
             builder.Services.AddControllers(options =>
             {
-                // options.Filters.Add(typeof(AuthFilter)); ❌ **Remove this if not needed globally**
+                // it is not handle globally bcz it is used in action method
+                // options.Filters.Add(typeof(AuthFilter)); 
             });
             
 
             builder.Services.AddAuthorization();
 
             
-            builder.Services.AddCors(options =>
-            {
-                options.AddPolicy("AllowAll", policy =>
-                {
-                    policy.AllowAnyOrigin()
-                          .AllowAnyMethod()
-                          .AllowAnyHeader();
-                });
-            });
+            
 
             
             builder.Services.AddEndpointsApiExplorer();
@@ -96,7 +90,7 @@ namespace FinalDemo
                     });
             });
 
-           
+           // data base  connection serive add singleton scope 
             var connectionString = builder.Configuration.GetConnectionString("EcomDB");
             builder.Services.AddSingleton<IDbConnectionFactory>(new OrmLiteConnectionFactory(
                connectionString,
@@ -104,21 +98,24 @@ namespace FinalDemo
            ));
 
            
-            builder.Services.AddScoped<BLUser>();
-            builder.Services.AddScoped<Response>();
-            builder.Services.AddScoped<BLAuth>();
+            /// BL service
+            //builder.Services.AddScoped<Response>();
+            builder.Services.AddScoped<IAuthentication, BLAuth>();
             builder.Services.AddScoped<IUSR01, BLUser>();
-            builder.Services.AddScoped<BLPdt>();
-            builder.Services.AddScoped<BLOrder>();
+            //builder.Services.AddScoped<BLUser>();
+            //builder.Services.AddScoped<BLPdt>();
+            //builder.Services.AddScoped<BLOrder>();
 
-            builder.Services.AddTransient<USR01>();
-            builder.Services.AddTransient<PDT01>();
-            builder.Services.AddTransient<ORD01>();
+            //builder.Services.AddTransient<USR01>();
+            //builder.Services.AddTransient<PDT01>();
+            //builder.Services.AddTransient<ORD01>();
 
+            // auth
             builder.Services.AddSingleton<JwtSecurityTokenHandler>();
 
             var app = builder.Build();
 
+            // add custom middleware
             app.UseMiddleware<LoggingMiddleware>();
 
             if (app.Environment.IsDevelopment())

@@ -1,12 +1,11 @@
 {
   "Version": 1,
-  "Hash": "n0wutmHfzZe5BJolr5kfwmflCSPcSM0jqhdw/rwOs3M=",
+  "Hash": "7+V0qGPWApTsvuZK7tbP+lGxsZeaz0c0xXskoCgSSUc=",
   "Source": "Routing",
   "BasePath": "_content/Routing",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": []
 }

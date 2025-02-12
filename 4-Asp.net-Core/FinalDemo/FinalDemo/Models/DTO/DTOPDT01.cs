@@ -1,5 +1,8 @@
 ﻿namespace FinalDemo.Models.DTO
 {
+    /// <summary>
+    /// dto product
+    /// </summary>
     public class DTOPDT01
     {
         /// <summary>

@@ -11,8 +11,8 @@ namespace FinalDemo.Extention
         /// <summary>
         /// Converts the DTO model to POCO Model.
         /// </summary>
-        /// <typeparam name="POCO">POCO model.</typeparam>
-        /// <param name="dto">DTO model reference</param>
+        /// <typeparam name="POCO">POCO</typeparam>
+        /// <param name="dto">DTO </param>
         /// <returns>Poco model.</returns>
         public static POCO Convert<POCO>(this object dto)
         {

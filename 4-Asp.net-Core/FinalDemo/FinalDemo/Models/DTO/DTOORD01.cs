@@ -1,5 +1,8 @@
 ﻿namespace FinalDemo.Models.DTO
 {
+    /// <summary>
+    /// dto order
+    /// </summary>
     public class DTOORD01
     {
         /// <summary>

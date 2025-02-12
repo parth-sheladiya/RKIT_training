@@ -1,12 +1,11 @@
 {
   "Version": 1,
-  "Hash": "2HJgF3bOWQtmgqMltvAZNOktyBPaO9OOJT44D2TBIp0=",
+  "Hash": "NPil/DjXMKPvf+DyHDQ9wwT3cMflSaVnN/jplyT15QQ=",
   "Source": "InjectionDemo",
   "BasePath": "_content/InjectionDemo",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": []
 }

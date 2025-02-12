@@ -4,6 +4,7 @@ using FinalDemo.Models;
 using FinalDemo.Models.DTO;
 using FinalDemo.Models.ENUM;
 using FinalDemo.Models.POCO;
+using Org.BouncyCastle.Asn1.Ocsp;
 using ServiceStack.Data;
 using ServiceStack.OrmLite;
 using ServiceStack.Web;
@@ -17,17 +18,28 @@ namespace FinalDemo.BL.Operations
         private Response _objResponse;
         public int _id;
         private ORD01 _objORD01;
+       
         public EnumType typeOfOperation { get; set; }
         public EnumRole typeOfRole { get; set; }
 
+        /// <summary>
+        /// ctor
+        /// </summary>
+        /// <param name="dbfactory"></param>
+        /// <param name="objResponse"></param>
+        /// <param name="objORD01"></param>
         public BLOrder(IDbConnectionFactory dbfactory, Response objResponse,ORD01 objORD01)
-        {
+        { 
             _dbfactory = dbfactory;
             _objResponse = objResponse;
             _objORD01 = objORD01;
         }
 
-        public Response GetAll()
+        /// <summary>
+        /// get all orders
+        /// </summary>
+        /// <returns></returns>
+        public Response GetAllOrders()
         {
             using (IDbConnection db = _dbfactory.OpenDbConnection())
             {
@@ -53,9 +65,14 @@ namespace FinalDemo.BL.Operations
                 return _objResponse;
             }
         }
-
-        public Response GetByid(int id)
+        /// <summary>
+        /// get order by id
+        /// </summary>
+        /// <param name="id">id</param>
+        /// <returns></returns>
+        public Response GetOrderByid(int id)
         {
+
             using (var db = _dbfactory.OpenDbConnection())
             {
                 _objORD01 = db.SingleById<ORD01>(id);
@@ -77,6 +94,10 @@ namespace FinalDemo.BL.Operations
             return _objResponse;
 
         }
+        /// <summary>
+        /// presave
+        /// </summary>
+        /// <param name="objDTOOrder"></param>
         public void PreSave(DTOORD01 objDTOOrder)
         {
             _objORD01 = objDTOOrder.Convert<ORD01>();
@@ -87,6 +108,11 @@ namespace FinalDemo.BL.Operations
                 _id = objDTOOrder.T01F01;
             }
         }
+        /// <summary>
+        /// is order exist or not
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public bool IsORDExist(int id)
         {
             using (var db = _dbfactory.OpenDbConnection())
@@ -94,6 +120,10 @@ namespace FinalDemo.BL.Operations
                 return db.Exists<ORD01>(id);
             }
         }
+        /// <summary>
+        /// validation
+        /// </summary>
+        /// <returns></returns>
         public Response Validation()
         {
             if (typeOfOperation == EnumType.U)
@@ -112,10 +142,16 @@ namespace FinalDemo.BL.Operations
 
             return _objResponse;
         }
+        /// <summary>
+        /// save method
+        /// </summary>
+        /// <returns></returns>
         public Response Save()
         {
             try
             {
+
+                
                 // open database
                 using (var db = _dbfactory.OpenDbConnection())
                 {
@@ -127,6 +163,7 @@ namespace FinalDemo.BL.Operations
                         _objResponse.Message = "User does not exist.";
                         return _objResponse;
                     }
+
 
                     // Validate product
                     var product = db.SingleById<PDT01>(_objORD01.T01F01);
@@ -149,10 +186,10 @@ namespace FinalDemo.BL.Operations
                         return _objResponse;
                     }
 
-                    // Calculate total amount
+                    // calculate total amount
                     decimal totalAmount = product.T01F06 * _objORD01.D01F04;
                     _objORD01.D01F05 = totalAmount;
-                    // Perform operation based on Type
+                   
                     if (typeOfOperation == EnumType.A)
                     {
                         // Check if updating the product quantity will make it negative
@@ -206,7 +243,7 @@ namespace FinalDemo.BL.Operations
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public Response CancelOrder(int id)
+        public Response CancelOrder(int id , int loggedInUserId)
         {
             using (var db = _dbfactory.OpenDbConnection())
             {
@@ -222,7 +259,12 @@ namespace FinalDemo.BL.Operations
                         _objResponse.Message = "Order not found.";
                         return _objResponse;
                     }
-
+                    if(order.R01F01 != loggedInUserId)
+                    {
+                        _objResponse.IsError = true;
+                        _objResponse.Message = "you can not cancel other user order";
+                        return _objResponse;
+                    }
                     // Check if the order is already cancelled
                     if (order.D01F06 == "cancelled")
                     {
@@ -280,9 +322,6 @@ namespace FinalDemo.BL.Operations
         /// <returns></returns>
         public Response ChangeStatus(int orderId, string newStatus)
         {
-            try
-            {
-                // open database
                 using (var db = _dbfactory.OpenDbConnection())
                 {
                     // Validate the order
@@ -310,15 +349,7 @@ namespace FinalDemo.BL.Operations
                     _objResponse.Message = "Order status updated successfully.";
                     return _objResponse;
                 }
-            }
-            catch (Exception ex)
-            {
-                return new Response
-                {
-                    IsError = true,
-                    Message = $"Error while updating order status: {ex.Message}"
-                };
-            }
+            
         }
 
 

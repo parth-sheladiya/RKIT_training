@@ -465,11 +465,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\parth-415\\RKIT_training-main\\4-Asp.net-Core\\ExceptionHandler\\ExceptionHandler\\ExceptionHandler.csproj",
+      "projectUniqueName": "F:\\parth-415\\clone\\RKIT_training\\4-Asp.net-Core\\ExceptionHandler\\ExceptionHandler\\ExceptionHandler.csproj",
       "projectName": "ExceptionHandler",
-      "projectPath": "F:\\parth-415\\RKIT_training-main\\4-Asp.net-Core\\ExceptionHandler\\ExceptionHandler\\ExceptionHandler.csproj",
+      "projectPath": "F:\\parth-415\\clone\\RKIT_training\\4-Asp.net-Core\\ExceptionHandler\\ExceptionHandler\\ExceptionHandler.csproj",
       "packagesPath": "C:\\Users\\parth.sh\\.nuget\\packages\\",
-      "outputPath": "F:\\parth-415\\RKIT_training-main\\4-Asp.net-Core\\ExceptionHandler\\ExceptionHandler\\obj\\",
+      "outputPath": "F:\\parth-415\\clone\\RKIT_training\\4-Asp.net-Core\\ExceptionHandler\\ExceptionHandler\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\parth.sh\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -459,3 +459,113 @@
 2025-02-12 07:33:17.0712|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNAB15GDVPU7" sending FIN because: "The Socket transport's send loop completed gracefully."
 2025-02-12 07:33:17.0712|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNAB15GDVPU7" disconnecting.
 2025-02-12 07:33:17.0712|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNAB15GDVPU7" stopped.
+2025-02-12 12:59:38.4498|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-02-12 12:59:38.5563|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2025-02-12 12:59:38.9020|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5078
+2025-02-12 12:59:38.9020|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Logging
+2025-02-12 12:59:38.9020|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-02-12 12:59:38.9020|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-02-12 12:59:38.9020|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-02-12 12:59:38.9109|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2025-02-12 12:59:38.9109|INFO|Microsoft.Hosting.Lifetime|Content root path: F:\parth-415\clone\RKIT_training\4-Asp.net-Core\Logging\Logging
+2025-02-12 12:59:38.9109|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2025-02-12 12:59:38.9439|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNAB6S13TIKO" accepted.
+2025-02-12 12:59:38.9439|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNAB6S13TIKN" accepted.
+2025-02-12 12:59:38.9439|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNAB6S13TIKO" started.
+2025-02-12 12:59:38.9439|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNAB6S13TIKN" started.
+2025-02-12 12:59:39.8793|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNAB6S13TIKP" accepted.
+2025-02-12 12:59:39.8793|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNAB6S13TIKP" started.
+2025-02-12 12:59:39.8793|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNAB6S13TIKQ" accepted.
+2025-02-12 12:59:39.8793|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNAB6S13TIKQ" started.
+2025-02-12 12:59:39.9739|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5078/swagger/index.html - -
+2025-02-12 12:59:40.0170|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2025-02-12 12:59:40.0170|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2025-02-12 12:59:40.0517|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2025-02-12 12:59:40.0517|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2025-02-12 12:59:40.2455|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2025-02-12 12:59:40.4635|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNAB6S13TIKR" accepted.
+2025-02-12 12:59:40.4635|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNAB6S13TIKR" started.
+2025-02-12 12:59:40.4635|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5078/_framework/aspnetcore-browser-refresh.js - -
+2025-02-12 12:59:40.4635|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5078/_vs/browserLink - -
+2025-02-12 12:59:40.4791|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2025-02-12 12:59:40.4791|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNAB6S13TIKQ" completed keep alive response.
+2025-02-12 12:59:40.4791|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNAB6S13TIKP" completed keep alive response.
+2025-02-12 12:59:40.4894|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5078/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 17.6098ms
+2025-02-12 12:59:40.4894|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5078/swagger/index.html - - - 200 - text/html;charset=utf-8 511.8826ms
+2025-02-12 12:59:40.5441|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNAB6S13TIKR" completed keep alive response.
+2025-02-12 12:59:40.5441|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5078/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 78.1988ms
+2025-02-12 12:59:40.7515|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5078/swagger/v1/swagger.json - -
+2025-02-12 12:59:40.7515|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2025-02-12 12:59:40.7515|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json'
+2025-02-12 12:59:40.7515|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2025-02-12 12:59:40.7748|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5078/swagger/favicon-32x32.png - -
+2025-02-12 12:59:40.7748|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2025-02-12 12:59:40.7748|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/favicon-32x32.png'
+2025-02-12 12:59:40.7748|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2025-02-12 12:59:40.7748|TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty.
+2025-02-12 12:59:40.7877|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-02-12 12:59:40.7877|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNAB6S13TIKP" completed keep alive response.
+2025-02-12 12:59:40.7877|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5078/swagger/favicon-32x32.png - - - 200 628 image/png 13.2551ms
+2025-02-12 12:59:40.8570|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNAB6S13TIKR" completed keep alive response.
+2025-02-12 12:59:40.8570|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5078/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 105.6986ms
+2025-02-12 12:59:41.4417|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNAB6S13TIKR" received FIN.
+2025-02-12 12:59:41.4417|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNAB6S13TIKP" received FIN.
+2025-02-12 12:59:41.4417|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNAB6S13TIKQ" received FIN.
+2025-02-12 12:59:41.4417|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNAB6S13TIKR" disconnecting.
+2025-02-12 12:59:41.4417|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNAB6S13TIKP" disconnecting.
+2025-02-12 12:59:41.4417|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNAB6S13TIKQ" disconnecting.
+2025-02-12 12:59:41.4417|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNAB6S13TIKR" sending FIN because: "The client closed the connection."
+2025-02-12 12:59:41.4417|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNAB6S13TIKP" sending FIN because: "The client closed the connection."
+2025-02-12 12:59:41.4417|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNAB6S13TIKQ" sending FIN because: "The client closed the connection."
+2025-02-12 12:59:41.4417|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNAB6S13TIKR" stopped.
+2025-02-12 12:59:41.4417|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNAB6S13TIKQ" stopped.
+2025-02-12 12:59:41.4574|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNAB6S13TIKP" stopped.
+2025-02-12 12:59:50.7098|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNAB6S13TIKS" accepted.
+2025-02-12 12:59:50.7098|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNAB6S13TIKS" started.
+2025-02-12 12:59:50.7098|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5078/api/LoggingDemo - -
+2025-02-12 12:59:50.7098|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2025-02-12 12:59:50.7098|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/LoggingDemo'
+2025-02-12 12:59:50.7098|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'Logging.Controllers.LoggingDemo.Get (Logging)' with route pattern 'api/LoggingDemo' is valid for the request path '/api/LoggingDemo'
+2025-02-12 12:59:50.7098|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'Logging.Controllers.LoggingDemo.Get (Logging)'
+2025-02-12 12:59:50.7098|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2025-02-12 12:59:50.7098|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Logging.Controllers.LoggingDemo.Get (Logging)'
+2025-02-12 12:59:50.7336|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "LoggingDemo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller Logging.Controllers.LoggingDemo (Logging).
+2025-02-12 12:59:50.7336|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2025-02-12 12:59:50.7336|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2025-02-12 12:59:50.7336|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-02-12 12:59:50.7336|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2025-02-12 12:59:50.7336|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-02-12 12:59:50.7336|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller Logging.Controllers.LoggingDemo (Logging)
+2025-02-12 12:59:50.7336|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller Logging.Controllers.LoggingDemo (Logging)
+2025-02-12 12:59:50.7336|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-02-12 12:59:50.7383|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-02-12 12:59:50.7383|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-02-12 12:59:50.7383|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-02-12 12:59:50.7383|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method Logging.Controllers.LoggingDemo.Get (Logging) - Validation state: Valid
+2025-02-12 12:59:50.7383|TRACE|Logging.Controllers.LoggingDemo|trace log
+2025-02-12 12:59:50.7383|DEBUG|Logging.Controllers.LoggingDemo|log debug
+2025-02-12 12:59:50.7383|INFO|Logging.Controllers.LoggingDemo|information log
+2025-02-12 12:59:50.7383|WARN|Logging.Controllers.LoggingDemo|warning log
+2025-02-12 12:59:50.7383|ERROR|Logging.Controllers.LoggingDemo|error log
+2025-02-12 12:59:50.7557|FATAL|Logging.Controllers.LoggingDemo|critical log
+2025-02-12 12:59:50.7557|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method Logging.Controllers.LoggingDemo.Get (Logging), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 14.4503ms.
+2025-02-12 12:59:50.7557|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-02-12 12:59:50.7557|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2025-02-12 12:59:50.7557|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-02-12 12:59:50.7557|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2025-02-12 12:59:50.7557|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-02-12 12:59:50.7557|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-02-12 12:59:50.7557|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-02-12 12:59:50.7557|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2025-02-12 12:59:50.7557|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2025-02-12 12:59:50.7557|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-02-12 12:59:50.7557|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2025-02-12 12:59:50.7557|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2025-02-12 12:59:50.7557|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'.
+2025-02-12 12:59:50.7557|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2025-02-12 12:59:50.7557|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-02-12 12:59:50.7557|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2025-02-12 12:59:50.7719|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Logging.Controllers.LoggingDemo.Get (Logging) in 33.825ms
+2025-02-12 12:59:50.7719|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Logging.Controllers.LoggingDemo.Get (Logging)'
+2025-02-12 12:59:50.7719|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNAB6S13TIKS" completed keep alive response.
+2025-02-12 12:59:50.7719|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5078/api/LoggingDemo - - - 200 - text/plain;+charset=utf-8 61.4877ms

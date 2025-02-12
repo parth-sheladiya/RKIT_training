@@ -15,7 +15,12 @@ namespace FinalDemo.Controllers
         private BLAuth _objBLAuth;
         private USR01 _objUSR01;
 
-
+        /// <summary>
+        /// ctore
+        /// </summary>
+        /// <param name="objResponse"></param>
+        /// <param name="objUSR01"></param>
+        /// <param name="objBLAuth"></param>
         public CLAuth(Response objResponse, USR01 objUSR01, BLAuth objBLAuth)
         {
             _objResponse = objResponse;
@@ -23,6 +28,12 @@ namespace FinalDemo.Controllers
             _objBLAuth = objBLAuth;
         }
 
+
+        /// <summary>
+        /// login method for username and password
+        /// </summary>
+        /// <param name="objDTO"></param>
+        /// <returns></returns>
         [HttpPost("Login")]
 
         public IActionResult Login(DTOAUTH objDTO)
@@ -36,6 +47,7 @@ namespace FinalDemo.Controllers
                 return BadRequest();
             }
 
+            // generate token
             string token = _objBLAuth.GenerateJwtToken(_objUSR01);
 
 

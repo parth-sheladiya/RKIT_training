@@ -13,6 +13,7 @@ namespace FinalDemo.BL.Operations
 {
     public class BLPdt : ICommonHandler<DTOPDT01>
     {
+        // connection factory
         private readonly IDbConnectionFactory _dbfactory;
         private Response _objResponse;
         private int _id;
@@ -20,7 +21,12 @@ namespace FinalDemo.BL.Operations
         public EnumType typeOfOperation { get; set; }
         public EnumRole typeOfRole { get; set; }
 
-
+        /// <summary>
+        /// ctor
+        /// </summary>
+        /// <param name="dbfactory"></param>
+        /// <param name="objResponse"></param>
+        /// <param name="objPDT01"></param>
         public BLPdt(IDbConnectionFactory dbfactory, Response objResponse , PDT01 objPDT01)
         {
             _dbfactory = dbfactory;
@@ -28,7 +34,11 @@ namespace FinalDemo.BL.Operations
             _objPDT01 = objPDT01;
         }
 
-        public Response GetAll()
+        /// <summary>
+        /// GetAllProducts
+        /// </summary>
+        /// <returns></returns>
+        public Response GetAllProducts()
         {
             using (IDbConnection db = _dbfactory.OpenDbConnection())
             {
@@ -55,8 +65,12 @@ namespace FinalDemo.BL.Operations
                 return _objResponse;
             }
         }
-
-        public Response GetByid(int id)
+        /// <summary>
+        /// GetProductByid
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public Response GetProductByid(int id)
         {
             using (var db = _dbfactory.OpenDbConnection())
             {
@@ -79,6 +93,10 @@ namespace FinalDemo.BL.Operations
             return _objResponse;
 
         }
+        /// <summary>
+        /// presave method it is in dto to poco 
+        /// </summary>
+        /// <param name="objPDTDto"></param>
         public void PreSave(DTOPDT01 objPDTDto)
         {
             _objPDT01 = objPDTDto.Convert<PDT01>();
@@ -89,6 +107,12 @@ namespace FinalDemo.BL.Operations
                 _id = objPDTDto.T01F01;
             }
         }
+
+        /// <summary>
+        /// is product exist or not
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public bool IsPDTExist(int id)
         {
             using (var db = _dbfactory.OpenDbConnection())
@@ -96,6 +120,10 @@ namespace FinalDemo.BL.Operations
                 return db.Exists<PDT01>(id);
             }
         }
+        /// <summary>
+        /// validations
+        /// </summary>
+        /// <returns></returns>
         public Response Validation()
         {
             if (typeOfOperation == EnumType.U)
@@ -114,6 +142,10 @@ namespace FinalDemo.BL.Operations
 
             return _objResponse;
         }
+        /// <summary>
+        /// save method
+        /// </summary>
+        /// <returns></returns>
         public Response Save()
         {
             using (var db = _dbfactory.OpenDbConnection())
@@ -138,7 +170,11 @@ namespace FinalDemo.BL.Operations
                 return _objResponse;
             }
         }
-
+        /// <summary>
+        /// delete method
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public Response Delete(int id)
         {
             using (var db = _dbfactory.OpenDbConnection())

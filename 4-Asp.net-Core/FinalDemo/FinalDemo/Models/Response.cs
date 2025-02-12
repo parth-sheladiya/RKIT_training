@@ -1,4 +1,4 @@
-﻿using FinalDemo.Services;
+﻿using FinalDemo.BL.Interface;
 
 namespace FinalDemo.Models
 {
