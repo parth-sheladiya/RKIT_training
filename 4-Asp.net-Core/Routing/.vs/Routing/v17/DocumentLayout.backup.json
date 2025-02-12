@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Routing\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9DE66148-46B7-4647-AE04-38FB29EB4F4D}|Routing\\Routing.csproj|g:\\training\\rkit_training\\4-asp.net-core\\routing\\routing\\controllers\\attributeroutingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DE66148-46B7-4647-AE04-38FB29EB4F4D}|Routing\\Routing.csproj|solutionrelative:routing\\controllers\\attributeroutingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DE66148-46B7-4647-AE04-38FB29EB4F4D}|Routing\\Routing.csproj|g:\\training\\rkit_training\\4-asp.net-core\\routing\\routing\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DE66148-46B7-4647-AE04-38FB29EB4F4D}|Routing\\Routing.csproj|solutionrelative:routing\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DE66148-46B7-4647-AE04-38FB29EB4F4D}|Routing\\Routing.csproj|g:\\training\\rkit_training\\4-asp.net-core\\routing\\routing\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DE66148-46B7-4647-AE04-38FB29EB4F4D}|Routing\\Routing.csproj|solutionrelative:routing\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AttributeRoutingController.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Routing\\Routing\\Controllers\\AttributeRoutingController.cs",
+              "RelativeDocumentMoniker": "Routing\\Controllers\\AttributeRoutingController.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Routing\\Routing\\Controllers\\AttributeRoutingController.cs",
+              "RelativeToolTip": "Routing\\Controllers\\AttributeRoutingController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAwC8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T02:38:53.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ValuesController.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Routing\\Routing\\Controllers\\ValuesController.cs",
+              "RelativeDocumentMoniker": "Routing\\Controllers\\ValuesController.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Routing\\Routing\\Controllers\\ValuesController.cs",
+              "RelativeToolTip": "Routing\\Controllers\\ValuesController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAADwvwoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T02:29:34.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Routing\\Routing\\Program.cs",
+              "RelativeDocumentMoniker": "Routing\\Program.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Routing\\Routing\\Program.cs",
+              "RelativeToolTip": "Routing\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABoAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T02:28:14.74Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

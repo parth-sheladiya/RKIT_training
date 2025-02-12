@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "Logging.Controllers.LoggingDemo",
+    "Method": "Get",
+    "RelativePath": "api/LoggingDemo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

@@ -2,15 +2,15 @@
 {
     public class ProductService : IProductService
     {
-        private readonly IProductService _productservice;
+        
 
         /// <summary>
         /// Constructor to inject IProductRepository dependency.
         /// </summary>
         /// <param name="productRepository">Injected product repository instance.</param>
-        public ProductService(IProductService productservice)
+        public ProductService()
         {
-            _productservice = productservice;
+            
         }
 
         /// <summary>

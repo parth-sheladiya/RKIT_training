@@ -1,0 +1,221 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Dependency Injection\\InjectionDemo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{265CD950-E19C-4ED5-AE08-46E3CA030353}|InjectionDemo\\InjectionDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\dependency injection\\injectiondemo\\injectiondemo\\service\\servicehandler\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{265CD950-E19C-4ED5-AE08-46E3CA030353}|InjectionDemo\\InjectionDemo.csproj|solutionrelative:injectiondemo\\service\\servicehandler\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265CD950-E19C-4ED5-AE08-46E3CA030353}|InjectionDemo\\InjectionDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\dependency injection\\injectiondemo\\injectiondemo\\service\\servicehandler\\juspayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{265CD950-E19C-4ED5-AE08-46E3CA030353}|InjectionDemo\\InjectionDemo.csproj|solutionrelative:injectiondemo\\service\\servicehandler\\juspayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265CD950-E19C-4ED5-AE08-46E3CA030353}|InjectionDemo\\InjectionDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\dependency injection\\injectiondemo\\injectiondemo\\service\\servicehandler\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{265CD950-E19C-4ED5-AE08-46E3CA030353}|InjectionDemo\\InjectionDemo.csproj|solutionrelative:injectiondemo\\service\\servicehandler\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265CD950-E19C-4ED5-AE08-46E3CA030353}|InjectionDemo\\InjectionDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\dependency injection\\injectiondemo\\injectiondemo\\service\\servicehandler\\razorpayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{265CD950-E19C-4ED5-AE08-46E3CA030353}|InjectionDemo\\InjectionDemo.csproj|solutionrelative:injectiondemo\\service\\servicehandler\\razorpayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265CD950-E19C-4ED5-AE08-46E3CA030353}|InjectionDemo\\InjectionDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\dependency injection\\injectiondemo\\injectiondemo\\service\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{265CD950-E19C-4ED5-AE08-46E3CA030353}|InjectionDemo\\InjectionDemo.csproj|solutionrelative:injectiondemo\\service\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265CD950-E19C-4ED5-AE08-46E3CA030353}|InjectionDemo\\InjectionDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\dependency injection\\injectiondemo\\injectiondemo\\service\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{265CD950-E19C-4ED5-AE08-46E3CA030353}|InjectionDemo\\InjectionDemo.csproj|solutionrelative:injectiondemo\\service\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265CD950-E19C-4ED5-AE08-46E3CA030353}|InjectionDemo\\InjectionDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\dependency injection\\injectiondemo\\injectiondemo\\service\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{265CD950-E19C-4ED5-AE08-46E3CA030353}|InjectionDemo\\InjectionDemo.csproj|solutionrelative:injectiondemo\\service\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265CD950-E19C-4ED5-AE08-46E3CA030353}|InjectionDemo\\InjectionDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\dependency injection\\injectiondemo\\injectiondemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{265CD950-E19C-4ED5-AE08-46E3CA030353}|InjectionDemo\\InjectionDemo.csproj|solutionrelative:injectiondemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265CD950-E19C-4ED5-AE08-46E3CA030353}|InjectionDemo\\InjectionDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\dependency injection\\injectiondemo\\injectiondemo\\extension\\serviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{265CD950-E19C-4ED5-AE08-46E3CA030353}|InjectionDemo\\InjectionDemo.csproj|solutionrelative:injectiondemo\\extension\\serviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265CD950-E19C-4ED5-AE08-46E3CA030353}|InjectionDemo\\InjectionDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\dependency injection\\injectiondemo\\injectiondemo\\injectiondemo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{265CD950-E19C-4ED5-AE08-46E3CA030353}|InjectionDemo\\InjectionDemo.csproj|solutionrelative:injectiondemo\\injectiondemo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265CD950-E19C-4ED5-AE08-46E3CA030353}|InjectionDemo\\InjectionDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\dependency injection\\injectiondemo\\injectiondemo\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{265CD950-E19C-4ED5-AE08-46E3CA030353}|InjectionDemo\\InjectionDemo.csproj|solutionrelative:injectiondemo\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265CD950-E19C-4ED5-AE08-46E3CA030353}|InjectionDemo\\InjectionDemo.csproj|g:\\training\\rkit_training\\4-asp.net-core\\dependency injection\\injectiondemo\\injectiondemo\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{265CD950-E19C-4ED5-AE08-46E3CA030353}|InjectionDemo\\InjectionDemo.csproj|solutionrelative:injectiondemo\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Dependency Injection\\InjectionDemo\\InjectionDemo\\Program.cs",
+              "RelativeDocumentMoniker": "InjectionDemo\\Program.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Dependency Injection\\InjectionDemo\\InjectionDemo\\Program.cs",
+              "RelativeToolTip": "InjectionDemo\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAuwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T02:04:41.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RazorpayService.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Dependency Injection\\InjectionDemo\\InjectionDemo\\Service\\ServiceHandler\\RazorpayService.cs",
+              "RelativeDocumentMoniker": "InjectionDemo\\Service\\ServiceHandler\\RazorpayService.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Dependency Injection\\InjectionDemo\\InjectionDemo\\Service\\ServiceHandler\\RazorpayService.cs",
+              "RelativeToolTip": "InjectionDemo\\Service\\ServiceHandler\\RazorpayService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T02:04:41.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IPaymentService.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Dependency Injection\\InjectionDemo\\InjectionDemo\\Service\\IPaymentService.cs",
+              "RelativeDocumentMoniker": "InjectionDemo\\Service\\IPaymentService.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Dependency Injection\\InjectionDemo\\InjectionDemo\\Service\\IPaymentService.cs",
+              "RelativeToolTip": "InjectionDemo\\Service\\IPaymentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T02:04:41.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Dependency Injection\\InjectionDemo\\InjectionDemo\\Service\\IProductService.cs",
+              "RelativeDocumentMoniker": "InjectionDemo\\Service\\IProductService.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Dependency Injection\\InjectionDemo\\InjectionDemo\\Service\\IProductService.cs",
+              "RelativeToolTip": "InjectionDemo\\Service\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T02:04:41.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Dependency Injection\\InjectionDemo\\InjectionDemo\\Service\\IOrderService.cs",
+              "RelativeDocumentMoniker": "InjectionDemo\\Service\\IOrderService.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Dependency Injection\\InjectionDemo\\InjectionDemo\\Service\\IOrderService.cs",
+              "RelativeToolTip": "InjectionDemo\\Service\\IOrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T02:04:41.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Dependency Injection\\InjectionDemo\\InjectionDemo\\Service\\ServiceHandler\\ProductService.cs",
+              "RelativeDocumentMoniker": "InjectionDemo\\Service\\ServiceHandler\\ProductService.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Dependency Injection\\InjectionDemo\\InjectionDemo\\Service\\ServiceHandler\\ProductService.cs",
+              "RelativeToolTip": "InjectionDemo\\Service\\ServiceHandler\\ProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T02:04:41.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Dependency Injection\\InjectionDemo\\InjectionDemo\\Service\\ServiceHandler\\OrderService.cs",
+              "RelativeDocumentMoniker": "InjectionDemo\\Service\\ServiceHandler\\OrderService.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Dependency Injection\\InjectionDemo\\InjectionDemo\\Service\\ServiceHandler\\OrderService.cs",
+              "RelativeToolTip": "InjectionDemo\\Service\\ServiceHandler\\OrderService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAmwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T02:04:41.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "JusPayService.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Dependency Injection\\InjectionDemo\\InjectionDemo\\Service\\ServiceHandler\\JusPayService.cs",
+              "RelativeDocumentMoniker": "InjectionDemo\\Service\\ServiceHandler\\JusPayService.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Dependency Injection\\InjectionDemo\\InjectionDemo\\Service\\ServiceHandler\\JusPayService.cs",
+              "RelativeToolTip": "InjectionDemo\\Service\\ServiceHandler\\JusPayService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T02:04:41.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ServiceExtension.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Dependency Injection\\InjectionDemo\\InjectionDemo\\Extension\\ServiceExtension.cs",
+              "RelativeDocumentMoniker": "InjectionDemo\\Extension\\ServiceExtension.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Dependency Injection\\InjectionDemo\\InjectionDemo\\Extension\\ServiceExtension.cs",
+              "RelativeToolTip": "InjectionDemo\\Extension\\ServiceExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T02:04:41.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Dependency Injection\\InjectionDemo\\InjectionDemo\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "InjectionDemo\\Controllers\\OrderController.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Dependency Injection\\InjectionDemo\\InjectionDemo\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "InjectionDemo\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T02:04:41.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Dependency Injection\\InjectionDemo\\InjectionDemo\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "InjectionDemo\\Controllers\\ProductController.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Dependency Injection\\InjectionDemo\\InjectionDemo\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "InjectionDemo\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T02:04:41.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InjectionDemo.csproj",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Dependency Injection\\InjectionDemo\\InjectionDemo\\InjectionDemo.csproj",
+              "RelativeDocumentMoniker": "InjectionDemo\\InjectionDemo.csproj",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Dependency Injection\\InjectionDemo\\InjectionDemo\\InjectionDemo.csproj",
+              "RelativeToolTip": "InjectionDemo\\InjectionDemo.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-12T02:04:41.613Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

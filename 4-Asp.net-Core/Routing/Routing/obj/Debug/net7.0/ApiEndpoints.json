@@ -1,0 +1,54 @@
+[
+  {
+    "ContainingType": "Routing.Controllers.AttributeRoutingController",
+    "Method": "GetAllProducts",
+    "RelativePath": "api/AttributeRouting",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Routing.Controllers.AttributeRoutingController",
+    "Method": "CreateProduct",
+    "RelativePath": "api/AttributeRouting",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Routing.Controllers.AttributeRoutingController",
+    "Method": "UpdateProduct",
+    "RelativePath": "api/AttributeRouting/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Routing.Controllers.AttributeRoutingController",
+    "Method": "DeleteProduct",
+    "RelativePath": "api/AttributeRouting/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

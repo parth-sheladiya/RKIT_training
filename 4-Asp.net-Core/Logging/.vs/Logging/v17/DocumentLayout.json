@@ -1,0 +1,137 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Logging\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{47F3AACA-D8EE-4D1F-B4A7-C984AA087120}|Logging\\Logging.csproj|g:\\training\\rkit_training\\4-asp.net-core\\logging\\logging\\controllers\\loggingdemocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47F3AACA-D8EE-4D1F-B4A7-C984AA087120}|Logging\\Logging.csproj|solutionrelative:logging\\controllers\\loggingdemocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F3AACA-D8EE-4D1F-B4A7-C984AA087120}|Logging\\Logging.csproj|g:\\training\\rkit_training\\4-asp.net-core\\logging\\logging\\nlog.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{47F3AACA-D8EE-4D1F-B4A7-C984AA087120}|Logging\\Logging.csproj|solutionrelative:logging\\nlog.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F3AACA-D8EE-4D1F-B4A7-C984AA087120}|Logging\\Logging.csproj|g:\\training\\rkit_training\\4-asp.net-core\\logging\\logging\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47F3AACA-D8EE-4D1F-B4A7-C984AA087120}|Logging\\Logging.csproj|solutionrelative:logging\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\Training\\RKIT_training\\4-Asp.net-Core\\Logging\\Logging\\bin\\Debug\\net7.0\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Logging\\bin\\Debug\\net7.0\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F3AACA-D8EE-4D1F-B4A7-C984AA087120}|Logging\\Logging.csproj|g:\\training\\rkit_training\\4-asp.net-core\\logging\\logging\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{47F3AACA-D8EE-4D1F-B4A7-C984AA087120}|Logging\\Logging.csproj|solutionrelative:logging\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F3AACA-D8EE-4D1F-B4A7-C984AA087120}|Logging\\Logging.csproj|g:\\training\\rkit_training\\4-asp.net-core\\logging\\logging\\nlog.config||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{47F3AACA-D8EE-4D1F-B4A7-C984AA087120}|Logging\\Logging.csproj|solutionrelative:logging\\nlog.config||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F3AACA-D8EE-4D1F-B4A7-C984AA087120}|Logging\\Logging.csproj|g:\\training\\rkit_training\\4-asp.net-core\\logging\\logging\\logging.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{47F3AACA-D8EE-4D1F-B4A7-C984AA087120}|Logging\\Logging.csproj|solutionrelative:logging\\logging.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Logging\\Logging\\bin\\Debug\\net7.0\\appsettings.json",
+              "RelativeDocumentMoniker": "Logging\\bin\\Debug\\net7.0\\appsettings.json",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Logging\\Logging\\bin\\Debug\\net7.0\\appsettings.json",
+              "RelativeToolTip": "Logging\\bin\\Debug\\net7.0\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-12T02:01:43.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Logging\\Logging\\appsettings.json",
+              "RelativeDocumentMoniker": "Logging\\appsettings.json",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Logging\\Logging\\appsettings.json",
+              "RelativeToolTip": "Logging\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-12T02:01:43.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "nlog.config",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Logging\\Logging\\nlog.config",
+              "RelativeDocumentMoniker": "Logging\\nlog.config",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Logging\\Logging\\nlog.config",
+              "RelativeToolTip": "Logging\\nlog.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-02-12T02:01:43.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "nlog.config",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Logging\\Logging\\nlog.config",
+              "RelativeDocumentMoniker": "Logging\\nlog.config",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Logging\\Logging\\nlog.config",
+              "RelativeToolTip": "Logging\\nlog.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-02-12T02:01:43.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoggingDemoController.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Logging\\Logging\\Controllers\\LoggingDemoController.cs",
+              "RelativeDocumentMoniker": "Logging\\Controllers\\LoggingDemoController.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Logging\\Logging\\Controllers\\LoggingDemoController.cs",
+              "RelativeToolTip": "Logging\\Controllers\\LoggingDemoController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T02:01:43.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Logging.csproj",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Logging\\Logging\\Logging.csproj",
+              "RelativeDocumentMoniker": "Logging\\Logging.csproj",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Logging\\Logging\\Logging.csproj",
+              "RelativeToolTip": "Logging\\Logging.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-12T02:01:43.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Logging\\Logging\\Program.cs",
+              "RelativeDocumentMoniker": "Logging\\Program.cs",
+              "ToolTip": "G:\\Training\\RKIT_training\\4-Asp.net-Core\\Logging\\Logging\\Program.cs",
+              "RelativeToolTip": "Logging\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T02:01:44.16Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
