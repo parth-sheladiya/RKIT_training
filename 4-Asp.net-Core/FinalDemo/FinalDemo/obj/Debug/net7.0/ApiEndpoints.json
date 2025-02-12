@@ -74,6 +74,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "FinalDemo.Controllers.CLORD01",
+    "Method": "StatusChanges",
+    "RelativePath": "api/CLORD01/OrderStatusChanges",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "newStatus",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "FinalDemo.Controllers.CLPDT01",
     "Method": "AddPRoduct",
     "RelativePath": "api/CLPDT01/addProduct",

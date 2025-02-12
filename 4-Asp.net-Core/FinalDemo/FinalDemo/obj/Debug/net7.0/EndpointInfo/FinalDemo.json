@@ -126,6 +126,37 @@
         }
       }
     },
+    "/api/CLORD01/OrderStatusChanges": {
+      "put": {
+        "tags": [
+          "CLORD01"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "newStatus",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/CLPDT01/getAllProducts": {
       "get": {
         "tags": [

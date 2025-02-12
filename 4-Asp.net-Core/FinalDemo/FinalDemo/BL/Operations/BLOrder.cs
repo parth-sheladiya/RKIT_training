@@ -12,7 +12,7 @@ using System.Data;
 
 namespace FinalDemo.BL.Operations
 {
-    public class BLOrder : ICommonHandler<DTOORD01>
+    public class BLOrder : IBLORD
     {
         private readonly IDbConnectionFactory _dbfactory;
         private Response _objResponse;
@@ -28,11 +28,11 @@ namespace FinalDemo.BL.Operations
         /// <param name="dbfactory"></param>
         /// <param name="objResponse"></param>
         /// <param name="objORD01"></param>
-        public BLOrder(IDbConnectionFactory dbfactory, Response objResponse,ORD01 objORD01)
+        public BLOrder(IDbConnectionFactory dbfactory, Response objResponse)
         { 
             _dbfactory = dbfactory;
             _objResponse = objResponse;
-            _objORD01 = objORD01;
+            
         }
 
         /// <summary>

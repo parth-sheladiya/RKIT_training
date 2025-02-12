@@ -15,6 +15,7 @@ using System.Text;
 using Microsoft.OpenApi.Models;
 using FinalDemo.Middleware;
 using FinalDemo.BL.Interface;
+using FinalDemo.Service;
 
 namespace FinalDemo
 {
@@ -96,19 +97,20 @@ namespace FinalDemo
                connectionString,
                MySqlDialect.Provider
            ));
+            builder.Services.RegisterEcommerceServices();
 
-           
-            /// BL service
-            //builder.Services.AddScoped<Response>();
-            builder.Services.AddScoped<IAuthentication, BLAuth>();
-            builder.Services.AddScoped<IUSR01, BLUser>();
-            //builder.Services.AddScoped<BLUser>();
-            builder.Services.AddScoped<BLPdt>();
-            builder.Services.AddScoped<BLOrder>();
+           // /// BL service
+           // builder.Services.AddScoped<Response>();
+           builder.Services.AddScoped<IAuthentication,BLAuth>();
+           //// builder.Services.AddScoped<IUSR01, BLUser>();
+           // builder.Services.AddScoped<BLUser>();
+           // builder.Services.AddScoped<BLPdt>();
+           // builder.Services.AddScoped<BLOrder>();
 
-            //builder.Services.AddTransient<USR01>();
-            //builder.Services.AddTransient<PDT01>();
-            //builder.Services.AddTransient<ORD01>();
+            // builder.Services.AddTransient<USR01>();
+            // builder.Services.AddTransient<PDT01>();
+            // builder.Services.AddTransient<ORD01>();
+
 
             // auth
             builder.Services.AddSingleton<JwtSecurityTokenHandler>();

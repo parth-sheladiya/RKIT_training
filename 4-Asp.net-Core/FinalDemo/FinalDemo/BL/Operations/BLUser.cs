@@ -13,11 +13,11 @@ using System.Data;
 namespace FinalDemo.BL.Operations
 {
     //public class BLUser : IUSR01, ICommonHandler<DTOUSR01>
-    public class BLUser : IUSR01, ICommonHandler<DTOUSR01>
+    public class BLUser :  IBLUSR
     {
         // connetion factore
         private readonly IDbConnectionFactory _dbfactory;
-        private readonly string _connectionString;
+        
         // response
         private Response _objResponse;
         public int _id;
@@ -30,12 +30,12 @@ namespace FinalDemo.BL.Operations
         /// </summary>
         /// <param name="dbfactory">dbfactory</param>
         /// <param name="objResponse">objResponse</param>
-        /// <param name="objUSR01">objUSR01</param>
-        public BLUser(IDbConnectionFactory dbfactory, Response objResponse , USR01 objUSR01)
+       
+        public BLUser(IDbConnectionFactory dbfactory, Response objResponse )
         {
             _dbfactory = dbfactory;
             _objResponse = objResponse;
-            _objUSR01 = objUSR01;
+            
             
         }
 

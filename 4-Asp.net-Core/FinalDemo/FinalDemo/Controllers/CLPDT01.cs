@@ -1,4 +1,5 @@
-﻿using FinalDemo.BL.Operations;
+﻿using FinalDemo.BL.Interface;
+using FinalDemo.BL.Operations;
 using FinalDemo.Filters;
 using FinalDemo.Models;
 using FinalDemo.Models.DTO;
@@ -13,14 +14,15 @@ namespace FinalDemo.Controllers
     public class CLPDT01 : ControllerBase
     {
         private Response _objResponse;
-        private readonly BLPdt _objBLPdt;
+        //private readonly BLPdt _objBLPdt;
+        private IBLPDT _objBLPdt;
 
         /// <summary>
         /// ctor
         /// </summary>
         /// <param name="objResponse"></param>
         /// <param name="objBLPdt"></param>
-        public CLPDT01(Response objResponse, BLPdt objBLPdt)
+        public CLPDT01(Response objResponse, IBLPDT objBLPdt)
         {
             _objResponse = objResponse;
             _objBLPdt = objBLPdt;

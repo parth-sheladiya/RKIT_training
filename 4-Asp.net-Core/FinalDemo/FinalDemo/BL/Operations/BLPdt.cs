@@ -11,7 +11,7 @@ using System.Data;
 
 namespace FinalDemo.BL.Operations
 {
-    public class BLPdt : ICommonHandlergit<DTOPDT01>
+    public class BLPdt : IBLPDT
     {
         // connection factory
         private readonly IDbConnectionFactory _dbfactory;
@@ -27,11 +27,11 @@ namespace FinalDemo.BL.Operations
         /// <param name="dbfactory"></param>
         /// <param name="objResponse"></param>
         /// <param name="objPDT01"></param>
-        public BLPdt(IDbConnectionFactory dbfactory, Response objResponse , PDT01 objPDT01)
+        public BLPdt(IDbConnectionFactory dbfactory, Response objResponse )
         {
             _dbfactory = dbfactory;
             _objResponse = objResponse;
-            _objPDT01 = objPDT01;
+            
         }
 
         /// <summary>

@@ -23,5 +23,7 @@ namespace FinalDemo.BL.Interface
         /// <param name="token"></param>
         /// <returns></returns>
         ClaimsPrincipal ValidateToken(string token);
+
+        public int GetLoggedInUserId(string token);
     }
 }

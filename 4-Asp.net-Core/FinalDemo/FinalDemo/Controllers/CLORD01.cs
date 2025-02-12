@@ -1,4 +1,5 @@
-﻿using FinalDemo.BL.Operations;
+﻿using FinalDemo.BL.Interface;
+using FinalDemo.BL.Operations;
 using FinalDemo.Filters;
 using FinalDemo.Models;
 using FinalDemo.Models.DTO;
@@ -14,15 +15,17 @@ namespace FinalDemo.Controllers
     public class CLORD01 : ControllerBase
     {
         private Response _objResponse;
-        private BLOrder _objBLOrder;
-        private BLAuth _objBLAuth;
+        // private BLOrder _objBLOrder;
+        //private BLAuth _objBLAuth;
+        private IBLORD _objBLOrder;
+        private IAuthentication _objBLAuth;
 
         /// <summary>
         /// ctor
         /// </summary>
         /// <param name="objResponse"></param>
         /// <param name="objBLOrder"></param>
-        public CLORD01(Response objResponse , BLOrder objBLOrder , BLAuth objBLAuth )
+        public CLORD01(Response objResponse , IBLORD objBLOrder , IAuthentication objBLAuth )
         {
             _objResponse = objResponse;
             _objBLOrder = objBLOrder;

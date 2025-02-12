@@ -15,13 +15,15 @@ namespace FinalDemo.Controllers
     public class CLUSR01 : ControllerBase
     {
         private Response _objResponse;
-        private readonly BLUser _objBLUser;
-        private readonly BLAuth _objBLAuth;
+        private IBLUSR _objBLUser;
+        //private readonly BLUser _objBLUser;
+        //private readonly BLAuth _objBLAuth;
+        private IAuthentication _objBLAuth;
 
         /// <summary>
         /// ctor 
         /// </summary>
-        public CLUSR01(Response objResponse , BLUser objBLUser , BLAuth objBLAuth)
+        public CLUSR01(Response objResponse , IBLUSR objBLUser , IAuthentication objBLAuth)
         {
             _objResponse = objResponse;
             _objBLUser = objBLUser;
