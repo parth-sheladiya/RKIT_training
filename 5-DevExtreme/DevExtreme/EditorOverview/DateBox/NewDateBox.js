@@ -7,6 +7,7 @@
         type: "date",
         value: new Date(),
         displayFormat: "yyyy/MM/dd",
+        dateSerializationFormat: "yyyy-MM-dd",
         invalidDateMessage: "Invalid Date formate please try yyyy/MM/dd format",
         // user enter or not 
         acceptCustomValue: true,

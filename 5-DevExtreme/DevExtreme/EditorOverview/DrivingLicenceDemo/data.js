@@ -1,10 +1,10 @@
-﻿const RadioData = ["Male", "Female", "Other"]
+﻿const GenderData = ["Male", "Female", "Other"]
 
 
 const BloodGroup = ["A+", "A-", "B+", "B-", "O+", "O-", "AB+", "AB-"]
 
 
-const districts = {
+const States = {
     Gujarat: ["Ahmedabad", "Surat", "Vadodara", "Rajkot"],
     Maharashtra: ["Mumbai", "Pune", "Nagpur", "Nashik"],
     Rajasthan: ["Jaipur", "Udaipur", "Jodhpur", "Kota"]
