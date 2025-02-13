@@ -1,19 +1,11 @@
-﻿$(document).ready(function(){
-    // first name
+﻿$(document).ready(function () {
 
+    // First Name Validation
     $("#firstname-validation").dxTextBox({
-        validationMessageMode:"always",
+        validationMessageMode: "always",
     }).dxValidator({
-        name: "first name",
-        onValidated: (e) => {
-            if (e.isValid) {
-                DevExpress.ui.notify(
-                    e.component.option("name") + " Validated Successfully!",
-                    "success",
-                    2000
-                );
-            }
-        },
+        name: "First Name",
+        onValidated: showSuccessMessage,
         validationRules: [
             {
                 type: "required",
@@ -26,175 +18,157 @@
                 message: "First Name must be between 1 and 22 characters!",
             },
         ],
-    })
+    });
 
-    // last name 
+    // Last Name Validation
     $("#lastname-validation").dxTextBox({
         validationMessageMode: "always",
     }).dxValidator({
-        name: "last name",
-        onValidated: (e) => {
-            if (e.isValid) {
-                DevExpress.ui.notify(
-                    e.component.option("name") + " Validated Successfully!",
-                    "success",
-                    2000
-                );
-            }
-        },
+        name: "Last Name",
+        onValidated: showSuccessMessage,
         validationRules: [
             {
                 type: "required",
-                message: "last Name is required",
+                message: "Last Name is required",
             },
             {
                 type: "stringLength",
                 min: 1,
                 max: 10,
-                message: "last Name must be between 1 and 22 characters!",
+                message: "Last Name must be between 1 and 10 characters!",
             },
         ],
-    })
+    });
 
-    // email checking
-
+    // Email Validation
     $("#email-validation").dxTextBox({
         validationMessageMode: "always",
     }).dxValidator({
-        name: "email",
-        onValidated: (e) => {
-            if (e.isValid) {
-                DevExpress.ui.notify(
-                    e.component.option("name") + " Validated Successfully!",
-                    "success",
-                    2000
-                );
-            }
-        },
+        name: "Email",
+        onValidated: showSuccessMessage,
         validationRules: [
             {
                 type: "required",
-                message: "email is required",
+                message: "Email is required",
             },
             {
                 type: "email",
-                message:"invalid email addresss"
-            }
-        ]
-    })
+                message: "Invalid email address!",
+            },
+        ],
+    });
 
-    // password checking
+    // Password Validation
     $("#password-validation").dxTextBox({
         validationMessageMode: "always",
+        mode: "password",
     }).dxValidator({
-        name: "password",
-        onValidated: (e) => {
-            if (e.isValid) {
-                DevExpress.ui.notify(
-                    e.component.option("name") + " Validated Successfully!",
-                    "success",
-                    2000
-                );
-            }
+        name: "Password",
+        onValidated: showSuccessMessage,
+        validationRules: [
+            {
+            type: "required",
+            message: "Password is required",
         },
+        {
+            type: "stringLength",
+            min: 6,
+            message: "Password must be at least 6 characters long!",
+        },
+        {
+            type: "custom",
+            validationCallback: function (e) {
+                return /[A-Z]/.test(e.value);  // At least 1 uppercase letter
+            },
+            message: "Must contain at least one uppercase letter!",
+        },
+        {
+            type: "custom",
+            validationCallback: function (e) {
+                return /[a-z]/.test(e.value);  // At least 1 lowercase letter
+            },
+            message: "Must contain at least one lowercase letter!",
+        },
+        {
+            type: "custom",
+            validationCallback: function (e) {
+                return /\d/.test(e.value);  // At least 1 number
+            },
+            message: "Must contain at least one number!",
+        },
+        {
+            type: "custom",
+            validationCallback: function (e) {
+                return /[@$!%*?&]/.test(e.value);  // At least 1 special character
+            },
+            message: "Must contain at least one special character (@, $, !, %, *, ?, &)!",
+        },
+        ],
+    });
+
+    // Confirm Password Validation
+    $("#confirm-password-validation").dxTextBox({
+        validationMessageMode: "always",
+        mode: "password",
+    }).dxValidator({
+        name: "Confirm Password",
+        onValidated: showSuccessMessage,
         validationRules: [
             {
                 type: "required",
-                message: "email is required",
+                message: "Confirm Password is required",
             },
             {
-                type: "pattern",
-                pattern: /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/,
-                message: "Password must have at least 1 uppercase, 1 lowercase, 1 number, 1 special character and be at least 6 characters long!",
-            }
-
-        ]
-    })
-
-    // confirm password
-
-    $("#confirm-password-validation")
-        .dxTextBox({
-            validationMessageMode: "always",
-            inputAttr: { "aria-label": "ConfirmPassword" },
-            mode: "password",
-        })
-        .dxValidator({
-            name: "Confirm Password",
-            onValidated: (e) => {
-                if (e.isValid) {
-                    DevExpress.ui.notify(
-                        e.component.option("name") + " Validated Successfully!",
-                        "success",
-                        2000
-                    );
-                }
+                type: "compare",
+                comparisonTarget: function () {
+                    return $("#password-validation").dxTextBox("instance").option("value");
+                },
+                message: "Passwords do not match!",
             },
-            validationRules: [
-                {
-                    type: "required",
-                    message: "Confirm Password is required",
-                },
-                {
-                    type: "compare",
-                    comparisonTarget: function () {
-                        return $("#password-validation")
-                            .dxTextBox("instance")
-                            .option("value");
-                    },
-                    message: "Passwords do not match!",
-                },
-            ],
-        });
+        ],
+    });
 
+    // Aadhaar Number Validation
     $("#Aadhar-validation").dxTextBox({
-        name: "aadhar number",
-        onValidated: (e) => {
-            if (e.isValid) {
-                DevExpress.ui.notify(
-                    e.component.option("name") + " Validated Successfully!",
-                    "success",
-                    2000
-                );
-            }
-        },
+        validationMessageMode: "always",
+    }).dxValidator({
+        name: "Aadhar Number",
+        onValidated: showSuccessMessage,
         validationRules: [
             {
                 type: "required",
-                message: "aadhar  Number is required",
+                message: "Aadhar Number is required",
             },
             {
                 type: "pattern",
                 pattern: /^[2-9]{1}[0-9]{11}$/,
                 message: "Aadhar Number must be a valid 12-digit number (First digit cannot be 0 or 1)!",
-            }
-        ]
-    })
+            },
+        ],
+    });
 
-    $("#birthdate-validation").dxTextBox({
-        name: "birthb date",
-        onValidated: (e) => {
-            if (e.isValid) {
-                DevExpress.ui.notify(
-                    e.component.option("name") + " Validated Successfully!",
-                    "success",
-                    2000)
-            }
-        },
+    // Birthdate Validation
+    $("#birthdate-validation").dxDateBox({
+        validationMessageMode: "always",
+        type: "date",
+    }).dxValidator({
+        name: "Birthdate",
+        onValidated: showSuccessMessage,
         validationRules: [
             {
                 type: "required",
-                message:"biirthdate is required"
+                message: "Birthdate is required",
             },
             {
                 type: "range",
                 min: new Date(1950, 0, 1),
                 max: new Date(),
                 message: "Date is Not Valid",
-            }
-        ]
-    })
+            },
+        ],
+    });
 
+    // Register Button
     $("#button").dxButton({
         text: "Register",
         type: "success",
@@ -211,4 +185,15 @@
         },
     });
 
-})
+});
+
+// Function to show success message
+function showSuccessMessage(e) {
+    if (e.isValid) {
+        DevExpress.ui.notify(
+            e.component.option("name") + " Validated Successfully!",
+            "success",
+            2000
+        );
+    }
+}
