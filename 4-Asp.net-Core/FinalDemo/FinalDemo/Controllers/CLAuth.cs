@@ -4,6 +4,7 @@ using FinalDemo.Models.POCO;
 using FinalDemo.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using FinalDemo.BL.Interface;
 
 namespace FinalDemo.Controllers
 {
@@ -12,8 +13,9 @@ namespace FinalDemo.Controllers
     public class CLAuth : ControllerBase
     {
         private Response _objResponse;
-        private BLAuth _objBLAuth;
+       // private BLAuth _objBLAuth;
         private USR01 _objUSR01;
+        private IAuthentication _objBLAuth;
 
         /// <summary>
         /// ctore
@@ -21,10 +23,9 @@ namespace FinalDemo.Controllers
         /// <param name="objResponse"></param>
         /// <param name="objUSR01"></param>
         /// <param name="objBLAuth"></param>
-        public CLAuth(Response objResponse, USR01 objUSR01, BLAuth objBLAuth)
+        public CLAuth(Response objResponse, IAuthentication objBLAuth)
         {
             _objResponse = objResponse;
-            _objUSR01 = objUSR01;
             _objBLAuth = objBLAuth;
         }
 

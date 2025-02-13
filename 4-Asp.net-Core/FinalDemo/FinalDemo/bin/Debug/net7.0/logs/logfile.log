@@ -463,3 +463,24 @@
 2025-02-12 19:53:36.4955 Info Outgoing response: 200
 2025-02-12 19:54:00.3340 Info Incoming request: POST /api/CLUSR01/addUser
 2025-02-12 19:54:32.4750 Info Outgoing response: 200
+2025-02-13 09:11:40.2387 Info Incoming request: GET /swagger/index.html
+2025-02-13 09:11:40.6119 Info Outgoing response: 200
+2025-02-13 09:11:40.8101 Info Incoming request: GET /swagger/v1/swagger.json
+2025-02-13 09:11:41.0179 Info Outgoing response: 200
+2025-02-13 09:11:57.4810 Info Incoming request: PUT /api/CLPDT01/updateProduct
+2025-02-13 09:11:57.8835 Info Outgoing response: 401
+2025-02-13 09:13:07.2453 Info Incoming request: POST /api/CLUSR01/addUser
+2025-02-13 09:13:12.8314 Info Outgoing response: 200
+2025-02-13 09:13:35.7818 Info Incoming request: PUT /api/CLUSR01/updateUser
+2025-02-13 09:13:35.7818 Info Outgoing response: 401
+2025-02-13 09:13:55.8962 Info Incoming request: POST /api/CLAuth/Login
+2025-02-13 09:21:17.5204 Info Incoming request: GET /swagger/index.html
+2025-02-13 09:21:17.8855 Info Outgoing response: 200
+2025-02-13 09:21:18.0392 Info Incoming request: GET /swagger/v1/swagger.json
+2025-02-13 09:21:18.1962 Info Outgoing response: 200
+2025-02-13 09:22:51.5060 Info Incoming request: POST /api/CLAuth/Login
+2025-02-13 09:25:04.4258 Info Outgoing response: 200
+2025-02-13 09:25:33.9920 Info Incoming request: DELETE /api/CLUSR01/deleteUser
+2025-02-13 09:25:34.1299 Info Outgoing response: 200
+2025-02-13 09:25:46.7005 Info Incoming request: PUT /api/CLUSR01/updateUser
+2025-02-13 09:25:46.7347 Info Outgoing response: 200

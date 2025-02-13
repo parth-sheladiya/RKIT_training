@@ -1,4 +1,5 @@
-﻿using FinalDemo.Models.ENUM;
+﻿using FinalDemo.Models.DTO;
+using FinalDemo.Models.ENUM;
 using FinalDemo.Models.POCO;
 using System.Security.Claims;
 
@@ -24,6 +25,7 @@ namespace FinalDemo.BL.Interface
         /// <returns></returns>
         ClaimsPrincipal ValidateToken(string token);
 
+        public USR01 AuthCred(DTOAUTH objDTOAuth);
         public int GetLoggedInUserId(string token);
     }
 }
