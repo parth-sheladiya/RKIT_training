@@ -118,8 +118,6 @@
     <Content Include="DateBox\NewDateBox.js" />
     <Content Include="DropDown\dropDown.html" />
     <Content Include="DropDown\dropDown.js" />
-    <Content Include="FileUploder\Drop.html" />
-    <Content Include="FileUploder\drop.js" />
     <Content Include="FileUploder\Fileuploder.html" />
     <Content Include="FileUploder\Fileuploder.js" />
     <Content Include="Index.html" />
@@ -192,6 +190,8 @@
     <Content Include="TextArea\Textarea.js" />
     <Content Include="TextBox\TextBox.html" />
     <Content Include="TextBox\TextBox.js" />
+    <Content Include="Validation\validation.html" />
+    <Content Include="Validation\validation.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
