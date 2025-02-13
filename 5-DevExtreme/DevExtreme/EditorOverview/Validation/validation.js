@@ -78,28 +78,28 @@
         {
             type: "custom",
             validationCallback: function (e) {
-                return /[A-Z]/.test(e.value);  // At least 1 uppercase letter
+                return /[A-Z]/.test(e.value);  
             },
             message: "Must contain at least one uppercase letter!",
         },
         {
             type: "custom",
             validationCallback: function (e) {
-                return /[a-z]/.test(e.value);  // At least 1 lowercase letter
+                return /[a-z]/.test(e.value); 
             },
             message: "Must contain at least one lowercase letter!",
         },
         {
             type: "custom",
             validationCallback: function (e) {
-                return /\d/.test(e.value);  // At least 1 number
+                return /\d/.test(e.value);  
             },
             message: "Must contain at least one number!",
         },
         {
             type: "custom",
             validationCallback: function (e) {
-                return /[@$!%*?&]/.test(e.value);  // At least 1 special character
+                return /[@$!%*?&]/.test(e.value);  
             },
             message: "Must contain at least one special character (@, $, !, %, *, ?, &)!",
         },

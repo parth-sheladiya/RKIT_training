@@ -123,6 +123,9 @@
     <Content Include="Index.html" />
     <Content Include="NumberBox\NumberBox.html" />
     <Content Include="NumberBox\NumberBox.js" />
+    <Content Include="RadioGroup\data.js" />
+    <Content Include="RadioGroup\Radio.html" />
+    <Content Include="RadioGroup\Radio.js" />
     <Content Include="Scripts\cldr.js" />
     <Content Include="Scripts\cldr\event.js" />
     <Content Include="Scripts\cldr\supplemental.js" />
