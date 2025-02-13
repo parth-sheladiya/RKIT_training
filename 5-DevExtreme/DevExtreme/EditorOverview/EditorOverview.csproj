@@ -116,6 +116,9 @@
     <Content Include="Content\dx.softblue.css" />
     <Content Include="DateBox\DateBox.html" />
     <Content Include="DateBox\NewDateBox.js" />
+    <Content Include="DrivingLicenceDemo\data.js" />
+    <Content Include="DrivingLicenceDemo\Licence.html" />
+    <Content Include="DrivingLicenceDemo\Licence.js" />
     <Content Include="DropDown\dropDown.html" />
     <Content Include="DropDown\dropDown.js" />
     <Content Include="FileUploder\Fileuploder.html" />
