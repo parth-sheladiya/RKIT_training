@@ -35,7 +35,7 @@ namespace FinalDemo.Middleware
         }
     }
 
-    // Extension method used to add the middleware in program.cs
+    // it is directly use in program.cs
     public static class LoggingMiddlewareExtensions
     {
         public static IApplicationBuilder UseLoggingMiddleware(this IApplicationBuilder builder)
