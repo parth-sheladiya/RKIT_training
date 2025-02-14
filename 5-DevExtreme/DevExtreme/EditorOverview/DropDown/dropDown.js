@@ -37,7 +37,7 @@
         //        options: {
         //            text: "❌",
         //            onClick: function () {
-        //                console.log("click call");
+        //                console.log("click close");
         //            }
         //        },
         //    }

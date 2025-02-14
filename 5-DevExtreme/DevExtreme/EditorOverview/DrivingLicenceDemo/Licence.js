@@ -1,38 +1,33 @@
 ﻿$(document).ready(function () {
+
+    // Initialize form controls as you've already set up
     $("#fullName").dxTextBox({
         hint: "Full name",
         placeholder: "enter your full name",
         spellcheck: true,
         stylingMode: "filled",
-        //maxLength: 15,
-        //minLength:4,
         validationMessageMode: "always",
     }).dxValidator({
         name: "fullname",
         validationRules: [
             {
                 type: "required",
-                message: "full name  is required"
+                message: "full name is required"
             },
             {
-                // that'why difference between maxlength and max
                 type: "stringLength",
                 min: 1,
                 max: 22,
-                message: "First Name must be between 1 and 22 characters!",
+                message: "First Name must be between 1 and 22 characters!"
             }
-        ],
-    })
-
-
+        ]
+    });
 
     $("#dob").dxDateBox({
         type: "date",
         hint: "date box",
         placeholder: "select your date of birth",
-        acceptCustomValue: false,
         dateSerializationFormat: "yyyy-MM-dd",
-        invalidDateMessage: "Invalid Date formate please try yyyy/MM/dd format",
         min: new Date(1975, 0, 1),
         max: new Date(),
         showClearButton: true,
@@ -52,10 +47,8 @@
                 },
                 message: "You must be at least 18 years old"
             }
-        ],
-    })
-
-
+        ]
+    });
 
     $("#gender").dxRadioGroup({
         items: GenderData,
@@ -64,140 +57,117 @@
     }).dxValidator({
         name: "Gender",
         validationRules: [
-            {
-                type: "required",
-                message: "Gender is required"
-            }
-        ],
-    })
-
+            { type: "required", message: "Gender is required" }
+        ]
+    });
 
     $("#bloodGroup").dxSelectBox({
         items: BloodGroup,
         placeholder: "select your blood group",
-        dropDownOptions: {
-            closeOnOutsideClick: true
-        },
-
+        dropDownOptions: { closeOnOutsideClick: true }
     }).dxValidator({
         name: "BloodGroup",
         validationRules: [
-            {
-                type: "required",
-                message: "BloodGroup is required"
-            },
-        ],
-    })
-
-
+            { type: "required", message: "BloodGroup is required" }
+        ]
+    });
+    // Disease checkboxes
+    $("#disease1").dxCheckBox({
+        text: "Hypertension"
+    });
+    $("#disease2").dxCheckBox({
+        text: "Diabetes"
+    });
+    $("#disease3").dxCheckBox({
+        text: "Asthma"
+    });
+    $("#disease4").dxCheckBox({
+        text: "Heart Disease"
+    });
+    $("#disease5").dxCheckBox({
+        text: "Cancer"
+    });
     $("#mobile").dxTextBox({
         hint: "mobile number",
         placeholder: "enter your mobile number",
-        mask: "+91 XXXXXXXXXX",  
-        maskRules: {
-            "X": /[0-9]/
-        }, 
+        mask: "+91 XXXXXXXXXX",
+        maskRules: { "X": /[0-9]/ },
         maskInvalidMessage: "Enter a valid phone number",
         useMaskedValue: true,
         showMaskMode: "onFocus",
     }).dxValidator({
         name: "mobile",
         validationRules: [
-            {
-                type: "required",
-                message: "mobile number is required"
-            },
-        ],
+            { type: "required", message: "mobile number is required" }
+        ]
     });
 
-
-
-    $("#state").dxDropDownBox({
-        acceptCustomValue: false,
-        placeholder:"select state"
+    $("#state").dxSelectBox({
+        items: Object.keys(StatesSelect),
+        onValueChanged: function (e) {
+            $("#district").dxSelectBox("instance").option("items", StatesSelect[e.value] || []);
+            $("#district").dxSelectBox("instance").reset(); // Reset district selection
+        }
     }).dxValidator({
+        name: "State",
+        validationRules: [{ type: "required", message: "State is required" }]
+    });
 
-    })
-
-
-    $("#district").dxDropDownBox({
-        acceptCustomValue: false,
-        placeholder:"select district"
+    $("#district").dxSelectBox({
+        items: [],
     }).dxValidator({
+        name: "District",
+        validationRules: [{ type: "required", message: "District is required" }]
+    });
 
-    })
-
-
-    $("#vehicleType").dxSelectBox({
-        items: TypeOfVehicle,
-        placeholder: "select vehicle type",
-        hint: "this is select box",
+    $("#vehicleType").dxDropDownBox({
+        placeholder: "Select vehicle type",
+        contentTemplate(e) {
+            const list = $("<div>").dxList({
+                dataSource: TypeOfVehicle,
+                selectionMode: "single",
+                onItemClick: function (args) {
+                    e.component.option("value", args.itemData);
+                    e.component.close();
+                },
+            });
+            return list;
+        }
     }).dxValidator({
-        name: "vehicletype",
-        validationRules: [
-            {
-                type: "required",
-                message: "vehicle type is required"
-            },
-        ],
-    })
-
+        validationRules: [{ type: "required", message: "Vehicle type is required" }]
+    });
 
     $("#licenseType").dxSelectBox({
         items: TypeOfLicence,
         placeholder: "select licence type",
-        hint: "this is select box",
     }).dxValidator({
         name: "licencetype",
-        validationRules: [
-            {
-                type: "required",
-                message: "licence type is required"
-            },
-        ],
-    })
-
+        validationRules: [{ type: "required", message: "Licence type is required" }]
+    });
 
     $("#examDate").dxDateBox({
         type: "date",
-        hint: "date box",
+        hint: "exam date",
         placeholder: "select your exam date",
-        acceptCustomValue: false,
-        dateSerializationFormat: "yyyy-MM-dd",
-        invalidDateMessage: "Invalid Date formate please try yyyy/MM/dd format",
         min: new Date(),
-        max: new Date(2025,3,1),
+        max: new Date(2025, 3, 1),
         showClearButton: true,
     }).dxValidator({
         type: "required",
-        message: "exam Date is required"
-    })
-
+        message: "Exam Date is required"
+    });
 
     $("#idProof").dxFileUploader({
-        labelText: "id proof",
+        labelText: "Upload ID Proof",
         accept: "image/*",
-        allowCanceling: true,
-        uploadUrl: "https://js.devexpress.com/Demos/WidgetsGalleryDataService/api/ChunkUpload",
         maxFileSize: 1000000,
         minFileSize: 1000,
-        uploadMode: "useButtons",
-        invalidFileExtensionMessage: "this extension is invalid",
-        invalidMaxFileSizeMessage: "your id proof size is greater than maxsize",
-        invalidMinFileSizeMessage: "your id proof size is less than min size",
-        onProgress: function (e) {
-            alert("Upload progress:", e.bytesLoaded / e.bytesTotal * 100, "%");
-        }, 
     }).dxValidator({
         name: "idproof",
         validationRules: [
-            {
-                type: "required",
-                message: "id proof is required"
-            },
-        ],
-    })
-
+            { type: "required", message: "ID proof is required" }
+        ]
+    });
 
     $("#declaration").dxCheckBox({
         text: "I Agree to Terms & Conditions",
@@ -208,27 +178,51 @@
                 comparisonTarget: () => true,
                 message: "You must agree to the Terms and Conditions",
             },
-        ],
-    })
-
+        ]
+    });
 
     $("#submitBtn").dxButton({
         text: "Register",
         type: "success",
         useSubmitBehavior: true,
-        stylingMode: "contained",
         onClick: () => {
             const result = DevExpress.validationEngine.validateGroup();
             if (result.isValid) {
-                DevExpress.ui.notify("success", "success", 5000)
-               
+                saveToSessionStorage(); // Save data to sessionStorage
+                DevExpress.ui.notify("Form submitted successfully", "success", 5000);
             } else {
                 DevExpress.ui.notify("Please fix the validation errors", "error", 5000);
             }
         },
-    })
+    });
 
+    // Function to save form data to sessionStorage
+    function saveToSessionStorage() {
+        const formData = {
+            fullName: $("#fullName").dxTextBox("instance").option("value"),
+            dob: $("#dob").dxDateBox("instance").option("value"),
+            gender: $("#gender").dxRadioGroup("instance").option("value"),
+            bloodGroup: $("#bloodGroup").dxSelectBox("instance").option("value"),
+            mobile: $("#mobile").dxTextBox("instance").option("value"),
+            state: $("#state").dxSelectBox("instance").option("value"),
+            district: $("#district").dxSelectBox("instance").option("value"),
+            vehicleType: $("#vehicleType").dxDropDownBox("instance").option("value"),
+            licenseType: $("#licenseType").dxSelectBox("instance").option("value"),
+            examDate: $("#examDate").dxDateBox("instance").option("value"),
+            idProof: $("#idProof").dxFileUploader("instance").option("value"),
+            declaration: $("#declaration").dxCheckBox("instance").option("value"),
+            diseases: [
+                $("#disease1").dxCheckBox("instance").option("value") ? "Hypertension" : null,
+                $("#disease2").dxCheckBox("instance").option("value") ? "Diabetes" : null,
+                $("#disease3").dxCheckBox("instance").option("value") ? "Asthma" : null,
+                $("#disease4").dxCheckBox("instance").option("value") ? "Heart Disease" : null,
+                $("#disease5").dxCheckBox("instance").option("value") ? "Cancer" : null
+            ].filter(Boolean), // Remove null values
+        };
 
+        // Save the form data to sessionStorage
+        sessionStorage.setItem("formData", JSON.stringify(formData));
 
-
+        console.log("Form Data Saved to sessionStorage:", formData); 
+    }
 });
