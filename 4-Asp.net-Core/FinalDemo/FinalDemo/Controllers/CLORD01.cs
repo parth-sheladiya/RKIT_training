@@ -123,7 +123,7 @@ namespace FinalDemo.Controllers
         /// <param name="newStatus">New order status</param>
         [HttpPut]
         [Route("OrderStatusChanges")]
-        [AuthFilter("User")]
+        [AuthFilter("Admin")]
         public IActionResult StatusChanges(int id, string newStatus)
         {
             // id and status

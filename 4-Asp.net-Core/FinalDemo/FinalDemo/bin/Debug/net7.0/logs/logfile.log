@@ -484,3 +484,49 @@
 2025-02-13 09:25:34.1299 Info Outgoing response: 200
 2025-02-13 09:25:46.7005 Info Incoming request: PUT /api/CLUSR01/updateUser
 2025-02-13 09:25:46.7347 Info Outgoing response: 200
+2025-02-14 20:13:31.6777 Info Incoming request: GET /swagger/index.html
+2025-02-14 20:13:31.8362 Info Outgoing response: 200
+2025-02-14 20:13:32.3793 Info Incoming request: GET /swagger/v1/swagger.json
+2025-02-14 20:13:32.3793 Info Outgoing response: 200
+2025-02-14 20:14:48.0201 Info Incoming request: POST /api/CLUSR01/addUser
+2025-02-14 20:15:15.3795 Info Outgoing response: 200
+2025-02-14 20:15:58.2047 Info Incoming request: POST /api/CLPDT01/addProduct
+2025-02-14 20:15:58.4183 Info Outgoing response: 401
+2025-02-14 20:16:19.0649 Info Incoming request: POST /api/CLAuth/Login
+2025-02-14 20:18:33.0864 Info Outgoing response: 200
+2025-02-14 20:20:11.8727 Info Incoming request: POST /api/CLPDT01/addProduct
+2025-02-14 20:20:13.7426 Info Outgoing response: 200
+2025-02-14 20:22:14.7275 Info Incoming request: GET /api/CLUSR01/getAllUserResords
+2025-02-14 20:22:14.7953 Info Outgoing response: 200
+2025-02-14 20:22:25.6632 Info Incoming request: GET /api/CLUSR01/getUserById
+2025-02-14 20:23:00.3000 Info Outgoing response: 200
+2025-02-14 20:24:22.4875 Info Incoming request: POST /api/CLAuth/Login
+2025-02-14 20:24:48.1608 Info Outgoing response: 400
+2025-02-14 20:25:04.8467 Info Incoming request: POST /api/CLAuth/Login
+2025-02-14 20:25:26.9615 Info Outgoing response: 200
+2025-02-14 20:25:51.6087 Info Incoming request: POST /api/CLPDT01/addProduct
+2025-02-14 20:25:51.6567 Info Outgoing response: 403
+2025-02-14 20:26:09.2588 Info Incoming request: GET /api/CLPDT01/getProductById
+2025-02-14 20:26:09.2793 Info Outgoing response: 200
+2025-02-14 20:26:17.4778 Info Incoming request: GET /api/CLPDT01/getAllProducts
+2025-02-14 20:26:17.4951 Info Outgoing response: 200
+2025-02-14 20:26:41.9308 Info Incoming request: PUT /api/CLUSR01/updateUser
+2025-02-14 20:26:41.9567 Info Outgoing response: 200
+2025-02-14 20:28:01.2833 Info Incoming request: POST /api/CLORD01/CreateOrder
+2025-02-14 20:28:01.4053 Info Outgoing response: 401
+2025-02-14 20:28:25.6718 Info Incoming request: POST /api/CLORD01/CreateOrder
+2025-02-14 20:28:25.6978 Info Outgoing response: 200
+2025-02-14 20:28:35.3967 Info Incoming request: POST /api/CLORD01/CreateOrder
+2025-02-14 20:28:35.3967 Info Outgoing response: 200
+2025-02-14 20:28:48.7284 Info Incoming request: POST /api/CLORD01/CreateOrder
+2025-02-14 20:28:48.8806 Info Outgoing response: 200
+2025-02-14 20:30:16.7775 Info Incoming request: POST /api/CLORD01/cancelOrder/52
+2025-02-14 20:30:37.4392 Info Outgoing response: 200
+2025-02-14 20:30:46.7928 Info Incoming request: POST /api/CLORD01/cancelOrder/2
+2025-02-14 20:31:20.7046 Info Outgoing response: 200
+2025-02-14 20:31:39.0843 Info Incoming request: POST /api/CLORD01/cancelOrder/2
+2025-02-14 20:32:07.9248 Info Outgoing response: 200
+2025-02-14 20:32:39.0285 Info Incoming request: POST /api/CLORD01/cancelOrder/2
+2025-02-14 20:33:04.9133 Info Outgoing response: 200
+2025-02-14 20:33:45.0728 Info Incoming request: PUT /api/CLORD01/OrderStatusChanges
+2025-02-14 20:33:45.1010 Info Outgoing response: 400
