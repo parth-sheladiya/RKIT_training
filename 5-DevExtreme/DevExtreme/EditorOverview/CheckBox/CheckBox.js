@@ -9,7 +9,7 @@
         hint: "Click to accept terms and conditions",
         tabIndex: 1,
         value: undefined,
-        // id:"chkbx" overwrite original id
+        
     });
 
     // Initialize the second checkbox
