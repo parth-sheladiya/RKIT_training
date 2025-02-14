@@ -162,6 +162,8 @@
         accept: "image/*",
         maxFileSize: 1000000,
         minFileSize: 1000,
+        // fake url
+        uploadUrl:"https://js.devexpress.com/Demos/WidgetsGalleryDataService/api/ChunkUpload",
     }).dxValidator({
         name: "idproof",
         validationRules: [
