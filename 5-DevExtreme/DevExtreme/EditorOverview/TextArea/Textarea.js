@@ -16,7 +16,7 @@
     keyUpHandler,
     keyPressHandler,
     openedHandler,
-    optionChangedHandler,
+    optionChangedHandler, 
     valueChangedHandler,
 
 } from "../AllMethodEvent/Event.js"
@@ -25,24 +25,18 @@ import {
     beginUpdate,
     blur,
     close,
-    content,
-    defaultOptions,
     dispose,
     element,
     endUpdate,
     field,
     focus,
-    getButton,
-    getDataSource,
     instance,
     off,
     on,
     open,
     option,
     registerKeyHandler,
-    repaint,
     reset,
-    resetOption,
 }
     from "../AllMethodEvent/Method.js"
 
@@ -65,11 +59,6 @@ $(document).ready(function () {
         name: "parthtextArea", // default null
         onChange: changeHandler,            // default null      
         onContentReady: contentReadyHandler,   // default null
-        onCopy: function (e) { // Custom copy handler
-            // Disable copy action
-            console.log("Copy action is disabled"); // Optional: for debugging
-            return false;
-        }, // default null
         onCut: cutHandler, // default null
         onDisposing: disposeHandler, // deafult null
         onEnterKey: enterKeyHandler, // default null

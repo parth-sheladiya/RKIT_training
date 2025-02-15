@@ -1,13 +1,15 @@
 ﻿$(document).ready(function () {
+
+    console.log("document is ready to use");
     // Initialize the first checkbox
     $("#checkBoxContainer").dxCheckBox({
         text: "Accept terms and conditions",
         name: "termsAccepted",
         disabled: false,
-        accesskey: "a", // Use 'a' key to toggle checkbox
+        accesskey: "a", 
         focusStateEnabled: true,
         hint: "Click to accept terms and conditions",
-        tabIndex: 1,
+        tabIndex: 2,
         value: undefined,
         
     });
@@ -15,18 +17,19 @@
     // Initialize the second checkbox
     $("#checkBoxContainer2").dxCheckBox({
         text: "Accept terms and conditions",
-        tabIndex: 2,
+        tabIndex: 1,
         rtlEnabled: true
     });
-
+    
     // Get the element of the second checkbox and log it
     var getEle = $("#checkBoxContainer2").dxCheckBox("instance").element();
+    console.log("get element is ");
     console.log(getEle);
 
     // Initialize the third checkbox
     var checkBoxInstance = $("#checkBoxContainer").dxCheckBox("instance");
     $("#checkBoxContainer3").dxCheckBox({
-        text: "Subscribe to newsletter",
+        text: "Subscribe to my follotips",
         value: true
     });
 
@@ -41,7 +44,7 @@
 
     // Update multiple properties
     CheckBoxInstanceThree.option("value", true); // Change the checked state
-    CheckBoxInstanceThree.option("text", "Unsubscribe from newsletter"); // Change the text
+    CheckBoxInstanceThree.option("text", "Unsubscribe my follotips"); // Change the text
 
     // option changed
     CheckBoxInstanceThree.on("optionChanged", function () {
@@ -62,7 +65,7 @@
     // End update to refresh the UI
     CheckBoxInstanceThree.endUpdate();
 
-        // Optional: Dispose and remove a checkbox (commented out)
+        
         // $("#checkBoxContainer2").dxCheckBox("dispose");
         // $("#checkBoxContainer2").remove();
 })

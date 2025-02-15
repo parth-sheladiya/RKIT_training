@@ -1,4 +1,9 @@
-﻿$(document).ready(function () {
+﻿import {
+    option
+} from "../AllMethodEvent/Method.js";
+
+
+$(document).ready(function () {
 
 
 
@@ -6,8 +11,9 @@
         //type time
         type: "date",
         value: new Date(),
-        displayFormat: "yyyy/MM/dd",
-        dateSerializationFormat: "yyyy-MM-dd",
+        // why not working
+        displayFormat: "dd-MM-yyyy",
+        dateSerializationFormat: "yyyy-MM-ddTHH:mm:ssZ",
         invalidDateMessage: "Invalid Date formate please try yyyy/MM/dd format",
         // user enter or not 
         acceptCustomValue: true,
@@ -17,7 +23,7 @@
         // real world example hotel booking system check in check out date
         // activeStateEnabled: true,
         // changes button value content
-        applyButtonText: "🤣",
+        applyButtonText: "👍",
         cancelButtonText: "😎",
         applyValueMode: 'useButtons',
         height: "55px",
@@ -28,6 +34,12 @@
 
     });
 
+    var fDateBoxInstance = $("#dateBox").dxDateBox("instance");
+    
+    fDateBoxInstance.on("valueChanged", function (e) {
+        console.log("Disaplay value is ", e.value);
+        console.log("serialize value is ", e.component.option("value"));
+    })
 
 
     $("#datetimeBox").dxDateBox({
@@ -64,14 +76,24 @@
     });
 
     $("#timeBox").dxDateBox({
-        type: "time",
-        interval: 45,
+        //type: "time",
+        //interval: 45,
         pickerType: "calendar",  // by default list    ,   native  , rollers
+        placeholder: "Select time",
     });
 
+    
 
     var dateBoxInstance = $("#dateBox").dxDateBox("instance");
     var dateTimeBoxInstance = $("#datetimeBox").dxDateBox("instance");
+    var timeBoxInstance = $("#timeBox").dxDateBox("instance");
+
+   
+    timeBoxInstance.option("placeholder", "enter your important time");
+    option(timeBoxInstance, "type", "time");
+    option(timeBoxInstance, "interval", 50);
+    option(timeBoxInstance, "pickerType");
+    timeBoxInstance.open();
 
     dateBoxInstance.on("copy", () => {
         console.log("copy")

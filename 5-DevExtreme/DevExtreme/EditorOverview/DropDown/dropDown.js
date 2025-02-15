@@ -1,22 +1,22 @@
 ﻿$(document).ready(function () {
+    var names = ["parth", "raj", "deep", "jay", "jeel"];
 
-    $("#basicDropDownBox").dxDropDownBox({
-        name: ["parth", "jay", "deep", "jeel"],
-        placeholder: "select a value",
-        acceptCustomValue: false,
+    $("#dropDownBox").dxDropDownBox({
+        value: "parth", // Default value set karo
+        placeholder: "Select a value",
+        acceptCustomValue: true,
         disabled: false,
         readonly: false,
-        hint: "this is dropdown box",
+        hint: "This is a dropdown box",
         displayExpr: "name",
         height: "100px",
         width: "500px",
         showDropDownButton: true,
+        searchEnabled: true, // Search functionality enable karo
+        searchExpr: ["name"], // 'name' field ke hisab se search karo
+        displayValue: "Select a name", // Custom display text
+        stylingMode: "outlined", // Outlined styling mode
 
-    })
-
-    var names = ["parth", "raj", "deep", "jay", "jeel"];
-
-    $("#dropDownBox").dxDropDownBox({
         contentTemplate: function (e) {
             var $list = $("<div>").dxList({
                 dataSource: names,
@@ -28,28 +28,20 @@
         },
 
         onClosed: function () {
-            alert("dropdown close");
+            alert("Dropdown closed");
         },
-        //buttons: [
-        //    {
-        //        name: "clear",
-        //        location: "after",
-        //        options: {
-        //            text: "❌",
-        //            onClick: function () {
-        //                console.log("click close");
-        //            }
-        //        },
-        //    }
-        //],
+
+        onValueChanged: function (e) {
+            console.log("New value: ", e.value);
+        },
 
         hoverStateEnabled: true,
-        showClearButton: true, // Make sure this is set to true
-        showDropDownButton: true // Also, enable the dropdown button explicitly
+        showClearButton: true, // Clear button enable karo
+        showDropDownButton: true // Dropdown button enable karo
     });
 
+    var dropDownInstance = $("#dropDownBox").dxDropDownBox("instance");
 
-    var dropDownInstance = $("#dropDownBox").dxDropDownBox("instance")
     dropDownInstance.on("optionChanged", function (e) {
         console.log(`Option Changed: ${e.name} => ${e.value}`);
     });
@@ -65,5 +57,4 @@
     dropDownInstance.on("keydown", function (e) {
         console.log(`Key pressed: ${e.event.key}`);
     });
-    
 });

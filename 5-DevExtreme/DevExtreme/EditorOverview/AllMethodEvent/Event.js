@@ -20,7 +20,7 @@ const pasteHandler = () => alert("Pasted");
 const disposeHandler = (e) => alert("Disposing", e);
 
 // Fires when the Enter key is pressed
-const enterKeyHandler = () => alert("Value will be selected");
+const enterKeyHandler = () => alert("enter key pressed");
 
 // Fires when the widget gains focus
 const focusInHandler = (e) => console.log("Focused in", e.event.type);

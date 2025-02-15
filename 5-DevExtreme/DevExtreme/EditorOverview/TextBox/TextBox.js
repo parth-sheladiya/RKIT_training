@@ -47,7 +47,7 @@
         buttons: [
             {
                 name: "password",
-                location: "before",
+                location: "before", // after
                 options: {
                     stylingMode: "filled",
                     onClick: function () {

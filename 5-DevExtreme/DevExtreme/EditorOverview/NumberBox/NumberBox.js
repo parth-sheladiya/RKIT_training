@@ -20,13 +20,6 @@
 } from "../AllMethodEvent/Event.js"
 
 
-
-
-
-
-
-
-
 $(document).ready(function () {
 
     $("#numberBox").dxNumberBox({
