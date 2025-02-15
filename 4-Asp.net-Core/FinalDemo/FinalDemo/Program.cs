@@ -63,7 +63,7 @@ namespace FinalDemo
             
             
 
-            
+            // swagger ui setup for token barear
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen(options =>
             {
@@ -91,12 +91,15 @@ namespace FinalDemo
                     });
             });
 
+
            // data base  connection serive add singleton scope 
             var connectionString = builder.Configuration.GetConnectionString("EcomDB");
             builder.Services.AddSingleton<IDbConnectionFactory>(new OrmLiteConnectionFactory(
                connectionString,
                MySqlDialect.Provider
            ));
+
+            // register services
             builder.Services.RegisterEcommerceServices();
 
            // /// BL service
@@ -113,13 +116,14 @@ namespace FinalDemo
 
 
             // auth
-            builder.Services.AddSingleton<JwtSecurityTokenHandler>();
+            //builder.Services.AddSingleton<JwtSecurityTokenHandler>();
 
             var app = builder.Build();
 
-            // add custom middleware
+            // add custom middleware for request and response logging
             app.UseMiddleware<LoggingMiddleware>();
 
+            // development mode
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
@@ -128,10 +132,11 @@ namespace FinalDemo
             
            
             
-
+            // enable auth and authorization
             app.UseAuthentication();
             app.UseAuthorization();
 
+            // map controller and starting app run
             app.MapControllers();
 
             app.Run();
