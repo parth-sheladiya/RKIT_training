@@ -7,11 +7,17 @@
 
 $(document).ready(function () {
     $("#RadioSimple").dxRadioGroup({
+        // hint
         hint: "This is a radio group",
+        // items data.js
         items: priorities,
+        // default set on ui
         value: priorities[3],
+        // vertical horizontal
         layout: "horizontal",
+        // option changes handler
         onOptionChanged: optionChangedHandler,
+        // value chages handler
         onValueChanged: valueChangedHandler,
         hoverStateEnabled: false,
     });

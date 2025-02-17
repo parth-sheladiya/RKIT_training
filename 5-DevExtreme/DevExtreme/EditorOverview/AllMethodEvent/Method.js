@@ -25,17 +25,6 @@ const focus = (widgetInstance) => widgetInstance.focus();
 // Returns the instance of the widget itself
 const instance = (widgetInstance) => widgetInstance.instance();
 
-// Unsubscribes an event from the widget
-const off = (widgetInstance, eventName, eventHandler = null) =>
-    eventHandler
-        ? widgetInstance.off(eventName, eventHandler) // Removes a specific event handler
-        : widgetInstance.off(eventName); // Removes all handlers for the event
-
-// Subscribes an event to the widget
-const on = (widgetInstance, eventNameOrEvents, eventHandler = null) =>
-    eventHandler
-        ? widgetInstance.on(eventNameOrEvents, eventHandler) // Attaches a specific event handler
-        : widgetInstance.on(eventNameOrEvents); // Attaches multiple event handlers
 
 // Opens the widget's dropdown (if applicable)
 const open = (widgetInstance) => widgetInstance.open();
@@ -65,8 +54,6 @@ export {
     field,
     focus,
     instance,
-    off,
-    on,
     open,
     option,
     registerKeyHandler,

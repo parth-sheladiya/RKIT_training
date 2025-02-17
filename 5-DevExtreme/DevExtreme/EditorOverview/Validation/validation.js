@@ -13,7 +13,7 @@
             },
             {
                 type: "stringLength",
-                min: 1,
+                min: 4,
                 max: 22,
                 message: "First Name must be between 1 and 22 characters!",
             },
@@ -33,8 +33,8 @@
             },
             {
                 type: "stringLength",
-                min: 1,
-                max: 10,
+                min: 4,
+                max: 15,
                 message: "Last Name must be between 1 and 10 characters!",
             },
         ],
@@ -42,6 +42,7 @@
 
     // Email Validation
     $("#email-validation").dxTextBox({
+        // never, auto, always
         validationMessageMode: "always",
     }).dxValidator({
         name: "Email",
@@ -170,13 +171,18 @@
 
     // Register Button
     $("#button").dxButton({
+        // show on ui
         text: "Register",
+        // type of button
         type: "success",
+        // styling mode
         stylingMode: "outlined",
+        // submit button
         useSubmitBehavior: true,
         onClick: function () {
+            // validate all fields
             let result = DevExpress.validationEngine.validateGroup();
-            console.log(result);
+            console.log("isvalid result is ",result);
             if (result.isValid) {
                 DevExpress.ui.notify("Registration Successful!", "success", 5000);
             } else {
@@ -189,6 +195,7 @@
 
 // Function to show success message
 function showSuccessMessage(e) {
+    // chek details is valid or not 
     if (e.isValid) {
         DevExpress.ui.notify(
             e.component.option("name") + " Validated Successfully!",
