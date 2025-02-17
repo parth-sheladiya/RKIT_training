@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CustomStore</title>
+    <script type="text/javascript" src="../Scripts/jquery-3.5.1.js"></script>
+
+    <!-- DevExtreme theme -->
+    <link rel="stylesheet" href="../Content/dx.dark.css" />
+
+    <!-- DevExtreme library -->
+    <script type="text/javascript" src="../Scripts/dx.all.js"></script>
+    <style>
+   
+    #formContainer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    #addButton{
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body >
+    
+    <div id="formContainer">
+        <input type="number" id="productId" placeholder="Enter Product ID" class="form-input">
+        <input type="text" id="productName" placeholder="Enter Product Name" class="form-input">
+        <input type="number" id="productPrice" placeholder="Enter Product Price" class="form-input">
+        <button id="saveButton">Save</button>
+        <button id="cancelButton">Cancel</button>
+    </div>
+
+    <!-- Button to add a new product -->
+    <button id="addButton">Add New Product</button>
+
+    <!-- Table to display the product data -->
+    <table id="dataTable" border="1">
+        <thead>
+            <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data rows will be inserted here dynamically -->
+        </tbody>
+    </table>
+
+    <script src="CustomStore.js"></script>
+</body>
+</html>

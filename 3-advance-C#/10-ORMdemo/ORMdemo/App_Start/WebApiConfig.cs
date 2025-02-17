@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace ORMdemo
 {
@@ -9,7 +10,9 @@ namespace ORMdemo
     {
         public static void Register(HttpConfiguration config)
         {
-            // Web API configuration and services
+            // Enable CORS globally
+            var cors = new EnableCorsAttribute("*", "*", "*");  // Allow all origins, methods, and headers
+            config.EnableCors(cors);  // Apply CORS to all controllers
 
             // Web API routes
             config.MapHttpAttributeRoutes();
