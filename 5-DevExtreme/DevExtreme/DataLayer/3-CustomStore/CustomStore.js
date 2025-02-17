@@ -92,7 +92,6 @@ $(document).ready(function() {
     // Function to fetch and render the data
     function fetchData() {
         customStore.load({
-           // filter: ["productPrice" ,">" ,"50" ],
             skip: 0, 
             take: 5,
             sort: [{ selector: "productPrice", desc: true }],
@@ -147,8 +146,9 @@ $(document).ready(function() {
 
             if (action === "add") {
                 // Add new record (no id needed if API generates one)
-                customStore.insert(data).done(function () {
-                    fetchData(); // Fetch and update the table after insertion
+                customStore.insert(data).done(function (newRecord) {
+                    // Add the new record to the table directly without refreshing everything
+                    renderTable([newRecord]);  // Insert new record directly
                     $("#formContainer").hide();
                 }).fail(function () {
                     alert("Error adding record");
