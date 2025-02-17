@@ -2,20 +2,29 @@
 
 $(document).ready(function () {
     $("#ButtonBox").dxButton({
+        // show text on ui
         text: "click me",
+        // button type
         type:"normal",
+        // click handler
         onClick: function () {
             DevExpress.ui.notify("button clicked")
         },
+        // css style
         stylingMode: "outlined",
+        // icon 
         icon: "activefolder" // search deveextreme icons  different icons are available in devextreme 
 
     })
 
     $("#successButtonBox").dxButton({
+        // show text on ui
         text: "sucess",
+        // button type
         type: "success",
-        stylingMode: "text", // outlined contained
+        // click handler
+        stylingMode: "text", 
+        // icon
         icon: "comment",
         onClick: function () {
             DevExpress.ui.notify("success button clicked ","success",6000)

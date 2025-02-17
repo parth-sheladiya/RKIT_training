@@ -3,18 +3,26 @@
     console.log("document is ready to use");
     // Initialize the first checkbox
     $("#checkBoxContainer").dxCheckBox({
+        // show text on ui
         text: "Accept terms and conditions",
+        // it is use to send name in backend data
         name: "termsAccepted",
+        // by default false 
         disabled: false,
+        // alt+a with out mouse click
         accesskey: "a", 
+        //  access to tab key  if false to not navigate to tab key by default true
         focusStateEnabled: true,
+        // mouse move on check then they will show hint
         hint: "Click to accept terms and conditions",
+        // tabindex setup
         tabIndex: 2,
-        value: undefined,
+        // check box is tick or unticked
+        value: true,
         
     });
 
-    // Initialize the second checkbox
+    // second instance
     $("#checkBoxContainer2").dxCheckBox({
         text: "Accept terms and conditions",
         tabIndex: 1,
@@ -23,10 +31,11 @@
     
     // Get the element of the second checkbox and log it
     var getEle = $("#checkBoxContainer2").dxCheckBox("instance").element();
-    console.log("get element is ");
-    console.log(getEle);
+    console.log("checkBoxContainer2 get element is ",getEle);
+    
 
     // Initialize the third checkbox
+    // other way to create checkbox
     var checkBoxInstance = $("#checkBoxContainer").dxCheckBox("instance");
     $("#checkBoxContainer3").dxCheckBox({
         text: "Subscribe to my follotips",
