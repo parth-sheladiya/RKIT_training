@@ -83,7 +83,7 @@ $(document).ready(function () {
 
         // filter
         // binary filter , complex filter , = <> <= >= startwith endswith contains notcontains 
-       // filter: ["price", ">", 120],
+        // filter: ["price", ">", 120],
 
         // group section 
 
@@ -92,7 +92,7 @@ $(document).ready(function () {
         // for string  group:"company"
         // if you want to multiple field then we use arr group : ['company' , {selector: 'name', desc:true}] ,
         // for object (uncomment)
-       // group: { selector: "category", desc: true },
+        // group: { selector: "category", desc: true },
         // function 
         // group: function(i){
         //     return i.price>250 ? "above 250" : "below 250"
@@ -119,7 +119,7 @@ $(document).ready(function () {
         // pageSize it is only working when paginate is true other wise not working
         paginate: true,
         pageSize: 10,
-        
+
         requireTotalCount: true,
         // collect of changes then it will oush to store 
         pushAggregationTimeout: 500,
@@ -147,35 +147,34 @@ $(document).ready(function () {
     $("#dataGridContainer").dxDataGrid({
         dataSource: myDataSource,
         columns: [
-            { dataField: "id", caption: "Product ID" },           
+            { dataField: "id", caption: "Product ID" },
             { dataField: "name", caption: "Product Name" },
-            { dataField: "price", caption: "Price" },    
-            { dataField: "category", caption: "Category" },       
-            { dataField: "company", caption: "Company" },        
-            { dataField: "priceWithTax", caption: "Price with Tax" }  
+            { dataField: "price", caption: "Price" },
+            { dataField: "category", caption: "Category" },
+            { dataField: "company", caption: "Company" },
+            { dataField: "priceWithTax", caption: "Price with Tax" }
         ],
         paging: {
-            pageSize: 10 
+            pageSize: 10
         },
     });
 
     console.log("Initialized DataSource:", myDataSource);
 
     myDataSource.load();
-    console.log("my data source is ", myDataSource)
-  
+
 
 
 
     // it is ofr example purpose 
     // apply only second filter due to overwrite issue
     // solve combine filter
-   var myFilter = myDataSource.filter();
-  // myDataSource.filter(["category", "=", "Accessories"]);
-  // myDataSource.filter(["price",">",120])
-   myDataSource.filter([["category", "=", "Accessories"], ["price", ">", 120]]);
+    var myFilter = myDataSource.filter();
+    // myDataSource.filter(["category", "=", "Accessories"]);
+    // myDataSource.filter(["price",">",120])
+    myDataSource.filter([["category", "=", "Accessories"], ["price", ">", 120]]);
     console.log("my filter expression ", myFilter);
-    
+
 
     // Check if the last page is reached
     console.log("Is Last Page:", myDataSource.isLastPage());
