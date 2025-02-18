@@ -116,13 +116,13 @@ namespace FinalDemo
 
 
             // auth
-            //builder.Services.AddSingleton<JwtSecurityTokenHandler>();
+            builder.Services.AddSingleton<JwtSecurityTokenHandler>();
 
             var app = builder.Build();
 
             // add custom middleware for request and response logging
             app.UseMiddleware<LoggingMiddleware>();
-
+            
             // development mode
             if (app.Environment.IsDevelopment())
             {

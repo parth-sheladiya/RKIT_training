@@ -12,13 +12,22 @@ using System.Text;
 
 namespace FinalDemo.BL.Operations
 {
+    /// <summary>
+    /// it is for generate token and  validate token
+    /// </summary>
     public class BLAuth : IAuthentication
     {
-        //
+        
         private readonly IConfiguration _configuration;
         private readonly JwtSecurityTokenHandler _tokenHandler;
         private readonly IDbConnectionFactory _dbFactory;
 
+        /// <summary>
+        /// ctor
+        /// </summary>
+        /// <param name="configuration"></param>
+        /// <param name="tokenHandler"></param>
+        /// <param name="dbFactory"></param>
         public BLAuth(IConfiguration configuration, JwtSecurityTokenHandler tokenHandler, IDbConnectionFactory dbFactory)
         {
             _configuration = configuration;

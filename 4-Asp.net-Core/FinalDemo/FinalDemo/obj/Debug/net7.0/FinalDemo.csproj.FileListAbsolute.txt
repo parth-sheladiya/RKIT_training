@@ -381,3 +381,12 @@ F:\FinalDemo\FinalDemo\obj\Debug\net7.0\staticwebassets.upToDateCheck.txt
 F:\FinalDemo\FinalDemo\obj\Debug\net7.0\FinalDemo.csproj.Up2Date
 F:\FinalDemo\FinalDemo\obj\Debug\net7.0\FinalDemo.genruntimeconfig.cache
 F:\FinalDemo\FinalDemo\obj\Debug\net7.0\ref\FinalDemo.dll
+G:\Training\RKIT_training\4-Asp.net-Core\FinalDemo\FinalDemo\bin\Debug\net7.0\System.Web.Mvc.dll
+G:\Training\RKIT_training\4-Asp.net-Core\FinalDemo\FinalDemo\bin\Debug\net7.0\System.Web.Razor.dll
+G:\Training\RKIT_training\4-Asp.net-Core\FinalDemo\FinalDemo\bin\Debug\net7.0\System.Web.Helpers.dll
+G:\Training\RKIT_training\4-Asp.net-Core\FinalDemo\FinalDemo\bin\Debug\net7.0\System.Web.WebPages.Deployment.dll
+G:\Training\RKIT_training\4-Asp.net-Core\FinalDemo\FinalDemo\bin\Debug\net7.0\System.Web.WebPages.Razor.dll
+G:\Training\RKIT_training\4-Asp.net-Core\FinalDemo\FinalDemo\bin\Debug\net7.0\System.Web.WebPages.dll
+G:\Training\RKIT_training\4-Asp.net-Core\FinalDemo\FinalDemo\bin\Debug\net7.0\Microsoft.Web.Infrastructure.dll
+G:\Training\RKIT_training\4-Asp.net-Core\FinalDemo\FinalDemo\bin\Debug\net7.0\Newtonsoft.Json.dll
+G:\Training\RKIT_training\4-Asp.net-Core\FinalDemo\FinalDemo\bin\Debug\net7.0\Newtonsoft.JsonResult.dll

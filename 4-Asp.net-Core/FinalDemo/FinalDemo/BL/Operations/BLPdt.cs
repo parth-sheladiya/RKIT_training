@@ -11,6 +11,9 @@ using System.Data;
 
 namespace FinalDemo.BL.Operations
 {
+    /// <summary>
+    /// product related business logic
+    /// </summary>
     public class BLPdt : IBLPDT
     {
         // connection factory

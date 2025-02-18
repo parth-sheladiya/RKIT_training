@@ -4,6 +4,7 @@ using FinalDemo.Filters;
 using FinalDemo.Models;
 using FinalDemo.Models.DTO;
 using FinalDemo.Models.ENUM;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -33,8 +34,9 @@ namespace FinalDemo.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
+        [AllowAnonymous]
         [Route("getAllProducts")]
-        [AuthFilter("Admin","User")]
+        //[AuthFilter("Admin","User")]
         public IActionResult GetAllProducts()
         {
 

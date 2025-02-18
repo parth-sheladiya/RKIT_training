@@ -12,6 +12,9 @@ using System.Data;
 
 namespace FinalDemo.BL.Operations
 {
+    /// <summary>
+    /// order related business logic
+    /// </summary>
     public class BLOrder : IBLORD
     {
         private readonly IDbConnectionFactory _dbfactory;

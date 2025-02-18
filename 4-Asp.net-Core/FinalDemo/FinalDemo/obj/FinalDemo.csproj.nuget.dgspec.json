@@ -62,6 +62,10 @@
               "target": "Package",
               "version": "[5.4.0, )"
             },
+            "Newtonsoft.JsonResult": {
+              "target": "Package",
+              "version": "[1.0.5778.10762, )"
+            },
             "ServiceStack": {
               "target": "Package",
               "version": "[8.5.2, )"

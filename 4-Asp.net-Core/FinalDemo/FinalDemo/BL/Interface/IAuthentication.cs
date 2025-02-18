@@ -25,7 +25,18 @@ namespace FinalDemo.BL.Interface
         /// <returns></returns>
         ClaimsPrincipal ValidateToken(string token);
 
+        /// <summary>
+        /// user details chek
+        /// </summary>
+        /// <param name="objDTOAuth"></param>
+        /// <returns></returns>
         public USR01 AuthCred(DTOAUTH objDTOAuth);
+
+        /// <summary>
+        /// get user details from token
+        /// </summary>
+        /// <param name="token"></param>
+        /// <returns></returns>
         public int GetLoggedInUserId(string token);
     }
 }

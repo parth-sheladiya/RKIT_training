@@ -12,12 +12,12 @@ namespace FinalDemo.Filters
     /// </summary>
     public class AuthFilter : Attribute, IAuthorizationFilter
     {
-        private readonly string[] _roles;
+        private readonly string[] _userRoles;
 
-        public AuthFilter(params string[] roles)
+        public AuthFilter(params string[] userRoles)
         {
             // if role not pass then return null
-            _roles = roles.Length > 0 ? roles : null;
+            _userRoles = userRoles.Length > 0 ? userRoles : null;
         }
 
         /// <summary>
@@ -28,7 +28,7 @@ namespace FinalDemo.Filters
         {
             var user = context.HttpContext.User;
 
-            // Check if AllowAnonymous is present, then skip authorization
+            // Check if AllowAnonymous is present in controlller then skip authorization
             bool hasAllowAnonymous = context.ActionDescriptor.EndpointMetadata
                 .OfType<Microsoft.AspNetCore.Authorization.AllowAnonymousAttribute>().Any();
 
@@ -50,7 +50,7 @@ namespace FinalDemo.Filters
             // role auth check
             var roleClaim = user.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
 
-            if (roleClaim == null || (_roles != null && !_roles.Contains(roleClaim)))
+            if (roleClaim == null || (_userRoles != null && !_userRoles.Contains(roleClaim)))
             {
                 context.Result = new ObjectResult("access denied")
                 {

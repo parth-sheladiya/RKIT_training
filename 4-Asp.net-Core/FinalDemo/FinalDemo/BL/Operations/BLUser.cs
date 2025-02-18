@@ -12,7 +12,9 @@ using System.Data;
 
 namespace FinalDemo.BL.Operations
 {
-    //public class BLUser : IUSR01, ICommonHandler<DTOUSR01>
+    /// <summary>
+    /// user realated business logic
+    /// </summary>
     public class BLUser :  IBLUSR
     {
         // connetion factore
