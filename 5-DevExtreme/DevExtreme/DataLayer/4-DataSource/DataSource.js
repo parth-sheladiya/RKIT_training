@@ -73,7 +73,7 @@ $(document).ready(function () {
     var myDataSource = new DevExpress.data.DataSource({
         // we use array store data
         // store data
-        // type : arr , local , odata
+        // type : arr , local , odata , custom store
         store: new DevExpress.data.ArrayStore({
             // data source name
             data: products,
