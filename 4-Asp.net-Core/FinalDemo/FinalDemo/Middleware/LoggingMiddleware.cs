@@ -5,7 +5,9 @@ using System.Threading.Tasks;
 
 namespace FinalDemo.Middleware
 {
-   
+   /// <summary>
+   /// logging middleware 
+   /// </summary>
     public class LoggingMiddleware
     {
         // logger initialize show class name
@@ -28,10 +30,10 @@ namespace FinalDemo.Middleware
             // method get,post.
             // url path
             // statuc code
-            _logger.Info($"Incoming request: {httpContext.Request.Method} {httpContext.Request.Path}");
+            _logger.Info($"request is {httpContext.Request.Method} {httpContext.Request.Path}");
            await  _next(httpContext);
             // Log information about the output response
-            _logger.Info($"Outgoing response: {httpContext.Response.StatusCode}");
+            _logger.Info($"response is {httpContext.Response.StatusCode}");
         }
     }
 

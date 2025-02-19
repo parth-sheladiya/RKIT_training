@@ -39,7 +39,8 @@ namespace FinalDemo.Models.POCO
         /// <summary>
         /// order status
         /// </summary>
-        public string D01F06 { get; set; } = "pending"; // Example: Pending, Completed, Cancelled
+        //  Pending, Completed, Cancelled
+        public string D01F06 { get; set; } = "pending";
 
 
         /// <summary>

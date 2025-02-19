@@ -605,3 +605,84 @@
 2025-02-18 21:16:03.4678 Info Outgoing response: 200
 2025-02-18 21:16:23.9122 Info Incoming request: POST /api/CLUSR01/addUser
 2025-02-18 21:16:37.9373 Info Outgoing response: 200
+2025-02-19 09:04:21.7754 Info Incoming request: GET /swagger/index.html
+2025-02-19 09:04:22.1075 Info Outgoing response: 200
+2025-02-19 09:04:22.3660 Info Incoming request: GET /swagger/v1/swagger.json
+2025-02-19 09:04:22.5238 Info Outgoing response: 200
+2025-02-19 09:04:57.7780 Info Incoming request: POST /api/CLUSR01/addUser
+2025-02-19 09:05:13.6009 Info Outgoing response: 200
+2025-02-19 09:10:47.1067 Info Incoming request: GET /swagger/index.html
+2025-02-19 09:10:47.4202 Info Outgoing response: 200
+2025-02-19 09:10:47.7161 Info Incoming request: GET /swagger/v1/swagger.json
+2025-02-19 09:10:47.8779 Info Outgoing response: 200
+2025-02-19 09:12:36.3545 Info Incoming request: POST /api/CLUSR01/addUser
+2025-02-19 14:57:17.8039 Info request is GET /swagger/index.html
+2025-02-19 14:57:18.3479 Info response is 200
+2025-02-19 14:57:18.5563 Info request is GET /swagger/v1/swagger.json
+2025-02-19 14:57:18.7934 Info response is 200
+2025-02-19 14:58:59.0193 Info request is GET /swagger/index.html
+2025-02-19 14:58:59.4020 Info response is 200
+2025-02-19 14:58:59.6425 Info request is GET /swagger/v1/swagger.json
+2025-02-19 14:58:59.8730 Info response is 200
+2025-02-19 14:59:44.0778 Info request is POST /api/CLUSR01/addUser
+2025-02-19 14:59:44.6603 Info response is 200
+2025-02-19 15:00:09.2670 Info request is POST /api/CLAuth/Login
+2025-02-19 15:01:44.4997 Info response is 200
+2025-02-19 15:34:25.8738 Info request is GET /swagger/index.html
+2025-02-19 15:34:26.1738 Info response is 200
+2025-02-19 15:34:26.3140 Info request is GET /swagger/v1/swagger.json
+2025-02-19 15:34:26.4777 Info response is 200
+2025-02-19 15:35:50.8125 Info request is POST /api/CLAuth/Login
+2025-02-19 15:36:16.7190 Info response is 200
+2025-02-19 15:37:42.9353 Info request is POST /api/CLORD01/CreateOrder
+2025-02-19 15:37:43.0277 Info response is 401
+2025-02-19 15:38:04.8340 Info request is POST /api/CLORD01/CreateOrder
+2025-02-19 15:38:04.8900 Info response is 200
+2025-02-19 15:40:26.6195 Info request is POST /api/CLORD01/cancelOrder/8
+2025-02-19 15:52:52.0427 Info request is GET /swagger/index.html
+2025-02-19 15:52:52.3553 Info response is 200
+2025-02-19 15:52:52.5061 Info request is GET /swagger/v1/swagger.json
+2025-02-19 15:52:52.6879 Info response is 200
+2025-02-19 15:53:01.0827 Info request is POST /api/CLPDT01/addProduct
+2025-02-19 15:53:01.2043 Info response is 401
+2025-02-19 15:53:13.7871 Info request is POST /api/CLAuth/Login
+2025-02-19 15:54:03.5651 Info response is 200
+2025-02-19 15:54:53.1967 Info request is PUT /api/CLUSR01/updateUser
+2025-02-19 15:54:53.2828 Info response is 200
+2025-02-19 16:32:23.4566 Info request is GET /swagger/index.html
+2025-02-19 16:32:23.7671 Info response is 200
+2025-02-19 16:32:23.9153 Info request is GET /swagger/v1/swagger.json
+2025-02-19 16:32:24.1049 Info response is 200
+2025-02-19 16:33:03.7336 Info request is POST /api/CLUSR01/addUser
+2025-02-19 16:33:04.4651 Info response is 200
+2025-02-19 16:33:35.7041 Info request is PUT /api/CLUSR01/updateUser
+2025-02-19 16:33:35.7249 Info response is 401
+2025-02-19 16:33:51.3267 Info request is POST /api/CLAuth/Login
+2025-02-19 16:33:56.5233 Info response is 200
+2025-02-19 16:34:11.5376 Info request is PUT /api/CLUSR01/updateUser
+2025-02-19 16:34:11.6138 Info response is 200
+2025-02-19 16:34:54.7597 Info request is POST /api/CLORD01/CreateOrder
+2025-02-19 16:34:54.7734 Info response is 403
+2025-02-19 16:36:03.6961 Info request is POST /api/CLAuth/Login
+2025-02-19 16:36:05.6432 Info response is 200
+2025-02-19 16:36:25.3270 Info request is POST /api/CLORD01/CreateOrder
+2025-02-19 16:36:25.3270 Info response is 401
+2025-02-19 16:36:39.7457 Info request is POST /api/CLORD01/CreateOrder
+2025-02-19 16:36:39.7648 Info response is 200
+2025-02-19 16:36:49.0564 Info request is POST /api/CLORD01/CreateOrder
+2025-02-19 16:36:49.0791 Info response is 200
+2025-02-19 16:37:21.5153 Info request is POST /api/CLORD01/cancelOrder/10
+2025-02-19 16:37:21.5369 Info response is 200
+2025-02-19 16:37:34.6695 Info request is POST /api/CLORD01/cancelOrder/9
+2025-02-19 16:37:34.6695 Info response is 200
+2025-02-19 16:38:01.8664 Info request is DELETE /api/CLUSR01/deleteUser
+2025-02-19 16:38:54.4065 Info request is GET /swagger/index.html
+2025-02-19 16:38:54.7769 Info response is 200
+2025-02-19 16:38:54.9425 Info request is GET /swagger/v1/swagger.json
+2025-02-19 16:38:55.1546 Info response is 200
+2025-02-19 16:39:06.6685 Info request is POST /api/CLAuth/Login
+2025-02-19 16:39:09.3637 Info response is 200
+2025-02-19 16:39:29.6118 Info request is DELETE /api/CLUSR01/deleteUser
+2025-02-19 16:39:29.7267 Info response is 200
+2025-02-19 16:39:37.7423 Info request is DELETE /api/CLUSR01/deleteUser
+2025-02-19 16:39:37.7818 Info response is 200

@@ -1,5 +1,8 @@
 ﻿namespace FinalDemo.Models.DTO
 {
+    /// <summary>
+    /// dto login
+    /// </summary>
     public class DTOAUTH
     {
         /// <summary>

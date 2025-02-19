@@ -25,13 +25,13 @@ namespace FinalDemo.BL.Operations
         /// <summary>
         /// ctor
         /// </summary>
-        /// <param name="configuration"></param>
+        /// <param name="configuration">it is for aap </param>
         /// <param name="tokenHandler"></param>
         /// <param name="dbFactory"></param>
-        public BLAuth(IConfiguration configuration, JwtSecurityTokenHandler tokenHandler, IDbConnectionFactory dbFactory)
+        public BLAuth(IConfiguration configuration, IDbConnectionFactory dbFactory)
         {
             _configuration = configuration;
-            _tokenHandler = tokenHandler;
+            _tokenHandler = new JwtSecurityTokenHandler();
             _dbFactory = dbFactory;
         }
 
@@ -117,22 +117,15 @@ namespace FinalDemo.BL.Operations
         {
             using (IDbConnection db = _dbFactory.OpenDbConnection())
             {
-                if (db == null)
-                {
-                    throw new Exception("Database connection failed. Check DB connection settings.");
-                }
+                var UserDetails = db.Single<USR01>(lUser => lUser.R01F02 == objDTOAuth.R01F02 && lUser.R01F04 == objDTOAuth.R01F04);
 
-                Console.WriteLine("Database connection successful.");
-
-                var result = db.Single<USR01>(u => u.R01F02 == objDTOAuth.R01F02 && u.R01F04 == objDTOAuth.R01F04);
-
-                if (result == null)
+                if (UserDetails == null)
                 {
                     Console.WriteLine("User not found.");
                     return null;
                 }
 
-                return result;
+                return UserDetails;
             }
         }
 

@@ -31,6 +31,8 @@ $(document).ready(function () {
         pager: {
             visible: true,
             allowedPageSizes: [9, 13, 'all'],
+            displayMode:"compact", // full , compact
+            infoText:"1",
             showPageSizeSelector: true,
             showInfo: false,
             showNavigationButtons: true,

@@ -237,6 +237,7 @@ namespace FinalDemo.BL.Operations
                 }
                 // Check if any order for the user is in pending status
                 var pendingOrderExists = db.Exists<ORD01>(o => o.R01F01 == id && o.D01F06.ToLower() == "pending");
+                // if pending orders then user can not delete user profile
                 if (pendingOrderExists)
                 {
                     _objResponse.IsError = true;

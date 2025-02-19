@@ -390,3 +390,12 @@ G:\Training\RKIT_training\4-Asp.net-Core\FinalDemo\FinalDemo\bin\Debug\net7.0\Sy
 G:\Training\RKIT_training\4-Asp.net-Core\FinalDemo\FinalDemo\bin\Debug\net7.0\Microsoft.Web.Infrastructure.dll
 G:\Training\RKIT_training\4-Asp.net-Core\FinalDemo\FinalDemo\bin\Debug\net7.0\Newtonsoft.Json.dll
 G:\Training\RKIT_training\4-Asp.net-Core\FinalDemo\FinalDemo\bin\Debug\net7.0\Newtonsoft.JsonResult.dll
+F:\parth-415\clone\RKIT_training\4-Asp.net-Core\FinalDemo\FinalDemo\bin\Debug\net7.0\System.Web.Mvc.dll
+F:\parth-415\clone\RKIT_training\4-Asp.net-Core\FinalDemo\FinalDemo\bin\Debug\net7.0\System.Web.Razor.dll
+F:\parth-415\clone\RKIT_training\4-Asp.net-Core\FinalDemo\FinalDemo\bin\Debug\net7.0\System.Web.Helpers.dll
+F:\parth-415\clone\RKIT_training\4-Asp.net-Core\FinalDemo\FinalDemo\bin\Debug\net7.0\System.Web.WebPages.Deployment.dll
+F:\parth-415\clone\RKIT_training\4-Asp.net-Core\FinalDemo\FinalDemo\bin\Debug\net7.0\System.Web.WebPages.Razor.dll
+F:\parth-415\clone\RKIT_training\4-Asp.net-Core\FinalDemo\FinalDemo\bin\Debug\net7.0\System.Web.WebPages.dll
+F:\parth-415\clone\RKIT_training\4-Asp.net-Core\FinalDemo\FinalDemo\bin\Debug\net7.0\Microsoft.Web.Infrastructure.dll
+F:\parth-415\clone\RKIT_training\4-Asp.net-Core\FinalDemo\FinalDemo\bin\Debug\net7.0\Newtonsoft.Json.dll
+F:\parth-415\clone\RKIT_training\4-Asp.net-Core\FinalDemo\FinalDemo\bin\Debug\net7.0\Newtonsoft.JsonResult.dll

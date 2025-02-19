@@ -9,7 +9,7 @@ namespace FinalDemo.Extention
     {
         
         /// <summary>
-        /// Converts the DTO model to POCO Model.
+        /// Converts the DTO model to POCO Model using extension method 
         /// </summary>
         /// <typeparam name="POCO">POCO</typeparam>
         /// <param name="dto">DTO </param>
@@ -17,10 +17,12 @@ namespace FinalDemo.Extention
         public static POCO Convert<POCO>(this object dto)
         {
             Type? pocoType = typeof(POCO) ?? throw new Exception();
+            // it is static method it is create all type of dynamic obj
             POCO? pocoInstance = (POCO)Activator.CreateInstance(type: pocoType);
 
-            // Get properties
+            // fetch properties for dto
             PropertyInfo[] dtoProperties = dto.GetType().GetProperties();
+            // fetch property for poco
             PropertyInfo[] pocoProperties = pocoType.GetProperties();
 
             foreach (PropertyInfo dtoProperty in dtoProperties)

@@ -16,8 +16,6 @@ namespace FinalDemo.Controllers
     {
         private Response _objResponse;
         private IBLUSR _objBLUser;
-        //private readonly BLUser _objBLUser;
-        //private readonly BLAuth _objBLAuth;
         private IAuthentication _objBLAuth;
 
         /// <summary>
@@ -40,7 +38,7 @@ namespace FinalDemo.Controllers
         [AuthFilter("Admin")]
         public IActionResult GetAllUser()
         {
-            
+            // get all user from set to response
             _objResponse = _objBLUser.GetAllUsers();
             return Ok(_objResponse);
         }
@@ -55,7 +53,7 @@ namespace FinalDemo.Controllers
         [AuthFilter("Admin")]
         public IActionResult GetUserByid(int id)
         {
-
+            // get id and set to response
             _objResponse = _objBLUser.GetUserByid(id);
             return Ok(_objResponse);
         }
@@ -119,8 +117,11 @@ namespace FinalDemo.Controllers
         {
             // validate token
             string token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+            // current login user id
             int loggedInUserId = _objBLAuth.GetLoggedInUserId(token);
+            // delete type
             _objBLUser.typeOfOperation = EnumType.D;
+            // set response and delete
             _objResponse = _objBLUser.Delete(id, loggedInUserId);
             return Ok(_objResponse);
         }

@@ -1,4 +1,12 @@
-﻿using FinalDemo.BL.Operations;
+﻿//2025 - 02 - 19 14:58:59.0193 Info request is GET /swagger/index.html
+//2025-02-19 14:58:59.4020 Info response is 200
+//2025-02-19 14:58:59.6425 Info request is GET /swagger/v1/swagger.json
+//2025-02-19 14:58:59.8730 Info response is 200
+//2025-02-19 14:59:44.0778 Info request is POST /api/CLUSR01/addUser
+//2025-02-19 14:59:44.6603 Info response is 200
+
+
+using FinalDemo.BL.Operations;
 using FinalDemo.Models;
 using FinalDemo.Models.POCO;
 using FinalDemo.Filters;
@@ -73,7 +81,7 @@ namespace FinalDemo
                     BearerFormat = "JWT",
                     Scheme = "Bearer",
                     In = ParameterLocation.Header,
-                    Description = "Enter <your-token> to authenticate."
+                    Description = "Enter token"
                 });
                 options.AddSecurityRequirement(new OpenApiSecurityRequirement
                     {
@@ -102,21 +110,14 @@ namespace FinalDemo
             // register services
             builder.Services.RegisterEcommerceServices();
 
-           // /// BL service
+           // BL service
            // builder.Services.AddScoped<Response>();
            builder.Services.AddScoped<IAuthentication,BLAuth>();
-           //// builder.Services.AddScoped<IUSR01, BLUser>();
-           // builder.Services.AddScoped<BLUser>();
-           // builder.Services.AddScoped<BLPdt>();
-           // builder.Services.AddScoped<BLOrder>();
-
-            // builder.Services.AddTransient<USR01>();
-            // builder.Services.AddTransient<PDT01>();
-            // builder.Services.AddTransient<ORD01>();
+          
 
 
             // auth
-            builder.Services.AddSingleton<JwtSecurityTokenHandler>();
+            //builder.Services.AddSingleton<JwtSecurityTokenHandler>();
 
             var app = builder.Build();
 
