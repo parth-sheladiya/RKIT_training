@@ -42,11 +42,13 @@ $(document).ready(function () {
             // pagination is not  show all are render in one frame
             mode:"standred", // bydefault standred , virtual ,infinite
             // show scroll bar
-            useNative:true,
+            useNative:false,
             preloadEnabled:true,
-            scrollByContent:true,
-            //showScrollbar:"never" , // onScroll onHover always
-            scrollByThumb:true
+            scrollByContent:false,
+            showScrollbar:"always" , // onScroll onHover always
+            // scroll by content false you can not scroll using mous click
+            scrollByThumb:false,
+        
 
         },
         paging:{enabled:false},
