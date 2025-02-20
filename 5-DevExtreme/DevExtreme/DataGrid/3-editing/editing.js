@@ -25,11 +25,12 @@ $(document).ready(function(){
             });
         },
 
-        insert : ()=>{
+        insert : (dataInsert)=>{
             return $.ajax({
                 url: "https://67b3100abc0165def8cfc105.mockapi.io/productapi/productapi",
                 method:"POST",
-                dataType:"json"
+                dataType:"json",
+                data:dataInsert,
             }).then(result => {
                 return result; 
             });
@@ -124,27 +125,33 @@ $(document).ready(function(){
         onRowUpdated:function(){
             console.log("row updaaed successfully");
         },
+        // row deleting
         onRowRemoving:function(){
             console.log("row removing");
         },
+        // row deleted
         onRowRemoved:function(){
             console.log("row removed");
         },
+        // first trigger
         onSaving:function(){
             console.log("row saving");
         },
+        // after trigger on saving
         onSaved:function(){
             console.log("row saved successfully");
         },
+        // edit canceling
         onEditCanceling:function(){
             console.log("edit canceling");
         },
+        // edit cancelled
         onEditCanceled:function(){
             console.log("edit canceled");
         },
+        // option   please check how to work rowfocus columnfocus
         onOptionChanged:function(data){
             console.log("option changed" , data)
         }
-
     })
 })
