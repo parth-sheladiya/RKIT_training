@@ -7,7 +7,7 @@ $(document).ready(function () {
         loadMode: "raw",
         load() {
             return $.ajax({
-                url: "https://dummyjson.com/posts",
+                url: "https://dummyjson.com/posts?limit=240",
                 dataType: "json",
                 method: "GET"
             })
@@ -31,13 +31,13 @@ $(document).ready(function () {
         pager: {
             visible: true,
             allowedPageSizes: [9, 13, 'all'],
-            displayMode:"compact", // full , compact
-            infoText:"1",
+            displayMode:"full", // full , compact , adaptive
+           // infoText:"1",
             showPageSizeSelector: true,
-            showInfo: false,
+            showInfo: true,
             showNavigationButtons: true,
         },
-        colums: [
+        columns: [
             {
                 dataField: "id",
                 dataType: "number"

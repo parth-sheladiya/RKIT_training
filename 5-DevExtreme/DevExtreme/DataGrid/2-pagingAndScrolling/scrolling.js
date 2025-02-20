@@ -23,7 +23,7 @@ $(document).ready(function () {
         loadMode: "raw",
         load() {
             return $.ajax({
-                url: "https://dummyjson.com/posts",
+                url: "https://dummyjson.com/posts?limit=251",
                 dataType: "json",
                 method: "GET"
             })
@@ -48,9 +48,29 @@ $(document).ready(function () {
             showScrollbar:"always" , // onScroll onHover always
             // scroll by content false you can not scroll using mous click
             scrollByThumb:false,
-        
-
         },
-        paging:{enabled:false},
+        paging:{enabled:true},
+        columns: [
+            {
+                dataField: "id",
+                dataType: "number"
+            },
+            {
+                dataField: "title",
+                dataType: "string",
+            },
+            {
+                dataField: "body",
+                dataType: "string"
+            },
+            {
+                dataField: "views",
+                dataType: "number",
+            },
+            {
+                dataField: "userId",
+                dataType: "number"
+            }
+        ]
     })
 })
