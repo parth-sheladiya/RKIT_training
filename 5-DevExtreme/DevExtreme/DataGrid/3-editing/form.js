@@ -54,9 +54,10 @@ $(document).ready(function(){
                 return result; 
             });
         }
-    })
+    });
 
-    $("#BatchContainer").dxDataGrid({
+
+    $("#FormContainer").dxDataGrid({
         dataSource:dataAgriculture,
         showBorders:true,
         height:600,
@@ -91,7 +92,7 @@ $(document).ready(function(){
             visible: true,
           },
           editing:{
-            mode:"form", // cell , batch , row , form , popup
+            mode:"popup", // cell , batch , row , form , popup
             // updateting 
             allowUpdating:true,
             // icons show by vdefault falase
@@ -106,7 +107,54 @@ $(document).ready(function(){
             // are you sure ? by default true
             confirmDelete:true,
             // click dbl click
-            startEditAction:"dblClick"
+            startEditAction:"dblClick",
+
+
+            form:{
+                items:[
+                    {
+                        itemType:"group",
+                        caption:"crop_health",
+                        validationRules: [
+                            {
+                                type: "required",
+                                message: "crop_health_status is required"
+                            }
+                        ],
+                        items:[
+                            {
+                                dataField:"id"
+                            },
+                            {
+                                dataField:"crop_type"
+                            },
+                            {
+                                dataField:"planting_date"
+                            },
+                            {
+                                dataField:"growth_stage"
+                            },
+                            {
+                                dataField:"expected_yield"
+                            },
+                            {
+                                dataField:"crop_health_status",
+                                editorType:"dxSelectBox",
+                                editorOptions:{
+                                    items:[
+                                        "Healthy",
+                                        "Diseased",
+                                        "Stressed",
+                                        "Damaged"
+                                    ],
+                                    // not working 
+                                    value:"Healthy"
+                                },
+                            }
+                        ]
+                    }
+                ]
+            }
         },
     })
 

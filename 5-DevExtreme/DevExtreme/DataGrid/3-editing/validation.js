@@ -56,7 +56,7 @@ $(document).ready(function(){
         }
     })
 
-    $("#BatchContainer").dxDataGrid({
+    $("#ValidationContainer").dxDataGrid({
         dataSource:dataAgriculture,
         showBorders:true,
         height:600,
@@ -68,22 +68,73 @@ $(document).ready(function(){
             },
             {
                 dataField:"crop_type",
+                validationRules: [
+                    {
+                        type: "required",
+                        message: "crop_type is required"
+                    }
+                ],
                 dataType:"string"
             },
             {
                 dataField:"planting_date",
+                validationRules: [
+                    {
+                        type: "required",
+                        message: "planting_date is required"
+                    },
+                    {
+                        type: "custom",
+                        validationCallback: function (e) {
+                        // Get today's date in YYYY-MM-DD format
+                        const currentDate = new Date();
+                        const inputDate = new Date(e.value);
+
+                        // Compare the entered date with current date
+                            if (inputDate > currentDate) {
+                                return false;
+                            }
+                            return true;
+                        },
+                         message: "Planting date cannot be in the future"
+                    }
+                ],
                 dataType:"date"
             },
             {
                 dataField:"growth_stage",
+                validationRules: [
+                    {
+                        type: "required",
+                        message: "growth_stage is required"
+                    },
+                    {
+                        type: "stringLength",
+                        min: 3,
+                        message: "growth_stage at least have 3 letters",
+                    }
+                ],
                 dataType:"string"
             },
             {
                 dataField:"expected_yield",
-                dataType:"number"
+                dataType:"number",
+                validationRules: [
+                    {
+                        type: "required",
+                        message: "expected_yield is required"
+                    }
+                ],
+                
             },
             {
                 dataField:"crop_health_status",
+                validationRules: [
+                    {
+                        type: "required",
+                        message: "crop_health_status is required"
+                    }
+                ],
                 dataType:"string"
             }
         ],
@@ -109,5 +160,4 @@ $(document).ready(function(){
             startEditAction:"dblClick"
         },
     })
-
 })
