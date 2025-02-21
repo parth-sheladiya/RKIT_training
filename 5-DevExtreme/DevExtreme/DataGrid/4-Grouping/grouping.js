@@ -32,8 +32,15 @@ $(document).ready(function(){
             //groupIndex: 0,
           }
         ],
+        pager: {
+          allowedPageSizes: [5, 8, 15, 30],
+          showInfo: true,
+          showNavigationButtons: true,
+          showPageSizeSelector: true,
+          visible: true,
+        },
         paging: {
-            pageSize: 200,
+            pageSize: 5,
           },
         grouping:{
             // expand data
@@ -46,7 +53,8 @@ $(document).ready(function(){
             texts:{
               // default string  check docs
               groupByThisColumn:"please grouping",
-              groupContinuedMessage:"hello",
+              groupContinuedMessage:"continueds",
+              groupContinuesMessage:"continue",
               ungroup:"ungroup please",
               ungroupAll:"please ungroup all"             
             },
