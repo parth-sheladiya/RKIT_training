@@ -31,8 +31,6 @@ import {
     field,
     focus,
     instance,
-    off,
-    on,
     open,
     option,
     registerKeyHandler,

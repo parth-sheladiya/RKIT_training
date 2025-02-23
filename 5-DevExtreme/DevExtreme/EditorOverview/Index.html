@@ -2,23 +2,156 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>DevExtreme Buttons</title>
+
+    <!-- Jquery -->
+    <script type="text/javascript" src="../Scripts/jquery-3.5.1.min.js"></script>
+
+    <!-- DevExtreme theme -->
+    <link rel="stylesheet" href="../Content/dx.dark.css">
+
+    <!-- DevExtreme library -->
+    <script type="text/javascript" src="../Scripts/dx.all.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .dx-button {
+            min-width: 150px;
+        }
+    </style>
 </head>
 <body>
-    <a href="./CheckBox/CheckBox.html">checkbox</a>
-    <a href="./DateBox/DateBox.html">datebox</a>
-    <a href="DropDown/dropDown.html">dropdown box</a>
-    <a href="NumberBox/NumberBox.html">number box</a>
-    <a href="SelectBox/SelectBox.html">selectBox</a>
-    <a href="TextArea/TextArea.html">TextArea</a>
-    <a href="TextBox/TextBox.html">textBox</a>
-    <a href="ButtonBox/Button.html">button</a>
-    <a href="FileUploder/Fileuploder.html">fileuploder</a>
-    <a href="FileUploder/Drop.html">drop</a>
-    <a href="Validation/validation.html"> validation</a>
-    <a href="RadioGroup/Radio.html">Radio</a>
-    <br/>
-    <br/>
-    <a href="DrivingLicenceDemo/Licence.html"></a>
+
+    <div class="button-container">
+        <div id="checkboxBtn"></div>
+        <div id="dateBoxBtn"></div>
+        <div id="dropdownBtn"></div>
+        <div id="numberBoxBtn"></div>
+        <div id="selectBoxBtn"></div>
+        <div id="textAreaBtn"></div>
+        <div id="textBoxBtn"></div>
+        <div id="buttonBoxBtn"></div>
+        <div id="fileUploaderBtn"></div>
+        <div id="dropBtn"></div>
+        <div id="validationBtn"></div>
+        <div id="radioBtn"></div>
+        <a href="DrivingLicenceDemo/">FinalDemo</a>
+
+    </div>
+
+    <br><br>
+
+    <div id="finalDemoBtn"></div>
+
+    <script>
+        $(document).ready(function () {
+            $("#checkboxBtn").dxButton({
+                text: "Checkbox",
+                type: "success",
+                stylingMode: "text", 
+                onClick: function () { window.location.href = "./CheckBox/CheckBox.html"; }
+            });
+
+            $("#dateBoxBtn").dxButton({
+                text: "DateBox",
+                stylingMode: "outlined", 
+                type: "danger",
+                onClick: function () { window.location.href = "./DateBox/DateBox.html"; }
+            });
+
+            $("#dropdownBtn").dxButton({
+                text: "Dropdown",
+                stylingMode: "contained",
+                type: "default",
+                onClick: function () { window.location.href = "DropDown/dropDown.html"; }
+            });
+
+            $("#numberBoxBtn").dxButton({
+                text: "Number Box",
+                type: "success",
+                stylingMode: "outlined", 
+                onClick: function () { window.location.href = "NumberBox/NumberBox.html"; }
+            });
+
+            $("#selectBoxBtn").dxButton({
+                text: "SelectBox",
+                type: "normal",
+                stylingMode: "contained",
+                onClick: function () { window.location.href = "SelectBox/SelectBox.html"; }
+            });
+
+            $("#textAreaBtn").dxButton({
+                text: "TextArea",
+                type: "success",
+                stylingMode: "contained",
+                onClick: function () { window.location.href = "TextArea/TextArea.html"; }
+            });
+
+            $("#textBoxBtn").dxButton({
+                text: "TextBox",
+                type: "default",
+                stylingMode: "outlined", 
+                onClick: function () { window.location.href = "TextBox/TextBox.html"; }
+            });
+
+            $("#buttonBoxBtn").dxButton({
+                text: "Button",
+                type: "danger",
+                stylingMode: "outlined", 
+                onClick: function () { window.location.href = "ButtonBox/Button.html"; }
+            });
+
+            $("#fileUploaderBtn").dxButton({
+                text: "File Uploader",
+                type: "success",
+                stylingMode: "contained",
+                onClick: function () { window.location.href = "FileUploder/Fileuploder.html"; }
+            });
+
+            $("#dropBtn").dxButton({
+                text: "Drop",
+                type: "default",
+                stylingMode: "contained",
+                onClick: function () { window.location.href = "FileUploder/Drop.html"; }
+            });
+
+            $("#validationBtn").dxButton({
+                text: "Validation",
+                type: "success",
+                stylingMode: "contained",
+                onClick: function () { window.location.href = "Validation/validation.html"; }
+            });
+
+            $("#radioBtn").dxButton({
+                text: "Radio",
+                type: "danger",
+                stylingMode: "outlined", 
+                onClick: function () { window.location.href = "RadioGroup/Radio.html"; }
+            });
+
+            $("#finalDemoBtn").dxButton({
+                text: "Final Demo",
+                type: "success",
+                stylingMode: "outlined", 
+                onClick: function () { window.location.href = "DrivingLicenceDemo/Licence.html"; }
+            });
+        });
+    </script>
+
 </body>
 </html>

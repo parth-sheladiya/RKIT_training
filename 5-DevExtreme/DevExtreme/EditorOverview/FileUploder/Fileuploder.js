@@ -1,11 +1,12 @@
 ﻿$(document).ready(function () {
     $("#fileUploder").dxFileUploader({
+        uploadUrl: "https://js.devexpress.com/Demos/WidgetsGalleryDataService/api/ChunkUpload", 
         // abort process cancels the file upload
         abortUpload: () => { },
         accept: "image/*",// accept only image files
         accessKey: "h", 
         allowCanceling:true, // user can cancle file upload default true
-        allowedFileExtensions: [".jpg", ".jpeg"] , // default value empty arr of str
+        allowedFileExtensions: [".jpg", ".jpeg" , ".png"] , // default value empty arr of str
         hint: "this is file content",
         selectButtonText:"upload file",  // btn text
         invalidFileExtensionMessage: "this extension is invalid",
@@ -23,6 +24,26 @@
         readyToUploadMessage: "file is ready to upload", 
         uploadMethod:"POST",
         uploadMode: "useButtons",
+
+        onBeforeSend: (e) => {
+            console.log("onBeforeSend",e);
+        },
+        onUploadStarted: (e) => {
+            console.log("onUploadStarted");
+        },
+        onUploaded: (e) => {
+            console.log("onUploaded", e);
+        },
+        onUploadError: (e) => {
+            console.log("onUploadError",e);
+        },
+        onFilesUploaded: (e) => {
+            console.log("onFilesUploaded",e);
+        },
+        onUploadAborted: (e) => {
+            console.log("onUploadAborted",e);
+        },
+
 
     })
 
