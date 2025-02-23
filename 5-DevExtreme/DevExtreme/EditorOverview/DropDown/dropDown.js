@@ -2,7 +2,7 @@
     var names = ["parth", "raj", "deep", "jay", "jeel"];
 
     $("#dropDownBox").dxDropDownBox({
-        value: "parth", // Default value set karo
+        value: "parth", 
         placeholder: "Select a value",
         acceptCustomValue: true,
         disabled: false,
@@ -12,10 +12,10 @@
         height: "100px",
         width: "500px",
         showDropDownButton: true,
-        searchEnabled: true, // Search functionality enable karo
-        searchExpr: ["name"], // 'name' field ke hisab se search karo
-        displayValue: "Select a name", // Custom display text
-        stylingMode: "outlined", // Outlined styling mode
+        searchEnabled: true, 
+        searchExpr: ["name"],
+        displayValue: "Select a name",
+        stylingMode: "outlined", 
 
         contentTemplate: function (e) {
             var $list = $("<div>").dxList({
@@ -36,8 +36,8 @@
         },
 
         hoverStateEnabled: true,
-        showClearButton: true, // Clear button enable karo
-        showDropDownButton: true // Dropdown button enable karo
+        showClearButton: true, 
+        showDropDownButton: true 
     });
 
     var dropDownInstance = $("#dropDownBox").dxDropDownBox("instance");

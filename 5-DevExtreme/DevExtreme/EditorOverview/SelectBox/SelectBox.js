@@ -42,7 +42,7 @@ $(document).ready(function () {
         Name: 'Apricot',
         Category: 'Fruits'
     }]
-    let filterType = "contains"; 
+    let filterType = "contains";
     const dataSource = new DevExpress.data.DataSource({
         store: data,
         type: "array",
@@ -58,7 +58,7 @@ $(document).ready(function () {
         // show ui
         displayExpr: "Name",
         // search fields
-        searchEnabled: true,
+        //searchEnabled: true,
         searchMode: filterType,
         onValueChanged: valueChangedHandler,
         grouped: true,
@@ -79,7 +79,7 @@ $(document).ready(function () {
 
     $("#checkBoxContainsMethod").dxCheckBox({
         text: "Contains Search",
-        value: true,
+        value: false,
         onValueChanged: function (e) {
             if (e.value) {
                 filterType = "contains";
@@ -92,7 +92,7 @@ $(document).ready(function () {
 
     $("#checkBoxStartWithMethod").dxCheckBox({
         text: "startwith Search",
-        value: false,
+        value: true,
         onValueChanged: function (e) {
             if (e.value) {
                 filterType = "startswith";
@@ -100,5 +100,30 @@ $(document).ready(function () {
                 $("#checkBoxContainsMethod").dxCheckBox("instance").option("value", false);
             }
         }
-    })
+        })
+
+    $("#dropdown").dxSelectBox({
+        dataSource: new DevExpress.data.CustomStore({
+            loadMode: "raw",
+            load: function () {
+                console.log("Fetching data from server...");
+                return new Promise((resolve) => {
+                    setTimeout(() => {
+                        resolve(["Apple", "Banana", "Mango", "Grapes"]);
+                        console.log("✅ Data Loaded!");
+                    }, 9000); 
+                });
+            }
+        }),
+        placeholder: "Select a fruit",
+       
+        onContentReady: function (e) {
+            console.log("contentReady event fired - Content is fully loaded!");
+        },
+        onInitialized: function (e) {
+            console.log("⚡ initialized event fired - Widget instance created!", e);
+        },
+    });
 })
+
+

@@ -12,8 +12,9 @@ $(document).ready(function () {
         },
         // css style
         stylingMode: "outlined",
-        // icon 
-        icon: "activefolder" // search deveextreme icons  different icons are available in devextreme 
+        // icon
+        // search deveextreme icons  different icons are available in devextreme 
+        icon: "activefolder" 
 
     })
 

@@ -109,7 +109,6 @@ $(document).ready(function () {
     timeBoxInstance.option("placeholder", "enter your important time");
     option(timeBoxInstance, "type", "time");
     option(timeBoxInstance, "interval", 50);
-    option(timeBoxInstance, "pickerType");
     timeBoxInstance.open();
 
     dateBoxInstance.on("copy", () => {

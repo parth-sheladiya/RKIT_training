@@ -27,7 +27,7 @@
     })
 
     $("#fileUploader").dxFileUploader({
-        uploadUrl: "/upload", 
+        uploadUrl: "https://js.devexpress.com/Demos/WidgetsGalleryDataService/api/ChunkUpload", 
         multiple: true,
         uploadMode: "useButtons",
         dropZone: "#drop-area"

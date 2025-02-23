@@ -52,7 +52,7 @@
     CheckBoxInstanceThree.beginUpdate();
 
     // Update multiple properties
-    CheckBoxInstanceThree.option("value", true); // Change the checked state
+    CheckBoxInstanceThree.option("value", false); // Change the checked state
     CheckBoxInstanceThree.option("text", "Unsubscribe my follotips"); // Change the text
 
     // option changed
@@ -68,8 +68,7 @@
     CheckBoxInstanceThree.registerKeyHandler("enter", function () {
         console.log("You pressed Enter!");
 
-        // Set the checkbox value to true (checked)
-        CheckBoxInstanceThree.option("value", true);
+        
     })
     // End update to refresh the UI
     CheckBoxInstanceThree.endUpdate();
