@@ -22,7 +22,6 @@
                 dataSource: names,
                 selectionMode: "multiple", // single
                 showSelectionControls: true,
-                deferRendering: true
             });
             return $list;
         },

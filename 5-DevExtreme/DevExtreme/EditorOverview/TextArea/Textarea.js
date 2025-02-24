@@ -1,43 +1,4 @@
-﻿import {
-
-    changeHandler,
-    closedHandler,
-    contentReadyHandler,
-    copyHandler,
-    cutHandler,
-    pasteHandler,
-    disposeHandler,
-    enterKeyHandler,
-    focusInHandler,
-    focusOutHandler,
-    initializedHandler,
-    inputHandler,
-    keyDownHandler,
-    keyUpHandler,
-    keyPressHandler,
-    openedHandler,
-    optionChangedHandler, 
-    valueChangedHandler,
-
-} from "../AllMethodEvent/Event.js"
-
-import {
-    beginUpdate,
-    blur,
-    close,
-    dispose,
-    element,
-    endUpdate,
-    field,
-    focus,
-    instance,
-    open,
-    option,
-    registerKeyHandler,
-    reset,
-}
-    from "../AllMethodEvent/Method.js"
-
+﻿
 $(document).ready(function () {
     $("#TextAreaField").dxTextArea({
         accessKey: "J", // by default undefined
@@ -55,17 +16,32 @@ $(document).ready(function () {
         maxLength: 100, // default null
         minHeight: "10px", //undefined
         name: "parthtextArea", // default null
-        onChange: changeHandler,            // default null      
-        onContentReady: contentReadyHandler,   // default null
-        onCut: cutHandler, // default null
-        onDisposing: disposeHandler, // deafult null
-        onEnterKey: enterKeyHandler, // default null
+        onChange: function (e) {  // default null    
+            console.log("Change event triggered", e);
+        },            
+        onContentReady: function (e) {  // default null
+            console.log("Content Ready event triggered", e);
+        }, 
+        onCut: function (e) {
+            console.log("Cut event triggered", e);
+        }, // default null
+        onEnterKey: function (e) {
+            console.log("Enter Key event triggered", e);
+        }, // default null
         // if focusstateenbled is flase then they have not working in and out
-        onFocusIn: focusInHandler, // default null
-        onFocusOut: focusOutHandler, //default nulll
-        onInput: inputHandler, // default null
-        onOptionChanged: optionChangedHandler, // default null
-        onValueChanged: valueChangedHandler, // default null
+        onFocusIn: function (e) {
+            console.log("Focus In event triggered", e);
+        },
+        onFocusOut: function (e) {
+            console.log("Focus Out event triggered", e);
+        },
+        
+        onOpened: function (e) {
+            console.log("Opened event triggered", e);
+        },
+        onValueChanged: function (e) {
+            console.log("Value Changed event" + e.value, e);
+        },
         placeholder: "enter your feedback", // default null
         spellcheck: true, // check spelling  default false
        stylingMode: "underlined", // filled
@@ -73,19 +49,5 @@ $(document).ready(function () {
        // label:"textarea", not working in 21.1
 
 
-    });
-
-
-    var textAreaInstance = $("#TextAreaField").dxTextArea("instance");
-
-    element(textAreaInstance);
-    console.log(element(textAreaInstance));
-
-    instance(textAreaInstance);
-    console.log(instance(textAreaInstance));
-
-   // dispose(textAreaInstance);
-
-   textAreaInstance.off("onCopy", copyHandler);
-    
+    });  
 })

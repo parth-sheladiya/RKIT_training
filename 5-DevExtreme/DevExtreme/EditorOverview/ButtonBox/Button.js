@@ -11,7 +11,7 @@ $(document).ready(function () {
             DevExpress.ui.notify("button clicked")
         },
         // css style
-        stylingMode: "outlined",
+        stylingMode: "outlined", // text contained
         // icon
         // search deveextreme icons  different icons are available in devextreme 
         icon: "activefolder" 

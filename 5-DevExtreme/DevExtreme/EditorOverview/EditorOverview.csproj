@@ -67,8 +67,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AllMethodEvent\Event.js" />
-    <Content Include="AllMethodEvent\Method.js" />
     <Content Include="ButtonBox\Button.html" />
     <Content Include="ButtonBox\Button.js" />
     <Content Include="CheckBox\CheckBox.html" />

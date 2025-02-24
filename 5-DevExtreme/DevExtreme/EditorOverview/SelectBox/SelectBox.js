@@ -1,25 +1,4 @@
-﻿import {
-    changeHandler,
-    closedHandler,
-    contentReadyHandler,
-    copyHandler,
-    cutHandler,
-    pasteHandler,
-    disposeHandler,
-    enterKeyHandler,
-    focusInHandler,
-    focusOutHandler,
-    initializedHandler,
-    inputHandler,
-    keyDownHandler,
-    keyUpHandler,
-    keyPressHandler,
-    openedHandler,
-    optionChangedHandler,
-    valueChangedHandler,
-} from "../AllMethodEvent/Event.js";
-
-
+﻿
 $(document).ready(function () {
     const data = [{
         ID: 1,
@@ -60,19 +39,39 @@ $(document).ready(function () {
         // search fields
         //searchEnabled: true,
         searchMode: filterType,
-        onValueChanged: valueChangedHandler,
         grouped: true,
         placeholder: "please select item",
         hint: "this is select box",
-        onChange: changeHandler,
-        onCopy: copyHandler,
-        onCut: cutHandler,
-        onPaste: pasteHandler,
-        onContentReady: contentReadyHandler,
-        onEnterKey: enterKeyHandler,
-        onFocusIn: focusInHandler,
-        onFocusOut: focusOutHandler,
-        onOpened: openedHandler
+        onChange: function (e) {
+            console.log("Change event triggered", e);
+        },
+        onCopy: function (e) {
+            console.log("Copy event triggered", e);
+        },
+        onCut: function (e) {
+            console.log("Cut event triggered", e);
+        },
+        onPaste: function (e) {
+            console.log("Paste event triggered", e);
+        },
+        onContentReady: function (e) {
+            console.log("Content Ready event triggered", e);
+        },
+        onEnterKey: function (e) {
+            console.log("Enter Key event triggered", e);
+        },
+        onFocusIn: function (e) {
+            console.log("Focus In event triggered", e);
+        },
+        onFocusOut: function (e) {
+            console.log("Focus Out event triggered", e);
+        },
+        onOpened: function (e) {
+            console.log("Opened event triggered", e);
+        },
+        onValueChanged: function (e) {
+            console.log("Value Changed event triggered. New Value: " + e.value, e);
+        }
 
     })
     var selectBoxInstance = $("#SelectBox").dxSelectBox("instance")
@@ -110,7 +109,7 @@ $(document).ready(function () {
                 return new Promise((resolve) => {
                     setTimeout(() => {
                         resolve(["Apple", "Banana", "Mango", "Grapes"]);
-                        console.log("✅ Data Loaded!");
+                        console.log(" Data Loaded!");
                     }, 9000); 
                 });
             }

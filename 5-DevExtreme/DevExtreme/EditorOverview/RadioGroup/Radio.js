@@ -1,9 +1,4 @@
-﻿import 
-{ 
-    optionChangedHandler,
-    valueChangedHandler,
-} from "../AllMethodEvent/Event.js"
-
+﻿
 
 $(document).ready(function () {
     $("#RadioSimple").dxRadioGroup({
@@ -16,9 +11,12 @@ $(document).ready(function () {
         // vertical horizontal
         layout: "horizontal",
         // option changes handler
-        onOptionChanged: optionChangedHandler,
-        // value chages handler
-        onValueChanged: valueChangedHandler,
+        onContentReady: function (e) {
+            console.log("Content Ready event triggered", e);
+        },
+        onValueChanged: function (e) {
+            console.log("Value Changed event triggered. New Value: " + e.value, e);
+        },
         hoverStateEnabled: false,
     });
 

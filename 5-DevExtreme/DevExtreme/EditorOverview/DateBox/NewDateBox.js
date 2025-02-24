@@ -1,7 +1,4 @@
-﻿import {
-    option
-} from "../AllMethodEvent/Method.js";
-
+﻿
 
 $(document).ready(function () {
 
@@ -14,7 +11,7 @@ $(document).ready(function () {
         value: new Date(),
         // show on format in field
         displayFormat: "MMM dd, yyyy",
-        dateSerializationFormat: "yyyy-MM-ddTHH:mm:ssZ",
+        
         // invalid mess  if user enter invalid format date
         invalidDateMessage: "Invalid Date formate please try MMM dd, yyyy format",
         // user enter or not 
@@ -26,7 +23,7 @@ $(document).ready(function () {
         // cancel button text
         cancelButtonText: "😎",
         // use buttos
-        applyValueMode: 'useButtons',
+        applyValueMode: 'useButtons',// instantly  useButtons
         /// height
         height: "55px",
         // width
@@ -45,7 +42,7 @@ $(document).ready(function () {
     
     fDateBoxInstance.on("valueChanged", function (e) {
         console.log("Disaplay value is ", e.value);
-        console.log("serialize value is ", e.component.option("value"));
+        
     })
 
 
@@ -107,8 +104,10 @@ $(document).ready(function () {
 
    
     timeBoxInstance.option("placeholder", "enter your important time");
-    option(timeBoxInstance, "type", "time");
-    option(timeBoxInstance, "interval", 50);
+    timeBoxInstance.option("type", "time");
+    timeBoxInstance.option("interval",23)
+    //option(timeBoxInstance, "type", "time");
+    //option(timeBoxInstance, "interval", 50);
     timeBoxInstance.open();
 
     dateBoxInstance.on("copy", () => {

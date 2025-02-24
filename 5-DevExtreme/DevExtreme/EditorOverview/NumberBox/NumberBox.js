@@ -1,25 +1,4 @@
-﻿import {
-    changeHandler,
-    closedHandler,
-    contentReadyHandler,
-    copyHandler,
-    cutHandler,
-    pasteHandler,
-    disposeHandler,
-    enterKeyHandler,
-    focusInHandler,
-    focusOutHandler,
-    initializedHandler,
-    inputHandler,
-    keyDownHandler,
-    keyUpHandler,
-    keyPressHandler,
-    openedHandler,
-    optionChangedHandler,
-    valueChangedHandler,
-} from "../AllMethodEvent/Event.js"
-
-
+﻿
 $(document).ready(function () {
 
     $("#numberBox").dxNumberBox({
@@ -83,16 +62,34 @@ $(document).ready(function () {
 
     // different event
     $("#NumBoxThree").dxNumberBox({
-        onCopy: copyHandler,
-        onCut: cutHandler,
-        onContentReady: contentReadyHandler,
-        onValueChanged: valueChangedHandler,
-        onPaste: pasteHandler,
-        onKeyPress: keyPressHandler,
-        onKeyUp: keyUpHandler,
-        onOptionChanged: optionChangedHandler,
-        onFocusIn: focusInHandler
-    })
+        onCopy: function (e) {
+            console.log("Copy event triggered", e);
+        },
+        onCut: function (e) {
+            console.log("Cut event triggered", e);
+        },
+        onContentReady: function (e) {
+            console.log("Content Ready event triggered", e);
+        },
+        onValueChanged: function (e) {
+            console.log("Value Changed event triggered. New Value: " + e.value, e);
+        },
+        onPaste: function (e) {
+            console.log("Paste event triggered", e);
+        },
+        onKeyPress: function (e) {
+            console.log("Key Press event triggered. Key: " + e.key, e);
+        },
+        onKeyUp: function (e) {
+            console.log("Key Up event triggered. Key: " + e.key, e);
+        },
+        onOptionChanged: function (e) {
+            console.log("Option Changed event triggered", e);
+        },
+        onFocusIn: function (e) {
+            console.log("Focus In event triggered", e);
+        }
+    });
 
   
 })
