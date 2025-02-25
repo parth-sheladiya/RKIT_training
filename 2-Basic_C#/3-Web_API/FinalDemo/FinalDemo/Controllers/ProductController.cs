@@ -17,7 +17,7 @@ namespace FinalDemo.Controllers
         #region Connection String
         // Connection string 
         private string connectionString;
-        private string cacheKey = "parthpatelCacheKey";
+        
         #endregion
 
         public ProductController()
@@ -36,12 +36,6 @@ namespace FinalDemo.Controllers
         [JwtFilter]
         public IHttpActionResult Get()
         {
-            var cachedProduct = CachingHandler.Get(cacheKey);
-
-            if (cachedProduct != null)
-            {
-                return Ok(cachedProduct);
-            }
             List<Product> products = new List<Product>();
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
@@ -70,7 +64,7 @@ namespace FinalDemo.Controllers
             {
                 return NotFound();
             }
-            CachingHandler.Set(cacheKey, products, TimeSpan.FromSeconds(30));
+           
             return Ok(products);
         }
 
@@ -138,7 +132,7 @@ namespace FinalDemo.Controllers
             {
                 conn.Open();
 
-                // Way 2 : Using parameterized queries to avoid SQL injection
+               
                 MySqlCommand cmd = new MySqlCommand("INSERT INTO Products (Name, Description, Price, Category, DateAdded) VALUES (@Name, @Description, @Price, @Category, @DateAdded)", conn);
                 cmd.Parameters.AddWithValue("@Name", product.Name);
                 cmd.Parameters.AddWithValue("@Description", product.Description);
@@ -147,7 +141,7 @@ namespace FinalDemo.Controllers
                 cmd.Parameters.AddWithValue("@DateAdded", product.DateAdded);
                 cmd.ExecuteNonQuery();
             }
-            CachingHandler.Remove(cacheKey);
+            
             return Ok(product);
         }
 
@@ -187,7 +181,7 @@ namespace FinalDemo.Controllers
                     return NotFound(); 
                 }
             }
-            CachingHandler.Remove(cacheKey);
+           
             return Ok("Product updated successfully!"); 
         }
 
@@ -216,7 +210,7 @@ namespace FinalDemo.Controllers
                     return NotFound(); 
                 }
             }
-            CachingHandler.Remove(cacheKey);
+            
             return Ok("Product deleted successfully!"); 
         }
 

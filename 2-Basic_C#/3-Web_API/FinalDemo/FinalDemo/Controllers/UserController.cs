@@ -81,7 +81,7 @@ namespace FinalDemo.Controllers
             {
                 conn.Open();
 
-                // Way 2 : Using parameterized queries to avoid SQL injection
+            
                 MySqlCommand cmd = new MySqlCommand("INSERT INTO User (Id, username, password, role) VALUES (@Id, @username, @password, @role)", conn);
                 cmd.Parameters.AddWithValue("@Id", user.Id);
                 cmd.Parameters.AddWithValue("@username", user.username);

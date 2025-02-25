@@ -1,0 +1,15 @@
+F:\parth-415\clone\RKIT_training\2-Basic_C#\1-Basic_c#\BasicStudentManager\bin\Debug\net7.0\BasicStudentManager.exe
+F:\parth-415\clone\RKIT_training\2-Basic_C#\1-Basic_c#\BasicStudentManager\bin\Debug\net7.0\BasicStudentManager.deps.json
+F:\parth-415\clone\RKIT_training\2-Basic_C#\1-Basic_c#\BasicStudentManager\bin\Debug\net7.0\BasicStudentManager.runtimeconfig.json
+F:\parth-415\clone\RKIT_training\2-Basic_C#\1-Basic_c#\BasicStudentManager\bin\Debug\net7.0\BasicStudentManager.dll
+F:\parth-415\clone\RKIT_training\2-Basic_C#\1-Basic_c#\BasicStudentManager\bin\Debug\net7.0\BasicStudentManager.pdb
+F:\parth-415\clone\RKIT_training\2-Basic_C#\1-Basic_c#\BasicStudentManager\obj\Debug\net7.0\BasicStudentManager.csproj.AssemblyReference.cache
+F:\parth-415\clone\RKIT_training\2-Basic_C#\1-Basic_c#\BasicStudentManager\obj\Debug\net7.0\BasicStudentManager.GeneratedMSBuildEditorConfig.editorconfig
+F:\parth-415\clone\RKIT_training\2-Basic_C#\1-Basic_c#\BasicStudentManager\obj\Debug\net7.0\BasicStudentManager.AssemblyInfoInputs.cache
+F:\parth-415\clone\RKIT_training\2-Basic_C#\1-Basic_c#\BasicStudentManager\obj\Debug\net7.0\BasicStudentManager.AssemblyInfo.cs
+F:\parth-415\clone\RKIT_training\2-Basic_C#\1-Basic_c#\BasicStudentManager\obj\Debug\net7.0\BasicStudentManager.csproj.CoreCompileInputs.cache
+F:\parth-415\clone\RKIT_training\2-Basic_C#\1-Basic_c#\BasicStudentManager\obj\Debug\net7.0\BasicStudentManager.dll
+F:\parth-415\clone\RKIT_training\2-Basic_C#\1-Basic_c#\BasicStudentManager\obj\Debug\net7.0\refint\BasicStudentManager.dll
+F:\parth-415\clone\RKIT_training\2-Basic_C#\1-Basic_c#\BasicStudentManager\obj\Debug\net7.0\BasicStudentManager.pdb
+F:\parth-415\clone\RKIT_training\2-Basic_C#\1-Basic_c#\BasicStudentManager\obj\Debug\net7.0\BasicStudentManager.genruntimeconfig.cache
+F:\parth-415\clone\RKIT_training\2-Basic_C#\1-Basic_c#\BasicStudentManager\obj\Debug\net7.0\ref\BasicStudentManager.dll

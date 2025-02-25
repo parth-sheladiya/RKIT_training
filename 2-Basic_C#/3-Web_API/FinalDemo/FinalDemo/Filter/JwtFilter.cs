@@ -12,8 +12,13 @@ using System.Web.Http.Filters;
 
 namespace FinalDemo.Filter
 {
+    /// <summary>
+    /// is inherit from AuthorizationFilterAttribute
+    /// it is check to userrole  and auth check
+    /// </summary>
     public class JwtFilter : AuthorizationFilterAttribute
     {
+        // it is store to roles
         private readonly string[] _allowedRoles;
 
         public JwtFilter(params string[] roles)
@@ -23,18 +28,21 @@ namespace FinalDemo.Filter
 
         /// <summary>
         /// Checks the presence and validity of the JWT token and validates user roles.
+        /// onauth is work to auth 
         /// </summary>
-        /// <param name="actionContext">The context of the current HTTP action.</param>
+        /// <param name="actionContext">it is obj </param>
         public override void OnAuthorization(HttpActionContext actionContext)
         {
-            // Check if the Authorization header is present
+            // Check if the Authorization header is present or not
             if (actionContext.Request.Headers.Authorization == null ||
                 string.IsNullOrWhiteSpace(actionContext.Request.Headers.Authorization.Parameter))
             {
+                // if headers is null 
                 actionContext.Response = actionContext.Request.CreateErrorResponse(HttpStatusCode.Unauthorized, "Missing or invalid token.");
                 return;
             }
 
+            // if headers is not null and assign token
             string token = actionContext.Request.Headers.Authorization.Parameter;
 
             try
@@ -56,6 +64,7 @@ namespace FinalDemo.Filter
                 }
 
                 // Check if the user's role is allowed
+                // chek user role
                 if (_allowedRoles != null && _allowedRoles.Length > 0 && !_allowedRoles.Contains(userRole, StringComparer.OrdinalIgnoreCase))
                 {
                     actionContext.Response = actionContext.Request.CreateResponse(HttpStatusCode.Forbidden, "Access denied.");

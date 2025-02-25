@@ -60,6 +60,7 @@ namespace FinalDemo.Controllers
                 conn.Open();
                 string query = "SELECT * FROM user WHERE username = @UserName AND password = @Password";
 
+                // it is class to start database conn
                 using (MySqlCommand command = new MySqlCommand(query, conn))
                 {
                     

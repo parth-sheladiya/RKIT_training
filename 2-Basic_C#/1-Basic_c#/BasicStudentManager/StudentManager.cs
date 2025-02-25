@@ -43,10 +43,11 @@ namespace BasicStudentManager
         {
             try
             {
+                // enter name
                 Console.Write("Enter student name: ");
                 string name = Console.ReadLine();
 
-
+                // enter class
                 int studentClass;
                 Console.Write("Enter class (1 to 12): ");
                 if (!int.TryParse(Console.ReadLine(), out studentClass) || studentClass < 1 || studentClass > 12)
@@ -55,7 +56,7 @@ namespace BasicStudentManager
                     return;
                 }
 
-
+                // enter mark
                 double marks;
                 Console.Write("Enter Marks: ");
                 if (!double.TryParse(Console.ReadLine(), out marks) || marks < 0 || marks > 100)
@@ -64,17 +65,14 @@ namespace BasicStudentManager
                     return;
                 }
 
-
+                // enter dob
                 DateTime dob;
                 Console.Write("Enter Date of Birth (yyyy-MM-dd): ");
                 string dobInput = Console.ReadLine();
 
-                // First, check if the input is in the correct format
-                if (!DateTime.TryParseExact(dobInput, "yyyy-MM-dd", null, System.Globalization.DateTimeStyles.None, out dob))
-                {
-                    Console.WriteLine("Invalid date format. Please enter a valid date in the format yyyy-MM-dd.");
-                    return;
-                }
+                // Directly try to parse the date without validation
+                dob = DateTime.Parse(dobInput);
+
 
                 // Then, check if the date is in the future
                 if (dob > DateTime.Now)
@@ -187,38 +185,6 @@ namespace BasicStudentManager
                     }
                 }
 
-                Console.Write("Enter updated Date of Birth (yyyy-MM-dd) ");
-                string dobInput = Console.ReadLine();
-
-                // Validate the input if it's not empty
-                if (!string.IsNullOrEmpty(dobInput))
-                {
-                    // Try parsing the date in the specified format
-                    if (DateTime.TryParseExact(dobInput, "yyyy-MM-dd", null, System.Globalization.DateTimeStyles.None, out DateTime dob))
-                    {
-                        // Check if the parsed date is not in the future
-                        if (dob < DateTime.Now)
-                        {
-                            student.DateOfBirth = dob;
-                        }
-                        else
-                        {
-                            Console.WriteLine("Date of birth cannot be in the future.");
-                            return;
-                        }
-                    }
-                    else
-                    {
-                        Console.WriteLine("Invalid date format. Please enter a valid date in the format yyyy-MM-dd.");
-                        return;
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("Date of birth cannot be empty.");
-                }
-
-
                 // sucess message
                 Console.WriteLine("Student updated successfully.");
                 // Save updated students list to file
@@ -287,21 +253,26 @@ namespace BasicStudentManager
         #endregion  
 
         /// <summary>
-        /// File operations for loading and saving students to/from a text file
+        /// File operations for loading and sa.ving students to/from a text file
         /// </summary>
         #region File Handling Methods
         private void LoadStudentsFromFile()
         {
             try
             {
-                if (!File.Exists(FilePath)) return;
+                if (!File.Exists(FilePath))
+
+                {
+                    Console.WriteLine("File not found.");
+                    return;
+                }
 
                 using (StreamReader reader = new StreamReader(FilePath))
                 {
                     while (reader.Peek() >= 0)
                     {
                         string line = reader.ReadLine();
-                        var parts = line.Split(',');
+                        string[] parts = line.Split(',');
 
                         string idPart = parts[0];
                         string namePart = parts[1];

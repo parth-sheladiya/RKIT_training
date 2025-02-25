@@ -14,10 +14,10 @@ namespace FinalDemo.Handler
         private const string SecretKey = "patelparthparthpatelpatelparthparthpatel"; // The secret key used for token validation.
 
         /// <summary>
-        /// Validates the JWT token and returns the ClaimsPrincipal if valid.
+        /// validate jwt token 
         /// </summary>
-        /// <param name="token">The JWT token to be validated.</param>
-        /// <returns>A ClaimsPrincipal if the token is valid, otherwise null.</returns>
+        /// <param name="token">token</param>
+        /// <returns>if claim is correct to return token else null</returns>
         public static ClaimsPrincipal ValidateJwtToken(string token)
         {
             SymmetricSecurityKey key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(SecretKey));
@@ -40,14 +40,15 @@ namespace FinalDemo.Handler
 
                 return principal;
             }
-            catch
+            catch(Exception ex)
             {
-                return null; // Invalid token
+                Console.WriteLine("error", ex.Message);
+                return null;
             }
         }
 
         /// <summary>
-        /// Generates a JWT token for the specified username, with role claim and expiration.
+        /// generate token
         /// </summary>
         /// <param name="username">The username for which the token is being generated.</param>
         /// <param name="role">The role to assign to the user in the token.</param>
@@ -57,7 +58,7 @@ namespace FinalDemo.Handler
             Claim[] claims = new[]
             {
             new Claim(ClaimTypes.Name, username),
-            new Claim(ClaimTypes.Role, role) // Dynamically setting the role
+            new Claim(ClaimTypes.Role, role) 
         };
 
             SymmetricSecurityKey key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(SecretKey));
