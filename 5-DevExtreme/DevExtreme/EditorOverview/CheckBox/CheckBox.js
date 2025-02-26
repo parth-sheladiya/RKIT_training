@@ -30,6 +30,7 @@
     });
     
     // Get the element of the second checkbox and log it
+    // it is use to debug abd styling purpose
     var getEle = $("#checkBoxContainer2").dxCheckBox("instance").element();
     console.log("checkBoxContainer2 get element is ",getEle);
     
@@ -40,6 +41,7 @@
     $("#checkBoxContainer3").dxCheckBox({
         text: "Subscribe to my follotips",
         value: true
+        
     });
 
     var CheckBoxInstanceThree = $("#checkBoxContainer3").dxCheckBox("instance");
@@ -48,7 +50,7 @@
     $("#checkBoxContainer2").on("click", function () {
         CheckBoxInstanceThree.focus();
     })
-    // Begin update to prevent UI refresh while updating properties
+    // Begin update method
     CheckBoxInstanceThree.beginUpdate();
 
     // Update multiple properties
@@ -65,6 +67,7 @@
         console.log("new value is", e.value)
     })
     // register key handler (key,handlker)
+    // method
     CheckBoxInstanceThree.registerKeyHandler("enter", function () {
         console.log("You pressed Enter!");
 

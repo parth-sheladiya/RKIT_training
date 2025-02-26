@@ -1,26 +1,23 @@
 ﻿
 $(document).ready(function () {
-    const data = [{
-        ID: 1,
-        Name: 'Banana',
-        Category: 'Fruits'
-    }, {
-        ID: 2,
-        Name: 'Cucumber',
-        Category: 'Vegetables'
-    }, {
-        ID: 3,
-        Name: 'Apple',
-        Category: 'Fruits'
-    }, {
-        ID: 4,
-        Name: 'Tomato',
-        Category: 'Vegetables'
-    }, {
-        ID: 5,
-        Name: 'Apricot',
-        Category: 'Fruits'
-    }]
+    const data = [
+        { ID: 1, Name: 'Banana', Category: 'Fruits' },
+        { ID: 2, Name: 'Cucumber', Category: 'Vegetables' },
+        { ID: 3, Name: 'Apple', Category: 'Fruits' },
+        { ID: 4, Name: 'Tomato', Category: 'Vegetables' },
+        { ID: 5, Name: 'Apricot', Category: 'Fruits' },
+        { ID: 6, Name: 'Carrot', Category: 'Vegetables' },
+        { ID: 7, Name: 'Strawberry', Category: 'Fruits' },
+        { ID: 8, Name: 'Potato', Category: 'Vegetables' },
+        { ID: 9, Name: 'Orange', Category: 'Fruits' },
+        { ID: 10, Name: 'Lettuce', Category: 'Vegetables' },
+        { ID: 11, Name: 'Pineapple', Category: 'Fruits' },
+        { ID: 12, Name: 'Cabbage', Category: 'Vegetables' },
+        { ID: 13, Name: 'Mango', Category: 'Fruits' },
+        { ID: 14, Name: 'Onion', Category: 'Vegetables' },
+        { ID: 15, Name: 'Peach', Category: 'Fruits' }
+    ];
+
     let filterType = "contains";
     const dataSource = new DevExpress.data.DataSource({
         store: data,
@@ -37,7 +34,7 @@ $(document).ready(function () {
         // show ui
         displayExpr: "Name",
         // search fields
-        //searchEnabled: true,
+        searchEnabled: true,
         searchMode: filterType,
         grouped: true,
         placeholder: "please select item",

@@ -8,7 +8,7 @@ $(document).ready(function () {
         //type time
         type: "date",
         // show on field
-        value: new Date(),
+       value: new Date(),
         // show on format in field
         displayFormat: "MMM dd, yyyy",
         
@@ -75,7 +75,7 @@ $(document).ready(function () {
         // place holder
         placeholder: "20/11/2003 5:00PM",
         // read only by default false
-        readonly: true,
+        readonly: false,
         // mask behavior by default flase
         // user can not enter any char  it is only enter format date
         useMaskBehavior: true,
@@ -83,7 +83,8 @@ $(document).ready(function () {
         //isValid:false,
         visible: true,
         // not open calaender
-        opened: false
+        opened: false,
+        hint:"select date and time"
         
     });
 
@@ -132,9 +133,7 @@ $(document).ready(function () {
     setTimeout(function () {
         
 
-        //multiple changes to the DateTimeBox instance
-        //dateTimeBoxInstance.option("value", new Date("2025-01-01T12:00:00"));
-        //dateTimeBoxInstance.option("min", new Date("2020-01-01"));
+        //multiple changes to the DateTimeBox instanc
         dateTimeBoxInstance.option("readOnly", true);
         dateTimeBoxInstance.open();
         dateBoxInstance.reset();
@@ -144,7 +143,7 @@ $(document).ready(function () {
     dateTimeBoxInstance.endUpdate();
 
     dateBoxInstance.on("optionChanged", function (e) {
-        console.log("value is ", e.value); 
+        console.log("options is ", e.value); 
     })
 
 

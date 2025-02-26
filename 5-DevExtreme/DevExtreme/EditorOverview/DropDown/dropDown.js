@@ -1,8 +1,9 @@
 ﻿$(document).ready(function () {
-    var names = ["parth", "raj", "deep", "jay", "jeel"];
+    var productName = ["AC", "Led tv", "watch", "shoes", "laptop" , "mobile" ];
 
     $("#dropDownBox").dxDropDownBox({
-        value: "names",  // Initially empty
+        value: "names", 
+        dataSource: productName,
         placeholder: "Select a value",
         acceptCustomValue: true,
         disabled: false,
@@ -15,20 +16,25 @@
         searchExpr: ["name"],
         stylingMode: "outlined",
 
-        contentTemplate: function (e) {
-            var $list = $("<div>").dxList({
-                dataSource: names,
-                selectionMode: "multiple",
-                showSelectionControls: true,
-                onSelectionChanged: function (args) {
-                    var selectedItems = args.component.option("selectedItems");
-
-                    // selected items are displayed in the dropdownbox
-                    $("#dropDownBox").dxDropDownBox("instance").option("value", selectedItems.join(", "));
-                }
-            });
-            return $list;
-        },
+        //contentTemplate: function (e) {
+        //    var $list = $("<div>").dxList({
+        //        // data
+        //        dataSource: productName,
+        //        selectionMode: "multiple", // single multiple
+        //        showSelectionControls: true,
+        //        onSelectionChanged: function (args) {
+        //            var selectedItems = args.component.option("selectedItems");
+        //            console.log("select value is ", selectedItems)
+        //            // selected items are displayed in the dropdownbox
+        //            $("#dropDownBox").dxDropDownBox("instance").option("value", selectedItems.join(", "));
+        //        }
+        //    });
+        //    return $list;
+        //},
+        //// ?????????
+        // not working
+        // items:names,
+        //dataSource: productName,
 
         onClosed: function () {
             alert("Dropdown closed");
