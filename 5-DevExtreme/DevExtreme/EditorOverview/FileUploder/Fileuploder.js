@@ -23,7 +23,7 @@
         },
         readyToUploadMessage: "file is ready to upload", 
         uploadMethod:"POST",
-        uploadMode: "useButtons",
+        uploadMode: "useButtons", //intantly
 
         onBeforeSend: (e) => {
             console.log("onBeforeSend",e);

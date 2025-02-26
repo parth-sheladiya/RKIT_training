@@ -15,7 +15,6 @@
         searchEnabled: true,
         searchExpr: ["name"],
         stylingMode: "outlined",
-        acceptCustomValue: true,
         contentTemplate: function (e) {
            var $list = $("<div>").dxList({
                // data

@@ -26,7 +26,7 @@
         // mess
         maskInvalidMessage: "enter valid pancard number",
         // mask value
-        useMaskedValue: true,
+        //useMaskedValue: true,
         // focus 
         showMaskMode: "onFocus",
     });
