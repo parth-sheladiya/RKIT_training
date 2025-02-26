@@ -18,7 +18,7 @@ $(document).ready(function(){
         },
         stateStoring: {
             enabled: true,
-            type: "localStorage", // 'custom' | 'localStorage' | 'sessionStorage'
+            type: "sessionStorage", // 'custom' | 'localStorage' | 'sessionStorage'
             storageKey: "statepersistanceKey",
             savingTimeout: 3000
         },
@@ -61,7 +61,7 @@ $(document).ready(function(){
         text: "save state",
         onClick: function(){
             const stateData = dataGrid.state();
-            localStorage.setItem("dataGridState", JSON.stringify(stateData)); 
+            sessionStorage.setItem("dataGridState", JSON.stringify(stateData)); 
             DevExpress.ui.notify("State Saved", "success", 2000);
         }
     });
