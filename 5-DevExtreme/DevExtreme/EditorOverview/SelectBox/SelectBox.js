@@ -35,6 +35,7 @@ $(document).ready(function () {
         displayExpr: "Name",
         // search fields
         searchEnabled: true,
+        spellcheck: true,
         searchMode: filterType,
         grouped: true,
         placeholder: "please select item",
@@ -67,7 +68,9 @@ $(document).ready(function () {
             console.log("Opened event triggered", e);
         },
         onValueChanged: function (e) {
-            console.log("Value Changed event triggered. New Value: " + e.value, e);
+            console.log("Previous value: ", e.previousValue); // Previously selected items
+            console.log("New value: ", e.value);
+           
         }
 
     })

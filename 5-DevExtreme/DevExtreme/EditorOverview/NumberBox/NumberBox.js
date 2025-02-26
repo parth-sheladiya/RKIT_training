@@ -57,7 +57,8 @@ $(document).ready(function () {
         format: "#0.##;(#0.##)",
         format: "Rs #0.00",
         // doubt
-        format:"000'-'000"
+        //format:"000'-'000",
+        format: "Rs #0.00",
     })
 
     // different event
@@ -78,10 +79,10 @@ $(document).ready(function () {
             console.log("Paste event triggered", e);
         },
         onKeyPress: function (e) {
-            console.log("Key Press event triggered. Key: " + e.key, e);
+            console.log("Key Press event triggered. Key: ");
         },
         onKeyUp: function (e) {
-            console.log("Key Up event triggered. Key: " + e.key, e);
+            console.log("Key Up event triggered. Key: ");
         },
         onOptionChanged: function (e) {
             console.log("Option Changed event triggered", e);

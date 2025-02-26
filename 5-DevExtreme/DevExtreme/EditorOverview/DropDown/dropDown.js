@@ -15,33 +15,35 @@
         searchEnabled: true,
         searchExpr: ["name"],
         stylingMode: "outlined",
-
-        //contentTemplate: function (e) {
-        //    var $list = $("<div>").dxList({
-        //        // data
-        //        dataSource: productName,
-        //        selectionMode: "multiple", // single multiple
-        //        showSelectionControls: true,
-        //        onSelectionChanged: function (args) {
-        //            var selectedItems = args.component.option("selectedItems");
-        //            console.log("select value is ", selectedItems)
-        //            // selected items are displayed in the dropdownbox
-        //            $("#dropDownBox").dxDropDownBox("instance").option("value", selectedItems.join(", "));
-        //        }
-        //    });
-        //    return $list;
-        //},
+        acceptCustomValue: true,
+        contentTemplate: function (e) {
+           var $list = $("<div>").dxList({
+               // data
+               dataSource: productName,
+               selectionMode: "multiple", // single multiple
+               showSelectionControls: true,
+               onSelectionChanged: function (args) {
+                   var selectedItems = args.component.option("selectedItems");
+                   console.log("select value is ", selectedItems)
+                   // selected items are displayed in the dropdownbox
+                   $("#dropDownBox").dxDropDownBox("instance").option("value", selectedItems.join(", "));
+               }
+           });
+           return $list;
+        },
         //// ?????????
         // not working
         // items:names,
         //dataSource: productName,
 
         onClosed: function () {
-            alert("Dropdown closed");
+            console.log("Dropdown closed");
         },
 
         onValueChanged: function (e) {
-            console.log("New value: ", e.value);
+            //console.log("New value: ", e.value);
+            console.log("Previous value: ", e.previousValue); // Before selection change
+        console.log("New value: ", e.value);
         },
 
         hoverStateEnabled: true,
