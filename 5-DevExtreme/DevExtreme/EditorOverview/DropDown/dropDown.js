@@ -2,26 +2,30 @@
     var names = ["parth", "raj", "deep", "jay", "jeel"];
 
     $("#dropDownBox").dxDropDownBox({
-        value: "parth", 
+        value: "names",  // Initially empty
         placeholder: "Select a value",
         acceptCustomValue: true,
         disabled: false,
         readonly: false,
         hint: "This is a dropdown box",
-        displayExpr: "name",
         height: "100px",
         width: "500px",
         showDropDownButton: true,
-        searchEnabled: true, 
+        searchEnabled: true,
         searchExpr: ["name"],
-        displayValue: "Select a name",
-        stylingMode: "outlined", 
+        stylingMode: "outlined",
 
         contentTemplate: function (e) {
             var $list = $("<div>").dxList({
                 dataSource: names,
-                selectionMode: "multiple", // single
+                selectionMode: "multiple",
                 showSelectionControls: true,
+                onSelectionChanged: function (args) {
+                    var selectedItems = args.component.option("selectedItems");
+
+                    // selected items are displayed in the dropdownbox
+                    $("#dropDownBox").dxDropDownBox("instance").option("value", selectedItems.join(", "));
+                }
             });
             return $list;
         },
@@ -35,25 +39,7 @@
         },
 
         hoverStateEnabled: true,
-        showClearButton: true, 
-        showDropDownButton: true 
-    });
-
-    var dropDownInstance = $("#dropDownBox").dxDropDownBox("instance");
-
-    dropDownInstance.on("optionChanged", function (e) {
-        console.log(`Option Changed: ${e.name} => ${e.value}`);
-    });
-
-    dropDownInstance.on("focus", function () {
-        console.log("Dropdown focused");
-    });
-
-    dropDownInstance.on("blur", function () {
-        console.log("Dropdown lost focus");
-    });
-
-    dropDownInstance.on("keydown", function (e) {
-        console.log(`Key pressed: ${e.event.key}`);
+        showClearButton: true,
+        showDropDownButton: true
     });
 });
