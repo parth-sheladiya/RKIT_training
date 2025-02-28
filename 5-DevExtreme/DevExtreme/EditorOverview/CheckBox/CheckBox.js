@@ -56,7 +56,7 @@
     // Update multiple properties
     CheckBoxInstanceThree.option("value", false); // Change the checked state
     CheckBoxInstanceThree.option("text", "Unsubscribe my follotips"); // Change the text
-
+    CheckBoxInstanceThree.endUpdate();
     // option changed
     CheckBoxInstanceThree.on("optionChanged", function () {
         console.log("optionChanged")
