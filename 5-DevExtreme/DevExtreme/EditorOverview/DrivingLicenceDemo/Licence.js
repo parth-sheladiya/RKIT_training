@@ -11,7 +11,7 @@
         // style
         stylingMode: "filled",
         // message
-        validationMessageMode: "always",
+       // validationMessageMode: "always",
     }).dxValidator({
         name: "fullname",
         // arr
@@ -85,12 +85,6 @@
         items: BloodGroup,
         // placeholder
         placeholder: "select your blood group",
-        // dropdown option
-        // if user click outside of box then automatic close select box
-        dropDownOptions: 
-                { 
-                    closeOnOutsideClick: true 
-                }
     }).dxValidator({
         name: "BloodGroup",
         validationRules: [
@@ -125,7 +119,7 @@
         // placeholder
         placeholder: "enter your mobile number",
         // mask 
-        mask: "+91 XXXXXXXXXX",
+        mask: "+\\91 XXXXXXXXXX",
         // rules for only number
         maskRules: { "X": /[0-9]/ },
         // message
@@ -247,6 +241,7 @@
         uploadUrl:"https://js.devexpress.com/Demos/WidgetsGalleryDataService/api/ChunkUpload",
     }).dxValidator({
         name: "idproof",
+        //validationMessageMode:"never",
         validationRules: [
             { 
                 type: "required", 
@@ -261,8 +256,7 @@
     }).dxValidator({
         validationRules: [
             {
-                type: "compare",
-                comparisonTarget: () => true,
+                type: "required",
                 message: "You must agree to the Terms and Conditions",
             },
         ]
@@ -288,7 +282,7 @@
             }
         },
     });
-
+    $("#summary").dxValidationSummary({});
     // save data to session storage
     function saveToSessionStorage() {
         const formData = {
@@ -323,10 +317,11 @@
                 $("#disease3").dxCheckBox("instance").option("value") ? "Asthma" : null,
                 $("#disease4").dxCheckBox("instance").option("value") ? "Heart Disease" : null,
                 $("#disease5").dxCheckBox("instance").option("value") ? "Cancer" : null
-            ].filter(Boolean)
-        };
-
-        // Save the form data to sessionStorage
+            ]
+          
+            };
+            
+            // Save the form data to sessionStorage
         sessionStorage.setItem("formData", JSON.stringify(formData));
 
         // Log the form data to the console

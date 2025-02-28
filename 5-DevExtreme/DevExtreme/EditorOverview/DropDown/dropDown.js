@@ -5,7 +5,7 @@
         value: "names", 
         dataSource: productName,
         placeholder: "Select a value",
-        acceptCustomValue: true,
+        acceptCustomValue: true,   
         disabled: false,
         readonly: false,
         hint: "This is a dropdown box",
