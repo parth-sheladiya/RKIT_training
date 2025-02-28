@@ -32,6 +32,9 @@ $(document).ready(function(){
         ],
         masterDetail:{
             enabled:true,
+            //autoExpandAll:true,
+
+            //Specifies a custom template for detail sections.
             template(container,options){
                 const currentProductData = options.data;
                 $("<div>")
@@ -40,44 +43,61 @@ $(document).ready(function(){
                         .appendTo(container);
                 $("<div>")
                         .dxDataGrid({
+                            dataSource:currentProductData.ProductDetails,
+                            // dataSource:[
+                            //     {
+                            //         Rating:currentProductData.Rating,
+                            //         Price:currentProductData.Price,
+                            //         Date:currentProductData.Date,
+                            //         StockQuantity:currentProductData.StockQuantity,
+                            //         Discount:currentProductData.Discount,
+                            //         Supplier:currentProductData.Supplier
+                            //     }
+                            // ],
                             
                             columnAutoWidth:true,
                             showBorders:true,
                             columns:[
                                 {
                                     dataField:"Rating",
-                                    dataType:"",
-                                    caption:"",
+                                    dataType:"number",
+                                    caption:"Product Rating",
+                                    alignment:"center"
                                 },
                                 {
                                     dataField:"Price",
-                                    dataType:"",
-                                    caption:"",
+                                    dataType:"number",
+                                    caption:"Product Price",
+                                    alignment:"center"
                                 },
                                 {
                                     dataField:"Date",
-                                    dataType:"",
-                                    caption:"",
+                                    dataType:"date",
+                                    caption:"Manufacture Date",
+                                    alignment:"center"
                                 },
 
                                 {
                                     dataField:"StockQuantity",
-                                    dataType:"",
-                                    caption:"",
+                                    dataType:"number",
+                                    caption:"Product Quantity",
+                                    alignment:"center"
                                 },
                                 {
                                     dataField:"Discount",
-                                    dataType:"",
-                                    caption:"",
+                                    dataType:"number",
+                                    caption:"product Discount",
+                                    alignment:"center"
                                 },
                                 {
-                                    dataField:"Supplier",
-                                    dataType:"",
-                                    caption:"",
+                                    dataField:"Company",
+                                    dataType:"string",
+                                    caption:"Product Company",
+                                    alignment:"center"
                                 },
                             ],
                             
-                        })
+                        }).appendTo(container)
                         
             }
         }
