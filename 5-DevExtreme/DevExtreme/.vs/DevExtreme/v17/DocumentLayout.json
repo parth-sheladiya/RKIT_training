@@ -3,11 +3,55 @@
   "WorkspaceRootPath": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\editoroverview\\finaldemo\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|solutionrelative:editoroverview\\finaldemo\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\editoroverview\\finaldemo\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|solutionrelative:editoroverview\\finaldemo\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|g:\\training\\rkit_training\\5-devextreme\\devextreme\\editoroverview\\finaldemo\\registration.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|solutionrelative:editoroverview\\finaldemo\\registration.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\editoroverview\\finaldemo\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|solutionrelative:editoroverview\\finaldemo\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|g:\\training\\rkit_training\\5-devextreme\\devextreme\\editoroverview\\finaldemo\\userdash.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|solutionrelative:editoroverview\\finaldemo\\userdash.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|g:\\training\\rkit_training\\5-devextreme\\devextreme\\editoroverview\\finaldemo\\userdash.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|solutionrelative:editoroverview\\finaldemo\\userdash.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|g:\\training\\rkit_training\\5-devextreme\\devextreme\\editoroverview\\finaldemo\\admindash.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|solutionrelative:editoroverview\\finaldemo\\admindash.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|g:\\training\\rkit_training\\5-devextreme\\devextreme\\editoroverview\\finaldemo\\admindash.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|solutionrelative:editoroverview\\finaldemo\\admindash.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\editoroverview\\drivinglicencedemo\\licence.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|solutionrelative:editoroverview\\drivinglicencedemo\\licence.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\editoroverview\\dropdown\\dropdown.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|solutionrelative:editoroverview\\dropdown\\dropdown.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|g:\\training\\rkit_training\\5-devextreme\\devextreme\\editoroverview\\fileuploder\\fileuploder.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\editoroverview\\buttonbox\\button.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|solutionrelative:editoroverview\\buttonbox\\button.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\editoroverview\\buttonbox\\button.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|solutionrelative:editoroverview\\buttonbox\\button.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\editoroverview\\fileuploder\\fileuploder.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|solutionrelative:editoroverview\\fileuploder\\fileuploder.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
@@ -17,10 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\editoroverview\\checkbox\\checkbox.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|solutionrelative:editoroverview\\checkbox\\checkbox.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\editoroverview\\buttonbox\\button.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|solutionrelative:editoroverview\\buttonbox\\button.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\editoroverview\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -53,14 +93,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\editoroverview\\drivinglicencedemo\\data.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|solutionrelative:editoroverview\\drivinglicencedemo\\data.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\editoroverview\\drivinglicencedemo\\licence.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|solutionrelative:editoroverview\\drivinglicencedemo\\licence.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\editoroverview\\buttonbox\\button.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|solutionrelative:editoroverview\\buttonbox\\button.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{36DC36CB-453B-4C4B-B81D-E8F948D90F69}|EditorOverview\\EditorOverview.csproj|G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\editoroverview\\selectbox\\selectbox.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -126,48 +158,115 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Fileuploder.js",
-              "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\FileUploder\\Fileuploder.js",
-              "RelativeDocumentMoniker": "EditorOverview\\FileUploder\\Fileuploder.js",
-              "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\FileUploder\\Fileuploder.js",
-              "RelativeToolTip": "EditorOverview\\FileUploder\\Fileuploder.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAcAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "UserDash.js",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\FinalDemo\\UserDash.js",
+              "RelativeDocumentMoniker": "EditorOverview\\FinalDemo\\UserDash.js",
+              "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\FinalDemo\\UserDash.js",
+              "RelativeToolTip": "EditorOverview\\FinalDemo\\UserDash.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-02-13T13:47:34.382Z",
+              "WhenOpened": "2025-03-01T14:49:37.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserDash.html",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\FinalDemo\\UserDash.html",
+              "RelativeDocumentMoniker": "EditorOverview\\FinalDemo\\UserDash.html",
+              "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\FinalDemo\\UserDash.html",
+              "RelativeToolTip": "EditorOverview\\FinalDemo\\UserDash.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-01T14:47:49.044Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "TextArea.html",
-              "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\TextArea\\TextArea.html",
-              "RelativeDocumentMoniker": "EditorOverview\\TextArea\\TextArea.html",
-              "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\TextArea\\TextArea.html",
-              "RelativeToolTip": "EditorOverview\\TextArea\\TextArea.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABHAAAAAAAAAA==",
+              "Title": "AdminDash.html",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\FinalDemo\\AdminDash.html",
+              "RelativeDocumentMoniker": "EditorOverview\\FinalDemo\\AdminDash.html",
+              "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\FinalDemo\\AdminDash.html",
+              "RelativeToolTip": "EditorOverview\\FinalDemo\\AdminDash.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-02-13T13:47:34.399Z"
+              "WhenOpened": "2025-03-01T14:47:29.033Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.html",
-              "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\Index.html",
-              "RelativeDocumentMoniker": "EditorOverview\\Index.html",
-              "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\Index.html",
-              "RelativeToolTip": "EditorOverview\\Index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "AdminDash.js",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\FinalDemo\\AdminDash.js",
+              "RelativeDocumentMoniker": "EditorOverview\\FinalDemo\\AdminDash.js",
+              "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\FinalDemo\\AdminDash.js",
+              "RelativeToolTip": "EditorOverview\\FinalDemo\\AdminDash.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-01T14:45:41.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.js",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\FinalDemo\\Login.js",
+              "RelativeDocumentMoniker": "EditorOverview\\FinalDemo\\Login.js",
+              "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\FinalDemo\\Login.js",
+              "RelativeToolTip": "EditorOverview\\FinalDemo\\Login.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-01T10:33:38.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "login.html",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\FinalDemo\\login.html",
+              "RelativeDocumentMoniker": "EditorOverview\\FinalDemo\\login.html",
+              "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\FinalDemo\\login.html",
+              "RelativeToolTip": "EditorOverview\\FinalDemo\\login.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-02-13T13:47:34.384Z"
+              "WhenOpened": "2025-03-01T10:32:42.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Registration.js",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\FinalDemo\\Registration.js",
+              "RelativeDocumentMoniker": "EditorOverview\\FinalDemo\\Registration.js",
+              "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\FinalDemo\\Registration.js",
+              "RelativeToolTip": "EditorOverview\\FinalDemo\\Registration.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-01T09:41:52.272Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "index.html",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\FinalDemo\\index.html",
+              "RelativeDocumentMoniker": "EditorOverview\\FinalDemo\\index.html",
+              "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\FinalDemo\\index.html",
+              "RelativeToolTip": "EditorOverview\\FinalDemo\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAkwBYAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-01T09:41:39.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "CheckBox.html",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\CheckBox\\CheckBox.html",
               "RelativeDocumentMoniker": "EditorOverview\\CheckBox\\CheckBox.html",
@@ -179,7 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 17,
               "Title": "CheckBox.js",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\CheckBox\\CheckBox.js",
               "RelativeDocumentMoniker": "EditorOverview\\CheckBox\\CheckBox.js",
@@ -191,31 +290,30 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 36,
               "Title": "Method.js",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\AllMethodEvent\\Method.js",
               "RelativeDocumentMoniker": "EditorOverview\\AllMethodEvent\\Method.js",
               "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\AllMethodEvent\\Method.js",
               "RelativeToolTip": "EditorOverview\\AllMethodEvent\\Method.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-02-13T13:47:34.391Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "Button.html",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\ButtonBox\\Button.html",
               "RelativeDocumentMoniker": "EditorOverview\\ButtonBox\\Button.html",
               "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\ButtonBox\\Button.html",
               "RelativeToolTip": "EditorOverview\\ButtonBox\\Button.html",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAkwBwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-02-13T13:47:34.393Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 13,
               "Title": "Fileuploder.html",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\FileUploder\\Fileuploder.html",
               "RelativeDocumentMoniker": "EditorOverview\\FileUploder\\Fileuploder.html",
@@ -227,104 +325,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "dropDown.js",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\DropDown\\dropDown.js",
               "RelativeDocumentMoniker": "EditorOverview\\DropDown\\dropDown.js",
               "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\DropDown\\dropDown.js",
               "RelativeToolTip": "EditorOverview\\DropDown\\dropDown.js",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABIAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-02-13T13:47:34.379Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Event.js",
-              "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\AllMethodEvent\\Event.js",
-              "RelativeDocumentMoniker": "EditorOverview\\AllMethodEvent\\Event.js",
-              "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\AllMethodEvent\\Event.js",
-              "RelativeToolTip": "EditorOverview\\AllMethodEvent\\Event.js",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACoAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-02-13T13:47:34.39Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "NumberBox.js",
-              "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\NumberBox\\NumberBox.js",
-              "RelativeDocumentMoniker": "EditorOverview\\NumberBox\\NumberBox.js",
-              "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\NumberBox\\NumberBox.js",
-              "RelativeToolTip": "EditorOverview\\NumberBox\\NumberBox.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-02-13T13:47:34.386Z"
+              "WhenOpened": "2025-02-13T13:47:34.379Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Textarea.js",
-              "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\TextArea\\Textarea.js",
-              "RelativeDocumentMoniker": "EditorOverview\\TextArea\\Textarea.js",
-              "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\TextArea\\Textarea.js",
-              "RelativeToolTip": "EditorOverview\\TextArea\\Textarea.js",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACwAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-02-13T13:47:34.4Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "NewDateBox.js",
-              "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\DateBox\\NewDateBox.js",
-              "RelativeDocumentMoniker": "EditorOverview\\DateBox\\NewDateBox.js",
-              "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\DateBox\\NewDateBox.js",
-              "RelativeToolTip": "EditorOverview\\DateBox\\NewDateBox.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-02-13T14:10:08.598Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Licence.html",
-              "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\DrivingLicenceDemo\\Licence.html",
-              "RelativeDocumentMoniker": "EditorOverview\\DrivingLicenceDemo\\Licence.html",
-              "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\DrivingLicenceDemo\\Licence.html",
-              "RelativeToolTip": "EditorOverview\\DrivingLicenceDemo\\Licence.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-02-13T13:47:32.772Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "data.js",
-              "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\DrivingLicenceDemo\\data.js",
-              "RelativeDocumentMoniker": "EditorOverview\\DrivingLicenceDemo\\data.js",
-              "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\DrivingLicenceDemo\\data.js",
-              "RelativeToolTip": "EditorOverview\\DrivingLicenceDemo\\data.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-02-13T13:47:34.381Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
               "Title": "Licence.js",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\DrivingLicenceDemo\\Licence.js",
               "RelativeDocumentMoniker": "EditorOverview\\DrivingLicenceDemo\\Licence.js",
               "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\DrivingLicenceDemo\\Licence.js",
               "RelativeToolTip": "EditorOverview\\DrivingLicenceDemo\\Licence.js",
-              "ViewState": "AgIAADABAAAAAAAAAAAuwE8BAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-02-13T13:47:34.375Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
+              "Title": "Index.html",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\Index.html",
+              "RelativeDocumentMoniker": "EditorOverview\\Index.html",
+              "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\Index.html",
+              "RelativeToolTip": "EditorOverview\\Index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-02-13T13:47:34.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TextArea.html",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\TextArea\\TextArea.html",
+              "RelativeDocumentMoniker": "EditorOverview\\TextArea\\TextArea.html",
+              "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\TextArea\\TextArea.html",
+              "RelativeToolTip": "EditorOverview\\TextArea\\TextArea.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-02-13T13:47:34.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Button.js",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\ButtonBox\\Button.js",
               "RelativeDocumentMoniker": "EditorOverview\\ButtonBox\\Button.js",
@@ -336,7 +385,90 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 12,
+              "Title": "Fileuploder.js",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\FileUploder\\Fileuploder.js",
+              "RelativeDocumentMoniker": "EditorOverview\\FileUploder\\Fileuploder.js",
+              "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\FileUploder\\Fileuploder.js",
+              "RelativeToolTip": "EditorOverview\\FileUploder\\Fileuploder.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-02-13T13:47:34.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Event.js",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\AllMethodEvent\\Event.js",
+              "RelativeDocumentMoniker": "EditorOverview\\AllMethodEvent\\Event.js",
+              "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\AllMethodEvent\\Event.js",
+              "RelativeToolTip": "EditorOverview\\AllMethodEvent\\Event.js",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-02-13T13:47:34.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "NumberBox.js",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\NumberBox\\NumberBox.js",
+              "RelativeDocumentMoniker": "EditorOverview\\NumberBox\\NumberBox.js",
+              "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\NumberBox\\NumberBox.js",
+              "RelativeToolTip": "EditorOverview\\NumberBox\\NumberBox.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-02-13T13:47:34.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Textarea.js",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\TextArea\\Textarea.js",
+              "RelativeDocumentMoniker": "EditorOverview\\TextArea\\Textarea.js",
+              "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\TextArea\\Textarea.js",
+              "RelativeToolTip": "EditorOverview\\TextArea\\Textarea.js",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-02-13T13:47:34.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "NewDateBox.js",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\DateBox\\NewDateBox.js",
+              "RelativeDocumentMoniker": "EditorOverview\\DateBox\\NewDateBox.js",
+              "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\DateBox\\NewDateBox.js",
+              "RelativeToolTip": "EditorOverview\\DateBox\\NewDateBox.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-02-13T14:10:08.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Licence.html",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\DrivingLicenceDemo\\Licence.html",
+              "RelativeDocumentMoniker": "EditorOverview\\DrivingLicenceDemo\\Licence.html",
+              "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\DrivingLicenceDemo\\Licence.html",
+              "RelativeToolTip": "EditorOverview\\DrivingLicenceDemo\\Licence.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-02-13T13:47:32.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "data.js",
+              "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\DrivingLicenceDemo\\data.js",
+              "RelativeDocumentMoniker": "EditorOverview\\DrivingLicenceDemo\\data.js",
+              "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\DrivingLicenceDemo\\data.js",
+              "RelativeToolTip": "EditorOverview\\DrivingLicenceDemo\\data.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-02-13T13:47:34.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "SelectBox.html",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\SelectBox\\SelectBox.html",
               "RelativeDocumentMoniker": "EditorOverview\\SelectBox\\SelectBox.html",
@@ -348,7 +480,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 23,
               "Title": "SelectBox.js",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\SelectBox\\SelectBox.js",
               "RelativeDocumentMoniker": "EditorOverview\\SelectBox\\SelectBox.js",
@@ -360,7 +492,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 25,
               "Title": "dropDown.html",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\DropDown\\dropDown.html",
               "RelativeDocumentMoniker": "EditorOverview\\DropDown\\dropDown.html",
@@ -372,7 +504,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 26,
               "Title": "validation.js",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\Validation\\validation.js",
               "RelativeDocumentMoniker": "EditorOverview\\Validation\\validation.js",
@@ -384,7 +516,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 27,
               "Title": "validation.html",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\Validation\\validation.html",
               "RelativeDocumentMoniker": "EditorOverview\\Validation\\validation.html",
@@ -396,7 +528,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 29,
               "Title": "TextBox.html",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\TextBox\\TextBox.html",
               "RelativeDocumentMoniker": "EditorOverview\\TextBox\\TextBox.html",
@@ -408,7 +540,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 28,
               "Title": "TextBox.js",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\TextBox\\TextBox.js",
               "RelativeDocumentMoniker": "EditorOverview\\TextBox\\TextBox.js",
@@ -420,7 +552,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 31,
               "Title": "Radio.js",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\RadioGroup\\Radio.js",
               "RelativeDocumentMoniker": "EditorOverview\\RadioGroup\\Radio.js",
@@ -432,7 +564,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 32,
               "Title": "NumberBox.html",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\NumberBox\\NumberBox.html",
               "RelativeDocumentMoniker": "EditorOverview\\NumberBox\\NumberBox.html",
@@ -444,7 +576,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 30,
               "Title": "Radio.html",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\RadioGroup\\Radio.html",
               "RelativeDocumentMoniker": "EditorOverview\\RadioGroup\\Radio.html",
@@ -456,7 +588,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 33,
               "Title": "DateBox.html",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\DateBox\\DateBox.html",
               "RelativeDocumentMoniker": "EditorOverview\\DateBox\\DateBox.html",
@@ -468,13 +600,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 34,
               "Title": "data.js",
               "DocumentMoniker": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\RadioGroup\\data.js",
               "RelativeDocumentMoniker": "EditorOverview\\RadioGroup\\data.js",
               "ToolTip": "G:\\Training\\RKIT_training\\5-DevExtreme\\DevExtreme\\EditorOverview\\RadioGroup\\data.js",
               "RelativeToolTip": "EditorOverview\\RadioGroup\\data.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAACAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-02-13T13:47:34.372Z"
             }

@@ -121,6 +121,14 @@
     <Content Include="DropDown\dropDown.js" />
     <Content Include="FileUploder\Fileuploder.html" />
     <Content Include="FileUploder\Fileuploder.js" />
+    <Content Include="FinalDemo\AdminDash.html" />
+    <Content Include="FinalDemo\AdminDash.js" />
+    <Content Include="FinalDemo\index.html" />
+    <Content Include="FinalDemo\login.html" />
+    <Content Include="FinalDemo\Login.js" />
+    <Content Include="FinalDemo\Registration.js" />
+    <Content Include="FinalDemo\UserDash.html" />
+    <Content Include="FinalDemo\UserDash.js" />
     <Content Include="Index.html" />
     <Content Include="NumberBox\NumberBox.html" />
     <Content Include="NumberBox\NumberBox.js" />

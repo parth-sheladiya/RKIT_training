@@ -507,7 +507,7 @@
     "securitySchemes": {
       "Bearer": {
         "type": "http",
-        "description": "Enter <your-token> to authenticate.",
+        "description": "Enter token",
         "scheme": "Bearer",
         "bearerFormat": "JWT"
       }

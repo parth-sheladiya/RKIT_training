@@ -58,7 +58,14 @@ namespace FinalDemo
                     };
                 });
 
-            
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAllOrigins",
+                    builder => builder.AllowAnyOrigin()
+                                      .AllowAnyMethod()
+                                      .AllowAnyHeader());
+            });
+
             builder.Services.AddControllers(options =>
             {
                 // it is not handle globally bcz it is used in action method
@@ -130,9 +137,12 @@ namespace FinalDemo
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-            
-           
-            
+            app.UseHttpsRedirection();
+
+            //CORS Middleware Use Karo
+            app.UseCors("AllowAllOrigins");
+
+
             // enable auth and authorization
             app.UseAuthentication();
             app.UseAuthorization();
