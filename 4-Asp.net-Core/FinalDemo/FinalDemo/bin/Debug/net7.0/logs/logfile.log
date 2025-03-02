@@ -907,3 +907,81 @@
 2025-03-01 21:15:19.8037 Info response is 204
 2025-03-01 21:15:19.8037 Info request is POST /api/CLAuth/Login
 2025-03-01 21:15:23.0784 Info response is 200
+2025-03-02 14:14:17.2893 Info request is GET /swagger/index.html
+2025-03-02 14:14:17.5653 Info response is 200
+2025-03-02 14:14:17.7655 Info request is GET /swagger/v1/swagger.json
+2025-03-02 14:14:17.7777 Info response is 200
+2025-03-02 14:20:57.9077 Info request is OPTIONS /api/CLUSR01/addUser
+2025-03-02 14:20:58.3294 Info response is 204
+2025-03-02 14:20:58.3446 Info request is POST /api/CLUSR01/addUser
+2025-03-02 14:21:02.6613 Info request is POST /api/CLUSR01/addUser
+2025-03-02 14:22:16.2575 Info request is OPTIONS /api/CLUSR01/addUser
+2025-03-02 14:22:16.2575 Info response is 204
+2025-03-02 14:22:16.2575 Info request is POST /api/CLUSR01/addUser
+2025-03-02 14:22:40.9873 Info request is OPTIONS /api/CLUSR01/addUser
+2025-03-02 14:22:40.9897 Info response is 204
+2025-03-02 14:22:40.9897 Info request is POST /api/CLUSR01/addUser
+2025-03-02 14:22:41.1041 Info response is 200
+2025-03-02 14:23:07.2161 Info request is OPTIONS /api/CLAuth/Login
+2025-03-02 14:23:07.2161 Info response is 204
+2025-03-02 14:23:07.2161 Info request is POST /api/CLAuth/Login
+2025-03-02 14:23:13.5281 Info response is 200
+2025-03-02 14:23:23.9477 Info request is OPTIONS /api/CLAuth/Login
+2025-03-02 14:23:23.9477 Info response is 204
+2025-03-02 14:23:23.9477 Info request is POST /api/CLAuth/Login
+2025-03-02 14:23:27.6051 Info response is 400
+2025-03-02 14:23:37.5234 Info request is OPTIONS /api/CLAuth/Login
+2025-03-02 14:23:37.5234 Info response is 204
+2025-03-02 14:23:37.5234 Info request is POST /api/CLAuth/Login
+2025-03-02 14:23:50.4448 Info response is 200
+2025-03-02 14:24:02.4366 Info request is OPTIONS /api/CLAuth/Login
+2025-03-02 14:24:02.4366 Info response is 204
+2025-03-02 14:24:02.4463 Info request is POST /api/CLAuth/Login
+2025-03-02 14:24:06.1571 Info response is 400
+2025-03-02 14:26:05.8262 Info request is OPTIONS /api/CLAuth/Login
+2025-03-02 14:26:05.8262 Info response is 204
+2025-03-02 14:26:05.8362 Info request is POST /api/CLAuth/Login
+2025-03-02 14:26:09.8529 Info response is 400
+2025-03-02 14:28:51.1768 Info request is OPTIONS /api/CLAuth/Login
+2025-03-02 14:28:51.1768 Info response is 204
+2025-03-02 14:28:51.1922 Info request is POST /api/CLAuth/Login
+2025-03-02 14:28:54.9878 Info response is 400
+2025-03-02 14:32:23.1895 Info request is GET /swagger/index.html
+2025-03-02 14:32:23.4202 Info response is 200
+2025-03-02 14:32:23.5825 Info request is GET /swagger/v1/swagger.json
+2025-03-02 14:32:23.5825 Info response is 200
+2025-03-02 14:32:27.1756 Info request is OPTIONS /api/CLUSR01/addUser
+2025-03-02 14:32:27.2934 Info response is 204
+2025-03-02 14:32:27.3017 Info request is POST /api/CLUSR01/addUser
+2025-03-02 14:32:28.9376 Info response is 200
+2025-03-02 14:40:01.9253 Info request is OPTIONS /api/CLUSR01/addUser
+2025-03-02 14:40:01.9535 Info response is 204
+2025-03-02 14:40:01.9695 Info request is POST /api/CLUSR01/addUser
+2025-03-02 14:40:02.0382 Info response is 200
+2025-03-02 14:44:15.8223 Info request is OPTIONS /api/CLUSR01/addUser
+2025-03-02 14:44:15.8223 Info response is 204
+2025-03-02 14:44:15.8223 Info request is POST /api/CLUSR01/addUser
+2025-03-02 14:44:15.8905 Info response is 200
+2025-03-02 14:53:19.2897 Info request is GET /swagger/index.html
+2025-03-02 14:53:19.5502 Info response is 200
+2025-03-02 14:53:19.9214 Info request is GET /swagger/v1/swagger.json
+2025-03-02 14:53:19.9348 Info response is 200
+2025-03-02 14:53:43.6801 Info request is POST /api/CLUSR01/addUser
+2025-03-02 14:54:06.4400 Info request is POST /api/CLUSR01/addUser
+2025-03-02 14:54:19.7047 Info request is POST /api/CLUSR01/addUser
+2025-03-02 14:54:34.8791 Info request is POST /api/CLUSR01/addUser
+2025-03-02 14:54:57.2948 Info request is POST /api/CLUSR01/addUser
+2025-03-02 14:56:23.1821 Info request is OPTIONS /api/CLUSR01/addUser
+2025-03-02 14:56:23.1993 Info response is 204
+2025-03-02 14:56:23.1993 Info request is POST /api/CLUSR01/addUser
+2025-03-02 14:59:22.1447 Info request is GET /swagger/index.html
+2025-03-02 14:59:22.3288 Info response is 200
+2025-03-02 14:59:22.5411 Info request is GET /swagger/v1/swagger.json
+2025-03-02 14:59:22.5411 Info response is 200
+2025-03-02 14:59:42.2300 Info request is POST /api/CLUSR01/addUser
+2025-03-02 15:00:33.0931 Info request is GET /swagger/index.html
+2025-03-02 15:00:33.1832 Info response is 200
+2025-03-02 15:00:33.2989 Info request is GET /swagger/v1/swagger.json
+2025-03-02 15:00:33.3070 Info response is 200
+2025-03-02 15:00:51.8532 Info request is POST /api/CLUSR01/addUser
+2025-03-02 15:00:55.8732 Info response is 200

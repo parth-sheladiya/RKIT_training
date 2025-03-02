@@ -62,8 +62,7 @@
               "RelativeToolTip": "ORMdemo\\Controllers\\CL_ProductController.cs",
               "ViewState": "AgIAAGQAAAAAAAAAAAAYwHwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T18:20:09.835Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T18:20:09.835Z"
             },
             {
               "$type": "Document",
@@ -75,8 +74,7 @@
               "RelativeToolTip": "ORMdemo\\Extension\\DTO_TO_POCO.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAgwDoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T18:20:10.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T18:20:10.055Z"
             },
             {
               "$type": "Document",
@@ -86,7 +84,7 @@
               "RelativeDocumentMoniker": "ORMdemo\\BL\\Operations\\BL_Product.cs",
               "ToolTip": "E:\\Training-2025\\RKIT_training\\3-advance-C#\\ORMdemo\\ORMdemo\\BL\\Operations\\BL_Product.cs",
               "RelativeToolTip": "ORMdemo\\BL\\Operations\\BL_Product.cs",
-              "ViewState": "AgIAAJgAAAAAAAAAAAAiwLAAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-13T18:20:10.442Z",
               "EditorCaption": ""
@@ -101,8 +99,7 @@
               "RelativeToolTip": "ORMdemo\\BL\\Interface\\I_Data_Handler.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAxwCkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T18:20:10.798Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T18:20:10.798Z"
             },
             {
               "$type": "Document",
@@ -114,8 +111,7 @@
               "RelativeToolTip": "ORMdemo\\Models\\DTO\\DTO_PDT01.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T18:20:10.799Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T18:20:10.799Z"
             },
             {
               "$type": "Document",
@@ -127,8 +123,7 @@
               "RelativeToolTip": "ORMdemo\\Models\\ENUM\\Enum.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T18:20:10.8Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T18:20:10.8Z"
             },
             {
               "$type": "Document",
@@ -152,8 +147,7 @@
               "RelativeToolTip": "ORMdemo\\Models\\POCO\\PDT01.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T18:20:10.801Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T18:20:10.801Z"
             },
             {
               "$type": "Document",

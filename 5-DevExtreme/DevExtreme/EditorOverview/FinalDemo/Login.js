@@ -49,11 +49,11 @@
                 success: function (response) {
                     console.log("API Response:", response);
                     if (!response.isError && response.data) {
-                        let decodedToken = parseJwt(response.data); // ✅ JWT decode karo
-                        console.log("Decoded Token:", decodedToken); // ✅ Console me dekho decoded data kya hai
+                        let decodedToken = parseJwt(response.data); //JWT decode karo
+                        console.log("Decoded Token:", decodedToken); // Console me dekho decoded data kya hai
 
                         let role = decodedToken["http://schemas.microsoft.com/ws/2008/06/identity/claims/role"] || "User";
-                        console.log("User Role:", role); // ✅ Role check karo
+                        console.log("User Role:", role); // Role check karo
 
                         DevExpress.ui.notify("User Logged In Successfully!", "success", 2000);
 
@@ -65,11 +65,17 @@
                             }
                         }, 2000);
                     } else {
-                        DevExpress.ui.notify("Invalid Username or Password!", "error", 2000);
+                        DevExpress.ui.notify("errrr please try again", "error", 2000);
                     }
                 },
                 error: function (err) {
-                    DevExpress.ui.notify("Login Failed: " + err.responseText, "error", 2000);
+                    let errorMessage = "Invalid Username or Password!";
+
+                    if (err.responseJSON && err.responseJSON.message) {
+                        errorMessage = err.responseJSON.message;
+                    }
+
+                    DevExpress.ui.notify(errorMessage, "error", 2000);
                 }
             });
         }
