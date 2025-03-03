@@ -68,9 +68,7 @@ $(document).ready(function(){
             if(!values.id ||!values.name || !values.price){
                 throw new Error ("id name and price are required")
              }
-             if(values.price<=0){
-                 throw new Error ("price is only posotive");
-             }
+             
              console.log("inserting data is",values);
         },
         onInserted:function(values){
@@ -99,13 +97,9 @@ $(document).ready(function(){
         }
     })
     //inserting and inserted options 
-    arraydataSource.insert({id: -20,name:"tshirt" , price: 80})
+   // arraydataSource.insert({name:"tshirt" , price: 80})
     //console.log("new product add ");
-   // arraydataSource.insert({id: 11, name: "soket", price: 70})
-
-    // onloading options
-    console.log("onloading data is");
-    arraydataSource.load();
+    arraydataSource.insert({id: 11, name: "soket", price: 70})
 
     // update m,ethod 
     console.log("update method");
@@ -113,7 +107,7 @@ $(document).ready(function(){
 
     // remove 
     console.log("removing and removed");
-    arraydataSource.remove(4);
+    arraydataSource.remove(6);
 
     // push
     console.log("push changes ");
@@ -166,16 +160,6 @@ $(document).ready(function(){
     //console.log("before clear " , arraydataSource);
     //arraydataSource.clear();
     //console.log("after clear " , arraydataSource);
-
-    // create query 
-    // var query = arraydataSource.createQuery();
-    // query.filter("price",">",500).toArray()
-    //             .done(function(dataQuery){
-    //                 console.log("price 500 up data is ",dataQuery);
-    //             })
-    //             .fail(function(error) {
-    //                 console.error("Error loading data", error);
-    //             });
 
     // key 
     console.log("key method",arraydataSource.key());

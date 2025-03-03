@@ -68,9 +68,6 @@ $(document).ready(function(){
             if(!values.id ||!values.name || !values.price){
                 throw new Error ("id name and price are required")
              }
-             if(values.price<=0){
-                 throw new Error ("price is only posotive");
-             }
              console.log("inserting data is",values);
         },
         onInserted:function(values){
@@ -98,10 +95,12 @@ $(document).ready(function(){
             console.log("push changes is" , changes);
         }
     })
-     //inserting and inserted options 
-     localStore.insert({id: -20,name:"tshirt" , price: 80})
-     //console.log("new product add ");
-    // arraydataSource.insert({id: 11, name: "soket", price: 70})
+     //inserting and inserted options
+     console.log("new product add ");
+
+     // apply changes and then show in localstore 
+     // just flushInterval immediate purpose 
+     localStore.insert({id: 11, name: "parth", price: 70})
  
      // onloading options
      console.log("onloading data is");
@@ -162,20 +161,10 @@ $(document).ready(function(){
                      console.log("error while bykey",error)
                  });
  
-     // clear
+     // clear comment
      //console.log("before clear " , arraydataSource);
      //arraydataSource.clear();
      //console.log("after clear " , arraydataSource);
- 
-     // create query 
-     // var query = arraydataSource.createQuery();
-     // query.filter("price",">",500).toArray()
-     //             .done(function(dataQuery){
-     //                 console.log("price 500 up data is ",dataQuery);
-     //             })
-     //             .fail(function(error) {
-     //                 console.error("Error loading data", error);
-     //             });
  
      // key 
      console.log("key method",localStore.key());

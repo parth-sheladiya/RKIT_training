@@ -45,5 +45,6 @@ namespace FinalDemo.BL.Interface
         public Response Delete(int loggedInUserId);
 
         public Response Profile(int loggedInUserId);
+        public bool IsAdminExists();
     }
 }

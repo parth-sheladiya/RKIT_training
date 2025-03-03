@@ -83,8 +83,11 @@ $(document).ready(function () {
 
         // filter
         // binary filter , complex filter , = <> <= >= startwith endswith contains notcontains 
-        // filter: ["price", ">", 120],
-
+        // just learning purpose after some topics datagrid
+        //filter: ["price", ">", 120],
+        // filter : (["category", "=", "Accessories"]),
+        // filter :(["price",">",120]),
+        // filter :([["category", "=", "Accessories"], ["price", ">", 120]]),
         // group section 
 
         // group : group of specif data 
@@ -92,7 +95,7 @@ $(document).ready(function () {
         // for string  group:"company"
         // if you want to multiple field then we use arr group : ['company' , {selector: 'name', desc:true}] ,
         // for object (uncomment)
-        // group: { selector: "category", desc: true },
+        group: { selector: "name", desc: false },
         // function 
         // group: function(i){
         //     return i.price>250 ? "above 250" : "below 250"
@@ -144,20 +147,20 @@ $(document).ready(function () {
     // default comment
     // myDataSource.dispose();
     // Initialize the DataGrid
-    $("#dataGridContainer").dxDataGrid({
-        dataSource: myDataSource,
-        columns: [
-            { dataField: "id", caption: "Product ID" },
-            { dataField: "name", caption: "Product Name" },
-            { dataField: "price", caption: "Price" },
-            { dataField: "category", caption: "Category" },
-            { dataField: "company", caption: "Company" },
-            { dataField: "priceWithTax", caption: "Price with Tax" }
-        ],
-        paging: {
-            pageSize: 10
-        },
-    });
+    // $("#dataGridContainer").dxDataGrid({
+    //     dataSource: myDataSource,
+    //     columns: [
+    //         { dataField: "id", caption: "Product ID" },
+    //         { dataField: "name", caption: "Product Name" },
+    //         { dataField: "price", caption: "Price" },
+    //         { dataField: "category", caption: "Category" },
+    //         { dataField: "company", caption: "Company" },
+    //         { dataField: "priceWithTax", caption: "Price with Tax" }
+    //     ],
+    //     paging: {
+    //         pageSize: 10
+    //     },
+    // });
 
     console.log("Initialized DataSource:", myDataSource);
 
@@ -170,9 +173,7 @@ $(document).ready(function () {
     // apply only second filter due to overwrite issue
     // solve combine filter
     var myFilter = myDataSource.filter();
-    // myDataSource.filter(["category", "=", "Accessories"]);
-    // myDataSource.filter(["price",">",120])
-    myDataSource.filter([["category", "=", "Accessories"], ["price", ">", 120]]);
+   
     console.log("my filter expression ", myFilter);
 
 
@@ -192,11 +193,6 @@ $(document).ready(function () {
     // Get the key property of the data store
     var keyProps = myDataSource.key();
     console.log("Key Property:", keyProps);
-
-    // Enable or disable total count requirement
-    console.log("Require Total Count:", myDataSource.requireTotalCount());
-    myDataSource.requireTotalCount(true);
-    myDataSource.load();
 
     // Retrieve data store
     var store = myDataSource.store();

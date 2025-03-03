@@ -8,6 +8,32 @@
         return JSON.parse(jsonPayload); // JSON object return karega
     }
 
+    $("#UserName").dxTextBox({
+       // text:"user name",
+        placeholder: "Enter your username",
+        value: "",
+    }).dxValidator({
+        validationRules: [
+            { 
+                type: "required", 
+                message: "Username is required" 
+            }
+        ],
+    })
+
+    $("#Password").dxTextBox({
+       // text:"password",
+        placeholder: "Enter your password",
+        value: "",
+        mode: "password",
+    }).dxValidator({
+        validationRules: [
+            { 
+                type: "required", 
+                message: "Password is required" 
+            }
+        ],
+    })
     $("#login-form").dxForm({
         formData: {
             R01F02: "",
@@ -21,25 +47,17 @@
     $("#login-btn").dxButton({
         text: "Login",
         type: "success",
+        
         onClick: function () {
+            const result = DevExpress.validationEngine.validateGroup();
+            if(result.isValid){
+                
+            }
             let formData = $("#login-form").dxForm("instance").option("formData");
             let requestData = {
                 R01F02: formData.R01F02,
                 R01F04: formData.R01F04
             };
-            //$.ajax({
-            //    url: "http://localhost:5021/api/CLUSR01/login",
-            //    type: "POST",
-            //    contentType: "application/json",
-            //    data: JSON.stringify(requestData),
-            //    success: function (response) {
-            //        DevExpress.ui.notify("User Logged In Successfully!", "success", 2000);
-            //        console.log("response", response);
-            //        setTimeout(function () {
-            //            window.location.href = "dashboard.html";
-            //        }, 2000);
-            //    }
-            //});
 
             $.ajax({
                 url: "http://localhost:5021/api/CLAuth/Login",

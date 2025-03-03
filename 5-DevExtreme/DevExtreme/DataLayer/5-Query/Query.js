@@ -87,7 +87,7 @@ $(document).ready(function () {
         .query(products)
         .enumerate()
         .done(function (result) {
-            console.log(result);
+            console.log("enum",result);
         });
 
     // filter 

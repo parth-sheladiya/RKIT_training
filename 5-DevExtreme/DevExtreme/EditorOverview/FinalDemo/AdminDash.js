@@ -286,13 +286,142 @@
     $("#AdminProfile").dxButton({
         text:"Profile",
         type:"success",
-        icon:"card"
+        icon:"card",
+        onClick:function(){
+            DevExpress.ui.notify("Fetch Admin Profile","info",3000);
+            let token = localStorage.getItem("Token");
+            $.ajax({
+                url:"http://localhost:5021/api/CLUSR01/GetProfile",
+                headers:{
+                    "Authorization":`Bearer ${token}`
+                },
+                method:"GET",
+                
+                success:function(res){
+                    console.log("res",res.data)
+                    DevExpress.ui.notify("admin profile fatch successfully","success",3000);
+                    // thigdu
+                    let info = [] ;    
+                        
+                        info.push(res.data)
+                        console.log("store obj in array then push",info)
+                    
+                    $("#ProfileContainer").dxDataGrid({
+                        dataSource:info,
+                        showBorders: true,
+                        wordWrapEnabled: true,
+                        showColumnLines: true,
+                        showRowLines: true,
+                        rowAlternationEnabled: true,
+                        allowColumnResizing:true,
+                        allowColumnReordering:true,
+                        columns:[
+                            {
+                                dataField:"r01F01",
+                                dataType:"number",
+                                caption:"User ID", 
+                                allowEditing:false                              
+                            },
+                            {
+                                dataField:"r01F02",
+                                dataType:"string",
+                                caption:"User Name",                               
+                            },
+                            {
+                                dataField:"r01F03",
+                                dataType:"string",
+                                caption:"User Email",                               
+                            },
+                            {
+                                dataField:"r01F04",
+                                dataType:"string",
+                                caption:"Password",                               
+                            },
+                            {
+                                dataField:"r01F05",
+                                dataType:"string",
+                                caption:"Phone number",                               
+                            },
+                            {
+                                dataField:"r01F06",
+                                dataType:"string",
+                                caption:"Address",                               
+                            },
+                            {
+                                dataField:"r01F07",
+                                dataType:"string",
+                                caption:"Role",
+                                allowEditing:false                               
+                            },
+                            {
+                                dataField:"r01F08",
+                                dataType:"datetime",
+                                caption:"Created Time",
+                                allowEditing:false                               
+                            },
+                            {
+                                dataField:"r01F09",
+                                dataType:"datetime",
+                                caption:"Updated Time",                               
+                            },
+
+                        ],
+                        editing:{
+                            allowUpdating:true,
+                        },
+                        onRowUpdated:function(e){
+                            const updateProfile = e.data;
+                            console.log("updated prifle data is" , updateProfile);
+
+                            $.ajax({
+                                url:"http://localhost:5021/api/CLUSR01/updateUser",
+                                method:"PUT",
+                                headers:{
+                                    "Authorization":`Bearer ${token}`
+                                },
+                                contentType: "application/json",
+                                data:JSON.stringify(updateProfile),
+                                success:function(res){
+                                    if(res.isError){
+                                        console.log(res.isError)
+                                        DevExpress.ui.notify("error while update user","error",3000)
+                                    }else{
+                                        DevExpress.ui.notify("user profile update successfully","success",3000)
+                                    }
+                                },
+                                error:function(err){
+                                    console.log("error update profile", err);
+                                    DevExpress.ui.notify("error","error",3000)
+                                }
+                            })
+
+                        }
+
+                    })
+                },
+                error:function(err){
+                    console.log("error while fatching profile", err);
+                    DevExpress.ui.notify("error in faching profile","error",3000)
+                }
+            })
+        }
     })
 
     $("#Logout").dxButton({
         text:"Logout",
         type:"danger",
-        icon:"remove"
+        icon:"remove",
+        onClick: function() {
+            // two proccess
+            // 1 clear token
+            // 2 login.html
+            
+            // Clear the token from localStorage
+            localStorage.removeItem("Token");
+            
+            // Redirect to login page
+            window.location.href = "login.html"; 
+        }
     })
 
 })

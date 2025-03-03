@@ -4,6 +4,7 @@ using FinalDemo.Models;
 using FinalDemo.Models.DTO;
 using FinalDemo.Models.ENUM;
 using FinalDemo.Models.POCO;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Identity;
 using ServiceStack.Data;
 using ServiceStack.OrmLite;
@@ -101,6 +102,28 @@ namespace FinalDemo.BL.Operations
             return _objResponse;
 
         }
+
+        public bool IsAdminExists()
+        {
+            using (IDbConnection db = _dbfactory.OpenDbConnection())
+            {
+                try
+                {
+                    bool isAdmin = db.Exists<USR01>(u => u.R01F07 == EnumRole.Admin);
+                    return isAdmin;
+
+
+                }
+                catch (Exception ex)
+                {
+                    _objResponse.IsError = true;
+                    _objResponse.Message = $"error for check admin exists: {ex.Message}";
+                }
+                return false;
+            }
+
+
+        }
         /// <summary>
         /// presave 
         /// </summary>
@@ -108,7 +131,14 @@ namespace FinalDemo.BL.Operations
         public void PreSave(DTOUSR01 objUsrDto)
         {
             _objUSR01 = objUsrDto.Convert<USR01>();
-
+            if(typeOfOperation == EnumType.A)
+            {
+                if (IsAdminExists() && objUsrDto.R01F07 == EnumRole.Admin)
+                {
+                    _objResponse.IsError = true;
+                    _objResponse.Message = "only one admin allow in our store";
+                }
+            }
             //edit
             if (typeOfOperation == EnumType.U)
             {
@@ -163,6 +193,7 @@ namespace FinalDemo.BL.Operations
             {
                 if (typeOfOperation == EnumType.A) 
                 {
+                   
                     db.Insert(_objUSR01); 
                     _objResponse.Message = "User details Added successfully";
                 }
@@ -258,12 +289,23 @@ namespace FinalDemo.BL.Operations
 
             return _objResponse;
         }
-
+        
         public Response Profile(int loggedInUserId)
         {
             using (IDbConnection db = _dbfactory.OpenDbConnection())
             {
 
+                _objUSR01 = db.SingleById<USR01>(loggedInUserId);
+
+
+                if (_objUSR01 != null)
+                {
+                    _objResponse.Data = _objUSR01;
+                    _objResponse.IsError = false;
+                    _objResponse.Message = "user id fetch successfully";
+                }
+
+                return _objResponse;
             }
         }
 
