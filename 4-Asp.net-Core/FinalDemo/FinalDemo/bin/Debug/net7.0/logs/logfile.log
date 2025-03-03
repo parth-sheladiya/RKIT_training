@@ -985,3 +985,620 @@
 2025-03-02 15:00:33.3070 Info response is 200
 2025-03-02 15:00:51.8532 Info request is POST /api/CLUSR01/addUser
 2025-03-02 15:00:55.8732 Info response is 200
+2025-03-03 09:16:54.8339 Info request is GET /swagger/index.html
+2025-03-03 09:16:55.1656 Info response is 200
+2025-03-03 09:16:55.4430 Info request is GET /swagger/v1/swagger.json
+2025-03-03 09:16:55.6188 Info response is 200
+2025-03-03 09:19:18.8307 Info request is GET /swagger/index.html
+2025-03-03 09:19:19.1573 Info response is 200
+2025-03-03 09:19:19.5884 Info request is GET /swagger/v1/swagger.json
+2025-03-03 09:19:19.7981 Info response is 200
+2025-03-03 09:19:39.7846 Info request is OPTIONS /api/CLUSR01/addUser
+2025-03-03 09:19:39.8114 Info response is 204
+2025-03-03 09:19:39.8114 Info request is POST /api/CLUSR01/addUser
+2025-03-03 09:19:41.9119 Info response is 200
+2025-03-03 09:20:38.8050 Info request is OPTIONS /api/CLAuth/Login
+2025-03-03 09:20:38.8050 Info response is 204
+2025-03-03 09:20:38.8132 Info request is POST /api/CLAuth/Login
+2025-03-03 09:20:44.5801 Info response is 400
+2025-03-03 09:20:55.6191 Info request is OPTIONS /api/CLAuth/Login
+2025-03-03 09:20:55.6191 Info response is 204
+2025-03-03 09:20:55.6191 Info request is POST /api/CLAuth/Login
+2025-03-03 09:20:58.7789 Info response is 200
+2025-03-03 09:40:19.9146 Info request is GET /swagger/index.html
+2025-03-03 09:40:20.2011 Info response is 200
+2025-03-03 09:40:20.3270 Info request is GET /swagger/v1/swagger.json
+2025-03-03 09:40:20.4939 Info response is 200
+2025-03-03 09:53:47.7470 Info request is GET /swagger/index.html
+2025-03-03 09:53:48.0386 Info response is 200
+2025-03-03 09:53:48.1796 Info request is GET /swagger/v1/swagger.json
+2025-03-03 09:53:48.3438 Info response is 200
+2025-03-03 09:55:07.4944 Info request is OPTIONS /api/CLUSR01/addUser
+2025-03-03 09:55:07.5310 Info response is 204
+2025-03-03 09:55:07.5367 Info request is POST /api/CLUSR01/addUser
+2025-03-03 09:55:08.0857 Info response is 200
+2025-03-03 09:55:32.0139 Info request is OPTIONS /api/CLAuth/Login
+2025-03-03 09:55:32.0189 Info response is 204
+2025-03-03 09:55:32.0189 Info request is POST /api/CLAuth/Login
+2025-03-03 09:55:35.5796 Info response is 400
+2025-03-03 09:55:45.4927 Info request is OPTIONS /api/CLAuth/Login
+2025-03-03 09:55:45.4927 Info response is 204
+2025-03-03 09:55:45.4927 Info request is POST /api/CLAuth/Login
+2025-03-03 09:55:47.5310 Info response is 200
+2025-03-03 10:01:36.9065 Info request is OPTIONS /api/CLAuth/Login
+2025-03-03 10:01:36.9065 Info response is 204
+2025-03-03 10:01:36.9148 Info request is POST /api/CLAuth/Login
+2025-03-03 10:01:40.4286 Info response is 200
+2025-03-03 10:07:23.1519 Info request is OPTIONS /api/CLAuth/Login
+2025-03-03 10:07:23.1586 Info response is 204
+2025-03-03 10:07:23.1586 Info request is POST /api/CLAuth/Login
+2025-03-03 10:07:25.6280 Info response is 200
+2025-03-03 10:22:36.7991 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 10:22:36.7991 Info response is 401
+2025-03-03 10:40:05.0675 Info request is OPTIONS /api/CLAuth/Login
+2025-03-03 10:40:05.0675 Info response is 204
+2025-03-03 10:40:05.0675 Info request is POST /api/CLAuth/Login
+2025-03-03 10:40:07.1078 Info response is 200
+2025-03-03 10:40:14.0973 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 10:40:14.0973 Info response is 401
+2025-03-03 10:40:20.6609 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 10:40:20.6609 Info response is 401
+2025-03-03 10:40:21.5209 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 10:40:21.5209 Info response is 401
+2025-03-03 10:40:21.6947 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 10:40:21.6947 Info response is 401
+2025-03-03 10:40:21.8458 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 10:40:21.8458 Info response is 401
+2025-03-03 10:40:22.0391 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 10:40:22.0391 Info response is 401
+2025-03-03 10:40:22.3786 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 10:40:22.3786 Info response is 401
+2025-03-03 10:40:22.5444 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 10:40:22.5444 Info response is 401
+2025-03-03 10:40:22.7114 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 10:40:22.7114 Info response is 401
+2025-03-03 10:40:23.0531 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 10:40:23.0531 Info response is 401
+2025-03-03 10:40:23.2234 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 10:40:23.2234 Info response is 401
+2025-03-03 10:40:23.3928 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 10:40:23.3928 Info response is 401
+2025-03-03 10:40:23.5537 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 10:40:23.5537 Info response is 401
+2025-03-03 10:40:23.7161 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 10:40:23.7161 Info response is 401
+2025-03-03 10:40:23.8922 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 10:40:23.8922 Info response is 401
+2025-03-03 10:40:36.8453 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 10:40:36.8453 Info response is 401
+2025-03-03 10:40:37.0220 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 10:40:37.0220 Info response is 401
+2025-03-03 10:40:39.0690 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 10:40:39.0690 Info response is 401
+2025-03-03 10:40:46.1079 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 10:40:46.1079 Info response is 401
+2025-03-03 10:42:07.8924 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 10:42:07.8975 Info response is 401
+2025-03-03 10:42:17.0641 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 10:42:17.0780 Info response is 401
+2025-03-03 10:42:17.1061 Info request is GET /favicon.ico
+2025-03-03 10:42:17.1061 Info response is 404
+2025-03-03 10:43:42.2526 Info request is GET /swagger/index.html
+2025-03-03 10:43:42.5795 Info response is 200
+2025-03-03 10:43:42.7512 Info request is GET /swagger/v1/swagger.json
+2025-03-03 10:43:42.9616 Info response is 200
+2025-03-03 10:44:28.2691 Info request is OPTIONS /api/CLAuth/Login
+2025-03-03 10:44:28.2986 Info response is 204
+2025-03-03 10:44:28.3025 Info request is POST /api/CLAuth/Login
+2025-03-03 10:44:31.0103 Info response is 200
+2025-03-03 10:44:42.2723 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 10:44:42.2889 Info response is 401
+2025-03-03 10:45:55.2909 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 10:45:55.2909 Info response is 401
+2025-03-03 10:46:20.0534 Info request is OPTIONS /api/CLAuth/Login
+2025-03-03 10:46:20.0534 Info response is 204
+2025-03-03 10:46:20.0534 Info request is POST /api/CLAuth/Login
+2025-03-03 10:46:21.7190 Info response is 200
+2025-03-03 10:49:46.0909 Info request is OPTIONS /api/CLAuth/Login
+2025-03-03 10:49:46.0909 Info response is 204
+2025-03-03 10:49:46.0909 Info request is POST /api/CLAuth/Login
+2025-03-03 10:49:47.8263 Info response is 200
+2025-03-03 10:54:19.4869 Info request is OPTIONS /api/CLAuth/Login
+2025-03-03 10:54:19.4869 Info response is 204
+2025-03-03 10:54:19.4976 Info request is POST /api/CLAuth/Login
+2025-03-03 10:54:21.3910 Info response is 200
+2025-03-03 10:54:26.9417 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 10:54:26.9417 Info response is 204
+2025-03-03 10:54:26.9417 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 10:54:27.0812 Info response is 200
+2025-03-03 10:55:19.6452 Info request is POST /api/CLAuth/Login
+2025-03-03 10:55:21.3591 Info response is 200
+2025-03-03 10:55:40.9954 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 10:55:41.0001 Info response is 200
+2025-03-03 10:57:36.2252 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 10:57:36.2252 Info response is 204
+2025-03-03 10:57:36.2252 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 10:57:36.2412 Info response is 200
+2025-03-03 10:57:59.6642 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 10:57:59.6642 Info response is 204
+2025-03-03 10:57:59.6642 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 10:57:59.7009 Info response is 200
+2025-03-03 10:58:25.2720 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 10:58:25.2720 Info response is 204
+2025-03-03 10:58:25.2855 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 10:58:25.2855 Info response is 200
+2025-03-03 11:05:09.2694 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 11:05:09.2694 Info response is 204
+2025-03-03 11:05:09.2778 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:05:09.3046 Info response is 200
+2025-03-03 11:05:19.7800 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 11:05:19.7800 Info response is 204
+2025-03-03 11:05:19.7800 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:05:19.7800 Info response is 200
+2025-03-03 11:07:25.6477 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 11:07:25.6477 Info response is 204
+2025-03-03 11:07:25.6543 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:07:25.6543 Info response is 200
+2025-03-03 11:07:52.7251 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 11:07:53.3056 Info response is 204
+2025-03-03 11:07:53.3208 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:07:53.3426 Info response is 200
+2025-03-03 11:08:18.6337 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 11:08:18.6337 Info response is 204
+2025-03-03 11:08:18.6401 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:08:18.6401 Info response is 200
+2025-03-03 11:08:49.0116 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 11:08:49.0127 Info response is 204
+2025-03-03 11:08:49.0127 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:08:49.0286 Info response is 200
+2025-03-03 11:09:32.6306 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 11:09:32.6306 Info response is 204
+2025-03-03 11:09:32.6306 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:09:32.6456 Info response is 200
+2025-03-03 11:09:33.7386 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:09:33.7386 Info response is 200
+2025-03-03 11:09:33.9216 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:09:33.9216 Info response is 200
+2025-03-03 11:09:34.1151 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:09:34.1151 Info response is 200
+2025-03-03 11:09:34.2902 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:09:34.2902 Info response is 200
+2025-03-03 11:09:34.4535 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:09:34.4535 Info response is 200
+2025-03-03 11:09:34.6107 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:09:34.6107 Info response is 200
+2025-03-03 11:09:43.2748 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 11:09:43.2748 Info response is 204
+2025-03-03 11:09:43.2803 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:09:43.2803 Info response is 200
+2025-03-03 11:09:57.9658 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 11:09:57.9672 Info response is 204
+2025-03-03 11:09:57.9856 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:09:57.9856 Info response is 200
+2025-03-03 11:10:13.2333 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 11:10:13.2333 Info response is 204
+2025-03-03 11:10:13.2333 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:10:13.2333 Info response is 200
+2025-03-03 11:13:25.7831 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 11:13:25.7831 Info response is 204
+2025-03-03 11:13:25.7831 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:13:25.7831 Info response is 200
+2025-03-03 11:13:36.1796 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 11:13:36.1796 Info response is 204
+2025-03-03 11:13:36.1796 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:13:36.1796 Info response is 200
+2025-03-03 11:14:17.5883 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 11:14:17.5883 Info response is 204
+2025-03-03 11:14:17.5968 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:14:17.5968 Info response is 200
+2025-03-03 11:14:40.4300 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 11:14:40.4300 Info response is 204
+2025-03-03 11:14:40.4300 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:14:40.4427 Info response is 200
+2025-03-03 11:15:25.6400 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 11:15:25.6400 Info response is 204
+2025-03-03 11:15:25.6485 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:15:25.6628 Info response is 200
+2025-03-03 11:15:25.9662 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:15:25.9662 Info response is 200
+2025-03-03 11:15:49.3939 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 11:15:49.3965 Info response is 204
+2025-03-03 11:15:49.3965 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:15:49.4154 Info response is 200
+2025-03-03 11:17:08.0218 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 11:17:08.0218 Info response is 204
+2025-03-03 11:17:08.0218 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:17:08.0218 Info response is 200
+2025-03-03 11:19:52.0309 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 11:19:52.0309 Info response is 204
+2025-03-03 11:19:52.0391 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:19:52.0391 Info response is 200
+2025-03-03 11:21:06.5600 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 11:21:06.5600 Info response is 204
+2025-03-03 11:21:06.5600 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:21:06.5777 Info response is 200
+2025-03-03 11:24:17.6987 Info request is POST /api/CLPDT01/addProduct
+2025-03-03 11:24:17.7453 Info response is 200
+2025-03-03 11:36:45.0222 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 11:36:45.0222 Info response is 204
+2025-03-03 11:36:45.0222 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:36:45.0801 Info response is 200
+2025-03-03 11:40:40.8221 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 11:40:40.8221 Info response is 204
+2025-03-03 11:40:40.8221 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:40:40.8596 Info response is 200
+2025-03-03 11:40:58.4875 Info request is OPTIONS /api/CLPDT01/addProduct
+2025-03-03 11:40:58.4875 Info response is 204
+2025-03-03 11:40:58.4875 Info request is GET /api/CLPDT01/addProduct
+2025-03-03 11:40:58.4875 Info response is 405
+2025-03-03 11:41:46.8832 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 11:41:46.9026 Info response is 200
+2025-03-03 11:42:15.0756 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 11:42:15.0756 Info response is 204
+2025-03-03 11:42:15.0882 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 11:42:15.0882 Info response is 200
+2025-03-03 11:43:04.2305 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 11:43:04.2305 Info response is 204
+2025-03-03 11:43:04.2489 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 11:43:04.2489 Info response is 200
+2025-03-03 11:43:25.8852 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 11:43:25.8852 Info response is 204
+2025-03-03 11:43:25.8852 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 11:43:25.8852 Info response is 200
+2025-03-03 11:45:57.0204 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 11:45:57.0204 Info response is 204
+2025-03-03 11:45:57.0204 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 11:45:57.0297 Info response is 200
+2025-03-03 11:46:26.7896 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 11:46:26.7896 Info response is 204
+2025-03-03 11:46:26.7964 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 11:46:26.7964 Info response is 200
+2025-03-03 11:46:48.7793 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 11:46:48.7800 Info response is 204
+2025-03-03 11:46:48.7800 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:46:48.7944 Info response is 200
+2025-03-03 11:46:53.8253 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 11:46:53.8253 Info response is 204
+2025-03-03 11:46:53.8279 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 11:46:53.8279 Info response is 200
+2025-03-03 11:46:55.5534 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 11:46:55.5534 Info response is 204
+2025-03-03 11:46:55.5534 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:46:55.5606 Info response is 200
+2025-03-03 11:46:56.7249 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:46:56.7249 Info response is 200
+2025-03-03 11:47:06.5210 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 11:47:06.5210 Info response is 204
+2025-03-03 11:47:06.5210 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:47:06.5210 Info response is 200
+2025-03-03 11:48:42.9979 Info request is OPTIONS /api/CLAuth/Login
+2025-03-03 11:48:42.9979 Info response is 204
+2025-03-03 11:48:43.0033 Info request is POST /api/CLAuth/Login
+2025-03-03 11:48:44.9635 Info response is 200
+2025-03-03 11:49:23.5814 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 11:49:23.5814 Info response is 204
+2025-03-03 11:49:23.5814 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 11:49:23.6168 Info response is 200
+2025-03-03 11:51:04.2347 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 11:51:04.2347 Info response is 204
+2025-03-03 11:51:04.2413 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 11:51:04.2540 Info response is 200
+2025-03-03 11:52:21.4471 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 11:52:21.4471 Info response is 204
+2025-03-03 11:52:21.4571 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 11:52:21.4571 Info response is 200
+2025-03-03 11:53:17.4905 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 11:53:17.4905 Info response is 204
+2025-03-03 11:53:17.4905 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 11:53:17.4905 Info response is 200
+2025-03-03 11:54:17.3485 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 11:54:17.3530 Info response is 204
+2025-03-03 11:54:17.3530 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 11:54:17.3530 Info response is 200
+2025-03-03 11:54:19.0951 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 11:54:19.0951 Info response is 204
+2025-03-03 11:54:19.1033 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:54:19.1033 Info response is 200
+2025-03-03 11:55:01.0366 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 11:55:01.0381 Info response is 204
+2025-03-03 11:55:01.0381 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:55:01.0724 Info response is 200
+2025-03-03 11:55:20.0934 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 11:55:20.0934 Info response is 204
+2025-03-03 11:55:20.0934 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 11:55:20.0934 Info response is 200
+2025-03-03 11:55:34.4599 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 11:55:34.4599 Info response is 204
+2025-03-03 11:55:34.4599 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 11:55:34.4599 Info response is 200
+2025-03-03 12:02:53.2113 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 12:02:53.2113 Info response is 204
+2025-03-03 12:02:53.2181 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 12:02:53.2528 Info response is 200
+2025-03-03 12:03:08.7053 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 12:03:08.7053 Info response is 204
+2025-03-03 12:03:08.7053 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 12:03:08.7053 Info response is 200
+2025-03-03 12:04:28.2878 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 12:04:28.2878 Info response is 204
+2025-03-03 12:04:28.2878 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 12:04:28.3020 Info response is 200
+2025-03-03 12:05:02.0161 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 12:05:02.0161 Info response is 204
+2025-03-03 12:05:02.0161 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 12:05:02.0496 Info response is 200
+2025-03-03 12:06:05.7847 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 12:06:05.8104 Info response is 204
+2025-03-03 12:06:05.8134 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 12:06:05.8134 Info response is 200
+2025-03-03 12:10:14.3371 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 12:10:14.3371 Info response is 204
+2025-03-03 12:10:14.3502 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 12:10:14.3502 Info response is 200
+2025-03-03 12:10:44.2265 Info request is OPTIONS /api/CLPDT01/addProduct
+2025-03-03 12:10:44.2265 Info response is 204
+2025-03-03 12:10:44.2265 Info request is POST /api/CLPDT01/addProduct
+2025-03-03 12:10:44.2718 Info response is 200
+2025-03-03 12:14:58.0673 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 12:14:58.0673 Info response is 204
+2025-03-03 12:14:58.1012 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 12:14:58.1412 Info response is 200
+2025-03-03 12:15:17.9529 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 12:15:17.9529 Info response is 204
+2025-03-03 12:15:17.9695 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 12:15:17.9695 Info response is 200
+2025-03-03 12:15:36.5015 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 12:15:36.5015 Info response is 204
+2025-03-03 12:15:36.5015 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 12:15:36.5015 Info response is 200
+2025-03-03 12:15:41.2771 Info request is OPTIONS /api/CLPDT01/addProduct
+2025-03-03 12:15:41.2771 Info response is 204
+2025-03-03 12:15:41.2971 Info request is POST /api/CLPDT01/addProduct
+2025-03-03 12:15:41.3144 Info response is 400
+2025-03-03 12:16:22.5568 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 12:16:22.5568 Info response is 204
+2025-03-03 12:16:22.5568 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 12:16:22.5568 Info response is 200
+2025-03-03 12:16:28.9413 Info request is OPTIONS /api/CLPDT01/addProduct
+2025-03-03 12:16:28.9413 Info response is 204
+2025-03-03 12:16:28.9497 Info request is POST /api/CLPDT01/addProduct
+2025-03-03 12:16:28.9497 Info response is 400
+2025-03-03 12:16:46.1151 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 12:16:46.1151 Info response is 204
+2025-03-03 12:16:46.1151 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 12:16:46.1151 Info response is 200
+2025-03-03 12:19:44.4548 Info request is PUT /api/CLPDT01/updateProduct
+2025-03-03 12:19:44.4822 Info response is 401
+2025-03-03 12:21:40.9265 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 12:21:40.9523 Info response is 204
+2025-03-03 12:21:40.9558 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 12:21:40.9922 Info response is 200
+2025-03-03 12:22:05.5536 Info request is OPTIONS /api/CLPDT01/updateProduct
+2025-03-03 12:22:05.5536 Info response is 204
+2025-03-03 12:22:05.5536 Info request is PUT /api/CLPDT01/updateProduct
+2025-03-03 12:22:05.5993 Info response is 200
+2025-03-03 12:22:28.4160 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 12:22:28.4160 Info response is 204
+2025-03-03 12:22:28.4232 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 12:22:28.4232 Info response is 200
+2025-03-03 12:23:24.7546 Info request is OPTIONS /api/CLPDT01/updateProduct
+2025-03-03 12:23:24.7546 Info response is 204
+2025-03-03 12:23:24.7546 Info request is PUT /api/CLPDT01/updateProduct
+2025-03-03 12:23:24.7742 Info response is 200
+2025-03-03 12:23:44.2544 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 12:23:44.2544 Info response is 204
+2025-03-03 12:23:44.2544 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 12:23:44.2544 Info response is 200
+2025-03-03 12:30:19.5076 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 12:30:19.5076 Info response is 204
+2025-03-03 12:30:19.5147 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 12:30:19.5980 Info response is 200
+2025-03-03 12:32:40.0713 Info request is DELETE /api/CLPDT01/deleteProduct
+2025-03-03 12:32:40.0987 Info response is 401
+2025-03-03 12:34:19.5687 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 12:34:19.5687 Info response is 204
+2025-03-03 12:34:19.5777 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 12:34:19.5777 Info response is 200
+2025-03-03 12:34:28.2877 Info request is OPTIONS /api/CLPDT01/deleteProduct
+2025-03-03 12:34:28.2877 Info response is 204
+2025-03-03 12:34:28.2976 Info request is DELETE /api/CLPDT01/deleteProduct
+2025-03-03 12:34:28.3561 Info response is 200
+2025-03-03 12:34:43.9844 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 12:34:43.9844 Info response is 204
+2025-03-03 12:34:43.9844 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 12:34:43.9844 Info response is 200
+2025-03-03 12:35:22.9036 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 12:35:22.9047 Info response is 204
+2025-03-03 12:35:22.9047 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 12:35:22.9047 Info response is 200
+2025-03-03 12:35:26.5567 Info request is OPTIONS /api/CLPDT01/deleteProduct
+2025-03-03 12:35:26.5567 Info response is 204
+2025-03-03 12:35:26.5567 Info request is DELETE /api/CLPDT01/deleteProduct
+2025-03-03 12:35:26.5695 Info response is 200
+2025-03-03 12:36:55.9333 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 12:36:55.9380 Info response is 204
+2025-03-03 12:36:55.9380 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 12:36:55.9380 Info response is 200
+2025-03-03 12:36:59.7982 Info request is OPTIONS /api/CLPDT01/deleteProduct
+2025-03-03 12:36:59.8188 Info response is 204
+2025-03-03 12:36:59.8188 Info request is DELETE /api/CLPDT01/deleteProduct
+2025-03-03 12:36:59.8307 Info response is 200
+2025-03-03 12:37:28.9540 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 12:37:28.9545 Info response is 204
+2025-03-03 12:37:28.9545 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 12:37:28.9545 Info response is 200
+2025-03-03 12:37:31.6609 Info request is OPTIONS /api/CLPDT01/deleteProduct
+2025-03-03 12:37:31.6609 Info response is 204
+2025-03-03 12:37:31.6882 Info request is DELETE /api/CLPDT01/deleteProduct
+2025-03-03 12:37:31.6916 Info response is 200
+2025-03-03 12:38:34.5433 Info request is GET /api/CLPDT01/deleteProduct/1
+2025-03-03 12:38:34.5433 Info response is 404
+2025-03-03 12:38:36.9023 Info request is GET /api/CLPDT01/deleteProduct/1
+2025-03-03 12:38:36.9023 Info response is 404
+2025-03-03 12:39:16.6156 Info request is DELETE /api/CLPDT01/deleteProduct/1%0A
+2025-03-03 12:39:16.6156 Info response is 404
+2025-03-03 12:39:42.2595 Info request is DELETE /api/CLPDT01/deleteProduct%0A
+2025-03-03 12:39:42.2595 Info response is 404
+2025-03-03 12:40:27.1671 Info request is DELETE /api/CLPDT01/deleteProduct%0A
+2025-03-03 12:40:27.1671 Info response is 404
+2025-03-03 12:41:03.2254 Info request is GET /swagger/index.html
+2025-03-03 12:41:03.5422 Info response is 200
+2025-03-03 12:41:03.7264 Info request is GET /swagger/v1/swagger.json
+2025-03-03 12:41:03.9590 Info response is 200
+2025-03-03 12:41:47.7308 Info request is POST /api/CLAuth/Login
+2025-03-03 12:41:50.8744 Info response is 200
+2025-03-03 12:42:12.0670 Info request is DELETE /api/CLUSR01/deleteUser
+2025-03-03 12:45:17.8392 Info request is GET /swagger/index.html
+2025-03-03 12:45:18.2889 Info response is 200
+2025-03-03 12:45:18.6345 Info request is GET /swagger/v1/swagger.json
+2025-03-03 12:45:18.9160 Info response is 200
+2025-03-03 12:45:38.1196 Info request is POST /api/CLAuth/Login
+2025-03-03 12:45:41.0631 Info response is 200
+2025-03-03 12:46:06.0822 Info request is DELETE /api/CLUSR01/deleteUser
+2025-03-03 12:46:08.2033 Info response is 200
+2025-03-03 12:46:43.4492 Info request is POST /api/CLAuth/Login
+2025-03-03 12:46:45.7192 Info response is 200
+2025-03-03 12:47:01.7499 Info request is DELETE /api/CLUSR01/deleteUser
+2025-03-03 12:47:03.8473 Info response is 200
+2025-03-03 12:47:46.4675 Info request is GET /swagger/index.html
+2025-03-03 12:47:46.8224 Info response is 200
+2025-03-03 12:47:46.9999 Info request is GET /swagger/v1/swagger.json
+2025-03-03 12:47:47.2790 Info response is 200
+2025-03-03 12:47:51.8423 Info request is POST /api/CLAuth/Login
+2025-03-03 12:47:54.8981 Info response is 200
+2025-03-03 12:48:14.9602 Info request is DELETE /api/CLUSR01/deleteUser
+2025-03-03 12:48:20.3411 Info response is 200
+2025-03-03 12:48:28.8004 Info request is DELETE /api/CLUSR01/deleteUser
+2025-03-03 12:51:14.8128 Info request is GET /swagger/index.html
+2025-03-03 12:51:15.2033 Info response is 200
+2025-03-03 12:51:15.4128 Info request is GET /swagger/v1/swagger.json
+2025-03-03 12:51:15.7848 Info response is 200
+2025-03-03 12:51:32.0959 Info request is POST /api/CLAuth/Login
+2025-03-03 12:51:35.7561 Info response is 200
+2025-03-03 12:51:55.5603 Info request is DELETE /api/CLUSR01/deleteUser
+2025-03-03 12:53:30.5600 Info response is 200
+2025-03-03 12:54:02.9652 Info request is OPTIONS /api/CLAuth/Login
+2025-03-03 12:54:02.9652 Info response is 204
+2025-03-03 12:54:02.9759 Info request is POST /api/CLAuth/Login
+2025-03-03 12:54:04.7884 Info response is 200
+2025-03-03 12:54:10.8224 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 12:54:10.8224 Info response is 204
+2025-03-03 12:54:10.8224 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 12:54:10.8575 Info response is 200
+2025-03-03 12:54:15.1487 Info request is OPTIONS /api/CLPDT01/deleteProduct
+2025-03-03 12:54:15.1487 Info response is 204
+2025-03-03 12:54:15.1487 Info request is DELETE /api/CLPDT01/deleteProduct
+2025-03-03 12:54:15.2185 Info response is 200
+2025-03-03 12:55:25.4287 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 12:55:25.4287 Info response is 204
+2025-03-03 12:55:25.4478 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 12:55:25.4478 Info response is 200
+2025-03-03 12:55:27.9852 Info request is OPTIONS /api/CLPDT01/deleteProduct
+2025-03-03 12:55:27.9852 Info response is 204
+2025-03-03 12:55:27.9919 Info request is DELETE /api/CLPDT01/deleteProduct
+2025-03-03 12:55:53.6759 Info response is 200
+2025-03-03 12:56:39.7937 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 12:56:39.7937 Info response is 204
+2025-03-03 12:56:39.8065 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 12:56:39.8065 Info response is 200
+2025-03-03 12:56:42.0051 Info request is OPTIONS /api/CLPDT01/deleteProduct
+2025-03-03 12:56:42.0051 Info response is 204
+2025-03-03 12:56:42.0051 Info request is DELETE /api/CLPDT01/deleteProduct
+2025-03-03 12:56:55.9399 Info response is 200
+2025-03-03 12:58:22.2067 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 12:58:22.2067 Info response is 204
+2025-03-03 12:58:22.2162 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 12:58:22.2162 Info response is 200
+2025-03-03 12:58:27.9416 Info request is OPTIONS /api/CLPDT01/deleteProduct
+2025-03-03 12:58:27.9416 Info response is 204
+2025-03-03 12:58:27.9416 Info request is DELETE /api/CLPDT01/deleteProduct
+2025-03-03 12:59:01.9837 Info response is 200
+2025-03-03 12:59:04.9885 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 12:59:04.9885 Info response is 204
+2025-03-03 12:59:04.9885 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 12:59:05.0018 Info response is 200
+2025-03-03 12:59:08.0953 Info request is OPTIONS /api/CLPDT01/deleteProduct
+2025-03-03 12:59:08.0953 Info response is 204
+2025-03-03 12:59:08.0953 Info request is DELETE /api/CLPDT01/deleteProduct
+2025-03-03 13:00:43.8603 Info response is 200
+2025-03-03 13:00:43.8603 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 13:00:43.8603 Info response is 204
+2025-03-03 13:00:43.8603 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 13:00:43.8603 Info response is 204
+2025-03-03 13:00:43.8753 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 13:00:43.8753 Info response is 204
+2025-03-03 13:00:43.8753 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 13:00:43.8753 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 13:00:43.8753 Info response is 204
+2025-03-03 13:00:43.8753 Info response is 204
+2025-03-03 13:00:43.8753 Info request is OPTIONS /api/CLAuth/Login
+2025-03-03 13:00:43.8753 Info response is 204
+2025-03-03 13:00:43.8871 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 13:00:43.8871 Info response is 204
+2025-03-03 13:00:43.8871 Info request is POST /api/CLAuth/Login
+2025-03-03 13:00:53.8251 Info request is GET /swagger/index.html
+2025-03-03 13:00:54.2099 Info response is 200
+2025-03-03 13:00:54.4017 Info request is GET /swagger/v1/swagger.json
+2025-03-03 13:00:54.5987 Info response is 200
+2025-03-03 13:01:53.4632 Info request is GET /swagger/index.html
+2025-03-03 13:01:53.8222 Info response is 200
+2025-03-03 13:01:54.0090 Info request is GET /swagger/v1/swagger.json
+2025-03-03 13:01:54.2285 Info response is 200
+2025-03-03 13:01:59.8517 Info request is OPTIONS /api/CLAuth/Login
+2025-03-03 13:01:59.8752 Info response is 204
+2025-03-03 13:01:59.8752 Info request is POST /api/CLAuth/Login
+2025-03-03 13:02:03.0161 Info response is 200
+2025-03-03 13:02:08.1068 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 13:02:08.1078 Info response is 204
+2025-03-03 13:02:08.1078 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 13:02:08.1886 Info response is 200
+2025-03-03 13:02:37.2219 Info request is OPTIONS /api/CLPDT01/deleteProduct
+2025-03-03 13:02:37.2219 Info response is 204
+2025-03-03 13:02:37.2219 Info request is DELETE /api/CLPDT01/deleteProduct
+2025-03-03 13:09:47.6570 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 13:09:47.6570 Info response is 204
+2025-03-03 13:09:47.6697 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 13:09:47.6981 Info response is 200
+2025-03-03 13:09:47.7116 Info response is 200
+2025-03-03 13:09:58.1556 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 13:09:58.1556 Info response is 204
+2025-03-03 13:09:58.1556 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 13:09:58.1556 Info response is 200
+2025-03-03 13:10:02.3845 Info request is OPTIONS /api/CLPDT01/deleteProduct/4
+2025-03-03 13:10:02.3845 Info response is 204
+2025-03-03 13:10:02.3845 Info request is DELETE /api/CLPDT01/deleteProduct/4
+2025-03-03 13:10:02.3845 Info response is 404
+2025-03-03 13:10:09.5781 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 13:10:09.5781 Info response is 204
+2025-03-03 13:10:09.5845 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 13:10:09.5845 Info response is 200
+2025-03-03 13:10:12.6413 Info request is OPTIONS /api/CLPDT01/deleteProduct/4
+2025-03-03 13:10:12.6413 Info response is 204
+2025-03-03 13:10:12.6413 Info request is DELETE /api/CLPDT01/deleteProduct/4
+2025-03-03 13:10:12.6413 Info response is 404
+2025-03-03 13:11:39.3892 Info request is DELETE /api/CLUSR01/deleteUser
+2025-03-03 13:11:39.4095 Info response is 401
+2025-03-03 13:12:16.3193 Info request is DELETE /api/CLPDT01/deleteProduct
+2025-03-03 13:12:16.3483 Info response is 401
+2025-03-03 13:12:56.4290 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-03 13:12:56.4351 Info response is 204
+2025-03-03 13:12:56.4487 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-03 13:12:56.4487 Info response is 200
+2025-03-03 13:12:59.6003 Info request is OPTIONS /api/CLPDT01/deleteProduct
+2025-03-03 13:12:59.6003 Info response is 204
+2025-03-03 13:12:59.6036 Info request is DELETE /api/CLPDT01/deleteProduct
+2025-03-03 13:13:19.9616 Info response is 200
+2025-03-03 13:15:27.5557 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 13:15:27.5591 Info response is 204
+2025-03-03 13:15:27.5591 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 13:15:27.5889 Info response is 200
+2025-03-03 13:16:04.4932 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 13:16:04.4932 Info response is 204
+2025-03-03 13:16:04.4985 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 13:16:04.4985 Info response is 200
+2025-03-03 13:17:52.5575 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-03 13:17:52.5621 Info response is 204
+2025-03-03 13:17:52.5621 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 13:17:52.5819 Info response is 200
+2025-03-03 13:17:54.4598 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-03 13:17:54.4598 Info response is 200

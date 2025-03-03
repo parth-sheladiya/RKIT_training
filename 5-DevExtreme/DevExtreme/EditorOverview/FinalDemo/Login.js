@@ -48,7 +48,9 @@
                 data: JSON.stringify(requestData),
                 success: function (response) {
                     console.log("API Response:", response);
+
                     if (!response.isError && response.data) {
+                        localStorage.setItem("Token",response.data);
                         let decodedToken = parseJwt(response.data); //JWT decode karo
                         console.log("Decoded Token:", decodedToken); // Console me dekho decoded data kya hai
 

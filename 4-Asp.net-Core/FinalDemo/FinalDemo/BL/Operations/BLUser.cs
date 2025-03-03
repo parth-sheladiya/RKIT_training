@@ -222,11 +222,11 @@ namespace FinalDemo.BL.Operations
         /// <param name="id"></param>
         /// <param name="loggedInUserId"></param>
         /// <returns></returns>
-        public Response Delete(int id , int loggedInUserId)
+        public Response Delete( int loggedInUserId)
         {
             using (var db = _dbfactory.OpenDbConnection())
             {
-                var existingUser = db.SingleById<USR01>(id);
+                var existingUser = db.SingleById<USR01>(loggedInUserId);
 
                 // ID Exist Check
                 if (existingUser == null)
@@ -236,7 +236,7 @@ namespace FinalDemo.BL.Operations
                     return _objResponse;
                 }
                 // Check if any order for the user is in pending status
-                var pendingOrderExists = db.Exists<ORD01>(o => o.R01F01 == id && o.D01F06.ToLower() == "pending");
+                var pendingOrderExists = db.Exists<ORD01>(o => o.R01F01 == loggedInUserId && o.D01F06.ToLower() == "pending");
                 // if pending orders then user can not delete user profile
                 if (pendingOrderExists)
                 {
@@ -259,7 +259,13 @@ namespace FinalDemo.BL.Operations
             return _objResponse;
         }
 
+        public Response Profile(int loggedInUserId)
+        {
+            using (IDbConnection db = _dbfactory.OpenDbConnection())
+            {
 
+            }
+        }
 
     }
 }

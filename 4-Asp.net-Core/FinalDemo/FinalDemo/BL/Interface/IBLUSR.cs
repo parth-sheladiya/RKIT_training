@@ -42,6 +42,8 @@ namespace FinalDemo.BL.Interface
         /// <param name="id"></param>
         /// <param name="loggedInUserId">fromm token</param>
         /// <returns></returns>
-        public Response Delete(int id, int loggedInUserId);
+        public Response Delete(int loggedInUserId);
+
+        public Response Profile(int loggedInUserId);
     }
 }

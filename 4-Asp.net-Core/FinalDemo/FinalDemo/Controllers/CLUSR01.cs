@@ -113,7 +113,7 @@ namespace FinalDemo.Controllers
         [HttpDelete]
         [Route("deleteUser")]
         [AuthFilter]
-        public IActionResult DeleteUser(int id) 
+        public IActionResult DeleteUser() 
         {
             // validate token
             string token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
@@ -122,7 +122,20 @@ namespace FinalDemo.Controllers
             // delete type
             _objBLUser.typeOfOperation = EnumType.D;
             // set response and delete
-            _objResponse = _objBLUser.Delete(id, loggedInUserId);
+            _objResponse = _objBLUser.Delete( loggedInUserId);
+            return Ok(_objResponse);
+        }
+        [HttpGet]
+        [Route("GetProfile")]
+        [AuthFilter]
+        public IActionResult GetProfile()
+        {
+            // validate token
+            string token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+            // current login user id
+            int loggedInUserId = _objBLAuth.GetLoggedInUserId(token);
+
+            _objResponse = _objBLUser.Profile(loggedInUserId);
             return Ok(_objResponse);
         }
     }
