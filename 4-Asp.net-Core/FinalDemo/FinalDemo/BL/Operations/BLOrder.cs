@@ -7,7 +7,9 @@ using FinalDemo.Models.POCO;
 using Org.BouncyCastle.Asn1.Ocsp;
 using ServiceStack.Data;
 using ServiceStack.OrmLite;
+using ServiceStack.OrmLite.Legacy;
 using ServiceStack.Web;
+using System.Collections.Generic;
 using System.Data;
 
 namespace FinalDemo.BL.Operations
@@ -21,7 +23,8 @@ namespace FinalDemo.BL.Operations
         private Response _objResponse;
         public int _id;
         private ORD01 _objORD01;
-       
+       public List<ORD01> _objMyORD01;
+
         public EnumType typeOfOperation { get; set; }
         public EnumRole typeOfRole { get; set; }
 
@@ -61,12 +64,65 @@ namespace FinalDemo.BL.Operations
                 {
 
                     // success responce 
+                    _objResponse.Data= res;
                     _objResponse.Message = $"there are {res.Count} orders available";
 
                 }
 
                 return _objResponse;
             }
+        }
+
+        public Response GetMyOrder(int loggedInUserId)
+        {
+
+            try
+            {
+                // Open DB connection and fetch data
+                using (IDbConnection db = _dbfactory.OpenDbConnection())
+                {
+                    _objMyORD01 = db.Select<ORD01>(u => u.R01F01 == loggedInUserId).ToList(); // Get orders as a list
+                }
+
+                // Debugging: Log or print _objMyORD01 to check its content
+                if (_objMyORD01 == null)
+                {
+                    Console.WriteLine("Query returned null.");
+                }
+                else if (_objMyORD01.Count == 0)
+                {
+                    Console.WriteLine("Query returned an empty list.");
+                }
+                else
+                {
+                    Console.WriteLine($"Query returned {_objMyORD01.Count} orders.");
+                }
+
+                // Check if orders are found
+                if (_objMyORD01 != null && _objMyORD01.Count > 0) // Ensure the list is not null or empty
+                {
+                    _objResponse.Data = _objMyORD01;  // Set the orders to the response
+                    _objResponse.IsError = false;
+                    _objResponse.Message = "Order fetched successfully";
+                }
+                else
+                {
+                    // If no orders are found
+                    _objResponse.Data = null;  // Explicitly setting Data to null in case no orders are found
+                    _objResponse.IsError = true;
+                    _objResponse.Message = "No orders found for this user.";
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle any exceptions
+                _objResponse.IsError = true;
+                _objResponse.Message = $"An error occurred: {ex.Message}";
+            }
+
+            // Return the response object
+            return _objResponse;
+
         }
         /// <summary>
         /// get order by id
@@ -76,7 +132,7 @@ namespace FinalDemo.BL.Operations
         public Response GetOrderByid(int id)
         {
 
-            using (var db = _dbfactory.OpenDbConnection())
+            using (IDbConnection db = _dbfactory.OpenDbConnection())
             {
                 _objORD01 = db.SingleById<ORD01>(id);
             }

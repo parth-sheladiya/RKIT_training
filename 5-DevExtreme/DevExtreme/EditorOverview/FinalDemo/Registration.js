@@ -97,11 +97,19 @@ $(document).ready(function () {
                 contentType: "application/json",
                 data: JSON.stringify(requestData),
                 success: function (response) {
-                    DevExpress.ui.notify("User Registered Successfully!", "success", 3000);
+                    let a = response.message;
+                    console.log("res",a);
+                    if(response.isError == true){
+                        DevExpress.ui.notify(`error ${a}`, "error", 3000);
+                    }
+                    else{
+                        DevExpress.ui.notify("User Registered Successfully!", "success", 3000);
+                    }
+                    
                     console.log("response", response);
-                    setTimeout(function () {
-                        window.location.href = "Login.html"; // Redirect to login page
-                    }, 2000);
+                    // setTimeout(function () {
+                    //     window.location.href = "Login.html"; // Redirect to login page
+                    // }, 20000);
                 },
                 error: function (err) {
                     DevExpress.ui.notify("Error: " + err.responseText, "error", 2000);

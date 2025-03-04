@@ -116,6 +116,21 @@ namespace FinalDemo.Controllers
             return Ok(_objResponse);
         }
 
+
+        [HttpGet]
+        [Route("/GetMyorders")]
+        [AuthFilter("User")]
+        public IActionResult GetMyOrders()
+        {
+            // validate token
+            string token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+            int loggedInUserId = _objBLAuth.GetLoggedInUserId(token);
+
+            // get order bl
+            _objResponse = _objBLOrder.GetMyOrder(loggedInUserId);
+            return Ok(_objResponse);
+        }
+
         /// <summary>
         /// Changes the status of an order (Admin only)
         /// </summary>

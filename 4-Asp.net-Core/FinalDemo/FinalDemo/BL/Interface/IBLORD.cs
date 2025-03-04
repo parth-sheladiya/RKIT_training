@@ -43,5 +43,8 @@ namespace FinalDemo.BL.Interface
         /// <param name="newStatus"></param>
         /// <returns></returns>
         public Response ChangeStatus(int orderId, string newStatus);
+
+
+        public Response GetMyOrder(int loggedInUserId);
     }
 }

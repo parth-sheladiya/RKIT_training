@@ -8,32 +8,32 @@
         return JSON.parse(jsonPayload); // JSON object return karega
     }
 
-    $("#UserName").dxTextBox({
-       // text:"user name",
-        placeholder: "Enter your username",
-        value: "",
-    }).dxValidator({
-        validationRules: [
-            { 
-                type: "required", 
-                message: "Username is required" 
-            }
-        ],
-    })
+    // $("#UserName").dxTextBox({
+    //    // text:"user name",
+    //     placeholder: "Enter your username",
+    //     value: "",
+    // }).dxValidator({
+    //     validationRules: [
+    //         { 
+    //             type: "required", 
+    //             message: "Username is required" 
+    //         }
+    //     ],
+    // })
 
-    $("#Password").dxTextBox({
-       // text:"password",
-        placeholder: "Enter your password",
-        value: "",
-        mode: "password",
-    }).dxValidator({
-        validationRules: [
-            { 
-                type: "required", 
-                message: "Password is required" 
-            }
-        ],
-    })
+    // $("#Password").dxTextBox({
+    //    // text:"password",
+    //     placeholder: "Enter your password",
+    //     value: "",
+    //     mode: "password",
+    // }).dxValidator({
+    //     validationRules: [
+    //         { 
+    //             type: "required", 
+    //             message: "Password is required" 
+    //         }
+    //     ],
+    // })
     $("#login-form").dxForm({
         formData: {
             R01F02: "",
@@ -49,10 +49,10 @@
         type: "success",
         
         onClick: function () {
-            const result = DevExpress.validationEngine.validateGroup();
-            if(result.isValid){
+            // const result = DevExpress.validationEngine.validateGroup();
+            // if(result.isValid){
                 
-            }
+            // }
             let formData = $("#login-form").dxForm("instance").option("formData");
             let requestData = {
                 R01F02: formData.R01F02,
