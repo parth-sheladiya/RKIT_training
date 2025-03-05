@@ -51,7 +51,7 @@ namespace FinalDemo.Controllers
         /// <returns></returns>
         [HttpGet]
         [Route("getProductById")]
-        [AuthFilter("Admin", "User")]
+        
         public IActionResult GetProductByid(int id)
         {
 

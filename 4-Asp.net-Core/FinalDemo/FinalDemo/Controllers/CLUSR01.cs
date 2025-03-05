@@ -50,7 +50,7 @@ namespace FinalDemo.Controllers
         
         [HttpGet]
         [Route("getUserById")]
-        [AuthFilter("Admin")]
+        [AuthFilter]
         public IActionResult GetUserByid(int id)
         {
             // get id and set to response

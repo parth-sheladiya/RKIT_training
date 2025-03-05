@@ -70,6 +70,9 @@ namespace FinalDemo
             {
                 // it is not handle globally bcz it is used in action method
                 // options.Filters.Add(typeof(AuthFilter)); 
+                // it is for model state validation false 
+                // by default true
+                options.SuppressImplicitRequiredAttributeForNonNullableReferenceTypes = true;
             });
             
 
@@ -120,8 +123,9 @@ namespace FinalDemo
            // BL service
            // builder.Services.AddScoped<Response>();
            builder.Services.AddScoped<IAuthentication,BLAuth>();
-          
 
+
+            
 
             // auth
             //builder.Services.AddSingleton<JwtSecurityTokenHandler>();
