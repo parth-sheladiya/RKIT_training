@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer", "DataLayer\Data
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGrid", "DataGrid\DataGrid.csproj", "{D21CAFED-8375-4C77-A217-3D9DEEC65A13}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navigation", "Navigation\Navigation.csproj", "{1C4E06B6-35E3-4D2F-88C5-D2CB65FC4CC9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{D21CAFED-8375-4C77-A217-3D9DEEC65A13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D21CAFED-8375-4C77-A217-3D9DEEC65A13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D21CAFED-8375-4C77-A217-3D9DEEC65A13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C4E06B6-35E3-4D2F-88C5-D2CB65FC4CC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C4E06B6-35E3-4D2F-88C5-D2CB65FC4CC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C4E06B6-35E3-4D2F-88C5-D2CB65FC4CC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C4E06B6-35E3-4D2F-88C5-D2CB65FC4CC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
