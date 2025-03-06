@@ -29,6 +29,10 @@ INSERT INTO employees (name, role, salary) VALUES
 SELECT * FROM employees;
 SELECT name,id,role,salary FROM employees;
 
-SELECT * FROM employees ORDER BY FIELD(role, 'Manager', 'Developer', 'Intern');
-SELECT * FROM employees ORDER BY FIELD(role, 'Manager', 'Developer', 'Intern'), salary DESC;
+SELECT id,name,role, FIELD(role, 'Manager', 'Developer', 'Intern') AS rolepriority FROM employees;
+SELECT * FROM employees ORDER BY FIELD(role, 'Manager', 'Developer', 'Intern') ;
+
+SHOW TABLE STATUS WHERE Name = 'employees';
+SHOW ENGINES;
+
 

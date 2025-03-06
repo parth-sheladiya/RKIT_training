@@ -326,7 +326,7 @@ namespace FinalDemo.BL.Operations
             if (EnumType.D == Type)
             {
                 // id must be greater than 0
-                if (!(id > 0))
+                if (_id<=0)
                 {
                     _objResponce.IsError = true;
                     _objResponce.Message = "ID must be greater than 0";

@@ -1,70 +1,68 @@
-CREATE DATABASE CURSORDEMO;
-
+CREATE DATABASE cursorDemo;
+USE cursorDemo;
+DROP DATABASE cursorDemo;
 CREATE TABLE products (
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(100),
     price DECIMAL(10,2)
-);
+)AUTO_INCREMENT=500;
 
-INSERT INTO products (name, price) VALUES
-('Laptop', 50000.00),
-('Mobile', 20000.00),
-('Tablet', 15000.00),
-('Headphone', 3000.00),
-('Smartwatch', 5000.00);
+INSERT INTO products (id ,name, price) VALUES
+(null,'Laptop', 50000.00),
+(null,'Mobile', 20000.00),
+(null,'Tablet', 15000.00),
+(null,null, 3000.00),
+(null,'Smartwatch', 5000.00);
 
-SELECT * FROM products;
+-- imp if null 
+SELECT id,price,IFNULL(name, "parth") FROM products;
 
--- do not need begin end bcz only one sql query
+-- do not need end bcz only one sql query
 DELIMITER $$
-
 CREATE PROCEDURE GetAllProducts()
-
 SELECT * FROM products;  
-
 $$ DELIMITER ;
-
+CALL GetAllProducts;
 DROP PROCEDURE GetAllProducts;
 
-DELIMITER $$
 
+
+
+
+DELIMITER $$
 CREATE PROCEDURE GetAllProductData()
 BEGIN 
-SELECT * FROM products;  
+ --  overwrite issue 
 SELECT * FROM products WHERE price = 3060;
+SELECT * FROM products;  
 SELECT * FROM products WHERE price =15750;
-
 END $$
-
  $$ DELIMITER ;
 -- is fast motion to show table
 CALL  GetAllProductData();
 
 DROP PROCEDURE GetAllProductData;
 
+
 DELIMITER $$
-
 CREATE PROCEDURE UpdateProductPrices()
-
 BEGIN 
-
--- Variables declare karo
-    DECLARE done INT DEFAULT 0;
+-- declare var
+    DECLARE done INT DEFAULT false;
     DECLARE p_id INT;
     DECLARE p_name VARCHAR(100);
     DECLARE p_price DECIMAL(10,2);
-    DECLARE new_price DECIMAL(10,2);
-    
+    DECLARE new_price DECIMAL(10,2);    
     -- Cursor declare karo
     DECLARE UpdateProductPrices CURSOR FOR SELECT id, name, price FROM products;
     
-     -- Jab cursor me koi row na mile toh loop exit ho
+     -- row not found then set flat 1
     DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = 1;
     
-    -- Cursor open karo
+    -- Cursor open 
     OPEN UpdateProductPrices;
     
-     -- Loop chalao har product ke liye
+     -- itrate loop
     read_loop: LOOP
     
     FETCH UpdateProductPrices INTO p_id, p_name, p_price;
@@ -72,20 +70,20 @@ BEGIN
         IF done = 1 THEN LEAVE read_loop;
         END IF;
         
-        -- Price increase logic apply karo
+       
         IF p_price > 40000 THEN
-            SET new_price = p_price * 1.10;  -- 10% increase
+            SET new_price = p_price * 1.10; 
         ELSEIF p_price BETWEEN 10000 AND 40000 THEN
-            SET new_price = p_price * 1.05;  -- 5% increase
+            SET new_price = p_price * 1.05;
         ELSE
-            SET new_price = p_price * 1.02;  -- 2% increase
+            SET new_price = p_price * 1.02;
         END IF;
         
-        -- Price update karo
+       -- price update
         UPDATE products SET price = new_price WHERE id = p_id;
 		END LOOP;
         
-         -- Cursor close karo
+         -- close cursor
     CLOSE UpdateProductPrices;
 	END $$
 

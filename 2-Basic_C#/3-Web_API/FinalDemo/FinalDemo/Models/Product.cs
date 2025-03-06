@@ -10,33 +10,33 @@ namespace FinalDemo.Models
         #region Properties
 
         /// <summary>
-        /// Gets or sets the unique identifier for the product.
+        /// product  id
         /// </summary>
         
         public int ProductId { get; set; }
 
         /// <summary>
-        /// Gets or sets the name of the product.
+        /// name
         /// </summary>
         public string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets the description of the product.
+        /// desc
         /// </summary>
         public string Description { get; set; }
 
         /// <summary>
-        /// Gets or sets the price of the product.
+        /// price
         /// </summary>
         public decimal Price { get; set; }
 
         /// <summary>
-        /// Gets or sets the category of the product (e.g., Electronics, Clothing, etc.).
+        /// category
         /// </summary>
         public string Category { get; set; }
 
         /// <summary>
-        /// Gets or sets the date when the product was added.
+        /// date
         /// </summary>
         public DateTime DateAdded { get; set; }
 
