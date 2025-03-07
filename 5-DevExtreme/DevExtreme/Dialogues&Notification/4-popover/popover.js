@@ -76,46 +76,69 @@ $(document).ready(function () {
         
     // })
 
-    $("#popOverContainer1").dxPopover({
+    $("#popOver1").dxPopover({
         closeOnOutsideClick: true,
-        contentTemplate: function () {
-            return $("<div>").text("TLorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae atque unde nihil quod fuga est ab quae ipsa dolorem dolor?");
+        target: '#pop1',
+        contentTemplate: function (contentElement) {
+            contentElement.append('<div>Popover 1 Content: Lorem ipsum dolor sit amet.</div>');
         },
-        target: "#popoverBtn1",
-        showEvent: "mouseenter",
-        hideEvent: "mouseleave"
+        showEvent: 'mouseenter',
+        hideEvent: 'mouseleave',
+        position: 'top',
+        width: 300,
     });
 
-    $("#popOverContainer1").dxPopover({
+    $("#popOver2").dxPopover({
         closeOnOutsideClick: true,
-        contentTemplate: function () {
-            return $("<div>").text("TLorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae atque unde nihil quod fuga est ab quae ipsa dolorem dolor?");
+        target: '#pop2',
+        contentTemplate: function (contentElement) {
+            contentElement.append('<div>Popover 2 Content: Lorem ipsum dolor sit amet.</div>');
         },
-        target: "#popoverBtn1",
-        showEvent: "mouseenter",
-        hideEvent: "mouseleave"
+        showEvent: 'mouseenter',
+        hideEvent: 'mouseleave',
+        position: 'bottom',
+        width: 300,
+        showTitle: true,
+        title: 'Details:',
     });
 
-    $("#popOverContainer2").dxPopover({
+    $("#popOver3").dxPopover({
         closeOnOutsideClick: true,
-        contentTemplate: function () {
-            return $("<div>").text("TLorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae atque unde nihil quod fuga est ab quae ipsa dolorem dolor?");
+        target: '#pop3',
+        contentTemplate: function (contentElement) {
+            contentElement.append('<div>Popover 3 Content: Lorem ipsum dolor sit amet.</div>');
         },
-        target: "#popoverBtn2",
-        showEvent: "mouseenter",
-        hideEvent: "mouseleave"
+        showEvent: 'mouseenter',
+        hideEvent: 'mouseleave',
+        position: 'top',
+        width: 300,
+        animation: {
+            show: {
+                type: 'pop',
+                from: { scale: 0 },
+                to: { scale: 1 },
+            },
+            hide: {
+                type: 'fade',
+                from: 1,
+                to: 0,
+            },
+        },
     });
 
-    $("#popOverContainer3").dxPopover({
+    $("#popOver4").dxPopover({
         closeOnOutsideClick: true,
-        contentTemplate: function () {
-            return $("<div>").text("TLorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae atque unde nihil quod fuga est ab quae ipsa dolorem dolor?");
+        target: '#pop4',
+        contentTemplate: function (contentElement) {
+            contentElement.append('<div>Popover 4 Content: Lorem ipsum dolor sit amet.</div>');
         },
-        target: "#popoverBtn3",
-        showEvent: "mouseenter",
-        hideEvent: "mouseleave"
+        showEvent: 'dxclick',
+        hideEvent: 'mouseleave',
+        position: 'top',
+        width: 300,
+        shading: true,
+        shadingColor: 'rgba(0, 0, 0, 0.5)',
     });
-
 
 
 })
