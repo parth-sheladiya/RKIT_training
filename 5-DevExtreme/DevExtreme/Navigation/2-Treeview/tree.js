@@ -40,9 +40,8 @@ $(document).ready(function(){
 
     $("#BasicTreeContainer").dxTreeView({
         dataSource:peripheralData,
-        //idField:"id",
         displayExpr:"name", //id  parentId name
-        parentIdField:"parentId",
+        parentIdExpr:"parentId",
         expandAll:false,
         //collapsing and expand 
         animationEnabled:true,

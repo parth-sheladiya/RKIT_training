@@ -25,7 +25,7 @@ $(document).ready(function(){
         closeOnOutsideClick:true,
         visible: false,
         disabled:false,
-        dragEnabled:false ,
+        dragEnabled:true ,
         fullScreen:false,
         hint:"SHOW PRODUCT DETAIILS",
         showCloseButton:false,

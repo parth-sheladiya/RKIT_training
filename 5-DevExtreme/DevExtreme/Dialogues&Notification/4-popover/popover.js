@@ -132,11 +132,16 @@ $(document).ready(function () {
         contentTemplate: function (contentElement) {
             contentElement.append('<div>Popover 4 Content: Lorem ipsum dolor sit amet.</div>');
         },
-        showEvent: 'dxclick',
+        // we can use multiple evensts
+        //showEvent: 'dblclick click',
+        showEvent:{
+            name:"mouseenter",
+            delay:7000
+        },
         hideEvent: 'mouseleave',
-        position: 'top',
+        position: 'right',
         width: 300,
-        shading: true,
+       // shading: true,
         shadingColor: 'rgba(0, 0, 0, 0.5)',
     });
 
