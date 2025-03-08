@@ -1,54 +1,141 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title></title>
-    <!-- Jquery -->
-    <script type="text/javascript" src="../Scripts/jquery-3.5.1.min.js"></script>
+    <title>Registration Form</title>
+     <!-- Jquery -->
+     <script type="text/javascript" src="../Scripts/jquery-3.5.1.min.js"></script>
 
-    <!-- DevExtreme theme -->
-    <link rel="stylesheet" href="../Content/dx.dark.css">
+     <!-- DevExtreme theme -->
+     <link rel="stylesheet" href="../Content/dx.dark.css">
+ 
+     <!-- DevExtreme library -->
+     <script type="text/javascript" src="../Scripts/dx.all.js"></script>
 
-    <!-- DevExtreme library -->
-    <script type="text/javascript" src="../Scripts/dx.all.js"></script>
+    <style>
+        /* Reset margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-group label {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .form-group input, .form-group select , #R01F06  , #R01F07{
+            padding: 10px;
+            border-radius: 4px;
+            
+            width: 100%;
+            font-size: 14px;
+            color: #333;
+            background-color: #e5e5e5;
+        }
+
+        .form-group input:focus, .form-group select:focus {
+            border-color: #7f8c8d;
+        }
+
+        /* Ensure inputs in the same row have equal width */
+        .form-group .half-width {
+            width: 48%;
+        }
+
+        .dx-button {
+            width: 100%;
+            margin-top: 10px;
+        }
+        #Login{
+            color: #2a528d;
+        }
+    </style>
 </head>
 <body class="dx-viewport">
 
-    <h2>Registration Form</h2>
+    <div class="form-container">
+        <h2>Registration Form</h2>
 
-    <div class="form-group">
-        <label>Name:</label>
-        <div id="R01F02"></div>
-    </div>
+        <!-- Row with Name and Email -->
+        <div class="form-group">
+            <div class="half-width">
+                <label for="R01F02">Name:</label>
+                <div id="R01F02"></div>
+            </div>
+            <div class="half-width">
+                <label for="R01F03">Email:</label>
+                <div id="R01F03"></div>
+            </div>
+        </div>
 
-    <div class="form-group">
-        <label>Email:</label>
-        <div id="R01F03"></div>
-    </div>
+        <!-- Row with Password and Phone -->
+        <div class="form-group">
+            <div class="half-width">
+                <label for="R01F04">Password:</label>
+                <div id="R01F04"></div>
+            </div>
+            <div class="half-width">
+                <label for="R01F05">Phone:</label>
+                <div id="R01F05"></div>
+            </div>
+        </div>
 
-    <div class="form-group">
-        <label>Password:</label>
-        <div id="R01F04"></div>
-    </div>
+        <!-- Row with Address and Role -->
+        <div class="form-group">
+            <div class="half-width">
+                <label for="R01F06">Address:</label>
+                <div id="R01F06"></div>
+            </div>
+            <div class="half-width">
+                <label for="R01F07">Role:</label>
+                <div id="R01F07"></div>
+            </div>
+        </div>
 
-    <div class="form-group">
-        <label>Phone:</label>
-        <div id="R01F05"></div>
+        <div class="form-group">
+            <div id="register-btn"></div>
+        </div>
+        <div class="form-group">
+            <div id="Login">have account ? <a href="login.html">Login</a></div>
+        </div>
     </div>
-
-    <div class="form-group">
-        <label>Address:</label>
-        <div id="R01F06"></div>
-    </div>
-
-    <div class="form-group">
-        <label>Role:</label>
-        <div id="R01F07"></div>
-    </div>
-
-    <div class="form-group">
-        <div id="register-btn"></div>
-    </div>
+   
 
     <script src="Registration.js"></script>
 </body>

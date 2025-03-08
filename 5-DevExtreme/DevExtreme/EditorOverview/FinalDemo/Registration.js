@@ -107,9 +107,9 @@ $(document).ready(function () {
                     }
                     
                     console.log("response", response);
-                    // setTimeout(function () {
-                    //     window.location.href = "Login.html"; // Redirect to login page
-                    // }, 20000);
+                    setTimeout(function () {
+                        window.location.href = "Login.html"; // Redirect to login page
+                    }, 2000);
                 },
                 error: function (err) {
                     DevExpress.ui.notify("Error: " + err.responseText, "error", 2000);

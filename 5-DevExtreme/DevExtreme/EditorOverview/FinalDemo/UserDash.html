@@ -63,6 +63,13 @@
         <div id="CreateOrderContainer" class="dx-data-grid-container"></div>
     </div>
 
+    <script>
+        // Check if the user is logged in
+        if (!localStorage.getItem("Token")) {
+          
+            window.location.href = "index.html";  
+        }
+    </script>
     <script src="UserDash.js"></script>
 </body>
 </html>
