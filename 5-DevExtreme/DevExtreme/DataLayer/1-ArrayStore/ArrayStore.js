@@ -62,12 +62,12 @@ $(document).ready(function(){
         // it is for unique identifieer
         key:"id",
         errorHandler: function(error){
-            console.log(error.message);
+            console.log("error ",error.message);
         },
         onInserting:function(values){
             if(!values.id ||!values.name || !values.price){
                 throw new Error ("id name and price are required")
-             }
+            }
              
              console.log("inserting data is",values);
         },
@@ -165,7 +165,7 @@ $(document).ready(function(){
     console.log("key method",arraydataSource.key());
 
     // keyof(obj)
-    console.log(arraydataSource.keyOf({ id: 3, name: "parth" }));
+    console.log("key of obj is ",arraydataSource.keyOf({ id: 3, name: "parth" }));
 
     //load()
     arraydataSource.load()

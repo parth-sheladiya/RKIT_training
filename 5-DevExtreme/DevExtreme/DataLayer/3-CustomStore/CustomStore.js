@@ -1,202 +1,118 @@
-$(document).ready(function() {
-    const mockApiUrl = "https://67b3100abc0165def8cfc105.mockapi.io/productapi/productapi";
-
-    // Initialize CustomStore
+$(document).ready(() => {
+    console.log("Document is Ready");
+    
     var customStore = new DevExpress.data.CustomStore({
-        key: "id", 
-        load: function (loadOptions) {
-            console.log("Load Options:", loadOptions);
-            let params = {};
+        key: "id",
 
-            // Handling Sorting
-            if (loadOptions.sort) {
-                params._sort = loadOptions.sort[0].selector;
-                params._order = loadOptions.sort[0].desc ? "desc" : "asc";
-            }
-
-            // Handling Filtering
-            if (loadOptions.filter) {
-                params._filter = JSON.stringify(loadOptions.filter);
-            }
-
-            // Handling Pagination
-            if (loadOptions.skip !== undefined) {
-                params._start = loadOptions.skip;
-            }
-            if (loadOptions.take !== undefined) {
-                params._limit = loadOptions.take;
-            }
-
-            return $.ajax({
-                url: mockApiUrl,
-                method: "GET",
-                data: params,
-                dataType: "json"
-            });
-        },
-        loadMode: 'raw', 
-
-        byKey: function (key) {
-            return $.ajax({
-                url: `${mockApiUrl}/${key}`,
-                method: "GET",
-                dataType: "json"
-            });
+        // data
+        load: () => {
+            return $.getJSON("https://67a70408510789ef0dfcbb1f.mockapi.io/api/users/")
+                .then((data) => {
+                    console.log("Data Loaded:", data);
+                    return data; 
+                })
+                .fail((error) => {
+                    console.error("Error fetching data:", error);
+                    return []; 
+                });
         },
 
-        // Insert a new record
-        insert: function (values) {
-            console.log("Inserting:", values);
+        //insert daata
+        insert: (values) => {
             return $.ajax({
-                url: mockApiUrl,
+                url: "https://67a70408510789ef0dfcbb1f.mockapi.io/api/users/",
                 method: "POST",
-                data: JSON.stringify(values),
-                contentType: "application/json"
-            });
+                data: values,
+            })
+                .then((response) => {
+                    console.log("Inserted:", response);
+                    customStore.load();
+                })
+                .fail((error) => {
+                    console.error("Error inserting data:", error);
+                });
         },
 
-        // Update an existing record
-        update: function (key, values) {
-            console.log("Updating:", key, values);
+        //update method
+        update: (key, values) => {
             return $.ajax({
-                url: `${mockApiUrl}/${key}`,
+                url: `https://67a70408510789ef0dfcbb1f.mockapi.io/api/users/${key}`,
                 method: "PUT",
-                data: JSON.stringify(values),
-                contentType: "application/json"
-            });
+                data: values,
+            })
+                .then((response) => {
+                    console.log("Updated:", response);
+                    customStore.load();
+                })
+                .fail((error) => {
+                    console.error("Error updating data:", error);
+                });
         },
 
-        remove: function (key) {
-            console.log("Removing:", key);
+        // delete data
+        remove: (key) => {
             return $.ajax({
-                url: `${mockApiUrl}/${key}`,
-                method: "DELETE"
-            });
+                url: `https://67a70408510789ef0dfcbb1f.mockapi.io/api/users/${key}`,
+                method: "DELETE",
+            })
+                .then((response) => {
+                    console.log("Deleted:", response);
+                    customStore.load();
+                })
+                .fail((error) => {
+                    console.error("Error deleting data:", error);
+                });
         },
 
-        totalCount: function (loadOptions) {
-            return $.ajax({
-                url: mockApiUrl,
-                method: "GET",
-                dataType: "json"
-            }).then(data => data.length);
+       loadMode: "raw", 
+        errorHandler: (error) => {
+            alert(error.message);
         },
 
-        errorHandler: function (error) {
-            console.error("CustomStore Error:", error);
-            alert("An error occurred while processing the request.");
-        },
-        useDefaultSearch: true
-    });
-
-    // Function to fetch and render the data
-    function fetchData() {
-        customStore.load({
-            skip: 0, 
-            take: 5,
-            sort: [{ selector: "productPrice", desc: true }],
-        }).done(function (data) {
-            renderTable(data);
-        }).fail(function (error) {
-            console.error("Load Error:", error);
-        });
-    }
-
-    // Function to render the table
-    function renderTable(data) {
-        console.log("Rendering data:", data);
-        var tableBody = $("#dataTable tbody");
-        tableBody.empty(); // Clear existing rows
         
-        if (data.length > 0) {
-            data.forEach(function (item) {
-                var row = $("<tr>")
-                    .append($("<td>").text(item.id))
-                    .append($("<td>").text(item.name))
-                    .append($("<td>").text(item.price))
-                    .append($("<td>").html(`
-                        <button class="editButton" data-id="${item.id}">Edit</button>
-                        <button class="deleteButton" data-id="${item.id}">Delete</button>
-                    `));
-                tableBody.append(row);
+    });
+    
+    // Initialize DataGrid
+    const dataGrid =   $("#dataGridContainer").dxDataGrid({
+        dataSource: customStore,
+        keyExpr: "id", 
+        columns: [
+            { dataField: "id", caption: "ID" },
+            { dataField: "name", caption: "Name" },
+            { dataField: "email", caption: "Email" },
+            
+        ],
+        editing:{
+            mode:"raw",
+            allowUpdating:true,
+            allowAdding:true,
+            allowDeleting:true,
+        },
+        paging: {
+            pageSize: 5, 
+        },
+       
+    }).dxDataGrid("instance");
+
+
+    $("#LoadButton").dxButton({
+        text: "Apply Load Options",
+        onClick: function(){
+            const loadOptions = {
+                //filter: ["name", "=", "parth"],
+                sort: [{ selector: "name", desc: true }], 
+                skip: 1,
+                take: 2,
+            };
+            console.log("load options is" , loadOptions);
+
+            customStore.load(loadOptions).then((response) => {
+                console.log("Load Options Applied:", response);               
             });
-        } else {
-            tableBody.append('<tr><td colspan="4">No data available</td></tr>');
-        }
-    }
+        },
+        
+    })
+    
 
-    // Show form for adding new data
-    $("#addButton").click(function () {
-        $("#formContainer").show();
-        $("#saveButton").data("action", "add"); // Add action for save
-        $("#productId").val(""); // Clear the inputs
-        $("#productName").val("");
-        $("#productPrice").val("");
-    });
-
-    // Handle save button click (both Add and Update)
-    $("#saveButton").click(function () {
-        var productId = $("#productId").val();
-        var productName = $("#productName").val();
-        var productPrice = $("#productPrice").val();
-        var action = $(this).data("action");
-
-        if (productName && productPrice) {
-            var data = { name: productName, price: parseFloat(productPrice) };
-
-            if (action === "add") {
-                // Add new record (no id needed if API generates one)
-                customStore.insert(data).done(function (newRecord) {
-                    // Add the new record to the table directly without refreshing everything
-                    renderTable([newRecord]);  // Insert new record directly
-                    $("#formContainer").hide();
-                }).fail(function () {
-                    alert("Error adding record");
-                });
-            } else if (action === "update") {
-                var id = $(this).data("id");
-                // Update existing product
-                customStore.update(id, data).done(function () {
-                    fetchData(); // Fetch and update the table after update
-                    $("#formContainer").hide();
-                }).fail(function () {
-                    alert("Error updating record");
-                });
-            }
-        } else {
-            alert("Please fill in all fields.");
-        }
-    });
-
-    // Handle cancel button click
-    $("#cancelButton").click(function () {
-        $("#formContainer").hide();
-    });
-
-    // Edit record
-    $(document).on("click", ".editButton", function () {
-        var id = $(this).data("id");
-        customStore.byKey(id).done(function (data) {
-            $("#productId").val(data.id);
-            $("#productName").val(data.name);
-            $("#productPrice").val(data.price);
-            $("#formContainer").show();
-            $("#saveButton").data("action", "update").data("id", id);
-        }).fail(function () {
-            alert("Error fetching record");
-        });
-    });
-
-    // Delete record
-    $(document).on("click", ".deleteButton", function () {
-        var id = $(this).data("id");
-        customStore.remove(id).done(function () {
-            fetchData(); // Fetch and update the table after deletion
-        }).fail(function () {
-            alert("Error deleting record");
-        });
-    });
-
-    // Load initial data
-    fetchData();
+   
 });

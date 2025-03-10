@@ -56,7 +56,7 @@ $(document).ready(function(){
     ];
 
     let localStore = new DevExpress.data.LocalStore({
-        key:"id", // arr of string "name"
+        key:"id", 
         data:products,
         name:"parthstore",
         onLoad:function(){

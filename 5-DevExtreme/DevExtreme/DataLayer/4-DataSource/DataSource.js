@@ -73,7 +73,7 @@ $(document).ready(function () {
     var myDataSource = new DevExpress.data.DataSource({
         // we use array store data
         // store data
-        // type : arr , local , odata , custom store
+        // type : arr , local  , custom store
         store: new DevExpress.data.ArrayStore({
             // data source name
             data: products,
@@ -85,31 +85,25 @@ $(document).ready(function () {
         // binary filter , complex filter , = <> <= >= startwith endswith contains notcontains 
         // just learning purpose after some topics datagrid
         //filter: ["price", ">", 120],
-        // filter : (["category", "=", "Accessories"]),
-        // filter :(["price",">",120]),
-        // filter :([["category", "=", "Accessories"], ["price", ">", 120]]),
+        // filter : (["category", "=", "Accessories"]),       
+        // filter :([["category", "=", "Accessories"], ["price", "<", 120]]),
         // group section 
 
-        // group : group of specif data 
-        // string , object , array , function 
+        // group : group of specific data 
         // for string  group:"company"
-        // if you want to multiple field then we use arr group : ['company' , {selector: 'name', desc:true}] ,
         // for object (uncomment)
         group: { selector: "name", desc: false },
-        // function 
-        // group: function(i){
-        //     return i.price>250 ? "above 250" : "below 250"
-        // }
+
         // sort 
         // string
         // sort:"price",
         // object 
         //sort:{selector:"price",desc:false},
         // arr 
-        //    sort:[
-        //         {selector:"name",desc:true},
-        //         {selector:"category",desc:false},
-        //    ],
+           sort:[
+                {selector:"name",desc:true},
+                {selector:"category",desc:false},
+           ],
 
         // map 
         map: function (dataItem) {
@@ -119,13 +113,11 @@ $(document).ready(function () {
             return dataItem;
             //return dataItem;
         },
-        // pageSize it is only working when paginate is true other wise not working
-        paginate: true,
-        pageSize: 10,
+        
 
-        requireTotalCount: true,
+        requireTotalCount : true,
         // collect of changes then it will oush to store 
-        pushAggregationTimeout: 500,
+        pushAggregationTimeout: 9000,
         // if new data add then automatic apply changes
         reshapeOnPush: true,
         // on changed
@@ -136,31 +128,25 @@ $(document).ready(function () {
         onLoadError: function (error) {
             console.error("Data loading failed:", error.message);
         },
-        onLoadingChanged: function (isLoading) {
-            if (isLoading) {
-                console.log("Data is being loaded...");
-            } else {
-                console.log("Data loading is complete.");
-            }
-        }
+        
     })
     // default comment
     // myDataSource.dispose();
     // Initialize the DataGrid
-    // $("#dataGridContainer").dxDataGrid({
-    //     dataSource: myDataSource,
-    //     columns: [
-    //         { dataField: "id", caption: "Product ID" },
-    //         { dataField: "name", caption: "Product Name" },
-    //         { dataField: "price", caption: "Price" },
-    //         { dataField: "category", caption: "Category" },
-    //         { dataField: "company", caption: "Company" },
-    //         { dataField: "priceWithTax", caption: "Price with Tax" }
-    //     ],
-    //     paging: {
-    //         pageSize: 10
-    //     },
-    // });
+    $("#dataGridContainer").dxDataGrid({
+        dataSource: myDataSource,
+        columns: [
+            { dataField: "id", caption: "Product ID" },
+            { dataField: "name", caption: "Product Name" },
+            { dataField: "price", caption: "Price" },
+            { dataField: "category", caption: "Category" },
+            { dataField: "company", caption: "Company" },
+            { dataField: "priceWithTax", caption: "Price with Tax" }
+        ],
+        paging: {
+            pageSize: 10
+        },
+    });
 
     console.log("Initialized DataSource:", myDataSource);
 
@@ -169,7 +155,7 @@ $(document).ready(function () {
 
 
 
-    // it is ofr example purpose 
+    // it is for example purpose 
     // apply only second filter due to overwrite issue
     // solve combine filter
     var myFilter = myDataSource.filter();
@@ -199,8 +185,13 @@ $(document).ready(function () {
     console.log("Data Store:", store);
 
     // Get total number of records
-    var itemCount = myDataSource.totalCount();
-    console.log("Total Item Count:", itemCount);
+
     myDataSource.load();
+
+    // console.log(" Item Count:", myDataSource.totalCount());
+    myDataSource.load().done(function() {
+        var totalCount = myDataSource.totalCount(8);
+        console.log("Total Item Count:", totalCount);
+    });
 
 })

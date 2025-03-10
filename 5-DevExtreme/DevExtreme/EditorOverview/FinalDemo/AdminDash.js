@@ -130,7 +130,19 @@
                 dataField: "r01F07",
                 dataType: "string",
                 caption: "Role",
-                allowEditing: false
+                allowEditing: false,
+                cellTemplate: function(container , options){
+                    const roleEnum = {
+                        0: "Admin",
+                        1: "User"
+                    };
+                    const roleValue = options.value;
+                    const roleText = roleEnum[roleValue] || "Unknown";
+                    console.log("role text " , roleText)
+                    $("<div>")
+                    .text(roleText)
+                    .appendTo(container);
+                }
             },
             {
                 dataField: "r01F08",
@@ -478,7 +490,19 @@
                                         {
                                             dataField: "r01F07",
                                                 dataType: "string",
-                                                caption: "Role"
+                                                caption: "Role",
+                                                cellTemplate: function(container , options){
+                                                    const roleEnum = {
+                                                        0: "Admin",
+                                                        1: "User"
+                                                    };
+                                                    const roleValue = options.value;
+                                                    const roleText = roleEnum[roleValue] || "Unknown";
+                                                    console.log("role text " , roleText)
+                                                    $("<div>")
+                                                    .text(roleText)
+                                                    .appendTo(container);
+                                                }
                                         },
         
                                        

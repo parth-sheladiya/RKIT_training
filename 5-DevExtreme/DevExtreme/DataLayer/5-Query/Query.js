@@ -77,7 +77,9 @@ $(document).ready(function () {
 
     DevExpress.data
         .query(products)
+        
         .count()
+     
         .done(function (totalProduct) {
             console.log("total product  is ", totalProduct)
         })
@@ -95,6 +97,10 @@ $(document).ready(function () {
         .query(products)
         .filter(["price", ">", 500])
         .toArray();
+        // .enumerate()
+        // .done(function (result) {
+        //     console.log("enum filter",result);
+        // })
     console.log("500 above price is", priceFilter)
 
     var categoryFilter = DevExpress.data
@@ -130,7 +136,7 @@ $(document).ready(function () {
     // select 
     var selectColumn = DevExpress.data
         .query(products)
-        //( skip, take)
+        
         .select("id", "name")
         .toArray()
     console.log("selected col is ", selectColumn)
