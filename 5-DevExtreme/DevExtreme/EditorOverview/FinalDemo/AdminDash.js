@@ -1,16 +1,22 @@
-﻿$(document).ready(function () {
+﻿// over view admin dashboard 
+// admin can handle user data 
+// admin handle product data 
+// admin can handle order data 
+$(document).ready(function () {
     console.log("admin dashboard is ready");
 
-    // Create a custom store to handle data for the DataGrid
+    // cvustom store for profile 
     var customStore = new DevExpress.data.CustomStore({
-        key: "r01F01",  // Assuming "r01F01" is the unique ID for the records
+        key: "r01F01",
 
         // Load data from the server
         load: function (loadOptions) {
+            // log
             console.log("load options", loadOptions)
+            // token
             let token = localStorage.getItem("Token");
             return $.ajax({
-                url: "http://localhost:5021/api/CLUSR01/GetProfile", // Replace with your actual API URL
+                url: "http://localhost:5021/api/CLUSR01/GetProfile",
                 method: "GET",
                 headers: {
                     "Authorization": `Bearer ${token}`
@@ -19,11 +25,11 @@
                     console.log("Profile data:", res.data);
                     // global handle
                     window.existingProfileData = res.data;
-                    return res.data; // Return the data to the grid
+                    return res.data;
                 },
                 error: function (err) {
                     console.log("Error loading data:", err);
-                    DevExpress.ui.notify("Error loading data", "error", 3000);
+                    DevExpress.ui.notify("Error loading data while fetching admin profile", "error", 3000);
                 }
             });
         },
@@ -38,7 +44,7 @@
             let ExistingProfile = window.existingProfileData;
             let token = localStorage.getItem("Token");
             let objData = {
-                r01F01: key,  // You can map values to the field names as required
+                r01F01: key,
                 r01F02: values.r01F02 ?? ExistingProfile.r01F02,
                 r01F03: values.r01F03 ?? ExistingProfile.r01F03,
                 r01F04: values.r01F04 ?? ExistingProfile.r01F04,
@@ -48,7 +54,7 @@
             };
             console.log("Sending data:", objData);
             return $.ajax({
-                url: "http://localhost:5021/api/CLUSR01/updateUser", // Replace with your actual update API URL
+                url: "http://localhost:5021/api/CLUSR01/updateUser",
                 method: "PUT",
                 headers: {
                     "Authorization": `Bearer ${token}`
@@ -56,12 +62,8 @@
                 contentType: "application/json",
                 data: JSON.stringify(objData),
                 success: function (res) {
-                    if (res.isError) {
-                        console.log("Error updating user profile:", res.isError);
-                        DevExpress.ui.notify("Error updating user profile", "error", 3000);
-                    } else {
-                        DevExpress.ui.notify("User profile updated successfully", "success", 3000);
-                    }
+                    console.log("updated admin profile", res.data)
+                    DevExpress.ui.notify("User profile updated successfully", "success", 3000);
                 },
                 error: function (err) {
                     console.log("Error updating data:", err);
@@ -70,7 +72,7 @@
             });
         }
     });
-    // Initialize the DataGrid with the custom store
+    // Initialize the DataGrid 
     $("#ProfileContainer").dxDataGrid({
         dataSource: customStore,
         showBorders: true,
@@ -101,25 +103,25 @@
                 dataField: "r01F04",
                 dataType: "string",
                 caption: "Password",
-                // validationRules: [
-                //     {
-                //         type: "pattern",
-                //         pattern: /^\d{6}$/,
-                //         message: "Password must be exactly 6 digits"
-                //     }
-                // ],
+                validationRules: [
+                    {
+                        type: "pattern",
+                        pattern: /^\d{6}$/,
+                        message: "Password must be exactly 6 digits"
+                    }
+                ],
             },
             {
                 dataField: "r01F05",
                 dataType: "string",
                 caption: "Phone number",
-                // validationRules: [
-                //     {
-                //         type: "pattern",
-                //         pattern: /^\d{10}$/,
-                //         message: "Phone number must be exactly 10 digits"
-                //     }
-                // ],
+                validationRules: [
+                    {
+                        type: "pattern",
+                        pattern: /^\d{10}$/,
+                        message: "Phone number must be exactly 10 digits"
+                    }
+                ],
             },
             {
                 dataField: "r01F06",
@@ -131,17 +133,17 @@
                 dataType: "string",
                 caption: "Role",
                 allowEditing: false,
-                cellTemplate: function(container , options){
+                cellTemplate: function (container, options) {
                     const roleEnum = {
                         0: "Admin",
                         1: "User"
                     };
                     const roleValue = options.value;
                     const roleText = roleEnum[roleValue] || "Unknown";
-                    console.log("role text " , roleText)
+                    console.log("role text ", roleText)
                     $("<div>")
-                    .text(roleText)
-                    .appendTo(container);
+                        .text(roleText)
+                        .appendTo(container);
                 }
             },
             {
@@ -161,17 +163,12 @@
             mode: "popup",
             allowUpdating: true,
         },
-        // onRowUpdated: function (e) {
-        //     const updatedUserProfile = e.data;
-        //     console.log("Updated user profile:", updatedUserProfile);
-
-        //     // Manually call the update method to update the data
-        //     customStore.update(updatedUserProfile.r01F01, updatedUserProfile);
-        // }
     });
-    // CustomStore for User Data (Only for getting data)
+    // CustomStore for User Data
     var userStore = new DevExpress.data.CustomStore({
         load: function (loadOptions) {
+            // log
+            console.log("load options for get user record", loadOptions)
             let token = localStorage.getItem("Token");
             return $.ajax({
                 url: "http://localhost:5021/api/CLUSR01/getAllUserResords",
@@ -180,7 +177,11 @@
                 },
                 method: "GET",
                 success: function (res) {
-                    return res.data;  // Return the fetched user data
+                    if (res.data === null) {
+                        DevExpress.ui.notify("user record not found", "warning", 2000)
+                    }
+                    console.log("user records fetch successfully", res.data)
+                    return res.data;
                 },
                 error: function (err) {
                     console.log("Error fetching user data", err);
@@ -191,8 +192,10 @@
     });
     // CustomStore for Product Data (Get, Add, Update, Delete)
     var productStore = new DevExpress.data.CustomStore({
-        // Load (Get Products)
+        // Load 
         load: function (loadOptions) {
+            // log 
+            console.log("load options fetching product", loadOptions)
             let token = localStorage.getItem("Token");
             return $.ajax({
                 url: "http://localhost:5021/api/CLPDT01/getAllProducts",
@@ -201,7 +204,11 @@
                 },
                 method: "GET",
                 success: function (res) {
-                    return res.data;  // Return the fetched product data
+                    if (res.data === null) {
+                        DevExpress.ui.notify("product not fount", "warning", 2000)
+                    }
+                    DevExpress.ui.notify("product fetch successfully", "success", 2000)
+                    return res.data;
                 },
                 error: function (err) {
                     console.log("Error fetching product data", err);
@@ -210,7 +217,7 @@
             });
         },
 
-        // Insert (Add Product)
+        // insert 
         insert: function (values) {
             let token = localStorage.getItem("Token");
             return $.ajax({
@@ -222,12 +229,8 @@
                 contentType: "application/json",
                 data: JSON.stringify(values),
                 success: function (res) {
-                    if (res.isError) {
-                        DevExpress.ui.notify("Error while adding product", "error", 3000);
-                        return false;
-                    } else {
-                        DevExpress.ui.notify("Product added successfully", "success", 3000);
-                    }
+                    console.log("add product", res.data)
+                    DevExpress.ui.notify("Product added successfully", "success", 3000);
                 },
                 error: function (err) {
                     console.log("Error adding product", err);
@@ -235,36 +238,11 @@
                 }
             });
         },
-        // Update (Edit Product)
-        // update: function(key, values) {
-        //     console.log("values",values)
-        //     let token = localStorage.getItem("Token");
-
-        //     return $.ajax({
-        //         url: `http://localhost:5021/api/CLPDT01/updateProduct`,
-        //         method: "PUT",
-        //         headers: {
-        //             "Authorization": `Bearer ${token}`
-        //         },
-        //         contentType: "application/json",
-        //         data: JSON.stringify(values),
-        //         success: function(res) {
-        //             if (res.isError) {
-        //                 DevExpress.ui.notify("Error while updating product", "error", 3000);
-        //                 return false;
-        //             } else {
-        //                 DevExpress.ui.notify("Product updated successfully", "success", 3000);
-        //             }
-        //         },
-        //         error: function(err) {
-        //             console.log("Error updating product", err);
-        //             DevExpress.ui.notify("Error updating product", "error", 3000);
-        //         }
-        //     });
-        //},
+        // update 
         update: function (key, values) {
             console.log("key", key);
             console.log("values", values);
+            // get token
             let token = localStorage.getItem("Token");
             return $.ajax({
                 url: `http://localhost:5021/api/CLPDT01/getProductById?id=${key.t01F01}`,
@@ -418,28 +396,11 @@
                         dataType: "string",
                         caption: "User Email"
                     },
-                    // {
-                    //     dataField: "r01F04",
-                    //     dataType: "string",
-                    //     caption: "User Password",
-                    //     allowHeaderFiltering:false,
-                    //     allowSearch:false,
-                    // },
-                    // {
-                    //     dataField: "r01F05",
-                    //     dataType: "string",
-                    //     caption: "Phone Number"
-                    // },
                     {
                         dataField: "r01F06",
                         dataType: "string",
                         caption: "Address"
                     },
-                    // {
-                    //     dataField: "r01F07",
-                    //     dataType: "string",
-                    //     caption: "Role"
-                    // },
                     {
                         dataField: "r01F08",
                         dataType: "date",
@@ -451,65 +412,65 @@
                         caption: "Update DateTime"
                     },
                 ],
-                masterDetail:{
-                    enabled:true,
+                masterDetail: {
+                    enabled: true,
                     //autoExpandAll:true,
-        
+
                     //Specifies a custom template for detail sections.
-                    template(container,options){
+                    template(container, options) {
                         const currentUserData = options.data;
-                        console.log("current user data" , currentUserData)
+                        console.log("current user data", currentUserData)
                         $("<div>")
-                                .addClass("master-detail-caption")
-                                .text(`${currentUserData.r01F01} ${currentUserData.r01F02} Desciption`)
-                                .appendTo(container);
+                            .addClass("master-detail-caption")
+                            .text(`${currentUserData.r01F01} ${currentUserData.r01F02} Desciption`)
+                            .appendTo(container);
                         $("<div>")
-                                .dxDataGrid({
-                                    // master details must be allow arr data
-                                    dataSource:[currentUserData],
-                                    // dataSource:[
-                                    //     {
-                                    //   }
-                                    // ],
-                                    
-                                    columnAutoWidth:true,
-                                    showBorders:true,
-                                    columns:[
-                                        {
-                                            dataField: "r01F04",
-                                                dataType: "string",
-                                                caption: "User Password",
-                                                allowHeaderFiltering:false,
-                                                allowSearch:false,
-                                        },
-                                        {
-                                            dataField: "r01F05",
-                                                dataType: "string",
-                                                caption: "Phone Number"
-                                        },
-                                        {
-                                            dataField: "r01F07",
-                                                dataType: "string",
-                                                caption: "Role",
-                                                cellTemplate: function(container , options){
-                                                    const roleEnum = {
-                                                        0: "Admin",
-                                                        1: "User"
-                                                    };
-                                                    const roleValue = options.value;
-                                                    const roleText = roleEnum[roleValue] || "Unknown";
-                                                    console.log("role text " , roleText)
-                                                    $("<div>")
-                                                    .text(roleText)
-                                                    .appendTo(container);
-                                                }
-                                        },
-        
-                                       
-                                    ],
-                                    
-                                }).appendTo(container)
-                                
+                            .dxDataGrid({
+                                // master details must be allow arr data
+                                dataSource: [currentUserData],
+                                // dataSource:[
+                                //     {
+                                //   }
+                                // ],
+
+                                columnAutoWidth: true,
+                                showBorders: true,
+                                columns: [
+                                    {
+                                        dataField: "r01F04",
+                                        dataType: "string",
+                                        caption: "User Password",
+                                        allowHeaderFiltering: false,
+                                        allowSearch: false,
+                                    },
+                                    {
+                                        dataField: "r01F05",
+                                        dataType: "string",
+                                        caption: "Phone Number"
+                                    },
+                                    {
+                                        dataField: "r01F07",
+                                        dataType: "string",
+                                        caption: "Role",
+                                        cellTemplate: function (container, options) {
+                                            const roleEnum = {
+                                                0: "Admin",
+                                                1: "User"
+                                            };
+                                            const roleValue = options.value;
+                                            const roleText = roleEnum[roleValue] || "Unknown";
+                                            console.log("role text ", roleText)
+                                            $("<div>")
+                                                .text(roleText)
+                                                .appendTo(container);
+                                        }
+                                    },
+
+
+                                ],
+
+                            }).appendTo(container)
+
                     }
                 },
                 paging: {
@@ -592,6 +553,7 @@
             });
         }
     });
+    // product button
 
     $("#ProductData").dxButton({
         text: "Product Record",
@@ -609,14 +571,47 @@
                 allowColumnResizing: true,
                 allowColumnReordering: true,
                 columns: [
-                    { dataField: "t01F01", dataType: "number", caption: "Product ID", allowEditing: false },
-                    { dataField: "t01F02", dataType: "string", caption: "Product Name" },
-                    { dataField: "t01F03", dataType: "string", caption: "Product Description" },
-                    { dataField: "t01F04", dataType: "string", caption: "Product Category" },
-                    { dataField: "t01F05", dataType: "number", caption: "Product Quantity" },
-                    { dataField: "t01F06", dataType: "number", caption: "Product Price" },
-                    { dataField: "t01F07", dataType: "date", caption: "Create DateTime" },
-                    { dataField: "t01F08", dataType: "date", caption: "Update DateTime" },
+                    {
+                        dataField: "t01F01",
+                        dataType: "number",
+                        caption: "Product ID",
+                        allowEditing: false
+                    },
+                    {
+                        dataField: "t01F02",
+                        dataType: "string",
+                        caption: "Product Name"
+                    },
+                    {
+                        dataField: "t01F03",
+                        dataType: "string",
+                        caption: "Product Description"
+                    },
+                    {
+                        dataField: "t01F04",
+                        dataType: "string",
+                        caption: "Product Category"
+                    },
+                    {
+                        dataField: "t01F05",
+                        dataType: "number",
+                        caption: "Product Quantity"
+                    },
+                    {
+                        dataField: "t01F06",
+                        dataType: "number",
+                        caption: "Product Price"
+                    },
+                    {
+                        dataField: "t01F07",
+                        dataType: "date",
+                        caption: "Create DateTime"
+                    },
+                    {
+                        dataField: "t01F08",
+                        dataType: "date",
+                        caption: "Update DateTime"
+                    },
                 ],
                 paging: {
                     pageSize: 10
@@ -631,6 +626,7 @@
                     visible: true
                 },
                 editing: {
+                    mode: "popup",
                     allowUpdating: true,
                     allowDeleting: true,
                     allowAdding: true,
@@ -639,21 +635,6 @@
                         editRow: "Update Product"
                     }
                 },
-                onRowInserted: function (e) {
-                    let newProductData = e.data;
-                    console.log("New product data is", newProductData);
-                    productStore.insert(newProductData);
-                },
-                onRowUpdated: function (e) {
-                    let updatedProductData = e.data;
-                    console.log("Updated product data is", updatedProductData);
-                    productStore.update(e.key, updatedProductData);
-                },
-                onRowRemoved: function (e) {
-                    let removedProductId = e.key;
-                    console.log("Removed product ID is", removedProductId);
-                    productStore.remove(removedProductId);
-                }
             });
         }
     });
@@ -674,14 +655,51 @@
                 allowColumnResizing: true,
                 allowColumnReordering: true,
                 columns: [
-                    { dataField: "d01F01", dataType: "number", caption: "Order ID", },
-                    { dataField: "r01F01", dataType: "number", caption: "User ID", allowEditing: false },
-                    { dataField: "t01F01", dataType: "number", caption: "Product ID", allowEditing: false },
-                    { dataField: "d01F04", dataType: "number", caption: "Product Quantity", allowEditing: false },
-                    { dataField: "d01F05", dataType: "number", caption: "Total Amount", allowEditing: false },
-                    { dataField: "d01F06", dataType: "string", caption: "Status" },
-                    { dataField: "d01F07", dataType: "datetime", caption: "Created Datetime", allowEditing: false },
-                    { dataField: "d01F08", dataType: "datetime", caption: "Updated Datetime" }
+                    {
+                        dataField: "d01F01",
+                        dataType: "number",
+                        caption: "Order ID",
+                    },
+                    {
+                        dataField: "r01F01",
+                        dataType: "number",
+                        caption: "User ID",
+                        allowEditing: false
+                    },
+                    {
+                        dataField: "t01F01",
+                        dataType: "number",
+                        caption: "Product ID",
+                        allowEditing: false
+                    },
+                    {
+                        dataField: "d01F04",
+                        dataType: "number",
+                        caption: "Product Quantity",
+                        allowEditing: false
+                    },
+                    {
+                        dataField: "d01F05",
+                        dataType: "number",
+                        caption: "Total Amount",
+                        allowEditing: false
+                    },
+                    {
+                        dataField: "d01F06",
+                        dataType: "string",
+                        caption: "Status"
+                    },
+                    {
+                        dataField: "d01F07",
+                        dataType: "datetime",
+                        caption: "Created Datetime",
+                        allowEditing: false
+                    },
+                    {
+                        dataField: "d01F08",
+                        dataType: "datetime",
+                        caption: "Updated Datetime"
+                    }
                 ],
                 paging: {
                     pageSize: 10
@@ -700,14 +718,6 @@
                     allowUpdating: true,
 
                 },
-                // onRowUpdated: function(e) {
-                //     // Getting updated data (only status in this case)
-                //     let updatedOrder = e.data;
-                //     console.log("Updated order data: ", updatedOrder);
-
-                //     // Updating the order status using the CustomStore update method
-                //     orderStore.update(e.key,values);
-                // }
             });
         }
     });
