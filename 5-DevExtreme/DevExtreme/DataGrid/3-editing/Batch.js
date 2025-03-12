@@ -91,7 +91,7 @@ $(document).ready(function(){
             visible: true,
           },
           editing:{
-            mode:"form", // cell , batch , row , form , popup
+            mode:"batch", // cell , batch , row , form , popup
             // updateting 
             allowUpdating:true,
             // icons show by vdefault falase
@@ -102,7 +102,7 @@ $(document).ready(function(){
             allowDeleting:true,
             //select all text when you click by default false
             // it is not work for form and popup
-            selectTextOnEditStart:true,
+            selectTextOnEditStart:false,
             // are you sure ? by default true
             confirmDelete:true,
             // click dbl click

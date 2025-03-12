@@ -69,7 +69,7 @@ $(document).ready(function(){
             visible: true,
           },
         editing:{
-            mode:"row", // cell , batch , row , form , popup
+            mode:"cell", // cell , batch , row , form , popup
             // updateting 
             allowUpdating:true,
             // icons show by vdefault falase

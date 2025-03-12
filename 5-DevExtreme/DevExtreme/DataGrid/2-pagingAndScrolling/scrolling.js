@@ -44,8 +44,8 @@ $(document).ready(function () {
             // show scroll bar
             useNative:false,
             preloadEnabled:true,
-            scrollByContent:false,
-            showScrollbar:"always" , // onScroll onHover always
+            scrollByContent:true,
+            showScrollbar:"onScroll" , // onScroll onHover always
             // scroll by content false you can not scroll using mous click
             scrollByThumb:false,
         },

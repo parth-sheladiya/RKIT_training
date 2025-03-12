@@ -21,7 +21,7 @@ $(document).ready(function () {
         dataSource: postData,
         showBorders: true,
         customizeColumns(columns) {
-            columns[0].width = 60;
+            columns[0].width = 600;
         },
         paging: {
             enabled:true,
@@ -34,7 +34,9 @@ $(document).ready(function () {
             displayMode:"full", // full , compact , adaptive
            // infoText:"1",
             showPageSizeSelector: true,
+            // page 1 to 5 
             showInfo: true,
+            // < > 
             showNavigationButtons: true,
         },
         columns: [
