@@ -535,6 +535,7 @@ $(document).ready(function () {
                         headerFilter: {
                             visible: true
                         },
+                        // aya thi baki
                         filterPanel: {
                             visible: true,
                             texts: {
