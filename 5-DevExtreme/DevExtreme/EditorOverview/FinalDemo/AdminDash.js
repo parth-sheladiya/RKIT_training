@@ -732,7 +732,7 @@ $(document).ready(function () {
             // 2 login.html
 
             // Clear the token from localStorage
-            localStorage.removeItem("Token");
+            //localStorage.removeItem("Token");
 
             // Redirect to login page
             window.location.href = "login.html";

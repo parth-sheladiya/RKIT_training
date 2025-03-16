@@ -191,19 +191,23 @@
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
     "ContainingType": "FinalDemo.Controllers.CLUSR01",
     "Method": "GetAllUser",
     "RelativePath": "api/CLUSR01/getAllUserResords",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalDemo.Controllers.CLUSR01",
+    "Method": "GetProfile",
+    "RelativePath": "api/CLUSR01/GetProfile",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -240,6 +244,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalDemo.Controllers.CLORD01",
+    "Method": "GetMyOrders",
+    "RelativePath": "GetMyorders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

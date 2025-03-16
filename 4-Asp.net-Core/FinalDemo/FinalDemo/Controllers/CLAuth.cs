@@ -54,7 +54,12 @@ namespace FinalDemo.Controllers
 
 
             _objResponse.IsError = false;
-            _objResponse.Data = token;
+            _objResponse.Data = new
+            {
+                Token = token,
+                Role = _objUSR01.R01F07.ToString(), 
+                
+            };
             return Ok(_objResponse);
         }
     }

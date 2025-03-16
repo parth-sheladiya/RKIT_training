@@ -126,6 +126,18 @@
         }
       }
     },
+    "/GetMyorders": {
+      "get": {
+        "tags": [
+          "CLORD01"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/CLORD01/OrderStatusChanges": {
       "put": {
         "tags": [
@@ -379,16 +391,17 @@
         "tags": [
           "CLUSR01"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "query",
-            "style": "form",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
+        "responses": {
+          "200": {
+            "description": "Success"
           }
+        }
+      }
+    },
+    "/api/CLUSR01/GetProfile": {
+      "get": {
+        "tags": [
+          "CLUSR01"
         ],
         "responses": {
           "200": {
