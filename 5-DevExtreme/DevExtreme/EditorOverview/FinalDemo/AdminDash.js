@@ -39,7 +39,6 @@ $(document).ready(function () {
             console.log("valuesm", values)
             // asp .net core by default validation on 
             // please validatation false in program.cs 
-            // new learning in this topic
             // pass data from getprofile to updateprofile
             let ExistingProfile = window.existingProfileData;
             let token = localStorage.getItem("Token");
@@ -732,7 +731,7 @@ $(document).ready(function () {
             // 2 login.html
 
             // Clear the token from localStorage
-            //localStorage.removeItem("Token");
+            localStorage.removeItem("Token");
 
             // Redirect to login page
             window.location.href = "login.html";

@@ -61,7 +61,7 @@ $(document).ready(function () {
                 error: function (err) {
              
 
-                    DevExpress.ui.notify("invalid user name and password", "error", 2000);
+                    DevExpress.ui.notify("invalid user name or password", "error", 2000);
                 }
             });
         }

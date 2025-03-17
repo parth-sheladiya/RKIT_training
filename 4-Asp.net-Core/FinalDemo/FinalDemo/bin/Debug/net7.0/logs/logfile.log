@@ -7660,3 +7660,39 @@
 2025-03-16 17:34:22.3564 Info response is 204
 2025-03-16 17:34:22.3773 Info request is GET /api/CLORD01/getAllOrders
 2025-03-16 17:34:22.4671 Info response is 200
+2025-03-16 17:44:37.1294 Info request is GET /swagger/index.html
+2025-03-16 17:44:37.4402 Info response is 200
+2025-03-16 17:44:37.9106 Info request is GET /swagger/v1/swagger.json
+2025-03-16 17:44:37.9344 Info response is 200
+2025-03-16 17:45:03.4147 Info request is OPTIONS /api/CLAuth/Login
+2025-03-16 17:45:03.4824 Info response is 204
+2025-03-16 17:45:03.4824 Info request is POST /api/CLAuth/Login
+2025-03-16 17:45:09.5754 Info response is 200
+2025-03-16 17:45:21.6232 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-16 17:45:21.6507 Info response is 204
+2025-03-16 17:45:21.6972 Info request is GET /api/CLUSR01/GetProfile
+2025-03-16 17:45:22.4464 Info response is 200
+2025-03-16 17:45:26.0323 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-16 17:45:26.1496 Info response is 200
+2025-03-16 17:45:28.5046 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-16 17:45:28.5468 Info response is 204
+2025-03-16 17:45:28.5873 Info request is GET /api/CLUSR01/GetProfile
+2025-03-16 17:45:28.6282 Info response is 200
+2025-03-16 17:45:29.6969 Info request is OPTIONS /GetMyorders
+2025-03-16 17:45:29.7117 Info response is 204
+2025-03-16 17:45:29.7277 Info request is GET /GetMyorders
+2025-03-16 17:45:29.9304 Info response is 200
+2025-03-16 17:46:05.3829 Info request is OPTIONS /api/CLAuth/Login
+2025-03-16 17:46:05.4052 Info response is 204
+2025-03-16 17:46:05.4052 Info request is POST /api/CLAuth/Login
+2025-03-16 17:46:05.4599 Info response is 200
+2025-03-16 17:46:06.9807 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-16 17:46:07.0216 Info response is 204
+2025-03-16 17:46:07.0309 Info request is GET /api/CLUSR01/GetProfile
+2025-03-16 17:46:07.0309 Info response is 200
+2025-03-16 17:46:10.6659 Info request is OPTIONS /GetMyorders
+2025-03-16 17:46:10.6659 Info response is 204
+2025-03-16 17:46:10.6659 Info request is GET /GetMyorders
+2025-03-16 17:46:10.6726 Info response is 200
+2025-03-16 17:46:14.4619 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-16 17:46:14.4676 Info response is 200

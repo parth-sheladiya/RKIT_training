@@ -600,7 +600,7 @@ $(document).ready(function () {
         icon: "remove",
         onClick: function () {
             // Clear the token from localStorage and redirect to login page
-            //localStorage.removeItem("Token");
+            localStorage.removeItem("Token");
             window.location.href = "login.html";
         }
     });
