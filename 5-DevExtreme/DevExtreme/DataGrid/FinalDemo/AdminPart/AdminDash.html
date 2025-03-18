@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!-- Jquery -->
+    <script type="text/javascript" src="../../Scripts/jquery-3.5.1.min.js"></script>
+
+    <!-- DevExtreme theme -->
+    <link rel="stylesheet" href="../../Content/dx.dark.css">
+
+
+    <!-- DevExtreme library -->
+    <script type="text/javascript" src="../../Scripts/dx.all.js"></script>
+    <style>
+        /* Custom styles for better UI */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .dx-viewport {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .dx-data-grid-container {
+            width: 100%;
+            margin-top: 20px;
+        }
+        .tab-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body class="dx-viewport">
+
+
+    
+    
+    
+
+    <!-- btnm -->
+    <div class="button-container">
+    <div id="UserData"></div>
+    <div id="ProductData"></div>
+    <div id="OrdersData"></div>
+    <div id="Logout"></div>
+    </div>
+    
+    <div id="AdminProfile"></div>
+    <div id="ProfileContainer"></div>
+
+
+    <div id="UserContainer" class="dx-data-grid-container"></div>
+    <div id="OrdersContainer" class="dx-data-grid-container"></div>
+    <div id="ProductContainer" class="dx-data-grid-container"></div>
+
+    <script>
+        // Check if the user is logged in
+        if (!localStorage.getItem("Token")) {
+          
+            window.location.href = "../Auth/Register/index.html";  
+        }
+    </script>
+
+    <script type="module" src="AdminDash.js"></script>
+</body>
+</html>
