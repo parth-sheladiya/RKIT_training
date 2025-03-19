@@ -2,11 +2,31 @@
 // admin can handle user data 
 // admin handle product data 
 // admin can handle order data 
-import { DisplayNotifyMessage} from "../services/utils.js"
+import { DisplayNotifyMessage } from "../services/utils.js";
+import {createDxButton} from "../services/button.js"
+//import {createCustomStore} from "../services/store.js"
 $(document).ready(function () {
     console.log("admin dashboard is ready");
 
-    // cvustom store for profile 
+
+    // const profileStore = createCustomStore({
+    
+    //     key: "r01F01",
+    //     loadUrl: "http://localhost:5021/api/CLUSR01/GetProfile",
+    //     insertUrl: null,
+    //     updateUrl: "http://localhost:5021/api/CLUSR01/updateUser",
+    //     deleteUrl: null,
+    //     getByIdUrl: "http://localhost:5021/api/CLUSR01/GetProfile"
+    // })
+
+    // const userStore = createCustomStore({
+    //    // key: "userId",
+    //     loadUrl: "http://localhost:5021/api/CLUSR01/getAllUserResords",
+    //     insertUrl: null,
+    //     updateUrl: null,
+    //     deleteUrl: null
+    // });
+    // // cvustom store for profile 
     var customStore = new DevExpress.data.CustomStore({
         key: "r01F01",
 
@@ -73,98 +93,6 @@ $(document).ready(function () {
                 }
             });
         }
-    });
-    // Initialize the DataGrid 
-    $("#ProfileContainer").dxDataGrid({
-        dataSource: customStore,
-        showBorders: true,
-        wordWrapEnabled: true,
-        showColumnLines: true,
-        showRowLines: true,
-        rowAlternationEnabled: true,
-        allowColumnResizing: true,
-        allowColumnReordering: true,
-        columns: [
-            {
-                dataField: "r01F01",
-                dataType: "number",
-                caption: "User ID",
-                allowEditing: false
-            },
-            {
-                dataField: "r01F02",
-                dataType: "string",
-                caption: "User Name",
-            },
-            {
-                dataField: "r01F03",
-                dataType: "string",
-                caption: "User Email",
-            },
-            {
-                dataField: "r01F04",
-                dataType: "string",
-                caption: "Password",
-                validationRules: [
-                    {
-                        type: "pattern",
-                        pattern: /^\d{6}$/,
-                        message: "Password must be exactly 6 digits"
-                    }
-                ],
-            },
-            {
-                dataField: "r01F05",
-                dataType: "string",
-                caption: "Phone number",
-                validationRules: [
-                    {
-                        type: "pattern",
-                        pattern: /^\d{10}$/,
-                        message: "Phone number must be exactly 10 digits"
-                    }
-                ],
-            },
-            {
-                dataField: "r01F06",
-                dataType: "string",
-                caption: "Address",
-            },
-            {
-                dataField: "r01F07",
-                dataType: "string",
-                caption: "Role",
-                allowEditing: false,
-                cellTemplate: function (container, options) {
-                    const roleEnum = {
-                        0: "Admin",
-                        1: "User"
-                    };
-                    const roleValue = options.value;
-                    const roleText = roleEnum[roleValue] || "Unknown";
-                    console.log("role text ", roleText)
-                    $("<div>")
-                        .text(roleText)
-                        .appendTo(container);
-                }
-            },
-            {
-                dataField: "r01F08",
-                dataType: "datetime",
-                caption: "Created Time",
-                allowEditing: false
-            },
-            {
-                dataField: "r01F09",
-                dataType: "datetime",
-                caption: "Updated Time",
-                allowEditing: false
-            },
-        ],
-        editing: {
-            mode: "popup",
-            allowUpdating: true,
-        },
     });
     // CustomStore for User Data
     var userStore = new DevExpress.data.CustomStore({
@@ -314,7 +242,6 @@ $(document).ready(function () {
             });
         }
     });
-
     // CustomStore for Orders (Get Orders)
     var orderStore = new DevExpress.data.CustomStore({
         // Load (Get Orders)
@@ -364,381 +291,441 @@ $(document).ready(function () {
         }
     });
 
-    // User Data Button and Grid
-    $("#UserData").dxButton({
-        text: "User Record",
-        type: "default",
-        onClick: function () {
-            DisplayNotifyMessage("Fetching User Data", "info", 3000);
-
-            $("#UserContainer").dxDataGrid({
-                dataSource: userStore,
-                showBorders: true,
-                wordWrapEnabled: true,
-                showColumnLines: true,
-                showRowLines: true,
-                rowAlternationEnabled: true,
-                allowColumnResizing: true,
-                allowColumnReordering: true,
-                columns: [
-                    {
-                        dataField: "r01F01",
-                        dataType: "string",
-                        caption: "User ID",
-                        allowHeaderFiltering: false,
-                        allowSearch: false,
-                    },
-                    {
-                        dataField: "r01F02",
-                        dataType: "string",
-                        caption: "User Name"
-                    },
-                    {
-                        dataField: "r01F03",
-                        dataType: "string",
-                        caption: "User Email"
-                    },
-                    {
-                        dataField: "r01F06",
-                        dataType: "string",
-                        caption: "Address"
-                    },
-                    {
-                        dataField: "r01F08",
-                        dataType: "date",
-                        caption: "Create DateTime"
-                    },
-                    {
-                        dataField: "r01F09",
-                        dataType: "date",
-                        caption: "Update DateTime"
-                    },
-                ],
-                masterDetail: {
-                    enabled: true,
-                    //autoExpandAll:true,
-
-                    //Specifies a custom template for detail sections.
-                    template(container, options) {
-                        const currentUserData = options.data;
-                        console.log("current user data", currentUserData)
-                        $("<div>")
-                            .addClass("master-detail-caption")
-                            .text(`${currentUserData.r01F01} ${currentUserData.r01F02} Desciption`)
-                            .appendTo(container);
-                        $("<div>")
-                            .dxDataGrid({
-                                // master details must be allow arr data
-                                dataSource: [currentUserData],
-                                // dataSource:[
-                                //     {
-                                //   }
-                                // ],
-
-                                columnAutoWidth: true,
-                                showBorders: true,
-                                columns: [
-                                    {
-                                        dataField: "r01F04",
-                                        dataType: "string",
-                                        caption: "User Password",
-                                        allowHeaderFiltering: false,
-                                        allowSearch: false,
-                                    },
-                                    {
-                                        dataField: "r01F05",
-                                        dataType: "string",
-                                        caption: "Phone Number"
-                                    },
-                                    {
-                                        dataField: "r01F07",
-                                        dataType: "string",
-                                        caption: "Role",
-                                        cellTemplate: function (container, options) {
-                                            const roleEnum = {
-                                                0: "Admin",
-                                                1: "User"
-                                            };
-                                            const roleValue = options.value;
-                                            const roleText = roleEnum[roleValue] || "Unknown";
-                                            console.log("role text ", roleText)
-                                            $("<div>")
-                                                .text(roleText)
-                                                .appendTo(container);
-                                        }
-                                    },
-
-
-                                ],
-
-                            }).appendTo(container)
-
-                    }
-                },
-                paging: {
-                    pageSize: 10
-                },
-                sorting: {
-                    mode: "multiple"
-                },
-                filterRow: {
-                    visible: true
-                },
-                searchPanel: {
-                    visible: true
-                },
-                grouping: {
-                    // expand data
-                    autoExpandAll: true,
-                    // user can not expand data only show category
-                    allowCollapsing: true,
-                    expandMode: "rowClick", //  buttonclick rowclick
-                    // user can right click then show group by this column
-                    contextMenuEnabled: true,
-                    texts: {
-                        ungroup: "ungroup please",
-                        ungroupAll: "please ungroup all"
-                    },
-                },
-                groupPanel: {
-                    // show on ui
-                    visible: true,
-                    allowColumnDragging: true,
-                    emptyPanelText: "Drag a column header here to group by that column"
-                },
-                headerFilter: {
-                    visible: true
-                },
-                filterPanel: {
-                    visible: true,
-                    texts: {
-                        createFilter: "please create filter",
-                        clearFilter: "please remove filter"
-                    },
-                    filterEnabled: true // default true
-                },
-                filterRow: {
-                    // show on ui with search iconm
-                    visible: true,
-                    applyFilter: "onClick",    // auto   onclick
-                    // green color btn
-                    applyFilterText: "apply filter show on ui ",
-                    // if user click search icon in column then click between then show text
-                    betweenEndText: "ends enter",
-                    betweenStartText: "starts enter",
-                    // operationDescriptions it is for user special
-                    showOperationChooser: true, // default true       
-                },
-                sorting: {
-                    mode: "single",  // 'multiple' | 'none' | 'single'
-                    showSortIndexes: true,
-                },
-                selection: {
-                    mode: 'multiple', // single , multiple , none
-                    allowSelectAll: true, // default
-                    showCheckBoxesMode: "onLongTap", // onclick , onlongtap,always,none
-                    selectAllMode: "page" //allPages , page
-                },
-                columnChooser: {
-                    enabled: true,
-                    allowSearch: true,
-                    emptyPanelText: "drag karo column",
-                    height: 260,
-                    mode: "dragAndDrop", // dragAndDrop and select 
-                    // seaqrch time out
-                    searchTimeout: 500,
-                    // title 
-                    title: "column chooser",
-                    width: 600,
-                },
-
-            });
-        }
-    });
-    // product button
-
-    $("#ProductData").dxButton({
-        text: "Product Record",
-        type: "default",
-        onClick: function () {
-            DevExpress.ui.notify("Fetching Product Data", "info", 3000);
-
-            $("#ProductContainer").dxDataGrid({
-                dataSource: productStore,
-                showBorders: true,
-                wordWrapEnabled: true,
-                showColumnLines: true,
-                showRowLines: true,
-                rowAlternationEnabled: true,
-                allowColumnResizing: true,
-                allowColumnReordering: true,
-                columns: [
-                    {
-                        dataField: "t01F01",
-                        dataType: "number",
-                        caption: "Product ID",
-                        allowEditing: false
-                    },
-                    {
-                        dataField: "t01F02",
-                        dataType: "string",
-                        caption: "Product Name"
-                    },
-                    {
-                        dataField: "t01F03",
-                        dataType: "string",
-                        caption: "Product Description"
-                    },
-                    {
-                        dataField: "t01F04",
-                        dataType: "string",
-                        caption: "Product Category"
-                    },
-                    {
-                        dataField: "t01F05",
-                        dataType: "number",
-                        caption: "Product Quantity"
-                    },
-                    {
-                        dataField: "t01F06",
-                        dataType: "number",
-                        caption: "Product Price"
-                    },
-                    {
-                        dataField: "t01F07",
-                        dataType: "date",
-                        caption: "Create DateTime"
-                    },
-                    {
-                        dataField: "t01F08",
-                        dataType: "date",
-                        caption: "Update DateTime"
-                    },
-                ],
-                paging: {
-                    pageSize: 10
-                },
-                sorting: {
-                    mode: "multiple"
-                },
-                filterRow: {
-                    visible: true
-                },
-                searchPanel: {
-                    visible: true
-                },
-                editing: {
-                    mode: "popup",
-                    allowUpdating: true,
-                    allowDeleting: true,
-                    allowAdding: true,
-                    texts: {
-                        addRow: "Add Product",
-                        editRow: "Update Product"
-                    }
-                },
-            });
-        }
-    });
-
-    $("#OrdersData").dxButton({
-        text: "Orders Record",
-        type: "default",
-        onClick: function () {
-            DisplayNotifyMessage("Fetching Order Data", "info", 3000);
-
-            $("#OrdersContainer").dxDataGrid({
-                dataSource: orderStore,
-                showBorders: true,
-                wordWrapEnabled: true,
-                showColumnLines: true,
-                showRowLines: true,
-                rowAlternationEnabled: true,
-                allowColumnResizing: true,
-                allowColumnReordering: true,
-                columns: [
-                    {
-                        dataField: "d01F01",
-                        dataType: "number",
-                        caption: "Order ID",
-                    },
-                    {
-                        dataField: "r01F01",
-                        dataType: "number",
-                        caption: "User ID",
-                        allowEditing: false
-                    },
-                    {
-                        dataField: "t01F01",
-                        dataType: "number",
-                        caption: "Product ID",
-                        allowEditing: false
-                    },
-                    {
-                        dataField: "d01F04",
-                        dataType: "number",
-                        caption: "Product Quantity",
-                        allowEditing: false
-                    },
-                    {
-                        dataField: "d01F05",
-                        dataType: "number",
-                        caption: "Total Amount",
-                        allowEditing: false
-                    },
-                    {
-                        dataField: "d01F06",
-                        dataType: "string",
-                        caption: "Status"
-                    },
-                    {
-                        dataField: "d01F07",
-                        dataType: "datetime",
-                        caption: "Created Datetime",
-                        allowEditing: false
-                    },
-                    {
-                        dataField: "d01F08",
-                        dataType: "datetime",
-                        caption: "Updated Datetime"
-                    }
-                ],
-                paging: {
-                    pageSize: 10
-                },
-                sorting: {
-                    mode: "multiple"
-                },
-                filterRow: {
-                    visible: true
-                },
-                searchPanel: {
-                    visible: true
-                },
-                editing: {
-
-                    allowUpdating: true,
-
-                },
-            });
-        }
-    });
-
-    $("#Logout").dxButton({
-        text: "Logout",
-        type: "danger",
-        icon: "remove",
-        onClick: function () {
-            // two proccess
-            // 1 clear token
-            // 2 login.html
-
-            // Clear the token from localStorage
-            localStorage.removeItem("Token");
-
-            // Redirect to login page
-             window.location.href = "../Auth/Register/index.html";
-            // window.open("/Auth/Login/login.html")
-        }
+    createDxButton("#AdminProfile","Admin Profile","default","" , ()=>{
+        // Initialize the DataGrid 
+   $("#ProfileContainer").dxDataGrid({
+       dataSource: customStore,
+       showBorders: true,
+       wordWrapEnabled: true,
+       showColumnLines: true,
+       showRowLines: true,
+       rowAlternationEnabled: true,
+       allowColumnResizing: true,
+       allowColumnReordering: true,
+       columns: [
+           {
+               dataField: "r01F01",
+               dataType: "number",
+               caption: "User ID",
+               allowEditing: false
+           },
+           {
+               dataField: "r01F02",
+               dataType: "string",
+               caption: "User Name",
+           },
+           {
+               dataField: "r01F03",
+               dataType: "string",
+               caption: "User Email",
+           },
+           {
+               dataField: "r01F04",
+               dataType: "string",
+               caption: "Password",
+               validationRules: [
+                   {
+                       type: "pattern",
+                       pattern: /^\d{6}$/,
+                       message: "Password must be exactly 6 digits"
+                   }
+               ],
+           },
+           {
+               dataField: "r01F05",
+               dataType: "string",
+               caption: "Phone number",
+               validationRules: [
+                   {
+                       type: "pattern",
+                       pattern: /^\d{10}$/,
+                       message: "Phone number must be exactly 10 digits"
+                   }
+               ],
+           },
+           {
+               dataField: "r01F06",
+               dataType: "string",
+               caption: "Address",
+           },
+           {
+               dataField: "r01F07",
+               dataType: "string",
+               caption: "Role",
+               allowEditing: false,
+               cellTemplate: function (container, options) {
+                   const roleEnum = {
+                       0: "Admin",
+                       1: "User"
+                   };
+                   const roleValue = options.value;
+                   const roleText = roleEnum[roleValue] || "Unknown";
+                   console.log("role text ", roleText)
+                   $("<div>")
+                       .text(roleText)
+                       .appendTo(container);
+               }
+           },
+           {
+               dataField: "r01F08",
+               dataType: "datetime",
+               caption: "Created Time",
+               allowEditing: false
+           },
+           {
+               dataField: "r01F09",
+               dataType: "datetime",
+               caption: "Updated Time",
+               allowEditing: false
+           },
+       ],
+       editing: {
+           mode: "popup",
+           allowUpdating: true,
+       },
+   });
     })
+    // User Data Button and Grid
+    createDxButton("#UserData","User Data", "default", "" ,()=>{
+        $("#UserContainer").dxDataGrid({
+            dataSource: userStore,
+            showBorders: true,
+            wordWrapEnabled: true,
+            showColumnLines: true,
+            showRowLines: true,
+            rowAlternationEnabled: true,
+            allowColumnResizing: true,
+            allowColumnReordering: true,
+            columns: [
+                {
+                    dataField: "r01F01",
+                    dataType: "string",
+                    caption: "User ID",
+                    allowHeaderFiltering: false,
+                    allowSearch: false,
+                },
+                {
+                    dataField: "r01F02",
+                    dataType: "string",
+                    caption: "User Name"
+                },
+                {
+                    dataField: "r01F03",
+                    dataType: "string",
+                    caption: "User Email"
+                },
+                {
+                    dataField: "r01F06",
+                    dataType: "string",
+                    caption: "Address"
+                },
+                {
+                    dataField: "r01F08",
+                    dataType: "date",
+                    caption: "Create DateTime"
+                },
+                {
+                    dataField: "r01F09",
+                    dataType: "date",
+                    caption: "Update DateTime"
+                },
+            ],
+            masterDetail: {
+                enabled: true,
+                //autoExpandAll:true,
+
+                //Specifies a custom template for detail sections.
+                template(container, options) {
+                    const currentUserData = options.data;
+                    console.log("current user data", currentUserData)
+                    $("<div>")
+                        .addClass("master-detail-caption")
+                        .text(`${currentUserData.r01F01} ${currentUserData.r01F02} Desciption`)
+                        .appendTo(container);
+                    $("<div>")
+                        .dxDataGrid({
+                            // master details must be allow arr data
+                            dataSource: [currentUserData],
+                            // dataSource:[
+                            //     {
+                            //   }
+                            // ],
+
+                            columnAutoWidth: true,
+                            showBorders: true,
+                            columns: [
+                                {
+                                    dataField: "r01F04",
+                                    dataType: "string",
+                                    caption: "User Password",
+                                    allowHeaderFiltering: false,
+                                    allowSearch: false,
+                                },
+                                {
+                                    dataField: "r01F05",
+                                    dataType: "string",
+                                    caption: "Phone Number"
+                                },
+                                {
+                                    dataField: "r01F07",
+                                    dataType: "string",
+                                    caption: "Role",
+                                    cellTemplate: function (container, options) {
+                                        const roleEnum = {
+                                            0: "Admin",
+                                            1: "User"
+                                        };
+                                        const roleValue = options.value;
+                                        const roleText = roleEnum[roleValue] || "Unknown";
+                                        console.log("role text ", roleText)
+                                        $("<div>")
+                                            .text(roleText)
+                                            .appendTo(container);
+                                    }
+                                },
+
+
+                            ],
+
+                        }).appendTo(container)
+
+                }
+            },
+            paging: {
+                pageSize: 10
+            },
+            sorting: {
+                mode: "multiple"
+            },
+            filterRow: {
+                visible: true
+            },
+            searchPanel: {
+                visible: true
+            },
+            grouping: {
+                // expand data
+                autoExpandAll: true,
+                // user can not expand data only show category
+                allowCollapsing: true,
+                expandMode: "rowClick", //  buttonclick rowclick
+                // user can right click then show group by this column
+                contextMenuEnabled: true,
+                texts: {
+                    ungroup: "ungroup please",
+                    ungroupAll: "please ungroup all"
+                },
+            },
+            groupPanel: {
+                // show on ui
+                visible: true,
+                allowColumnDragging: true,
+                emptyPanelText: "Drag a column header here to group by that column"
+            },
+            headerFilter: {
+                visible: true
+            },
+            filterPanel: {
+                visible: true,
+                texts: {
+                    createFilter: "please create filter",
+                    clearFilter: "please remove filter"
+                },
+                filterEnabled: true // default true
+            },
+            filterRow: {
+                // show on ui with search iconm
+                visible: true,
+                applyFilter: "onClick",    // auto   onclick
+                // green color btn
+                applyFilterText: "apply filter show on ui ",
+                // if user click search icon in column then click between then show text
+                betweenEndText: "ends enter",
+                betweenStartText: "starts enter",
+                // operationDescriptions it is for user special
+                showOperationChooser: true, // default true       
+            },
+            sorting: {
+                mode: "single",  // 'multiple' | 'none' | 'single'
+                showSortIndexes: true,
+            },
+            selection: {
+                mode: 'multiple', // single , multiple , none
+                allowSelectAll: true, // default
+                showCheckBoxesMode: "onLongTap", // onclick , onlongtap,always,none
+                selectAllMode: "page" //allPages , page
+            },
+            columnChooser: {
+                enabled: true,
+                allowSearch: true,
+                emptyPanelText: "drag karo column",
+                height: 260,
+                mode: "dragAndDrop", // dragAndDrop and select 
+                // seaqrch time out
+                searchTimeout: 500,
+                // title 
+                title: "column chooser",
+                width: 600,
+            },
+
+        });
+    })
+    // product button
+    createDxButton ("#ProductData","Product Record","default","",()=>{
+        $("#ProductContainer").dxDataGrid({
+            dataSource: productStore,
+            showBorders: true,
+            wordWrapEnabled: true,
+            showColumnLines: true,
+            showRowLines: true,
+            rowAlternationEnabled: true,
+            allowColumnResizing: true,
+            allowColumnReordering: true,
+            columns: [
+                {
+                    dataField: "t01F01",
+                    dataType: "number",
+                    caption: "Product ID",
+                    allowEditing: false
+                },
+                {
+                    dataField: "t01F02",
+                    dataType: "string",
+                    caption: "Product Name"
+                },
+                {
+                    dataField: "t01F03",
+                    dataType: "string",
+                    caption: "Product Description"
+                },
+                {
+                    dataField: "t01F04",
+                    dataType: "string",
+                    caption: "Product Category"
+                },
+                {
+                    dataField: "t01F05",
+                    dataType: "number",
+                    caption: "Product Quantity"
+                },
+                {
+                    dataField: "t01F06",
+                    dataType: "number",
+                    caption: "Product Price"
+                },
+                {
+                    dataField: "t01F07",
+                    dataType: "date",
+                    caption: "Create DateTime"
+                },
+                {
+                    dataField: "t01F08",
+                    dataType: "date",
+                    caption: "Update DateTime"
+                },
+            ],
+            paging: {
+                pageSize: 10
+            },
+            sorting: {
+                mode: "multiple"
+            },
+            filterRow: {
+                visible: true
+            },
+            searchPanel: {
+                visible: true
+            },
+            editing: {
+                mode: "popup",
+                allowUpdating: true,
+                allowDeleting: true,
+                allowAdding: true,
+                texts: {
+                    addRow: "Add Product",
+                    editRow: "Update Product"
+                }
+            },
+        });
+    })  
+    createDxButton("#OrdersData","Orders Record","default","",()=>{
+        $("#OrdersContainer").dxDataGrid({
+            dataSource: orderStore,
+            showBorders: true,
+            wordWrapEnabled: true,
+            showColumnLines: true,
+            showRowLines: true,
+            rowAlternationEnabled: true,
+            allowColumnResizing: true,
+            allowColumnReordering: true,
+            columns: [
+                {
+                    dataField: "d01F01",
+                    dataType: "number",
+                    caption: "Order ID",
+                },
+                {
+                    dataField: "r01F01",
+                    dataType: "number",
+                    caption: "User ID",
+                    allowEditing: false
+                },
+                {
+                    dataField: "t01F01",
+                    dataType: "number",
+                    caption: "Product ID",
+                    allowEditing: false
+                },
+                {
+                    dataField: "d01F04",
+                    dataType: "number",
+                    caption: "Product Quantity",
+                    allowEditing: false
+                },
+                {
+                    dataField: "d01F05",
+                    dataType: "number",
+                    caption: "Total Amount",
+                    allowEditing: false
+                },
+                {
+                    dataField: "d01F06",
+                    dataType: "string",
+                    caption: "Status"
+                },
+                {
+                    dataField: "d01F07",
+                    dataType: "datetime",
+                    caption: "Created Datetime",
+                    allowEditing: false
+                },
+                {
+                    dataField: "d01F08",
+                    dataType: "datetime",
+                    caption: "Updated Datetime"
+                }
+            ],
+            paging: {
+                pageSize: 10
+            },
+            sorting: {
+                mode: "multiple"
+            },
+            filterRow: {
+                visible: true
+            },
+            searchPanel: {
+                visible: true
+            },
+            editing: {
+
+                allowUpdating: true,
+
+            },
+        });
+    })
+    createDxButton("#Logout", "Logout", "danger", "remove", () => {
+        localStorage.removeItem("Token");
+        window.location.href = "../Auth/Login/login.html";
+    });
 });

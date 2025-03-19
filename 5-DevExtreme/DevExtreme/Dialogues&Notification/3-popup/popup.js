@@ -12,7 +12,42 @@ $(document).ready(function(){
                         .text("View Details")
                         .on("click", function() {
                             var product = options.data;
-                            showPopup(product);  
+                             window.content = `
+                                    <div>                
+                                        <h1>${product.productCategory}</h1>
+                                        <p><strong>Company:</strong> ${product.productCompany}</p>
+                                        <p><strong>Price:</strong> ${product.productPrice}</p>
+                                        <p><strong>Ratng:</strong> ${product.productRating}</p>
+                                        <p><strong>Stock </strong> ${product.productStock}</p>
+                                        <p><strong>Company:</strong> ${product.productCompany}</p>
+                                        <p><strong>Price:</strong> ${product.productPrice}</p>
+                                        <p><strong>Ratng:</strong> ${product.productRating}</p>
+                                        <p><strong>Stock </strong> ${product.productStock}</p>
+                                        <p><strong>Company:</strong> ${product.productCompany}</p>
+                                        <p><strong>Price:</strong> ${product.productPrice}</p>
+                                        <p><strong>Ratng:</strong> ${product.productRating}</p>
+                                        <p><strong>Stock </strong> ${product.productStock}</p>
+                                        <p><strong>Company:</strong> ${product.productCompany}</p>
+                                        <p><strong>Price:</strong> ${product.productPrice}</p>
+                                        <p><strong>Ratng:</strong> ${product.productRating}</p>
+                                        <p><strong>Stock </strong> ${product.productStock}</p>
+                                        <p><strong>Company:</strong> ${product.productCompany}</p>
+                                        <p><strong>Price:</strong> ${product.productPrice}</p>
+                                        <p><strong>Ratng:</strong> ${product.productRating}</p>
+                                        <p><strong>Stock </strong> ${product.productStock}</p>
+                                        <p><strong>Company:</strong> ${product.productCompany}</p>
+                                        <p><strong>Price:</strong> ${product.productPrice}</p>
+                                        <p><strong>Ratng:</strong> ${product.productRating}</p>
+                                        <p><strong>Stock </strong> ${product.productStock}</p>
+                                        <p><strong>Company:</strong> ${product.productCompany}</p>
+                                        <p><strong>Price:</strong> ${product.productPrice}</p>
+                                        <p><strong>Ratng:</strong> ${product.productRating}</p>
+                                        <p><strong>Stock </strong> ${product.productStock}</p>
+                                    </div>
+                                `;
+                            
+                                dxPopUpInstance.show();
+                               
                         })
                         .appendTo(container);
                 }
@@ -21,7 +56,7 @@ $(document).ready(function(){
     });
 
     // Initialize Popup (Initially Hidden)
-    $("#PopContainer").dxPopup({
+   let dxPopUpInstance =  $("#PopContainer").dxPopup({
         closeOnOutsideClick:true,
         visible: false,
         disabled:false,
@@ -29,18 +64,43 @@ $(document).ready(function(){
         fullScreen:false,
         hint:"SHOW PRODUCT DETAIILS",
         showCloseButton:false,
-       // showTitle:false,
-        width: 400,
-        height: 300,
+        //showTitle:true,
+         width: 400,
+         height: 500,
        
-        title: "Product Details",
-        contentTemplate: function(contentElement) {
-            contentElement.append('<div id="popupContent"></div>');
+        //title: "Product Details",
+        titleTemplate: (e)=>{
+            return $(`<div>`).html(`<img  src="download.jpg" height="200px" >`)
         },
-        container: "#PopContainer",
+        
+        
+        contentTemplate: function () {
+            
+            // Create a div container for the ScrollView
+            let scrollView = $("<div/>");
+
+            // Append the content inside the ScrollView
+            scrollView.append($("<div/>").html(window.content));
+
+            // Initialize the ScrollView inside the div
+            scrollView.dxScrollView({
+
+                // ScrollView width (can be %, px, etc.)
+                width: "100%",  
+
+                // ScrollView height
+                height: "100%"  
+
+            });
+
+            return scrollView; // Return the ScrollView container
+        },
+        container: ".dx-viewport",
         toolbarItems:[
             {
-                location:"before",
+                locateInMenu: 'always',
+                location:"after",
+                toolbar:"bottom",
                 widget:"dxButton",
                 options:{
                     text:"close",
@@ -54,6 +114,7 @@ $(document).ready(function(){
             {
                 location:"after",
                 widget:"dxButton",
+                toolbar:"bottom",
                 options:{
                     text:"order",
                     onClick:function(){
@@ -64,6 +125,7 @@ $(document).ready(function(){
             {
                 location:"center",
                 widget:"dxButton",
+                toolbar:"bottom",
                 options:{
                     text:"cancel Order",
                     onClick:function(){
@@ -71,28 +133,12 @@ $(document).ready(function(){
                     }
                 }
             }
-        ] 
-    });
-
-    // Function to show popup with product details
-    function showPopup(product) {
-        var popup = $("#PopContainer").dxPopup("instance");
-        var content = `
-            <div>                
-                <h1>${product.productCategory}</h1>
-                <p><strong>Company:</strong> ${product.productCompany}</p>
-                <p><strong>Price:</strong> ${product.productPrice}</p>
-                <p><strong>Ratng:</strong> ${product.productRating}</p>
-                <p><strong>Stock </strong> ${product.productStock}</p>
-
-
-            </div>
-        `;
-        var contentRender = function(contentElement) {
-            contentElement.html(content);
-        };
-        contentRender($("#popupContent"));
+        ] ,
+       
+    }).dxPopup("instance");
         
-        popup.show();  
-    }
+
+      
+         
+
 })

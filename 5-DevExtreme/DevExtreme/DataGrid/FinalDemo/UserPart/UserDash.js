@@ -148,102 +148,144 @@ $(document).ready(function () {
     });
 
     // Button to create order
-    $("#CreateOrder").dxButton({
-        text: "Order",
-        type: "default",
-        onClick: function () {
-            DevExpress.ui.notify("Creating order", "info", 3000);
+    // $("#CreateOrder").dxButton({
+    //     text: "Order",
+    //     type: "default",
+    //     onClick: function () {
+    //         DevExpress.ui.notify("Creating order", "info", 3000);
 
 
-            //  initialize the dxDataGrid
-            $("#CreateOrderContainer").dxDataGrid({
-                dataSource: createOrderStore,
-                showBorders: true,
-                wordWrapEnabled: true,
-                showColumnLines: true,
-                showRowLines: true,
-                rowAlternationEnabled: true,
-                allowColumnResizing: true,
-                allowColumnReordering: true,
-                onCellPrepared(options) {
-                    if (options.column.dataField === "d01F06") {
-                        if (options.value == "pending") {
-                            $(options.cellElement).css("color", "orange");
-                        }
-                        else if (options.value == "success") {
-                            $(options.cellElement).css("color", "green");
-                        }
-                        else if (options.value == "cancelled") {
-                            $(options.cellElement).css("color", "red");
-                        }
+    //         //  initialize the dxDataGrid
+    //         $("#CreateOrderContainer").dxDataGrid({
+    //             dataSource: createOrderStore,
+    //             showBorders: true,
+    //             wordWrapEnabled: true,
+    //             showColumnLines: true,
+    //             showRowLines: true,
+    //             rowAlternationEnabled: true,
+    //             allowColumnResizing: true,
+    //             allowColumnReordering: true,
+    //             onCellPrepared(options) {
+    //                 if (options.column.dataField === "d01F06") {
+    //                     if (options.value == "pending") {
+    //                         $(options.cellElement).css("color", "orange");
+    //                     }
+    //                     else if (options.value == "success") {
+    //                         $(options.cellElement).css("color", "green");
+    //                     }
+    //                     else if (options.value == "cancelled") {
+    //                         $(options.cellElement).css("color", "red");
+    //                     }
+    //                 }
+    //             },
+
+    //             columns: [
+    //                 {
+    //                     dataField: "d01F01",
+    //                     dataType: "number",
+    //                     caption: "Order ID",
+    //                     allowEditing: false
+
+    //                 },
+    //                 {
+    //                     dataField: "r01F01",
+    //                     dataType: "number",
+    //                     caption: "User ID",
+    //                     // allowEditing:false
+
+    //                 },
+    //                 {
+    //                     dataField: "t01F01",
+    //                     dataType: "number",
+    //                     caption: "Product ID",
+    //                     // allowEditing:false
+
+    //                 },
+    //                 {
+    //                     dataField: "d01F04",
+    //                     dataType: "number",
+    //                     caption: "Product Quantity",
+
+    //                 },
+    //                 {
+    //                     dataField: "d01F05",
+    //                     dataType: "number",
+    //                     caption: "Total Amount",
+    //                     allowEditing: false
+    //                 },
+    //                 {
+    //                     dataField: "d01F06",
+    //                     dataType: "string",
+    //                     caption: "Order Status",
+    //                     allowEditing: false
+    //                 },
+    //             ],
+
+    //             editing: {
+    //                 mode: "popup",
+    //                 allowAdding: true,
+    //                 allowUpdating: false,
+    //                 texts: {
+    //                     addRow: "Create Order",
+    //                 }
+    //             },
+    //             // onCellPrepared: function(e) {
+    //             //     console.log("cell prepare" , e)
+    //             //     if (e.rowType === "data" && e.column.dataField === "d01F06") {
+    //             //         // Check if the status is "cancel" or "success"
+    //             //         if (e.data.d01F06 === "cancel" || e.data.d01F06 === "success") {
+    //             //             e.cellElement.attr("disabled", "disabled"); 
+    //             //         }
+    //             //     }
+    //             // }
+    //         });
+    //     }
+    // });
+    createDxButton("#CreateOrder", "Order", "default", "",  () => {
+        DevExpress.ui.notify("Creating order", "info", 3000);
+    
+        // dxDataGrid initialize kar raha hai
+        $("#CreateOrderContainer").dxDataGrid({
+            dataSource: createOrderStore,
+            showBorders: true,
+            wordWrapEnabled: true,
+            showColumnLines: true,
+            showRowLines: true,
+            rowAlternationEnabled: true,
+            allowColumnResizing: true,
+            allowColumnReordering: true,
+            onCellPrepared(options) {
+                if (options.column.dataField === "d01F06") {
+                    if (options.value == "pending") {
+                        $(options.cellElement).css("color", "orange");
+                    } else if (options.value == "success") {
+                        $(options.cellElement).css("color", "green");
+                    } else if (options.value == "cancelled") {
+                        $(options.cellElement).css("color", "red");
                     }
-                },
-
-                columns: [
-                    {
-                        dataField: "d01F01",
-                        dataType: "number",
-                        caption: "Order ID",
-                        allowEditing: false
-
-                    },
-                    {
-                        dataField: "r01F01",
-                        dataType: "number",
-                        caption: "User ID",
-                        // allowEditing:false
-
-                    },
-                    {
-                        dataField: "t01F01",
-                        dataType: "number",
-                        caption: "Product ID",
-                        // allowEditing:false
-
-                    },
-                    {
-                        dataField: "d01F04",
-                        dataType: "number",
-                        caption: "Product Quantity",
-
-                    },
-                    {
-                        dataField: "d01F05",
-                        dataType: "number",
-                        caption: "Total Amount",
-                        allowEditing: false
-                    },
-                    {
-                        dataField: "d01F06",
-                        dataType: "string",
-                        caption: "Order Status",
-                        allowEditing: false
-                    },
-                ],
-
-                editing: {
-                    mode: "popup",
-                    allowAdding: true,
-                    allowUpdating: false,
-                    texts: {
-                        addRow: "Create Order",
-                    }
-                },
-                // onCellPrepared: function(e) {
-                //     console.log("cell prepare" , e)
-                //     if (e.rowType === "data" && e.column.dataField === "d01F06") {
-                //         // Check if the status is "cancel" or "success"
-                //         if (e.data.d01F06 === "cancel" || e.data.d01F06 === "success") {
-                //             e.cellElement.attr("disabled", "disabled"); 
-                //         }
-                //     }
-                // }
-            });
-        }
+                }
+            },
+    
+            columns: [
+                { dataField: "d01F01", dataType: "number", caption: "Order ID", allowEditing: false },
+                { dataField: "r01F01", dataType: "number", caption: "User ID" },
+                { dataField: "t01F01", dataType: "number", caption: "Product ID" },
+                { dataField: "d01F04", dataType: "number", caption: "Product Quantity" },
+                { dataField: "d01F05", dataType: "number", caption: "Total Amount", allowEditing: false },
+                { dataField: "d01F06", dataType: "string", caption: "Order Status", allowEditing: false },
+            ],
+    
+            editing: {
+                mode: "popup",
+                allowAdding: true,
+                allowUpdating: false,
+                texts: { addRow: "Create Order" }
+            }
+        });
     });
 
-
-    // Initialize the DataGrid 
+    createDxButton("#UserProfile", "userProfile", "default", "" , ()=>{
+        // Initialize the DataGrid 
     $("#UserProfileContainer").dxDataGrid({
         dataSource: customStore,
         showBorders: true,
@@ -336,6 +378,8 @@ $(document).ready(function () {
             allowUpdating: true,
         },
     });
+    })
+    
 
     createDxButton("#UserProfile", "User Profile", "default", "card", () => {
     DevExpress.ui.notify("Fetching User Profile...", "info", 3000);

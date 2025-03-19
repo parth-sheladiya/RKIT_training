@@ -7836,3 +7836,281 @@
 2025-03-18 17:50:41.1872 Info response is 204
 2025-03-18 17:50:41.1872 Info request is GET /api/CLUSR01/GetProfile
 2025-03-18 17:50:41.1872 Info response is 200
+2025-03-19 12:43:04.1252 Info request is GET /swagger/index.html
+2025-03-19 12:43:04.8301 Info response is 200
+2025-03-19 12:43:05.2964 Info request is GET /swagger/v1/swagger.json
+2025-03-19 12:43:05.5403 Info response is 200
+2025-03-19 12:43:57.3634 Info request is OPTIONS /api/CLAuth/Login
+2025-03-19 12:43:57.3894 Info response is 204
+2025-03-19 12:43:57.3894 Info request is POST /api/CLAuth/Login
+2025-03-19 12:43:58.0979 Info response is 200
+2025-03-19 12:43:59.5898 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 12:43:59.5898 Info response is 204
+2025-03-19 12:43:59.5898 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:43:59.6781 Info response is 200
+2025-03-19 12:44:01.8528 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:44:01.8528 Info response is 200
+2025-03-19 12:46:03.3081 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 12:46:03.3081 Info response is 204
+2025-03-19 12:46:03.3203 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:46:03.3203 Info response is 200
+2025-03-19 12:46:07.2973 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:46:07.2973 Info response is 200
+2025-03-19 12:46:08.2971 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:46:08.2971 Info response is 200
+2025-03-19 12:46:19.2975 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 12:46:19.2975 Info response is 204
+2025-03-19 12:46:19.2975 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:46:19.3027 Info response is 200
+2025-03-19 12:46:22.3020 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:46:22.3060 Info response is 200
+2025-03-19 12:46:26.2962 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 12:46:26.2962 Info response is 204
+2025-03-19 12:46:26.2962 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:46:26.2962 Info response is 200
+2025-03-19 12:46:35.2975 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 12:46:35.2975 Info response is 204
+2025-03-19 12:46:35.2975 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:46:35.3095 Info response is 200
+2025-03-19 12:46:37.2978 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:46:37.2978 Info response is 200
+2025-03-19 12:46:38.2976 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:46:38.2976 Info response is 200
+2025-03-19 12:46:44.2975 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 12:46:44.2975 Info response is 204
+2025-03-19 12:46:44.2975 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:46:44.3040 Info response is 200
+2025-03-19 12:46:53.5047 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 12:46:53.5047 Info response is 204
+2025-03-19 12:46:53.5072 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:46:53.5072 Info response is 200
+2025-03-19 12:48:05.2432 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 12:48:05.2432 Info response is 204
+2025-03-19 12:48:05.2432 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:48:05.2432 Info response is 200
+2025-03-19 12:48:06.8039 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:48:06.8039 Info response is 200
+2025-03-19 12:48:07.2755 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:48:07.2755 Info response is 200
+2025-03-19 12:48:07.7557 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:48:07.7581 Info response is 200
+2025-03-19 12:48:08.1747 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:48:08.1747 Info response is 200
+2025-03-19 12:48:11.1693 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 12:48:11.1693 Info response is 204
+2025-03-19 12:48:11.1693 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:48:11.1693 Info response is 200
+2025-03-19 12:50:52.4142 Info request is OPTIONS /api/CLAuth/Login
+2025-03-19 12:50:52.4142 Info response is 204
+2025-03-19 12:50:52.4173 Info request is POST /api/CLAuth/Login
+2025-03-19 12:50:52.4331 Info response is 400
+2025-03-19 12:51:18.5558 Info request is OPTIONS /api/CLAuth/Login
+2025-03-19 12:51:18.5586 Info response is 204
+2025-03-19 12:51:18.5586 Info request is POST /api/CLAuth/Login
+2025-03-19 12:51:18.5586 Info response is 200
+2025-03-19 12:51:19.8444 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 12:51:19.8444 Info response is 204
+2025-03-19 12:51:19.8444 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:51:19.8444 Info response is 200
+2025-03-19 12:51:22.4812 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-19 12:51:22.4812 Info response is 204
+2025-03-19 12:51:22.4812 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-19 12:51:22.5040 Info response is 200
+2025-03-19 12:51:46.3103 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 12:51:46.3103 Info response is 204
+2025-03-19 12:51:46.3103 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:51:46.3260 Info response is 200
+2025-03-19 12:51:56.3029 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 12:51:56.3029 Info response is 204
+2025-03-19 12:51:56.3029 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:51:56.3029 Info response is 200
+2025-03-19 12:51:59.3019 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:51:59.3019 Info response is 200
+2025-03-19 12:52:23.3114 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 12:52:23.3114 Info response is 204
+2025-03-19 12:52:23.3114 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:52:23.3114 Info response is 200
+2025-03-19 12:55:48.9329 Info request is OPTIONS /api/CLAuth/Login
+2025-03-19 12:55:48.9329 Info response is 204
+2025-03-19 12:55:48.9393 Info request is POST /api/CLAuth/Login
+2025-03-19 12:55:48.9393 Info response is 200
+2025-03-19 12:55:50.2131 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 12:55:50.2131 Info response is 204
+2025-03-19 12:55:50.2131 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:55:50.2188 Info response is 200
+2025-03-19 12:56:15.3059 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 12:56:15.3059 Info response is 204
+2025-03-19 12:56:15.3142 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:56:15.3142 Info response is 200
+2025-03-19 12:57:43.0907 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 12:57:43.1159 Info response is 204
+2025-03-19 12:57:43.1159 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:57:43.1260 Info response is 200
+2025-03-19 12:57:45.1679 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-19 12:57:45.1752 Info response is 204
+2025-03-19 12:57:45.1891 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-19 12:57:45.1891 Info response is 200
+2025-03-19 12:57:59.9733 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-19 12:57:59.9733 Info response is 204
+2025-03-19 12:57:59.9733 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-19 12:57:59.9939 Info response is 200
+2025-03-19 12:58:10.3101 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 12:58:10.3101 Info response is 204
+2025-03-19 12:58:10.3101 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:58:10.3157 Info response is 200
+2025-03-19 12:58:23.3097 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 12:58:23.3097 Info response is 204
+2025-03-19 12:58:23.3154 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:58:23.3154 Info response is 200
+2025-03-19 12:58:26.3109 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:58:26.3109 Info response is 200
+2025-03-19 12:58:29.3109 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 12:58:29.3109 Info response is 204
+2025-03-19 12:58:29.3109 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:58:29.3151 Info response is 200
+2025-03-19 12:58:45.3098 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 12:58:45.3098 Info response is 204
+2025-03-19 12:58:45.3098 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:58:45.3098 Info response is 200
+2025-03-19 12:58:48.3115 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:58:48.3115 Info response is 200
+2025-03-19 12:58:59.3107 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 12:58:59.3107 Info response is 204
+2025-03-19 12:58:59.3172 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:58:59.3172 Info response is 200
+2025-03-19 12:59:04.3112 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:59:04.3112 Info response is 200
+2025-03-19 12:59:09.4380 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 12:59:09.4414 Info response is 204
+2025-03-19 12:59:09.4414 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:59:09.4414 Info response is 200
+2025-03-19 12:59:13.3104 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:59:13.3104 Info response is 200
+2025-03-19 12:59:15.3112 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 12:59:15.3112 Info response is 204
+2025-03-19 12:59:15.3112 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:59:15.3159 Info response is 200
+2025-03-19 12:59:23.3113 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 12:59:23.3113 Info response is 204
+2025-03-19 12:59:23.3113 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:59:23.3157 Info response is 200
+2025-03-19 12:59:51.3192 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 12:59:51.3192 Info response is 204
+2025-03-19 12:59:51.3192 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:59:51.3344 Info response is 200
+2025-03-19 12:59:55.3133 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:59:55.3133 Info response is 200
+2025-03-19 12:59:59.3135 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 12:59:59.3135 Info response is 204
+2025-03-19 12:59:59.3160 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 12:59:59.3160 Info response is 200
+2025-03-19 13:00:01.3130 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 13:00:01.3130 Info response is 200
+2025-03-19 13:00:18.3132 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 13:00:18.3132 Info response is 204
+2025-03-19 13:00:18.3199 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 13:00:18.3199 Info response is 200
+2025-03-19 13:00:58.4594 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 13:00:58.4594 Info response is 204
+2025-03-19 13:00:58.4594 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 13:00:58.4743 Info response is 200
+2025-03-19 13:01:00.2335 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 13:01:00.2335 Info response is 200
+2025-03-19 13:01:03.4040 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-19 13:01:03.4040 Info response is 204
+2025-03-19 13:01:03.4040 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-19 13:01:03.4040 Info response is 200
+2025-03-19 13:01:04.9355 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 13:01:04.9355 Info response is 204
+2025-03-19 13:01:04.9355 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 13:01:04.9424 Info response is 200
+2025-03-19 13:03:35.7935 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 13:03:35.7935 Info response is 204
+2025-03-19 13:03:35.7935 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 13:03:35.8073 Info response is 200
+2025-03-19 13:03:37.6507 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-19 13:03:37.6507 Info response is 204
+2025-03-19 13:03:37.6507 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-19 13:03:37.6507 Info response is 200
+2025-03-19 13:05:20.2638 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-19 13:05:20.2638 Info response is 204
+2025-03-19 13:05:20.2638 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-19 13:05:20.2638 Info response is 200
+2025-03-19 13:06:21.5194 Info request is OPTIONS /api/CLORD01/getAllOrders
+2025-03-19 13:06:21.5194 Info response is 204
+2025-03-19 13:06:21.5329 Info request is GET /api/CLORD01/getAllOrders
+2025-03-19 13:06:21.5494 Info response is 200
+2025-03-19 13:06:36.6685 Info request is OPTIONS /api/CLORD01/getAllOrders
+2025-03-19 13:06:36.6685 Info response is 204
+2025-03-19 13:06:36.6685 Info request is GET /api/CLORD01/getAllOrders
+2025-03-19 13:06:36.6830 Info response is 200
+2025-03-19 13:17:05.7114 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 13:17:05.7114 Info response is 204
+2025-03-19 13:17:05.7239 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 13:17:05.8015 Info response is 200
+2025-03-19 13:17:24.4283 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 13:17:24.4283 Info response is 204
+2025-03-19 13:17:24.4283 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 13:17:24.4283 Info response is 200
+2025-03-19 13:19:38.8983 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-19 13:19:38.8983 Info response is 204
+2025-03-19 13:19:38.8983 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-19 13:19:38.8983 Info response is 200
+2025-03-19 13:19:47.6795 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-19 13:19:47.6795 Info response is 204
+2025-03-19 13:19:47.6795 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-19 13:19:47.6795 Info response is 200
+2025-03-19 13:19:51.8393 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-19 13:19:51.8393 Info response is 200
+2025-03-19 13:22:09.2077 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 13:22:09.2077 Info response is 204
+2025-03-19 13:22:09.2148 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 13:22:09.2148 Info response is 200
+2025-03-19 13:22:25.3315 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 13:22:25.3315 Info response is 204
+2025-03-19 13:22:25.3315 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 13:22:25.3315 Info response is 200
+2025-03-19 13:22:25.3408 Info request is OPTIONS /api/CLUSR01/updateUser
+2025-03-19 13:22:25.3408 Info response is 204
+2025-03-19 13:22:25.3408 Info request is PUT /api/CLUSR01/updateUser
+2025-03-19 13:22:25.3818 Info response is 200
+2025-03-19 13:22:25.4260 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 13:22:25.4260 Info response is 204
+2025-03-19 13:22:25.4260 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 13:22:25.4260 Info response is 200
+2025-03-19 13:23:01.6119 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 13:23:01.6361 Info response is 204
+2025-03-19 13:23:01.6361 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 13:23:01.6361 Info response is 200
+2025-03-19 13:23:06.9069 Info request is OPTIONS /api/CLUSR01/updateUser
+2025-03-19 13:23:06.9069 Info response is 204
+2025-03-19 13:23:06.9069 Info request is PUT /api/CLUSR01/updateUser
+2025-03-19 13:23:06.9069 Info response is 200
+2025-03-19 13:23:06.9540 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 13:23:06.9540 Info response is 204
+2025-03-19 13:23:06.9540 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 13:23:06.9540 Info response is 200
+2025-03-19 13:23:20.4993 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 13:23:20.4993 Info response is 204
+2025-03-19 13:23:20.4993 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 13:23:20.5108 Info response is 200
+2025-03-19 13:23:31.2712 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 13:23:31.2712 Info response is 204
+2025-03-19 13:23:31.2712 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 13:23:31.2763 Info response is 200
+2025-03-19 13:23:38.3617 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 13:23:38.3617 Info response is 204
+2025-03-19 13:23:38.3752 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 13:23:38.3752 Info response is 200
+2025-03-19 13:23:38.3752 Info request is OPTIONS /api/CLUSR01/updateUser
+2025-03-19 13:23:38.3860 Info response is 204
+2025-03-19 13:23:38.3860 Info request is PUT /api/CLUSR01/updateUser
+2025-03-19 13:23:38.4080 Info response is 200
+2025-03-19 13:23:38.4656 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 13:23:38.4656 Info response is 204
+2025-03-19 13:23:38.4656 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 13:23:38.4656 Info response is 200
+2025-03-19 13:25:14.5615 Info request is OPTIONS /api/CLUSR01/GetProfile
+2025-03-19 13:25:14.5615 Info response is 204
+2025-03-19 13:25:14.5615 Info request is GET /api/CLUSR01/GetProfile
+2025-03-19 13:25:14.5615 Info response is 200
