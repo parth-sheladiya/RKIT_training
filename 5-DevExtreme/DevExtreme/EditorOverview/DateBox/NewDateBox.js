@@ -39,7 +39,7 @@ $(document).ready(function () {
 
     // create date box instance
     var fDateBoxInstance = $("#dateBox").dxDateBox("instance");
-    
+   
     fDateBoxInstance.on("valueChanged", function (e) {
         console.log("Disaplay value is ", e.value);
         
@@ -84,7 +84,8 @@ $(document).ready(function () {
         visible: true,
         // not open calaender
         opened: false,
-        hint:"select date and time"
+        hint:"select date and time",
+        adaptivityEnabled:true
         
     });
 

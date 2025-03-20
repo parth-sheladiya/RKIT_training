@@ -1,91 +1,30 @@
 $(document).ready(function () {
     console.log("doc is ready");
-
+    // popover 
     $("#popOverContainer").dxPopover({
+        // out click
         closeOnOutsideClick: true,
         contentTemplate: function () {
-            return $("<div>").text("This is a popover content! More info here.");
+            return $("<div>").html("<h1>This is a popover content! More info here.</h1>");
         },
         target: "#popoverBtn",
         showEvent: "mouseenter",
         hideEvent: "mouseleave"
     });
 
-    // $("#DataGridContainer").dxDataGrid({
-    //     dataSource: products,
-    //     columns: [
-    //         {
-    //             dataField: "productId",
-    //             caption: "productId"
-    //         },
-    //         {
-    //             dataField: "productName",
-    //             caption: "productName"
-    //         },
-    //         {
-    //             dataField: "productCategory",
-    //             caption: "category",
-    //             cellTemplate(container, options) {
-    //                 console.log("container", container);
-    //                 console.log("options", options);
-    //                 console.log("options", options.value);
-    //                 const productNameLink = $("<div>")
-    //                     .text(options.value)
-    //                     .addClass("product-name-link")
-    //                     .attr("id", `product-name-${options.data.id}`);
 
-    //                 container.append(productNameLink);
-    //                 let popoverInstance = $(`#popover-${options.data.id}`).data("dxPopover");
-    //                 const popOver = $("<div>")
-    //                     .attr("id", `popover-${options.data.id}`)
-    //                     .dxPopover({
-    //                         target: `#product-name-${options.data.id}`,
-    //                         contentTemplate: function () {
-
-    //                             return $("<div>").html(`
-    //                                 <strong>Category:</strong> ${options.data.productCategory} <br>
-    //                                 <strong>Company:</strong> ${options.data.productCompany} <br>
-    //                                 <strong>Price:</strong> $${options.data.productPrice} <br>
-    //                                 <strong>Rating:</strong> ${options.data.productRating} <br>
-    //                                 <strong>Stock:</strong> ${options.data.productStock} <br>
-    //                                 `)
-    //                         },
-    //                         closeOnOutsideClick: true,
-    //                         visible: false,
-    //                         disabled: false,
-    //                         dragEnabled: false,
-    //                         fullScreen: false,
-    //                         hint: "SHOW PRODUCT DETAIILS",
-    //                         showCloseButton: false,
-    //                         showEvent: "mouseenter",
-    //                         hideEvent: "mouseleave"
-    //                     })
-    //                     container.append(popOver);
-    //                      productNameLink.on("mouseenter", function() {
-    //                     $(`#popover-${options.data.id}`).dxPopover("show"); // Show popover
-    //                 });
-
-    //                 productNameLink.on("mouseleave", function() {
-    //                     $(`#popover-${options.data.id}`).dxPopover("hide"); // Hide popover
-    //                 });
-    //             },
-                
-    //         }
-            
-    //     ],
-        
-    // })
-
-    $("#popOver1").dxPopover({
+    $("#pop1").dxPopover({
         closeOnOutsideClick: true,
-        target: '#pop1',
+        target: '#popOver1',
         contentTemplate: function (contentElement) {
+            contentElement.append('<div>Popover 1 Content: Lorem ipsum dolor sit amet.</div>');
             contentElement.append('<div>Popover 1 Content: Lorem ipsum dolor sit amet.</div>');
         },
         showEvent: 'mouseenter',
         hideEvent: 'mouseleave',
         position: 'top',
         width: 300,
+        height:500,
     });
 
     $("#popOver2").dxPopover({
@@ -99,7 +38,10 @@ $(document).ready(function () {
         position: 'bottom',
         width: 300,
         showTitle: true,
-        title: 'Details:',
+        //title: 'Details:',
+        titleTemplate:()=>{
+            return $(`<div>`).html(`<img  src="download.jpg" height="50px" >`)
+        }
     });
 
     $("#popOver3").dxPopover({
@@ -116,11 +58,11 @@ $(document).ready(function () {
             show: {
                 type: 'pop',
                 from: { scale: 0 },
-                to: { scale: 1 },
+                to: { scale: 5 },
             },
             hide: {
                 type: 'fade',
-                from: 1,
+                from: 20,
                 to: 0,
             },
         },
@@ -136,12 +78,12 @@ $(document).ready(function () {
         //showEvent: 'dblclick click',
         showEvent:{
             name:"mouseenter",
-            delay:7000
+            delay:3000
         },
         hideEvent: 'mouseleave',
         position: 'right',
         width: 300,
-       // shading: true,
+        shading: true,
         shadingColor: 'rgba(0, 0, 0, 0.5)',
     });
 

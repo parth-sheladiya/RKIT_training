@@ -1,5 +1,9 @@
 ﻿$(document).ready(function () {
 
+    DevExpress.ui.dxCheckBox.defaultOptions({
+       
+        options: { hoverStateEnabled: false } // Hover effect disable
+    });
     console.log("document is ready to use");
     // Initialize the first checkbox
     $("#checkBoxContainer").dxCheckBox({
@@ -10,7 +14,8 @@
         // by default false 
         disabled: false,
         // alt+a with out mouse click
-        accesskey: "a", 
+        accessKey: "=", 
+        activeStateEnabled:true,
         //  access to tab key  if false to not navigate to tab key by default true
         focusStateEnabled: true,
         // mouse move on check then they will show hint
@@ -19,8 +24,22 @@
         tabIndex: 2,
         // check box is tick or unticked
         value: true,
+        elementAttr:{
+            id: "elementId",
+            class: "class-name"
+        },
+        // if true then not work val error
+        isValid: false,
+        // doubt
+       // validationStatus:"pending",
+        validationError: { message: "You must accept the terms!" },
+        onOptionChanged: function(e) {
+            console.log("E",e)
+            console.log("Option changed: ", e.name, "New Value:", e.value);
+        }
         
     });
+
 
     // second instance
     $("#checkBoxContainer2").dxCheckBox({
@@ -34,18 +53,28 @@
     var getEle = $("#checkBoxContainer2").dxCheckBox("instance").element();
     console.log("checkBoxContainer2 get element is ",getEle);
     
+    $("#elementId").dxCheckBox("instance").option("value", false);
 
     // Initialize the third checkbox
     // other way to create checkbox
     var checkBoxInstance = $("#checkBoxContainer").dxCheckBox("instance");
+    ///// doubt
+    // checkBoxInstance.repaint();
+    console.log("repaint");
+    //checkBoxInstance.resetOption("hint")
+
     $("#checkBoxContainer3").dxCheckBox({
         text: "Subscribe to my follotips",
-        value: true
-        
+        value: true,
+        disabled:true
     });
+ 
 
+
+    // instance()
     var CheckBoxInstanceThree = $("#checkBoxContainer3").dxCheckBox("instance");
-
+   // CheckBoxInstanceThree.resetOption("value")
+    console.log("hii",CheckBoxInstanceThree.option("disabled"))
     // on (event name , event handler)
     $("#checkBoxContainer2").on("click", function () {
         CheckBoxInstanceThree.focus();

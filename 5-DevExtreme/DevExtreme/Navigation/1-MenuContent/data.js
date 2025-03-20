@@ -3,7 +3,7 @@ const foodData = [
     id: "1",
     name: "Beverages",
     icon: "fas fa-coffee",
-    expanded: true,
+    
     items: [
       {
         id: "1_1",
@@ -18,6 +18,7 @@ const foodData = [
         name: "Iced Tea",
         price: 2.5,
         icon: "fas fa-cocktail",
+        expanded: true,
       },
       {
         id: "1_3",
@@ -60,6 +61,7 @@ const foodData = [
         name: "Cheese Burger",
         icon: "fas fa-hamburger",
         price: 8.0,
+        expanded: true,
       },
     ],
   },

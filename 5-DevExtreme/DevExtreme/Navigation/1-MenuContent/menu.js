@@ -1,35 +1,35 @@
 $(document).ready(function(){
     console.log("doc is ready");
-
+    // create menu
     $("#MenuContainer").dxMenu({
         dataSource:foodData,
-        accessKey:"k",
-        activeStateEnabled:true,
-        adaptivityEnabled:true,
-        //width: 10,
-        displayExpr:"name",
+        adaptivityEnabled:false,
+        width: 40,
+        //displayExpr:"name",
+        displayExpr: function(res){
+            return `${res.id} ${res.name} `
+        },
         animation: {
-            hide:{ type: 'fade', from: 1, to: 0, duration: 4000 },
-            show:{ type: 'fade', from: 0, to: 1, duration: 3000 }
+            hide:{ type: 'fade', from: 1, to: 0, duration: 1000 },
+            show:{ type: 'fade', from: 0, to: 1, duration: 1000 }
         },
         
         // we can disabled specific menu
         // go to data and then data disabled
         disabled:false,
-        disabledExpr:function(e){
-            console.log("e" ,e);
-            return this.price<3
-        },
+        // disabledExpr:function(e){
+        //     console.log("e" ,e);
+        //     return this.price<3
+        // },
         elementAttr:{
             id:"MenuID",
             class:"MenuClass"
         },
-        //height:"800px"
         hideSubmenuOnMouseLeave:true,
         orientation:"horizontal",  // 'horizontal' | 'vertical'
-        showFirstSubmenuMode:"onClick", //onClick
+        showFirstSubmenuMode:"onHover", //onClick 
         showSubmenuMode:"onClick", //  'onClick' | 'onHover'
-        submenuDirection:"rightOrBottom", // 'auto' | 'leftOrTop' | 'rightOrBottom'
+        submenuDirection:"auto", // 'auto' | 'leftOrTop' | 'rightOrBottom'
         // itemTemplate: function(itemData, itemIndex, itemElement){
         //     console.log("hi",itemData);
         //     itemElement.append(`${itemData.id} and ${itemData.name}`)
@@ -43,15 +43,10 @@ $(document).ready(function(){
             DevExpress.ui.notify(`you right  click on ${e.itemData.name}`,"info",4000)
         },
         onItemRendered: (e) => {
-            console.log("item render",e);
+            console.log("item render che",e);
             
             console.log("item render" , e.itemData)
             
-        },
-        onSelectionChanged: function(e) {
-            // Check selected item info
-            console.log("Selected Item: ", e.itemData);
-            DevExpress.ui.notify(`Selected item: ${e.selectedItem ? e.selectedItem.name : "None"}`, "info", 4000);
         },
             onSubmenuHidden: () => {
             console.log("Sub Menu Is Hidden");
@@ -65,7 +60,6 @@ $(document).ready(function(){
           onSubmenuShown: () => {
             console.log("Sub Menu Is Shown");
           },
-          selectByClick:false,
-          selectionMode :"single"    //'none' | 'single'
+         
     })
 })

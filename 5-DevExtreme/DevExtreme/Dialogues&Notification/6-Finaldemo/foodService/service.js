@@ -1,38 +1,56 @@
 export   function addFoodCategory() {
+
+    // create popup and include form 
     let categoryPopup = $("#PopUpContainer").dxPopup({
+        // width
         width: 400,
+        // height
         height: 250,
-        visible: false,
+        // btn
         showCloseButton: true,
+        // out click
+        closeOnOutsideClick:true,
+
         title: "Add Category",
+        // template for add category
         contentTemplate: function (contentElement) {
             contentElement.append('<div id="categoryForm">');
-
-            $("#categoryForm").dxForm({
+            // add form
+           let formInstance =  $("#categoryForm").dxForm({
+            // form data
                 formData: { categoryName: "" },
                 items: [
                     {
                         dataField: "categoryName",
-                        label: { text: "Category Name" },
-                        validationRules: [{ type: "required", message: "Category Name is required" }]
+                        label: { 
+                            text: "Category Name" 
+                        },
+                        validationRules: [
+                            { 
+                                type: "required", 
+                                message: "Category Name is required" 
+                            }
+                        ]
                     },
                     {
                         itemType: "button",
                         buttonOptions: {
                             text: "Add Category",
                             onClick: function () {
-                                let formInstance = $("#categoryForm").dxForm("instance");
+                                // form instance
                                 let formData = formInstance.option("formData");
-
+                                // log purpose
+                                console.log("form inst", formInstance)
+                                // validate 
                                 if (formInstance.validate().isValid) {
-                                    let storedData = JSON.parse(localStorage.getItem("foodData")) || [];
-
+                                    let storedData = JSON.parse(localStorage.getItem("foodData"));
+                                    // category
                                     let newCategory = {
-                                        id: Date.now(), 
+                                        
                                         name: formData.categoryName,
                                         items: []  
                                     };
-
+                                    // store
                                     storedData.push(newCategory);
                                     localStorage.setItem("foodData", JSON.stringify(storedData));
 
@@ -41,12 +59,17 @@ export   function addFoodCategory() {
 
                                     // Updated category show karne ke liye
                                     showFoodItems();
+                                }else{
+
+                                    DevExpress.ui.notify("please fill all details", "error", 2000);
+                    
                                 }
                             }
                         }
                     }
                 ]
-            });
+            }).dxForm("instance");
+            
         }
     }).dxPopup("instance");
 
@@ -56,30 +79,30 @@ export   function addFoodCategory() {
 export function showFoodItems() {
     let storedData = JSON.parse(localStorage.getItem("foodData"));
     if (storedData) {
+        console.log("store data",storedData)
         // Format food items into a tree structure for dxTreeView
         let foodItems = storedData.map(function (item, index) {
             return {
-                id: item.id,
-                text: `${item.name} - $${item.price}`,
+                // id: item.id,
+                text: `${item.name}`,
                 expanded: false,
                 items: item.items ? item.items.map(function (subItem) {
                     return {
                         id: subItem.id,
                         text: `${subItem.name} - $${subItem.price}`,
-                        disabled: subItem.disabled || false,
-                        icon: subItem.icon,
                     };
                 }) : []
             };
         });
 
         // Initialize dxTreeView to display all food items
-        $("#PopUpContainer").dxPopup({
+     let treeviewInPopupInst =   $("#PopUpContainer").dxPopup({
             width: 400,
             height: 300,
             visible: false,
             showCloseButton: true,
             fullScreen: false,
+            title: "All items",
             contentTemplate: function (contentElement) {
                 contentElement.append('<div id="treeview"></div>');
 
@@ -89,10 +112,11 @@ export function showFoodItems() {
                     displayExpr: "text", // Specify the field to display
                     idField: "id", // Specify the field for the unique ID
                     parentIdField: "parentId", // For nested items
-                    showCheckBoxesMode: "none", // Remove checkboxes if not needed
+                    showCheckBoxesMode: "selectAll", // Remove checkboxes if not needed
                 });
             }
-        }).dxPopup("instance").show();
+        }).dxPopup("instance")
+        treeviewInPopupInst.show();
     } else {
         DevExpress.ui.notify("No food items stored yet.", "warning", 2000);
     }
@@ -110,10 +134,10 @@ export  function openAddFoodPopup() {
             contentElement.append('<div class="form-container"><div id="form"></div></div>');
 
             // Fetch existing categories from localStorage
-            let storedData = JSON.parse(localStorage.getItem("foodData")) || [];
+            let storedData = JSON.parse(localStorage.getItem("foodData"));
             let categoryList = storedData.map(category => category.name);
 
-            $("#form").dxForm({
+          let foodFormInst=  $("#form").dxForm({
                 formData: { category: "", name: "", price: "" },
                 items: [
                     {
@@ -145,11 +169,11 @@ export  function openAddFoodPopup() {
                         buttonOptions: {
                             text: "Add",
                             onClick: function () {
-                                var formInstance = $("#form").dxForm("instance");
-                                var formData = formInstance.option("formData");
+                               
+                                var formData = foodFormInst.option("formData");
 
                                 // Validate form
-                                if (formInstance.validate().isValid) {
+                                if (foodFormInst.validate().isValid) {
                                     let storedData = JSON.parse(localStorage.getItem("foodData")) || [];
 
                                     let categoryObj = storedData.find(c => c.name === formData.category);
@@ -174,7 +198,7 @@ export  function openAddFoodPopup() {
                         }
                     },
                 ]
-            });
+            }).dxForm("instance");
         }
     }).dxPopup("instance");
 
