@@ -5,7 +5,7 @@ $(document).ready(function () {
         // hint
         hint: "This is a radio group",
         // items data.js
-        items: priorities,
+        dataSource: priorities,
         // default set on ui
         value: priorities[3],
         // vertical horizontal
@@ -18,7 +18,9 @@ $(document).ready(function () {
             console.log("Value Changed event triggered. New Value: " + e.value, e);
         },
         hoverStateEnabled: false,
+        
     });
+
 
     // Disable Button
     $("#btnDisabled").dxButton({

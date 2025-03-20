@@ -8,10 +8,11 @@ $(document).ready(function () {
         //type time
         type: "date",
         // show on field
-       value: new Date(),
+         value: new Date(),
         // show on format in field
         displayFormat: "MMM dd, yyyy",
         
+        //showDropDownButton: false,
         // invalid mess  if user enter invalid format date
         invalidDateMessage: "Invalid Date formate please try MMM dd, yyyy format",
         // user enter or not 
@@ -24,17 +25,35 @@ $(document).ready(function () {
         cancelButtonText: "😎",
         // use buttos
         applyValueMode: 'useButtons',// instantly  useButtons
-        /// height
-        height: "55px",
-        // width
-        width: "300px",
+        // /// height
+        // height: "55px",
+        // // width
+        // width: "500px",
+        inputAttr: {
+            placeholder: "Enter date here",
+        },
        maxLength:3,
        // hover then set enable to true
         hoverStateEnabled:true,
         // user only enter format date 
         useMaskBehavior: true,
+        buttons: ["clear", "dropDown"],
+        // custom 
+        dropDownButtonTemplate: function() {
+            return $("<div>").append(
+                $("<img>", {
+                    src: "download.jpg", 
+                    width: 30, 
+                    height: 50  
+                })
+            );
+        },
+        validationMessageMode: "popover", // "auto", "always", "popover"
+        deferRendering: true,
+        onOpened: function() {
+            alert("Calendar opened!");
+        }
         
-
     });
 
     // create date box instance
@@ -44,7 +63,16 @@ $(document).ready(function () {
         console.log("Disaplay value is ", e.value);
         
     })
-
+    // content method 
+//    fDateBoxInstance.dispose();
+    console.log("fboxinst",fDateBoxInstance)
+    console.log("field",fDateBoxInstance.field())
+    console.log("option",fDateBoxInstance.option());
+    console.log("value",fDateBoxInstance.option("value"));
+    console.log("text",fDateBoxInstance.option("text"));
+    console.log("date box instance is ", fDateBoxInstance.option());
+    console.log("value of option ois ", fDateBoxInstance.option("value"));
+    fDateBoxInstance.option("opened", true);
 
     $("#datetimeBox").dxDateBox({
         //type time
@@ -78,14 +106,15 @@ $(document).ready(function () {
         readonly: false,
         // mask behavior by default flase
         // user can not enter any char  it is only enter format date
-        useMaskBehavior: true,
+        useMaskBehavior: false,
         //validationMessageMode: "always",
         //isValid:false,
         visible: true,
         // not open calaender
         opened: false,
         hint:"select date and time",
-        adaptivityEnabled:true
+        adaptivityEnabled:true,
+        deferRendering: true
         
     });
 

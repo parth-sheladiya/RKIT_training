@@ -53,6 +53,7 @@
     var getEle = $("#checkBoxContainer2").dxCheckBox("instance").element();
     console.log("checkBoxContainer2 get element is ",getEle);
     
+    // use elementAttr
     $("#elementId").dxCheckBox("instance").option("value", false);
 
     // Initialize the third checkbox
