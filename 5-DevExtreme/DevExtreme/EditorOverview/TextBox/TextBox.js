@@ -22,11 +22,11 @@
         // max length is 10
         maxLength: 10,
         // mask char
-        maskChar: "+",
+        // maskChar: "+",
         // mess
         maskInvalidMessage: "enter valid pancard number",
         // mask value
-        //useMaskedValue: true,
+        useMaskedValue: true,
         // focus 
         showMaskMode: "onFocus",
     });
@@ -54,6 +54,11 @@
     $("#CreditCardBox").dxTextBox({
         // placeholder
         placeholder: "enter your credit card number",
+        // mask: "AAA-9999",
+        // maskRules: {
+        //     "A": /[A-Za-z]/, 
+        //     "9": /[0-9]/    
+        // }
         // mask
         mask: "0000 0000 0000 0000",
         // max char
@@ -61,14 +66,15 @@
         // mask value
         useMaskedValue: true,
         // mode
-        showMaskMode: "never",
+        showMaskMode: "never", // 'always' | 'onFocus'
     })
 
     $("#PasswordBox").dxTextBox({
         // placeholder
         placeholder: "Enter password",
         // mode
-        mode: "password",
+        // mode: "password", // text", "password", "email", "tel", "search"
+        inputAttr: { 'aria-label': 'Password' },
         // style
         stylingMode: "filled",
         // btn arr

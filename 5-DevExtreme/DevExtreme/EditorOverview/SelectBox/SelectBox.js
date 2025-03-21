@@ -42,6 +42,7 @@ $(document).ready(function () {
         grouped: true,
         placeholder: "please select item",
         hint: "this is select box",
+       
         // just example purpose
         dropDownOptions: {
             width: 300,  
@@ -50,6 +51,7 @@ $(document).ready(function () {
             showTitle: true, 
             title: "Select a Fruit" 
         },
+        showSelectionControls:true,
         onCustomItemCreating: function(e){
             e.customItem = e.text;
             console.log("set",e.customItem)
@@ -84,6 +86,7 @@ $(document).ready(function () {
         onValueChanged: function (e) {
             console.log("Previous value: ", e.previousValue); // Previously selected items
             console.log("New value: ", e.value);
+            console.log("selectedItem", e.component.option("selectedItem"))
             console.log("a",e.component.option("displayValue"))
            
         },

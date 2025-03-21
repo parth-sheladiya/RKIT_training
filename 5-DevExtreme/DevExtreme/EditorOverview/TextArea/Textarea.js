@@ -1,9 +1,10 @@
 ﻿
 $(document).ready(function () {
-    $("#TextAreaField").dxTextArea({
+ let textInst=   $("#TextAreaField").dxTextArea({
         accessKey: "J", // by default undefined
         activeStateEnabled: true, // default false
         disabled: false, // default false
+        // height property is not in effect if autoResizeEnabled is set to true.
         autoResizeEnabled: true, // default false
         focusStateEnabled: true, // default true
         // height:"200px",
@@ -11,6 +12,21 @@ $(document).ready(function () {
         //    return window.innerHeight /5;
         //}, // default undefined
         // that's why difference btwn height maxhight 
+        elementAttr:{
+            id:"charCount"
+        },
+        buttons:[
+            {
+                name:"cust",
+                location:"after",
+                options:{
+                    text:"reset",
+                    onClick:()=>{
+                        textInst.resetOption("value")
+                    }
+                }
+            }
+        ],
         maxHeight: "200px", // default undefined
         hint: "this is text area content", // default null
         maxLength: 100, // default null
@@ -35,7 +51,9 @@ $(document).ready(function () {
         onFocusOut: function (e) {
             console.log("Focus Out event triggered", e);
         },
-        
+        onInput: function(e) {
+            $("#charCount").text("Characters: " + e.event.target.value.length);
+        },
         onOpened: function (e) {
             console.log("Opened event triggered", e);
         },
@@ -49,5 +67,5 @@ $(document).ready(function () {
        // label:"textarea", not working in 21.1
 
 
-    });  
+    }).dxTextArea("instance");  
 })

@@ -1,9 +1,9 @@
 ﻿
 $(document).ready(function () {
 
-    $("#numberBox").dxNumberBox({
+   let numInst = $("#numberBox").dxNumberBox({
         // type of number box
-        type: "decimal" , // fixedpoint,persent,currency
+        type: "decimal" , // fixedpoint,persent,currency decimal
         // place holder
         placeholder:"this is number box",
         // short cut key 
@@ -12,7 +12,20 @@ $(document).ready(function () {
         activeStateEnabled: true,
         // bydefault false
         // if true then disabled
-        disabled: false,  
+        disabled: false,
+        // buttons:[
+        //     {
+        //         name:"hello",
+        //         location:"after",
+        //         options:{
+        //             text:"custom",
+        //             onClick:()=>{
+        //                 DevExpress.ui.notify("Click custom button", "success", 2000);
+        //                 numInst.option("value","")
+        //             }
+        //         }
+        //     }
+        // ] , 
         elementAttr: {
             //customid
             id: "id-num-box",
@@ -39,26 +52,27 @@ $(document).ready(function () {
         useLargeSpinButtons:true,
         // show on ui value is 5
         value:"5",
+        stylingMode:"outlined" // 'outlined' | 'underlined' | 'filled'
 
 
 
-    })
-
+    }).dxNumberBox("instance");
+    
     // different format
     $("#formatNumberBox").dxNumberBox({
         format: "00.00",
-        format: "#0.#",
-        format: "0.00",
-        // group sepreator uses lakh,cr 
-        format: "#,###",
-        // persentage*100
-        format: "#0.##%",
-        // negative number handle if we use | then format will handle negative number 
-        format: "#0.##;(#0.##)",
-        format: "Rs #0.00",
-        // doubt
-        //format:"000'-'000",
-        format: "Rs #0.00",
+        // format: "#0.#",
+        // format: "0.00",
+        // // group sepreator uses lakh,cr 
+        // format: "#,###",
+        // // persentage*100
+        // format: "#0.##%",
+        // // negative number handle if we use | then format will handle negative number 
+        // format: "#0.##;(#0.##)",
+        // format: "Rs #0.00",
+        // // doubt
+        // //format:"000'-'000",
+        // format: "Rs #0.00",
     })
 
     // different event
