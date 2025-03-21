@@ -17,22 +17,24 @@ $(document).ready(function () {
         { ID: 14, Name: 'Onion', Category: 'Vegetables' },
         { ID: 15, Name: 'Peach', Category: 'Fruits' }
     ];
-
+// let a ="pppppp"
     let filterType = "contains";
-    const dataSource = new DevExpress.data.DataSource({
-        store: data,
-        type: "array",
-        key: "ID",
-        group: "Category"
-    });
+    
 
-    $("#SelectBox").dxSelectBox({
+  let selectInst=  $("#SelectBox").dxSelectBox({
         // data
-        dataSource: dataSource,
+        dataSource : new DevExpress.data.DataSource({
+            store: data,
+            type: "array",
+            key: "ID",
+            group: "Category",
+        }),
         // show console.log
-        valueExpr: "Category",
+        valueExpr: "ID",
+        noDataText:"no data",
         // show ui
         displayExpr: "Name",
+        // displayValue:a,
         // search fields
         searchEnabled: true,
         spellcheck: true,
@@ -40,6 +42,18 @@ $(document).ready(function () {
         grouped: true,
         placeholder: "please select item",
         hint: "this is select box",
+        // just example purpose
+        dropDownOptions: {
+            width: 300,  
+            height: 200, 
+            closeOnOutsideClick: true,
+            showTitle: true, 
+            title: "Select a Fruit" 
+        },
+        onCustomItemCreating: function(e){
+            e.customItem = e.text;
+            console.log("set",e.customItem)
+        },
         onChange: function (e) {
             console.log("Change event triggered", e);
         },
@@ -70,11 +84,16 @@ $(document).ready(function () {
         onValueChanged: function (e) {
             console.log("Previous value: ", e.previousValue); // Previously selected items
             console.log("New value: ", e.value);
+            console.log("a",e.component.option("displayValue"))
            
+        },
+        onItemClick: function(e) {
+            DevExpress.ui.notify("hello","success",2000)
+            console.log("Item clicked: ", e.itemData);
         }
 
-    })
-    var selectBoxInstance = $("#SelectBox").dxSelectBox("instance")
+    }).dxSelectBox("instance")
+   
 
     $("#checkBoxContainsMethod").dxCheckBox({
         text: "Contains Search",
@@ -82,7 +101,7 @@ $(document).ready(function () {
         onValueChanged: function (e) {
             if (e.value) {
                 filterType = "contains";
-                selectBoxInstance.option("searchMode", "contains");
+                selectInst.option("searchMode", "contains");
                 $("#checkBoxStartWithMethod").dxCheckBox("instance").option("value", false);
             }
         }
@@ -95,7 +114,7 @@ $(document).ready(function () {
         onValueChanged: function (e) {
             if (e.value) {
                 filterType = "startswith";
-                selectBoxInstance.option("searchMode", "startswith");
+                selectInst.option("searchMode", "startswith");
                 $("#checkBoxContainsMethod").dxCheckBox("instance").option("value", false);
             }
         }
@@ -120,7 +139,7 @@ $(document).ready(function () {
             console.log("contentReady event fired - Content is fully loaded!");
         },
         onInitialized: function (e) {
-            console.log("⚡ initialized event fired - Widget instance created!", e);
+            console.log("initialized event fired - Widget instance created!", e);
         },
     });
 })
