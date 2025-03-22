@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     console.log("document is ready ");
 
-    $("#dateBox").dxDateBox({
+  let dateInst =  $("#dateBox").dxDateBox({
         //type time
         type: "date",
         // show on field
@@ -54,8 +54,9 @@ $(document).ready(function () {
             alert("Calendar opened!");
         }
         
-    });
+    }).dxDateBox("instance");
 
+    console.log("date inst field",dateInst.field());
     // create date box instance
     var fDateBoxInstance = $("#dateBox").dxDateBox("instance");
    
