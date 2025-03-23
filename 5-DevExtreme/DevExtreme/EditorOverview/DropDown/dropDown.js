@@ -52,7 +52,7 @@
             );
         },
         contentTemplate: function (e) {
-           var $list = $("<div>").dxList({
+           var list = $("<div>").dxList({
                // data
                items: productName,
                selectionMode: "multiple", // single multiple
@@ -66,7 +66,7 @@
                    dropdowninst.option("value", selectedItems.join(", "));
                }
            });
-           return $list;
+           return list;
         },
         //// ?????????
         // not working

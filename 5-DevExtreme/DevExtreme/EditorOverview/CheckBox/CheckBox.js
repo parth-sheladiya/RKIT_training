@@ -2,13 +2,17 @@
 
     DevExpress.ui.dxCheckBox.defaultOptions({
        
-        options: { hoverStateEnabled: false } // Hover effect disable
+        options: { 
+            hoverStateEnabled: false,
+            text: "Accept terms and conditions",
+        } 
+        
     });
     console.log("document is ready to use");
     // Initialize the first checkbox
     $("#checkBoxContainer").dxCheckBox({
         // show text on ui
-        text: "Accept terms and conditions",
+        // text: "Accept terms and conditions",
         // it is use to send name in backend data
         name: "termsAccepted",
         // by default false 
@@ -43,7 +47,7 @@
 
     // second instance
     $("#checkBoxContainer2").dxCheckBox({
-        text: "Accept terms and conditions",
+        // text: "Accept terms and conditions",
         tabIndex: 1,
         rtlEnabled: true
     });
@@ -59,13 +63,10 @@
     // Initialize the third checkbox
     // other way to create checkbox
     var checkBoxInstance = $("#checkBoxContainer").dxCheckBox("instance");
-    ///// doubt
-    // checkBoxInstance.repaint();
-    console.log("repaint");
     //checkBoxInstance.resetOption("hint")
-
+    
     $("#checkBoxContainer3").dxCheckBox({
-        text: "Subscribe to my follotips",
+        // text: "Subscribe to my follotips",
         value: true,
         disabled:true
     });
@@ -85,7 +86,7 @@
 
     // Update multiple properties
     CheckBoxInstanceThree.option("value", false); // Change the checked state
-    CheckBoxInstanceThree.option("text", "Unsubscribe my follotips"); // Change the text
+    // CheckBoxInstanceThree.option("text", "Unsubscribe my follotips"); // Change the text
     CheckBoxInstanceThree.endUpdate();
     // option changed
     CheckBoxInstanceThree.on("optionChanged", function () {

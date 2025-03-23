@@ -92,7 +92,7 @@ $(document).ready(function () {
         disabled: false,
         // picker type 
         // native ,rollers, list use to check it
-        pickerType: "calendar",  
+        pickerType: "rollers",  
         // user for date and datetime not use in time 
         disabledDates: [
             new Date(2025, 1, 2), 
@@ -114,7 +114,7 @@ $(document).ready(function () {
         // not open calaender
         opened: false,
         hint:"select date and time",
-        adaptivityEnabled:true,
+        adaptivityEnabled:false,
         deferRendering: true
         
     });
