@@ -23,19 +23,20 @@ $(document).ready(function(){
         rowAlternationEnabled: true,
         columnAutoWidth:true,
         onCellPrepared(options){
+            console.log("cell iptions",options)
             if(options.column.dataField === "rating"){
                 // if rating > 4 then color is green
                 if(options.value >4){
-                    $(options.cellElement).css("color", "green");
+                    options.cellElement.css("color", "green");
                    
                    
                 }
                 else if (options.value >=2.74 && options.value <4){
-                    $(options.cellElement).css("color","orange")
+                    options.cellElement.css("color","orange")
                     
                 }
                 else if(options.value<2.74){
-                    $(options.cellElement).css("color","red")
+                    options.cellElement.css("color","red")
                 }
                 
                

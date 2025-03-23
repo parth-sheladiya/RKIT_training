@@ -51,18 +51,19 @@ $(document).ready(function(){
                 caption:"Products",
 
                 cellTemplate: function(container , options){
+                    console.log("container",container);
+                    console.log("options",options);
                     const product = options.value;
-                    let productHTML = '';
+                    let productOtherData = '';
                     product.forEach(product =>{
-                        productHTML+=`
+                        productOtherData+=`
                         <div style="margin-bottom: 10px;">
                             <img src="${product.thumbnail}" alt="${product.title}" width="80" height="80" style="margin-right: 10px;">
-                            <strong>${product.title}</strong><br>
-                            Price: ${product.price} * ${product.quantity} = ${product.total}
+     
                         </div>
                         `
                     })
-                    $(container).html(productHTML);
+                    container.append(productOtherData);
                 }
             },
             {

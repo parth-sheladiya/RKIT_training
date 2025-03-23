@@ -14,7 +14,9 @@ $(document).ready(function(){
             pageSize: 6,
         },
         showBorders:true,
-
+        grouping: {
+            autoExpandAll: true,
+        },
 
         // auto width if you can test then go to chrome inspect 
         columnAutoWidth:true,
@@ -84,6 +86,7 @@ $(document).ready(function(){
         {
             caption:"Address",
             columns:["city","street","flat"],
+
           
         },
         // it is purpose for calculatecellvalue
@@ -95,8 +98,14 @@ $(document).ready(function(){
             //If not set in code, this value is inherited from the dataField.
             name:"amount",
             alignment:"center",
+            autoExpandGroup:true,
             calculateCellValue: function(rowData) {
-                return rowData.productPrice * rowData.productStock;
+                rowData.amount = rowData.productPrice * rowData.productStock;  
+            },
+            calculateDisplayValue: function(rowData) {
+                console.log("row data",rowData);
+                return "₹" + rowData.amount*0.5;
+                
             }
         },
         {
@@ -109,7 +118,10 @@ $(document).ready(function(){
             allowGrouping:false,
             allowHeaderFiltering:false,
             allowSearch:false,
-           // hidingPriority:0
+           // hidingPriority:0,
+           headerCellTemplate: function(container) {
+            container.append(`<span style='color:green;'>ID</span>`);
+          }
 
         },
         {
@@ -120,7 +132,13 @@ $(document).ready(function(){
             filterOperations:["startswith"], // < > <= >= |--|  = contains , not contains , startwith , endswith
            // hidingPriority:1,
             allowSearch:false,
-            
+            // add kari data tyare validation
+            formItem: { isRequired: true, label: { text: "Enter name" } },
+            setCellValue: function(newData, value) {
+                newData.productName = value.toUpperCase();
+              },
+              showEditorAlways: true,
+            //   visible:false
             
         },
         {
@@ -140,6 +158,11 @@ $(document).ready(function(){
             headerFilter: {               
                 allowSearch: true,  
             }, 
+            cellTemplate: function(container, options) {
+                let color = options.value === "Electronics" ? "green" : "red";
+                container.append(`<div style="color: ${color}">${options.value}</div>`);
+              },
+              filterValues: ["Electronics", "Clothing"],
             filterType:"include",   // include exclude    
           //  filterValues: ["Electronics", "Clothing"] 
           // if column is fixed then it will be ignored
@@ -175,9 +198,9 @@ $(document).ready(function(){
                
             },
             // col not show in chooser
-            showInColumnChooser:false
-            
-            
+            showInColumnChooser:false,
+            // by default selecet
+            selectedFilterOperation: ">"
         },
         {
             dataField:"productRating",
@@ -188,7 +211,8 @@ $(document).ready(function(){
                 }
             },
             dataType:"number",
-            alignment:"center"
+            alignment:"center",
+            editorOptions: { placeholder: "Enter rate"}
         },
         {
             dataField:"productStock",

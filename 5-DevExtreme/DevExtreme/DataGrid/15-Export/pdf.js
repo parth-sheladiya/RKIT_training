@@ -33,7 +33,9 @@ $(document).ready(function(){
                 dataField:"Name",
                 dataType:"string",
                 caption:"Product Name",
-                alignment:"center"
+                alignment:"center",
+                allowExporting:false
+
             },
             {
                 dataField:"Category",

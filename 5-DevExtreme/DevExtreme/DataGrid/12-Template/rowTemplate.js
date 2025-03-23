@@ -49,15 +49,15 @@ $(document).ready(function () {
             }
         ],
         rowTemplate: function (container, options) {
+            console.log("option.value is ",options.values)
             let customStyle =
                 `<tbody class='dx-row' style="background-color: ${options.rowIndex % 2 === 0 ? '#000' : '#fff'}; border-bottom: 1px solid #ddd;">` +
                 `<tr style="font-family: Arial, sans-serif; font-size: 14px; color:${options.rowIndex % 2 === 0 ? '#fff' : '#000'}">` +
-                `<td style="">${options.values[0]}</td>` +  // Custom padding and alignment for the first column
-                `<td style="">${options.values[1]}</td>` +  // Custom padding and alignment for the second column
-                `<td style="">${options.values[2]}</td>` +  // Custom padding and alignment for the third column
-                `<td style="">${options.values[3]}</td>` +  // Custom padding and alignment for the fourth column
+                `<td>${options.values[0]}</td>` + 
+                `<td>${options.values[1]}</td>` + 
+                `<td>${options.values[2]}</td>` + 
+                `<td>${options.values[3]}</td>` + 
                 `</tr>` +
-                `<tr style="background-color: #f9f9f9; font-size: 12px;">` +  // Styling for the second row (details, if any)
                 `</tr>` +
                 `</tbody>`;
             

@@ -94,14 +94,16 @@ $(document).ready(function () {
                         onClick: function () {
                             var highestOrder = orders.reduce(function(prev, current) {
                                 DevExpress.ui.notify("highest total amount fetch successfully", "success", 500);
-                                return (prev.TotalAmount > current.TotalAmount) ? prev : current;
+                                console.log("curr + prev" , prev.TotalAmount + current.TotalAmount);
+                                return (prev.TotalAmount + current.TotalAmount) ? prev : current;
                             });
     
                             // Update the grid to only show the order with the highest TotalAmount
+                            console.log("highest order",[highestOrder]);
                             dataGrid.option("dataSource", [highestOrder]);
                         },
                     },
-                    //location: "before",
+                    location: "before",
                 }
             )
 

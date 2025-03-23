@@ -17,7 +17,7 @@ $(document).ready(function(){
             visible: true,
         },
         stateStoring: {
-            enabled: true,
+            enabled: false,
             type: "sessionStorage", // 'custom' | 'localStorage' | 'sessionStorage'
             storageKey: "statepersistanceKey",
             savingTimeout: 3000
@@ -61,7 +61,7 @@ $(document).ready(function(){
         text: "save state",
         onClick: function(){
             const stateData = dataGrid.state();
-            sessionStorage.setItem("dataGridState", JSON.stringify(stateData)); 
+            localStorage.setItem("statepersistanceKey", JSON.stringify(stateData)); 
             DevExpress.ui.notify("State Saved", "success", 2000);
         }
     });
@@ -70,7 +70,7 @@ $(document).ready(function(){
     $("#loadState").dxButton({
         text: "load state",
         onClick: function(){
-            const stateData = localStorage.getItem("dataGridState");
+            const stateData = localStorage.getItem("statepersistanceKey");
             if (stateData) {
                 dataGrid.state(JSON.parse(stateData));
                 DevExpress.ui.notify("State Loaded", "default", 2000);
