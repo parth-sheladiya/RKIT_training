@@ -8,7 +8,7 @@ $(document).ready(function(){
            return $.ajax({
                 url: "https://67b706ff2bddacfb270d5737.mockapi.io/agriculter/dataagri",
                 type: "GET",
-                dataType: "json",
+                // dataType: "json",
                 success: function(result) {
                     console.log("Data Loaded: ", result); 
                 },
@@ -65,7 +65,7 @@ $(document).ready(function(){
                 allowEditing:false,
                 dataField:"id",
                 dataType:"string"
-            },
+            },  
             {
                 dataField:"crop_type",
                 dataType:"string"

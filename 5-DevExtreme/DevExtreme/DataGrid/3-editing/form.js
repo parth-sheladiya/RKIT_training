@@ -61,6 +61,10 @@ $(document).ready(function(){
         dataSource:dataAgriculture,
         showBorders:true,
         height:600,
+        onRowUpdating: function(e) {
+            console.log(e.key);   
+            console.log(e.newData);
+        },
         columns:[
             {
                 allowEditing:false,
@@ -105,10 +109,16 @@ $(document).ready(function(){
             // it is not work for form and popup
             selectTextOnEditStart:true,
             // are you sure ? by default true
+            saveRowChanges:"save changes row",
             confirmDelete:true,
             // click dbl click
             startEditAction:"dblClick",
-
+            texts: {
+                addRow: "new Record Add ",
+                deleteRow: "Delete record",
+                // mode batch 
+                saveAllChanges: "all Changes Save "
+            },
 
             form:{
                 items:[

@@ -1,7 +1,7 @@
 ﻿
 
 $(document).ready(function () {
-    $("#RadioSimple").dxRadioGroup({
+   let radioInst = $("#RadioSimple").dxRadioGroup({
         // hint
         hint: "This is a radio group",
         // items data.js
@@ -17,16 +17,22 @@ $(document).ready(function () {
         onValueChanged: function (e) {
             console.log("Value Changed event triggered. New Value: " + e.value, e);
         },
+        onOptionChanged: function(e){
+            console.log("option changed" ,e.name , e.value);
+        },
         hoverStateEnabled: false,
         
-    });
+    }).dxRadioGroup("instance");
 
 
     // Disable Button
     $("#btnDisabled").dxButton({
         text: "Disable Radio Group",
         onClick: function () {
-            $("#RadioSimple").dxRadioGroup("instance").option("disabled", true);
+           radioInst.option("disabled", true);
+           setTimeout(function(){
+            radioInst.option("disabled", false);
+           },2000)
         }
     });
 

@@ -40,10 +40,10 @@ $(document).ready(function () {
         
         scrolling:{
             // pagination is not  show all are render in one frame
-            mode:"standred", // bydefault standred , virtual ,infinite
+            mode:"infinite", // bydefault standred , virtual ,infinite
             // show scroll bar
             useNative:false,
-            preloadEnabled:true,
+            preloadEnabled:false,
             scrollByContent:true,
             showScrollbar:"onScroll" , // onScroll onHover always
             // scroll by content false you can not scroll using mous click

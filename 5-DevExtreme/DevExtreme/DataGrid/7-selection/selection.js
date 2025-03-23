@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 
 
-    $("#SelectionContainer").dxDataGrid({
+  let selInst =  $("#SelectionContainer").dxDataGrid({
         dataSource:products,
         showBorders:true,
         paging: {
@@ -39,17 +39,22 @@ $(document).ready(function(){
             mode: 'multiple', // single , multiple , none
             allowSelectAll:true, // default
             showCheckBoxesMode:"always", // onclick , onlongtap,always,none
-            selectAllMode:"page" //allPages , page
+            selectAllMode:"allPages", //allPages , page
+             deferred: true
         },
         editing:{
             allowUpdating:true,
             allowDeleting:true,
         },
         onSelectionChanged(e) {
-            selectedProducts = e.selectedRowsData; // Store all selected rows in selectedProducts
-            console.log("Selected Products: ", selectedProducts);
+            
+            console.log("Selected Products: ", selInst.getSelectedRowsData().done((data) => {
+                console.log("Selected Products defered:", data);
+            })
+        );
+            console.log("Selected Products: ", e.selectedRowsData);
         }
-    })
+    }).dxDataGrid("instance");
 
    
 })

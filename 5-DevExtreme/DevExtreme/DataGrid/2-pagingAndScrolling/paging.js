@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     const postData = new DevExpress.data.CustomStore({
         key: "id",
-        loadMode: "raw",
+        // loadMode: "process",
         load() {
             return $.ajax({
                 url: "https://dummyjson.com/posts?limit=240",
@@ -32,7 +32,7 @@ $(document).ready(function () {
             visible: true,
             allowedPageSizes: [9, 13, 'all'],
             displayMode:"full", // full , compact , adaptive
-           // infoText:"1",
+           infoText:"hello pager",
             showPageSizeSelector: true,
             // page 1 to 5 
             showInfo: true,
@@ -50,7 +50,8 @@ $(document).ready(function () {
             },
             {
                 dataField: "body",
-                dataType: "string"
+                dataType: "string",
+               
             },
             {
                 dataField: "views",

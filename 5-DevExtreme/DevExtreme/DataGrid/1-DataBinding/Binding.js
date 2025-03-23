@@ -35,7 +35,8 @@ $(document).ready(function(){
             },
             {
                 dataField:"name",
-                dataType:"string"
+                dataType:"string",
+                cellHintEnabled: true
             },
             {
                 dataField:"price",

@@ -53,8 +53,8 @@ $(document).ready(function(){
             texts:{
               // default string  check docs
               groupByThisColumn:"please grouping",
-              groupContinuedMessage:"continueds",
-              groupContinuesMessage:"continue",
+              groupContinuedMessage:"continuds",
+              groupContinuesMessage:"continue karo",
               ungroup:"ungroup please",
               ungroupAll:"please ungroup all"             
             },

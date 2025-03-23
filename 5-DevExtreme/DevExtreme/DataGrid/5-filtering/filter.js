@@ -52,6 +52,7 @@ $(document).ready(function(){
             betweenEndText:"ends enter" ,
             betweenStartText:"starts enter",
             // operationDescriptions it is for user special
+            // contains staert with end with between 
             showOperationChooser:true, // default true
             
 
@@ -61,11 +62,11 @@ $(document).ready(function(){
             width: 240,
             placeholder: 'Search...',
           },
-        filterBuilderPopup: {
-            position: {
-              of: window, at: 'top', my: 'top', offset: { y: 100 },
-            },
-          },
+        // filterBuilderPopup: {
+        //     position: {
+        //       of: window, at: 'top', my: 'top', offset: { y: 100 },
+        //     },
+        //   },
         // show on ui after grid template
         // if you can add filter value then filtervalue show in filter panel
         // just example purpose 
@@ -78,6 +79,7 @@ $(document).ready(function(){
             filterEnabled: false // default true
         },
         headerFilter:{
+            // col name after symbol 
             visible:true
         },
         filterValue:[
