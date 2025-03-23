@@ -38,10 +38,6 @@ $(document).ready(function(){
             template(container,options){
                 const currentProductData = options.data;
                 $("<div>")
-                        .addClass("master-detail-caption")
-                        .text(`${currentProductData.ID} ${currentProductData.Name} Desciption`)
-                        .appendTo(container);
-                $("<div>")
                         .dxDataGrid({
                             dataSource:currentProductData.ProductDetails,
                             // dataSource:[
@@ -96,6 +92,19 @@ $(document).ready(function(){
                                     alignment:"center"
                                 },
                             ],
+                            paging:{
+                                pageSize:2
+                            },
+                            headerFilter:{
+                                visible:true
+                            },
+                            filterRow:{
+                                visible:true
+                            },
+                            searchPanel:{
+                                visible:true
+                            },
+                            
                             
                         }).appendTo(container)
                         
