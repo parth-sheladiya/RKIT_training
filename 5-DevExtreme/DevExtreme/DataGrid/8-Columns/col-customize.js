@@ -4,7 +4,7 @@ $(document).ready(function(){
     
     
 
-    $("#ColumnContainer").dxDataGrid({
+  let gridinst =  $("#ColumnContainer").dxDataGrid({
         dataSource:products,
         allowColumnReordering: true,
         allowColumnResizing: true,
@@ -93,6 +93,7 @@ $(document).ready(function(){
         // and reordering
         {
             caption: "Sales Amount",
+            
             //minWidth:10,
             //Specifies the column's unique identifier. 
             //If not set in code, this value is inherited from the dataField.
@@ -118,10 +119,16 @@ $(document).ready(function(){
             allowGrouping:false,
             allowHeaderFiltering:false,
             allowSearch:false,
+            showWhenGrouped: true,
            // hidingPriority:0,
            headerCellTemplate: function(container) {
-            container.append(`<p style='color:green;'>ID</p>`);
-          }
+            container.append("<p style='color:green;'>ID</p>");
+          },
+          calculateDisplayValue: function(rowData) {
+            console.log("row data",rowData);
+            return "₹" + rowData.productId;
+            
+        }
 
         },
         {
@@ -134,11 +141,12 @@ $(document).ready(function(){
             allowSearch:false,
             // add kari data tyare validation
             formItem: { isRequired: true, label: { text: "Enter name" } },
-            setCellValue: function(newData, value) {
-                newData.productName = value.toUpperCase();
-              },
+            // setCellValue: function(newData, value) {
+            //     newData.productName = value.toUpperCase();
+            //   },
               showEditorAlways: true,
             //   visible:false
+            encodeHtml: true
             
         },
         {
@@ -148,16 +156,35 @@ $(document).ready(function(){
             dataType:"string",
             alignment:"center",
             // it is onbly work when mode is form or popup 
-            // formItem: {
-            //     colSpan: 2,
-            //     label: {
-            //         location: "top"
-            //     }
-            // },
+            formItem: {
+                colSpan: 2,
+                label: {
+                    location: "top"
+                }
+            },
             allowHeaderFiltering: true,
             headerFilter: {               
                 allowSearch: true,  
             }, 
+            editCellTemplate: function(cellElement, cellInfo) {
+                console.log("cell element",cellElement);
+                console.log("cell info",cellInfo);
+                $("<div>").dxSelectBox({
+                    dataSource: ["Electronics", "Clothing", "abc"],
+                    value: "",
+                    // if not set select value then not shown to set category
+                    onValueChanged: function(e) {
+                        console.log("e.value is in edit cell temp",e.value)
+                        cellInfo.setValue(e.value);
+                    }
+                }).appendTo(cellElement);
+            },
+            editorOptions: {
+                placeholder: "select category",
+                editorType: "dxSelectBox",
+                required:true
+                
+            },
             cellTemplate: function(container, options) {
                 let color = options.value === "Electronics" ? "green" : "red";
                 container.append(`<div style="color: ${color}">${options.value}</div>`);
@@ -195,15 +222,17 @@ $(document).ready(function(){
             },
             headerFilter:{
                 visible: true,
-               
+               groupInterval: 100
             },
             // col not show in chooser
             showInColumnChooser:false,
             // by default selecet
+            filterOperations: ["<", ">", "between"],
             selectedFilterOperation: ">"
         },
         {
             dataField:"productRating",
+            name:"rating",
             formItem: {
                 colSpan: 2,    // This item will also take 2 columns
                 label: {
@@ -217,14 +246,14 @@ $(document).ready(function(){
             calculateFilterExpression:function(value,operation){
                 console.log("value",value)
                 console.log("operation",operation);
-                // if(operation === "<"){
-                //     return []
-                // }
+                if (operation === "=") {
+                    return ["productRating", ">", 4.5]; 
+                }
+                return null;
             }
         },
         {
             dataField:"productStock",
-            
             dataType:"number",
             selectedFilterOperation: "between", //: '<' | '<=' | '<>' | '=' | '>' | '>=' | 'between' | 'contains' | 'endswith' | 'notcontains' | 'startswith'
             alignment:"center",
@@ -232,14 +261,6 @@ $(document).ready(function(){
 
         }
     ],
-    // filterexpression
-    // filterValue:[100],
-    // calculateFilterExpression:(filterValue,field)=>{
-    //     if(field.dataField === "productPrice"){
-    //         return ["productPrice",">=",filterValue[0]];
-    //     }
-    //     return filterValue;
-    // },
     editing:{
         allowEditing:true,
         allowDeleting:true,
@@ -253,6 +274,7 @@ $(document).ready(function(){
         visible:true
     },
     grouping: {
+        enabled:true,
         contextMenuEnabled: true,
       },
     headerFilter: {    
@@ -261,5 +283,11 @@ $(document).ready(function(){
         height:500,
         width:500,                     
     },   
-    })
+    }).dxDataGrid("instance")
+
+    // console.log("grid inst",gridinst);
+    
+    let column = gridinst.columnOption("rating")
+
+    console.log("column",column);
 })
