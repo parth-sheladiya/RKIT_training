@@ -4,7 +4,7 @@ $(document).ready(function(){
      // Initialize the toast widget first and store the instance
      const toast = $("#toastContainer").dxToast({
         //use in mobile
-        //closeOnSwipe: true,
+        closeOnSwipe: true,
         displayTime: 5000,
         closeOnOutsideClick:true,
         type: "success", //  'custom' | 'error' | 'info' | 'success' | 'warning'

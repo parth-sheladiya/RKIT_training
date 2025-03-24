@@ -43,6 +43,8 @@ $(document).ready(function(){
                 caption: "Actions",
                 // custom 
                 cellTemplate: function(container, options) {
+                    console.log("container",container);
+                    console.log("options",options)
                     $("<button>")
                         .text("View Details")
                         .on("click", function() {

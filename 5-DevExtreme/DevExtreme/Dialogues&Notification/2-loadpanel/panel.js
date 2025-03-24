@@ -8,8 +8,9 @@ $(document).ready(function(){
         showIndicator: true,                    
         width: 500,                             
         height: 500,                            
-        position: { my: "center", at: "center", of: window },  
+        position: { my: "center", at: "center", },  
         animation: { show: { type: "fade",}, hide: { type: "fade",  } } ,
+        showPane:true,
         //shadingColor:"rgba(255, 99, 71, 0.5)",
     }).dxLoadPanel("instance");
 

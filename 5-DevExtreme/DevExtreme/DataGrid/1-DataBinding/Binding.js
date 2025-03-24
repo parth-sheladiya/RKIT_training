@@ -5,7 +5,6 @@ $(document).ready(function(){
     // ajax request 
     const storeProductData = new DevExpress.data.CustomStore({
         key:"id",
-        loadMode:"processed",
         load(){
             return $.ajax({
                 url:"https://67b3100abc0165def8cfc105.mockapi.io/productapi/productapi",

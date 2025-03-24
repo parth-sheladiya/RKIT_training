@@ -14,26 +14,57 @@
 
     <script>
         // expiry time set 
-        document.cookie = "name=parth";
-        document.cookie = "name2=patel";
-        document.cookie = "name=ravi"
-        console.log(document.cookie);
+        // document.cookie = "name=parth";
+        // document.cookie = "name2=patel";
+        // document.cookie = "name=ravi"
+        // console.log(document.cookie);
 
         
-        let key = prompt("Enter key");
-        let value = prompt("Enter value");
+        // let key = prompt("Enter key");
+        // let value = prompt("Enter value");
         
-        if (key && value) {
+        // if (key && value) {
             
-            document.cookie = `${key}=${value}; path=/;`
-            document.body.innerHTML += `<p>Cookie is: ${key} = ${value}</p>`;
-        } else {
-            alert("Please enter both a key and a value.");
-        }
+        //     document.cookie = `${key}=${value}; path=/;`
+        //     document.body.innerHTML += `<p>Cookie is: ${key} = ${value}</p>`;
+        // } else {
+        //     alert("Please enter both a key and a value.");
+        // }
         
 
-        document.cookie = "1=2;3=4";
-        console.log(document.cookie);
+        // document.cookie = "1=2;3=4";
+        // console.log(document.cookie);
+
+
+
+        const cache ={};
+
+function fetchDataFromCache(key){
+    if(cache[key]){
+        console.log("data is available in cache");
+        // console.log(cache[key]);
+        return cache[key];
+    }else{
+        console.log("data fatching from source");
+        const data = `data for ${key}`;
+
+        // data store in cache
+        cache[key] = data;
+        // console.log(data);
+        return data;
+    }
+}
+
+
+console.log(fetchDataFromCache("cache1"));
+console.log(fetchDataFromCache("cache1"));
+console.log(fetchDataFromCache("cache2"));
+console.log(fetchDataFromCache("cache3"));
+console.log(fetchDataFromCache("cache2"));
+
+
+
+
     </script>
 </body>
 </html>

@@ -120,7 +120,7 @@ $(document).ready(function(){
             allowSearch:false,
            // hidingPriority:0,
            headerCellTemplate: function(container) {
-            container.append(`<span style='color:green;'>ID</span>`);
+            container.append(`<p style='color:green;'>ID</p>`);
           }
 
         },
@@ -212,7 +212,15 @@ $(document).ready(function(){
             },
             dataType:"number",
             alignment:"center",
-            editorOptions: { placeholder: "Enter rate"}
+            editorOptions: { placeholder: "Enter rate"},
+            // if you can apply filter on and then appluy and after show log
+            calculateFilterExpression:function(value,operation){
+                console.log("value",value)
+                console.log("operation",operation);
+                // if(operation === "<"){
+                //     return []
+                // }
+            }
         },
         {
             dataField:"productStock",

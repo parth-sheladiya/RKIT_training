@@ -39,7 +39,7 @@ $(document).ready(function(){
     ];
 
     // create tree view 
-    $("#BasicTreeContainer").dxTreeView({
+  let treeInst =  $("#BasicTreeContainer").dxTreeView({
         dataSource:peripheralData,
         displayExpr:"name", //id  parentId name
         parentIdExpr:"parentId",
@@ -128,9 +128,18 @@ $(document).ready(function(){
        selectNodesRecursive:true,
        virtualModeEnabled: true, 
        visible:true,
-        selectionMode: "single"  // 'multiple' | 'single'
-    })
+        selectionMode: "multiple"  // 'multiple' | 'single'
+    }).dxTreeView("instance");
 
+     treeInst.selectAll();
+    console.log("get selected node",treeInst.getSelectedNodeKeys())
+    console.log("get nodes",treeInst.getNodes())
+    // console.log("repaint",treeInst.repaint())
+
+    setTimeout(function(){
+    treeInst.repaint();
+
+    },5000)
     // $("#practice").dxTreeView({
     //     dataSource:treeData,
     //     displayExpr:"text",

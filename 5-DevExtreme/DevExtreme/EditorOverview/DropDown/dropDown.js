@@ -11,21 +11,21 @@
         height: "100px",
         width: "1000px",
         
-        buttons:[
-            {
-                // use is imp
-                name:"hello",
-                location:"before",
+        // buttons:[
+        //     {
+        //         // use is imp
+        //         name:"hello",
+        //         location:"before",
                 
-                options:{
-                    text:"Reset",
-                    onClick:()=>{
-                        dropdowninst.reset();
-                        // dropdowninst.option("value",false)
-                    }
-                }
-            }
-        ],
+        //         options:{
+        //             text:"Reset",
+        //             onClick:()=>{
+        //                 dropdowninst.reset();
+        //                 // dropdowninst.option("value",false)
+        //             }
+        //         }
+        //     }
+        // ],
         stylingMode: "outlined",
        
         // when it is use then must be use dx text box
@@ -43,6 +43,7 @@
             // },5000)
         },
         dropDownButtonTemplate: function() {
+            console.log("hello btn temp")
             return $("<div>").append(
                 $("<img>", {
                     src: "download.jpg", 
@@ -91,10 +92,10 @@
     }).dxDropDownBox("instance");
     // check button name above 
     // plaease chek and after process
-    let mycustBtn = dropdowninst.getButton("hello")
-    console.log("mybtn",mycustBtn);
-    // mycustBtn.dispose();
-    mycustBtn.option("disabled",true);
+    // let mycustBtn = dropdowninst.getButton("hello")
+    // console.log("mybtn",mycustBtn);
+    // // mycustBtn.dispose();
+    // mycustBtn.option("disabled",true);
 
     console.log("simple inst",dropdowninst.instance())
     console.log("all option", dropdowninst.option())

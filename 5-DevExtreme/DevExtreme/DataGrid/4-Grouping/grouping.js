@@ -19,12 +19,25 @@ $(document).ready(function(){
           {  
             dataField:"productName",
             dataType:"string",
-           // allowGrouping: false,
+           // allowGrouping: false
+        
           },
           {  
             dataField:"productCategory",
             dataType:"number",
             groupIndex: 0,
+            groupCellTemplate: function(element, info) {
+              console.log(element);
+              console.log(info);
+              let count = info.data.items.length;
+              let Category = info.value; 
+  
+              // Custom group header
+              element.append(`
+                  <div >
+                       ${Category} Category - ${count} product
+                  </div>
+              `);}
           },
           {
             dataField:"productPrice",

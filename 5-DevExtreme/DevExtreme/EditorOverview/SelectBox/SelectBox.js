@@ -33,7 +33,22 @@ $(document).ready(function () {
         valueExpr: "ID",
         noDataText:"no data",
         // show ui
-        displayExpr: "Name",
+        // displayExpr: "Name",
+        // displayExpr: function(data){
+        //     console.log("data",data);
+        //     if (!data) return ;  
+        //      return  data.Name;
+        // },
+        // imp differnece
+        itemTemplate: function(temp) {
+            console.log("data:", temp); 
+        
+            if (!temp) return ;
+        
+            return `<div>
+                <p style="color: blue">${temp.Name}</p>
+            </div>`;
+        },
         // displayValue:a,
         // search fields
         searchEnabled: true,
@@ -45,8 +60,8 @@ $(document).ready(function () {
        
         // just example purpose
         dropDownOptions: {
-            width: 300,  
-            height: 200, 
+            width: 600,  
+            height: 500, 
             closeOnOutsideClick: true,
             showTitle: true, 
             title: "Select a Fruit" 

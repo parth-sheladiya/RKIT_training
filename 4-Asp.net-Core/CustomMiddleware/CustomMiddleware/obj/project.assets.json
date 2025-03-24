@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\parth-415\\git-desk\\RKIT_training\\4-Asp.net-Core\\CustomMiddleware\\CustomMiddleware\\CustomMiddleware.csproj",
+      "projectUniqueName": "F:\\parth-415\\clone\\RKIT_training\\4-Asp.net-Core\\CustomMiddleware\\CustomMiddleware\\CustomMiddleware.csproj",
       "projectName": "CustomMiddleware",
-      "projectPath": "F:\\parth-415\\git-desk\\RKIT_training\\4-Asp.net-Core\\CustomMiddleware\\CustomMiddleware\\CustomMiddleware.csproj",
+      "projectPath": "F:\\parth-415\\clone\\RKIT_training\\4-Asp.net-Core\\CustomMiddleware\\CustomMiddleware\\CustomMiddleware.csproj",
       "packagesPath": "C:\\Users\\parth.sh\\.nuget\\packages\\",
-      "outputPath": "F:\\parth-415\\git-desk\\RKIT_training\\4-Asp.net-Core\\CustomMiddleware\\CustomMiddleware\\obj\\",
+      "outputPath": "F:\\parth-415\\clone\\RKIT_training\\4-Asp.net-Core\\CustomMiddleware\\CustomMiddleware\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\parth.sh\\AppData\\Roaming\\NuGet\\NuGet.Config",
