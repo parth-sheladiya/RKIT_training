@@ -105,8 +105,8 @@ $(document).ready(function(){
         },
         onSelectAllValueChanged: (e) =>
         {
-            // console.log(`Select All value changed: ${e.value}`)
-            alert("hii")
+            console.log(`Select All value changed: ${e.value}`)
+            // alert("hii")
         },
         onSelectionChanged:(e)=>{
             console.log(e);
@@ -131,7 +131,7 @@ $(document).ready(function(){
         selectionMode: "multiple"  // 'multiple' | 'single'
     }).dxTreeView("instance");
 
-     treeInst.selectAll();
+    //  treeInst.selectAll();
     console.log("get selected node",treeInst.getSelectedNodeKeys())
     console.log("get nodes",treeInst.getNodes())
     // console.log("repaint",treeInst.repaint())
@@ -139,7 +139,23 @@ $(document).ready(function(){
     setTimeout(function(){
     treeInst.repaint();
 
+    
     },5000)
+
+    console.log("get nodes",treeInst.getNodes())
+    console.log("get selected noded keys",treeInst.getSelectedNodeKeys())
+    console.log("get selected nnodes",treeInst.getSelectedNodes())
+    console.log("options (option name)",treeInst.option("searchEnabled"))
+    treeInst.resetOption("selectionMode");
+    console.log("scroll item",treeInst.scrollToItem(2));
+    console.log("select item",treeInst.selectItem(5)
+);
+
+    
+    // treeViewInstance.option({
+    //     selectionMode: "multiple",
+    //     expandNodesRecursive: true
+    // });
     // $("#practice").dxTreeView({
     //     dataSource:treeData,
     //     displayExpr:"text",
