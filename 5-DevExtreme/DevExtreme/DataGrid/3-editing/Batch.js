@@ -4,6 +4,7 @@ $(document).ready(function(){
     const dataAgriculture = new DevExpress.data.CustomStore({
         key:"id",
         loadMode: "raw",
+        
         load : ()=> {
            return $.ajax({
                 url: "https://67b706ff2bddacfb270d5737.mockapi.io/agriculter/dataagri",

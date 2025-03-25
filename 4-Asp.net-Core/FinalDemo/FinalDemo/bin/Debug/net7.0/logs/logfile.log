@@ -8114,3 +8114,27 @@
 2025-03-19 13:25:14.5615 Info response is 204
 2025-03-19 13:25:14.5615 Info request is GET /api/CLUSR01/GetProfile
 2025-03-19 13:25:14.5615 Info response is 200
+2025-03-25 13:58:15.8207 Info request is GET /swagger/index.html
+2025-03-25 13:58:16.5511 Info response is 200
+2025-03-25 13:58:16.9407 Info request is GET /swagger/v1/swagger.json
+2025-03-25 13:58:17.2007 Info response is 200
+2025-03-25 13:59:16.4518 Info request is OPTIONS /api/CLAuth/Login
+2025-03-25 13:59:16.4729 Info response is 204
+2025-03-25 13:59:16.4761 Info request is POST /api/CLAuth/Login
+2025-03-25 13:59:18.5513 Info response is 200
+2025-03-25 13:59:54.0581 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-25 13:59:54.0581 Info response is 204
+2025-03-25 13:59:54.0581 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-25 13:59:54.1590 Info response is 200
+2025-03-25 14:00:00.6043 Info request is OPTIONS /api/CLPDT01/getAllProducts
+2025-03-25 14:00:00.6043 Info response is 204
+2025-03-25 14:00:00.6043 Info request is GET /api/CLPDT01/getAllProducts
+2025-03-25 14:00:00.6043 Info response is 200
+2025-03-25 14:00:18.1041 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-25 14:00:18.1041 Info response is 204
+2025-03-25 14:00:18.1041 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-25 14:00:18.1247 Info response is 200
+2025-03-25 14:01:23.1261 Info request is OPTIONS /api/CLUSR01/getAllUserResords
+2025-03-25 14:01:23.1261 Info response is 204
+2025-03-25 14:01:23.1336 Info request is GET /api/CLUSR01/getAllUserResords
+2025-03-25 14:01:23.1336 Info response is 200

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="../Scripts/jquery-3.5.1.js"></script>
+
+    <!-- DevExtreme theme -->
+    <link rel="stylesheet" href="../Content/dx.dark.css" />
+
+    <!-- DevExtreme library -->
+    <script type="text/javascript" src="../Scripts/dx.all.js"></script>
+</head>
+
+<body class="dx-viewport">
+    <div id="DivColor" style="background-color: Black">abc</div>
+    <div id="GridContainer"></div>
+
+
+    <script>
+        $(document).ready(function () {
+            let gridInst = $("#GridContainer").dxDataGrid({
+                onInitialized: function (e) {
+                    console.log("e",e)
+                     $("#DivColor").css("background-color", "red")
+                    console.log("on initialized");
+                },
+                onContentReady: function (e) {
+                     $("#DivColor").css("background-color", "green")
+                    console.log("on contentReady");
+                }
+            }).dxDataGrid("instance")
+
+            console.log("instance", gridInst);
+
+            gridInst.on("initialized", function () {
+                console.log("hiii")
+                $("#DivColor").css("background-color", "red")
+            })
+
+            
+
+            gridInst.on("contentReady", function () {
+                console.log("hello")
+                $("#DivColor").css("background-color", "green")
+            })
+
+
+
+
+
+
+
+
+
+        })
+
+
+
+
+    </script>
+</body>
+
+</html>

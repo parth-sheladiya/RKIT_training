@@ -44,7 +44,7 @@ $(document).ready(function(){
         ],
         filterRow:{
             // show on ui with search iconm
-            visible:true,
+            visible:true, // false
             applyFilter: "onClick" ,    // auto   onclick
             // green color btn
             applyFilterText :"apply filter show on ui ",
@@ -53,6 +53,9 @@ $(document).ready(function(){
             betweenStartText:"starts enter",
             // operationDescriptions it is for user special
             // contains staert with end with between 
+            operationDescriptions:{
+                between:" Between hai"
+            },
             showOperationChooser:true, // default true
             
 
@@ -80,7 +83,7 @@ $(document).ready(function(){
         },
         headerFilter:{
             // col name after symbol 
-            visible:true
+            visible:true,
         },
         filterValue:[
             [['productName','=','Refrigerator'], 'and',['productCategory','=','Home Appliances']]

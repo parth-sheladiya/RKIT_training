@@ -124,7 +124,9 @@ $(document).ready(function(){
            headerCellTemplate: function(container) {
             container.append("<p style='color:green;'>ID</p>");
           },
+          
           calculateDisplayValue: function(rowData) {
+            
             console.log("row data",rowData);
             return "₹" + rowData.productId;
             
@@ -286,7 +288,7 @@ $(document).ready(function(){
     }).dxDataGrid("instance")
 
     // console.log("grid inst",gridinst);
-    
+    console.log("get data soyrce",gridinst.getDataSource())
     let column = gridinst.columnOption("rating")
 
     console.log("column",column);
