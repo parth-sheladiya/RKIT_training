@@ -22,15 +22,8 @@
     <script>
         $(document).ready(function () {
             let gridInst = $("#GridContainer").dxDataGrid({
-                onInitialized: function (e) {
-                    console.log("e",e)
-                     $("#DivColor").css("background-color", "red")
-                    console.log("on initialized");
-                },
-                onContentReady: function (e) {
-                     $("#DivColor").css("background-color", "green")
-                    console.log("on contentReady");
-                }
+                dataSource:[
+                ]
             }).dxDataGrid("instance")
 
             console.log("instance", gridInst);
